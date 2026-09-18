@@ -1,0 +1,4815 @@
+{
+  "version": 1,
+  "description": "Fonte unica dos tokens e presets de tema da VERSI Design System.",
+  "tokens": [
+    {
+      "selector": ":root",
+      "declarations": [
+        {
+          "property": "--font-family-base",
+          "value": "var(--font-nunito-sans, \"Nunito Sans\"), sans-serif"
+        },
+        {
+          "property": "--white",
+          "value": "255, 255, 255"
+        },
+        {
+          "property": "--primary-1",
+          "value": "15, 98, 193"
+        },
+        {
+          "property": "--primary-2",
+          "value": "7, 68, 138"
+        },
+        {
+          "property": "--primary-3",
+          "value": "22, 44, 100"
+        },
+        {
+          "property": "--primary-4",
+          "value": "197, 214, 254"
+        },
+        {
+          "property": "--primary-5",
+          "value": "235, 240, 255"
+        },
+        {
+          "property": "--secondary-1",
+          "value": "0, 110, 47"
+        },
+        {
+          "property": "--secondary-2",
+          "value": "0, 81, 34"
+        },
+        {
+          "property": "--secondary-3",
+          "value": "0, 52, 22"
+        },
+        {
+          "property": "--secondary-4",
+          "value": "198, 238, 215"
+        },
+        {
+          "property": "--secondary-5",
+          "value": "237, 255, 245"
+        },
+        {
+          "property": "--tertiary-1",
+          "value": "25, 28, 31"
+        },
+        {
+          "property": "--tertiary-2",
+          "value": "69, 90, 100"
+        },
+        {
+          "property": "--tertiary-3",
+          "value": "112, 119, 128"
+        },
+        {
+          "property": "--tertiary-4",
+          "value": "201, 206, 212"
+        },
+        {
+          "property": "--tertiary-5",
+          "value": "235, 235, 235"
+        },
+        {
+          "property": "--danger-1",
+          "value": "168, 26, 10"
+        },
+        {
+          "property": "--danger-2",
+          "value": "131, 13, 0"
+        },
+        {
+          "property": "--danger-3",
+          "value": "89, 9, 0"
+        },
+        {
+          "property": "--danger-4",
+          "value": "249, 202, 200"
+        },
+        {
+          "property": "--danger-5",
+          "value": "255, 240, 240"
+        },
+        {
+          "property": "--danger-6",
+          "value": "216, 8, 19"
+        },
+        {
+          "property": "--warning-1",
+          "value": "234, 179, 8"
+        },
+        {
+          "property": "--warning-2",
+          "value": "158, 108, 3"
+        },
+        {
+          "property": "--warning-3",
+          "value": "161, 98, 7"
+        },
+        {
+          "property": "--warning-4",
+          "value": "254, 249, 195"
+        },
+        {
+          "property": "--warning-5",
+          "value": "254, 252, 232"
+        },
+        {
+          "property": "--success-1",
+          "value": "46, 133, 71"
+        },
+        {
+          "property": "--success-2",
+          "value": "153, 233, 187"
+        },
+        {
+          "property": "--success-3",
+          "value": "237, 255, 245"
+        },
+        {
+          "property": "--grayscale-1",
+          "value": "25, 28, 31"
+        },
+        {
+          "property": "--grayscale-2",
+          "value": "69, 90, 100"
+        },
+        {
+          "property": "--grayscale-3",
+          "value": "112, 119, 128"
+        },
+        {
+          "property": "--grayscale-4",
+          "value": "201, 206, 212"
+        },
+        {
+          "property": "--grayscale-5",
+          "value": "235, 235, 235"
+        },
+        {
+          "property": "--overlay",
+          "value": "153, 153, 153"
+        },
+        {
+          "property": "--bg-lighter",
+          "value": "251, 254, 255"
+        },
+        {
+          "property": "--bg-light",
+          "value": "244, 247, 248"
+        },
+        {
+          "property": "--bg-dark",
+          "value": "239, 239, 239"
+        },
+        {
+          "property": "--bg-disabled",
+          "value": "235, 235, 235"
+        },
+        {
+          "property": "--surface-card",
+          "value": "255, 255, 255"
+        },
+        {
+          "property": "--text-primary",
+          "value": "24, 24, 24"
+        },
+        {
+          "property": "--text-secondary",
+          "value": "92, 92, 92"
+        },
+        {
+          "property": "--text-tertiary",
+          "value": "105, 105, 105"
+        },
+        {
+          "property": "--text-disabled",
+          "value": "163, 164, 165"
+        },
+        {
+          "property": "--content-primary",
+          "value": "var(--text-primary)"
+        },
+        {
+          "property": "--content-secondary",
+          "value": "var(--text-secondary)"
+        },
+        {
+          "property": "--content-muted",
+          "value": "var(--text-tertiary)"
+        },
+        {
+          "property": "--content-disabled",
+          "value": "var(--text-disabled)"
+        },
+        {
+          "property": "--content-link",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--content-inverse",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--content-on-brand",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--action-primary-background",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--action-primary-background-hover",
+          "value": "var(--primary-2)"
+        },
+        {
+          "property": "--action-primary-background-active",
+          "value": "var(--primary-3)"
+        },
+        {
+          "property": "--action-primary-content",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--action-primary-ghost-background",
+          "value": "var(--primary-5)"
+        },
+        {
+          "property": "--action-secondary-background",
+          "value": "var(--secondary-1)"
+        },
+        {
+          "property": "--action-secondary-background-hover",
+          "value": "var(--secondary-2)"
+        },
+        {
+          "property": "--action-secondary-background-active",
+          "value": "var(--secondary-3)"
+        },
+        {
+          "property": "--action-secondary-content",
+          "value": "var(--notice-secondary-content)"
+        },
+        {
+          "property": "--action-secondary-ghost-background",
+          "value": "var(--secondary-5)"
+        },
+        {
+          "property": "--action-tertiary-background",
+          "value": "var(--surface-action-neutral)"
+        },
+        {
+          "property": "--action-tertiary-background-hover",
+          "value": "var(--tertiary-2)"
+        },
+        {
+          "property": "--action-tertiary-background-active",
+          "value": "var(--tertiary-3)"
+        },
+        {
+          "property": "--action-tertiary-content",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--action-danger-background",
+          "value": "var(--feedback-danger-strong)"
+        },
+        {
+          "property": "--action-danger-background-hover",
+          "value": "var(--danger-2)"
+        },
+        {
+          "property": "--action-danger-background-active",
+          "value": "var(--danger-3)"
+        },
+        {
+          "property": "--action-danger-content",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--content-brand-secondary",
+          "value": "var(--secondary-1)"
+        },
+        {
+          "property": "--selection-background",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--selection-background-hover",
+          "value": "var(--primary-2)"
+        },
+        {
+          "property": "--selection-border",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--selection-content",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--notice-secondary-content",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--action-warning-background",
+          "value": "var(--warning-3)"
+        },
+        {
+          "property": "--action-warning-background-hover",
+          "value": "133, 77, 14"
+        },
+        {
+          "property": "--action-warning-background-active",
+          "value": "113, 63, 18"
+        },
+        {
+          "property": "--action-warning-content",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--surface-page",
+          "value": "var(--bg-light)"
+        },
+        {
+          "property": "--surface-card-semantic",
+          "value": "var(--surface-card)"
+        },
+        {
+          "property": "--surface-subtle",
+          "value": "var(--bg-lighter)"
+        },
+        {
+          "property": "--surface-muted",
+          "value": "var(--bg-dark)"
+        },
+        {
+          "property": "--surface-disabled",
+          "value": "var(--bg-disabled)"
+        },
+        {
+          "property": "--surface-action-neutral",
+          "value": "var(--tertiary-1)"
+        },
+        {
+          "property": "--surface-tooltip",
+          "value": "var(--tertiary-1)"
+        },
+        {
+          "property": "--footer-background",
+          "value": "19, 19, 19"
+        },
+        {
+          "property": "--border-subtle",
+          "value": "var(--grayscale-5)"
+        },
+        {
+          "property": "--border-default",
+          "value": "var(--grayscale-4)"
+        },
+        {
+          "property": "--border-strong",
+          "value": "var(--grayscale-2)"
+        },
+        {
+          "property": "--border-disabled",
+          "value": "var(--grayscale-4)"
+        },
+        {
+          "property": "--focus-ring",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--icon-default",
+          "value": "var(--tertiary-3)"
+        },
+        {
+          "property": "--feedback-danger-strong",
+          "value": "var(--danger-1)"
+        },
+        {
+          "property": "--feedback-danger-soft",
+          "value": "var(--danger-5)"
+        },
+        {
+          "property": "--feedback-danger-border",
+          "value": "var(--danger-1)"
+        },
+        {
+          "property": "--feedback-danger-content",
+          "value": "var(--danger-1)"
+        },
+        {
+          "property": "--feedback-warning-strong",
+          "value": "var(--warning-2)"
+        },
+        {
+          "property": "--feedback-warning-soft",
+          "value": "var(--warning-5)"
+        },
+        {
+          "property": "--feedback-warning-border",
+          "value": "var(--warning-2)"
+        },
+        {
+          "property": "--feedback-warning-content",
+          "value": "var(--warning-3)"
+        },
+        {
+          "property": "--feedback-success-strong",
+          "value": "var(--success-1)"
+        },
+        {
+          "property": "--feedback-success-soft",
+          "value": "var(--success-3)"
+        },
+        {
+          "property": "--feedback-success-border",
+          "value": "var(--success-1)"
+        },
+        {
+          "property": "--feedback-success-content",
+          "value": "var(--secondary-1)"
+        },
+        {
+          "property": "--feedback-info-strong",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--feedback-info-soft",
+          "value": "var(--primary-5)"
+        },
+        {
+          "property": "--feedback-info-border",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--feedback-info-content",
+          "value": "var(--primary-2)"
+        },
+        {
+          "property": "--field-surface",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--field-surface-disabled",
+          "value": "var(--bg-light)"
+        },
+        {
+          "property": "--field-border-default",
+          "value": "var(--grayscale-3)"
+        },
+        {
+          "property": "--field-border-active",
+          "value": "var(--grayscale-2)"
+        },
+        {
+          "property": "--field-border-error",
+          "value": "var(--danger-6)"
+        },
+        {
+          "property": "--field-content",
+          "value": "var(--text-primary)"
+        },
+        {
+          "property": "--field-placeholder",
+          "value": "var(--text-tertiary)"
+        },
+        {
+          "property": "--field-content-disabled",
+          "value": "var(--grayscale-3)"
+        },
+        {
+          "property": "--field-icon",
+          "value": "var(--grayscale-3)"
+        },
+        {
+          "property": "--field-assistive",
+          "value": "var(--text-secondary)"
+        },
+        {
+          "property": "--field-assistive-error",
+          "value": "var(--danger-6)"
+        },
+        {
+          "property": "--switch-track-off",
+          "value": "var(--grayscale-4)"
+        },
+        {
+          "property": "--switch-track-disabled",
+          "value": "var(--grayscale-4)"
+        },
+        {
+          "property": "--switch-track-primary-on",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--switch-track-secondary-on",
+          "value": "var(--secondary-1)"
+        },
+        {
+          "property": "--switch-track-tertiary-on",
+          "value": "var(--tertiary-1)"
+        },
+        {
+          "property": "--switch-track-contract-on",
+          "value": "var(--feedback-success-strong)"
+        },
+        {
+          "property": "--switch-track-contract-off",
+          "value": "var(--feedback-danger-strong)"
+        },
+        {
+          "property": "--switch-track-theme-on",
+          "value": "var(--surface-action-neutral)"
+        },
+        {
+          "property": "--switch-track-theme-off",
+          "value": "var(--feedback-info-soft)"
+        },
+        {
+          "property": "--switch-knob",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--switch-knob-disabled",
+          "value": "var(--bg-light)"
+        },
+        {
+          "property": "--switch-knob-theme-on",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--radio-surface",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--radio-border",
+          "value": "var(--grayscale-2)"
+        },
+        {
+          "property": "--radio-selected",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--radio-error",
+          "value": "var(--danger-6)"
+        },
+        {
+          "property": "--radio-disabled-border",
+          "value": "var(--grayscale-4)"
+        },
+        {
+          "property": "--radio-disabled-surface",
+          "value": "var(--bg-light)"
+        },
+        {
+          "property": "--radio-disabled-content",
+          "value": "var(--grayscale-3)"
+        },
+        {
+          "property": "--checkbox-surface",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--checkbox-border",
+          "value": "var(--grayscale-2)"
+        },
+        {
+          "property": "--checkbox-selected",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--checkbox-error",
+          "value": "var(--danger-6)"
+        },
+        {
+          "property": "--checkbox-disabled-border",
+          "value": "var(--grayscale-4)"
+        },
+        {
+          "property": "--checkbox-disabled-surface",
+          "value": "var(--bg-light)"
+        },
+        {
+          "property": "--checkbox-disabled-content",
+          "value": "var(--grayscale-3)"
+        },
+        {
+          "property": "--loading-circular-track",
+          "value": "var(--grayscale-5)"
+        },
+        {
+          "property": "--loading-circular-indicator",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--chart-1",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--chart-2",
+          "value": "22, 211, 154"
+        },
+        {
+          "property": "--chart-3",
+          "value": "254, 176, 25"
+        },
+        {
+          "property": "--chart-4",
+          "value": "255, 69, 96"
+        },
+        {
+          "property": "--chart-5",
+          "value": "119, 93, 208"
+        },
+        {
+          "property": "--chart-6",
+          "value": "0, 184, 217"
+        },
+        {
+          "property": "--chart-7",
+          "value": "255, 143, 0"
+        },
+        {
+          "property": "--chart-8",
+          "value": "38, 166, 154"
+        },
+        {
+          "property": "--chart-9",
+          "value": "236, 64, 122"
+        },
+        {
+          "property": "--chart-10",
+          "value": "124, 179, 66"
+        },
+        {
+          "property": "--chart-11",
+          "value": "92, 107, 192"
+        },
+        {
+          "property": "--chart-12",
+          "value": "141, 110, 99"
+        },
+        {
+          "property": "--chart-donut-1",
+          "value": "102, 210, 136"
+        },
+        {
+          "property": "--chart-donut-2",
+          "value": "49, 130, 246"
+        },
+        {
+          "property": "--chart-donut-3",
+          "value": "255, 194, 92"
+        },
+        {
+          "property": "--chart-donut-4",
+          "value": "124, 88, 232"
+        },
+        {
+          "property": "--chart-donut-5",
+          "value": "255, 107, 107"
+        },
+        {
+          "property": "--chart-donut-6",
+          "value": "var(--chart-6)"
+        },
+        {
+          "property": "--chart-donut-7",
+          "value": "var(--chart-7)"
+        },
+        {
+          "property": "--chart-donut-8",
+          "value": "var(--chart-8)"
+        },
+        {
+          "property": "--chart-donut-9",
+          "value": "var(--chart-9)"
+        },
+        {
+          "property": "--chart-donut-10",
+          "value": "var(--chart-10)"
+        },
+        {
+          "property": "--chart-donut-11",
+          "value": "var(--chart-11)"
+        },
+        {
+          "property": "--chart-donut-12",
+          "value": "var(--chart-12)"
+        },
+        {
+          "property": "--chart-muted-1",
+          "value": "197, 202, 208"
+        },
+        {
+          "property": "--chart-muted-2",
+          "value": "217, 221, 225"
+        },
+        {
+          "property": "--chart-muted-3",
+          "value": "236, 238, 240"
+        },
+        {
+          "property": "--chart-muted-4",
+          "value": "174, 181, 189"
+        },
+        {
+          "property": "--chart-tooltip-background",
+          "value": "var(--surface-tooltip)"
+        },
+        {
+          "property": "--chart-tooltip-content",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--chart-line-neutral",
+          "value": "var(--text-primary)"
+        },
+        {
+          "property": "--chart-balance",
+          "value": "0, 167, 111"
+        },
+        {
+          "property": "--chart-invested",
+          "value": "30, 144, 255"
+        },
+        {
+          "property": "--chart-grid",
+          "value": "229, 231, 235"
+        },
+        {
+          "property": "--chart-axis",
+          "value": "107, 114, 128"
+        },
+        {
+          "property": "--chart-axis-border",
+          "value": "209, 213, 219"
+        },
+        {
+          "property": "--chart-tooltip-text",
+          "value": "17, 24, 39"
+        },
+        {
+          "property": "--screen-mobile",
+          "value": "640px"
+        },
+        {
+          "property": "--screen-tablet",
+          "value": "1024px"
+        },
+        {
+          "property": "--screen-desktop",
+          "value": "1440px"
+        },
+        {
+          "property": "--screen-tv",
+          "value": "1920px"
+        },
+        {
+          "property": "--shadow-sm",
+          "value": "0px 0px 10px rgba(132, 132, 132, 15%)"
+        },
+        {
+          "property": "--shadow-md",
+          "value": "0px 0px 20px rgba(132, 132, 132, 20%)"
+        },
+        {
+          "property": "--shadow-lg",
+          "value": "0px 0px 30px rgba(132, 132, 132, 25%)"
+        },
+        {
+          "property": "--shadow-focus",
+          "value": "0px 0px 0px 2px #d4d4d8"
+        },
+        {
+          "property": "--shadow-outline",
+          "value": "0px 0px 0px 2px #e8e8e8"
+        },
+        {
+          "property": "--shadow-button-focus",
+          "value": "0px 0px 0px 2px #d4d4d8"
+        },
+        {
+          "property": "--blur",
+          "value": "4px"
+        },
+        {
+          "property": "--spacing-none",
+          "value": "0px"
+        },
+        {
+          "property": "--spacing-4xs",
+          "value": "8px"
+        },
+        {
+          "property": "--spacing-2xs",
+          "value": "12px"
+        },
+        {
+          "property": "--spacing-xs",
+          "value": "16px"
+        },
+        {
+          "property": "--spacing-sm",
+          "value": "20px"
+        },
+        {
+          "property": "--spacing-md",
+          "value": "24px"
+        },
+        {
+          "property": "--spacing-lg",
+          "value": "32px"
+        },
+        {
+          "property": "--spacing-xl",
+          "value": "40px"
+        },
+        {
+          "property": "--spacing-2xl",
+          "value": "48px"
+        },
+        {
+          "property": "--spacing-4xl",
+          "value": "56px"
+        },
+        {
+          "property": "--control-height-sm",
+          "value": "28px"
+        },
+        {
+          "property": "--control-height-md",
+          "value": "40px"
+        },
+        {
+          "property": "--control-height-lg",
+          "value": "48px"
+        },
+        {
+          "property": "--shell-header-mobile",
+          "value": "48px"
+        },
+        {
+          "property": "--shell-header-desktop",
+          "value": "72px"
+        },
+        {
+          "property": "--shell-menu-collapsed",
+          "value": "72px"
+        },
+        {
+          "property": "--shell-menu-expanded",
+          "value": "248px"
+        },
+        {
+          "property": "--shell-gutter-mobile",
+          "value": "8px"
+        },
+        {
+          "property": "--shell-gutter-desktop",
+          "value": "40px"
+        },
+        {
+          "property": "--z-header",
+          "value": "30"
+        },
+        {
+          "property": "--z-navigation",
+          "value": "40"
+        },
+        {
+          "property": "--z-drawer",
+          "value": "80"
+        },
+        {
+          "property": "--z-popover",
+          "value": "120"
+        },
+        {
+          "property": "--z-tooltip",
+          "value": "130"
+        },
+        {
+          "property": "--z-integration",
+          "value": "140"
+        },
+        {
+          "property": "--z-menu-backdrop",
+          "value": "150"
+        },
+        {
+          "property": "--z-menu",
+          "value": "160"
+        },
+        {
+          "property": "--z-menu-control",
+          "value": "170"
+        },
+        {
+          "property": "--z-modal",
+          "value": "200"
+        },
+        {
+          "property": "--z-modal-overlay",
+          "value": "210"
+        },
+        {
+          "property": "--border-radius-none",
+          "value": "0px"
+        },
+        {
+          "property": "--border-radius-sm",
+          "value": "4px"
+        },
+        {
+          "property": "--border-radius-md",
+          "value": "8px"
+        },
+        {
+          "property": "--border-radius-lg",
+          "value": "16px"
+        },
+        {
+          "property": "--text-2xs",
+          "value": "0.625rem"
+        },
+        {
+          "property": "--text-xs",
+          "value": "0.75rem"
+        },
+        {
+          "property": "--text-sm",
+          "value": "0.875rem"
+        },
+        {
+          "property": "--text-md",
+          "value": "1rem"
+        },
+        {
+          "property": "--text-lg",
+          "value": "1.125rem"
+        },
+        {
+          "property": "--text-xl",
+          "value": "1.25rem"
+        },
+        {
+          "property": "--text-2xl",
+          "value": "1.5rem"
+        },
+        {
+          "property": "--leading-2xs",
+          "value": "0.875rem"
+        },
+        {
+          "property": "--leading-xs",
+          "value": "1rem"
+        },
+        {
+          "property": "--leading-sm",
+          "value": "1.125rem"
+        },
+        {
+          "property": "--leading-md",
+          "value": "1.25rem"
+        },
+        {
+          "property": "--leading-lg",
+          "value": "1.5rem"
+        },
+        {
+          "property": "--leading-xl",
+          "value": "1.75rem"
+        },
+        {
+          "property": "--leading-2xl",
+          "value": "2rem"
+        },
+        {
+          "property": "--title-sm",
+          "value": "2rem"
+        },
+        {
+          "property": "--title-md",
+          "value": "2.5rem"
+        },
+        {
+          "property": "--title-lg",
+          "value": "3rem"
+        },
+        {
+          "property": "--title-xl",
+          "value": "3.5rem"
+        },
+        {
+          "property": "--title-leading-sm",
+          "value": "2.5rem"
+        },
+        {
+          "property": "--title-leading-md",
+          "value": "3rem"
+        },
+        {
+          "property": "--title-leading-lg",
+          "value": "3.5rem"
+        },
+        {
+          "property": "--title-leading-xl",
+          "value": "4rem"
+        }
+      ]
+    },
+    {
+      "selector": ".azul1",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "15, 98, 193"
+        },
+        {
+          "property": "--primary-2",
+          "value": "7, 68, 138"
+        },
+        {
+          "property": "--primary-3",
+          "value": "22, 44, 100"
+        },
+        {
+          "property": "--primary-4",
+          "value": "197, 214, 254"
+        },
+        {
+          "property": "--primary-5",
+          "value": "235, 240, 255"
+        }
+      ]
+    },
+    {
+      "selector": ".laranja1",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "234, 113, 0"
+        },
+        {
+          "property": "--primary-2",
+          "value": "200, 93, 0"
+        },
+        {
+          "property": "--primary-3",
+          "value": "146, 68, 0"
+        },
+        {
+          "property": "--primary-4",
+          "value": "255, 196, 137"
+        },
+        {
+          "property": "--primary-5",
+          "value": "255, 235, 215"
+        },
+        {
+          "property": "--content-link",
+          "value": "var(--primary-3)"
+        }
+      ]
+    },
+    {
+      "selector": ".laranja2",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "242, 93, 33"
+        },
+        {
+          "property": "--primary-2",
+          "value": "181, 68, 22"
+        },
+        {
+          "property": "--primary-3",
+          "value": "128, 45, 11"
+        },
+        {
+          "property": "--primary-4",
+          "value": "255, 151, 109"
+        },
+        {
+          "property": "--primary-5",
+          "value": "255, 229, 219"
+        },
+        {
+          "property": "--content-link",
+          "value": "var(--primary-2)"
+        }
+      ]
+    },
+    {
+      "selector": ".verde1",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "0, 110, 47"
+        },
+        {
+          "property": "--primary-2",
+          "value": "0, 81, 34"
+        },
+        {
+          "property": "--primary-3",
+          "value": "0, 52, 22"
+        },
+        {
+          "property": "--primary-4",
+          "value": "198, 238, 215"
+        },
+        {
+          "property": "--primary-5",
+          "value": "229, 245, 236"
+        }
+      ]
+    },
+    {
+      "selector": ".verde2",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "85, 112, 41"
+        },
+        {
+          "property": "--primary-2",
+          "value": "60, 81, 25"
+        },
+        {
+          "property": "--primary-3",
+          "value": "37, 54, 9"
+        },
+        {
+          "property": "--primary-4",
+          "value": "170, 184, 148"
+        },
+        {
+          "property": "--primary-5",
+          "value": "236, 242, 228"
+        }
+      ]
+    },
+    {
+      "selector": ".verde3",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "11, 174, 126"
+        },
+        {
+          "property": "--primary-2",
+          "value": "0, 117, 83"
+        },
+        {
+          "property": "--primary-3",
+          "value": "0, 71, 51"
+        },
+        {
+          "property": "--primary-4",
+          "value": "140, 221, 197"
+        },
+        {
+          "property": "--primary-5",
+          "value": "227, 250, 243"
+        },
+        {
+          "property": "--content-link",
+          "value": "var(--primary-2)"
+        },
+        {
+          "property": "--focus-ring",
+          "value": "var(--primary-2)"
+        }
+      ]
+    },
+    {
+      "selector": ".verde4",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "64, 128, 50"
+        },
+        {
+          "property": "--primary-2",
+          "value": "78, 163, 54"
+        },
+        {
+          "property": "--primary-3",
+          "value": "41, 87, 29"
+        },
+        {
+          "property": "--primary-4",
+          "value": "169, 209, 163"
+        },
+        {
+          "property": "--primary-5",
+          "value": "231, 250, 228"
+        }
+      ]
+    },
+    {
+      "selector": ".rosa1",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "217, 118, 103"
+        },
+        {
+          "property": "--primary-2",
+          "value": "178, 85, 71"
+        },
+        {
+          "property": "--primary-3",
+          "value": "114, 49, 39"
+        },
+        {
+          "property": "--primary-4",
+          "value": "245, 203, 197"
+        },
+        {
+          "property": "--primary-5",
+          "value": "255, 239, 236"
+        },
+        {
+          "property": "--content-link",
+          "value": "var(--primary-2)"
+        }
+      ]
+    },
+    {
+      "selector": ".azul2",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "13, 150, 212"
+        },
+        {
+          "property": "--primary-2",
+          "value": "10, 97, 136"
+        },
+        {
+          "property": "--primary-3",
+          "value": "0, 53, 77"
+        },
+        {
+          "property": "--primary-4",
+          "value": "142, 220, 255"
+        },
+        {
+          "property": "--primary-5",
+          "value": "233, 248, 255"
+        },
+        {
+          "property": "--content-link",
+          "value": "var(--primary-2)"
+        }
+      ]
+    },
+    {
+      "selector": ".azul3",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "19, 52, 116"
+        },
+        {
+          "property": "--primary-2",
+          "value": "0, 29, 86"
+        },
+        {
+          "property": "--primary-3",
+          "value": "0, 19, 56"
+        },
+        {
+          "property": "--primary-4",
+          "value": "161, 193, 254"
+        },
+        {
+          "property": "--primary-5",
+          "value": "230, 239, 255"
+        }
+      ]
+    },
+    {
+      "selector": "body",
+      "declarations": [
+        {
+          "property": "--content-link",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--focus-ring",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--action-primary-background",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--action-primary-background-hover",
+          "value": "var(--primary-2)"
+        },
+        {
+          "property": "--action-primary-background-active",
+          "value": "var(--primary-3)"
+        },
+        {
+          "property": "--selection-background",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--selection-background-hover",
+          "value": "var(--primary-2)"
+        },
+        {
+          "property": "--selection-border",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--selection-content",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--feedback-info-strong",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--feedback-info-soft",
+          "value": "var(--primary-5)"
+        },
+        {
+          "property": "--feedback-info-border",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--feedback-info-content",
+          "value": "var(--primary-2)"
+        },
+        {
+          "property": "--switch-track-primary-on",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--switch-track-theme-off",
+          "value": "var(--feedback-info-soft)"
+        },
+        {
+          "property": "--radio-selected",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--checkbox-selected",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--loading-circular-indicator",
+          "value": "var(--primary-1)"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-color-scheme=\"dark\"]\r\n    :where(\r\n      body,\r\n      .default,\r\n      .azul1,\r\n      .laranja1,\r\n      .laranja2,\r\n      .verde1,\r\n      .verde2,\r\n      .verde3,\r\n      .verde4,\r\n      .rosa1,\r\n      .azul2,\r\n      .azul3\r\n    )",
+      "declarations": [
+        {
+          "property": "--white",
+          "value": "255, 255, 255"
+        },
+        {
+          "property": "--bg-lighter",
+          "value": "27, 33, 40"
+        },
+        {
+          "property": "--bg-light",
+          "value": "20, 25, 31"
+        },
+        {
+          "property": "--bg-dark",
+          "value": "38, 46, 55"
+        },
+        {
+          "property": "--bg-disabled",
+          "value": "48, 57, 67"
+        },
+        {
+          "property": "--surface-card",
+          "value": "27, 33, 40"
+        },
+        {
+          "property": "--text-primary",
+          "value": "245, 247, 250"
+        },
+        {
+          "property": "--text-secondary",
+          "value": "212, 219, 226"
+        },
+        {
+          "property": "--text-tertiary",
+          "value": "190, 199, 208"
+        },
+        {
+          "property": "--text-disabled",
+          "value": "174, 185, 196"
+        },
+        {
+          "property": "--grayscale-1",
+          "value": "245, 247, 250"
+        },
+        {
+          "property": "--grayscale-2",
+          "value": "212, 219, 226"
+        },
+        {
+          "property": "--grayscale-3",
+          "value": "174, 185, 196"
+        },
+        {
+          "property": "--grayscale-4",
+          "value": "126, 139, 153"
+        },
+        {
+          "property": "--grayscale-5",
+          "value": "63, 74, 86"
+        },
+        {
+          "property": "--content-primary",
+          "value": "var(--text-primary)"
+        },
+        {
+          "property": "--content-secondary",
+          "value": "var(--text-secondary)"
+        },
+        {
+          "property": "--content-muted",
+          "value": "var(--text-tertiary)"
+        },
+        {
+          "property": "--content-disabled",
+          "value": "var(--text-disabled)"
+        },
+        {
+          "property": "--content-link",
+          "value": "144, 202, 255"
+        },
+        {
+          "property": "--notice-secondary-content",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--action-primary-background",
+          "value": "7, 68, 138"
+        },
+        {
+          "property": "--action-primary-background-hover",
+          "value": "15, 98, 193"
+        },
+        {
+          "property": "--action-primary-background-active",
+          "value": "22, 44, 100"
+        },
+        {
+          "property": "--action-primary-content",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--action-primary-ghost-background",
+          "value": "var(--surface-muted)"
+        },
+        {
+          "property": "--action-secondary-ghost-background",
+          "value": "var(--surface-muted)"
+        },
+        {
+          "property": "--selection-background",
+          "value": "var(--surface-muted)"
+        },
+        {
+          "property": "--selection-background-hover",
+          "value": "var(--surface-subtle)"
+        },
+        {
+          "property": "--selection-border",
+          "value": "var(--content-link)"
+        },
+        {
+          "property": "--selection-content",
+          "value": "var(--content-link)"
+        },
+        {
+          "property": "--surface-page",
+          "value": "var(--bg-light)"
+        },
+        {
+          "property": "--surface-card-semantic",
+          "value": "var(--surface-card)"
+        },
+        {
+          "property": "--surface-subtle",
+          "value": "var(--bg-lighter)"
+        },
+        {
+          "property": "--surface-muted",
+          "value": "var(--bg-dark)"
+        },
+        {
+          "property": "--surface-disabled",
+          "value": "var(--bg-disabled)"
+        },
+        {
+          "property": "--surface-action-neutral",
+          "value": "9, 12, 16"
+        },
+        {
+          "property": "--surface-tooltip",
+          "value": "9, 12, 16"
+        },
+        {
+          "property": "--footer-background",
+          "value": "9, 12, 16"
+        },
+        {
+          "property": "--border-subtle",
+          "value": "63, 74, 86"
+        },
+        {
+          "property": "--border-default",
+          "value": "126, 139, 153"
+        },
+        {
+          "property": "--border-strong",
+          "value": "190, 199, 208"
+        },
+        {
+          "property": "--border-disabled",
+          "value": "99, 112, 126"
+        },
+        {
+          "property": "--focus-ring",
+          "value": "144, 202, 255"
+        },
+        {
+          "property": "--shadow-sm",
+          "value": "none"
+        },
+        {
+          "property": "--shadow-md",
+          "value": "none"
+        },
+        {
+          "property": "--shadow-lg",
+          "value": "none"
+        },
+        {
+          "property": "--icon-default",
+          "value": "var(--text-secondary)"
+        },
+        {
+          "property": "--danger-1",
+          "value": "255, 139, 145"
+        },
+        {
+          "property": "--danger-2",
+          "value": "255, 174, 178"
+        },
+        {
+          "property": "--danger-3",
+          "value": "255, 205, 208"
+        },
+        {
+          "property": "--danger-4",
+          "value": "100, 45, 51"
+        },
+        {
+          "property": "--danger-5",
+          "value": "58, 29, 34"
+        },
+        {
+          "property": "--danger-6",
+          "value": "255, 139, 145"
+        },
+        {
+          "property": "--warning-1",
+          "value": "255, 213, 92"
+        },
+        {
+          "property": "--warning-2",
+          "value": "255, 202, 40"
+        },
+        {
+          "property": "--warning-3",
+          "value": "255, 220, 119"
+        },
+        {
+          "property": "--warning-4",
+          "value": "91, 70, 17"
+        },
+        {
+          "property": "--warning-5",
+          "value": "55, 43, 15"
+        },
+        {
+          "property": "--success-1",
+          "value": "110, 231, 160"
+        },
+        {
+          "property": "--success-2",
+          "value": "8, 122, 62"
+        },
+        {
+          "property": "--success-3",
+          "value": "24, 56, 36"
+        },
+        {
+          "property": "--secondary-1",
+          "value": "111, 218, 145"
+        },
+        {
+          "property": "--secondary-2",
+          "value": "155, 233, 179"
+        },
+        {
+          "property": "--secondary-3",
+          "value": "202, 246, 216"
+        },
+        {
+          "property": "--feedback-danger-strong",
+          "value": "var(--danger-1)"
+        },
+        {
+          "property": "--feedback-danger-soft",
+          "value": "var(--danger-5)"
+        },
+        {
+          "property": "--feedback-danger-border",
+          "value": "var(--danger-1)"
+        },
+        {
+          "property": "--feedback-danger-content",
+          "value": "var(--danger-2)"
+        },
+        {
+          "property": "--feedback-warning-strong",
+          "value": "var(--warning-2)"
+        },
+        {
+          "property": "--feedback-warning-soft",
+          "value": "var(--warning-5)"
+        },
+        {
+          "property": "--feedback-warning-border",
+          "value": "var(--warning-1)"
+        },
+        {
+          "property": "--feedback-warning-content",
+          "value": "var(--warning-3)"
+        },
+        {
+          "property": "--feedback-success-strong",
+          "value": "var(--success-1)"
+        },
+        {
+          "property": "--feedback-success-soft",
+          "value": "var(--success-3)"
+        },
+        {
+          "property": "--feedback-success-border",
+          "value": "var(--success-1)"
+        },
+        {
+          "property": "--feedback-success-content",
+          "value": "var(--success-2)"
+        },
+        {
+          "property": "--feedback-info-strong",
+          "value": "var(--content-link)"
+        },
+        {
+          "property": "--feedback-info-soft",
+          "value": "25, 47, 68"
+        },
+        {
+          "property": "--feedback-info-border",
+          "value": "var(--content-link)"
+        },
+        {
+          "property": "--feedback-info-content",
+          "value": "var(--content-link)"
+        },
+        {
+          "property": "--field-surface",
+          "value": "var(--surface-card)"
+        },
+        {
+          "property": "--field-surface-disabled",
+          "value": "var(--surface-disabled)"
+        },
+        {
+          "property": "--field-border-default",
+          "value": "var(--border-default)"
+        },
+        {
+          "property": "--field-border-active",
+          "value": "var(--border-strong)"
+        },
+        {
+          "property": "--field-border-error",
+          "value": "var(--danger-1)"
+        },
+        {
+          "property": "--field-content",
+          "value": "var(--content-primary)"
+        },
+        {
+          "property": "--field-placeholder",
+          "value": "var(--content-muted)"
+        },
+        {
+          "property": "--field-content-disabled",
+          "value": "var(--content-disabled)"
+        },
+        {
+          "property": "--field-icon",
+          "value": "var(--content-secondary)"
+        },
+        {
+          "property": "--field-assistive",
+          "value": "var(--content-secondary)"
+        },
+        {
+          "property": "--field-assistive-error",
+          "value": "var(--danger-2)"
+        },
+        {
+          "property": "--radio-surface",
+          "value": "var(--surface-card)"
+        },
+        {
+          "property": "--radio-border",
+          "value": "var(--border-strong)"
+        },
+        {
+          "property": "--radio-selected",
+          "value": "var(--content-link)"
+        },
+        {
+          "property": "--checkbox-surface",
+          "value": "var(--surface-card)"
+        },
+        {
+          "property": "--checkbox-border",
+          "value": "var(--border-strong)"
+        },
+        {
+          "property": "--checkbox-selected",
+          "value": "var(--content-link)"
+        },
+        {
+          "property": "--switch-track-off",
+          "value": "var(--border-default)"
+        },
+        {
+          "property": "--switch-track-primary-on",
+          "value": "var(--action-primary-background-hover)"
+        },
+        {
+          "property": "--switch-knob",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--loading-circular-track",
+          "value": "var(--border-subtle)"
+        },
+        {
+          "property": "--loading-circular-indicator",
+          "value": "var(--content-link)"
+        },
+        {
+          "property": "--chart-1",
+          "value": "var(--content-link)"
+        },
+        {
+          "property": "--chart-tooltip-background",
+          "value": "245, 247, 250"
+        },
+        {
+          "property": "--chart-tooltip-content",
+          "value": "20, 25, 31"
+        },
+        {
+          "property": "--chart-tooltip-text",
+          "value": "20, 25, 31"
+        },
+        {
+          "property": "--chart-line-neutral",
+          "value": "245, 247, 250"
+        },
+        {
+          "property": "--chart-grid",
+          "value": "99, 112, 126"
+        },
+        {
+          "property": "--chart-axis",
+          "value": "212, 219, 226"
+        },
+        {
+          "property": "--chart-axis-border",
+          "value": "126, 139, 153"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-color-scheme=\"dark\"] :where(.default, .azul1, .azul2, .azul3)",
+      "declarations": [
+        {
+          "property": "--content-link",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--action-primary-background",
+          "value": "7, 68, 138"
+        },
+        {
+          "property": "--action-primary-background-hover",
+          "value": "15, 98, 193"
+        },
+        {
+          "property": "--action-primary-background-active",
+          "value": "22, 44, 100"
+        },
+        {
+          "property": "--primary-1",
+          "value": "74, 144, 226"
+        },
+        {
+          "property": "--primary-2",
+          "value": "52, 117, 194"
+        },
+        {
+          "property": "--primary-3",
+          "value": "80, 105, 170"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-color-scheme=\"dark\"] :where(.laranja1, .laranja2)",
+      "declarations": [
+        {
+          "property": "--content-link",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--action-primary-background",
+          "value": "146, 68, 0"
+        },
+        {
+          "property": "--action-primary-background-hover",
+          "value": "181, 68, 22"
+        },
+        {
+          "property": "--action-primary-background-active",
+          "value": "105, 47, 0"
+        },
+        {
+          "property": "--primary-1",
+          "value": "234, 113, 0"
+        },
+        {
+          "property": "--primary-2",
+          "value": "200, 93, 0"
+        },
+        {
+          "property": "--primary-3",
+          "value": "146, 68, 0"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-color-scheme=\"dark\"] :where(.verde1, .verde2, .verde3, .verde4)",
+      "declarations": [
+        {
+          "property": "--content-link",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--action-primary-background",
+          "value": "0, 110, 47"
+        },
+        {
+          "property": "--action-primary-background-hover",
+          "value": "20, 132, 67"
+        },
+        {
+          "property": "--action-primary-background-active",
+          "value": "0, 77, 34"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-color-scheme=\"dark\"] :where(.rosa1)",
+      "declarations": [
+        {
+          "property": "--content-link",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--action-primary-background",
+          "value": "166, 61, 87"
+        },
+        {
+          "property": "--action-primary-background-hover",
+          "value": "190, 72, 104"
+        },
+        {
+          "property": "--action-primary-background-active",
+          "value": "125, 41, 72"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-color-scheme=\"dark\"] :where(.bg-white)",
+      "declarations": [
+        {
+          "property": "background-color",
+          "value": "rgb(var(--surface-card-semantic)) !important"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-color-scheme=\"dark\"] :where(.text-black)",
+      "declarations": [
+        {
+          "property": "color",
+          "value": "rgb(var(--content-primary)) !important"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-color-scheme=\"dark\"] :where(.bg-primary-1)",
+      "declarations": [
+        {
+          "property": "background-color",
+          "value": "rgb(var(--action-primary-background)) !important"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-color-scheme=\"dark\"] :where(.bg-primary-2, .bg-primary-3)",
+      "declarations": [
+        {
+          "property": "background-color",
+          "value": "rgb(var(--action-primary-background-active)) !important"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-color-scheme=\"dark\"] :where(.bg-primary-4)",
+      "declarations": [
+        {
+          "property": "background-color",
+          "value": "rgb(var(--surface-muted)) !important"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-color-scheme=\"dark\"] :where(.bg-primary-5)",
+      "declarations": [
+        {
+          "property": "background-color",
+          "value": "rgb(var(--surface-subtle)) !important"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-color-scheme=\"dark\"]\r\n    :where(.text-primary-1, .text-primary-2, .text-primary-3)",
+      "declarations": [
+        {
+          "property": "color",
+          "value": "rgb(var(--content-link)) !important"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-color-scheme=\"dark\"]\r\n    :where(.border-primary-1, .border-primary-2, .border-primary-4)",
+      "declarations": [
+        {
+          "property": "border-color",
+          "value": "rgb(var(--border-default)) !important"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-color-scheme=\"dark\"] :where(.hover\\:bg-primary-2:hover)",
+      "declarations": [
+        {
+          "property": "background-color",
+          "value": "rgb(var(--action-primary-background-hover)) !important"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-color-scheme=\"dark\"] :where(.hover\\:bg-white:hover)",
+      "declarations": [
+        {
+          "property": "background-color",
+          "value": "rgb(var(--surface-card-semantic)) !important"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-color-scheme=\"dark\"]\r\n    :where(\r\n      .shadow,\r\n      .shadow-sm,\r\n      .shadow-md,\r\n      .shadow-lg,\r\n      .shadow-xl,\r\n      .shadow-2xl,\r\n      .shadow-inner\r\n    )",
+      "declarations": [
+        {
+          "property": "box-shadow",
+          "value": "none !important"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-contrast=\"high\"]",
+      "declarations": [
+        {
+          "property": "color-scheme",
+          "value": "light"
+        },
+        {
+          "property": "scroll-padding-bottom",
+          "value": "calc(var(--portal-safe-area-bottom) + 5rem)"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-contrast=\"high\"]\r\n    :where(\r\n      body,\r\n      .default,\r\n      .azul1,\r\n      .laranja1,\r\n      .laranja2,\r\n      .verde1,\r\n      .verde2,\r\n      .verde3,\r\n      .verde4,\r\n      .rosa1,\r\n      .azul2,\r\n      .azul3\r\n    )",
+      "declarations": [
+        {
+          "property": "--white",
+          "value": "255, 255, 255"
+        },
+        {
+          "property": "--primary-1",
+          "value": "33, 33, 33"
+        },
+        {
+          "property": "--primary-2",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--primary-3",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--primary-4",
+          "value": "118, 118, 118"
+        },
+        {
+          "property": "--primary-5",
+          "value": "248, 250, 252"
+        },
+        {
+          "property": "--secondary-1",
+          "value": "0, 102, 46"
+        },
+        {
+          "property": "--secondary-2",
+          "value": "0, 77, 34"
+        },
+        {
+          "property": "--secondary-3",
+          "value": "0, 50, 22"
+        },
+        {
+          "property": "--secondary-4",
+          "value": "213, 245, 225"
+        },
+        {
+          "property": "--secondary-5",
+          "value": "244, 255, 248"
+        },
+        {
+          "property": "--tertiary-1",
+          "value": "17, 17, 17"
+        },
+        {
+          "property": "--tertiary-2",
+          "value": "61, 61, 61"
+        },
+        {
+          "property": "--tertiary-3",
+          "value": "95, 95, 95"
+        },
+        {
+          "property": "--tertiary-4",
+          "value": "118, 118, 118"
+        },
+        {
+          "property": "--tertiary-5",
+          "value": "242, 242, 242"
+        },
+        {
+          "property": "--danger-1",
+          "value": "176, 0, 32"
+        },
+        {
+          "property": "--danger-2",
+          "value": "128, 0, 24"
+        },
+        {
+          "property": "--danger-3",
+          "value": "89, 0, 16"
+        },
+        {
+          "property": "--danger-4",
+          "value": "118, 118, 118"
+        },
+        {
+          "property": "--danger-5",
+          "value": "255, 240, 243"
+        },
+        {
+          "property": "--danger-6",
+          "value": "176, 0, 32"
+        },
+        {
+          "property": "--warning-1",
+          "value": "107, 67, 0"
+        },
+        {
+          "property": "--warning-2",
+          "value": "107, 67, 0"
+        },
+        {
+          "property": "--warning-3",
+          "value": "107, 67, 0"
+        },
+        {
+          "property": "--warning-4",
+          "value": "118, 118, 118"
+        },
+        {
+          "property": "--warning-5",
+          "value": "255, 248, 225"
+        },
+        {
+          "property": "--success-1",
+          "value": "0, 107, 53"
+        },
+        {
+          "property": "--success-2",
+          "value": "205, 244, 220"
+        },
+        {
+          "property": "--success-3",
+          "value": "239, 255, 245"
+        },
+        {
+          "property": "--grayscale-1",
+          "value": "17, 17, 17"
+        },
+        {
+          "property": "--grayscale-2",
+          "value": "61, 61, 61"
+        },
+        {
+          "property": "--grayscale-3",
+          "value": "95, 95, 95"
+        },
+        {
+          "property": "--grayscale-4",
+          "value": "118, 118, 118"
+        },
+        {
+          "property": "--grayscale-5",
+          "value": "232, 232, 232"
+        },
+        {
+          "property": "--overlay",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--bg-lighter",
+          "value": "255, 255, 255"
+        },
+        {
+          "property": "--bg-light",
+          "value": "245, 245, 245"
+        },
+        {
+          "property": "--bg-dark",
+          "value": "229, 229, 229"
+        },
+        {
+          "property": "--bg-disabled",
+          "value": "232, 232, 232"
+        },
+        {
+          "property": "--surface-card",
+          "value": "255, 255, 255"
+        },
+        {
+          "property": "--text-primary",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--text-secondary",
+          "value": "49, 49, 49"
+        },
+        {
+          "property": "--text-tertiary",
+          "value": "73, 73, 73"
+        },
+        {
+          "property": "--text-disabled",
+          "value": "89, 89, 89"
+        },
+        {
+          "property": "--content-primary",
+          "value": "var(--text-primary)"
+        },
+        {
+          "property": "--content-secondary",
+          "value": "var(--text-secondary)"
+        },
+        {
+          "property": "--content-muted",
+          "value": "var(--text-tertiary)"
+        },
+        {
+          "property": "--content-disabled",
+          "value": "var(--text-disabled)"
+        },
+        {
+          "property": "--content-link",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--content-inverse",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--content-on-brand",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--notice-secondary-content",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--action-primary-background",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--action-primary-background-hover",
+          "value": "var(--primary-2)"
+        },
+        {
+          "property": "--action-primary-background-active",
+          "value": "var(--primary-3)"
+        },
+        {
+          "property": "--action-primary-content",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--selection-background",
+          "value": "var(--primary-5)"
+        },
+        {
+          "property": "--selection-background-hover",
+          "value": "var(--surface-muted)"
+        },
+        {
+          "property": "--selection-border",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--selection-content",
+          "value": "var(--primary-2)"
+        },
+        {
+          "property": "--action-warning-background",
+          "value": "var(--warning-1)"
+        },
+        {
+          "property": "--action-warning-background-hover",
+          "value": "86, 53, 0"
+        },
+        {
+          "property": "--action-warning-background-active",
+          "value": "64, 39, 0"
+        },
+        {
+          "property": "--action-warning-content",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--surface-page",
+          "value": "var(--bg-light)"
+        },
+        {
+          "property": "--surface-card-semantic",
+          "value": "var(--surface-card)"
+        },
+        {
+          "property": "--surface-subtle",
+          "value": "var(--bg-lighter)"
+        },
+        {
+          "property": "--surface-muted",
+          "value": "var(--bg-dark)"
+        },
+        {
+          "property": "--surface-disabled",
+          "value": "var(--bg-disabled)"
+        },
+        {
+          "property": "--surface-action-neutral",
+          "value": "var(--tertiary-1)"
+        },
+        {
+          "property": "--surface-tooltip",
+          "value": "var(--tertiary-1)"
+        },
+        {
+          "property": "--footer-background",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--border-subtle",
+          "value": "var(--grayscale-4)"
+        },
+        {
+          "property": "--border-default",
+          "value": "var(--grayscale-4)"
+        },
+        {
+          "property": "--border-strong",
+          "value": "var(--grayscale-1)"
+        },
+        {
+          "property": "--border-disabled",
+          "value": "var(--grayscale-4)"
+        },
+        {
+          "property": "--focus-ring",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--icon-default",
+          "value": "var(--tertiary-2)"
+        },
+        {
+          "property": "--feedback-danger-strong",
+          "value": "var(--danger-1)"
+        },
+        {
+          "property": "--feedback-danger-soft",
+          "value": "var(--danger-5)"
+        },
+        {
+          "property": "--feedback-danger-border",
+          "value": "var(--danger-1)"
+        },
+        {
+          "property": "--feedback-danger-content",
+          "value": "var(--danger-2)"
+        },
+        {
+          "property": "--feedback-warning-strong",
+          "value": "var(--warning-1)"
+        },
+        {
+          "property": "--feedback-warning-soft",
+          "value": "var(--warning-5)"
+        },
+        {
+          "property": "--feedback-warning-border",
+          "value": "var(--warning-1)"
+        },
+        {
+          "property": "--feedback-warning-content",
+          "value": "var(--warning-1)"
+        },
+        {
+          "property": "--feedback-success-strong",
+          "value": "var(--success-1)"
+        },
+        {
+          "property": "--feedback-success-soft",
+          "value": "var(--success-3)"
+        },
+        {
+          "property": "--feedback-success-border",
+          "value": "var(--success-1)"
+        },
+        {
+          "property": "--feedback-success-content",
+          "value": "var(--secondary-2)"
+        },
+        {
+          "property": "--feedback-info-strong",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--feedback-info-soft",
+          "value": "var(--primary-5)"
+        },
+        {
+          "property": "--feedback-info-border",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--feedback-info-content",
+          "value": "var(--primary-2)"
+        },
+        {
+          "property": "--field-surface",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--field-surface-disabled",
+          "value": "var(--bg-disabled)"
+        },
+        {
+          "property": "--field-border-default",
+          "value": "var(--grayscale-4)"
+        },
+        {
+          "property": "--field-border-active",
+          "value": "var(--grayscale-1)"
+        },
+        {
+          "property": "--field-border-error",
+          "value": "var(--danger-1)"
+        },
+        {
+          "property": "--field-content",
+          "value": "var(--text-primary)"
+        },
+        {
+          "property": "--field-placeholder",
+          "value": "var(--text-tertiary)"
+        },
+        {
+          "property": "--field-content-disabled",
+          "value": "var(--text-disabled)"
+        },
+        {
+          "property": "--field-icon",
+          "value": "var(--tertiary-2)"
+        },
+        {
+          "property": "--field-assistive",
+          "value": "var(--text-secondary)"
+        },
+        {
+          "property": "--field-assistive-error",
+          "value": "var(--danger-2)"
+        },
+        {
+          "property": "--switch-track-off",
+          "value": "var(--grayscale-4)"
+        },
+        {
+          "property": "--switch-track-disabled",
+          "value": "var(--grayscale-4)"
+        },
+        {
+          "property": "--switch-track-primary-on",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--switch-track-secondary-on",
+          "value": "var(--secondary-1)"
+        },
+        {
+          "property": "--switch-track-tertiary-on",
+          "value": "var(--tertiary-1)"
+        },
+        {
+          "property": "--switch-track-contract-on",
+          "value": "var(--success-1)"
+        },
+        {
+          "property": "--switch-track-contract-off",
+          "value": "var(--danger-1)"
+        },
+        {
+          "property": "--switch-track-theme-on",
+          "value": "var(--tertiary-1)"
+        },
+        {
+          "property": "--switch-track-theme-off",
+          "value": "var(--grayscale-4)"
+        },
+        {
+          "property": "--switch-knob",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--switch-knob-disabled",
+          "value": "var(--bg-light)"
+        },
+        {
+          "property": "--switch-knob-theme-on",
+          "value": "255, 255, 255"
+        },
+        {
+          "property": "--radio-surface",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--radio-border",
+          "value": "var(--grayscale-1)"
+        },
+        {
+          "property": "--radio-selected",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--radio-error",
+          "value": "var(--danger-1)"
+        },
+        {
+          "property": "--radio-disabled-border",
+          "value": "var(--grayscale-4)"
+        },
+        {
+          "property": "--radio-disabled-surface",
+          "value": "var(--bg-disabled)"
+        },
+        {
+          "property": "--radio-disabled-content",
+          "value": "var(--text-disabled)"
+        },
+        {
+          "property": "--checkbox-surface",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--checkbox-border",
+          "value": "var(--grayscale-1)"
+        },
+        {
+          "property": "--checkbox-selected",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--checkbox-error",
+          "value": "var(--danger-1)"
+        },
+        {
+          "property": "--checkbox-disabled-border",
+          "value": "var(--grayscale-4)"
+        },
+        {
+          "property": "--checkbox-disabled-surface",
+          "value": "var(--bg-disabled)"
+        },
+        {
+          "property": "--checkbox-disabled-content",
+          "value": "var(--text-disabled)"
+        },
+        {
+          "property": "--loading-circular-track",
+          "value": "var(--grayscale-5)"
+        },
+        {
+          "property": "--loading-circular-indicator",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--chart-1",
+          "value": "33, 33, 33"
+        },
+        {
+          "property": "--chart-2",
+          "value": "0, 102, 46"
+        },
+        {
+          "property": "--chart-3",
+          "value": "176, 0, 32"
+        },
+        {
+          "property": "--chart-4",
+          "value": "107, 67, 0"
+        },
+        {
+          "property": "--chart-5",
+          "value": "73, 0, 146"
+        },
+        {
+          "property": "--chart-6",
+          "value": "0, 92, 92"
+        },
+        {
+          "property": "--chart-7",
+          "value": "128, 45, 0"
+        },
+        {
+          "property": "--chart-8",
+          "value": "0, 88, 80"
+        },
+        {
+          "property": "--chart-9",
+          "value": "136, 0, 85"
+        },
+        {
+          "property": "--chart-10",
+          "value": "67, 87, 0"
+        },
+        {
+          "property": "--chart-11",
+          "value": "45, 55, 145"
+        },
+        {
+          "property": "--chart-12",
+          "value": "93, 59, 47"
+        },
+        {
+          "property": "--chart-donut-1",
+          "value": "var(--chart-1)"
+        },
+        {
+          "property": "--chart-donut-2",
+          "value": "var(--chart-2)"
+        },
+        {
+          "property": "--chart-donut-3",
+          "value": "var(--chart-3)"
+        },
+        {
+          "property": "--chart-donut-4",
+          "value": "var(--chart-4)"
+        },
+        {
+          "property": "--chart-donut-5",
+          "value": "var(--chart-5)"
+        },
+        {
+          "property": "--chart-donut-6",
+          "value": "var(--chart-6)"
+        },
+        {
+          "property": "--chart-donut-7",
+          "value": "var(--chart-7)"
+        },
+        {
+          "property": "--chart-donut-8",
+          "value": "var(--chart-8)"
+        },
+        {
+          "property": "--chart-donut-9",
+          "value": "var(--chart-9)"
+        },
+        {
+          "property": "--chart-donut-10",
+          "value": "var(--chart-10)"
+        },
+        {
+          "property": "--chart-donut-11",
+          "value": "var(--chart-11)"
+        },
+        {
+          "property": "--chart-donut-12",
+          "value": "var(--chart-12)"
+        },
+        {
+          "property": "--chart-muted-1",
+          "value": "73, 73, 73"
+        },
+        {
+          "property": "--chart-muted-2",
+          "value": "95, 95, 95"
+        },
+        {
+          "property": "--chart-muted-3",
+          "value": "118, 118, 118"
+        },
+        {
+          "property": "--chart-muted-4",
+          "value": "49, 49, 49"
+        },
+        {
+          "property": "--chart-tooltip-background",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--chart-tooltip-content",
+          "value": "255, 255, 255"
+        },
+        {
+          "property": "--chart-line-neutral",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--chart-balance",
+          "value": "0, 102, 46"
+        },
+        {
+          "property": "--chart-invested",
+          "value": "33, 33, 33"
+        },
+        {
+          "property": "--chart-grid",
+          "value": "118, 118, 118"
+        },
+        {
+          "property": "--chart-axis",
+          "value": "49, 49, 49"
+        },
+        {
+          "property": "--chart-axis-border",
+          "value": "95, 95, 95"
+        },
+        {
+          "property": "--chart-tooltip-text",
+          "value": "255, 255, 255"
+        },
+        {
+          "property": "--shadow-focus",
+          "value": "0 0 0 2px #ffffff, 0 0 0 4px #000000"
+        },
+        {
+          "property": "--shadow-outline",
+          "value": "0 0 0 2px #000000"
+        },
+        {
+          "property": "--shadow-button-focus",
+          "value": "0 0 0 2px #ffffff, 0 0 0 4px #000000"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-contrast=\"high\"] .default",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "15, 98, 193"
+        },
+        {
+          "property": "--primary-2",
+          "value": "7, 68, 138"
+        },
+        {
+          "property": "--primary-3",
+          "value": "22, 44, 100"
+        },
+        {
+          "property": "--primary-4",
+          "value": "49, 95, 160"
+        },
+        {
+          "property": "--primary-5",
+          "value": "235, 240, 255"
+        },
+        {
+          "property": "--chart-1",
+          "value": "15, 98, 193"
+        },
+        {
+          "property": "--chart-2",
+          "value": "7, 68, 138"
+        },
+        {
+          "property": "--chart-3",
+          "value": "22, 44, 100"
+        },
+        {
+          "property": "--chart-4",
+          "value": "49, 95, 160"
+        },
+        {
+          "property": "--chart-5",
+          "value": "39, 81, 127"
+        },
+        {
+          "property": "--chart-6",
+          "value": "0, 79, 110"
+        },
+        {
+          "property": "--chart-7",
+          "value": "63, 76, 138"
+        },
+        {
+          "property": "--chart-8",
+          "value": "0, 92, 153"
+        },
+        {
+          "property": "--chart-9",
+          "value": "41, 74, 112"
+        },
+        {
+          "property": "--chart-10",
+          "value": "56, 89, 143"
+        },
+        {
+          "property": "--chart-11",
+          "value": "0, 96, 120"
+        },
+        {
+          "property": "--chart-12",
+          "value": "51, 65, 92"
+        },
+        {
+          "property": "--chart-balance",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--chart-invested",
+          "value": "var(--primary-2)"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-contrast=\"high\"] .azul1",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "15, 98, 193"
+        },
+        {
+          "property": "--primary-2",
+          "value": "7, 68, 138"
+        },
+        {
+          "property": "--primary-3",
+          "value": "22, 44, 100"
+        },
+        {
+          "property": "--primary-4",
+          "value": "49, 95, 160"
+        },
+        {
+          "property": "--primary-5",
+          "value": "235, 240, 255"
+        },
+        {
+          "property": "--chart-1",
+          "value": "15, 98, 193"
+        },
+        {
+          "property": "--chart-2",
+          "value": "7, 68, 138"
+        },
+        {
+          "property": "--chart-3",
+          "value": "22, 44, 100"
+        },
+        {
+          "property": "--chart-4",
+          "value": "49, 95, 160"
+        },
+        {
+          "property": "--chart-5",
+          "value": "39, 81, 127"
+        },
+        {
+          "property": "--chart-6",
+          "value": "0, 79, 110"
+        },
+        {
+          "property": "--chart-7",
+          "value": "63, 76, 138"
+        },
+        {
+          "property": "--chart-8",
+          "value": "0, 92, 153"
+        },
+        {
+          "property": "--chart-9",
+          "value": "41, 74, 112"
+        },
+        {
+          "property": "--chart-10",
+          "value": "56, 89, 143"
+        },
+        {
+          "property": "--chart-11",
+          "value": "0, 96, 120"
+        },
+        {
+          "property": "--chart-12",
+          "value": "51, 65, 92"
+        },
+        {
+          "property": "--chart-balance",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--chart-invested",
+          "value": "var(--primary-2)"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-contrast=\"high\"] .laranja1",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "146, 68, 0"
+        },
+        {
+          "property": "--primary-2",
+          "value": "113, 52, 0"
+        },
+        {
+          "property": "--primary-3",
+          "value": "81, 37, 0"
+        },
+        {
+          "property": "--primary-4",
+          "value": "154, 91, 27"
+        },
+        {
+          "property": "--primary-5",
+          "value": "255, 244, 232"
+        },
+        {
+          "property": "--chart-1",
+          "value": "146, 68, 0"
+        },
+        {
+          "property": "--chart-2",
+          "value": "113, 52, 0"
+        },
+        {
+          "property": "--chart-3",
+          "value": "81, 37, 0"
+        },
+        {
+          "property": "--chart-4",
+          "value": "154, 91, 27"
+        },
+        {
+          "property": "--chart-5",
+          "value": "123, 74, 18"
+        },
+        {
+          "property": "--chart-6",
+          "value": "165, 58, 0"
+        },
+        {
+          "property": "--chart-7",
+          "value": "131, 82, 0"
+        },
+        {
+          "property": "--chart-8",
+          "value": "108, 60, 19"
+        },
+        {
+          "property": "--chart-9",
+          "value": "151, 79, 35"
+        },
+        {
+          "property": "--chart-10",
+          "value": "116, 64, 28"
+        },
+        {
+          "property": "--chart-11",
+          "value": "138, 47, 0"
+        },
+        {
+          "property": "--chart-12",
+          "value": "91, 53, 22"
+        },
+        {
+          "property": "--chart-balance",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--chart-invested",
+          "value": "var(--primary-2)"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-contrast=\"high\"] .laranja2",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "181, 68, 22"
+        },
+        {
+          "property": "--primary-2",
+          "value": "138, 50, 15"
+        },
+        {
+          "property": "--primary-3",
+          "value": "96, 33, 8"
+        },
+        {
+          "property": "--primary-4",
+          "value": "157, 65, 32"
+        },
+        {
+          "property": "--primary-5",
+          "value": "255, 240, 235"
+        },
+        {
+          "property": "--chart-1",
+          "value": "181, 68, 22"
+        },
+        {
+          "property": "--chart-2",
+          "value": "138, 50, 15"
+        },
+        {
+          "property": "--chart-3",
+          "value": "96, 33, 8"
+        },
+        {
+          "property": "--chart-4",
+          "value": "157, 65, 32"
+        },
+        {
+          "property": "--chart-5",
+          "value": "120, 53, 29"
+        },
+        {
+          "property": "--chart-6",
+          "value": "169, 40, 18"
+        },
+        {
+          "property": "--chart-7",
+          "value": "125, 61, 41"
+        },
+        {
+          "property": "--chart-8",
+          "value": "145, 49, 19"
+        },
+        {
+          "property": "--chart-9",
+          "value": "111, 45, 28"
+        },
+        {
+          "property": "--chart-10",
+          "value": "164, 74, 48"
+        },
+        {
+          "property": "--chart-11",
+          "value": "126, 40, 16"
+        },
+        {
+          "property": "--chart-12",
+          "value": "92, 48, 37"
+        },
+        {
+          "property": "--chart-balance",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--chart-invested",
+          "value": "var(--primary-2)"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-contrast=\"high\"] .verde1",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "0, 110, 47"
+        },
+        {
+          "property": "--primary-2",
+          "value": "0, 81, 34"
+        },
+        {
+          "property": "--primary-3",
+          "value": "0, 52, 22"
+        },
+        {
+          "property": "--primary-4",
+          "value": "52, 122, 66"
+        },
+        {
+          "property": "--primary-5",
+          "value": "237, 255, 245"
+        },
+        {
+          "property": "--chart-1",
+          "value": "0, 110, 47"
+        },
+        {
+          "property": "--chart-2",
+          "value": "0, 81, 34"
+        },
+        {
+          "property": "--chart-3",
+          "value": "0, 52, 22"
+        },
+        {
+          "property": "--chart-4",
+          "value": "52, 122, 66"
+        },
+        {
+          "property": "--chart-5",
+          "value": "30, 104, 55"
+        },
+        {
+          "property": "--chart-6",
+          "value": "0, 97, 76"
+        },
+        {
+          "property": "--chart-7",
+          "value": "61, 109, 38"
+        },
+        {
+          "property": "--chart-8",
+          "value": "23, 96, 68"
+        },
+        {
+          "property": "--chart-9",
+          "value": "46, 112, 50"
+        },
+        {
+          "property": "--chart-10",
+          "value": "0, 92, 43"
+        },
+        {
+          "property": "--chart-11",
+          "value": "70, 106, 50"
+        },
+        {
+          "property": "--chart-12",
+          "value": "34, 91, 53"
+        },
+        {
+          "property": "--chart-balance",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--chart-invested",
+          "value": "var(--primary-2)"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-contrast=\"high\"] .verde2",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "85, 112, 41"
+        },
+        {
+          "property": "--primary-2",
+          "value": "60, 81, 25"
+        },
+        {
+          "property": "--primary-3",
+          "value": "37, 54, 9"
+        },
+        {
+          "property": "--primary-4",
+          "value": "98, 117, 51"
+        },
+        {
+          "property": "--primary-5",
+          "value": "245, 249, 238"
+        },
+        {
+          "property": "--chart-1",
+          "value": "85, 112, 41"
+        },
+        {
+          "property": "--chart-2",
+          "value": "60, 81, 25"
+        },
+        {
+          "property": "--chart-3",
+          "value": "37, 54, 9"
+        },
+        {
+          "property": "--chart-4",
+          "value": "98, 117, 51"
+        },
+        {
+          "property": "--chart-5",
+          "value": "76, 101, 45"
+        },
+        {
+          "property": "--chart-6",
+          "value": "91, 107, 32"
+        },
+        {
+          "property": "--chart-7",
+          "value": "70, 96, 45"
+        },
+        {
+          "property": "--chart-8",
+          "value": "89, 101, 43"
+        },
+        {
+          "property": "--chart-9",
+          "value": "61, 92, 32"
+        },
+        {
+          "property": "--chart-10",
+          "value": "83, 107, 50"
+        },
+        {
+          "property": "--chart-11",
+          "value": "53, 75, 28"
+        },
+        {
+          "property": "--chart-12",
+          "value": "69, 88, 44"
+        },
+        {
+          "property": "--chart-balance",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--chart-invested",
+          "value": "var(--primary-2)"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-contrast=\"high\"] .verde3",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "0, 117, 83"
+        },
+        {
+          "property": "--primary-2",
+          "value": "0, 87, 62"
+        },
+        {
+          "property": "--primary-3",
+          "value": "0, 61, 44"
+        },
+        {
+          "property": "--primary-4",
+          "value": "35, 120, 94"
+        },
+        {
+          "property": "--primary-5",
+          "value": "231, 251, 245"
+        },
+        {
+          "property": "--chart-1",
+          "value": "0, 117, 83"
+        },
+        {
+          "property": "--chart-2",
+          "value": "0, 87, 62"
+        },
+        {
+          "property": "--chart-3",
+          "value": "0, 61, 44"
+        },
+        {
+          "property": "--chart-4",
+          "value": "35, 120, 94"
+        },
+        {
+          "property": "--chart-5",
+          "value": "18, 104, 77"
+        },
+        {
+          "property": "--chart-6",
+          "value": "0, 102, 94"
+        },
+        {
+          "property": "--chart-7",
+          "value": "52, 111, 84"
+        },
+        {
+          "property": "--chart-8",
+          "value": "28, 98, 86"
+        },
+        {
+          "property": "--chart-9",
+          "value": "42, 114, 95"
+        },
+        {
+          "property": "--chart-10",
+          "value": "0, 95, 72"
+        },
+        {
+          "property": "--chart-11",
+          "value": "59, 104, 78"
+        },
+        {
+          "property": "--chart-12",
+          "value": "32, 92, 69"
+        },
+        {
+          "property": "--chart-balance",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--chart-invested",
+          "value": "var(--primary-2)"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-contrast=\"high\"] .verde4",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "63, 125, 49"
+        },
+        {
+          "property": "--primary-2",
+          "value": "41, 87, 29"
+        },
+        {
+          "property": "--primary-3",
+          "value": "27, 58, 19"
+        },
+        {
+          "property": "--primary-4",
+          "value": "77, 118, 60"
+        },
+        {
+          "property": "--primary-5",
+          "value": "239, 250, 235"
+        },
+        {
+          "property": "--chart-1",
+          "value": "63, 125, 49"
+        },
+        {
+          "property": "--chart-2",
+          "value": "41, 87, 29"
+        },
+        {
+          "property": "--chart-3",
+          "value": "27, 58, 19"
+        },
+        {
+          "property": "--chart-4",
+          "value": "77, 118, 60"
+        },
+        {
+          "property": "--chart-5",
+          "value": "53, 103, 41"
+        },
+        {
+          "property": "--chart-6",
+          "value": "40, 112, 60"
+        },
+        {
+          "property": "--chart-7",
+          "value": "66, 102, 47"
+        },
+        {
+          "property": "--chart-8",
+          "value": "46, 99, 56"
+        },
+        {
+          "property": "--chart-9",
+          "value": "59, 112, 43"
+        },
+        {
+          "property": "--chart-10",
+          "value": "33, 88, 43"
+        },
+        {
+          "property": "--chart-11",
+          "value": "75, 105, 60"
+        },
+        {
+          "property": "--chart-12",
+          "value": "49, 91, 39"
+        },
+        {
+          "property": "--chart-balance",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--chart-invested",
+          "value": "var(--primary-2)"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-contrast=\"high\"] .rosa1",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "166, 61, 87"
+        },
+        {
+          "property": "--primary-2",
+          "value": "125, 41, 72"
+        },
+        {
+          "property": "--primary-3",
+          "value": "87, 27, 49"
+        },
+        {
+          "property": "--primary-4",
+          "value": "155, 73, 97"
+        },
+        {
+          "property": "--primary-5",
+          "value": "255, 240, 245"
+        },
+        {
+          "property": "--chart-1",
+          "value": "166, 61, 87"
+        },
+        {
+          "property": "--chart-2",
+          "value": "125, 41, 72"
+        },
+        {
+          "property": "--chart-3",
+          "value": "87, 27, 49"
+        },
+        {
+          "property": "--chart-4",
+          "value": "155, 73, 97"
+        },
+        {
+          "property": "--chart-5",
+          "value": "132, 52, 79"
+        },
+        {
+          "property": "--chart-6",
+          "value": "143, 46, 89"
+        },
+        {
+          "property": "--chart-7",
+          "value": "113, 64, 91"
+        },
+        {
+          "property": "--chart-8",
+          "value": "150, 58, 72"
+        },
+        {
+          "property": "--chart-9",
+          "value": "115, 49, 74"
+        },
+        {
+          "property": "--chart-10",
+          "value": "139, 70, 90"
+        },
+        {
+          "property": "--chart-11",
+          "value": "106, 41, 64"
+        },
+        {
+          "property": "--chart-12",
+          "value": "90, 58, 73"
+        },
+        {
+          "property": "--chart-balance",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--chart-invested",
+          "value": "var(--primary-2)"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-contrast=\"high\"] .azul2",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "10, 97, 136"
+        },
+        {
+          "property": "--primary-2",
+          "value": "7, 73, 105"
+        },
+        {
+          "property": "--primary-3",
+          "value": "0, 53, 77"
+        },
+        {
+          "property": "--primary-4",
+          "value": "23, 110, 145"
+        },
+        {
+          "property": "--primary-5",
+          "value": "233, 248, 255"
+        },
+        {
+          "property": "--chart-1",
+          "value": "10, 97, 136"
+        },
+        {
+          "property": "--chart-2",
+          "value": "7, 73, 105"
+        },
+        {
+          "property": "--chart-3",
+          "value": "0, 53, 77"
+        },
+        {
+          "property": "--chart-4",
+          "value": "23, 110, 145"
+        },
+        {
+          "property": "--chart-5",
+          "value": "0, 90, 120"
+        },
+        {
+          "property": "--chart-6",
+          "value": "0, 99, 120"
+        },
+        {
+          "property": "--chart-7",
+          "value": "49, 94, 131"
+        },
+        {
+          "property": "--chart-8",
+          "value": "22, 84, 119"
+        },
+        {
+          "property": "--chart-9",
+          "value": "7, 95, 130"
+        },
+        {
+          "property": "--chart-10",
+          "value": "37, 84, 114"
+        },
+        {
+          "property": "--chart-11",
+          "value": "0, 96, 122"
+        },
+        {
+          "property": "--chart-12",
+          "value": "50, 77, 104"
+        },
+        {
+          "property": "--chart-balance",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--chart-invested",
+          "value": "var(--primary-2)"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-contrast=\"high\"] .azul3",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "19, 52, 116"
+        },
+        {
+          "property": "--primary-2",
+          "value": "0, 29, 86"
+        },
+        {
+          "property": "--primary-3",
+          "value": "0, 19, 56"
+        },
+        {
+          "property": "--primary-4",
+          "value": "53, 77, 130"
+        },
+        {
+          "property": "--primary-5",
+          "value": "236, 241, 255"
+        },
+        {
+          "property": "--chart-1",
+          "value": "19, 52, 116"
+        },
+        {
+          "property": "--chart-2",
+          "value": "0, 29, 86"
+        },
+        {
+          "property": "--chart-3",
+          "value": "0, 19, 56"
+        },
+        {
+          "property": "--chart-4",
+          "value": "53, 77, 130"
+        },
+        {
+          "property": "--chart-5",
+          "value": "38, 62, 112"
+        },
+        {
+          "property": "--chart-6",
+          "value": "33, 75, 117"
+        },
+        {
+          "property": "--chart-7",
+          "value": "63, 71, 120"
+        },
+        {
+          "property": "--chart-8",
+          "value": "40, 59, 104"
+        },
+        {
+          "property": "--chart-9",
+          "value": "12, 60, 112"
+        },
+        {
+          "property": "--chart-10",
+          "value": "56, 69, 105"
+        },
+        {
+          "property": "--chart-11",
+          "value": "24, 56, 97"
+        },
+        {
+          "property": "--chart-12",
+          "value": "46, 56, 86"
+        },
+        {
+          "property": "--chart-balance",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--chart-invested",
+          "value": "var(--primary-2)"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-contrast=\"high\"][data-contrast-theme=\"dark\"]",
+      "declarations": [
+        {
+          "property": "color-scheme",
+          "value": "dark"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-contrast=\"high\"][data-contrast-theme=\"dark\"]\r\n    :where(\r\n      body,\r\n      .default,\r\n      .azul1,\r\n      .laranja1,\r\n      .laranja2,\r\n      .verde1,\r\n      .verde2,\r\n      .verde3,\r\n      .verde4,\r\n      .rosa1,\r\n      .azul2,\r\n      .azul3\r\n    )",
+      "declarations": [
+        {
+          "property": "--white",
+          "value": "255, 255, 255"
+        },
+        {
+          "property": "--primary-1",
+          "value": "255, 223, 0"
+        },
+        {
+          "property": "--primary-2",
+          "value": "255, 198, 0"
+        },
+        {
+          "property": "--primary-3",
+          "value": "230, 168, 0"
+        },
+        {
+          "property": "--primary-4",
+          "value": "255, 235, 102"
+        },
+        {
+          "property": "--primary-5",
+          "value": "38, 33, 0"
+        },
+        {
+          "property": "--secondary-1",
+          "value": "0, 103, 122"
+        },
+        {
+          "property": "--secondary-2",
+          "value": "0, 83, 102"
+        },
+        {
+          "property": "--secondary-3",
+          "value": "0, 61, 77"
+        },
+        {
+          "property": "--secondary-4",
+          "value": "103, 232, 249"
+        },
+        {
+          "property": "--secondary-5",
+          "value": "0, 43, 54"
+        },
+        {
+          "property": "--tertiary-1",
+          "value": "143, 36, 94"
+        },
+        {
+          "property": "--tertiary-2",
+          "value": "112, 24, 70"
+        },
+        {
+          "property": "--tertiary-3",
+          "value": "80, 13, 49"
+        },
+        {
+          "property": "--tertiary-4",
+          "value": "244, 114, 182"
+        },
+        {
+          "property": "--tertiary-5",
+          "value": "55, 7, 31"
+        },
+        {
+          "property": "--danger-1",
+          "value": "185, 28, 28"
+        },
+        {
+          "property": "--danger-2",
+          "value": "153, 27, 27"
+        },
+        {
+          "property": "--danger-3",
+          "value": "127, 29, 29"
+        },
+        {
+          "property": "--danger-4",
+          "value": "255, 123, 123"
+        },
+        {
+          "property": "--danger-5",
+          "value": "55, 9, 9"
+        },
+        {
+          "property": "--danger-6",
+          "value": "255, 107, 107"
+        },
+        {
+          "property": "--warning-1",
+          "value": "255, 223, 0"
+        },
+        {
+          "property": "--warning-2",
+          "value": "255, 198, 0"
+        },
+        {
+          "property": "--warning-3",
+          "value": "255, 235, 102"
+        },
+        {
+          "property": "--warning-4",
+          "value": "128, 96, 0"
+        },
+        {
+          "property": "--warning-5",
+          "value": "38, 33, 0"
+        },
+        {
+          "property": "--success-1",
+          "value": "8, 122, 62"
+        },
+        {
+          "property": "--success-2",
+          "value": "110, 231, 160"
+        },
+        {
+          "property": "--success-3",
+          "value": "5, 46, 22"
+        },
+        {
+          "property": "--grayscale-1",
+          "value": "255, 255, 255"
+        },
+        {
+          "property": "--grayscale-2",
+          "value": "245, 245, 245"
+        },
+        {
+          "property": "--grayscale-3",
+          "value": "224, 224, 224"
+        },
+        {
+          "property": "--grayscale-4",
+          "value": "189, 189, 189"
+        },
+        {
+          "property": "--grayscale-5",
+          "value": "51, 51, 51"
+        },
+        {
+          "property": "--overlay",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--bg-lighter",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--bg-light",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--bg-dark",
+          "value": "20, 20, 20"
+        },
+        {
+          "property": "--bg-disabled",
+          "value": "51, 51, 51"
+        },
+        {
+          "property": "--surface-card",
+          "value": "11, 11, 11"
+        },
+        {
+          "property": "--text-primary",
+          "value": "255, 255, 255"
+        },
+        {
+          "property": "--text-secondary",
+          "value": "245, 245, 245"
+        },
+        {
+          "property": "--text-tertiary",
+          "value": "224, 224, 224"
+        },
+        {
+          "property": "--text-disabled",
+          "value": "189, 189, 189"
+        },
+        {
+          "property": "--content-primary",
+          "value": "var(--text-primary)"
+        },
+        {
+          "property": "--content-secondary",
+          "value": "var(--text-secondary)"
+        },
+        {
+          "property": "--content-muted",
+          "value": "var(--text-tertiary)"
+        },
+        {
+          "property": "--content-disabled",
+          "value": "var(--text-disabled)"
+        },
+        {
+          "property": "--content-link",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--notice-secondary-content",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--action-primary-background",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--action-primary-background-hover",
+          "value": "var(--primary-2)"
+        },
+        {
+          "property": "--action-primary-background-active",
+          "value": "var(--primary-3)"
+        },
+        {
+          "property": "--action-primary-content",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--selection-background",
+          "value": "var(--primary-5)"
+        },
+        {
+          "property": "--selection-background-hover",
+          "value": "55, 48, 0"
+        },
+        {
+          "property": "--selection-border",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--selection-content",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--action-warning-background",
+          "value": "var(--warning-1)"
+        },
+        {
+          "property": "--action-warning-background-hover",
+          "value": "var(--warning-2)"
+        },
+        {
+          "property": "--action-warning-background-active",
+          "value": "var(--warning-3)"
+        },
+        {
+          "property": "--action-warning-content",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--surface-page",
+          "value": "var(--bg-light)"
+        },
+        {
+          "property": "--surface-card-semantic",
+          "value": "var(--surface-card)"
+        },
+        {
+          "property": "--surface-subtle",
+          "value": "var(--bg-dark)"
+        },
+        {
+          "property": "--surface-muted",
+          "value": "34, 34, 34"
+        },
+        {
+          "property": "--surface-disabled",
+          "value": "var(--bg-disabled)"
+        },
+        {
+          "property": "--surface-action-neutral",
+          "value": "33, 33, 33"
+        },
+        {
+          "property": "--surface-tooltip",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--footer-background",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--border-subtle",
+          "value": "189, 189, 189"
+        },
+        {
+          "property": "--border-default",
+          "value": "245, 245, 245"
+        },
+        {
+          "property": "--border-strong",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--border-disabled",
+          "value": "117, 117, 117"
+        },
+        {
+          "property": "--focus-ring",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--icon-default",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--feedback-danger-strong",
+          "value": "var(--danger-1)"
+        },
+        {
+          "property": "--feedback-danger-soft",
+          "value": "var(--danger-5)"
+        },
+        {
+          "property": "--feedback-danger-border",
+          "value": "var(--danger-1)"
+        },
+        {
+          "property": "--feedback-danger-content",
+          "value": "255, 204, 204"
+        },
+        {
+          "property": "--feedback-warning-strong",
+          "value": "var(--warning-1)"
+        },
+        {
+          "property": "--feedback-warning-soft",
+          "value": "var(--warning-5)"
+        },
+        {
+          "property": "--feedback-warning-border",
+          "value": "var(--warning-1)"
+        },
+        {
+          "property": "--feedback-warning-content",
+          "value": "var(--warning-3)"
+        },
+        {
+          "property": "--feedback-success-strong",
+          "value": "var(--success-1)"
+        },
+        {
+          "property": "--feedback-success-soft",
+          "value": "var(--success-3)"
+        },
+        {
+          "property": "--feedback-success-border",
+          "value": "var(--success-1)"
+        },
+        {
+          "property": "--feedback-success-content",
+          "value": "110, 231, 160"
+        },
+        {
+          "property": "--feedback-info-strong",
+          "value": "var(--secondary-1)"
+        },
+        {
+          "property": "--feedback-info-soft",
+          "value": "var(--secondary-5)"
+        },
+        {
+          "property": "--feedback-info-border",
+          "value": "var(--secondary-1)"
+        },
+        {
+          "property": "--feedback-info-content",
+          "value": "103, 232, 249"
+        },
+        {
+          "property": "--field-surface",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--field-surface-disabled",
+          "value": "var(--bg-disabled)"
+        },
+        {
+          "property": "--field-border-default",
+          "value": "var(--grayscale-3)"
+        },
+        {
+          "property": "--field-border-active",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--field-border-error",
+          "value": "var(--danger-1)"
+        },
+        {
+          "property": "--field-content",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--field-placeholder",
+          "value": "var(--grayscale-3)"
+        },
+        {
+          "property": "--field-content-disabled",
+          "value": "var(--grayscale-4)"
+        },
+        {
+          "property": "--field-icon",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--field-assistive",
+          "value": "var(--grayscale-2)"
+        },
+        {
+          "property": "--field-assistive-error",
+          "value": "var(--danger-3)"
+        },
+        {
+          "property": "--switch-track-off",
+          "value": "97, 97, 97"
+        },
+        {
+          "property": "--switch-track-disabled",
+          "value": "66, 66, 66"
+        },
+        {
+          "property": "--switch-track-primary-on",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--switch-track-secondary-on",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--switch-track-tertiary-on",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--switch-track-contract-on",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--switch-track-contract-off",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--switch-track-theme-on",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--switch-track-theme-off",
+          "value": "var(--grayscale-4)"
+        },
+        {
+          "property": "--switch-knob",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--switch-knob-disabled",
+          "value": "var(--grayscale-4)"
+        },
+        {
+          "property": "--switch-knob-theme-on",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--radio-surface",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--radio-border",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--radio-selected",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--radio-error",
+          "value": "var(--danger-1)"
+        },
+        {
+          "property": "--radio-disabled-border",
+          "value": "var(--grayscale-4)"
+        },
+        {
+          "property": "--radio-disabled-surface",
+          "value": "var(--bg-disabled)"
+        },
+        {
+          "property": "--radio-disabled-content",
+          "value": "var(--grayscale-4)"
+        },
+        {
+          "property": "--checkbox-surface",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--checkbox-border",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--checkbox-selected",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--checkbox-error",
+          "value": "var(--danger-1)"
+        },
+        {
+          "property": "--checkbox-disabled-border",
+          "value": "var(--grayscale-4)"
+        },
+        {
+          "property": "--checkbox-disabled-surface",
+          "value": "var(--bg-disabled)"
+        },
+        {
+          "property": "--checkbox-disabled-content",
+          "value": "var(--grayscale-4)"
+        },
+        {
+          "property": "--loading-circular-track",
+          "value": "var(--grayscale-5)"
+        },
+        {
+          "property": "--loading-circular-indicator",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--chart-1",
+          "value": "255, 223, 0"
+        },
+        {
+          "property": "--chart-2",
+          "value": "103, 232, 249"
+        },
+        {
+          "property": "--chart-3",
+          "value": "244, 114, 182"
+        },
+        {
+          "property": "--chart-4",
+          "value": "110, 231, 160"
+        },
+        {
+          "property": "--chart-5",
+          "value": "255, 123, 123"
+        },
+        {
+          "property": "--chart-6",
+          "value": "196, 181, 253"
+        },
+        {
+          "property": "--chart-7",
+          "value": "253, 186, 116"
+        },
+        {
+          "property": "--chart-8",
+          "value": "147, 197, 253"
+        },
+        {
+          "property": "--chart-9",
+          "value": "216, 180, 254"
+        },
+        {
+          "property": "--chart-10",
+          "value": "190, 242, 100"
+        },
+        {
+          "property": "--chart-11",
+          "value": "252, 165, 165"
+        },
+        {
+          "property": "--chart-12",
+          "value": "94, 234, 212"
+        },
+        {
+          "property": "--chart-donut-1",
+          "value": "var(--chart-1)"
+        },
+        {
+          "property": "--chart-donut-2",
+          "value": "var(--chart-2)"
+        },
+        {
+          "property": "--chart-donut-3",
+          "value": "var(--chart-3)"
+        },
+        {
+          "property": "--chart-donut-4",
+          "value": "var(--chart-4)"
+        },
+        {
+          "property": "--chart-donut-5",
+          "value": "var(--chart-5)"
+        },
+        {
+          "property": "--chart-donut-6",
+          "value": "var(--chart-6)"
+        },
+        {
+          "property": "--chart-donut-7",
+          "value": "var(--chart-7)"
+        },
+        {
+          "property": "--chart-donut-8",
+          "value": "var(--chart-8)"
+        },
+        {
+          "property": "--chart-donut-9",
+          "value": "var(--chart-9)"
+        },
+        {
+          "property": "--chart-donut-10",
+          "value": "var(--chart-10)"
+        },
+        {
+          "property": "--chart-donut-11",
+          "value": "var(--chart-11)"
+        },
+        {
+          "property": "--chart-donut-12",
+          "value": "var(--chart-12)"
+        },
+        {
+          "property": "--chart-muted-1",
+          "value": "245, 245, 245"
+        },
+        {
+          "property": "--chart-muted-2",
+          "value": "224, 224, 224"
+        },
+        {
+          "property": "--chart-muted-3",
+          "value": "189, 189, 189"
+        },
+        {
+          "property": "--chart-muted-4",
+          "value": "255, 255, 255"
+        },
+        {
+          "property": "--chart-tooltip-background",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--chart-tooltip-content",
+          "value": "255, 255, 255"
+        },
+        {
+          "property": "--chart-line-neutral",
+          "value": "var(--white)"
+        },
+        {
+          "property": "--chart-balance",
+          "value": "var(--success-1)"
+        },
+        {
+          "property": "--chart-invested",
+          "value": "var(--secondary-1)"
+        },
+        {
+          "property": "--chart-grid",
+          "value": "189, 189, 189"
+        },
+        {
+          "property": "--chart-axis",
+          "value": "255, 255, 255"
+        },
+        {
+          "property": "--chart-axis-border",
+          "value": "224, 224, 224"
+        },
+        {
+          "property": "--chart-tooltip-text",
+          "value": "255, 255, 255"
+        },
+        {
+          "property": "--shadow-card",
+          "value": "none"
+        },
+        {
+          "property": "--shadow-card-hover",
+          "value": "none"
+        },
+        {
+          "property": "--shadow-card-md",
+          "value": "none"
+        },
+        {
+          "property": "--shadow-button",
+          "value": "none"
+        },
+        {
+          "property": "--shadow-input",
+          "value": "none"
+        },
+        {
+          "property": "--shadow-header",
+          "value": "none"
+        },
+        {
+          "property": "--shadow-focus",
+          "value": "0 0 0 2px #000000, 0 0 0 5px #ffdf00"
+        },
+        {
+          "property": "--shadow-outline",
+          "value": "0 0 0 2px #ffdf00"
+        },
+        {
+          "property": "--shadow-button-focus",
+          "value": "0 0 0 2px #000000, 0 0 0 5px #ffdf00"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-contrast=\"high\"][data-focus-navigation=\"keyboard\"]\r\n    :where(a, button, input, select, textarea, [tabindex]):focus-visible,\r\n  html[data-contrast=\"high\"][data-focus-navigation=\"keyboard\"]\r\n    :where(.field-keyboard-focus-ring, .radio-option-focus):focus-within",
+      "declarations": [
+        {
+          "property": "outline",
+          "value": "3px solid #ffffff !important"
+        },
+        {
+          "property": "outline-offset",
+          "value": "2px !important"
+        },
+        {
+          "property": "box-shadow",
+          "value": "0 0 0 5px #000000 !important"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-contrast=\"high\"][data-contrast-theme=\"dark\"][data-focus-navigation=\"keyboard\"]\r\n    :where(a, button, input, select, textarea, [tabindex]):focus-visible,\r\n  html[data-contrast=\"high\"][data-contrast-theme=\"dark\"][data-focus-navigation=\"keyboard\"]\r\n    :where(.field-keyboard-focus-ring, .radio-option-focus):focus-within",
+      "declarations": [
+        {
+          "property": "outline-color",
+          "value": "#ffdf00 !important"
+        },
+        {
+          "property": "box-shadow",
+          "value": "0 0 0 5px #000000 !important"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-contrast=\"high\"][data-contrast-theme=\"dark\"]\r\n    :where(\r\n      .checkbox-control:checked,\r\n      input[type=\"checkbox\"]:not(.peer):not(.sr-only):not(.hidden):checked,\r\n      .peer:checked + .checkbox-control-proxy\r\n    )",
+      "declarations": [
+        {
+          "property": "background-image",
+          "value": "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.5 8.2 6.5 11 12.5 4.8' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E\")"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-contrast=\"high\"][data-contrast-theme=\"dark\"]\r\n    :where(\r\n      .checkbox-control:indeterminate,\r\n      input[type=\"checkbox\"]:not(.peer):not(.sr-only):not(.hidden):indeterminate\r\n    )",
+      "declarations": [
+        {
+          "property": "background-image",
+          "value": "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 8h8' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E\")"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-contrast=\"high\"][data-contrast-theme=\"dark\"]\r\n    :where(\r\n      .bg-primary-1.text-white,\r\n      .bg-primary-2.text-white,\r\n      .bg-primary-3.text-white,\r\n      .bg-primary-4.text-white,\r\n      .bg-warning-1.text-white\r\n    )",
+      "declarations": [
+        {
+          "property": "color",
+          "value": "#000000 !important"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-contrast=\"high\"] :where(.apexcharts-gridline)",
+      "declarations": [
+        {
+          "property": "stroke-width",
+          "value": "1.5"
+        }
+      ]
+    }
+  ],
+  "themes": [
+    {
+      "selector": ":is([data-ds-theme=\"azul1\"], .azul1)",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "15, 98, 193"
+        },
+        {
+          "property": "--primary-2",
+          "value": "7, 68, 138"
+        },
+        {
+          "property": "--primary-3",
+          "value": "22, 44, 100"
+        },
+        {
+          "property": "--primary-4",
+          "value": "197, 214, 254"
+        },
+        {
+          "property": "--primary-5",
+          "value": "235, 240, 255"
+        }
+      ]
+    },
+    {
+      "selector": ":is([data-ds-theme=\"azul2\"], .azul2)",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "13, 150, 212"
+        },
+        {
+          "property": "--primary-2",
+          "value": "10, 97, 136"
+        },
+        {
+          "property": "--primary-3",
+          "value": "0, 53, 77"
+        },
+        {
+          "property": "--primary-4",
+          "value": "142, 220, 255"
+        },
+        {
+          "property": "--primary-5",
+          "value": "233, 248, 255"
+        },
+        {
+          "property": "--content-link",
+          "value": "var(--primary-2)"
+        }
+      ]
+    },
+    {
+      "selector": ":is([data-ds-theme=\"azul3\"], .azul3)",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "19, 52, 116"
+        },
+        {
+          "property": "--primary-2",
+          "value": "0, 29, 86"
+        },
+        {
+          "property": "--primary-3",
+          "value": "0, 19, 56"
+        },
+        {
+          "property": "--primary-4",
+          "value": "161, 193, 254"
+        },
+        {
+          "property": "--primary-5",
+          "value": "230, 239, 255"
+        }
+      ]
+    },
+    {
+      "selector": ":is([data-ds-theme=\"laranja1\"], .laranja1)",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "234, 113, 0"
+        },
+        {
+          "property": "--primary-2",
+          "value": "200, 93, 0"
+        },
+        {
+          "property": "--primary-3",
+          "value": "146, 68, 0"
+        },
+        {
+          "property": "--primary-4",
+          "value": "255, 196, 137"
+        },
+        {
+          "property": "--primary-5",
+          "value": "255, 235, 215"
+        },
+        {
+          "property": "--content-link",
+          "value": "var(--primary-3)"
+        }
+      ]
+    },
+    {
+      "selector": ":is([data-ds-theme=\"laranja2\"], .laranja2)",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "242, 93, 33"
+        },
+        {
+          "property": "--primary-2",
+          "value": "181, 68, 22"
+        },
+        {
+          "property": "--primary-3",
+          "value": "128, 45, 11"
+        },
+        {
+          "property": "--primary-4",
+          "value": "255, 151, 109"
+        },
+        {
+          "property": "--primary-5",
+          "value": "255, 229, 219"
+        },
+        {
+          "property": "--content-link",
+          "value": "var(--primary-2)"
+        }
+      ]
+    },
+    {
+      "selector": ":is([data-ds-theme=\"verde1\"], .verde1)",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "0, 110, 47"
+        },
+        {
+          "property": "--primary-2",
+          "value": "0, 81, 34"
+        },
+        {
+          "property": "--primary-3",
+          "value": "0, 52, 22"
+        },
+        {
+          "property": "--primary-4",
+          "value": "198, 238, 215"
+        },
+        {
+          "property": "--primary-5",
+          "value": "229, 245, 236"
+        }
+      ]
+    },
+    {
+      "selector": ":is([data-ds-theme=\"verde2\"], .verde2)",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "85, 112, 41"
+        },
+        {
+          "property": "--primary-2",
+          "value": "60, 81, 25"
+        },
+        {
+          "property": "--primary-3",
+          "value": "37, 54, 9"
+        },
+        {
+          "property": "--primary-4",
+          "value": "170, 184, 148"
+        },
+        {
+          "property": "--primary-5",
+          "value": "236, 242, 228"
+        }
+      ]
+    },
+    {
+      "selector": ":is([data-ds-theme=\"verde3\"], .verde3)",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "11, 174, 126"
+        },
+        {
+          "property": "--primary-2",
+          "value": "0, 117, 83"
+        },
+        {
+          "property": "--primary-3",
+          "value": "0, 71, 51"
+        },
+        {
+          "property": "--primary-4",
+          "value": "140, 221, 197"
+        },
+        {
+          "property": "--primary-5",
+          "value": "227, 250, 243"
+        },
+        {
+          "property": "--content-link",
+          "value": "var(--primary-2)"
+        },
+        {
+          "property": "--focus-ring",
+          "value": "var(--primary-2)"
+        }
+      ]
+    },
+    {
+      "selector": ":is([data-ds-theme=\"verde4\"], .verde4)",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "64, 128, 50"
+        },
+        {
+          "property": "--primary-2",
+          "value": "78, 163, 54"
+        },
+        {
+          "property": "--primary-3",
+          "value": "41, 87, 29"
+        },
+        {
+          "property": "--primary-4",
+          "value": "169, 209, 163"
+        },
+        {
+          "property": "--primary-5",
+          "value": "231, 250, 228"
+        }
+      ]
+    },
+    {
+      "selector": ":is([data-ds-theme=\"rosa1\"], .rosa1)",
+      "declarations": [
+        {
+          "property": "--primary-1",
+          "value": "217, 118, 103"
+        },
+        {
+          "property": "--primary-2",
+          "value": "178, 85, 71"
+        },
+        {
+          "property": "--primary-3",
+          "value": "114, 49, 39"
+        },
+        {
+          "property": "--primary-4",
+          "value": "245, 203, 197"
+        },
+        {
+          "property": "--primary-5",
+          "value": "255, 239, 236"
+        },
+        {
+          "property": "--content-link",
+          "value": "var(--primary-2)"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-color-scheme=\"dark\"] :is([data-ds-theme=\"azul1\"], [data-ds-theme=\"azul2\"], [data-ds-theme=\"azul3\"]),\n  html[data-color-scheme=\"dark\"]:is([data-ds-theme=\"azul1\"], [data-ds-theme=\"azul2\"], [data-ds-theme=\"azul3\"])",
+      "declarations": [
+        {
+          "property": "--content-link",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--action-primary-background",
+          "value": "7, 68, 138"
+        },
+        {
+          "property": "--action-primary-background-hover",
+          "value": "15, 98, 193"
+        },
+        {
+          "property": "--action-primary-background-active",
+          "value": "22, 44, 100"
+        },
+        {
+          "property": "--primary-1",
+          "value": "74, 144, 226"
+        },
+        {
+          "property": "--primary-2",
+          "value": "52, 117, 194"
+        },
+        {
+          "property": "--primary-3",
+          "value": "80, 105, 170"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-color-scheme=\"dark\"] :is([data-ds-theme=\"laranja1\"], [data-ds-theme=\"laranja2\"]),\n  html[data-color-scheme=\"dark\"]:is([data-ds-theme=\"laranja1\"], [data-ds-theme=\"laranja2\"])",
+      "declarations": [
+        {
+          "property": "--content-link",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--action-primary-background",
+          "value": "146, 68, 0"
+        },
+        {
+          "property": "--action-primary-background-hover",
+          "value": "181, 68, 22"
+        },
+        {
+          "property": "--action-primary-background-active",
+          "value": "105, 47, 0"
+        },
+        {
+          "property": "--primary-1",
+          "value": "234, 113, 0"
+        },
+        {
+          "property": "--primary-2",
+          "value": "200, 93, 0"
+        },
+        {
+          "property": "--primary-3",
+          "value": "146, 68, 0"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-color-scheme=\"dark\"] :is([data-ds-theme=\"verde1\"], [data-ds-theme=\"verde2\"], [data-ds-theme=\"verde3\"], [data-ds-theme=\"verde4\"]),\n  html[data-color-scheme=\"dark\"]:is([data-ds-theme=\"verde1\"], [data-ds-theme=\"verde2\"], [data-ds-theme=\"verde3\"], [data-ds-theme=\"verde4\"])",
+      "declarations": [
+        {
+          "property": "--content-link",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--action-primary-background",
+          "value": "0, 110, 47"
+        },
+        {
+          "property": "--action-primary-background-hover",
+          "value": "20, 132, 67"
+        },
+        {
+          "property": "--action-primary-background-active",
+          "value": "0, 77, 34"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-color-scheme=\"dark\"] :is([data-ds-theme=\"rosa1\"]),\n  html[data-color-scheme=\"dark\"]:is([data-ds-theme=\"rosa1\"])",
+      "declarations": [
+        {
+          "property": "--content-link",
+          "value": "var(--primary-1)"
+        },
+        {
+          "property": "--action-primary-background",
+          "value": "166, 61, 87"
+        },
+        {
+          "property": "--action-primary-background-hover",
+          "value": "190, 72, 104"
+        },
+        {
+          "property": "--action-primary-background-active",
+          "value": "125, 41, 72"
+        }
+      ]
+    }
+  ]
+}

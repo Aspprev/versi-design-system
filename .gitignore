@@ -1,0 +1,11 @@
+node_modules
+dist
+storybook-static
+*.tsbuildinfo
+
+coverage
+test-results
+playwright-report
+.env
+
+*.tgz

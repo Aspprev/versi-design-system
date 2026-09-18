@@ -1,0 +1,3003 @@
+[
+  {
+    "name": "Afeganistão",
+    "alpha2Code": "AF",
+    "alpha3Code": "AFG",
+    "callingCodes": [
+      "93"
+    ],
+    "flags": {
+      "svg": "/flags/af.svg",
+      "png": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_the_Taliban.svg/320px-Flag_of_the_Taliban.svg.png"
+    }
+  },
+  {
+    "name": "Ilhas de Aland",
+    "alpha2Code": "AX",
+    "alpha3Code": "ALA",
+    "callingCodes": [
+      "358"
+    ],
+    "flags": {
+      "svg": "/flags/ax.svg",
+      "png": "https://flagcdn.com/w320/ax.png"
+    }
+  },
+  {
+    "name": "Albânia",
+    "alpha2Code": "AL",
+    "alpha3Code": "ALB",
+    "callingCodes": [
+      "355"
+    ],
+    "flags": {
+      "svg": "/flags/al.svg",
+      "png": "https://flagcdn.com/w320/al.png"
+    }
+  },
+  {
+    "name": "Argélia",
+    "alpha2Code": "DZ",
+    "alpha3Code": "DZA",
+    "callingCodes": [
+      "213"
+    ],
+    "flags": {
+      "svg": "/flags/dz.svg",
+      "png": "https://flagcdn.com/w320/dz.png"
+    }
+  },
+  {
+    "name": "Samoa Americana",
+    "alpha2Code": "AS",
+    "alpha3Code": "ASM",
+    "callingCodes": [
+      "1"
+    ],
+    "flags": {
+      "svg": "/flags/as.svg",
+      "png": "https://flagcdn.com/w320/as.png"
+    }
+  },
+  {
+    "name": "Andorra",
+    "alpha2Code": "AD",
+    "alpha3Code": "AND",
+    "callingCodes": [
+      "376"
+    ],
+    "flags": {
+      "svg": "/flags/ad.svg",
+      "png": "https://flagcdn.com/w320/ad.png"
+    }
+  },
+  {
+    "name": "Angola",
+    "alpha2Code": "AO",
+    "alpha3Code": "AGO",
+    "callingCodes": [
+      "244"
+    ],
+    "flags": {
+      "svg": "/flags/ao.svg",
+      "png": "https://flagcdn.com/w320/ao.png"
+    }
+  },
+  {
+    "name": "Anguila",
+    "alpha2Code": "AI",
+    "alpha3Code": "AIA",
+    "callingCodes": [
+      "1"
+    ],
+    "flags": {
+      "svg": "/flags/ai.svg",
+      "png": "https://flagcdn.com/w320/ai.png"
+    }
+  },
+  {
+    "name": "Antárctida",
+    "alpha2Code": "AQ",
+    "alpha3Code": "ATA",
+    "callingCodes": [
+      "672"
+    ],
+    "flags": {
+      "svg": "/flags/aq.svg",
+      "png": "https://flagcdn.com/w320/aq.png"
+    }
+  },
+  {
+    "name": "Antígua e Barbuda",
+    "alpha2Code": "AG",
+    "alpha3Code": "ATG",
+    "callingCodes": [
+      "1"
+    ],
+    "flags": {
+      "svg": "/flags/ag.svg",
+      "png": "https://flagcdn.com/w320/ag.png"
+    }
+  },
+  {
+    "name": "Argentina",
+    "alpha2Code": "AR",
+    "alpha3Code": "ARG",
+    "callingCodes": [
+      "54"
+    ],
+    "flags": {
+      "svg": "/flags/ar.svg",
+      "png": "https://flagcdn.com/w320/ar.png"
+    }
+  },
+  {
+    "name": "Arménia",
+    "alpha2Code": "AM",
+    "alpha3Code": "ARM",
+    "callingCodes": [
+      "374"
+    ],
+    "flags": {
+      "svg": "/flags/am.svg",
+      "png": "https://flagcdn.com/w320/am.png"
+    }
+  },
+  {
+    "name": "Aruba",
+    "alpha2Code": "AW",
+    "alpha3Code": "ABW",
+    "callingCodes": [
+      "297"
+    ],
+    "flags": {
+      "svg": "/flags/aw.svg",
+      "png": "https://flagcdn.com/w320/aw.png"
+    }
+  },
+  {
+    "name": "Austrália",
+    "alpha2Code": "AU",
+    "alpha3Code": "AUS",
+    "callingCodes": [
+      "61"
+    ],
+    "flags": {
+      "svg": "/flags/au.svg",
+      "png": "https://flagcdn.com/w320/au.png"
+    }
+  },
+  {
+    "name": "Áustria",
+    "alpha2Code": "AT",
+    "alpha3Code": "AUT",
+    "callingCodes": [
+      "43"
+    ],
+    "flags": {
+      "svg": "/flags/at.svg",
+      "png": "https://flagcdn.com/w320/at.png"
+    }
+  },
+  {
+    "name": "Azerbaijão",
+    "alpha2Code": "AZ",
+    "alpha3Code": "AZE",
+    "callingCodes": [
+      "994"
+    ],
+    "flags": {
+      "svg": "/flags/az.svg",
+      "png": "https://flagcdn.com/w320/az.png"
+    }
+  },
+  {
+    "name": "Baamas",
+    "alpha2Code": "BS",
+    "alpha3Code": "BHS",
+    "callingCodes": [
+      "1"
+    ],
+    "flags": {
+      "svg": "/flags/bs.svg",
+      "png": "https://flagcdn.com/w320/bs.png"
+    }
+  },
+  {
+    "name": "Barém",
+    "alpha2Code": "BH",
+    "alpha3Code": "BHR",
+    "callingCodes": [
+      "973"
+    ],
+    "flags": {
+      "svg": "/flags/bh.svg",
+      "png": "https://flagcdn.com/w320/bh.png"
+    }
+  },
+  {
+    "name": "Bangladeche",
+    "alpha2Code": "BD",
+    "alpha3Code": "BGD",
+    "callingCodes": [
+      "880"
+    ],
+    "flags": {
+      "svg": "/flags/bd.svg",
+      "png": "https://flagcdn.com/w320/bd.png"
+    }
+  },
+  {
+    "name": "Barbados",
+    "alpha2Code": "BB",
+    "alpha3Code": "BRB",
+    "callingCodes": [
+      "1"
+    ],
+    "flags": {
+      "svg": "/flags/bb.svg",
+      "png": "https://flagcdn.com/w320/bb.png"
+    }
+  },
+  {
+    "name": "Bielorrússia",
+    "alpha2Code": "BY",
+    "alpha3Code": "BLR",
+    "callingCodes": [
+      "375"
+    ],
+    "flags": {
+      "svg": "/flags/by.svg",
+      "png": "https://flagcdn.com/w320/by.png"
+    }
+  },
+  {
+    "name": "Bélgica",
+    "alpha2Code": "BE",
+    "alpha3Code": "BEL",
+    "callingCodes": [
+      "32"
+    ],
+    "flags": {
+      "svg": "/flags/be.svg",
+      "png": "https://flagcdn.com/w320/be.png"
+    }
+  },
+  {
+    "name": "Belize",
+    "alpha2Code": "BZ",
+    "alpha3Code": "BLZ",
+    "callingCodes": [
+      "501"
+    ],
+    "flags": {
+      "svg": "/flags/bz.svg",
+      "png": "https://flagcdn.com/w320/bz.png"
+    }
+  },
+  {
+    "name": "Benim",
+    "alpha2Code": "BJ",
+    "alpha3Code": "BEN",
+    "callingCodes": [
+      "229"
+    ],
+    "flags": {
+      "svg": "/flags/bj.svg",
+      "png": "https://flagcdn.com/w320/bj.png"
+    }
+  },
+  {
+    "name": "Bermudas",
+    "alpha2Code": "BM",
+    "alpha3Code": "BMU",
+    "callingCodes": [
+      "1"
+    ],
+    "flags": {
+      "svg": "/flags/bm.svg",
+      "png": "https://flagcdn.com/w320/bm.png"
+    }
+  },
+  {
+    "name": "Butão",
+    "alpha2Code": "BT",
+    "alpha3Code": "BTN",
+    "callingCodes": [
+      "975"
+    ],
+    "flags": {
+      "svg": "/flags/bt.svg",
+      "png": "https://flagcdn.com/w320/bt.png"
+    }
+  },
+  {
+    "name": "Bolívia",
+    "alpha2Code": "BO",
+    "alpha3Code": "BOL",
+    "callingCodes": [
+      "591"
+    ],
+    "flags": {
+      "svg": "/flags/bo.svg",
+      "png": "https://flagcdn.com/w320/bo.png"
+    }
+  },
+  {
+    "name": "Bonaire",
+    "alpha2Code": "BQ",
+    "alpha3Code": "BES",
+    "callingCodes": [
+      "599"
+    ],
+    "flags": {
+      "svg": "/flags/bq.svg",
+      "png": "https://flagcdn.com/w320/bq.png"
+    }
+  },
+  {
+    "name": "Bósnia e Herzegovina",
+    "alpha2Code": "BA",
+    "alpha3Code": "BIH",
+    "callingCodes": [
+      "387"
+    ],
+    "flags": {
+      "svg": "/flags/ba.svg",
+      "png": "https://flagcdn.com/w320/ba.png"
+    }
+  },
+  {
+    "name": "Botsuana",
+    "alpha2Code": "BW",
+    "alpha3Code": "BWA",
+    "callingCodes": [
+      "267"
+    ],
+    "flags": {
+      "svg": "/flags/bw.svg",
+      "png": "https://flagcdn.com/w320/bw.png"
+    }
+  },
+  {
+    "name": "Ilha Bouvet",
+    "alpha2Code": "BV",
+    "alpha3Code": "BVT",
+    "callingCodes": [
+      "47"
+    ],
+    "flags": {
+      "svg": "/flags/bv.svg",
+      "png": "https://flagcdn.com/w320/bv.png"
+    }
+  },
+  {
+    "name": "Brasil",
+    "alpha2Code": "BR",
+    "alpha3Code": "BRA",
+    "callingCodes": [
+      "55"
+    ],
+    "flags": {
+      "svg": "/flags/br.svg",
+      "png": "https://flagcdn.com/w320/br.png"
+    }
+  },
+  {
+    "name": "Território Britânico do Oceano Índico",
+    "alpha2Code": "IO",
+    "alpha3Code": "IOT",
+    "callingCodes": [
+      "246"
+    ],
+    "flags": {
+      "svg": "/flags/io.svg",
+      "png": "https://flagcdn.com/w320/io.png"
+    }
+  },
+  {
+    "name": "Ilhas Menores Distantes dos Estados Unidos",
+    "alpha2Code": "UM",
+    "alpha3Code": "UMI",
+    "callingCodes": [
+      "246"
+    ],
+    "flags": {
+      "svg": "/flags/um.svg",
+      "png": "https://flagcdn.com/w320/um.png"
+    }
+  },
+  {
+    "name": "Ilhas Virgens Britânicas",
+    "alpha2Code": "VG",
+    "alpha3Code": "VGB",
+    "callingCodes": [
+      "1"
+    ],
+    "flags": {
+      "svg": "/flags/vg.svg",
+      "png": "https://flagcdn.com/w320/vg.png"
+    }
+  },
+  {
+    "name": "Ilhas Virgens Americanas",
+    "alpha2Code": "VI",
+    "alpha3Code": "VIR",
+    "callingCodes": [
+      "1 340"
+    ],
+    "flags": {
+      "svg": "/flags/vi.svg",
+      "png": "https://flagcdn.com/w320/vi.png"
+    }
+  },
+  {
+    "name": "Brunei",
+    "alpha2Code": "BN",
+    "alpha3Code": "BRN",
+    "callingCodes": [
+      "673"
+    ],
+    "flags": {
+      "svg": "/flags/bn.svg",
+      "png": "https://flagcdn.com/w320/bn.png"
+    }
+  },
+  {
+    "name": "Bulgária",
+    "alpha2Code": "BG",
+    "alpha3Code": "BGR",
+    "callingCodes": [
+      "359"
+    ],
+    "flags": {
+      "svg": "/flags/bg.svg",
+      "png": "https://flagcdn.com/w320/bg.png"
+    }
+  },
+  {
+    "name": "Burquina Faso",
+    "alpha2Code": "BF",
+    "alpha3Code": "BFA",
+    "callingCodes": [
+      "226"
+    ],
+    "flags": {
+      "svg": "/flags/bf.svg",
+      "png": "https://flagcdn.com/w320/bf.png"
+    }
+  },
+  {
+    "name": "Burúndi",
+    "alpha2Code": "BI",
+    "alpha3Code": "BDI",
+    "callingCodes": [
+      "257"
+    ],
+    "flags": {
+      "svg": "/flags/bi.svg",
+      "png": "https://flagcdn.com/w320/bi.png"
+    }
+  },
+  {
+    "name": "Camboja",
+    "alpha2Code": "KH",
+    "alpha3Code": "KHM",
+    "callingCodes": [
+      "855"
+    ],
+    "flags": {
+      "svg": "/flags/kh.svg",
+      "png": "https://flagcdn.com/w320/kh.png"
+    }
+  },
+  {
+    "name": "Camarões",
+    "alpha2Code": "CM",
+    "alpha3Code": "CMR",
+    "callingCodes": [
+      "237"
+    ],
+    "flags": {
+      "svg": "/flags/cm.svg",
+      "png": "https://flagcdn.com/w320/cm.png"
+    }
+  },
+  {
+    "name": "Canadá",
+    "alpha2Code": "CA",
+    "alpha3Code": "CAN",
+    "callingCodes": [
+      "1"
+    ],
+    "flags": {
+      "svg": "/flags/ca.svg",
+      "png": "https://flagcdn.com/w320/ca.png"
+    }
+  },
+  {
+    "name": "Cabo Verde",
+    "alpha2Code": "CV",
+    "alpha3Code": "CPV",
+    "callingCodes": [
+      "238"
+    ],
+    "flags": {
+      "svg": "/flags/cv.svg",
+      "png": "https://flagcdn.com/w320/cv.png"
+    }
+  },
+  {
+    "name": "Ilhas Caimão",
+    "alpha2Code": "KY",
+    "alpha3Code": "CYM",
+    "callingCodes": [
+      "1"
+    ],
+    "flags": {
+      "svg": "/flags/ky.svg",
+      "png": "https://flagcdn.com/w320/ky.png"
+    }
+  },
+  {
+    "name": "República Centro-Africana",
+    "alpha2Code": "CF",
+    "alpha3Code": "CAF",
+    "callingCodes": [
+      "236"
+    ],
+    "flags": {
+      "svg": "/flags/cf.svg",
+      "png": "https://flagcdn.com/w320/cf.png"
+    }
+  },
+  {
+    "name": "Chade",
+    "alpha2Code": "TD",
+    "alpha3Code": "TCD",
+    "callingCodes": [
+      "235"
+    ],
+    "flags": {
+      "svg": "/flags/td.svg",
+      "png": "https://flagcdn.com/w320/td.png"
+    }
+  },
+  {
+    "name": "Chile",
+    "alpha2Code": "CL",
+    "alpha3Code": "CHL",
+    "callingCodes": [
+      "56"
+    ],
+    "flags": {
+      "svg": "/flags/cl.svg",
+      "png": "https://flagcdn.com/w320/cl.png"
+    }
+  },
+  {
+    "name": "China",
+    "alpha2Code": "CN",
+    "alpha3Code": "CHN",
+    "callingCodes": [
+      "86"
+    ],
+    "flags": {
+      "svg": "/flags/cn.svg",
+      "png": "https://flagcdn.com/w320/cn.png"
+    }
+  },
+  {
+    "name": "Ilha do Natal",
+    "alpha2Code": "CX",
+    "alpha3Code": "CXR",
+    "callingCodes": [
+      "61"
+    ],
+    "flags": {
+      "svg": "/flags/cx.svg",
+      "png": "https://flagcdn.com/w320/cx.png"
+    }
+  },
+  {
+    "name": "Ilhas dos Cocos",
+    "alpha2Code": "CC",
+    "alpha3Code": "CCK",
+    "callingCodes": [
+      "61"
+    ],
+    "flags": {
+      "svg": "/flags/cc.svg",
+      "png": "https://flagcdn.com/w320/cc.png"
+    }
+  },
+  {
+    "name": "Colômbia",
+    "alpha2Code": "CO",
+    "alpha3Code": "COL",
+    "callingCodes": [
+      "57"
+    ],
+    "flags": {
+      "svg": "/flags/co.svg",
+      "png": "https://flagcdn.com/w320/co.png"
+    }
+  },
+  {
+    "name": "Comores",
+    "alpha2Code": "KM",
+    "alpha3Code": "COM",
+    "callingCodes": [
+      "269"
+    ],
+    "flags": {
+      "svg": "/flags/km.svg",
+      "png": "https://flagcdn.com/w320/km.png"
+    }
+  },
+  {
+    "name": "Congo",
+    "alpha2Code": "CG",
+    "alpha3Code": "COG",
+    "callingCodes": [
+      "242"
+    ],
+    "flags": {
+      "svg": "/flags/cg.svg",
+      "png": "https://flagcdn.com/w320/cg.png"
+    }
+  },
+  {
+    "name": "RD Congo",
+    "alpha2Code": "CD",
+    "alpha3Code": "COD",
+    "callingCodes": [
+      "243"
+    ],
+    "flags": {
+      "svg": "/flags/cd.svg",
+      "png": "https://flagcdn.com/w320/cd.png"
+    }
+  },
+  {
+    "name": "Ilhas Cook",
+    "alpha2Code": "CK",
+    "alpha3Code": "COK",
+    "callingCodes": [
+      "682"
+    ],
+    "flags": {
+      "svg": "/flags/ck.svg",
+      "png": "https://flagcdn.com/w320/ck.png"
+    }
+  },
+  {
+    "name": "Costa Rica",
+    "alpha2Code": "CR",
+    "alpha3Code": "CRI",
+    "callingCodes": [
+      "506"
+    ],
+    "flags": {
+      "svg": "/flags/cr.svg",
+      "png": "https://flagcdn.com/w320/cr.png"
+    }
+  },
+  {
+    "name": "Croácia",
+    "alpha2Code": "HR",
+    "alpha3Code": "HRV",
+    "callingCodes": [
+      "385"
+    ],
+    "flags": {
+      "svg": "/flags/hr.svg",
+      "png": "https://flagcdn.com/w320/hr.png"
+    }
+  },
+  {
+    "name": "Cuba",
+    "alpha2Code": "CU",
+    "alpha3Code": "CUB",
+    "callingCodes": [
+      "53"
+    ],
+    "flags": {
+      "svg": "/flags/cu.svg",
+      "png": "https://flagcdn.com/w320/cu.png"
+    }
+  },
+  {
+    "name": "Curaçao",
+    "alpha2Code": "CW",
+    "alpha3Code": "CUW",
+    "callingCodes": [
+      "599"
+    ],
+    "flags": {
+      "svg": "/flags/cw.svg",
+      "png": "https://flagcdn.com/w320/cw.png"
+    }
+  },
+  {
+    "name": "Chipre",
+    "alpha2Code": "CY",
+    "alpha3Code": "CYP",
+    "callingCodes": [
+      "357"
+    ],
+    "flags": {
+      "svg": "/flags/cy.svg",
+      "png": "https://flagcdn.com/w320/cy.png"
+    }
+  },
+  {
+    "name": "República Checa",
+    "alpha2Code": "CZ",
+    "alpha3Code": "CZE",
+    "callingCodes": [
+      "420"
+    ],
+    "flags": {
+      "svg": "/flags/cz.svg",
+      "png": "https://flagcdn.com/w320/cz.png"
+    }
+  },
+  {
+    "name": "Dinamarca",
+    "alpha2Code": "DK",
+    "alpha3Code": "DNK",
+    "callingCodes": [
+      "45"
+    ],
+    "flags": {
+      "svg": "/flags/dk.svg",
+      "png": "https://flagcdn.com/w320/dk.png"
+    }
+  },
+  {
+    "name": "Djibuti",
+    "alpha2Code": "DJ",
+    "alpha3Code": "DJI",
+    "callingCodes": [
+      "253"
+    ],
+    "flags": {
+      "svg": "/flags/dj.svg",
+      "png": "https://flagcdn.com/w320/dj.png"
+    }
+  },
+  {
+    "name": "Dominica",
+    "alpha2Code": "DM",
+    "alpha3Code": "DMA",
+    "callingCodes": [
+      "1"
+    ],
+    "flags": {
+      "svg": "/flags/dm.svg",
+      "png": "https://flagcdn.com/w320/dm.png"
+    }
+  },
+  {
+    "name": "República Dominicana",
+    "alpha2Code": "DO",
+    "alpha3Code": "DOM",
+    "callingCodes": [
+      "1"
+    ],
+    "flags": {
+      "svg": "/flags/do.svg",
+      "png": "https://flagcdn.com/w320/do.png"
+    }
+  },
+  {
+    "name": "Equador",
+    "alpha2Code": "EC",
+    "alpha3Code": "ECU",
+    "callingCodes": [
+      "593"
+    ],
+    "flags": {
+      "svg": "/flags/ec.svg",
+      "png": "https://flagcdn.com/w320/ec.png"
+    }
+  },
+  {
+    "name": "Egipto",
+    "alpha2Code": "EG",
+    "alpha3Code": "EGY",
+    "callingCodes": [
+      "20"
+    ],
+    "flags": {
+      "svg": "/flags/eg.svg",
+      "png": "https://flagcdn.com/w320/eg.png"
+    }
+  },
+  {
+    "name": "El Salvador",
+    "alpha2Code": "SV",
+    "alpha3Code": "SLV",
+    "callingCodes": [
+      "503"
+    ],
+    "flags": {
+      "svg": "/flags/sv.svg",
+      "png": "https://flagcdn.com/w320/sv.png"
+    }
+  },
+  {
+    "name": "Guiné Equatorial",
+    "alpha2Code": "GQ",
+    "alpha3Code": "GNQ",
+    "callingCodes": [
+      "240"
+    ],
+    "flags": {
+      "svg": "/flags/gq.svg",
+      "png": "https://flagcdn.com/w320/gq.png"
+    }
+  },
+  {
+    "name": "Eritreia",
+    "alpha2Code": "ER",
+    "alpha3Code": "ERI",
+    "callingCodes": [
+      "291"
+    ],
+    "flags": {
+      "svg": "/flags/er.svg",
+      "png": "https://flagcdn.com/w320/er.png"
+    }
+  },
+  {
+    "name": "Estónia",
+    "alpha2Code": "EE",
+    "alpha3Code": "EST",
+    "callingCodes": [
+      "372"
+    ],
+    "flags": {
+      "svg": "/flags/ee.svg",
+      "png": "https://flagcdn.com/w320/ee.png"
+    }
+  },
+  {
+    "name": "Etiópia",
+    "alpha2Code": "ET",
+    "alpha3Code": "ETH",
+    "callingCodes": [
+      "251"
+    ],
+    "flags": {
+      "svg": "/flags/et.svg",
+      "png": "https://flagcdn.com/w320/et.png"
+    }
+  },
+  {
+    "name": "Ilhas Falkland",
+    "alpha2Code": "FK",
+    "alpha3Code": "FLK",
+    "callingCodes": [
+      "500"
+    ],
+    "flags": {
+      "svg": "/flags/fk.svg",
+      "png": "https://flagcdn.com/w320/fk.png"
+    }
+  },
+  {
+    "name": "Ilhas Faroé",
+    "alpha2Code": "FO",
+    "alpha3Code": "FRO",
+    "callingCodes": [
+      "298"
+    ],
+    "flags": {
+      "svg": "/flags/fo.svg",
+      "png": "https://flagcdn.com/w320/fo.png"
+    }
+  },
+  {
+    "name": "Fiji",
+    "alpha2Code": "FJ",
+    "alpha3Code": "FJI",
+    "callingCodes": [
+      "679"
+    ],
+    "flags": {
+      "svg": "/flags/fj.svg",
+      "png": "https://flagcdn.com/w320/fj.png"
+    }
+  },
+  {
+    "name": "Finlândia",
+    "alpha2Code": "FI",
+    "alpha3Code": "FIN",
+    "callingCodes": [
+      "358"
+    ],
+    "flags": {
+      "svg": "/flags/fi.svg",
+      "png": "https://flagcdn.com/w320/fi.png"
+    }
+  },
+  {
+    "name": "França",
+    "alpha2Code": "FR",
+    "alpha3Code": "FRA",
+    "callingCodes": [
+      "33"
+    ],
+    "flags": {
+      "svg": "/flags/fr.svg",
+      "png": "https://flagcdn.com/w320/fr.png"
+    }
+  },
+  {
+    "name": "Guiana Francesa",
+    "alpha2Code": "GF",
+    "alpha3Code": "GUF",
+    "callingCodes": [
+      "594"
+    ],
+    "flags": {
+      "svg": "/flags/gf.svg",
+      "png": "https://flagcdn.com/w320/gf.png"
+    }
+  },
+  {
+    "name": "Polinésia Francesa",
+    "alpha2Code": "PF",
+    "alpha3Code": "PYF",
+    "callingCodes": [
+      "689"
+    ],
+    "flags": {
+      "svg": "/flags/pf.svg",
+      "png": "https://flagcdn.com/w320/pf.png"
+    }
+  },
+  {
+    "name": "Terras Austrais e Antárticas Francesas",
+    "alpha2Code": "TF",
+    "alpha3Code": "ATF",
+    "callingCodes": [
+      "262"
+    ],
+    "flags": {
+      "svg": "/flags/tf.svg",
+      "png": "https://flagcdn.com/w320/tf.png"
+    }
+  },
+  {
+    "name": "Gabão",
+    "alpha2Code": "GA",
+    "alpha3Code": "GAB",
+    "callingCodes": [
+      "241"
+    ],
+    "flags": {
+      "svg": "/flags/ga.svg",
+      "png": "https://flagcdn.com/w320/ga.png"
+    }
+  },
+  {
+    "name": "Gâmbia",
+    "alpha2Code": "GM",
+    "alpha3Code": "GMB",
+    "callingCodes": [
+      "220"
+    ],
+    "flags": {
+      "svg": "/flags/gm.svg",
+      "png": "https://flagcdn.com/w320/gm.png"
+    }
+  },
+  {
+    "name": "Geórgia",
+    "alpha2Code": "GE",
+    "alpha3Code": "GEO",
+    "callingCodes": [
+      "995"
+    ],
+    "flags": {
+      "svg": "/flags/ge.svg",
+      "png": "https://flagcdn.com/w320/ge.png"
+    }
+  },
+  {
+    "name": "Alemanha",
+    "alpha2Code": "DE",
+    "alpha3Code": "DEU",
+    "callingCodes": [
+      "49"
+    ],
+    "flags": {
+      "svg": "/flags/de.svg",
+      "png": "https://flagcdn.com/w320/de.png"
+    }
+  },
+  {
+    "name": "Gana",
+    "alpha2Code": "GH",
+    "alpha3Code": "GHA",
+    "callingCodes": [
+      "233"
+    ],
+    "flags": {
+      "svg": "/flags/gh.svg",
+      "png": "https://flagcdn.com/w320/gh.png"
+    }
+  },
+  {
+    "name": "Gibraltar",
+    "alpha2Code": "GI",
+    "alpha3Code": "GIB",
+    "callingCodes": [
+      "350"
+    ],
+    "flags": {
+      "svg": "/flags/gi.svg",
+      "png": "https://flagcdn.com/w320/gi.png"
+    }
+  },
+  {
+    "name": "Grécia",
+    "alpha2Code": "GR",
+    "alpha3Code": "GRC",
+    "callingCodes": [
+      "30"
+    ],
+    "flags": {
+      "svg": "/flags/gr.svg",
+      "png": "https://flagcdn.com/w320/gr.png"
+    }
+  },
+  {
+    "name": "Gronelândia",
+    "alpha2Code": "GL",
+    "alpha3Code": "GRL",
+    "callingCodes": [
+      "299"
+    ],
+    "flags": {
+      "svg": "/flags/gl.svg",
+      "png": "https://flagcdn.com/w320/gl.png"
+    }
+  },
+  {
+    "name": "Granada",
+    "alpha2Code": "GD",
+    "alpha3Code": "GRD",
+    "callingCodes": [
+      "1"
+    ],
+    "flags": {
+      "svg": "/flags/gd.svg",
+      "png": "https://flagcdn.com/w320/gd.png"
+    }
+  },
+  {
+    "name": "Guadalupe",
+    "alpha2Code": "GP",
+    "alpha3Code": "GLP",
+    "callingCodes": [
+      "590"
+    ],
+    "flags": {
+      "svg": "/flags/gp.svg",
+      "png": "https://flagcdn.com/w320/gp.png"
+    }
+  },
+  {
+    "name": "Guame",
+    "alpha2Code": "GU",
+    "alpha3Code": "GUM",
+    "callingCodes": [
+      "1"
+    ],
+    "flags": {
+      "svg": "/flags/gu.svg",
+      "png": "https://flagcdn.com/w320/gu.png"
+    }
+  },
+  {
+    "name": "Guatemala",
+    "alpha2Code": "GT",
+    "alpha3Code": "GTM",
+    "callingCodes": [
+      "502"
+    ],
+    "flags": {
+      "svg": "/flags/gt.svg",
+      "png": "https://flagcdn.com/w320/gt.png"
+    }
+  },
+  {
+    "name": "Guernsey",
+    "alpha2Code": "GG",
+    "alpha3Code": "GGY",
+    "callingCodes": [
+      "44"
+    ],
+    "flags": {
+      "svg": "/flags/gg.svg",
+      "png": "https://flagcdn.com/w320/gg.png"
+    }
+  },
+  {
+    "name": "Guiné",
+    "alpha2Code": "GN",
+    "alpha3Code": "GIN",
+    "callingCodes": [
+      "224"
+    ],
+    "flags": {
+      "svg": "/flags/gn.svg",
+      "png": "https://flagcdn.com/w320/gn.png"
+    }
+  },
+  {
+    "name": "Guiné-Bissau",
+    "alpha2Code": "GW",
+    "alpha3Code": "GNB",
+    "callingCodes": [
+      "245"
+    ],
+    "flags": {
+      "svg": "/flags/gw.svg",
+      "png": "https://flagcdn.com/w320/gw.png"
+    }
+  },
+  {
+    "name": "Guiana",
+    "alpha2Code": "GY",
+    "alpha3Code": "GUY",
+    "callingCodes": [
+      "592"
+    ],
+    "flags": {
+      "svg": "/flags/gy.svg",
+      "png": "https://flagcdn.com/w320/gy.png"
+    }
+  },
+  {
+    "name": "Haiti",
+    "alpha2Code": "HT",
+    "alpha3Code": "HTI",
+    "callingCodes": [
+      "509"
+    ],
+    "flags": {
+      "svg": "/flags/ht.svg",
+      "png": "https://flagcdn.com/w320/ht.png"
+    }
+  },
+  {
+    "name": "Ilha Heard e Ilhas McDonald",
+    "alpha2Code": "HM",
+    "alpha3Code": "HMD",
+    "callingCodes": [
+      "672"
+    ],
+    "flags": {
+      "svg": "/flags/hm.svg",
+      "png": "https://flagcdn.com/w320/hm.png"
+    }
+  },
+  {
+    "name": "Vaticano",
+    "alpha2Code": "VA",
+    "alpha3Code": "VAT",
+    "callingCodes": [
+      "379"
+    ],
+    "flags": {
+      "svg": "/flags/va.svg",
+      "png": "https://flagcdn.com/w320/va.png"
+    }
+  },
+  {
+    "name": "Honduras",
+    "alpha2Code": "HN",
+    "alpha3Code": "HND",
+    "callingCodes": [
+      "504"
+    ],
+    "flags": {
+      "svg": "/flags/hn.svg",
+      "png": "https://flagcdn.com/w320/hn.png"
+    }
+  },
+  {
+    "name": "Hungria",
+    "alpha2Code": "HU",
+    "alpha3Code": "HUN",
+    "callingCodes": [
+      "36"
+    ],
+    "flags": {
+      "svg": "/flags/hu.svg",
+      "png": "https://flagcdn.com/w320/hu.png"
+    }
+  },
+  {
+    "name": "Hong Kong",
+    "alpha2Code": "HK",
+    "alpha3Code": "HKG",
+    "callingCodes": [
+      "852"
+    ],
+    "flags": {
+      "svg": "/flags/hk.svg",
+      "png": "https://flagcdn.com/w320/hk.png"
+    }
+  },
+  {
+    "name": "Islândia",
+    "alpha2Code": "IS",
+    "alpha3Code": "ISL",
+    "callingCodes": [
+      "354"
+    ],
+    "flags": {
+      "svg": "/flags/is.svg",
+      "png": "https://flagcdn.com/w320/is.png"
+    }
+  },
+  {
+    "name": "Índia",
+    "alpha2Code": "IN",
+    "alpha3Code": "IND",
+    "callingCodes": [
+      "91"
+    ],
+    "flags": {
+      "svg": "/flags/in.svg",
+      "png": "https://flagcdn.com/w320/in.png"
+    }
+  },
+  {
+    "name": "Indonésia",
+    "alpha2Code": "ID",
+    "alpha3Code": "IDN",
+    "callingCodes": [
+      "62"
+    ],
+    "flags": {
+      "svg": "/flags/id.svg",
+      "png": "https://flagcdn.com/w320/id.png"
+    }
+  },
+  {
+    "name": "Costa do Marfim",
+    "alpha2Code": "CI",
+    "alpha3Code": "CIV",
+    "callingCodes": [
+      "225"
+    ],
+    "flags": {
+      "svg": "/flags/ci.svg",
+      "png": "https://flagcdn.com/w320/ci.png"
+    }
+  },
+  {
+    "name": "Irão",
+    "alpha2Code": "IR",
+    "alpha3Code": "IRN",
+    "callingCodes": [
+      "98"
+    ],
+    "flags": {
+      "svg": "/flags/ir.svg",
+      "png": "https://flagcdn.com/w320/ir.png"
+    }
+  },
+  {
+    "name": "Iraque",
+    "alpha2Code": "IQ",
+    "alpha3Code": "IRQ",
+    "callingCodes": [
+      "964"
+    ],
+    "flags": {
+      "svg": "/flags/iq.svg",
+      "png": "https://flagcdn.com/w320/iq.png"
+    }
+  },
+  {
+    "name": "Irlanda",
+    "alpha2Code": "IE",
+    "alpha3Code": "IRL",
+    "callingCodes": [
+      "353"
+    ],
+    "flags": {
+      "svg": "/flags/ie.svg",
+      "png": "https://flagcdn.com/w320/ie.png"
+    }
+  },
+  {
+    "name": "Ilha de Man",
+    "alpha2Code": "IM",
+    "alpha3Code": "IMN",
+    "callingCodes": [
+      "44"
+    ],
+    "flags": {
+      "svg": "/flags/im.svg",
+      "png": "https://flagcdn.com/w320/im.png"
+    }
+  },
+  {
+    "name": "Israel",
+    "alpha2Code": "IL",
+    "alpha3Code": "ISR",
+    "callingCodes": [
+      "972"
+    ],
+    "flags": {
+      "svg": "/flags/il.svg",
+      "png": "https://flagcdn.com/w320/il.png"
+    }
+  },
+  {
+    "name": "Itália",
+    "alpha2Code": "IT",
+    "alpha3Code": "ITA",
+    "callingCodes": [
+      "39"
+    ],
+    "flags": {
+      "svg": "/flags/it.svg",
+      "png": "https://flagcdn.com/w320/it.png"
+    }
+  },
+  {
+    "name": "Jamaica",
+    "alpha2Code": "JM",
+    "alpha3Code": "JAM",
+    "callingCodes": [
+      "1"
+    ],
+    "flags": {
+      "svg": "/flags/jm.svg",
+      "png": "https://flagcdn.com/w320/jm.png"
+    }
+  },
+  {
+    "name": "Japão",
+    "alpha2Code": "JP",
+    "alpha3Code": "JPN",
+    "callingCodes": [
+      "81"
+    ],
+    "flags": {
+      "svg": "/flags/jp.svg",
+      "png": "https://flagcdn.com/w320/jp.png"
+    }
+  },
+  {
+    "name": "Jersey",
+    "alpha2Code": "JE",
+    "alpha3Code": "JEY",
+    "callingCodes": [
+      "44"
+    ],
+    "flags": {
+      "svg": "/flags/je.svg",
+      "png": "https://flagcdn.com/w320/je.png"
+    }
+  },
+  {
+    "name": "Jordânia",
+    "alpha2Code": "JO",
+    "alpha3Code": "JOR",
+    "callingCodes": [
+      "962"
+    ],
+    "flags": {
+      "svg": "/flags/jo.svg",
+      "png": "https://flagcdn.com/w320/jo.png"
+    }
+  },
+  {
+    "name": "Cazaquistão",
+    "alpha2Code": "KZ",
+    "alpha3Code": "KAZ",
+    "callingCodes": [
+      "76",
+      "77"
+    ],
+    "flags": {
+      "svg": "/flags/kz.svg",
+      "png": "https://flagcdn.com/w320/kz.png"
+    }
+  },
+  {
+    "name": "Quénia",
+    "alpha2Code": "KE",
+    "alpha3Code": "KEN",
+    "callingCodes": [
+      "254"
+    ],
+    "flags": {
+      "svg": "/flags/ke.svg",
+      "png": "https://flagcdn.com/w320/ke.png"
+    }
+  },
+  {
+    "name": "Quiribáti",
+    "alpha2Code": "KI",
+    "alpha3Code": "KIR",
+    "callingCodes": [
+      "686"
+    ],
+    "flags": {
+      "svg": "/flags/ki.svg",
+      "png": "https://flagcdn.com/w320/ki.png"
+    }
+  },
+  {
+    "name": "Kuwait",
+    "alpha2Code": "KW",
+    "alpha3Code": "KWT",
+    "callingCodes": [
+      "965"
+    ],
+    "flags": {
+      "svg": "/flags/kw.svg",
+      "png": "https://flagcdn.com/w320/kw.png"
+    }
+  },
+  {
+    "name": "Quirguizistão",
+    "alpha2Code": "KG",
+    "alpha3Code": "KGZ",
+    "callingCodes": [
+      "996"
+    ],
+    "flags": {
+      "svg": "/flags/kg.svg",
+      "png": "https://flagcdn.com/w320/kg.png"
+    }
+  },
+  {
+    "name": "Laos",
+    "alpha2Code": "LA",
+    "alpha3Code": "LAO",
+    "callingCodes": [
+      "856"
+    ],
+    "flags": {
+      "svg": "/flags/la.svg",
+      "png": "https://flagcdn.com/w320/la.png"
+    }
+  },
+  {
+    "name": "Letónia",
+    "alpha2Code": "LV",
+    "alpha3Code": "LVA",
+    "callingCodes": [
+      "371"
+    ],
+    "flags": {
+      "svg": "/flags/lv.svg",
+      "png": "https://flagcdn.com/w320/lv.png"
+    }
+  },
+  {
+    "name": "Líbano",
+    "alpha2Code": "LB",
+    "alpha3Code": "LBN",
+    "callingCodes": [
+      "961"
+    ],
+    "flags": {
+      "svg": "/flags/lb.svg",
+      "png": "https://flagcdn.com/w320/lb.png"
+    }
+  },
+  {
+    "name": "Lesoto",
+    "alpha2Code": "LS",
+    "alpha3Code": "LSO",
+    "callingCodes": [
+      "266"
+    ],
+    "flags": {
+      "svg": "/flags/ls.svg",
+      "png": "https://flagcdn.com/w320/ls.png"
+    }
+  },
+  {
+    "name": "Libéria",
+    "alpha2Code": "LR",
+    "alpha3Code": "LBR",
+    "callingCodes": [
+      "231"
+    ],
+    "flags": {
+      "svg": "/flags/lr.svg",
+      "png": "https://flagcdn.com/w320/lr.png"
+    }
+  },
+  {
+    "name": "Líbia",
+    "alpha2Code": "LY",
+    "alpha3Code": "LBY",
+    "callingCodes": [
+      "218"
+    ],
+    "flags": {
+      "svg": "/flags/ly.svg",
+      "png": "https://flagcdn.com/w320/ly.png"
+    }
+  },
+  {
+    "name": "Listenstaine",
+    "alpha2Code": "LI",
+    "alpha3Code": "LIE",
+    "callingCodes": [
+      "423"
+    ],
+    "flags": {
+      "svg": "/flags/li.svg",
+      "png": "https://flagcdn.com/w320/li.png"
+    }
+  },
+  {
+    "name": "Lituânia",
+    "alpha2Code": "LT",
+    "alpha3Code": "LTU",
+    "callingCodes": [
+      "370"
+    ],
+    "flags": {
+      "svg": "/flags/lt.svg",
+      "png": "https://flagcdn.com/w320/lt.png"
+    }
+  },
+  {
+    "name": "Luxemburgo",
+    "alpha2Code": "LU",
+    "alpha3Code": "LUX",
+    "callingCodes": [
+      "352"
+    ],
+    "flags": {
+      "svg": "/flags/lu.svg",
+      "png": "https://flagcdn.com/w320/lu.png"
+    }
+  },
+  {
+    "name": "Macau",
+    "alpha2Code": "MO",
+    "alpha3Code": "MAC",
+    "callingCodes": [
+      "853"
+    ],
+    "flags": {
+      "svg": "/flags/mo.svg",
+      "png": "https://flagcdn.com/w320/mo.png"
+    }
+  },
+  {
+    "name": "Macedónia",
+    "alpha2Code": "MK",
+    "alpha3Code": "MKD",
+    "callingCodes": [
+      "389"
+    ],
+    "flags": {
+      "svg": "/flags/mk.svg",
+      "png": "https://flagcdn.com/w320/mk.png"
+    }
+  },
+  {
+    "name": "Madagáscar",
+    "alpha2Code": "MG",
+    "alpha3Code": "MDG",
+    "callingCodes": [
+      "261"
+    ],
+    "flags": {
+      "svg": "/flags/mg.svg",
+      "png": "https://flagcdn.com/w320/mg.png"
+    }
+  },
+  {
+    "name": "Malávi",
+    "alpha2Code": "MW",
+    "alpha3Code": "MWI",
+    "callingCodes": [
+      "265"
+    ],
+    "flags": {
+      "svg": "/flags/mw.svg",
+      "png": "https://flagcdn.com/w320/mw.png"
+    }
+  },
+  {
+    "name": "Malásia",
+    "alpha2Code": "MY",
+    "alpha3Code": "MYS",
+    "callingCodes": [
+      "60"
+    ],
+    "flags": {
+      "svg": "/flags/my.svg",
+      "png": "https://flagcdn.com/w320/my.png"
+    }
+  },
+  {
+    "name": "Maldivas",
+    "alpha2Code": "MV",
+    "alpha3Code": "MDV",
+    "callingCodes": [
+      "960"
+    ],
+    "flags": {
+      "svg": "/flags/mv.svg",
+      "png": "https://flagcdn.com/w320/mv.png"
+    }
+  },
+  {
+    "name": "Mali",
+    "alpha2Code": "ML",
+    "alpha3Code": "MLI",
+    "callingCodes": [
+      "223"
+    ],
+    "flags": {
+      "svg": "/flags/ml.svg",
+      "png": "https://flagcdn.com/w320/ml.png"
+    }
+  },
+  {
+    "name": "Malta",
+    "alpha2Code": "MT",
+    "alpha3Code": "MLT",
+    "callingCodes": [
+      "356"
+    ],
+    "flags": {
+      "svg": "/flags/mt.svg",
+      "png": "https://flagcdn.com/w320/mt.png"
+    }
+  },
+  {
+    "name": "Ilhas Marshall",
+    "alpha2Code": "MH",
+    "alpha3Code": "MHL",
+    "callingCodes": [
+      "692"
+    ],
+    "flags": {
+      "svg": "/flags/mh.svg",
+      "png": "https://flagcdn.com/w320/mh.png"
+    }
+  },
+  {
+    "name": "Martinica",
+    "alpha2Code": "MQ",
+    "alpha3Code": "MTQ",
+    "callingCodes": [
+      "596"
+    ],
+    "flags": {
+      "svg": "/flags/mq.svg",
+      "png": "https://flagcdn.com/w320/mq.png"
+    }
+  },
+  {
+    "name": "Mauritânia",
+    "alpha2Code": "MR",
+    "alpha3Code": "MRT",
+    "callingCodes": [
+      "222"
+    ],
+    "flags": {
+      "svg": "/flags/mr.svg",
+      "png": "https://flagcdn.com/w320/mr.png"
+    }
+  },
+  {
+    "name": "Maurícia",
+    "alpha2Code": "MU",
+    "alpha3Code": "MUS",
+    "callingCodes": [
+      "230"
+    ],
+    "flags": {
+      "svg": "/flags/mu.svg",
+      "png": "https://flagcdn.com/w320/mu.png"
+    }
+  },
+  {
+    "name": "Mayotte",
+    "alpha2Code": "YT",
+    "alpha3Code": "MYT",
+    "callingCodes": [
+      "262"
+    ],
+    "flags": {
+      "svg": "/flags/yt.svg",
+      "png": "https://flagcdn.com/w320/yt.png"
+    }
+  },
+  {
+    "name": "México",
+    "alpha2Code": "MX",
+    "alpha3Code": "MEX",
+    "callingCodes": [
+      "52"
+    ],
+    "flags": {
+      "svg": "/flags/mx.svg",
+      "png": "https://flagcdn.com/w320/mx.png"
+    }
+  },
+  {
+    "name": "Micronésia",
+    "alpha2Code": "FM",
+    "alpha3Code": "FSM",
+    "callingCodes": [
+      "691"
+    ],
+    "flags": {
+      "svg": "/flags/fm.svg",
+      "png": "https://flagcdn.com/w320/fm.png"
+    }
+  },
+  {
+    "name": "Moldávia",
+    "alpha2Code": "MD",
+    "alpha3Code": "MDA",
+    "callingCodes": [
+      "373"
+    ],
+    "flags": {
+      "svg": "/flags/md.svg",
+      "png": "https://flagcdn.com/w320/md.png"
+    }
+  },
+  {
+    "name": "Mónaco",
+    "alpha2Code": "MC",
+    "alpha3Code": "MCO",
+    "callingCodes": [
+      "377"
+    ],
+    "flags": {
+      "svg": "/flags/mc.svg",
+      "png": "https://flagcdn.com/w320/mc.png"
+    }
+  },
+  {
+    "name": "Mongólia",
+    "alpha2Code": "MN",
+    "alpha3Code": "MNG",
+    "callingCodes": [
+      "976"
+    ],
+    "flags": {
+      "svg": "/flags/mn.svg",
+      "png": "https://flagcdn.com/w320/mn.png"
+    }
+  },
+  {
+    "name": "Montenegro",
+    "alpha2Code": "ME",
+    "alpha3Code": "MNE",
+    "callingCodes": [
+      "382"
+    ],
+    "flags": {
+      "svg": "/flags/me.svg",
+      "png": "https://flagcdn.com/w320/me.png"
+    }
+  },
+  {
+    "name": "Monserrate",
+    "alpha2Code": "MS",
+    "alpha3Code": "MSR",
+    "callingCodes": [
+      "1"
+    ],
+    "flags": {
+      "svg": "/flags/ms.svg",
+      "png": "https://flagcdn.com/w320/ms.png"
+    }
+  },
+  {
+    "name": "Marrocos",
+    "alpha2Code": "MA",
+    "alpha3Code": "MAR",
+    "callingCodes": [
+      "212"
+    ],
+    "flags": {
+      "svg": "/flags/ma.svg",
+      "png": "https://flagcdn.com/w320/ma.png"
+    }
+  },
+  {
+    "name": "Moçambique",
+    "alpha2Code": "MZ",
+    "alpha3Code": "MOZ",
+    "callingCodes": [
+      "258"
+    ],
+    "flags": {
+      "svg": "/flags/mz.svg",
+      "png": "https://flagcdn.com/w320/mz.png"
+    }
+  },
+  {
+    "name": "Myanmar",
+    "alpha2Code": "MM",
+    "alpha3Code": "MMR",
+    "callingCodes": [
+      "95"
+    ],
+    "flags": {
+      "svg": "/flags/mm.svg",
+      "png": "https://flagcdn.com/w320/mm.png"
+    }
+  },
+  {
+    "name": "Namíbia",
+    "alpha2Code": "NA",
+    "alpha3Code": "NAM",
+    "callingCodes": [
+      "264"
+    ],
+    "flags": {
+      "svg": "/flags/na.svg",
+      "png": "https://flagcdn.com/w320/na.png"
+    }
+  },
+  {
+    "name": "Nauru",
+    "alpha2Code": "NR",
+    "alpha3Code": "NRU",
+    "callingCodes": [
+      "674"
+    ],
+    "flags": {
+      "svg": "/flags/nr.svg",
+      "png": "https://flagcdn.com/w320/nr.png"
+    }
+  },
+  {
+    "name": "Nepal",
+    "alpha2Code": "NP",
+    "alpha3Code": "NPL",
+    "callingCodes": [
+      "977"
+    ],
+    "flags": {
+      "svg": "/flags/np.svg",
+      "png": "https://flagcdn.com/w320/np.png"
+    }
+  },
+  {
+    "name": "Países Baixos",
+    "alpha2Code": "NL",
+    "alpha3Code": "NLD",
+    "callingCodes": [
+      "31"
+    ],
+    "flags": {
+      "svg": "/flags/nl.svg",
+      "png": "https://flagcdn.com/w320/nl.png"
+    }
+  },
+  {
+    "name": "Nova Caledónia",
+    "alpha2Code": "NC",
+    "alpha3Code": "NCL",
+    "callingCodes": [
+      "687"
+    ],
+    "flags": {
+      "svg": "/flags/nc.svg",
+      "png": "https://flagcdn.com/w320/nc.png"
+    }
+  },
+  {
+    "name": "Nova Zelândia",
+    "alpha2Code": "NZ",
+    "alpha3Code": "NZL",
+    "callingCodes": [
+      "64"
+    ],
+    "flags": {
+      "svg": "/flags/nz.svg",
+      "png": "https://flagcdn.com/w320/nz.png"
+    }
+  },
+  {
+    "name": "Nicarágua",
+    "alpha2Code": "NI",
+    "alpha3Code": "NIC",
+    "callingCodes": [
+      "505"
+    ],
+    "flags": {
+      "svg": "/flags/ni.svg",
+      "png": "https://flagcdn.com/w320/ni.png"
+    }
+  },
+  {
+    "name": "Níger",
+    "alpha2Code": "NE",
+    "alpha3Code": "NER",
+    "callingCodes": [
+      "227"
+    ],
+    "flags": {
+      "svg": "/flags/ne.svg",
+      "png": "https://flagcdn.com/w320/ne.png"
+    }
+  },
+  {
+    "name": "Nigéria",
+    "alpha2Code": "NG",
+    "alpha3Code": "NGA",
+    "callingCodes": [
+      "234"
+    ],
+    "flags": {
+      "svg": "/flags/ng.svg",
+      "png": "https://flagcdn.com/w320/ng.png"
+    }
+  },
+  {
+    "name": "Niue",
+    "alpha2Code": "NU",
+    "alpha3Code": "NIU",
+    "callingCodes": [
+      "683"
+    ],
+    "flags": {
+      "svg": "/flags/nu.svg",
+      "png": "https://flagcdn.com/w320/nu.png"
+    }
+  },
+  {
+    "name": "Ilha Norfolk",
+    "alpha2Code": "NF",
+    "alpha3Code": "NFK",
+    "callingCodes": [
+      "672"
+    ],
+    "flags": {
+      "svg": "/flags/nf.svg",
+      "png": "https://flagcdn.com/w320/nf.png"
+    }
+  },
+  {
+    "name": "Coreia do Norte",
+    "alpha2Code": "KP",
+    "alpha3Code": "PRK",
+    "callingCodes": [
+      "850"
+    ],
+    "flags": {
+      "svg": "/flags/kp.svg",
+      "png": "https://flagcdn.com/w320/kp.png"
+    }
+  },
+  {
+    "name": "Ilhas Marianas",
+    "alpha2Code": "MP",
+    "alpha3Code": "MNP",
+    "callingCodes": [
+      "1"
+    ],
+    "flags": {
+      "svg": "/flags/mp.svg",
+      "png": "https://flagcdn.com/w320/mp.png"
+    }
+  },
+  {
+    "name": "Noruega",
+    "alpha2Code": "NO",
+    "alpha3Code": "NOR",
+    "callingCodes": [
+      "47"
+    ],
+    "flags": {
+      "svg": "/flags/no.svg",
+      "png": "https://flagcdn.com/w320/no.png"
+    }
+  },
+  {
+    "name": "Omã",
+    "alpha2Code": "OM",
+    "alpha3Code": "OMN",
+    "callingCodes": [
+      "968"
+    ],
+    "flags": {
+      "svg": "/flags/om.svg",
+      "png": "https://flagcdn.com/w320/om.png"
+    }
+  },
+  {
+    "name": "Paquistão",
+    "alpha2Code": "PK",
+    "alpha3Code": "PAK",
+    "callingCodes": [
+      "92"
+    ],
+    "flags": {
+      "svg": "/flags/pk.svg",
+      "png": "https://flagcdn.com/w320/pk.png"
+    }
+  },
+  {
+    "name": "Palau",
+    "alpha2Code": "PW",
+    "alpha3Code": "PLW",
+    "callingCodes": [
+      "680"
+    ],
+    "flags": {
+      "svg": "/flags/pw.svg",
+      "png": "https://flagcdn.com/w320/pw.png"
+    }
+  },
+  {
+    "name": "Palestina",
+    "alpha2Code": "PS",
+    "alpha3Code": "PSE",
+    "callingCodes": [
+      "970"
+    ],
+    "flags": {
+      "svg": "/flags/ps.svg",
+      "png": "https://flagcdn.com/w320/ps.png"
+    }
+  },
+  {
+    "name": "Panamá",
+    "alpha2Code": "PA",
+    "alpha3Code": "PAN",
+    "callingCodes": [
+      "507"
+    ],
+    "flags": {
+      "svg": "/flags/pa.svg",
+      "png": "https://flagcdn.com/w320/pa.png"
+    }
+  },
+  {
+    "name": "Papua Nova Guiné",
+    "alpha2Code": "PG",
+    "alpha3Code": "PNG",
+    "callingCodes": [
+      "675"
+    ],
+    "flags": {
+      "svg": "/flags/pg.svg",
+      "png": "https://flagcdn.com/w320/pg.png"
+    }
+  },
+  {
+    "name": "Paraguai",
+    "alpha2Code": "PY",
+    "alpha3Code": "PRY",
+    "callingCodes": [
+      "595"
+    ],
+    "flags": {
+      "svg": "/flags/py.svg",
+      "png": "https://flagcdn.com/w320/py.png"
+    }
+  },
+  {
+    "name": "Peru",
+    "alpha2Code": "PE",
+    "alpha3Code": "PER",
+    "callingCodes": [
+      "51"
+    ],
+    "flags": {
+      "svg": "/flags/pe.svg",
+      "png": "https://flagcdn.com/w320/pe.png"
+    }
+  },
+  {
+    "name": "Filipinas",
+    "alpha2Code": "PH",
+    "alpha3Code": "PHL",
+    "callingCodes": [
+      "63"
+    ],
+    "flags": {
+      "svg": "/flags/ph.svg",
+      "png": "https://flagcdn.com/w320/ph.png"
+    }
+  },
+  {
+    "name": "Ilhas Picárnia",
+    "alpha2Code": "PN",
+    "alpha3Code": "PCN",
+    "callingCodes": [
+      "64"
+    ],
+    "flags": {
+      "svg": "/flags/pn.svg",
+      "png": "https://flagcdn.com/w320/pn.png"
+    }
+  },
+  {
+    "name": "Polónia",
+    "alpha2Code": "PL",
+    "alpha3Code": "POL",
+    "callingCodes": [
+      "48"
+    ],
+    "flags": {
+      "svg": "/flags/pl.svg",
+      "png": "https://flagcdn.com/w320/pl.png"
+    }
+  },
+  {
+    "name": "Portugal",
+    "alpha2Code": "PT",
+    "alpha3Code": "PRT",
+    "callingCodes": [
+      "351"
+    ],
+    "flags": {
+      "svg": "/flags/pt.svg",
+      "png": "https://flagcdn.com/w320/pt.png"
+    }
+  },
+  {
+    "name": "Porto Rico",
+    "alpha2Code": "PR",
+    "alpha3Code": "PRI",
+    "callingCodes": [
+      "1"
+    ],
+    "flags": {
+      "svg": "/flags/pr.svg",
+      "png": "https://flagcdn.com/w320/pr.png"
+    }
+  },
+  {
+    "name": "Catar",
+    "alpha2Code": "QA",
+    "alpha3Code": "QAT",
+    "callingCodes": [
+      "974"
+    ],
+    "flags": {
+      "svg": "/flags/qa.svg",
+      "png": "https://flagcdn.com/w320/qa.png"
+    }
+  },
+  {
+    "name": "Kosovo",
+    "alpha2Code": "XK",
+    "alpha3Code": "UNK",
+    "callingCodes": [
+      "383"
+    ],
+    "flags": {
+      "svg": "/flags/xk.svg",
+      "png": "https://flagcdn.com/w320/xk.png"
+    }
+  },
+  {
+    "name": "Reunião",
+    "alpha2Code": "RE",
+    "alpha3Code": "REU",
+    "callingCodes": [
+      "262"
+    ],
+    "flags": {
+      "svg": "/flags/re.svg",
+      "png": "https://flagcdn.com/w320/re.png"
+    }
+  },
+  {
+    "name": "Roménia",
+    "alpha2Code": "RO",
+    "alpha3Code": "ROU",
+    "callingCodes": [
+      "40"
+    ],
+    "flags": {
+      "svg": "/flags/ro.svg",
+      "png": "https://flagcdn.com/w320/ro.png"
+    }
+  },
+  {
+    "name": "Rússia",
+    "alpha2Code": "RU",
+    "alpha3Code": "RUS",
+    "callingCodes": [
+      "7"
+    ],
+    "flags": {
+      "svg": "/flags/ru.svg",
+      "png": "https://flagcdn.com/w320/ru.png"
+    }
+  },
+  {
+    "name": "Ruanda",
+    "alpha2Code": "RW",
+    "alpha3Code": "RWA",
+    "callingCodes": [
+      "250"
+    ],
+    "flags": {
+      "svg": "/flags/rw.svg",
+      "png": "https://flagcdn.com/w320/rw.png"
+    }
+  },
+  {
+    "name": "São Bartolomeu",
+    "alpha2Code": "BL",
+    "alpha3Code": "BLM",
+    "callingCodes": [
+      "590"
+    ],
+    "flags": {
+      "svg": "/flags/bl.svg",
+      "png": "https://flagcdn.com/w320/bl.png"
+    }
+  },
+  {
+    "name": "Santa Helena",
+    "alpha2Code": "SH",
+    "alpha3Code": "SHN",
+    "callingCodes": [
+      "290"
+    ],
+    "flags": {
+      "svg": "/flags/sh.svg",
+      "png": "https://flagcdn.com/w320/sh.png"
+    }
+  },
+  {
+    "name": "São Cristóvão e Neves",
+    "alpha2Code": "KN",
+    "alpha3Code": "KNA",
+    "callingCodes": [
+      "1"
+    ],
+    "flags": {
+      "svg": "/flags/kn.svg",
+      "png": "https://flagcdn.com/w320/kn.png"
+    }
+  },
+  {
+    "name": "Santa Lúcia",
+    "alpha2Code": "LC",
+    "alpha3Code": "LCA",
+    "callingCodes": [
+      "1"
+    ],
+    "flags": {
+      "svg": "/flags/lc.svg",
+      "png": "https://flagcdn.com/w320/lc.png"
+    }
+  },
+  {
+    "name": "Ilha São Martinho",
+    "alpha2Code": "MF",
+    "alpha3Code": "MAF",
+    "callingCodes": [
+      "590"
+    ],
+    "flags": {
+      "svg": "/flags/mf.svg",
+      "png": "https://flagcdn.com/w320/mf.png"
+    }
+  },
+  {
+    "name": "São Pedro e Miquelon",
+    "alpha2Code": "PM",
+    "alpha3Code": "SPM",
+    "callingCodes": [
+      "508"
+    ],
+    "flags": {
+      "svg": "/flags/pm.svg",
+      "png": "https://flagcdn.com/w320/pm.png"
+    }
+  },
+  {
+    "name": "São Vicente e Granadinas",
+    "alpha2Code": "VC",
+    "alpha3Code": "VCT",
+    "callingCodes": [
+      "1"
+    ],
+    "flags": {
+      "svg": "/flags/vc.svg",
+      "png": "https://flagcdn.com/w320/vc.png"
+    }
+  },
+  {
+    "name": "Samoa",
+    "alpha2Code": "WS",
+    "alpha3Code": "WSM",
+    "callingCodes": [
+      "685"
+    ],
+    "flags": {
+      "svg": "/flags/ws.svg",
+      "png": "https://flagcdn.com/w320/ws.png"
+    }
+  },
+  {
+    "name": "São Marinho",
+    "alpha2Code": "SM",
+    "alpha3Code": "SMR",
+    "callingCodes": [
+      "378"
+    ],
+    "flags": {
+      "svg": "/flags/sm.svg",
+      "png": "https://flagcdn.com/w320/sm.png"
+    }
+  },
+  {
+    "name": "São Tomé e Príncipe",
+    "alpha2Code": "ST",
+    "alpha3Code": "STP",
+    "callingCodes": [
+      "239"
+    ],
+    "flags": {
+      "svg": "/flags/st.svg",
+      "png": "https://flagcdn.com/w320/st.png"
+    }
+  },
+  {
+    "name": "Arábia Saudita",
+    "alpha2Code": "SA",
+    "alpha3Code": "SAU",
+    "callingCodes": [
+      "966"
+    ],
+    "flags": {
+      "svg": "/flags/sa.svg",
+      "png": "https://flagcdn.com/w320/sa.png"
+    }
+  },
+  {
+    "name": "Senegal",
+    "alpha2Code": "SN",
+    "alpha3Code": "SEN",
+    "callingCodes": [
+      "221"
+    ],
+    "flags": {
+      "svg": "/flags/sn.svg",
+      "png": "https://flagcdn.com/w320/sn.png"
+    }
+  },
+  {
+    "name": "Sérvia",
+    "alpha2Code": "RS",
+    "alpha3Code": "SRB",
+    "callingCodes": [
+      "381"
+    ],
+    "flags": {
+      "svg": "/flags/rs.svg",
+      "png": "https://flagcdn.com/w320/rs.png"
+    }
+  },
+  {
+    "name": "Seicheles",
+    "alpha2Code": "SC",
+    "alpha3Code": "SYC",
+    "callingCodes": [
+      "248"
+    ],
+    "flags": {
+      "svg": "/flags/sc.svg",
+      "png": "https://flagcdn.com/w320/sc.png"
+    }
+  },
+  {
+    "name": "Serra Leoa",
+    "alpha2Code": "SL",
+    "alpha3Code": "SLE",
+    "callingCodes": [
+      "232"
+    ],
+    "flags": {
+      "svg": "/flags/sl.svg",
+      "png": "https://flagcdn.com/w320/sl.png"
+    }
+  },
+  {
+    "name": "Singapura",
+    "alpha2Code": "SG",
+    "alpha3Code": "SGP",
+    "callingCodes": [
+      "65"
+    ],
+    "flags": {
+      "svg": "/flags/sg.svg",
+      "png": "https://flagcdn.com/w320/sg.png"
+    }
+  },
+  {
+    "name": "São Martinho",
+    "alpha2Code": "SX",
+    "alpha3Code": "SXM",
+    "callingCodes": [
+      "1"
+    ],
+    "flags": {
+      "svg": "/flags/sx.svg",
+      "png": "https://flagcdn.com/w320/sx.png"
+    }
+  },
+  {
+    "name": "Eslováquia",
+    "alpha2Code": "SK",
+    "alpha3Code": "SVK",
+    "callingCodes": [
+      "421"
+    ],
+    "flags": {
+      "svg": "/flags/sk.svg",
+      "png": "https://flagcdn.com/w320/sk.png"
+    }
+  },
+  {
+    "name": "Eslovénia",
+    "alpha2Code": "SI",
+    "alpha3Code": "SVN",
+    "callingCodes": [
+      "386"
+    ],
+    "flags": {
+      "svg": "/flags/si.svg",
+      "png": "https://flagcdn.com/w320/si.png"
+    }
+  },
+  {
+    "name": "Ilhas Salomão",
+    "alpha2Code": "SB",
+    "alpha3Code": "SLB",
+    "callingCodes": [
+      "677"
+    ],
+    "flags": {
+      "svg": "/flags/sb.svg",
+      "png": "https://flagcdn.com/w320/sb.png"
+    }
+  },
+  {
+    "name": "Somália",
+    "alpha2Code": "SO",
+    "alpha3Code": "SOM",
+    "callingCodes": [
+      "252"
+    ],
+    "flags": {
+      "svg": "/flags/so.svg",
+      "png": "https://flagcdn.com/w320/so.png"
+    }
+  },
+  {
+    "name": "República Sul-Africana",
+    "alpha2Code": "ZA",
+    "alpha3Code": "ZAF",
+    "callingCodes": [
+      "27"
+    ],
+    "flags": {
+      "svg": "/flags/za.svg",
+      "png": "https://flagcdn.com/w320/za.png"
+    }
+  },
+  {
+    "name": "Ilhas Geórgia do Sul e Sanduíche do Sul",
+    "alpha2Code": "GS",
+    "alpha3Code": "SGS",
+    "callingCodes": [
+      "500"
+    ],
+    "flags": {
+      "svg": "/flags/gs.svg",
+      "png": "https://flagcdn.com/w320/gs.png"
+    }
+  },
+  {
+    "name": "Coreia do Sul",
+    "alpha2Code": "KR",
+    "alpha3Code": "KOR",
+    "callingCodes": [
+      "82"
+    ],
+    "flags": {
+      "svg": "/flags/kr.svg",
+      "png": "https://flagcdn.com/w320/kr.png"
+    }
+  },
+  {
+    "name": "Espanha",
+    "alpha2Code": "ES",
+    "alpha3Code": "ESP",
+    "callingCodes": [
+      "34"
+    ],
+    "flags": {
+      "svg": "/flags/es.svg",
+      "png": "https://flagcdn.com/w320/es.png"
+    }
+  },
+  {
+    "name": "Sri Lanka",
+    "alpha2Code": "LK",
+    "alpha3Code": "LKA",
+    "callingCodes": [
+      "94"
+    ],
+    "flags": {
+      "svg": "/flags/lk.svg",
+      "png": "https://flagcdn.com/w320/lk.png"
+    }
+  },
+  {
+    "name": "Sudão",
+    "alpha2Code": "SD",
+    "alpha3Code": "SDN",
+    "callingCodes": [
+      "249"
+    ],
+    "flags": {
+      "svg": "/flags/sd.svg",
+      "png": "https://flagcdn.com/w320/sd.png"
+    }
+  },
+  {
+    "name": "Sudão do Sul",
+    "alpha2Code": "SS",
+    "alpha3Code": "SSD",
+    "callingCodes": [
+      "211"
+    ],
+    "flags": {
+      "svg": "/flags/ss.svg",
+      "png": "https://flagcdn.com/w320/ss.png"
+    }
+  },
+  {
+    "name": "Suriname",
+    "alpha2Code": "SR",
+    "alpha3Code": "SUR",
+    "callingCodes": [
+      "597"
+    ],
+    "flags": {
+      "svg": "/flags/sr.svg",
+      "png": "https://flagcdn.com/w320/sr.png"
+    }
+  },
+  {
+    "name": "Svalbard",
+    "alpha2Code": "SJ",
+    "alpha3Code": "SJM",
+    "callingCodes": [
+      "47"
+    ],
+    "flags": {
+      "svg": "/flags/sj.svg",
+      "png": "https://flagcdn.com/w320/sj.png"
+    }
+  },
+  {
+    "name": "Suazilândia",
+    "alpha2Code": "SZ",
+    "alpha3Code": "SWZ",
+    "callingCodes": [
+      "268"
+    ],
+    "flags": {
+      "svg": "/flags/sz.svg",
+      "png": "https://flagcdn.com/w320/sz.png"
+    }
+  },
+  {
+    "name": "Suécia",
+    "alpha2Code": "SE",
+    "alpha3Code": "SWE",
+    "callingCodes": [
+      "46"
+    ],
+    "flags": {
+      "svg": "/flags/se.svg",
+      "png": "https://flagcdn.com/w320/se.png"
+    }
+  },
+  {
+    "name": "Suíça",
+    "alpha2Code": "CH",
+    "alpha3Code": "CHE",
+    "callingCodes": [
+      "41"
+    ],
+    "flags": {
+      "svg": "/flags/ch.svg",
+      "png": "https://flagcdn.com/w320/ch.png"
+    }
+  },
+  {
+    "name": "Síria",
+    "alpha2Code": "SY",
+    "alpha3Code": "SYR",
+    "callingCodes": [
+      "963"
+    ],
+    "flags": {
+      "svg": "/flags/sy.svg",
+      "png": "https://flagcdn.com/w320/sy.png"
+    }
+  },
+  {
+    "name": "Taiwan",
+    "alpha2Code": "TW",
+    "alpha3Code": "TWN",
+    "callingCodes": [
+      "886"
+    ],
+    "flags": {
+      "svg": "/flags/tw.svg",
+      "png": "https://flagcdn.com/w320/tw.png"
+    }
+  },
+  {
+    "name": "Tajiquistão",
+    "alpha2Code": "TJ",
+    "alpha3Code": "TJK",
+    "callingCodes": [
+      "992"
+    ],
+    "flags": {
+      "svg": "/flags/tj.svg",
+      "png": "https://flagcdn.com/w320/tj.png"
+    }
+  },
+  {
+    "name": "Tanzânia",
+    "alpha2Code": "TZ",
+    "alpha3Code": "TZA",
+    "callingCodes": [
+      "255"
+    ],
+    "flags": {
+      "svg": "/flags/tz.svg",
+      "png": "https://flagcdn.com/w320/tz.png"
+    }
+  },
+  {
+    "name": "Tailândia",
+    "alpha2Code": "TH",
+    "alpha3Code": "THA",
+    "callingCodes": [
+      "66"
+    ],
+    "flags": {
+      "svg": "/flags/th.svg",
+      "png": "https://flagcdn.com/w320/th.png"
+    }
+  },
+  {
+    "name": "Timor Leste",
+    "alpha2Code": "TL",
+    "alpha3Code": "TLS",
+    "callingCodes": [
+      "670"
+    ],
+    "flags": {
+      "svg": "/flags/tl.svg",
+      "png": "https://flagcdn.com/w320/tl.png"
+    }
+  },
+  {
+    "name": "Togo",
+    "alpha2Code": "TG",
+    "alpha3Code": "TGO",
+    "callingCodes": [
+      "228"
+    ],
+    "flags": {
+      "svg": "/flags/tg.svg",
+      "png": "https://flagcdn.com/w320/tg.png"
+    }
+  },
+  {
+    "name": "Toquelau",
+    "alpha2Code": "TK",
+    "alpha3Code": "TKL",
+    "callingCodes": [
+      "690"
+    ],
+    "flags": {
+      "svg": "/flags/tk.svg",
+      "png": "https://flagcdn.com/w320/tk.png"
+    }
+  },
+  {
+    "name": "Tonga",
+    "alpha2Code": "TO",
+    "alpha3Code": "TON",
+    "callingCodes": [
+      "676"
+    ],
+    "flags": {
+      "svg": "/flags/to.svg",
+      "png": "https://flagcdn.com/w320/to.png"
+    }
+  },
+  {
+    "name": "Trindade e Tobago",
+    "alpha2Code": "TT",
+    "alpha3Code": "TTO",
+    "callingCodes": [
+      "1"
+    ],
+    "flags": {
+      "svg": "/flags/tt.svg",
+      "png": "https://flagcdn.com/w320/tt.png"
+    }
+  },
+  {
+    "name": "Tunísia",
+    "alpha2Code": "TN",
+    "alpha3Code": "TUN",
+    "callingCodes": [
+      "216"
+    ],
+    "flags": {
+      "svg": "/flags/tn.svg",
+      "png": "https://flagcdn.com/w320/tn.png"
+    }
+  },
+  {
+    "name": "Turquia",
+    "alpha2Code": "TR",
+    "alpha3Code": "TUR",
+    "callingCodes": [
+      "90"
+    ],
+    "flags": {
+      "svg": "/flags/tr.svg",
+      "png": "https://flagcdn.com/w320/tr.png"
+    }
+  },
+  {
+    "name": "Turquemenistão",
+    "alpha2Code": "TM",
+    "alpha3Code": "TKM",
+    "callingCodes": [
+      "993"
+    ],
+    "flags": {
+      "svg": "/flags/tm.svg",
+      "png": "https://flagcdn.com/w320/tm.png"
+    }
+  },
+  {
+    "name": "Ilhas Turcas e Caicos",
+    "alpha2Code": "TC",
+    "alpha3Code": "TCA",
+    "callingCodes": [
+      "1"
+    ],
+    "flags": {
+      "svg": "/flags/tc.svg",
+      "png": "https://flagcdn.com/w320/tc.png"
+    }
+  },
+  {
+    "name": "Tuvalu",
+    "alpha2Code": "TV",
+    "alpha3Code": "TUV",
+    "callingCodes": [
+      "688"
+    ],
+    "flags": {
+      "svg": "/flags/tv.svg",
+      "png": "https://flagcdn.com/w320/tv.png"
+    }
+  },
+  {
+    "name": "Uganda",
+    "alpha2Code": "UG",
+    "alpha3Code": "UGA",
+    "callingCodes": [
+      "256"
+    ],
+    "flags": {
+      "svg": "/flags/ug.svg",
+      "png": "https://flagcdn.com/w320/ug.png"
+    }
+  },
+  {
+    "name": "Ucrânia",
+    "alpha2Code": "UA",
+    "alpha3Code": "UKR",
+    "callingCodes": [
+      "380"
+    ],
+    "flags": {
+      "svg": "/flags/ua.svg",
+      "png": "https://flagcdn.com/w320/ua.png"
+    }
+  },
+  {
+    "name": "Emirados árabes Unidos",
+    "alpha2Code": "AE",
+    "alpha3Code": "ARE",
+    "callingCodes": [
+      "971"
+    ],
+    "flags": {
+      "svg": "/flags/ae.svg",
+      "png": "https://flagcdn.com/w320/ae.png"
+    }
+  },
+  {
+    "name": "Reino Unido",
+    "alpha2Code": "GB",
+    "alpha3Code": "GBR",
+    "callingCodes": [
+      "44"
+    ],
+    "flags": {
+      "svg": "/flags/gb.svg",
+      "png": "https://flagcdn.com/w320/gb.png"
+    }
+  },
+  {
+    "name": "Estados Unidos",
+    "alpha2Code": "US",
+    "alpha3Code": "USA",
+    "callingCodes": [
+      "1"
+    ],
+    "flags": {
+      "svg": "/flags/us.svg",
+      "png": "https://flagcdn.com/w320/us.png"
+    }
+  },
+  {
+    "name": "Uruguai",
+    "alpha2Code": "UY",
+    "alpha3Code": "URY",
+    "callingCodes": [
+      "598"
+    ],
+    "flags": {
+      "svg": "/flags/uy.svg",
+      "png": "https://flagcdn.com/w320/uy.png"
+    }
+  },
+  {
+    "name": "Usbequistão",
+    "alpha2Code": "UZ",
+    "alpha3Code": "UZB",
+    "callingCodes": [
+      "998"
+    ],
+    "flags": {
+      "svg": "/flags/uz.svg",
+      "png": "https://flagcdn.com/w320/uz.png"
+    }
+  },
+  {
+    "name": "Vanuatu",
+    "alpha2Code": "VU",
+    "alpha3Code": "VUT",
+    "callingCodes": [
+      "678"
+    ],
+    "flags": {
+      "svg": "/flags/vu.svg",
+      "png": "https://flagcdn.com/w320/vu.png"
+    }
+  },
+  {
+    "name": "Venezuela",
+    "alpha2Code": "VE",
+    "alpha3Code": "VEN",
+    "callingCodes": [
+      "58"
+    ],
+    "flags": {
+      "svg": "/flags/ve.svg",
+      "png": "https://flagcdn.com/w320/ve.png"
+    }
+  },
+  {
+    "name": "Vietname",
+    "alpha2Code": "VN",
+    "alpha3Code": "VNM",
+    "callingCodes": [
+      "84"
+    ],
+    "flags": {
+      "svg": "/flags/vn.svg",
+      "png": "https://flagcdn.com/w320/vn.png"
+    }
+  },
+  {
+    "name": "Wallis e Futuna",
+    "alpha2Code": "WF",
+    "alpha3Code": "WLF",
+    "callingCodes": [
+      "681"
+    ],
+    "flags": {
+      "svg": "/flags/wf.svg",
+      "png": "https://flagcdn.com/w320/wf.png"
+    }
+  },
+  {
+    "name": "Saara Ocidental",
+    "alpha2Code": "EH",
+    "alpha3Code": "ESH",
+    "callingCodes": [
+      "212"
+    ],
+    "flags": {
+      "svg": "/flags/eh.svg",
+      "png": "https://flagcdn.com/w320/eh.png"
+    }
+  },
+  {
+    "name": "Iémen",
+    "alpha2Code": "YE",
+    "alpha3Code": "YEM",
+    "callingCodes": [
+      "967"
+    ],
+    "flags": {
+      "svg": "/flags/ye.svg",
+      "png": "https://flagcdn.com/w320/ye.png"
+    }
+  },
+  {
+    "name": "Zâmbia",
+    "alpha2Code": "ZM",
+    "alpha3Code": "ZMB",
+    "callingCodes": [
+      "260"
+    ],
+    "flags": {
+      "svg": "/flags/zm.svg",
+      "png": "https://flagcdn.com/w320/zm.png"
+    }
+  },
+  {
+    "name": "Zimbabué",
+    "alpha2Code": "ZW",
+    "alpha3Code": "ZWE",
+    "callingCodes": [
+      "263"
+    ],
+    "flags": {
+      "svg": "/flags/zw.svg",
+      "png": "https://flagcdn.com/w320/zw.png"
+    }
+  }
+]

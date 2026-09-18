@@ -1,0 +1,156 @@
+{
+  "name": "@versi/design-system",
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./countries": {
+      "types": "./dist/countries.d.ts",
+      "import": "./dist/countries.js",
+      "default": "./dist/countries.js"
+    },
+    "./core": {
+      "types": "./dist/core.d.ts",
+      "import": "./dist/core.js",
+      "default": "./dist/core.js"
+    },
+    "./forms": {
+      "types": "./dist/forms.d.ts",
+      "import": "./dist/forms.js",
+      "default": "./dist/forms.js"
+    },
+    "./charts": {
+      "types": "./dist/charts.d.ts",
+      "import": "./dist/charts.js",
+      "default": "./dist/charts.js"
+    },
+    "./overlays": {
+      "types": "./dist/overlays.d.ts",
+      "import": "./dist/overlays.js",
+      "default": "./dist/overlays.js"
+    },
+    "./documents": {
+      "types": "./dist/documents.d.ts",
+      "import": "./dist/documents.js",
+      "default": "./dist/documents.js"
+    },
+    "./styles.css": "./dist/styles.css",
+    "./themes.css": "./dist/themes.css"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "sideEffects": [
+    "./dist/styles.css",
+    "./dist/themes.css"
+  ],
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "peerDependencies": {
+    "react": ">=18.2.0 <20",
+    "react-dom": ">=18.2.0 <20",
+    "@headlessui/react": "^2.2.9",
+    "apexcharts": "5.3.6",
+    "date-fns": "^4.1.0",
+    "formik": "^2.4.9",
+    "jsbarcode": "^3.12.3",
+    "react-apexcharts": "^1.9.0",
+    "react-number-format": "^5.4.4"
+  },
+  "peerDependenciesMeta": {
+    "@headlessui/react": {
+      "optional": true
+    },
+    "apexcharts": {
+      "optional": true
+    },
+    "date-fns": {
+      "optional": true
+    },
+    "formik": {
+      "optional": true
+    },
+    "jsbarcode": {
+      "optional": true
+    },
+    "react-apexcharts": {
+      "optional": true
+    },
+    "react-number-format": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "classnames": "^2.5.1",
+    "react-icons": "^5.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/jsbarcode": "^3.11.4",
+    "@types/react": "^19.2.15",
+    "@types/react-dom": "19",
+    "autoprefixer": "^10.4.22",
+    "@storybook/addon-a11y": "^10.6.0",
+    "@storybook/addon-docs": "^10.6.0",
+    "postcss": "8.5.26",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "storybook": "^10.6.0",
+    "tailwindcss": "3.4.13",
+    "tsup": "^8.5.0",
+    "typescript": "5.9.3",
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.62.0",
+    "vitest": "^4.1.10",
+    "@headlessui/react": "^2.2.9",
+    "apexcharts": "5.3.6",
+    "date-fns": "^4.1.0",
+    "formik": "^2.4.9",
+    "jsbarcode": "^3.12.3",
+    "react-apexcharts": "^1.9.0",
+    "react-number-format": "^5.4.4",
+    "@storybook/react-vite": "^10.6.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "clean": "node scripts/build.mjs --clean",
+    "tokens:generate": "node scripts/generate-tokens.mjs --write",
+    "tokens:check": "node scripts/generate-tokens.mjs --check",
+    "check:size": "node scripts/check-size.mjs",
+    "check:governance": "node scripts/check-governance.mjs",
+    "storybook": "storybook dev -p 6006",
+    "storybook:standalone": "storybook dev -p 6007",
+    "build-storybook": "storybook build",
+    "test": "vitest run --config vitest.config.ts --pool=threads --maxWorkers=1",
+    "test:watch": "vitest --config vitest.config.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc -p tsconfig.stories.json",
+    "test:visual": "playwright test --config=playwright.config.ts",
+    "test:visual:update": "playwright test --config=playwright.config.ts --update-snapshots",
+    "prepack": "npm run tokens:check && npm run check:governance && npm run typecheck && npm run build && npm run check:size && npm run check:package",
+    "check:package": "node scripts/check-package.mjs",
+    "test:package": "node scripts/test-package.mjs",
+    "pilot:prepare": "node scripts/prepare-pilot.mjs",
+    "pilot:build": "npm --prefix examples/pilot run build",
+    "pilot:dev": "npm --prefix examples/pilot run dev",
+    "test:pilot": "npm run pilot:build && playwright test --config=playwright.pilot.config.ts"
+  },
+  "overrides": {
+    "tsup": {
+      "esbuild": "^0.28.1"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

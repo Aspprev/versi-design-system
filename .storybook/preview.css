@@ -1,0 +1,11 @@
+/* Storybook does not execute the portal's Next layout, so load the same
+ * typography used by the portal while keeping the package font overridable. */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&display=swap");
+
+:root {
+  --font-nunito-sans: "Nunito Sans";
+}
+
+body {
+  font-family: var(--font-family-base, "Nunito Sans", sans-serif);
+}

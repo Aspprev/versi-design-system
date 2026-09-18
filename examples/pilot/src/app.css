@@ -1,0 +1,19 @@
+:root {
+  --font-nunito-sans: system-ui;
+  --font-family-base: system-ui, sans-serif;
+  color: rgb(var(--content-primary));
+  background: rgb(var(--surface-page));
+}
+body { margin: 0; font-family: var(--font-family-base); }
+.pilot { max-width: 1100px; margin: auto; padding: 32px 24px 64px; display: grid; gap: 24px; }
+.pilot-heading { display: grid; gap: 12px; justify-items: start; }
+.preferences, .contact-form, .contacts { display: grid; gap: 20px; min-width: 0; }
+.preferences-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.preferences-grid label { display: grid; gap: 8px; font-size: var(--text-sm); color: rgb(var(--field-content)); }
+.preferences-grid select { width: 100%; min-height: 44px; padding: 8px; border: 1px solid rgb(var(--field-border-default)); border-radius: var(--border-radius-sm); background: rgb(var(--field-surface)); color: rgb(var(--field-content)); }
+.preferences-grid select:focus-visible { outline: 2px solid rgb(var(--focus-ring)); outline-offset: 2px; }
+.contact-form form { display: grid; gap: 24px; }
+@media (max-width: 700px) {
+  .pilot { padding: 24px 16px 40px; gap: 20px; }
+  .preferences-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
