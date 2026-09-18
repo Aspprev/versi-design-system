@@ -27,8 +27,8 @@ os mesmos atributos usados pela story:
 O CSS do pacote deve ser importado uma vez, no shell global, nesta ordem:
 
 ```css
-@import "@versi/design-system/styles.css";
-@import "@versi/design-system/themes.css";
+@import "@aspprev/versi-ds/styles.css";
+@import "@aspprev/versi-ds/themes.css";
 ```
 
 Depois, o projeto define os atributos no elemento `html`:

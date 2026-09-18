@@ -52,8 +52,8 @@ describe("Design System theme contract", () => {
 
   it("mantem a documentacao de integracao no ThemeLab", () => {
     expect(themeLabStory).toContain("Design System/ThemeLab");
-    expect(themeLabStory).toContain("@versi/design-system/styles.css");
-    expect(themeLabStory).toContain("@versi/design-system/themes.css");
+    expect(themeLabStory).toContain("@aspprev/versi-ds/styles.css");
+    expect(themeLabStory).toContain("@aspprev/versi-ds/themes.css");
     expect(themeLabStory).toContain("data-ds-theme");
     expect(themeLabStory).toContain("data-color-scheme");
   });

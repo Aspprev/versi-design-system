@@ -1,6 +1,6 @@
 # API publica dos controles
 
-Este documento registra a superficie publica dos controles de formulario. Prefira `@versi/design-system/forms`; a raiz também reexporta os controles, mas exige todos os peers opcionais. Caminhos internos de `src` não fazem parte do contrato.
+Este documento registra a superficie publica dos controles de formulario. Prefira `@aspprev/versi-ds/forms`; a raiz também reexporta os controles, mas exige todos os peers opcionais. Caminhos internos de `src` não fazem parte do contrato.
 
 Todos os controles abaixo sao client-only: usam estado, eventos de DOM, Formik, `window` ou portal durante a interacao. Eles podem ser incluidos em um componente cliente do consumidor, mas nao devem ser renderizados diretamente como Server Components.
 
@@ -19,7 +19,7 @@ Os nomes `SelectCountry`, `SelectMulti`, `InputPhone`, `DatePicker` e `Checkbox`
 
 ## Regras de uso
 
-- Importe componentes e tipos pelo entrypoint publico. O CSS deve ser importado uma vez por aplicacao com `@versi/design-system/styles.css`.
+- Importe componentes e tipos pelo entrypoint publico. O CSS deve ser importado uma vez por aplicacao com `@aspprev/versi-ds/styles.css`.
 - `Input`, `InputSelect`, `TextArea`, `InputPhone`, `DatePicker` e `SelectCountry` precisam estar dentro de `Formik` quando usados com o fluxo integrado. `InputStandalone` e `SelectMulti` podem ser controlados sem Formik.
 - Mensagens de erro integradas ao Formik aparecem depois que o campo esta marcado como tocado. Mensagens passadas diretamente pelas props seguem o contrato especifico de cada componente.
 - Os estados visuais usam tokens semanticos do CSS publico e respondem aos atributos de tema e contraste definidos no contrato de tokens.
@@ -29,7 +29,7 @@ Os nomes `SelectCountry`, `SelectMulti`, `InputPhone`, `DatePicker` e `Checkbox`
 
 React e React DOM são peer dependencies (`>=18.2.0 <20`). Formik, date-fns e react-number-format são peers opcionais necessários para `/forms`. classnames, react-icons e class-variance-authority são dependências diretas. O build externaliza essas bibliotecas. Consulte o manifesto para versões compatíveis.
 
-O repositório é independente; nome e versão existentes são `@versi/design-system` e `0.1.0`, pendentes de confirmação para release. Testes, stories e documentação interna permanecem no repositório; o npm contém dist, README e manifesto.
+O repositório é independente; nome e versão existentes são `@aspprev/versi-ds` e `0.1.0`, pendentes de confirmação para release. Testes, stories e documentação interna permanecem no repositório; o npm contém dist, README e manifesto.
 
 ## Países, teclado e bandeiras
 

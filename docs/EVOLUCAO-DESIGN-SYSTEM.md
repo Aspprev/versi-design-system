@@ -53,7 +53,7 @@ do projeto não rastreados; este registro descreve as alterações da revisão e
 não presume uma comparação com uma release anterior. Não havia um registro
 de evolução nesta cópia, por isso este arquivo foi criado.
 
-Nome e versão preservados: `@versi/design-system`, `0.1.0`. Nenhuma publicação,
+Nome e versão preservados: `@aspprev/versi-ds`, `0.1.0`. Nenhuma publicação,
 push, migração de imports ou alteração de arquivos do portal foi realizada.
 
 ### Problemas encontrados e correções

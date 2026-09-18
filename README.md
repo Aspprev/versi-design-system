@@ -1,4 +1,4 @@
-# @versi/design-system
+# @aspprev/versi-ds
 
 Biblioteca de componentes React e fundamentos visuais da VERSI para construir interfaces consistentes. Reúne controles de formulário, navegação, tabelas, gráficos, diálogos, feedback, tipografia, tokens, temas e recursos de acessibilidade.
 
@@ -17,15 +17,15 @@ Use o DS para compor a interface; a aplicação continua responsável por dados,
 Depois da publicação:
 
 ```bash
-npm install @versi/design-system react react-dom
+npm install @aspprev/versi-ds react react-dom
 ```
 
 Durante a preparação, instale o `.tgz` produzido por `npm pack` em um consumidor piloto. O pacote fornece ESM e declarações TypeScript; não fornece uma distribuição CommonJS. Suporta React/React DOM 18.2 ou 19. Node >=20.19 é necessário para desenvolvimento/build.
 
 ```tsx
-import { Button } from "@versi/design-system/core";
-import "@versi/design-system/styles.css";
-import "@versi/design-system/themes.css"; // paletas opcionais, depois dos estilos
+import { Button } from "@aspprev/versi-ds/core";
+import "@aspprev/versi-ds/styles.css";
+import "@aspprev/versi-ds/themes.css"; // paletas opcionais, depois dos estilos
 
 export function Example() {
   return <Button>Continuar</Button>;
@@ -38,19 +38,19 @@ Os componentes básicos não exigem um provider global. Alguns controles precisa
 
 ## Entrypoints públicos
 
-Todos os sufixos abaixo pertencem a `@versi/design-system`.
+Todos os sufixos abaixo pertencem a `@aspprev/versi-ds`.
 
-| Entrada | Conteúdo | Peers adicionais |
-| --- | --- | --- |
-| raiz | API completa de compatibilidade | Instale todos os peers opcionais |
-| `/core` | Botões, tipografia, superfícies, avisos, avatares, imagens, tooltips, paginação, tabelas, status, layout e primitivas acessíveis | Nenhum |
-| `/forms` | Input/InputStandalone, InputSelect, TextArea, InputPhone, SelectCountry, SelectMulti, DatePicker, RadioGroup, RadioCardGroup | `formik`, `date-fns`, `react-number-format` |
-| `/charts` | LazyApexChart, TimeSeriesChart, InteractiveDonutChart, TimeRangeSelector e utilitários | `apexcharts`, `react-apexcharts` |
-| `/overlays` | Modal, InputSwitch, AccessibilityPreferencesPanel, HighContrastToggle | `@headlessui/react` |
-| `/documents` | BoletoBarCode e DocumentItem | `jsbarcode` |
-| `/countries` | COUNTRY_OPTIONS, PHONE_COUNTRY_OPTIONS, getCountryOptions, getCountryFlagUrl, filterCountryOptions e tipos | Nenhum |
-| `/styles.css` | Tokens, modos, componentes e utilitários compilados | — |
-| `/themes.css` | Presets de paletas | — |
+| Entrada       | Conteúdo                                                                                                                         | Peers adicionais                            |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| raiz          | API completa de compatibilidade                                                                                                  | Instale todos os peers opcionais            |
+| `/core`       | Botões, tipografia, superfícies, avisos, avatares, imagens, tooltips, paginação, tabelas, status, layout e primitivas acessíveis | Nenhum                                      |
+| `/forms`      | Input/InputStandalone, InputSelect, TextArea, InputPhone, SelectCountry, SelectMulti, DatePicker, RadioGroup, RadioCardGroup     | `formik`, `date-fns`, `react-number-format` |
+| `/charts`     | LazyApexChart, TimeSeriesChart, InteractiveDonutChart, TimeRangeSelector e utilitários                                           | `apexcharts`, `react-apexcharts`            |
+| `/overlays`   | Modal, InputSwitch, AccessibilityPreferencesPanel, HighContrastToggle                                                            | `@headlessui/react`                         |
+| `/documents`  | BoletoBarCode e DocumentItem                                                                                                     | `jsbarcode`                                 |
+| `/countries`  | COUNTRY_OPTIONS, PHONE_COUNTRY_OPTIONS, getCountryOptions, getCountryFlagUrl, filterCountryOptions e tipos                       | Nenhum                                      |
+| `/styles.css` | Tokens, modos, componentes e utilitários compilados                                                                              | —                                           |
+| `/themes.css` | Presets de paletas                                                                                                               | —                                           |
 
 Use as versões compatíveis declaradas em `peerDependencies`. Os peers opcionais permitem instalar somente `/core` e `/countries`; uma entrada de camada resolve todas as suas dependências estáticas, mesmo quando apenas um componente é importado. A raiz reexporta as camadas e não isola esses peers. ApexCharts é carregado dinamicamente no navegador.
 
@@ -78,27 +78,33 @@ Para gráficos, mantenha a versão de ApexCharts indicada: ela faz parte do cont
 
 ## Escolhendo os componentes
 
-| Necessidade | Componentes |
-| --- | --- |
-| Ações e navegação | Button, Pagination, PageTabsHeader |
-| Texto e hierarquia | Typography, PageHeading, TextGroup, Divider |
-| Estrutura | Surface, ModalCard, FormGrid, FormActions, InfoGrid, InfoItem, FilterBar |
-| Avisos, status e carregamento | Notice, StatusBadge, DomainStatusBadge, PageState, LoadingDots, CircularLoading |
-| Identidade e apoio visual | Avatar, ThemedImage, IconProvider, Tooltip |
-| Texto, seleção e datas | Input, InputStandalone, InputSelect, TextArea, SelectMulti, DatePicker |
-| Países e telefones | SelectCountry, InputPhone |
-| Opções e valores graduais | Checkbox, RadioGroup, RadioCardGroup, InputSwitch, Slider, InputSlider |
-| Dados tabulares | Table, MobileCardTable |
-| Visualizações | TimeSeriesChart, InteractiveDonutChart, TimeRangeSelector, LazyApexChart |
-| Diálogos e documentos | Modal, DocumentItem, BoletoBarCode |
-| Acessibilidade | SkipLink, FocusNavigationMode, FormErrorNavigation, AccessibilityPreferencesPanel, HighContrastToggle |
+| Necessidade                   | Componentes                                                                                           |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Ações e navegação             | Button, Pagination, PageTabsHeader                                                                    |
+| Texto e hierarquia            | Typography, PageHeading, TextGroup, Divider                                                           |
+| Estrutura                     | Surface, ModalCard, FormGrid, FormActions, InfoGrid, InfoItem, FilterBar                              |
+| Avisos, status e carregamento | Notice, StatusBadge, DomainStatusBadge, PageState, LoadingDots, CircularLoading                       |
+| Identidade e apoio visual     | Avatar, ThemedImage, IconProvider, Tooltip                                                            |
+| Texto, seleção e datas        | Input, InputStandalone, InputSelect, TextArea, SelectMulti, DatePicker                                |
+| Países e telefones            | SelectCountry, InputPhone                                                                             |
+| Opções e valores graduais     | Checkbox, RadioGroup, RadioCardGroup, InputSwitch, Slider, InputSlider                                |
+| Dados tabulares               | Table, MobileCardTable                                                                                |
+| Visualizações                 | TimeSeriesChart, InteractiveDonutChart, TimeRangeSelector, LazyApexChart                              |
+| Diálogos e documentos         | Modal, DocumentItem, BoletoBarCode                                                                    |
+| Acessibilidade                | SkipLink, FocusNavigationMode, FormErrorNavigation, AccessibilityPreferencesPanel, HighContrastToggle |
 
 Essa tabela organiza os componentes por finalidade. Consulte os entrypoints para escolher o import: Checkbox está em `/core`, RadioGroup em `/forms` e InputSwitch em `/overlays`, por exemplo.
 
 ## Componentes básicos na prática
 
 ```tsx
-import { Button, Notice, StatusBadge, Surface, Typography } from "@versi/design-system/core";
+import {
+  Button,
+  Notice,
+  StatusBadge,
+  Surface,
+  Typography,
+} from "@aspprev/versi-ds/core";
 
 export function Resumo() {
   return (
@@ -106,22 +112,30 @@ export function Resumo() {
       <Typography element="h2" semanticRole="section-title">
         Dados do cadastro
       </Typography>
-      <Typography semanticRole="body">Confira as informações antes de continuar.</Typography>
-      <StatusBadge tone="success" appearance="soft">Atualizado</StatusBadge>
-      <Notice type="info">Você pode revisar os dados a qualquer momento.</Notice>
-      <Button type="button" variant="outline" color="primary">Revisar</Button>
+      <Typography semanticRole="body">
+        Confira as informações antes de continuar.
+      </Typography>
+      <StatusBadge tone="success" appearance="soft">
+        Atualizado
+      </StatusBadge>
+      <Notice type="info">
+        Você pode revisar os dados a qualquer momento.
+      </Notice>
+      <Button type="button" variant="outline" color="primary">
+        Revisar
+      </Button>
     </Surface>
   );
 }
 ```
 
-| Componente | Propriedades frequentes |
-| --- | --- |
-| Button | `variant`: flat/outline/plain; `color`: primary/secondary/tertiary/danger/warning; `size`: small/medium/large; `width`: auto/full; `loading`, `loadingLabel`, `disabled` |
-| Typography | `element`: elemento HTML; `semanticRole`: page-title/section-title/body/label/caption/helper; `size`, `weight`, `variant` |
-| Surface | `tone`: card/subtle/muted/disabled/info/success/warning/danger/transparent; `padding`: none/compact/default; `elevation`: none/sm/md; `radius`: none/sm/md |
-| Notice | `type`: info/primary/secondary/tertiary/gray/success/warning/danger; `onDismiss`, `icon`, `rounded` |
-| StatusBadge | `tone`: neutral/info/success/warning/danger; `appearance`: outline/soft/solid; `size`: sm/md |
+| Componente  | Propriedades frequentes                                                                                                                                                  |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Button      | `variant`: flat/outline/plain; `color`: primary/secondary/tertiary/danger/warning; `size`: small/medium/large; `width`: auto/full; `loading`, `loadingLabel`, `disabled` |
+| Typography  | `element`: elemento HTML; `semanticRole`: page-title/section-title/body/label/caption/helper; `size`, `weight`, `variant`                                                |
+| Surface     | `tone`: card/subtle/muted/disabled/info/success/warning/danger/transparent; `padding`: none/compact/default; `elevation`: none/sm/md; `radius`: none/sm/md               |
+| Notice      | `type`: info/primary/secondary/tertiary/gray/success/warning/danger; `onDismiss`, `icon`, `rounded`                                                                      |
+| StatusBadge | `tone`: neutral/info/success/warning/danger; `appearance`: outline/soft/solid; `size`: sm/md                                                                             |
 
 Em Typography, `semanticRole` define a apresentação; `element` define a semântica HTML. Use `element="h1"` para o título principal e níveis coerentes para as seções. Uma etiqueta de status precisa de texto compreensível, além da cor.
 
@@ -135,12 +149,16 @@ Use Input quando o estado pertence ao Formik e InputStandalone quando a aplicaç
 
 ```tsx
 import { Form, Formik } from "formik";
-import { Button, FormActions, FormGrid } from "@versi/design-system/core";
-import { Input, InputSelect } from "@versi/design-system/forms";
+import { Button, FormActions, FormGrid } from "@aspprev/versi-ds/core";
+import { Input, InputSelect } from "@aspprev/versi-ds/forms";
 
 type Valores = { nome: string; categoria: string };
 
-export function Cadastro({ salvar }: { salvar: (values: Valores) => Promise<void> }) {
+export function Cadastro({
+  salvar,
+}: {
+  salvar: (values: Valores) => Promise<void>;
+}) {
   return (
     <Formik<Valores>
       initialValues={{ nome: "", categoria: "" }}
@@ -166,7 +184,11 @@ export function Cadastro({ salvar }: { salvar: (values: Valores) => Promise<void
             />
           </FormGrid>
           <FormActions align="end">
-            <Button type="submit" loading={isSubmitting} loadingLabel="Salvando cadastro">
+            <Button
+              type="submit"
+              loading={isSubmitting}
+              loadingLabel="Salvando cadastro"
+            >
               Salvar
             </Button>
           </FormActions>
@@ -185,7 +207,7 @@ FormGrid usa uma coluna em telas menores e aplica `columns` a partir do breakpoi
 
 ```tsx
 import { useState } from "react";
-import { InputStandalone } from "@versi/design-system/forms";
+import { InputStandalone } from "@aspprev/versi-ds/forms";
 
 export function Busca() {
   const [termo, setTermo] = useState("");
@@ -206,17 +228,26 @@ Input e InputStandalone oferecem máscaras como `cpf`, `cnpj`, `cep`, `phone`, `
 
 ```tsx
 import { useState } from "react";
-import { Button } from "@versi/design-system/core";
-import { Modal } from "@versi/design-system/overlays";
+import { Button } from "@aspprev/versi-ds/core";
+import { Modal } from "@aspprev/versi-ds/overlays";
 
 export function Detalhes() {
   const [aberto, setAberto] = useState(false);
   return (
     <>
-      <Button type="button" onClick={() => setAberto(true)}>Ver detalhes</Button>
-      <Modal isOpen={aberto} onClose={() => setAberto(false)} title="Detalhes do cadastro" showIcon={false}>
+      <Button type="button" onClick={() => setAberto(true)}>
+        Ver detalhes
+      </Button>
+      <Modal
+        isOpen={aberto}
+        onClose={() => setAberto(false)}
+        title="Detalhes do cadastro"
+        showIcon={false}
+      >
         <p>Informações complementares do cadastro.</p>
-        <Button type="button" onClick={() => setAberto(false)}>Fechar</Button>
+        <Button type="button" onClick={() => setAberto(false)}>
+          Fechar
+        </Button>
       </Modal>
     </>
   );
@@ -234,19 +265,24 @@ As entradas de componentes, inclusive `/core` e a raiz, declaram `"use client"`:
 Os tokens canônicos ficam em `tokens/design-system.tokens.json`. Edite essa fonte e execute `npm run tokens:generate`; não edite os arquivos gerados manualmente.
 
 ```html
-<html data-color-scheme="dark" data-ds-theme="verde3"
-      data-contrast="high" data-contrast-theme="dark"
-      data-font-scale="large" data-motion="reduce">
+<html
+  data-color-scheme="dark"
+  data-ds-theme="verde3"
+  data-contrast="high"
+  data-contrast-theme="dark"
+  data-font-scale="large"
+  data-motion="reduce"
+></html>
 ```
 
-| Atributo | Valores |
-| --- | --- |
-| `data-color-scheme` | `light`, `dark` |
-| `data-ds-theme` | `default`, `azul1`, `azul2`, `azul3`, `laranja1`, `laranja2`, `verde1`, `verde2`, `verde3`, `verde4`, `rosa1` |
-| `data-contrast` | `normal`, `high` |
-| `data-contrast-theme` | `light`, `dark` (esquema do alto contraste) |
-| `data-font-scale` | `default`, `large`, `extra-large` |
-| `data-motion` | `full`, `reduce` |
+| Atributo              | Valores                                                                                                       |
+| --------------------- | ------------------------------------------------------------------------------------------------------------- |
+| `data-color-scheme`   | `light`, `dark`                                                                                               |
+| `data-ds-theme`       | `default`, `azul1`, `azul2`, `azul3`, `laranja1`, `laranja2`, `verde1`, `verde2`, `verde3`, `verde4`, `rosa1` |
+| `data-contrast`       | `normal`, `high`                                                                                              |
+| `data-contrast-theme` | `light`, `dark` (esquema do alto contraste)                                                                   |
+| `data-font-scale`     | `default`, `large`, `extra-large`                                                                             |
+| `data-motion`         | `full`, `reduce`                                                                                              |
 
 As preferências são controladas pelo consumidor, que também cuida da persistência e sincronização. As classes legadas das paletas continuam disponíveis. Tokens de cores usam triplets RGB para aceitar opacidade.
 
@@ -320,14 +356,25 @@ A lista contém 250 países/territórios. `COUNTRY_OPTIONS` e `PHONE_COUNTRY_OPT
 
 ```tsx
 import { Formik } from "formik";
-import { SelectCountry, InputPhone } from "@versi/design-system/forms";
+import { SelectCountry, InputPhone } from "@aspprev/versi-ds/forms";
 
-<Formik initialValues={{ pais: "Brasil", telefone: { ddi: 55, ddd: "", numero: "" } }} onSubmit={() => {}}>
+<Formik
+  initialValues={{ pais: "Brasil", telefone: { ddi: 55, ddd: "", numero: "" } }}
+  onSubmit={() => {}}
+>
   <form>
-    <SelectCountry name="pais" label="País" countryList={{ mode: "include", codes: ["BR", "PT", "US"] }} />
-    <InputPhone name="telefone" label="Telefone" countryList={{ mode: "exclude", codes: ["US"] }} />
+    <SelectCountry
+      name="pais"
+      label="País"
+      countryList={{ mode: "include", codes: ["BR", "PT", "US"] }}
+    />
+    <InputPhone
+      name="telefone"
+      label="Telefone"
+      countryList={{ mode: "exclude", codes: ["US"] }}
+    />
   </form>
-</Formik>
+</Formik>;
 ```
 
 `countryList` aceita `all` (padrão), `include` ou `exclude`; `codes` usa ISO-2. Na lista padrão, o **valor do SelectCountry é o nome** (`Brasil`), e `cca2` contém `BR`. O payload telefônico é `{ ddi, ddd, numero }`; países com o mesmo DDI não podem ser distinguidos ao restaurar apenas esse payload. A escolha explícita preserva o ISO-2 enquanto o componente estiver montado.
@@ -335,7 +382,7 @@ import { SelectCountry, InputPhone } from "@versi/design-system/forms";
 Os componentes usam SVGs locais por `cca2`, inclusive em opções customizadas: `/flags/br.svg`, por exemplo. Todos os arquivos são publicados em `dist/flags`; o consumidor precisa servi-los em `/flags` no mesmo domínio. Na raiz da aplicação consumidora:
 
 ```bash
-node --input-type=module -e "import {cpSync} from 'node:fs'; import {fileURLToPath} from 'node:url'; cpSync(fileURLToPath(new URL('./flags/', import.meta.resolve('@versi/design-system/countries'))), 'public/flags', {recursive:true})"
+node --input-type=module -e "import {cpSync} from 'node:fs'; import {fileURLToPath} from 'node:url'; cpSync(fileURLToPath(new URL('./flags/', import.meta.resolve('@aspprev/versi-ds/countries'))), 'public/flags', {recursive:true})"
 ```
 
 Em aplicações com subpath, configure uma rota estática para `/flags` na raiz do domínio. O campo legado `flags.png` contém metadados remotos; os componentes usam o SVG local e não requisitam esse PNG. `staticDirs` serve os SVGs no Storybook.
@@ -385,31 +432,32 @@ O exemplo não faz parte do pacote npm e seus dados ficam somente na memória da
 
 ## Problemas comuns
 
-| Sintoma | O que conferir |
-| --- | --- |
-| Componentes sem estilo | Importe styles.css uma vez na entrada da aplicação e verifique regras que o sobrescrevem. |
-| Uma classe Tailwind própria não funciona | O CSS do pacote inclui as classes dos componentes; compile as classes da sua aplicação ou use CSS próprio. |
-| Erro ao resolver Formik, Headless UI ou outra integração | Instale os peers da camada importada. A entrada raiz precisa do conjunto completo. |
-| Erro de contexto Formik | Envolva os controles integrados em Formik; para Input controlado, use InputStandalone. |
-| Bandeiras não aparecem | Confirme que /flags/br.svg responde no domínio da aplicação e copie dist/flags para os arquivos públicos. |
-| SelectCountry não mostra o valor inicial | Na lista padrão, use Brasil como valor; BR é o código de filtragem ISO-2. |
-| Diálogo ou dropdown com tema diferente | Aplique os atributos de tema no html para alcançar também os elementos renderizados fora da árvore do componente. |
-| Fonte diferente do Storybook | Carregue a fonte desejada e configure --font-nunito-sans; a fonte não acompanha o pacote. |
-| Erro de hooks em aplicação RSC | Defina estado e callbacks em um componente cliente; consulte a seção sobre servidor e navegador. |
+| Sintoma                                                  | O que conferir                                                                                                    |
+| -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| Componentes sem estilo                                   | Importe styles.css uma vez na entrada da aplicação e verifique regras que o sobrescrevem.                         |
+| Uma classe Tailwind própria não funciona                 | O CSS do pacote inclui as classes dos componentes; compile as classes da sua aplicação ou use CSS próprio.        |
+| Erro ao resolver Formik, Headless UI ou outra integração | Instale os peers da camada importada. A entrada raiz precisa do conjunto completo.                                |
+| Erro de contexto Formik                                  | Envolva os controles integrados em Formik; para Input controlado, use InputStandalone.                            |
+| Bandeiras não aparecem                                   | Confirme que /flags/br.svg responde no domínio da aplicação e copie dist/flags para os arquivos públicos.         |
+| SelectCountry não mostra o valor inicial                 | Na lista padrão, use Brasil como valor; BR é o código de filtragem ISO-2.                                         |
+| Diálogo ou dropdown com tema diferente                   | Aplique os atributos de tema no html para alcançar também os elementos renderizados fora da árvore do componente. |
+| Fonte diferente do Storybook                             | Carregue a fonte desejada e configure --font-nunito-sans; a fonte não acompanha o pacote.                         |
+| Erro de hooks em aplicação RSC                           | Defina estado e callbacks em um componente cliente; consulte a seção sobre servidor e navegador.                  |
 
 ## Documentação do repositório
 
 Para aprofundar o uso e a manutenção, consulte os arquivos abaixo no checkout do projeto. Eles não acompanham o tarball npm.
 
-| Arquivo | Conteúdo |
-| --- | --- |
-| docs/API-PUBLICA-CONTROLES.md | Contratos dos controles, estado, teclado e dependências |
-| docs/COMPONENTES-CLIENT-SERVER.md | Fronteiras cliente e servidor |
-| docs/THEMELAB-E-GLOBALS-CSS.md | Temas e personalização do CSS |
-| tokens/README.md | Fonte e geração dos tokens |
-| docs/GOVERNANCA-DESIGN-SYSTEM.md | Contribuição, versionamento e publicação |
-| docs/EVOLUCAO-DESIGN-SYSTEM.md | Histórico de mudanças e validações |
+| Arquivo                           | Conteúdo                                                |
+| --------------------------------- | ------------------------------------------------------- |
+| docs/API-PUBLICA-CONTROLES.md     | Contratos dos controles, estado, teclado e dependências |
+| docs/COMPONENTES-CLIENT-SERVER.md | Fronteiras cliente e servidor                           |
+| docs/THEMELAB-E-GLOBALS-CSS.md    | Temas e personalização do CSS                           |
+| tokens/README.md                  | Fonte e geração dos tokens                              |
+| docs/GOVERNANCA-DESIGN-SYSTEM.md  | Contribuição, versionamento e publicação                |
+| docs/EVOLUCAO-DESIGN-SYSTEM.md    | Histórico de mudanças e validações                      |
 
 O contexto específico do portal, o plano de migração e as pendências dessa transição ficam exclusivamente em `MIGRACAO-DO-PORTAL.md`.
-#   v e r s i - d e s i g n - s y s t e m  
+#   v e r s i - d e s i g n - s y s t e m 
+ 
  

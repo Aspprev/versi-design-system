@@ -9,16 +9,16 @@ import {
   Table,
   Typography,
   type ITableColumnConfig,
-} from "@versi/design-system/core";
+} from "@aspprev/versi-ds/core";
 import {
   Input,
   InputPhone,
   SelectCountry,
   type PhoneValue,
-} from "@versi/design-system/forms";
-import { Modal } from "@versi/design-system/overlays";
-import "@versi/design-system/styles.css";
-import "@versi/design-system/themes.css";
+} from "@aspprev/versi-ds/forms";
+import { Modal } from "@aspprev/versi-ds/overlays";
+import "@aspprev/versi-ds/styles.css";
+import "@aspprev/versi-ds/themes.css";
 import { Form, Formik } from "formik";
 import { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";

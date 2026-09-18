@@ -12,7 +12,7 @@ manifesto continuam sujeitos à confirmação para a primeira publicação.
 
 A revisão atua apenas em `ds-versi`. O caminho efetivo neste ambiente é `C:\Users\AlineRodrigu_ipo\Desktop\ASPPrev\Projetos INOVACAO\_POR\ds-versi` (o caminho informado na solicitação tinha uma separação diferente em `AlineRodrigu\_ipo`). Nenhum arquivo do portal foi alterado ou removido. A migração dos imports será uma etapa posterior.
 
-O pacote conserva os componentes funcionais, aliases de compatibilidade, tokens, paletas, 250 bandeiras SVG locais, dados de países, stories e testes. O nome `@versi/design-system` e a versão `0.1.0` foram preservados conforme o manifesto existente; não constituem confirmação de release.
+O pacote conserva os componentes funcionais, aliases de compatibilidade, tokens, paletas, 250 bandeiras SVG locais, dados de países, stories e testes. O nome `@aspprev/versi-ds` e a versão `0.1.0` foram preservados conforme o manifesto existente; não constituem confirmação de release.
 
 ## Ajustes para autonomia
 

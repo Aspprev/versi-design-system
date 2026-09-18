@@ -8,7 +8,7 @@
     "assets": "node scripts/copy-flags.mjs"
   },
   "dependencies": {
-    "@versi/design-system": "file:vendor/versi-design-system-0.1.0.tgz",
+    "@aspprev/versi-ds": "file:vendor/versi-design-system-0.1.0.tgz",
     "@headlessui/react": "^2.2.9",
     "date-fns": "^4.1.0",
     "formik": "^2.4.9",

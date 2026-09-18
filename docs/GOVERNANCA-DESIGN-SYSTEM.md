@@ -1,10 +1,10 @@
-﻿# Governança do @versi/design-system
+﻿# Governança do @aspprev/versi-ds
 
 Este documento rege o repositório independente `ds-versi`. O portal será consumidor versionado em uma etapa posterior.
 
 ## Estado atual
 
-Nome e versão existentes: `@versi/design-system`, `0.1.0`. O manifesto não contém `private: true` e declara publicação pública. Esses valores ainda precisam de confirmação para a primeira release. A URL remota está pendente; nenhuma URL foi criada por esta revisão.
+Nome e versão existentes: `@aspprev/versi-ds`, `0.1.0`. O manifesto não contém `private: true` e declara publicação pública. Esses valores ainda precisam de confirmação para a primeira release. A URL remota está pendente; nenhuma URL foi criada por esta revisão.
 
 A API é definida pelos nove exports em `package.json`: raiz, core, forms, charts, overlays, documents, countries, styles.css e themes.css. Arquivos internos não são contrato público. A lista de conteúdo publicável é `dist` e `README.md`, além do manifesto obrigatório do npm.
 

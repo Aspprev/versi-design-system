@@ -55,8 +55,8 @@ const TOKEN_GROUPS = [
 ] as const;
 
 const cssCode = `/* globals.css do projeto consumidor */
-@import "@versi/design-system/styles.css";
-@import "@versi/design-system/themes.css";
+@import "@aspprev/versi-ds/styles.css";
+@import "@aspprev/versi-ds/themes.css";
 
 /* A identidade e as preferencias ficam no elemento raiz. */
 html {
