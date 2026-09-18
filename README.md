@@ -458,6 +458,6 @@ Para aprofundar o uso e a manutenção, consulte os arquivos abaixo no checkout 
 | docs/EVOLUCAO-DESIGN-SYSTEM.md    | Histórico de mudanças e validações                      |
 
 O contexto específico do portal, o plano de migração e as pendências dessa transição ficam exclusivamente em `MIGRACAO-DO-PORTAL.md`.
-#   v e r s i - d e s i g n - s y s t e m 
- 
- 
+# versi-design-system
+
+
