@@ -41,6 +41,8 @@ jobs:
             examples/pilot/package-lock.json
       - run: npm ci --ignore-scripts
       - run: npm run build
+      - name: Prepare pilot vendor directory
+        run: mkdir -p examples/pilot/vendor
       - run: npm pack --ignore-scripts --pack-destination examples/pilot/vendor
       - run: npm ci --prefix examples/pilot --ignore-scripts
       - run: npm run check:security
