@@ -19,7 +19,7 @@ describe("Design System country data", () => {
       label: "Brasil",
       value: "Brasil",
       idd: { display: "+55" },
-      flags: { svg: "/flags/br.svg" },
+      flags: { svg: getCountryFlagUrl("BR") },
     });
   });
 
@@ -32,10 +32,11 @@ describe("Design System country data", () => {
     expect(flags).toHaveLength(COUNTRY_OPTIONS.length);
     for (const country of COUNTRY_OPTIONS) {
       expect(flags).toContain(`${country.cca2.toLowerCase()}.svg`);
+      expect(Buffer.from(country.flags.svg.split(",")[1], "base64").toString()).toBe(fs.readFileSync(path.join(flagsRoot, `${country.cca2.toLowerCase()}.svg`), "utf8"));
     }
     expect(
       COUNTRY_OPTIONS.every((country) =>
-        /^\/flags\/[a-z0-9-]+\.svg$/i.test(country.flags.svg),
+        /^data:image\/svg\+xml;base64,/.test(country.flags.svg),
       ),
     ).toBe(true);
   });
@@ -74,8 +75,9 @@ describe("Design System country data", () => {
   });
 
   it("resolve o caminho local da bandeira pelo codigo ISO-2", () => {
-    expect(getCountryFlagUrl("BR")).toBe("/flags/br.svg");
-    expect(getCountryFlagUrl("br")).toBe("/flags/br.svg");
+    expect(getCountryFlagUrl("BR")).toMatch(/^data:image\/svg\+xml;base64,/);
+    expect(getCountryFlagUrl("ZZ")).toBe("");
+    expect(getCountryFlagUrl("br")).toBe(getCountryFlagUrl("BR"));
     expect(getCountryFlagUrl("Brasil")).toBe("");
   });
 });

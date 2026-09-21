@@ -1,4 +1,4 @@
-﻿# Migração do Design System
+# Migração do Design System
 
 ## Estado do repositório independente
 
@@ -6,13 +6,13 @@ Este documento concentra o contexto da separação do portal, as pendências da
 transição e o roteiro de adoção. O README é o guia geral de uso do Design System.
 
 O pacote foi extraído para um repositório independente e não importa arquivos
-do portal. A preparação técnica não equivale à publicação: a revisão anterior
-não publicou uma release nem definiu uma URL remota. O nome e a versão do
-manifesto continuam sujeitos à confirmação para a primeira publicação.
+do portal. A publicação de `@aspprev/versi-ds@0.1.0` no npm foi informada pelo
+usuário em 2026-09-18. A validação local usa o tarball gerado pelo manifesto;
+ela não publica novamente nem inventa metadados de release.
 
-A revisão atua apenas em `ds-versi`. O caminho efetivo neste ambiente é `C:\Users\AlineRodrigu_ipo\Desktop\ASPPrev\Projetos INOVACAO\_POR\ds-versi` (o caminho informado na solicitação tinha uma separação diferente em `AlineRodrigu\_ipo`). Nenhum arquivo do portal foi alterado ou removido. A migração dos imports será uma etapa posterior.
+A revisão do pacote continua em `ds-versi`. O caminho efetivo neste ambiente é `C:\Users\AlineRodrigu_ipo\Desktop\ASPPrev\Projetos INOVACAO\_POR\ds-versi` (o caminho informado na solicitação tinha uma separação diferente em `AlineRodrigu\_ipo`). O portal já tinha 262 arquivos importando `@aspprev/versi-ds`; neste lote, os oito arquivos de runtime restantes e os contratos de tema/CSS também foram migrados. O workspace local legado permanece para a validação interna do portal e ainda usa o nome histórico `@aspprev/design-system` em seus próprios manifests/testes.
 
-O pacote conserva os componentes funcionais, aliases de compatibilidade, tokens, paletas, 250 bandeiras SVG locais, dados de países, stories e testes. O nome `@aspprev/versi-ds` e a versão `0.1.0` foram preservados conforme o manifesto existente; não constituem confirmação de release.
+O pacote conserva os componentes funcionais, aliases de compatibilidade, tokens, paletas, 250 bandeiras SVG locais, dados de países, stories e testes. O nome e a versão seguem o manifesto publicado informado pelo usuário: `@aspprev/versi-ds@0.1.0`.
 
 ## Ajustes para autonomia
 
@@ -39,14 +39,13 @@ execute `npm run pilot:prepare` e `npm run pilot:dev`; para validar o build de
 produção, execute `npm run test:pilot`. Instruções e escopo ficam em
 `examples/pilot/README.md`. Este piloto não modifica nem conecta serviços do portal.
 
-1. Confirmar nome npm, versão de release, acesso ao escopo e URL remota. A URL ainda não foi fornecida; não criar metadados fictícios.
-2. Confirmar a licença MIT já declarada, titularidade e proveniência dos dados/SVGs. O repositório não forneceu um texto de licença com titular para publicação.
-3. Gerar o tarball com `npm pack` e instalá-lo em uma aplicação piloto independente.
-4. Importar `/styles.css` uma única vez e `/themes.css` depois dele. Configurar a fonte do consumidor e os atributos de tema/contraste/escala/movimento.
-5. Copiar `dist/flags` para uma rota pública `/flags` no consumidor (comando no README); conferir aplicações hospedadas sob subpath.
-6. Instalar peers das camadas usadas. Formik envolve os controles integrados. A entrada raiz requer todos os peers.
-7. Validar build de produção, teclado, leitor de tela, temas e responsividade nesse consumidor. Registrar a versão e um caminho de rollback.
-8. Publicar somente após essa revisão. A migração gradual dos imports e eventual retirada das cópias do portal pertencem à etapa seguinte.
+1. Confirmar no npm a versão efetiva, acesso ao escopo e titularidade/proveniência dos dados e SVGs antes da próxima release.
+2. Gerar o tarball com `npm pack` e instalá-lo em uma aplicação piloto independente; o piloto local já faz essa validação automaticamente.
+3. Importar `/styles.css` uma única vez e `/themes.css` depois dele. Configurar a fonte do consumidor e os atributos de tema/contraste/escala/movimento.
+4. Após instalar o pacote atualizado, remover `public/flags` e scripts de cópia/postinstall exclusivos das bandeiras do DS. As URLs são incorporadas ao bundle; com CSP, permitir `data:` em `img-src`.
+5. Instalar peers das camadas usadas. Formik envolve os controles integrados. A entrada raiz requer todos os peers.
+6. Validar build de produção, teclado, leitor de tela, temas e responsividade nesse consumidor. Registrar a versão e um caminho de rollback.
+7. Remover o workspace local legado somente depois que todos os consumidores e os testes históricos do portal forem convertidos para o pacote npm. As cópias locais devem permanecer até essa validação.
 
 ## Limitações conhecidas
 

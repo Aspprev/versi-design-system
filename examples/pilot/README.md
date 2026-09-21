@@ -14,8 +14,7 @@ npm run pilot:dev
 ```
 
 Abra http://127.0.0.1:4175. A preparação executa npm pack com as verificações
-prepack, instala o .tgz em examples/pilot e copia as 250 bandeiras do pacote
-instalado para public/flags. O nome do artefato é derivado do manifesto atual;
+prepack, instala o .tgz em examples/pilot sem copiar bandeiras: os SVGs estão incorporados no JavaScript. O nome do artefato é derivado do manifesto atual;
 a preparação não altera a versão nem publica no npm.
 
 Para testar o resultado de produção:
@@ -37,7 +36,7 @@ npm --prefix examples/pilot run preview
 ## O que o piloto demonstra
 
 - Formulário Formik com validação, Input, SelectCountry e InputPhone.
-- Bandeiras locais servidas pelo consumidor em /flags.
+- Bandeiras incorporadas ao pacote, sem public/flags.
 - Table com os contatos adicionados, Notice e confirmação em Modal.
 - Temas claro/escuro, alto contraste, paletas e escala tipográfica.
 - Fonte system-ui configurada pelo consumidor, sem downloads externos.
@@ -48,7 +47,7 @@ o cadastro. O piloto não possui backend nem envia dados a serviços externos.
 
 ## Artefatos e manutenção
 
-`vendor/*.tgz`, `public/flags`, `dist` e `node_modules` são gerados e ignorados
+`vendor/*.tgz`, `dist` e `node_modules` são gerados e ignorados
 pelo Git. Após uma mudança no DS, rode novamente pilot:prepare para atualizar
 o pacote instalado e depois test:pilot. O lockfile do piloto deve ser versionado.
 

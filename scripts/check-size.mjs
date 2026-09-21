@@ -6,8 +6,8 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const distRoot = path.join(root, "dist");
 const budgets = {
-  // Aggregate all emitted JS, including shared chunks (entry files reexport them).
-  "*.js": { bytes: 450_000, gzipBytes: 85_000 },
+  // Includes 250 embedded SVGs (~4.81 MB, ~1.70 MB gzip) shared by countries/forms.
+  "*.js": { bytes: 5_400_000, gzipBytes: 1_900_000 },
   "index.js": { bytes: 310_000, gzipBytes: 65_000 },
   // Per-entry limits complement the aggregate budget above.
   "core.js": { bytes: 10_000, gzipBytes: 4_000 },

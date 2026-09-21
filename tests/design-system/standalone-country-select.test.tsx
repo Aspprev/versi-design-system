@@ -26,7 +26,7 @@ describe("SelectCountry standalone", () => {
     expect(html).toContain("<label");
     expect(html).toContain('aria-expanded="false"');
     expect(html).toContain("Brasil");
-    expect(html).toContain('/flags/br.svg');
+    expect(html).toContain('data:image/svg+xml;base64,');
     expect(html).toContain('data-has-value="true"');
     expect(html).toContain('aria-labelledby="');
   });

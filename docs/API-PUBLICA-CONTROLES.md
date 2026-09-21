@@ -29,11 +29,13 @@ Os nomes `SelectCountry`, `SelectMulti`, `InputPhone`, `DatePicker` e `Checkbox`
 
 React e React DOM são peer dependencies (`>=18.2.0 <20`). Formik, date-fns e react-number-format são peers opcionais necessários para `/forms`. classnames, react-icons e class-variance-authority são dependências diretas. O build externaliza essas bibliotecas. Consulte o manifesto para versões compatíveis.
 
-O repositório é independente; nome e versão existentes são `@aspprev/versi-ds` e `0.1.0`, pendentes de confirmação para release. Testes, stories e documentação interna permanecem no repositório; o npm contém dist, README e manifesto.
+O repositório é independente; o manifesto publicado informado pelo usuário é
+`@aspprev/versi-ds` na versão `0.1.0`. Testes, stories e documentação interna
+permanecem no repositório; o npm contém dist, README e manifesto.
 
 ## Países, teclado e bandeiras
 
-SelectCountry usa o nome como valor na lista padrão (`Brasil`), com `cca2` separado (`BR`). `countryList.codes` sempre usa ISO-2. Ambos os seletores priorizam `/flags/<cca2>.svg`; o consumidor deve servir os arquivos publicados em `dist/flags` nessa rota.
+SelectCountry usa o nome como valor na lista padrão (`Brasil`), com `cca2` separado (`BR`). `countryList.codes` sempre usa ISO-2. Ambos os seletores priorizam `flags.svg` customizado; sem ele, usam o SVG incorporado pelo pacote via ISO-2. Não precisam de rota `/flags`. Veja [Bandeiras](BANDEIRAS.md).
 
 O seletor de país do InputPhone participa da ordem de Tab. Enter/Espaço ou setas abrem o painel; a busca recebe foco. Setas percorrem as opções e Enter/Espaço selecionam. Escape fecha e devolve foco ao botão; Tab fecha e avança ao telefone, Shift+Tab retorna ao botão. A busca e o painel têm nomes acessíveis. O campo usa `type="tel"` também no modo mascarado.
 

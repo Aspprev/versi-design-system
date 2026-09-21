@@ -25,7 +25,28 @@
   examples/pilot/README.md. Artefatos, dependências e bandeiras copiadas são
   ignorados pelo Git. O exemplo não entra no tarball do DS.
 
-Resultados finais do piloto registrados após a conclusão dos testes abaixo.
+Resultado final: `npm run pilot:prepare` instalou `aspprev-versi-ds-0.1.0.tgz`
+em um `node_modules` próprio, com 250 bandeiras, e `npm run test:pilot` passou
+nos 8 cenários desktop/mobile para claro/escuro e contraste normal/alto.
+Os cenários cobrem escala tipográfica, teclado, SkipLink, SelectCountry,
+InputPhone, modal, tabela, ausência de erros de rede/console e Axe.
+
+O piloto também revelou que o exemplo aplicava cor e fundo no `:root`,
+congelando o fundo claro ao selecionar o esquema escuro. As regras foram
+movidas para `body`, preservando a herança dos tokens em todos os temas.
+
+## 2026-09-18 — primeiro lote de imports no portal
+
+- Migrados os oito arquivos de runtime que ainda importavam
+  `@aspprev/design-system`: layout global, telas de resultado/erro/eleição,
+  Meu Cadastro, ThemeLab e ComponentPlayground. O CSS global agora documenta
+  `@aspprev/versi-ds/styles.css`.
+- Atualizados o contrato de consumo do pacote, o contrato de temas e a
+  verificação de ordem dos CSS para o nome publicado. O workspace local legado
+  continua presente apenas para os testes e o build interno do portal.
+- `npm run typecheck`, `npm run build`, `npm run check:design-system` e os
+  testes direcionados (13 testes em 3 arquivos) passaram. O lint passou sem
+  erros, com nove avisos preexistentes em componentes do workspace legado.
 
 ## 2026-09-18 — README como guia de uso do DS
 
@@ -53,8 +74,9 @@ do projeto não rastreados; este registro descreve as alterações da revisão e
 não presume uma comparação com uma release anterior. Não havia um registro
 de evolução nesta cópia, por isso este arquivo foi criado.
 
-Nome e versão preservados: `@aspprev/versi-ds`, `0.1.0`. Nenhuma publicação,
-push, migração de imports ou alteração de arquivos do portal foi realizada.
+Nome e versão preservados: `@aspprev/versi-ds`, `0.1.0`. A publicação no npm
+foi informada pelo usuário em 2026-09-18; esta revisão não publica nem altera
+arquivos do portal.
 
 ### Problemas encontrados e correções
 
@@ -175,13 +197,16 @@ Não eram defeitos de TypeScript do pacote. Falhas intermediárias dos novos
 testes ajudaram a corrigir IDs de stories, espera de compilação e o contraste
 real do dropdown; não houve atualização automática de referências visuais.
 
-### Pendências antes de publicar
+### Pendências pós-publicação e migração
 
-- Confirmar nome npm e versão existentes, URL remota e acesso ao escopo.
-- Confirmar licença MIT declarada, titularidade e proveniência de SVGs/dados.
-  Nenhuma informação de autoria/URL foi inventada.
-- Testar o tarball em uma aplicação piloto de produção; configurar fonte e
-  rota /flags, inclusive quando houver subpath. Migrar o portal depois.
+- Confirmar no npm a versão efetivamente publicada, a titularidade e a
+  proveniência dos SVGs/dados antes de promover uma nova release.
+- Configurar fonte no consumidor de produção, inclusive quando
+  houver subpath; o piloto local já valida o tarball e as 250 bandeiras.
+- Concluir a migração gradual do portal. A inspeção de 2026-09-18 encontrou
+  262 arquivos do portal usando `@aspprev/versi-ds`, mas ainda há referências a
+  `@aspprev/design-system` e um workspace local legado. Esses arquivos ficam
+  fora deste repositório e não foram alterados nesta revisão.
 - Fazer revisão manual com leitor de tela. A matriz automatizada não certifica
   todos os estados de todos os componentes.
 - O preview usa Google Fonts, e as referências existentes dependem de Nunito
@@ -196,3 +221,17 @@ o log intermediário countries-validation.log; os logs finais foram preservados.
 
 Referências técnicas consultadas: [Storybook React/Vite](https://storybook.js.org/docs/get-started/frameworks/react-vite)
 e [conteúdo obrigatório do pacote npm](https://docs.npmjs.com/files/package.json/).
+
+
+## Bandeiras autocontidas
+
+Corrigida a resolução que publicava SVGs em dist mas ainda exigia /flags do consumidor. As 250 bandeiras agora integram o bundle como data URLs determinísticas, compartilhadas entre countries e forms. Opções flags.svg customizadas têm prioridade e ISO-2 desconhecido usa placeholder. API e SVGs preservados. Removida a cópia do piloto; adicionados testes SSR, integridade do tarball e fixture Next.js/Vite sem public. Nenhuma versão ou release foi criada. Detalhes e validação em BANDEIRAS.md.
+
+Validação da distribuição autocontida: npm install, typecheck, build, 68 testes
+unitários, 50 testes visuais desktop/mobile, npm pack --dry-run e test:package
+aprovados. Fixture Next.js 16.3.5/Turbopack e Vite 8.3.0 aprovado em produção,
+sem public/flags e sem erros de hidratação/runtime. Tarball: 295 arquivos,
+250 SVGs e 4.905.186 bytes compactados. Acréscimo de JS: 4.806.167 bytes
+(1.701.601 bytes gzip), com CSP img-src data: e carregamento do mapa completo
+como limitações documentadas em BANDEIRAS.md. Publicação e escolha de versão
+permanecem fora desta alteração.

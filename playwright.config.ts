@@ -31,7 +31,7 @@ export default defineConfig({
     cwd: ".",
     url: baseURL,
     reuseExistingServer: false,
-    timeout: 180_000,
+    timeout: 600_000,
     env: { STORYBOOK_DISABLE_TELEMETRY: "1" },
   },
   projects: [

@@ -1,3 +1,4 @@
+import { getCountryFlagUrl } from "../flag-url";
 import { expect, test } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
@@ -24,7 +25,7 @@ for (const scheme of ["light", "dark"]) {
       await expect(page.locator("html")).toHaveAttribute("data-color-scheme", scheme);
       await expect(page.locator("html")).toHaveAttribute("data-contrast", contrast);
       await expect.poll(() => page.getByRole("heading", { level: 1 }).evaluate((element) => parseFloat(getComputedStyle(element).fontSize))).toBeGreaterThan(previousSize);
-      const flag = page.locator('img[src="/flags/br.svg"]').first();
+      const flag = page.locator(`img[src="${getCountryFlagUrl("BR")}"]`).first();
       await expect.poll(() => flag.evaluate((img) => (img as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
       await page.getByRole("button", { name: "Salvar contato" }).click();
       await expect(page.getByText("Informe o nome completo.", { exact: true })).toBeVisible();
@@ -43,11 +44,12 @@ for (const scheme of ["light", "dark"]) {
       expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
       await page.getByRole("button", { name: "Salvar contato" }).click();
       const modal = page.getByRole("dialog", { name: "Contato salvo" });
-      await expect(modal).toBeVisible();
+      const modalTitle = page.getByRole("heading", { name: "Contato salvo" });
+      await expect(modalTitle).toBeVisible();
       await expect(modal).toContainText("Beatriz Lima");
       expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
       await page.keyboard.press("Escape");
-      await expect(modal).not.toBeVisible();
+      await expect(modalTitle).not.toBeVisible();
       await expect(page.getByRole("button", { name: "Salvar contato" })).toBeFocused();
       await expect(page.getByRole("table", { name: "Contatos cadastrados" })).toContainText("Beatriz Lima");
       await expect(page.getByRole("table", { name: "Contatos cadastrados" })).toContainText("Portugal");

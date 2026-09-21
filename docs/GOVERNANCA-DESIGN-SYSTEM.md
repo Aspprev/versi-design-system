@@ -4,7 +4,9 @@ Este documento rege o repositório independente `ds-versi`. O portal será consu
 
 ## Estado atual
 
-Nome e versão existentes: `@aspprev/versi-ds`, `0.1.0`. O manifesto não contém `private: true` e declara publicação pública. Esses valores ainda precisam de confirmação para a primeira release. A URL remota está pendente; nenhuma URL foi criada por esta revisão.
+Nome e versão do manifesto: `@aspprev/versi-ds`, `0.1.0`. A publicação no npm
+foi informada pelo usuário; confirme a página do pacote e a titularidade antes
+de promover outra versão. A URL remota do repositório continua pendente.
 
 A API é definida pelos nove exports em `package.json`: raiz, core, forms, charts, overlays, documents, countries, styles.css e themes.css. Arquivos internos não são contrato público. A lista de conteúdo publicável é `dist` e `README.md`, além do manifesto obrigatório do npm.
 
@@ -36,4 +38,7 @@ Preservar APIs substituídas por pelo menos um ciclo compatível. Marcar `@depre
 
 ## Revisão e promoção
 
-Antes de publicar: confirmar nome/versão, URL remota, licença/proveniência dos ativos, acesso ao escopo npm, validações e teste do tarball em consumidor piloto. Registrar rollback. O portal não deve ser alterado durante a preparação do pacote independente.
+Antes de uma nova versão: confirmar licença/proveniência dos ativos, acesso ao
+escopo npm, validações e teste do tarball em consumidor piloto. Registrar
+rollback. A migração do portal deve ocorrer separadamente, preservando cópias
+locais até os consumidores concluírem build e testes.

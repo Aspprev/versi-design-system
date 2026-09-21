@@ -32,7 +32,7 @@ export type SelectCountryProps = Omit<
 
 function renderFlag(option: SelectCountryOption) {
   const svgSrc = String(
-    getCountryFlagUrl(option.cca2) || option.flags?.svg || "",
+    option.flags?.svg?.trim() || getCountryFlagUrl(option.cca2),
   ).trim();
 
   if (!svgSrc) {

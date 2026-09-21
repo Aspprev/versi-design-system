@@ -30,6 +30,7 @@ if (process.argv.includes("--clean")) {
 }
 
 generateTokenFiles();
+await import("./generate-country-flags.mjs");
 
 fs.rmSync(distRoot, { recursive: true, force: true });
 

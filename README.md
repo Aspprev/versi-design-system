@@ -379,13 +379,11 @@ import { SelectCountry, InputPhone } from "@aspprev/versi-ds/forms";
 
 `countryList` aceita `all` (padrão), `include` ou `exclude`; `codes` usa ISO-2. Na lista padrão, o **valor do SelectCountry é o nome** (`Brasil`), e `cca2` contém `BR`. O payload telefônico é `{ ddi, ddd, numero }`; países com o mesmo DDI não podem ser distinguidos ao restaurar apenas esse payload. A escolha explícita preserva o ISO-2 enquanto o componente estiver montado.
 
-Os componentes usam SVGs locais por `cca2`, inclusive em opções customizadas: `/flags/br.svg`, por exemplo. Todos os arquivos são publicados em `dist/flags`; o consumidor precisa servi-los em `/flags` no mesmo domínio. Na raiz da aplicação consumidora:
+As 250 bandeiras são incorporadas ao JavaScript como URLs `data:image/svg+xml;base64,...`. `getCountryFlagUrl("BR")` retorna o SVG do pacote; códigos desconhecidos retornam string vazia. Não copie `public/flags`: Next.js, Vite, Storybook, SSR e aplicações sob subpath usam o mesmo asset, sem CDN, rota estática ou postinstall.
 
-```bash
-node --input-type=module -e "import {cpSync} from 'node:fs'; import {fileURLToPath} from 'node:url'; cpSync(fileURLToPath(new URL('./flags/', import.meta.resolve('@aspprev/versi-ds/countries'))), 'public/flags', {recursive:true})"
-```
+Opções customizadas com `flags.svg` não vazio têm prioridade; sem ele, o componente usa o ISO-2 e, se desconhecido, um placeholder. `flags.png` permanece como metadado legado e não é requisitado. Com CSP, permita `data:` em `img-src`. Use a URL em `<img>`; não é necessário `next/image`.
 
-Em aplicações com subpath, configure uma rota estática para `/flags` na raiz do domínio. O campo legado `flags.png` contém metadados remotos; os componentes usam o SVG local e não requisitam esse PNG. `staticDirs` serve os SVGs no Storybook.
+O build gera `src/data/country-flags.json` deterministicamente a partir dos SVGs, e tsup incorpora esse mapa ao chunk compartilhado. Os 250 originais também permanecem em `dist/flags` para compatibilidade e auditoria. Isso aumenta o JavaScript de quem importa países ou formulários; não existe carregamento individual sob demanda. Consulte `docs/BANDEIRAS.md` e o fixture `examples/flags-consumer`.
 
 ## Desenvolvimento e validação
 
@@ -393,6 +391,7 @@ Em aplicações com subpath, configure uma rota estática para `/flags` na raiz 
 npm install
 npm run tokens:check
 npm run check:governance
+npm run check:security
 npm run typecheck
 npm run build
 npm test
@@ -411,7 +410,7 @@ Use `npm run storybook` (6006) ou `npm run storybook:standalone` (6007). Playwri
 
 No Storybook, abra o grupo `Design System` e escolha um componente. Use suas stories para comparar estados e variantes, e os controles para experimentar as propriedades disponíveis. A barra de ferramentas altera esquema de cores, paleta, contraste, escala da fonte e movimento. O `ThemeLab/Playground` reúne a exploração dos temas; o painel de acessibilidade ajuda na inspeção de cada cenário.
 
-`prepack` verifica tokens, governança, TypeScript, build, tamanho e conteúdo antes de empacotar. O tarball inclui somente `dist/`, `README.md` e o `package.json` obrigatório do npm. Stories, testes, documentação interna e ferramentas não são publicados. Sourcemaps em `dist` são intencionais para diagnóstico.
+`prepack` verifica tokens, governança, dependências (`npm audit`), TypeScript, build, tamanho e conteúdo antes de empacotar. O tarball inclui somente `dist/`, `README.md` e o `package.json` obrigatório do npm. Stories, testes, documentação interna e ferramentas não são publicados. Sourcemaps em `dist` são intencionais para diagnóstico.
 
 ## Aplicação de exemplo
 
@@ -438,7 +437,7 @@ O exemplo não faz parte do pacote npm e seus dados ficam somente na memória da
 | Uma classe Tailwind própria não funciona                 | O CSS do pacote inclui as classes dos componentes; compile as classes da sua aplicação ou use CSS próprio.        |
 | Erro ao resolver Formik, Headless UI ou outra integração | Instale os peers da camada importada. A entrada raiz precisa do conjunto completo.                                |
 | Erro de contexto Formik                                  | Envolva os controles integrados em Formik; para Input controlado, use InputStandalone.                            |
-| Bandeiras não aparecem                                   | Confirme que /flags/br.svg responde no domínio da aplicação e copie dist/flags para os arquivos públicos.         |
+| Bandeiras não aparecem                                   | Confira o pacote atualizado e permita data: em img-src quando houver CSP.         |
 | SelectCountry não mostra o valor inicial                 | Na lista padrão, use Brasil como valor; BR é o código de filtragem ISO-2.                                         |
 | Diálogo ou dropdown com tema diferente                   | Aplique os atributos de tema no html para alcançar também os elementos renderizados fora da árvore do componente. |
 | Fonte diferente do Storybook                             | Carregue a fonte desejada e configure --font-nunito-sans; a fonte não acompanha o pacote.                         |
@@ -459,5 +458,4 @@ Para aprofundar o uso e a manutenção, consulte os arquivos abaixo no checkout 
 
 O contexto específico do portal, o plano de migração e as pendências dessa transição ficam exclusivamente em `MIGRACAO-DO-PORTAL.md`.
 # versi-design-system
-
 

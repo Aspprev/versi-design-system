@@ -36,6 +36,20 @@ function verify(entries) {
     for (const entry of ${JSON.stringify(entries)}) {
       assert(Object.keys(await import('${pkg.name}' + entry)).length > 0);
     }
+    const { COUNTRY_OPTIONS, getCountryFlagUrl } = await import('${pkg.name}/countries');
+    assert.equal(COUNTRY_OPTIONS.length, 250);
+    assert(getCountryFlagUrl('BR').startsWith('data:image/svg+xml;base64,'));
+    if (${entries.includes('/forms')}) {
+      const { Formik } = await import('formik');
+      const { InputPhone, SelectCountry } = await import('${pkg.name}/forms');
+      for (const Component of [InputPhone, SelectCountry]) {
+        const html = renderToStaticMarkup(createElement(Formik, {
+          initialValues: { phone: { ddi: 55 }, country: 'Brasil' }, onSubmit() {}
+        }, createElement(Component, { name: Component === InputPhone ? 'phone' : 'country' })));
+        assert(html.includes('src="' + getCountryFlagUrl('BR') + '"'));
+        assert(!html.includes('/flags/'));
+      }
+    }
     assert(renderToStaticMarkup(createElement(Button, null, 'Isolado')).includes('Isolado'));
     for (const css of ['styles.css', 'themes.css']) assert(import.meta.resolve('${pkg.name}/' + css));
   `,

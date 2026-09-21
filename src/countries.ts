@@ -1,3 +1,4 @@
+import countryFlags from "./data/country-flags.json";
 import rawCountries from "./data/countries-source.json";
 
 export type DesignSystemCountryOption = {
@@ -43,7 +44,6 @@ function text(value: unknown) {
 function flagUrl(value: unknown) {
   if (typeof value !== "string") return "";
   const localPath = value.trim();
-  if (/^\/flags\/[a-z0-9-]+\.svg$/i.test(localPath)) return localPath;
   try {
     const url = new URL(localPath);
     return url.protocol === "https:" ? url.toString() : "";
@@ -70,7 +70,9 @@ function normalizeKey(value: string) {
 
 export function getCountryFlagUrl(cca2?: string | null) {
   const code = text(cca2).toLowerCase();
-  return /^[a-z]{2}$/.test(code) ? `/flags/${code}.svg` : "";
+  return Object.prototype.hasOwnProperty.call(countryFlags, code)
+    ? countryFlags[code as keyof typeof countryFlags]
+    : "";
 }
 
 function optionCode(option: { cca2?: string; value?: string; label?: string }) {
@@ -101,7 +103,7 @@ function mapCountry(country: RawCountry): DesignSystemCountryOption | null {
   const label = text(country.name);
   const cca2 = text(country.alpha2Code).toUpperCase();
   const codes = callingCodes(country.callingCodes);
-  const svg = getCountryFlagUrl(cca2) || flagUrl(country.flags?.svg);
+  const svg = getCountryFlagUrl(cca2);
   const png = flagUrl(country.flags?.png);
 
   if (!label || cca2.length !== 2 || !codes[0] || !svg) return null;

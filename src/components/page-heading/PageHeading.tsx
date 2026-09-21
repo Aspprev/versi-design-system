@@ -30,6 +30,16 @@ function BackContent({ label }: Pick<PageHeadingBackAction, "label">) {
   );
 }
 
+function getBackHref(href?: string) {
+  if (!href) return undefined;
+  // React 18 only warns about javascript: links. Match browser URL parsing
+  // without requiring window/document, including ignored tabs and newlines.
+  const protocol = href
+    .replace(/^[\u0000-\u0020]+/, "")
+    .replace(/[\t\r\n]/g, "");
+  return /^javascript:/i.test(protocol) ? undefined : href;
+}
+
 export default function PageHeading({
   title,
   subtitle,
@@ -39,6 +49,7 @@ export default function PageHeading({
   contentClassName,
   spacing = "default",
 }: PageHeadingProps) {
+  const backHref = getBackHref(back?.href);
   const backClassName =
     "mb-2 inline-flex w-fit items-center gap-1 text-sm font-semibold text-content-link hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring";
 
@@ -51,8 +62,8 @@ export default function PageHeading({
       )}
     >
       <div className={classNames("min-w-0", contentClassName)}>
-        {back?.href ? (
-          <a className={backClassName} href={back.href}>
+        {back && backHref ? (
+          <a className={backClassName} href={backHref}>
             <BackContent label={back.label} />
           </a>
         ) : back ? (

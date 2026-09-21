@@ -1,6 +1,6 @@
 {
   "name": "@aspprev/versi-ds",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -129,6 +129,7 @@
     "tokens:check": "node scripts/generate-tokens.mjs --check",
     "check:size": "node scripts/check-size.mjs",
     "check:governance": "node scripts/check-governance.mjs",
+    "check:security": "node scripts/check-security.mjs",
     "storybook": "storybook dev -p 6006",
     "storybook:standalone": "storybook dev -p 6007",
     "build-storybook": "storybook build",
@@ -137,13 +138,14 @@
     "typecheck": "tsc --noEmit -p tsconfig.json && tsc -p tsconfig.stories.json",
     "test:visual": "playwright test --config=playwright.config.ts",
     "test:visual:update": "playwright test --config=playwright.config.ts --update-snapshots",
-    "prepack": "npm run tokens:check && npm run check:governance && npm run typecheck && npm run build && npm run check:size && npm run check:package",
+    "prepack": "npm run tokens:check && npm run check:governance && npm run check:security && npm run typecheck && npm run build && npm run check:size && npm run check:package",
     "check:package": "node scripts/check-package.mjs",
     "test:package": "node scripts/test-package.mjs",
     "pilot:prepare": "node scripts/prepare-pilot.mjs",
     "pilot:build": "npm --prefix examples/pilot run build",
     "pilot:dev": "npm --prefix examples/pilot run dev",
-    "test:pilot": "npm run pilot:build && playwright test --config=playwright.pilot.config.ts"
+    "test:pilot": "npm run pilot:build && playwright test --config=playwright.pilot.config.ts",
+    "test:flags-consumers": "node scripts/test-flags-consumers.mjs"
   },
   "overrides": {
     "tsup": {
@@ -152,5 +154,9 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aspprev/versi-design-system.git"
   }
 }

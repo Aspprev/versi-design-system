@@ -25,5 +25,6 @@ npm(["install", "--ignore-scripts", `./vendor/${artifact}`], pilot);
 const installed = path.join(pilot, "node_modules", pkg.name);
 assert(!fs.lstatSync(installed).isSymbolicLink(), "O piloto deve usar o tarball, não symlink.");
 assert.equal(fs.readFileSync(path.join(installed, "dist/index.js"), "utf8"), fs.readFileSync(path.join(root, "dist/index.js"), "utf8"));
-npm(["run", "assets"], pilot);
+// The consumer must have no locally served flags.
+assert(!fs.existsSync(path.join(pilot, "public/flags")), "Remova public/flags legado do piloto.");
 console.log(`Piloto preparado com ${artifact}, instalado em node_modules próprio.`);
