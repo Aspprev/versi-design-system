@@ -44,6 +44,9 @@ jobs:
       - name: Prepare pilot vendor directory
         run: mkdir -p examples/pilot/vendor
       - run: npm pack --ignore-scripts --pack-destination examples/pilot/vendor
+      - name: Refresh pilot lockfile for generated tarball
+        working-directory: examples/pilot
+        run: npm install --ignore-scripts --no-audit --no-fund --package-lock-only ./vendor/*.tgz
       - run: npm ci --prefix examples/pilot --ignore-scripts
       - run: npm run check:security
       - run: npm run typecheck
