@@ -18,7 +18,7 @@
 - A redução de movimento também respeita `prefers-reduced-motion`.
 - O Storybook foi reorganizado em `Getting Started`, `Foundations`,
   `Components`, `Patterns`, `Themes` e `Guidelines`, com ordenação centralizada.
-- A documentação visual passou a usar os assets oficiais da marca Versi no
+- A documentação visual passou a usar os assets oficiais da marca VERSI no
   cabeçalho, página inicial e favicon, além de novas orientações de uso e
   acessibilidade.
 

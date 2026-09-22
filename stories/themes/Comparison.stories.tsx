@@ -8,7 +8,7 @@ function ThemeComparison() {
     <div className="mx-auto flex max-w-7xl flex-col gap-6">
       <div>
         <Typography element="h1" semanticRole="page-title">Theme comparison</Typography>
-        <Typography variant="secondary">Os presets abaixo são os temas reais distribuídos pelo Versi.</Typography>
+        <Typography variant="secondary">Os presets abaixo são os temas reais distribuídos pelo VERSI.</Typography>
       </div>
       <div className="grid gap-4 lg:grid-cols-2">
         {THEMES.map((theme) => (

@@ -1,8 +1,10 @@
-# Versi Design System
+# VERSI Design System
 
-Biblioteca React de componentes, tokens, temas e utilitários para padronizar as interfaces dos produtos ASPPrev.
+Biblioteca React de componentes, tokens, temas e utilitários para padronizar as interfaces dos produtos VERSI.
 
 O [Storybook](#storybook) é a documentação visual oficial: nele você pode explorar componentes, foundations, temas, padrões de composição e estados acessíveis.
+
+Site oficial: [versitec.com.br](https://versitec.com.br/) · [Storybook online](https://versi-design-system.vercel.app/)
 
 ## Instalação
 
@@ -15,6 +17,9 @@ Requisitos do pacote:
 - Node.js `>=20.19.0`;
 - React `>=18.2.0 <20`;
 - React DOM `>=18.2.0 <20`.
+
+O identificador npm `@aspprev/versi-ds` é mantido por compatibilidade com as
+aplicações consumidoras e não representa o nome visual atual da marca.
 
 As integrações abaixo são opcionais e só precisam ser instaladas pelas entradas que as utilizam: `@headlessui/react`, `apexcharts`, `date-fns`, `formik`, `jsbarcode`, `react-apexcharts` e `react-number-format`.
 

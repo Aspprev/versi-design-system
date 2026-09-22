@@ -11,7 +11,7 @@ function TypographyFoundation() {
     <div className="mx-auto flex max-w-5xl flex-col gap-6">
       <div>
         <h1 className="text-3xl font-bold text-content-primary">Typography</h1>
-        <p className="mt-2 text-content-secondary">A família base, a escala e os line-heights vêm dos tokens do Versi.</p>
+        <p className="mt-2 text-content-secondary">A família base, a escala e os line-heights vêm dos tokens do VERSI.</p>
       </div>
       <div className="rounded-md border border-border-subtle bg-surface-card p-6">
         <p className="text-sm text-content-secondary">Família: <code>var(--font-family-base)</code></p>
@@ -19,7 +19,7 @@ function TypographyFoundation() {
           {SAMPLES.map(([name, fallback]) => (
             <div className="flex flex-wrap items-baseline justify-between gap-4 py-4" key={name}>
               <span className="text-content-secondary"><code>--{name}</code> · {fallback}</span>
-              <span style={{ fontSize: `var(--${name})`, lineHeight: `var(--leading-${name.replace("text-", "")}, 1.4)` }}>Versi Design System</span>
+              <span style={{ fontSize: `var(--${name})`, lineHeight: `var(--leading-${name.replace("text-", "")}, 1.4)` }}>VERSI Design System</span>
             </div>
           ))}
         </div>

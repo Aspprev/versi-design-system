@@ -6,7 +6,7 @@ addons.setConfig({
     {
       ...themes.light,
       base: "light",
-      brandTitle: "Versi Design System",
+      brandTitle: "VERSI Design System",
       brandUrl: "/",
       brandImage: "/brand/versi-logo-primary.svg",
       colorPrimary: "#0f62c1",

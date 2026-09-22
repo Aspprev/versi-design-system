@@ -12,12 +12,14 @@ const preview: Preview = {
     contrast: "normal",
     fontScale: "default",
     motion: "full",
+    emphasizeFocus: false,
+    underlineLinks: false,
   },
   globalTypes: {
     colorScheme: {
       description: "Esquema de cores",
       defaultValue: "light",
-      toolbar: { icon: "circlehollow", items: ["light", "dark"] },
+      toolbar: { icon: "circlehollow", items: ["light", "dark", "system"] },
     },
     dsTheme: {
       description: "Preset de tema do Design System",
@@ -58,12 +60,19 @@ const preview: Preview = {
   decorators: [
     (Story, context) => {
       if (typeof document !== "undefined") {
-        document.documentElement.dataset.colorScheme =
-          context.globals.colorScheme;
+        const requestedColorScheme = context.globals.colorScheme;
+        const resolvedColorScheme =
+          requestedColorScheme === "system"
+            ? window.matchMedia?.("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light"
+            : requestedColorScheme;
+        document.documentElement.dataset.colorScheme = resolvedColorScheme;
+        document.documentElement.dataset.colorSchemePreference =
+          requestedColorScheme;
         document.documentElement.dataset.dsTheme = context.globals.dsTheme;
         document.documentElement.dataset.contrast = context.globals.contrast;
-        document.documentElement.dataset.contrastTheme =
-          context.globals.colorScheme;
+        document.documentElement.dataset.contrastTheme = resolvedColorScheme;
         document.documentElement.dataset.fontScale = context.globals.fontScale;
         document.documentElement.dataset.motion = context.globals.motion;
       }

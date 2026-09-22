@@ -5,7 +5,11 @@ export { default as InputSwitch } from "./components/InputSwitch/InputSwitch";
 export type { InputSwitchProps } from "./components/InputSwitch/InputSwitch";
 export {
   AccessibilityPreferencesPanel,
+  ContrastPreference,
+  FontSizePreference,
   HighContrastToggle,
+  ReadingPreferences,
+  ThemePreference,
   DEFAULT_ACCESSIBILITY_PREFERENCES,
 } from "./components/accessibility-preferences";
 export type {
@@ -14,6 +18,9 @@ export type {
   AccessibilityHighContrastTheme,
   AccessibilityPreferences,
   AccessibilityPreferencesPanelProps,
+  ContrastPreferenceProps,
+  FontSizePreferenceProps,
   HighContrastToggleProps,
+  ReadingPreferencesProps,
+  ThemePreferenceProps,
 } from "./components/accessibility-preferences";
-

@@ -67,6 +67,8 @@ describe("camadas públicas do pacote standalone", () => {
     expect(forms).toContain("DatePicker");
     expect(charts).toContain("LazyApexChart");
     expect(overlays).toContain("AccessibilityPreferencesPanel");
+    expect(overlays).toContain("ThemePreference");
+    expect(overlays).toContain("ContrastPreference");
     expect(documents).toContain("BoletoBarCode");
     expect(documents).toContain("QRCode");
     expect(documents).toContain("FileDropzone");

@@ -21,6 +21,10 @@ describe("API pública dos controles standalone", () => {
       ).toBe("function");
     }
     for (const exportName of [
+      "ThemePreference",
+      "ContrastPreference",
+      "FontSizePreference",
+      "ReadingPreferences",
       "OtpCodeInput",
       "QRCode",
       "FileDropzone",

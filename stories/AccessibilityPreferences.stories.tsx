@@ -1,5 +1,5 @@
-﻿import { useState } from "react";
 import type { Meta, StoryObj } from "@storybook/react-vite";
+import { useGlobals } from "storybook/preview-api";
 import {
   AccessibilityPreferencesPanel,
   DEFAULT_ACCESSIBILITY_PREFERENCES,
@@ -21,43 +21,105 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-function PreferencesPreview({
-  initial = DEFAULT_ACCESSIBILITY_PREFERENCES,
-}: {
-  initial?: AccessibilityPreferences;
-}) {
-  const [preferences, setPreferences] = useState(initial);
+type StorybookPreferencesGlobals = {
+  colorScheme?: unknown;
+  contrast?: unknown;
+  fontScale?: unknown;
+  motion?: unknown;
+  emphasizeFocus?: unknown;
+  underlineLinks?: unknown;
+};
+
+function readPreferences(
+  globals: StorybookPreferencesGlobals,
+): AccessibilityPreferences {
+  const isEnabled = (value: unknown) => value === true || value === "true";
+  const colorScheme = ["system", "light", "dark"].includes(
+    String(globals.colorScheme),
+  )
+    ? (globals.colorScheme as AccessibilityPreferences["colorScheme"])
+    : "light";
+  const fontScale = ["default", "large", "extra-large"].includes(
+    String(globals.fontScale),
+  )
+    ? ((globals.fontScale === "default"
+        ? "standard"
+        : globals.fontScale) as AccessibilityPreferences["fontScale"])
+    : "standard";
+
+  return {
+    ...DEFAULT_ACCESSIBILITY_PREFERENCES,
+    emphasizeFocus: isEnabled(globals.emphasizeFocus),
+    underlineLinks: isEnabled(globals.underlineLinks),
+    colorScheme,
+    highContrast: globals.contrast === "high",
+    highContrastTheme: colorScheme === "dark" ? "dark" : "light",
+    fontScale,
+    reduceMotion: globals.motion === "reduce",
+  };
+}
+
+function renderPreferencesStory() {
+  const [globals, updateGlobals] = useGlobals();
+  const preferences = readPreferences(globals);
+
+  const updatePreferences = (changes: Partial<AccessibilityPreferences>) => {
+    const globalChanges: Record<string, string> = {};
+    if (changes.colorScheme) globalChanges.colorScheme = changes.colorScheme;
+    if (typeof changes.highContrast === "boolean") {
+      globalChanges.contrast = changes.highContrast ? "high" : "normal";
+    }
+    if (changes.fontScale) {
+      globalChanges.fontScale =
+        changes.fontScale === "standard" ? "default" : changes.fontScale;
+    }
+    if (typeof changes.reduceMotion === "boolean") {
+      globalChanges.motion = changes.reduceMotion ? "reduce" : "full";
+    }
+    if (typeof changes.emphasizeFocus === "boolean") {
+      globalChanges.emphasizeFocus = String(changes.emphasizeFocus);
+    }
+    if (typeof changes.underlineLinks === "boolean") {
+      globalChanges.underlineLinks = String(changes.underlineLinks);
+    }
+    if (Object.keys(globalChanges).length > 0) updateGlobals(globalChanges);
+  };
+
   return (
     <div className="flex flex-col gap-4">
       <AccessibilityPreferencesPanel
         preferences={preferences}
-        onPreferencesChange={(changes) =>
-          setPreferences((current) => ({ ...current, ...changes }))
-        }
-        onReset={() => setPreferences(DEFAULT_ACCESSIBILITY_PREFERENCES)}
+        onPreferencesChange={updatePreferences}
+        onReset={() => {
+          updateGlobals({
+            colorScheme: "light",
+            contrast: "normal",
+            fontScale: "default",
+            motion: "full",
+            emphasizeFocus: "false",
+            underlineLinks: "false",
+          });
+        }}
       />
       <HighContrastToggle
         checked={preferences.highContrast}
         onChange={(highContrast) =>
-          setPreferences((current) => ({ ...current, highContrast }))
+          updateGlobals({ contrast: highContrast ? "high" : "normal" })
         }
       />
     </div>
   );
 }
 
-export const Default: Story = { render: () => <PreferencesPreview /> };
-export const DarkHighContrast: Story = {
-  render: () => (
-    <PreferencesPreview
-      initial={{
-        ...DEFAULT_ACCESSIBILITY_PREFERENCES,
-        colorScheme: "dark",
-        highContrast: true,
-        highContrastTheme: "dark",
-        fontScale: "large",
-      }}
-    />
-  ),
+export const Default: Story = {
+  render: renderPreferencesStory,
 };
 
+export const DarkHighContrast: Story = {
+  globals: {
+    colorScheme: "dark",
+    contrast: "high",
+    fontScale: "large",
+  },
+  render: renderPreferencesStory,
+};
