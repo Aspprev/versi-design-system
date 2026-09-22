@@ -3,7 +3,7 @@ import { Formik } from "formik";
 import { RadioGroup } from "../src";
 
 const meta = {
-  title: "Design System/RadioGroup",
+  title: "Components/Forms/RadioGroup",
   component: RadioGroup,
   tags: ["autodocs"],
   args: {

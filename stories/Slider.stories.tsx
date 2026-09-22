@@ -2,7 +2,7 @@ import { useState } from "react";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Slider } from "../src";
 
-const meta = { title: "Design System/Slider", component: Slider, tags: ["autodocs"], args: { min: 0, max: 100, step: 5, ariaLabel: "Percentual de contribuição", getAriaValueText: (value: number) => `${value}%` } } satisfies Meta<typeof Slider>;
+const meta = { title: "Components/Forms/Slider", component: Slider, tags: ["autodocs"], args: { min: 0, max: 100, step: 5, ariaLabel: "Percentual de contribuição", getAriaValueText: (value: number) => `${value}%` } } satisfies Meta<typeof Slider>;
 export default meta;
 type Story = StoryObj<typeof meta>;
 

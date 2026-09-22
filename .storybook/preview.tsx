@@ -69,7 +69,7 @@ const preview: Preview = {
       }
 
       return (
-        <main className="bg-surface-card p-8 text-content-primary">
+        <main className="versi-story-shell bg-surface-card p-8 text-content-primary">
           <Story />
         </main>
       );
@@ -77,6 +77,18 @@ const preview: Preview = {
   ],
   parameters: {
     layout: "fullscreen",
+    options: {
+      storySort: {
+        order: [
+          "Getting Started",
+          "Foundations",
+          "Components",
+          "Patterns",
+          "Themes",
+          "Guidelines",
+        ],
+      },
+    },
     // A suíte Playwright executa o Axe explicitamente para evitar duas
     // análises concorrentes no mesmo iframe. O painel do addon continua
     // disponível para inspeção manual no Storybook.

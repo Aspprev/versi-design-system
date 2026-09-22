@@ -2,7 +2,7 @@
 import { Notice } from "../src";
 
 const meta = {
-  title: "Design System/Notice",
+  title: "Components/Feedback/Notice",
   component: Notice,
   tags: ["autodocs"],
   args: { children: "Conteúdo configurável do aviso." },

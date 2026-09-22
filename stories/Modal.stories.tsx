@@ -2,7 +2,7 @@ import { useState } from "react";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Modal } from "../src";
 
-const meta = { title: "Design System/Modal", component: Modal, tags: ["autodocs"], args: { isOpen: false, onClose: () => undefined } } satisfies Meta<typeof Modal>;
+const meta = { title: "Components/Overlay/Modal", component: Modal, tags: ["autodocs"], args: { isOpen: false, onClose: () => undefined } } satisfies Meta<typeof Modal>;
 export default meta;
 type Story = StoryObj<typeof meta>;
 

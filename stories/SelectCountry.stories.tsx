@@ -6,7 +6,7 @@ import {
 } from "../src";
 
 const meta = {
-  title: "Design System/SelectCountry",
+  title: "Components/Forms/SelectCountry",
   component: SelectCountry,
   tags: ["autodocs"],
   args: {

@@ -13,7 +13,7 @@ const options: SelectMultiOption[] = [
 ];
 
 const meta = {
-  title: "Design System/SelectMulti",
+  title: "Components/Forms/SelectMulti",
   component: SelectMulti,
   tags: ["autodocs"],
   args: {

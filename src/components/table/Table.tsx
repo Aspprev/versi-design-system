@@ -89,6 +89,7 @@ export interface TableProps<TData = unknown>
   data?: TData[];
   itemsPerPage?: number;
   emptyMessage?: string;
+  errorMessage?: ReactNode;
   totalWidthUnits?: number;
   showRowDivider?: boolean;
   enableRowHover?: boolean;
@@ -116,6 +117,7 @@ function Table<TData = unknown>(props: TableProps<TData>) {
     data,
     itemsPerPage = 10,
     emptyMessage = "Nenhum item encontrado",
+    errorMessage,
     totalWidthUnits,
     showRowDivider = false,
     enableRowHover = false,
@@ -451,7 +453,11 @@ function Table<TData = unknown>(props: TableProps<TData>) {
               colSpan={normalizedHeader.length}
               className={emptyCellClassName}
             >
-              {emptyMessage}
+              {errorMessage ? (
+                <span role="alert">{errorMessage}</span>
+              ) : (
+                <span role="status">{emptyMessage}</span>
+              )}
             </td>
           </tr>
         )}
@@ -461,6 +467,7 @@ function Table<TData = unknown>(props: TableProps<TData>) {
     children,
     data,
     emptyMessage,
+    errorMessage,
     emptyCellClassName,
     enableRowHover,
     expandable,

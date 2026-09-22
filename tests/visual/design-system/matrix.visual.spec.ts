@@ -2,10 +2,10 @@ import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
 
 const stories = [
-  ["button", "design-system-button--flat-primary"],
-  ["notice", "design-system-notice--warning-default"],
-  ["input-formik", "design-system-input-formik--filled"],
-  ["table", "design-system-table--striped-compact"],
+  ["button", "components-actions-button--flat-primary"],
+  ["notice", "components-feedback-notice--warning-default"],
+  ["input-formik", "components-forms-input-formik--filled"],
+  ["table", "components-data-display-table--striped-compact"],
 ] as const;
 
 const themes = [

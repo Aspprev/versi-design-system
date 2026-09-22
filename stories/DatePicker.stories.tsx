@@ -3,7 +3,7 @@ import { Formik } from "formik";
 import { DatePicker, type DatePickerProps } from "../src";
 
 const meta = {
-  title: "Design System/DatePicker",
+  title: "Components/Forms/DatePicker",
   component: DatePicker,
   tags: ["autodocs"],
   args: {

@@ -2,7 +2,7 @@
 import { Divider } from "../src";
 
 const meta = {
-  title: "Design System/Divider",
+  title: "Components/Layout/Divider",
   component: Divider,
   tags: ["autodocs"],
   args: { bgColor: "dark" },

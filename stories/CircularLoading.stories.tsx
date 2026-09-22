@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { CircularLoading } from "../src";
 
 const meta = {
-  title: "Design System/CircularLoading",
+  title: "Components/Feedback/CircularLoading",
   component: CircularLoading,
   tags: ["autodocs"],
 } satisfies Meta<typeof CircularLoading>;

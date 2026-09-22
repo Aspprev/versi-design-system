@@ -2,7 +2,7 @@
 import { Button } from "../src";
 
 const meta = {
-  title: "Design System/Button",
+  title: "Components/Actions/Button",
   component: Button,
   tags: ["autodocs"],
   args: { children: "Ação de exemplo" },

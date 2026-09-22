@@ -17,7 +17,7 @@ const searchableOptions = [
 ];
 
 const meta = {
-  title: "Design System/InputSelect",
+  title: "Components/Forms/InputSelect",
   component: InputSelect,
   tags: ["autodocs"],
   args: {

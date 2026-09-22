@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Tooltip } from "../src";
 
 const meta = {
-  title: "Design System/Tooltip",
+  title: "Components/Overlay/Tooltip",
   component: Tooltip,
   tags: ["autodocs"],
 } satisfies Meta<typeof Tooltip>;

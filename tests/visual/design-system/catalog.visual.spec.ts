@@ -17,7 +17,7 @@ test("catálogo: uma story de cada grupo renderiza sem erros de execução", asy
       errors.length = 0;
       await page.goto(`/iframe.html?id=${id}&viewMode=story`, { waitUntil: "networkidle" });
       await expect(page.locator("#storybook-root main")).toBeVisible();
-      if (title === "Design System/LazyApexChart" || title === "Design System/Chart") {
+      if (title === "Components/Data Display/Chart/LazyApexChart" || title === "Components/Data Display/Chart") {
         await expect(page.locator(".apexcharts-svg").first()).toBeVisible();
       }
       expect(errors, `${title}: ${errors.join("; ")}`).toEqual([]);

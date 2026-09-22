@@ -1,0 +1,19 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Guidelines/Usage" />
+
+# Usage
+
+Prefer the public package entrypoints and semantic tokens when composing product interfaces. A component should remain reusable: product rules, API calls, authentication, portal headers and navigation belong to the consuming application.
+
+## Composition principles
+
+- Start with an existing component or pattern before introducing a new abstraction.
+- Prefer semantic tokens such as `--surface-page`, `--content-primary`, `--border-default` and `--focus-ring` over hardcoded visual values.
+- Keep component stories close to the API they document and cover the states consumers need.
+- Import from `@aspprev/versi-ds` or its documented subpath entrypoints; avoid deep imports.
+- Keep responsive behavior intentional across mobile, tablet and desktop widths.
+
+## API evolution
+
+Add optional props before considering a breaking change. Preserve native HTML attributes where possible, document controlled and uncontrolled behavior, and define accessible names and error states as part of the API contract.

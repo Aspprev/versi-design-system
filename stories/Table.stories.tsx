@@ -27,7 +27,7 @@ const columns: ITableColumnConfig<Participant>[] = [
 ];
 
 const meta = {
-  title: "Design System/Table",
+  title: "Components/Data Display/Table",
   component: Table<Participant>,
   tags: ["autodocs"],
   args: {

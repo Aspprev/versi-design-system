@@ -51,6 +51,8 @@ export interface StatusBadgeProps extends Omit<
   appearance?: StatusAppearance;
   size?: keyof typeof SIZE_STYLES;
   overflow?: "wrap" | "truncate";
+  /** Adds a non-color status announcement for assistive technology. */
+  statusLabel?: string;
 }
 
 export function StatusBadge({
@@ -59,6 +61,7 @@ export function StatusBadge({
   appearance = "outline",
   size = "md",
   overflow = "wrap",
+  statusLabel,
   className,
   title,
   ...rest
@@ -75,6 +78,7 @@ export function StatusBadge({
         className,
       )}
       title={title ?? (typeof children === "string" ? children : undefined)}
+      aria-label={statusLabel}
       {...rest}
     >
       {children}

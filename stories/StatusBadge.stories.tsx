@@ -2,7 +2,7 @@
 import { DomainStatusBadge, StatusBadge } from "../src";
 
 const meta = {
-  title: "Design System/StatusBadge",
+  title: "Components/Feedback/StatusBadge",
   component: StatusBadge,
   tags: ["autodocs"],
   args: { children: "Em andamento" },

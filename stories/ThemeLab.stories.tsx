@@ -305,7 +305,7 @@ function ThemeLab() {
 }
 
 const meta = {
-  title: "Design System/ThemeLab",
+  title: "Themes/ThemeLab",
   component: ThemeLab,
   tags: ["autodocs"],
   parameters: {

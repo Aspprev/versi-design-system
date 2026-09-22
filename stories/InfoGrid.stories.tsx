@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { InfoGrid, InfoItem } from "../src";
 
 const meta = {
-  title: "Design System/InfoGrid",
+  title: "Components/Data Display/InfoGrid",
   component: InfoGrid,
   tags: ["autodocs"],
 } satisfies Meta<typeof InfoGrid>;

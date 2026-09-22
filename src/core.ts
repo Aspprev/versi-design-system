@@ -109,3 +109,10 @@ export type {
   StatusDomain,
   StatusTone,
 } from "./utils/resolve-status-appearance";
+export { breakpoints, useBreakpoint } from "./hooks/useBreakpoint";
+export { useContainerBreakpoint } from "./hooks/useContainerBreakpoint";
+export type {
+  ContainerBreakpoint,
+  ContainerBreakpointMap,
+  UseContainerBreakpointOptions,
+} from "./hooks/useContainerBreakpoint";

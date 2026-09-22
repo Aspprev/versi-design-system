@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Avatar } from "../src";
 
-const meta = { title: "Design System/Avatar", component: Avatar, tags: ["autodocs"] } satisfies Meta<typeof Avatar>;
+const meta = { title: "Components/Data Display/Avatar", component: Avatar, tags: ["autodocs"] } satisfies Meta<typeof Avatar>;
 export default meta;
 type Story = StoryObj<typeof meta>;
 

@@ -12,7 +12,10 @@ for (const scheme of ["light", "dark"]) {
         page.on("pageerror", (error) => errors.push(error.message));
         const story = component === "select-country" ? "selected" : "filled";
         const globals = `colorScheme:${scheme};contrast:${contrast};fontScale:extra-large;motion:reduce`;
-        await page.goto(`/iframe.html?id=design-system-${component.replace("-", "")}--${story}&viewMode=story&globals=${encodeURIComponent(globals)}`, { waitUntil: "networkidle" });
+        const storyId = component === "select-country"
+          ? "components-forms-selectcountry"
+          : "components-forms-inputphone";
+        await page.goto(`/iframe.html?id=${storyId}--${story}&viewMode=story&globals=${encodeURIComponent(globals)}`, { waitUntil: "networkidle" });
         const root = page.locator("#storybook-root");
         const trigger = component === "select-country" ? page.getByRole("combobox")
           : page.getByRole("button", { name: /Selecionar país de/ });

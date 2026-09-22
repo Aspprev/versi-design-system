@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { FocusNavigationMode, FormErrorNavigation, SkipLink } from "../src";
 
 const meta = {
-  title: "Design System/AccessibilityPrimitives",
+  title: "Components/Accessibility/Primitives",
   component: SkipLink,
   tags: ["autodocs"],
 } satisfies Meta<typeof SkipLink>;

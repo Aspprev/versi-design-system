@@ -7,7 +7,7 @@
     "preview": "vite preview --host 127.0.0.1 --port 4175 --strictPort"
   },
   "dependencies": {
-    "@aspprev/versi-ds": "file:vendor/aspprev-versi-ds-0.1.1.tgz",
+    "@aspprev/versi-ds": "file:vendor/aspprev-versi-ds-0.2.0.tgz",
     "@headlessui/react": "^2.2.9",
     "date-fns": "^4.1.0",
     "formik": "^2.4.9",

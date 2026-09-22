@@ -1,0 +1,26 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Getting Started/Installation" />
+
+# Instalação
+
+O pacote publicado é `@aspprev/versi-ds`.
+
+```bash
+npm install @aspprev/versi-ds react react-dom
+```
+
+O Versi requer Node.js `>=20.19.0`, React `>=18.2.0 <20` e React DOM `>=18.2.0 <20`.
+
+Peers opcionais são necessários somente para as integrações correspondentes: `@headlessui/react`, `apexcharts`, `date-fns`, `formik`, `jsbarcode`, `react-apexcharts`, `react-number-format`.
+
+## CSS global
+
+Importe o CSS base uma vez na entrada global da aplicação. Importe `themes.css` depois quando precisar dos presets de tema.
+
+```tsx
+import "@aspprev/versi-ds/styles.css";
+import "@aspprev/versi-ds/themes.css";
+```
+
+Os componentes são exportados pela raiz e pelos entrypoints públicos `core`, `forms`, `documents`, `overlays`, `charts` e `countries`.

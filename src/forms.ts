@@ -28,6 +28,7 @@ export {
 } from "./components/datePicker/datePicker";
 export type {
   DatePickerNavigationVariant,
+  DatePickerSelectionMode,
   DatePickerProps,
   DatepickerNavigationVariant,
   DatepickerProps,
@@ -56,3 +57,9 @@ export type {
   RadioCardGroupProps,
   RadioCardOption,
 } from "./components/radioCardGroup/RadioCardGroup";
+export { OtpCodeInput } from "./components/otp-code-input";
+export type {
+  OtpCodeInputHandle,
+  OtpCodeInputMask,
+  OtpCodeInputProps,
+} from "./components/otp-code-input";

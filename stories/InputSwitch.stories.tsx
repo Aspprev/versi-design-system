@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { InputSwitch } from "../src";
 
 const meta = {
-  title: "Design System/InputSwitch",
+  title: "Components/Forms/InputSwitch",
   component: InputSwitch,
   tags: ["autodocs"],
   args: { "aria-label": "Alternador", checked: false },

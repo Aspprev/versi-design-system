@@ -1,0 +1,37 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Getting Started/Usage" />
+
+# Uso rápido
+
+```tsx
+import { Button, Surface, Typography } from "@aspprev/versi-ds";
+import "@aspprev/versi-ds/styles.css";
+
+export function Resumo() {
+  return (
+    <Surface tone="card" padding="default">
+      <Typography element="h1" semanticRole="section-title">
+        Meu cadastro
+      </Typography>
+      <Button type="button">Continuar</Button>
+    </Surface>
+  );
+}
+```
+
+Para formulários integrados ao Formik, use os componentes do entrypoint `forms`. Para diálogos e documentos, use `overlays` e `documents` sem deep imports.
+
+## Temas e preferências
+
+As preferências são atributos no elemento `html`:
+
+```ts
+document.documentElement.dataset.colorScheme = "dark";
+document.documentElement.dataset.dsTheme = "azul1";
+document.documentElement.dataset.contrast = "high";
+document.documentElement.dataset.fontScale = "large";
+document.documentElement.dataset.motion = "reduce";
+```
+
+Consulte **Themes/Overview** para entender a ordem dos CSS e as sobrescritas de tokens.

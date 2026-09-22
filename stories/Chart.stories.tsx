@@ -13,7 +13,7 @@ const seriesOptions = {
 };
 
 const meta = {
-  title: "Design System/Chart",
+  title: "Components/Data Display/Chart",
   component: TimeSeriesChart,
   tags: ["autodocs"],
   args: {

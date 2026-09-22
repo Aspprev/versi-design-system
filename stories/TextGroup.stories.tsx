@@ -1,7 +1,7 @@
 ﻿import type { Meta, StoryObj } from "@storybook/react-vite";
 import { TextGroup } from "../src";
 
-const meta = { title: "Design System/TextGroup", component: TextGroup, tags: ["autodocs"] } satisfies Meta<typeof TextGroup>;
+const meta = { title: "Components/Data Display/TextGroup", component: TextGroup, tags: ["autodocs"] } satisfies Meta<typeof TextGroup>;
 export default meta;
 type Story = StoryObj<typeof meta>;
 

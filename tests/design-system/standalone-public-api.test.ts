@@ -20,6 +20,16 @@ describe("API pública dos controles standalone", () => {
         typeof designSystem[exportName as keyof typeof designSystem],
       ).toBe("function");
     }
+    for (const exportName of [
+      "OtpCodeInput",
+      "QRCode",
+      "FileDropzone",
+      "FileList",
+      "FileUploadProgress",
+      "FileViewer",
+    ]) {
+      expect(designSystem).toHaveProperty(exportName);
+    }
   });
 
   it("expõe os utilitários públicos do InputPhone", () => {

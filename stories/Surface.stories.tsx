@@ -2,7 +2,7 @@
 import { Surface } from "../src";
 
 const meta = {
-  title: "Design System/Surface",
+  title: "Components/Layout/Surface",
   component: Surface,
   tags: ["autodocs"],
   args: { children: "Conteúdo da superfície", tone: "card" },

@@ -2,7 +2,7 @@
 import { InputStandalone } from "../src";
 
 const meta = {
-  title: "Design System/InputStandalone",
+  title: "Components/Forms/InputStandalone",
   component: InputStandalone,
   tags: ["autodocs"],
   args: {

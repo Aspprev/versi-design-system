@@ -3,6 +3,7 @@
 import UnifiedDatePicker from "./UnifiedDatePicker";
 import type {
   DatePickerNavigationVariant as DatePickerNavigationVariantType,
+  DatePickerSelectionMode,
   UnifiedDatePickerProps,
 } from "./UnifiedDatePicker";
 
@@ -10,6 +11,7 @@ export const DatePicker = UnifiedDatePicker;
 export { UnifiedDatePicker };
 export type {
   DatePickerNavigationVariant,
+  DatePickerSelectionMode,
   UnifiedDatePickerProps as DatePickerProps,
   UnifiedDatePickerProps,
 } from "./UnifiedDatePicker";

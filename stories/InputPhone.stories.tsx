@@ -3,7 +3,7 @@ import { Formik } from "formik";
 import { InputPhone, type InputPhoneProps, type PhoneValue } from "../src";
 
 const meta = {
-  title: "Design System/InputPhone",
+  title: "Components/Forms/InputPhone",
   component: InputPhone,
   tags: ["autodocs"],
   args: {

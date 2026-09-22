@@ -5,7 +5,11 @@ export type StatusDomain =
   | "loan"
   | "benefit"
   | "signature"
-  | "participation";
+  | "participation"
+  | "claim"
+  | "payment"
+  | "protocol"
+  | "request";
 
 export type StatusTone = "info" | "warning" | "success" | "danger" | "neutral";
 export type StatusAppearance = "outline" | "soft" | "solid";
@@ -114,6 +118,33 @@ export const resolveStatusAppearance = (
 
   if (domain === "participation") {
     return { tone: "neutral", appearance: "solid" };
+  }
+
+  if (domain === "payment") {
+    if (["PAGO", "QUITADO", "LIBERADO"].includes(normalized)) {
+      return { tone: "success", appearance: "solid" };
+    }
+    if (["EM PAGAMENTO", "AGUARDANDO PAGAMENTO"].includes(normalized)) {
+      return { tone: "info", appearance: "outline" };
+    }
+    if (["VENCIDO", "ESTORNADO", "FALHOU"].includes(normalized)) {
+      return { tone: "danger", appearance: "solid" };
+    }
+  }
+
+  if (domain === "claim" || domain === "request" || domain === "protocol") {
+    if (["RECEBIDO", "PROTOCOLADO", "EMITIDO"].includes(normalized)) {
+      return { tone: "info", appearance: "outline" };
+    }
+    if (["EM ANALISE", "AGUARDANDO DOCUMENTACAO", "AGUARDANDO ANALISE"].includes(normalized)) {
+      return { tone: "warning", appearance: "soft" };
+    }
+    if (["APROVADO", "CONCEDIDO", "ATENDIDO"].includes(normalized)) {
+      return { tone: "success", appearance: "solid" };
+    }
+    if (["NEGADO", "ARQUIVADO", "RECUSADO"].includes(normalized)) {
+      return { tone: "danger", appearance: "solid" };
+    }
   }
 
   return resolveGenericStatus(normalized);

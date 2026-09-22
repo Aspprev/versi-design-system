@@ -2,7 +2,7 @@
 import { Typography } from "../src";
 
 const meta = {
-  title: "Design System/Typography",
+  title: "Components/Data Display/Typography",
   component: Typography,
   tags: ["autodocs"],
   args: { children: "Texto tipográfico" },

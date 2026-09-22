@@ -2,7 +2,7 @@
 import { ModalCard, Typography } from "../src";
 
 const meta = {
-  title: "Design System/ModalCard",
+  title: "Components/Overlay/ModalCard",
   component: ModalCard,
   tags: ["autodocs"],
 } satisfies Meta<typeof ModalCard>;

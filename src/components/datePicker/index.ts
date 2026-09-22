@@ -8,6 +8,7 @@ export {
 } from "./datePicker";
 export type {
   DatePickerNavigationVariant,
+  DatePickerSelectionMode,
   DatePickerProps,
   DatepickerNavigationVariant,
   DatepickerProps,

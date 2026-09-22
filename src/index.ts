@@ -115,6 +115,7 @@ export {
 } from "./components/datePicker/datePicker";
 export type {
   DatePickerNavigationVariant,
+  DatePickerSelectionMode,
   DatePickerProps,
   DatepickerNavigationVariant,
   DatepickerProps,
@@ -197,6 +198,38 @@ export type {
   StatusDomain,
   StatusTone,
 } from "./utils/resolve-status-appearance";
+export { OtpCodeInput } from "./components/otp-code-input";
+export type {
+  OtpCodeInputHandle,
+  OtpCodeInputMask,
+  OtpCodeInputProps,
+} from "./components/otp-code-input";
+export {
+  FileDropzone,
+  FileList,
+  FileUploadProgress,
+  FileViewer,
+} from "./components/file-upload";
+export { QRCode } from "./components/qr-code";
+export type {
+  FileDropzoneProps,
+  FileListProps,
+  FileRejection,
+  FileUploadItem,
+  FileUploadItemStatus,
+  FileUploadProgressProps,
+  FileUploadProgressStatus,
+  FileViewerProps,
+  FileViewerSource,
+} from "./components/file-upload";
+export type { QRCodeErrorCorrectionLevel, QRCodeProps } from "./components/qr-code";
+export { breakpoints, useBreakpoint } from "./hooks/useBreakpoint";
+export { useContainerBreakpoint } from "./hooks/useContainerBreakpoint";
+export type {
+  ContainerBreakpoint,
+  ContainerBreakpointMap,
+  UseContainerBreakpointOptions,
+} from "./hooks/useContainerBreakpoint";
 export {
   AccessibilityPreferencesPanel,
   HighContrastToggle,

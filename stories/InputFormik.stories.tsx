@@ -3,7 +3,7 @@ import { Formik } from "formik";
 import { Input, type InputProps } from "../src";
 
 const meta = {
-  title: "Design System/Input/Formik",
+  title: "Components/Forms/Input/Formik",
   component: Input,
   tags: ["autodocs"],
   args: {
@@ -77,4 +77,3 @@ export const MaskedCurrency: Story = {
     <FormikInputExample {...args} initialValue="125000" />
   ),
 };
-

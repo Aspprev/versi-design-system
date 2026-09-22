@@ -208,6 +208,7 @@ function MobileCardTable<TData>({
           </div>
         ) : (
           <div
+            role="status"
             className={`px-3 py-4 text-center text-md text-content-secondary ${emptyClassName}`.trim()}
           >
             {emptyMessage}

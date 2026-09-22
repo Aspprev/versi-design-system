@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { DocumentItem, StatusBadge } from "../src";
 
 const meta = {
-  title: "Design System/DocumentItem",
+  title: "Components/Documents/DocumentItem",
   component: DocumentItem,
   tags: ["autodocs"],
 } satisfies Meta<typeof DocumentItem>;

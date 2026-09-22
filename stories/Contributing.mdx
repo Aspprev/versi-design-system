@@ -1,0 +1,25 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Getting Started/Contributing" />
+
+# Contribuição
+
+Ao criar ou evoluir um componente:
+
+1. reutilize tokens e padrões de composição existentes;
+2. mantenha a API tipada e compatível com React 18 e 19;
+3. garanta foco visível, teclado, nomes acessíveis, erro e estados de carregamento;
+4. crie ou atualize stories com estados relevantes;
+5. adicione testes unitários, de interação e de acessibilidade quando aplicável.
+
+## Validação local
+
+```bash
+npm install
+npm run typecheck
+npm test
+npm run build
+npm run build-storybook
+```
+
+Antes de empacotar, `npm run prepack` verifica tokens, governança, segurança, typecheck, build, tamanho e conteúdo do pacote. O repositório não possui script `lint` separado.

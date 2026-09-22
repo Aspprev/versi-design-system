@@ -3,7 +3,7 @@ import { Formik } from "formik";
 import { TextArea, type TextAreaProps } from "../src";
 
 const meta = {
-  title: "Design System/TextArea",
+  title: "Components/Forms/TextArea",
   component: TextArea,
   tags: ["autodocs"],
   args: {

@@ -2,7 +2,7 @@
 import { LazyApexChart, type ApexChartProps } from "../src";
 
 const meta = {
-  title: "Design System/Chart/LazyApexChart",
+  title: "Components/Data Display/Chart/LazyApexChart",
   component: LazyApexChart,
   tags: ["autodocs"],
   parameters: {

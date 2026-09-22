@@ -2,7 +2,7 @@
 import { PageHeading, PageTabsHeader } from "../src";
 
 const meta = {
-  title: "Design System/PageHeading",
+  title: "Components/Layout/PageHeading",
   component: PageHeading,
   tags: ["autodocs"],
   args: { title: "Meu cadastro" },

@@ -2,7 +2,7 @@
 import { LoadingDots } from "../src";
 
 const meta = {
-  title: "Design System/LoadingDots",
+  title: "Components/Feedback/LoadingDots",
   component: LoadingDots,
   tags: ["autodocs"],
   args: { color: "primary", ariaLabel: "Carregando conteúdo" },

@@ -7,5 +7,83 @@
 }
 
 body {
+  margin: 0;
   font-family: var(--font-family-base, "Nunito Sans", sans-serif);
+  background: rgb(var(--surface-page));
+}
+
+.versi-story-shell {
+  box-sizing: border-box;
+}
+
+.sb-show-main.sb-main-padded {
+  padding: 0;
+}
+
+.sbdocs-content {
+  max-width: 1160px;
+}
+
+.sbdocs-wrapper {
+  background: rgb(var(--surface-page));
+}
+
+.versi-docs-hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius-lg);
+  padding: clamp(2rem, 5vw, 5rem);
+  color: rgb(var(--content-on-brand));
+  background:
+    radial-gradient(circle at 90% 10%, rgba(197, 214, 254, 0.28), transparent 34%),
+    linear-gradient(135deg, rgb(var(--primary-3)), rgb(var(--primary-1)));
+  box-shadow: var(--shadow-md);
+}
+
+.versi-docs-hero::after {
+  position: absolute;
+  right: -5rem;
+  bottom: -7rem;
+  width: 18rem;
+  height: 18rem;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 50%;
+  content: "";
+}
+
+.versi-doc-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.versi-doc-card {
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgb(var(--border-subtle));
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md);
+  color: inherit;
+  background: rgb(var(--surface-card));
+  text-decoration: none;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.versi-doc-card:hover,
+.versi-doc-card:focus-visible {
+  border-color: rgb(var(--primary-1));
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .versi-doc-card {
+    transition: none;
+  }
+
+  .versi-doc-card:hover,
+  .versi-doc-card:focus-visible {
+    transform: none;
+  }
 }

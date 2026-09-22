@@ -2,7 +2,7 @@
 import { PageState } from "../src";
 
 const meta = {
-  title: "Design System/PageState",
+  title: "Components/Feedback/PageState",
   component: PageState,
   tags: ["autodocs"],
   args: {

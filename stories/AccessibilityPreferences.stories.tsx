@@ -8,7 +8,7 @@ import {
 } from "../src";
 
 const meta = {
-  title: "Design System/AccessibilityPreferencesPanel",
+  title: "Components/Accessibility/AccessibilityPreferencesPanel",
   component: AccessibilityPreferencesPanel,
   tags: ["autodocs"],
   args: {

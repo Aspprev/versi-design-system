@@ -1,0 +1,28 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Themes/Overview" />
+
+# Themes
+
+O sistema de temas do Versi usa atributos no elemento `html` e tokens CSS gerados a partir de `tokens/design-system.tokens.json`. Os componentes consomem tokens semânticos; o tema altera suas referências sem exigir uma API diferente por componente.
+
+## Atributos disponíveis
+
+| Atributo | Valores reais |
+| --- | --- |
+| `data-color-scheme` | `light`, `dark` |
+| `data-ds-theme` | `default`, `azul1`, `azul2`, `azul3`, `laranja1`, `laranja2`, `verde1`, `verde2`, `verde3`, `verde4`, `rosa1` |
+| `data-contrast` | `normal`, `high` |
+| `data-font-scale` | `default`, `large`, `extra-large` |
+| `data-motion` | `full`, `reduce` |
+
+Use a toolbar para alterar os valores globalmente ou abra **Themes/Comparison** para comparar presets na mesma página.
+
+## Ordem de aplicação
+
+1. `styles.css` fornece os tokens e estilos base;
+2. `themes.css` aplica os presets reais;
+3. o consumidor pode sobrescrever tokens depois desses imports;
+4. componentes usam os tokens semânticos resolvidos no contexto atual.
+
+Não edite os CSS gerados diretamente. Altere a fonte em `tokens/design-system.tokens.json` e execute `npm run tokens:generate`.

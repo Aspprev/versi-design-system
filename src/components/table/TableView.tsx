@@ -283,7 +283,8 @@ function TableView<TData>({
     return `${(widthUnits / resolvedTotalWidthUnits) * 100}%`;
   };
 
-  const paginationVariant = isMobile
+  const isNarrowContainer = tableWidth !== undefined && tableWidth < 640;
+  const paginationVariant = isMobile || isNarrowContainer
     ? "arrows"
     : (pagination?.variant ?? "default");
   const isAdaptiveCompact =
@@ -359,7 +360,7 @@ function TableView<TData>({
                         type="button"
                         aria-expanded={openFilter === index}
                         aria-label={`Filtrar ou ordenar por ${item.title}`}
-                        className={`flex w-full items-center gap-1.5 rounded-sm text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${headerFocusClass} ${
+                        className={`flex min-h-11 w-full items-center gap-1.5 rounded-sm text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${headerFocusClass} ${
                           item.className?.includes("text-right")
                             ? "justify-end"
                             : ""
@@ -434,7 +435,7 @@ function TableView<TData>({
               onClick={pagination.onPrevious}
               disabled={pagination.currentPage === 1}
               aria-label="Ir para a página anterior"
-              className={`inline-flex h-6 items-center justify-center gap-1 rounded border border-border-default px-2 text-sm leading-none text-content-primary hover:border-border-strong disabled:cursor-not-allowed disabled:border-border-default disabled:opacity-50 tablet:h-7 ${
+                className={`inline-flex min-h-11 min-w-11 items-center justify-center gap-1 rounded border border-border-default px-2 text-sm leading-none text-content-primary hover:border-border-strong disabled:cursor-not-allowed disabled:border-border-default disabled:opacity-50 ${
                 paginationVariant === "arrows" ? "min-w-6 tablet:min-w-7" : ""
               }`}
             >
@@ -455,7 +456,7 @@ function TableView<TData>({
               onClick={pagination.onNext}
               disabled={pagination.currentPage === pagination.totalPages}
               aria-label="Ir para a próxima página"
-              className={`inline-flex h-6 items-center justify-center gap-1 rounded border border-border-default px-2 text-sm leading-none text-content-primary hover:border-border-strong disabled:cursor-not-allowed disabled:border-border-default disabled:opacity-50 tablet:h-7 ${
+                className={`inline-flex min-h-11 min-w-11 items-center justify-center gap-1 rounded border border-border-default px-2 text-sm leading-none text-content-primary hover:border-border-strong disabled:cursor-not-allowed disabled:border-border-default disabled:opacity-50 ${
                 paginationVariant === "arrows" ? "min-w-6 tablet:min-w-7" : ""
               }`}
             >

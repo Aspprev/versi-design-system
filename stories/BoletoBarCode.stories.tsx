@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { BoletoBarCode } from "../src";
 
 const meta = {
-  title: "Design System/BoletoBarCode",
+  title: "Components/Documents/BoletoBarCode",
   component: BoletoBarCode,
   tags: ["autodocs"],
 } satisfies Meta<typeof BoletoBarCode>;

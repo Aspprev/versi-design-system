@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { FilterBar, FormActions, FormGrid } from "../src";
 
 const meta = {
-  title: "Design System/FormLayout",
+  title: "Components/Forms/FormLayout",
   component: FormGrid,
   tags: ["autodocs"],
 } satisfies Meta<typeof FormGrid>;

@@ -9,7 +9,7 @@ const options = [
 ];
 
 const meta = {
-  title: "Design System/Checkbox",
+  title: "Components/Forms/Checkbox",
   component: Checkbox,
   tags: ["autodocs"],
   args: {
