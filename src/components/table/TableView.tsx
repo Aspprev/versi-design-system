@@ -1,10 +1,10 @@
 "use client";
 
-import { useBreakpoint } from "../../hooks/useBreakpoint";
 import {
   type CSSProperties,
   ReactNode,
   useEffect,
+  useId,
   useRef,
   useState,
 } from "react";
@@ -78,8 +78,7 @@ function TableView<TData>({
   headerVariant = "default",
   density = "comfortable",
 }: IProps<TData>) {
-  const breakpoint = useBreakpoint();
-  const isMobile = breakpoint === "mobile";
+  const tableId = useId();
   const [openFilter, setOpenFilter] = useState<number | null>(null);
   const [filterMaxHeight, setFilterMaxHeight] = useState<number>();
   const [filterCoords, setFilterCoords] = useState<{
@@ -90,6 +89,7 @@ function TableView<TData>({
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const tableWrapperRef = useRef<HTMLDivElement>(null);
   const headerCellRefs = useRef<Array<HTMLTableCellElement | null>>([]);
+  const filterTriggerRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const filterRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -109,6 +109,23 @@ function TableView<TData>({
 
     return () => observer.disconnect();
   }, []);
+
+  useEffect(() => {
+    if (openFilter === null) return;
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key !== "Escape") return;
+      event.preventDefault();
+      setOpenFilter(null);
+      setFilterCoords(null);
+      window.requestAnimationFrame(() => {
+        filterTriggerRefs.current[openFilter]?.focus();
+      });
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [openFilter]);
 
   useEffect(() => {
     const updateFilterMaxHeight = () => {
@@ -132,6 +149,7 @@ function TableView<TData>({
         !tableWrapperRef.current.contains(event.target as Node)
       ) {
         setOpenFilter(null);
+        setFilterCoords(null);
       }
     };
 
@@ -149,6 +167,20 @@ function TableView<TData>({
     filterRef.current.style.left =
       typeof filterCoords.left === "number" ? `${filterCoords.left}px` : "";
   }, [filterCoords]);
+
+  useEffect(() => {
+    if (openFilter === null) return;
+
+    const frame = window.requestAnimationFrame(() => {
+      filterRef.current
+        ?.querySelector<HTMLElement>(
+          "input, button, [tabindex]:not([tabindex='-1'])",
+        )
+        ?.focus();
+    });
+
+    return () => window.cancelAnimationFrame(frame);
+  }, [openFilter]);
 
   const handleOpenFilter = (index: number) => {
     const next = openFilter === index ? null : index;
@@ -176,6 +208,17 @@ function TableView<TData>({
       }
     } else {
       setFilterCoords(null);
+    }
+  };
+
+  const closeFilterAndRestoreFocus = () => {
+    const activeFilter = openFilter;
+    setOpenFilter(null);
+    setFilterCoords(null);
+    if (activeFilter !== null) {
+      window.requestAnimationFrame(() => {
+        filterTriggerRefs.current[activeFilter]?.focus();
+      });
     }
   };
 
@@ -284,7 +327,7 @@ function TableView<TData>({
   };
 
   const isNarrowContainer = tableWidth !== undefined && tableWidth < 640;
-  const paginationVariant = isMobile || isNarrowContainer
+  const paginationVariant = isNarrowContainer
     ? "arrows"
     : (pagination?.variant ?? "default");
   const isAdaptiveCompact =
@@ -314,6 +357,7 @@ function TableView<TData>({
         data-row-variant={rowVariant}
         data-header-variant={headerVariant}
         data-table-density={density}
+        data-responsive-mode={overflowMode}
         style={{ maxHeight: resolvedScrollAreaMaxHeight }}
         className={`min-h-0 min-w-0 flex-1 overflow-y-auto ${overflowClass}`}
       >
@@ -358,7 +402,15 @@ function TableView<TData>({
                     {canOpenFilter ? (
                       <button
                         type="button"
-                        aria-expanded={openFilter === index}
+                      aria-expanded={openFilter === index}
+                        aria-controls={
+                          openFilter === index
+                            ? `${tableId}-filter-${index}`
+                            : undefined
+                        }
+                        ref={(element) => {
+                          filterTriggerRefs.current[index] = element;
+                        }}
                         aria-label={`Filtrar ou ordenar por ${item.title}`}
                         className={`flex min-h-11 w-full items-center gap-1.5 rounded-sm text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${headerFocusClass} ${
                           item.className?.includes("text-right")
@@ -406,13 +458,20 @@ function TableView<TData>({
       {openFilter !== null && filterCoords && header[openFilter]?.filters && (
         <div ref={filterRef} className="absolute z-popover">
           <Filter
+            id={`${tableId}-filter-${openFilter}`}
+            accessibleName={`Filtros da coluna ${header[openFilter].title}`}
+            groupName={`${tableId}-${openFilter}`}
             optionChecked={header[openFilter].filters!.optionChecked}
             optionList={header[openFilter].filters!.optionList}
             controls={header[openFilter].filters!.controls}
-            onChange={(value) => handleFilterChange(header[openFilter], value)}
-            onControlChange={(control, value) =>
-              handleFilterChange(header[openFilter], value, control)
-            }
+            onChange={(value) => {
+              handleFilterChange(header[openFilter], value);
+              closeFilterAndRestoreFocus();
+            }}
+            onControlChange={(control, value) => {
+              handleFilterChange(header[openFilter], value, control);
+              if (control.type !== "search") closeFilterAndRestoreFocus();
+            }}
             maxHeight={filterMaxHeight}
           />
         </div>
@@ -435,7 +494,7 @@ function TableView<TData>({
               onClick={pagination.onPrevious}
               disabled={pagination.currentPage === 1}
               aria-label="Ir para a página anterior"
-                className={`inline-flex min-h-11 min-w-11 items-center justify-center gap-1 rounded border border-border-default px-2 text-sm leading-none text-content-primary hover:border-border-strong disabled:cursor-not-allowed disabled:border-border-default disabled:opacity-50 ${
+              className={`inline-flex min-h-11 min-w-11 items-center justify-center gap-1 rounded border border-border-default px-2 text-sm leading-none text-content-primary hover:border-border-strong disabled:cursor-not-allowed disabled:border-border-default disabled:opacity-50 ${
                 paginationVariant === "arrows" ? "min-w-6 tablet:min-w-7" : ""
               }`}
             >

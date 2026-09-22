@@ -1,12 +1,12 @@
 "use client";
 
 import QRCodeGenerator from "qrcode";
-import { useEffect, useState, type HTMLAttributes } from "react";
+import { useEffect, useId, useMemo, useRef, useState, type HTMLAttributes, type ReactNode } from "react";
 import classNames from "classnames";
 
 export type QRCodeErrorCorrectionLevel = "L" | "M" | "Q" | "H";
 
-export interface QRCodeProps extends Omit<HTMLAttributes<HTMLDivElement>, "color"> {
+export interface QRCodeProps extends Omit<HTMLAttributes<HTMLDivElement>, "color" | "onError"> {
   value: string;
   size?: number;
   level?: QRCodeErrorCorrectionLevel;
@@ -15,6 +15,9 @@ export interface QRCodeProps extends Omit<HTMLAttributes<HTMLDivElement>, "color
   bgColor?: string;
   ariaLabel?: string;
   description?: string;
+  loading?: boolean;
+  error?: ReactNode;
+  onError?: (error: Error) => void;
 }
 
 function getRelativeLuminance(color: string) {
@@ -55,42 +58,81 @@ export function QRCode({
   bgColor = "#FFFFFF",
   ariaLabel = "Código QR",
   description,
+  loading = false,
+  error,
+  onError,
   className,
   ...rest
 }: QRCodeProps) {
   const [dataUrl, setDataUrl] = useState<string | null>(null);
-  const descriptionId = description ? `${rest.id ?? "qr-code"}-description` : undefined;
-  const colors = resolveAccessibleColors(fgColor, bgColor);
+  const [generationError, setGenerationError] = useState<Error | null>(null);
+  const onErrorRef = useRef(onError);
+  const generatedId = useId();
+  const resolvedSize = Math.max(1, Number.isFinite(size) ? Math.floor(size) : 192);
+  const descriptionId = description
+    ? `${rest.id ?? generatedId}-description`
+    : undefined;
+  const colors = useMemo(
+    () => resolveAccessibleColors(fgColor, bgColor),
+    [bgColor, fgColor],
+  );
+  const describedBy = [rest["aria-describedby"], descriptionId].filter(Boolean).join(" ") || undefined;
+  const displayError = error ?? generationError?.message;
+  const isLoading = loading || (!dataUrl && !displayError);
+
+  useEffect(() => {
+    onErrorRef.current = onError;
+  }, [onError]);
 
   useEffect(() => {
     let active = true;
+    if (error) {
+      setDataUrl(null);
+      setGenerationError(null);
+      return () => { active = false; };
+    }
     setDataUrl(null);
+    setGenerationError(null);
     QRCodeGenerator.toDataURL(value, {
-      width: size,
+      width: resolvedSize,
       margin: includeMargin ? 4 : 0,
       errorCorrectionLevel: level,
-       color: colors,
+      color: colors,
     })
       .then((url) => { if (active) setDataUrl(url); })
-      .catch(() => { if (active) setDataUrl(null); });
+      .catch((cause: unknown) => {
+        if (!active) return;
+        const nextError = cause instanceof Error
+          ? cause
+          : new Error("Não foi possível gerar o código QR.");
+        setDataUrl(null);
+        setGenerationError(nextError);
+        onErrorRef.current?.(nextError);
+      });
     return () => { active = false; };
-  }, [bgColor, fgColor, includeMargin, level, size, value]);
+  }, [colors, error, includeMargin, level, resolvedSize, value]);
 
   return (
     <div
       {...rest}
       role="img"
       aria-label={ariaLabel}
-      aria-describedby={descriptionId}
+      aria-describedby={describedBy}
+      aria-busy={isLoading || undefined}
+      aria-invalid={displayError ? true : undefined}
       className={classNames("inline-flex max-w-full flex-col items-center gap-2", className)}
     >
-      {dataUrl ? (
-        <img src={dataUrl} alt="" width={size} height={size} className="h-auto max-w-full" />
+      {displayError ? (
+        <span role="alert" className="rounded-sm border border-field-border-error p-3 text-sm text-field-assistive-error">
+          {displayError}
+        </span>
+      ) : dataUrl ? (
+        <img src={dataUrl} alt="" width={resolvedSize} height={resolvedSize} className="h-auto max-w-full" />
       ) : (
         <span
           aria-hidden="true"
           className="inline-block animate-pulse rounded-sm bg-surface-muted"
-          style={{ width: size, height: size, maxWidth: "100%" }}
+          style={{ width: resolvedSize, height: resolvedSize, maxWidth: "100%" }}
         />
       )}
       {description && <span id={descriptionId} className="sr-only">{description}</span>}

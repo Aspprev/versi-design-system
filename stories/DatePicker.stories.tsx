@@ -84,3 +84,15 @@ export const Disabled: Story = {
     <DatePickerForm {...args} initialValue={new Date(1991, 7, 26)} />
   ),
 };
+
+export const YearSelection: Story = {
+  args: {
+    label: "Ano de referÃªncia",
+    name: "anoReferencia",
+    selectionMode: "year",
+    minDate: new Date(2020, 0, 1),
+    maxDate: new Date(2030, 11, 31),
+    helperText: "Selecione o ano de referÃªncia.",
+  },
+  render: (args) => <DatePickerForm {...args} />,
+};

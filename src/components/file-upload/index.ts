@@ -6,6 +6,12 @@ export type {
   FileDropzoneProps,
   FileRejection,
 } from "./FileDropzone";
+export { validateFiles } from "./validation";
+export type {
+  FileValidationOptions,
+  FileValidationReason,
+  FileValidationResult,
+} from "./validation";
 export type {
   FileListProps,
   FileUploadItem,

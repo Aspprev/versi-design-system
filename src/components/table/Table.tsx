@@ -1,7 +1,6 @@
 "use client";
 
 import React, { ReactNode, useEffect, useId, useMemo, useState } from "react";
-import { useBreakpoint } from "../../hooks/useBreakpoint";
 import TableView from "./TableView";
 import { IFilterControl, IFilterProps } from "./components/filter/Filter";
 
@@ -131,9 +130,7 @@ function Table<TData = unknown>(props: TableProps<TData>) {
     headerVariant = "default",
     density = "comfortable",
   } = props;
-  const breakpoint = useBreakpoint();
   const tableId = useId();
-  const isMobile = breakpoint === "mobile";
   const resolvedOverflowMode = overflowMode ?? (data ? "adaptive" : "scroll");
   const resolvedAdaptiveBreakpoint =
     adaptiveBreakpoint ??
@@ -152,6 +149,9 @@ function Table<TData = unknown>(props: TableProps<TData>) {
   const [closingExpandedRowId, setClosingExpandedRowId] = useState<
     string | null
   >(null);
+  const safeItemsPerPage = Number.isFinite(itemsPerPage)
+    ? Math.max(1, Math.floor(itemsPerPage))
+    : 10;
 
   const normalizedHeader = useMemo(() => {
     return header.map((item) => {
@@ -318,10 +318,10 @@ function Table<TData = unknown>(props: TableProps<TData>) {
     if (!data) return null;
 
     const totalItems = filteredAndSortedData.length;
-    const totalPages = Math.max(1, Math.ceil(totalItems / itemsPerPage));
+    const totalPages = Math.max(1, Math.ceil(totalItems / safeItemsPerPage));
     const safeCurrentPage = Math.min(currentPage, totalPages);
-    const startIndex = (safeCurrentPage - 1) * itemsPerPage;
-    const endIndex = startIndex + itemsPerPage;
+    const startIndex = (safeCurrentPage - 1) * safeItemsPerPage;
+    const endIndex = startIndex + safeItemsPerPage;
 
     return {
       currentPage: safeCurrentPage,
@@ -331,7 +331,7 @@ function Table<TData = unknown>(props: TableProps<TData>) {
       endItem: Math.min(endIndex, totalItems),
       pageData: filteredAndSortedData.slice(startIndex, endIndex),
     };
-  }, [currentPage, data, filteredAndSortedData, itemsPerPage]);
+  }, [currentPage, data, filteredAndSortedData, safeItemsPerPage]);
 
   const managedCellClassName =
     density === "compact"
@@ -381,9 +381,7 @@ function Table<TData = unknown>(props: TableProps<TData>) {
                 key={`row-group-${normalizedRowId ?? `${index}-${JSON.stringify(item)}`}`}
               >
                 <tr
-                  tabIndex={0}
                   aria-label={`Linha ${rowNumber} de ${internalPagination.totalItems}`}
-                  aria-describedby={rowContentIds.join(" ")}
                   data-table-row-stripe={
                     rowVariant === "striped" && index % 2 === 1 && !isExpanded
                       ? "true"
@@ -430,7 +428,7 @@ function Table<TData = unknown>(props: TableProps<TData>) {
                         aria-hidden={
                           !isExpanded || isClosingExpandedRow || undefined
                         }
-                        className={`overflow-hidden transition-all duration-200 ease-out ${
+                        className={`overflow-hidden transition-all duration-200 ease-out motion-reduce:transition-none ${
                           isExpanded && !isClosingExpandedRow
                             ? "max-h-[1200px] opacity-100"
                             : "max-h-0 opacity-0"
@@ -489,7 +487,7 @@ function Table<TData = unknown>(props: TableProps<TData>) {
         totalItems: internalPagination.totalItems,
         startItem: internalPagination.startItem,
         endItem: internalPagination.endItem,
-        variant: isMobile ? "arrows" : paginationVariant,
+        variant: paginationVariant,
         onPrevious: () => setCurrentPage((prev) => Math.max(prev - 1, 1)),
         onNext: () =>
           setCurrentPage((prev) =>
@@ -499,13 +497,14 @@ function Table<TData = unknown>(props: TableProps<TData>) {
     : pagination
       ? {
           ...pagination,
-          variant: isMobile ? "arrows" : (pagination.variant ?? "default"),
+          variant: pagination.variant ?? "default",
         }
       : pagination;
 
   const resolvedShowPagination = data
     ? Boolean(
-        internalPagination && internalPagination.totalItems > itemsPerPage,
+        internalPagination &&
+        internalPagination.totalItems > safeItemsPerPage,
       )
     : showPagination;
 

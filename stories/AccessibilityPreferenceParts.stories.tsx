@@ -111,3 +111,36 @@ export const Reading: Story = {
   globals: { motion: "reduce" },
   render: renderReadingPreferences,
 };
+
+export const AppliedReadingPreferences: Story = {
+  globals: { emphasizeFocus: true, underlineLinks: true },
+  render: () => (
+    <section className="max-w-xl space-y-4">
+      <div>
+        <h2 className="text-lg font-bold text-content-primary">
+          Preferências aplicadas
+        </h2>
+        <p className="mt-1 text-sm text-content-secondary">
+          Este exemplo demonstra a ênfase de foco e a sublinhação de links
+          aplicadas pelo contrato CSS do Design System.
+        </p>
+      </div>
+      <div className="flex flex-wrap items-center gap-3">
+        <a href="#preferencias" className="text-content-link">
+          Link de exemplo
+        </a>
+        <button
+          type="button"
+          className="min-h-11 rounded-sm border border-border-default px-3 text-content-primary"
+        >
+          Botão focável
+        </button>
+        <input
+          aria-label="Campo focável"
+          className="min-h-11 rounded-sm border border-border-default bg-field-surface px-3 text-field-content"
+          placeholder="Campo"
+        />
+      </div>
+    </section>
+  ),
+};

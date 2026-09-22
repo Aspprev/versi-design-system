@@ -57,4 +57,13 @@ describe("Design System theme contract", () => {
     expect(themeLabStory).toContain("data-ds-theme");
     expect(themeLabStory).toContain("data-color-scheme");
   });
+
+  it("publica os contratos de enfase de foco e links", () => {
+    expect(tokensCss).toContain('html[data-focus-emphasis="strong"]');
+    expect(tokensCss).toContain(
+      'html[data-link-emphasis="underline"] a:not([role="button"])',
+    );
+    expect(tokensCss).toContain("--focus-emphasis-outline-width: 3px");
+    expect(tokensCss).toContain("--link-emphasis-thickness: 0.12em");
+  });
 });

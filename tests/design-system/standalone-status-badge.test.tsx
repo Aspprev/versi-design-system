@@ -1,6 +1,10 @@
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
-import { DomainStatusBadge, StatusBadge } from "../../src";
+import {
+  DomainStatusBadge,
+  resolveStatusAppearance,
+  StatusBadge,
+} from "../../src";
 
 describe("StatusBadge standalone", () => {
   it("mantem o contrato visual de tom, aparencia e tamanho", () => {
@@ -29,5 +33,22 @@ describe("StatusBadge standalone", () => {
 
   it("oculta status vazio quando configurado com a politica padrao", () => {
     expect(renderToStaticMarkup(<DomainStatusBadge status="" />)).toBe("");
+  });
+
+  it("aceita mapa de status especÃ­fico do consumidor", () => {
+    const resolved = resolveStatusAppearance("Em revisao", "generic", {
+      map: {
+        "EM REVISAO": { tone: "info", appearance: "soft" },
+      },
+    });
+    expect(resolved).toEqual({ tone: "info", appearance: "soft" });
+
+    const html = renderToStaticMarkup(
+      <DomainStatusBadge
+        status="Em revisao"
+        statusMap={{ "em revisao": { tone: "warning", appearance: "soft" } }}
+      />,
+    );
+    expect(html).toContain("bg-feedback-warning-soft");
   });
 });

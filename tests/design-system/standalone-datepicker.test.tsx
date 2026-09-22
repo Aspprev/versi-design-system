@@ -65,4 +65,31 @@ describe("DatePicker standalone", () => {
     expect(html).toContain('value="15/01/2024"');
     expect(html).toContain('for="dataInicio"');
   });
+
+  it("expÃµe o modo de seleÃ§Ã£o por ano e associa a ajuda ao campo", () => {
+    const html = renderToStaticMarkup(
+      <DatePicker
+        name="anoReferencia"
+        ariaLabel="Ano de referÃªncia"
+        label="Ano de referÃªncia"
+        selectionMode="year"
+        minDate={new Date(2020, 0, 1)}
+        maxDate={new Date(2030, 11, 31)}
+        helperText="Informe o ano do documento."
+      />,
+    );
+
+    expect(html).toContain('aria-label="Ano de referÃªncia"');
+    expect(html).toContain('maxLength="4"');
+    expect(html).toContain('aria-describedby="anoReferencia-description"');
+    expect(html).toContain("Informe o ano do documento.");
+  });
+
+  it("mantem isDisabled como alias compatÃ­vel de disabled", () => {
+    const html = renderToStaticMarkup(
+      <DatePicker name="data" isDisabled label="Data" />,
+    );
+
+    expect(html).toContain('disabled=""');
+  });
 });

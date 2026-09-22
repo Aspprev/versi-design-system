@@ -6,6 +6,7 @@ export {
   FileList,
   FileUploadProgress,
   FileViewer,
+  validateFiles,
 } from "./components/file-upload";
 export type {
   FileDropzoneProps,
@@ -17,6 +18,9 @@ export type {
   FileUploadProgressStatus,
   FileViewerProps,
   FileViewerSource,
+  FileValidationOptions,
+  FileValidationReason,
+  FileValidationResult,
 } from "./components/file-upload";
 export { QRCode } from "./components/qr-code";
 export type { QRCodeErrorCorrectionLevel, QRCodeProps } from "./components/qr-code";

@@ -96,6 +96,11 @@
     --border-strong: var(--grayscale-2);
     --border-disabled: var(--grayscale-4);
     --focus-ring: var(--primary-1);
+    --focus-emphasis-outline-width: 3px;
+    --focus-emphasis-outline-offset: 2px;
+    --focus-emphasis-halo-width: 5px;
+    --link-emphasis-thickness: 0.12em;
+    --link-emphasis-offset: 0.18em;
     --icon-default: var(--tertiary-3);
     --feedback-danger-strong: var(--danger-1);
     --feedback-danger-soft: var(--danger-5);
@@ -219,6 +224,8 @@
     --shell-menu-expanded: 248px;
     --shell-gutter-mobile: 8px;
     --shell-gutter-desktop: 40px;
+    --content-max-width: 1440px;
+    --content-gutter-inline: clamp(1rem, 2.5vw, 2.5rem);
     --z-header: 30;
     --z-navigation: 40;
     --z-drawer: 80;
@@ -1266,5 +1273,22 @@
 
   html[data-contrast="high"] :where(.apexcharts-gridline) {
     stroke-width: 1.5;
+  }
+
+  html[data-focus-emphasis="strong"] :where(a, button, input, select, textarea, [tabindex]):focus-visible {
+    outline: var(--focus-emphasis-outline-width) solid rgb(var(--focus-ring)) !important;
+    outline-offset: var(--focus-emphasis-outline-offset) !important;
+    box-shadow: 0 0 0 var(--focus-emphasis-halo-width) rgb(var(--surface-page)) !important;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="dark"][data-focus-emphasis="strong"] :where(a, button, input, select, textarea, [tabindex]):focus-visible {
+    outline-color: #ffdf00 !important;
+    box-shadow: 0 0 0 var(--focus-emphasis-halo-width) #000000 !important;
+  }
+
+  html[data-link-emphasis="underline"] a:not([role="button"]):not([data-no-accessibility-underline]) {
+    text-decoration-line: underline !important;
+    text-decoration-thickness: var(--link-emphasis-thickness);
+    text-underline-offset: var(--link-emphasis-offset);
   }
 }

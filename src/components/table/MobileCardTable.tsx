@@ -63,13 +63,16 @@ function MobileCardTable<TData>({
     () => (Array.isArray(data) ? data : []),
     [data],
   );
+  const safeItemsPerPage = Number.isFinite(itemsPerPage)
+    ? Math.max(1, Math.floor(itemsPerPage))
+    : 10;
 
   const pagination = useMemo(() => {
     const totalItems = normalizedData.length;
-    const totalPages = Math.max(1, Math.ceil(totalItems / itemsPerPage));
+    const totalPages = Math.max(1, Math.ceil(totalItems / safeItemsPerPage));
     const safeCurrentPage = Math.min(currentPage, totalPages);
-    const startIndex = (safeCurrentPage - 1) * itemsPerPage;
-    const endIndex = startIndex + itemsPerPage;
+    const startIndex = (safeCurrentPage - 1) * safeItemsPerPage;
+    const endIndex = startIndex + safeItemsPerPage;
 
     return {
       currentPage: safeCurrentPage,
@@ -79,7 +82,7 @@ function MobileCardTable<TData>({
       endItem: Math.min(endIndex, totalItems),
       pageData: normalizedData.slice(startIndex, endIndex),
     };
-  }, [currentPage, normalizedData, itemsPerPage]);
+  }, [currentPage, normalizedData, safeItemsPerPage]);
 
   useEffect(() => {
     setCurrentPage(1);
@@ -163,7 +166,6 @@ function MobileCardTable<TData>({
                 <div
                   key={keyExtractor(item, index)}
                   role="listitem"
-                  tabIndex={0}
                   aria-label={`Item ${itemNumber} de ${pagination.totalItems}`}
                   aria-describedby={cardContentId}
                   className="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-focus-ring"
@@ -189,7 +191,7 @@ function MobileCardTable<TData>({
                         aria-hidden={
                           !isExpanded || isClosingExpandedRow || undefined
                         }
-                        className={`overflow-hidden transition-all duration-200 ease-out ${
+                        className={`overflow-hidden transition-all duration-200 ease-out motion-reduce:transition-none ${
                           isExpanded && !isClosingExpandedRow
                             ? "max-h-[1200px] opacity-100"
                             : "max-h-0 opacity-0"
@@ -216,7 +218,7 @@ function MobileCardTable<TData>({
         )}
       </div>
 
-      {showPagination && pagination.totalItems > itemsPerPage && (
+      {showPagination && pagination.totalItems > safeItemsPerPage && (
         <div className="mt-4 flex flex-col items-center justify-center gap-3 text-center">
           <p
             role="status"

@@ -24,6 +24,13 @@ export interface FileListProps {
 
 const fileId = (item: FileUploadItem, index: number) => item.id ?? `${item.file.name}-${item.file.size}-${item.file.lastModified}-${index}`;
 
+const statusDescription = (status: FileUploadItemStatus) => {
+  if (status === "uploading") return "Enviando";
+  if (status === "success") return "Enviado";
+  if (status === "error") return "Erro no envio";
+  return "Aguardando envio";
+};
+
 export function FileList({ files, accessibleName = "Arquivos selecionados", onRemove, onRetry, className }: FileListProps) {
   return (
     <ul aria-label={accessibleName} className={classNames("w-full space-y-2", className)}>
@@ -31,10 +38,11 @@ export function FileList({ files, accessibleName = "Arquivos selecionados", onRe
         const status = item.status ?? "pending";
         const progressStatus: FileUploadProgressStatus = status === "pending" ? "idle" : status;
         return (
-          <li key={fileId(item, index)} className="flex min-w-0 flex-wrap items-center gap-3 rounded-sm border border-border-default bg-surface-card p-3">
+          <li key={fileId(item, index)} aria-busy={status === "uploading" || undefined} className="flex min-w-0 flex-wrap items-center gap-3 rounded-sm border border-border-default bg-surface-card p-3">
             <div className="min-w-0 flex-1">
               <p className="truncate font-semibold text-content-primary" title={item.file.name}>{item.file.name}</p>
               <p className="text-xs text-content-secondary">{Math.ceil(item.file.size / 1024)} KB</p>
+              <span className="sr-only">Status: {statusDescription(status)}</span>
               {(status === "uploading" || status === "success" || status === "error") && (
                 <FileUploadProgress value={item.progress} status={progressStatus} label={`Progresso de ${item.file.name}`} />
               )}

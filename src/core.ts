@@ -105,14 +105,22 @@ export type {
 } from "./utils/optional-value";
 export type {
   ResolvedStatusAppearance,
+  StatusAppearanceMap,
   StatusAppearance,
+  StatusResolverOptions,
   StatusDomain,
   StatusTone,
 } from "./utils/resolve-status-appearance";
-export { breakpoints, useBreakpoint } from "./hooks/useBreakpoint";
+export {
+  normalizeStatus,
+  resolveStatusAppearance,
+} from "./utils/resolve-status-appearance";
+export { breakpoints, getBreakpoint, useBreakpoint } from "./hooks/useBreakpoint";
+export type { Breakpoint } from "./hooks/useBreakpoint";
 export { useContainerBreakpoint } from "./hooks/useContainerBreakpoint";
 export type {
   ContainerBreakpoint,
   ContainerBreakpointMap,
   UseContainerBreakpointOptions,
 } from "./hooks/useContainerBreakpoint";
+export { resolveContainerBreakpoint } from "./hooks/useContainerBreakpoint";

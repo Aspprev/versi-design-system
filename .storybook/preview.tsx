@@ -51,6 +51,16 @@ const preview: Preview = {
       defaultValue: "default",
       toolbar: { icon: "zoom", items: ["default", "large", "extra-large"] },
     },
+    emphasizeFocus: {
+      description: "Ênfase de foco",
+      defaultValue: false,
+      toolbar: { icon: "accessibility", items: ["false", "true"] },
+    },
+    underlineLinks: {
+      description: "Ênfase de links",
+      defaultValue: false,
+      toolbar: { icon: "link", items: ["false", "true"] },
+    },
     motion: {
       description: "Movimento",
       defaultValue: "full",
@@ -75,6 +85,17 @@ const preview: Preview = {
         document.documentElement.dataset.contrastTheme = resolvedColorScheme;
         document.documentElement.dataset.fontScale = context.globals.fontScale;
         document.documentElement.dataset.motion = context.globals.motion;
+        const isEnabled = (value: unknown) => value === true || value === "true";
+        document.documentElement.dataset.focusEmphasis = isEnabled(
+          context.globals.emphasizeFocus,
+        )
+          ? "strong"
+          : "default";
+        document.documentElement.dataset.linkEmphasis = isEnabled(
+          context.globals.underlineLinks,
+        )
+          ? "underline"
+          : "default";
       }
 
       return (

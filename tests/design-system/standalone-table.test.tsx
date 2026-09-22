@@ -60,4 +60,28 @@ describe("Table standalone", () => {
     expect(html).toContain('role="list"');
     expect(html).toContain("Visualizando de 1");
   });
+
+  it("usa o modo responsivo do contêiner e não cria foco artificial nas linhas", () => {
+    const tableHtml = renderToStaticMarkup(
+      <Table
+        header={header}
+        data={data}
+        overflowMode="adaptive"
+        itemsPerPage={0}
+        accessibleName="Participantes responsivos"
+      />,
+    );
+    const cardsHtml = renderToStaticMarkup(
+      <MobileCardTable
+        headers={[{ label: "Nome" }]}
+        data={data}
+        keyExtractor={(item) => String(item.id)}
+        renderCard={(item) => <span>{item.name}</span>}
+      />,
+    );
+
+    expect(tableHtml).toContain('data-responsive-mode="adaptive"');
+    expect(tableHtml).not.toContain('<tr tabindex="0"');
+    expect(cardsHtml).not.toContain('tabindex="0"');
+  });
 });

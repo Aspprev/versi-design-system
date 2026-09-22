@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, type RefObject } from "react";
+import { useEffect, useMemo, useState, type RefObject } from "react";
 
 export type ContainerBreakpointMap = Record<string, number>;
 export type ContainerBreakpoint = string | undefined;
@@ -16,25 +16,55 @@ export const defaultContainerBreakpoints: ContainerBreakpointMap = {
   wide: 1440,
 };
 
+export function resolveContainerBreakpoint(
+  width: number,
+  breakpoints: ContainerBreakpointMap = defaultContainerBreakpoints,
+): ContainerBreakpoint {
+  const entries = Object.entries(breakpoints).sort(([, first], [, second]) =>
+    first === second ? 0 : first - second,
+  );
+
+  return entries.reduce<string | undefined>(
+    (result, [name, threshold]) =>
+      width >= threshold ? name : result,
+    undefined,
+  );
+}
+
+function getBreakpointMapKey(breakpoints: ContainerBreakpointMap) {
+  return Object.entries(breakpoints)
+    .sort(([first], [second]) => first.localeCompare(second))
+    .map(([name, threshold]) => `${name}:${threshold}`)
+    .join("|");
+}
+
 export function useContainerBreakpoint<TElement extends HTMLElement = HTMLElement>(
   ref: RefObject<TElement | null>,
   options: UseContainerBreakpointOptions = {},
 ): ContainerBreakpoint {
   const thresholds = options.breakpoints ?? defaultContainerBreakpoints;
+  const thresholdsKey = getBreakpointMapKey(thresholds);
+  const sortedThresholds = useMemo(
+    () =>
+      Object.entries(thresholds).sort(([, first], [, second]) =>
+        first === second ? 0 : first - second,
+      ),
+    [thresholdsKey],
+  );
   const [current, setCurrent] = useState<ContainerBreakpoint>();
 
   useEffect(() => {
     const element = ref.current;
     if (!element) return;
 
-    const resolve = (width: number) => {
-      const entries = Object.entries(thresholds).sort(([, a], [, b]) => a - b);
-      return entries.reduce<string | undefined>(
-        (result, [name, threshold]) => width >= threshold ? name : result,
+    const resolve = (width: number) =>
+      sortedThresholds.reduce<string | undefined>(
+        (result, [name, threshold]) =>
+          width >= threshold ? name : result,
         undefined,
       );
-    };
-    const update = () => setCurrent(resolve(element.getBoundingClientRect().width));
+    const update = () =>
+      setCurrent(resolve(element.getBoundingClientRect().width));
 
     if (typeof ResizeObserver === "undefined") {
       update();
@@ -44,7 +74,7 @@ export function useContainerBreakpoint<TElement extends HTMLElement = HTMLElemen
     observer.observe(element);
     update();
     return () => observer.disconnect();
-  }, [ref, thresholds]);
+  }, [ref, sortedThresholds]);
 
   return current;
 }

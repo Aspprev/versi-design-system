@@ -44,7 +44,12 @@ export interface OtpCodeInputHandle {
 
 const normalizeMask = (value: string, mask: OtpCodeInputMask): string => {
   if (typeof mask === "function") return mask(value).slice(0, 1);
-  if (mask instanceof RegExp) return mask.test(value) ? value.slice(0, 1) : "";
+  if (mask instanceof RegExp) {
+    // RegExp.test mutates lastIndex when global/sticky flags are used.
+    // Clone without those flags so repeated OTP entries stay deterministic.
+    const stableMask = new RegExp(mask.source, mask.flags.replace(/[gy]/g, ""));
+    return stableMask.test(value) ? value.slice(0, 1) : "";
+  }
   if (mask === "alphanumeric") return value.replace(/[^a-z\d]/gi, "").slice(0, 1);
   return value.replace(/\D/g, "").slice(0, 1);
 };
@@ -76,12 +81,14 @@ const OtpCodeInput = forwardRef<OtpCodeInputHandle, OtpCodeInputProps>(
       inputMode = "numeric",
       mask = "numeric",
       name,
+      onFocus: onInputFocus,
+      onKeyDown: onInputKeyDown,
       className,
       ...inputProps
     },
     ref,
   ) {
-    const safeLength = Math.max(1, Math.floor(length));
+    const safeLength = Math.max(1, Number.isFinite(length) ? Math.floor(length) : 6);
     const groupId = useId();
     const errorId = `${groupId}-error`;
     const helperId = `${groupId}-helper`;
@@ -96,11 +103,14 @@ const OtpCodeInput = forwardRef<OtpCodeInputHandle, OtpCodeInputProps>(
 
     useEffect(() => {
       if (!isControlled) {
-        setInternalValues((previous) =>
-          previous.length === safeLength
+        setInternalValues((previous) => {
+          const normalized = normalizeValues(previous, safeLength, mask);
+          return previous.length === normalized.length && previous.every(
+            (item, index) => item === normalized[index],
+          )
             ? previous
-            : normalizeValues(previous, safeLength, mask),
-        );
+            : normalized;
+        });
       }
     }, [isControlled, mask, safeLength]);
 
@@ -122,8 +132,9 @@ const OtpCodeInput = forwardRef<OtpCodeInputHandle, OtpCodeInputProps>(
       const normalized = normalizeValues(next, safeLength, mask);
       if (!isControlled) setInternalValues(normalized);
       const nextValue = normalized.join("");
+      const wasComplete = currentValues.every(Boolean) && currentValues.length === safeLength;
       onChange?.(nextValue, normalized);
-      if (normalized.every(Boolean) && nextValue.length === safeLength) {
+      if (!wasComplete && normalized.every(Boolean) && nextValue.length === safeLength) {
         onComplete?.(nextValue);
       }
       if (focusIndex !== undefined) inputRefs.current[focusIndex]?.focus();
@@ -221,8 +232,14 @@ const OtpCodeInput = forwardRef<OtpCodeInputHandle, OtpCodeInputProps>(
                 emit(next, nextValue && index < safeLength - 1 ? index + 1 : undefined);
               }}
               onPaste={(event) => handlePaste(event, index)}
-              onKeyDown={(event) => handleKeyDown(event, index)}
-              onFocus={(event) => event.currentTarget.select()}
+              onKeyDown={(event) => {
+                onInputKeyDown?.(event);
+                if (!event.defaultPrevented) handleKeyDown(event, index);
+              }}
+              onFocus={(event) => {
+                onInputFocus?.(event);
+                if (!event.defaultPrevented) event.currentTarget.select();
+              }}
               className={classNames(
                 "h-11 w-11 rounded-sm border bg-field-surface text-center text-lg font-bold text-field-content outline-none transition-colors focus-visible:border-field-border-active focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring disabled:cursor-not-allowed disabled:bg-field-surface-disabled",
                 hasError ? "border-field-border-error" : "border-field-border-default",
