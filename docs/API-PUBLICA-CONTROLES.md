@@ -11,7 +11,7 @@ Todos os controles abaixo sao client-only: usam estado, eventos de DOM, Formik, 
 | `InputSelect`     | Selecao simples com lista e busca opcional    | Formik                             | `name`, `options` e `label` opcionais; suporta renderizacao de opcao/valor                                                               |
 | `TextArea`        | Texto multilinha                              | Formik                             | `name` obrigatorio; aceita ajuda, erro, prefixo, sufixo e icone                                                                          |
 | `InputPhone`      | Telefone internacional com pais, DDD e numero | Formik, `react-number-format`      | `countries` opcional; use `countryList` para `all`, `include` ou `exclude`; use `buildPhonePayload`/`parsePhonePayload` no limite da API |
-| `DatePicker`      | Data digitada e calendario                    | Formik, `date-fns`                 | `value` ou campo Formik; suporta `minDate`, `maxDate`, `drilldown` e `dropdown`                                                          |
+| `DatePicker`      | Data digitada e calendario                    | Formik, `date-fns`                 | `value` ou campo Formik; suporta `minDate`, `maxDate`, `selectionMode` (day, month ou year), navegacao por teclado e retorno de foco |
 | `SelectMulti`     | Selecao multipla controlada                   | Nenhuma alem das dependencias base | `options` e `value` controlados; `onReset` limpa a selecao                                                                               |
 | `SelectCountry`   | Selecao de pais com bandeira                  | Formik, via `InputSelect`          | `options` opcional; use `countryList` para filtrar a lista padrao                                                                        |
 
@@ -29,8 +29,8 @@ Os nomes `SelectCountry`, `SelectMulti`, `InputPhone`, `DatePicker` e `Checkbox`
 
 React e React DOM são peer dependencies (`>=18.2.0 <20`). Formik, date-fns e react-number-format são peers opcionais necessários para `/forms`. classnames, react-icons e class-variance-authority são dependências diretas. O build externaliza essas bibliotecas. Consulte o manifesto para versões compatíveis.
 
-O repositório é independente; o manifesto publicado informado pelo usuário é
-`@aspprev/versi-ds` na versão `0.1.0`. Testes, stories e documentação interna
+O repositório é independente; o manifesto desta preparação é
+`@aspprev/versi-ds` na versão `0.3.0`. Testes, stories e documentação interna
 permanecem no repositório; o npm contém dist, README e manifesto.
 
 ## Países, teclado e bandeiras

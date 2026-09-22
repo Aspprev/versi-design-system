@@ -67,6 +67,30 @@ export function Resumo() {
 
 Evite deep imports. Use somente os entrypoints públicos documentados no `package.json`.
 
+### APIs desta versão
+
+```tsx
+import { DatePicker, DomainStatusBadge, Table } from "@aspprev/versi-ds";
+import { OtpCodeInput } from "@aspprev/versi-ds/forms";
+import {
+  FileDropzone,
+  FileList,
+  FileUploadProgress,
+  FileViewer,
+  QRCode,
+  validateFiles,
+} from "@aspprev/versi-ds/documents";
+```
+
+- `OtpCodeInput` suporta `onComplete`, colagem de código, máscara, erro e controle por `value`/`values`.
+- `QRCode` suporta `description`, `ariaLabel`, `loading`, `error`, `size` e nível de correção.
+- Upload e `FileViewer` são controlados pelo consumidor; transporte, autenticação, persistência e download não fazem parte do pacote.
+- `DatePicker` aceita `selectionMode="year"` e mantém `selectionMode="day"` como padrão.
+- `DomainStatusBadge` aceita `statusMap` para vocabulário específico do produto.
+- `Table` preserva os modos `fit`, `adaptive` e `scroll`; filtros e paginação respondem ao espaço do container.
+
+Consulte [`docs/API-NOVOS-COMPONENTES.md`](docs/API-NOVOS-COMPONENTES.md) e o Storybook para exemplos completos, estados de erro/carregamento e contratos de acessibilidade.
+
 ## Organização do Design System
 
 - **Components**: controles de ação, formulários, feedback, navegação, dados, documentos, overlays e layout.

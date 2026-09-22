@@ -14,6 +14,23 @@ Prefer the public package entrypoints and semantic tokens when composing VERSI p
 - Import from `@aspprev/versi-ds` or its documented subpath entrypoints; avoid deep imports.
 - Keep responsive behavior intentional across mobile, tablet and desktop widths.
 
+## Responsividade
+
+Use `useBreakpoint` quando a decisão depende da viewport inteira. Use
+`useContainerBreakpoint` quando depende da largura real disponível para um
+componente, como em uma tabela ao lado de um menu ou em um painel dividido.
+
+```tsx
+import { useContainerBreakpoint, useBreakpoint } from "@aspprev/versi-ds/core";
+
+const viewport = useBreakpoint();
+const content = useContainerBreakpoint(containerRef);
+```
+
+O contrato de conteúdo usa `--content-max-width` e
+`--content-gutter-inline`. Os tokens são referências para composição; o DS
+não impõe header, menu, shell ou largura de uma jornada de produto.
+
 ## API evolution
 
 Add optional props before considering a breaking change. Preserve native HTML attributes where possible, document controlled and uncontrolled behavior, and define accessible names and error states as part of the API contract.

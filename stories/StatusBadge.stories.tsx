@@ -34,3 +34,22 @@ export const DomainStatus: Story = {
   ),
 };
 
+export const ConsumerStatusMap: Story = {
+  render: () => (
+    <DomainStatusBadge
+      status="Em revisao"
+      statusMap={{
+        "Em revisao": { tone: "info", appearance: "soft" },
+      }}
+    />
+  ),
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "O consumidor pode fornecer seu mapa de status sem adicionar regras de negócio ao Design System.",
+      },
+    },
+  },
+};
+

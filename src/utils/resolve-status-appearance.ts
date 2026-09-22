@@ -19,6 +19,20 @@ export interface ResolvedStatusAppearance {
   appearance: StatusAppearance;
 }
 
+/**
+ * Map owned by the consuming application. Keys are normalized with
+ * `normalizeStatus` before lookup, so accented and differently-cased labels
+ * can be used safely by consumers.
+ */
+export type StatusAppearanceMap = Readonly<
+  Record<string, ResolvedStatusAppearance>
+>;
+
+export interface StatusResolverOptions {
+  map?: StatusAppearanceMap;
+  fallback?: ResolvedStatusAppearance;
+}
+
 const NORMALIZED_STATUS = {
   infoOutline: new Set(["ABERTO", "PAGO", "EM PAGAMENTO"]),
   infoSolid: new Set([
@@ -85,10 +99,21 @@ const resolveGenericStatus = (status: string): ResolvedStatusAppearance => {
 export const resolveStatusAppearance = (
   status: unknown,
   domain: StatusDomain = "generic",
+  options?: StatusResolverOptions,
 ): ResolvedStatusAppearance => {
   const normalized = normalizeStatus(status);
 
-  if (!normalized) return { tone: "neutral", appearance: "outline" };
+  if (!normalized) {
+    return options?.fallback ?? { tone: "neutral", appearance: "outline" };
+  }
+
+  const mappedAppearance = options?.map
+    ? Object.entries(options.map).find(
+        ([key]) => normalizeStatus(key) === normalized,
+      )?.[1]
+    : undefined;
+
+  if (mappedAppearance) return mappedAppearance;
 
   if (domain === "beneficiary") {
     if (normalized === "VIGENTE") return { tone: "success", appearance: "solid" };
@@ -147,5 +172,5 @@ export const resolveStatusAppearance = (
     }
   }
 
-  return resolveGenericStatus(normalized);
+  return options?.fallback ?? resolveGenericStatus(normalized);
 };

@@ -4,9 +4,9 @@ Este documento rege o repositório independente `ds-versi`. O portal será consu
 
 ## Estado atual
 
-Nome e versão do manifesto: `@aspprev/versi-ds`, `0.1.0`. A publicação no npm
-foi informada pelo usuário; confirme a página do pacote e a titularidade antes
-de promover outra versão. A URL remota do repositório continua pendente.
+Nome e versão do manifesto nesta preparação: `@aspprev/versi-ds`, `0.3.0`.
+A tag e a publicação no npm ainda estão pendentes de revisão final, tarball e
+validação nos consumidores. A URL remota do repositório continua pendente.
 
 A API é definida pelos nove exports em `package.json`: raiz, core, forms, charts, overlays, documents, countries, styles.css e themes.css. Arquivos internos não são contrato público. A lista de conteúdo publicável é `dist` e `README.md`, além do manifesto obrigatório do npm.
 

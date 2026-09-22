@@ -16,6 +16,12 @@ export interface IFilterControl {
 }
 
 export interface IFilterProps {
+  /** Stable id used to associate the popup with its trigger. */
+  id?: string;
+  /** Accessible name for the filter popup. */
+  accessibleName?: string;
+  /** Unique radio group prefix when multiple filters are rendered together. */
+  groupName?: string;
   optionList?: IFilterOption[];
   optionChecked?: string;
   onChange?: (value: string) => void;
@@ -37,6 +43,9 @@ function Filter(props: IFilterProps) {
   return (
     <FilterView
       optionList={optionList}
+      id={props.id}
+      accessibleName={props.accessibleName}
+      groupName={props.groupName}
       optionChecked={optionChecked}
       onChange={onChange}
       controls={controls}

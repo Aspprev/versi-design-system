@@ -3,6 +3,7 @@
 import type { ComponentProps } from "react";
 import {
   resolveStatusAppearance,
+  type StatusAppearanceMap,
   type StatusDomain,
 } from "../../utils/resolve-status-appearance";
 import { StatusBadge } from "./StatusBadge";
@@ -16,6 +17,8 @@ export interface DomainStatusBadgeProps
   domain?: StatusDomain;
   empty?: "hide" | "placeholder";
   placeholder?: string;
+  /** Optional consumer-owned map for statuses specific to a product domain. */
+  statusMap?: StatusAppearanceMap;
 }
 
 export function DomainStatusBadge({
@@ -23,12 +26,13 @@ export function DomainStatusBadge({
   domain = "generic",
   empty = "hide",
   placeholder = "-",
+  statusMap,
   ...rest
 }: DomainStatusBadgeProps) {
   const label = status?.trim();
   if (!label && empty === "hide") return null;
 
-  const resolved = resolveStatusAppearance(label, domain);
+  const resolved = resolveStatusAppearance(label, domain, { map: statusMap });
   return (
     <StatusBadge
       tone={resolved.tone}

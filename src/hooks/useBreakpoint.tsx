@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useSyncExternalStore } from "react";
 
 export const breakpoints = {
   mobile: 640,
@@ -9,33 +9,29 @@ export const breakpoints = {
   tv: 1920,
 };
 
-type Breakpoint = keyof typeof breakpoints;
+export type Breakpoint = keyof typeof breakpoints;
 
-export const useBreakpoint = (): Breakpoint => {
-  const getBreakpoint = (width: number): Breakpoint => {
-    const entries = Object.entries(breakpoints) as [Breakpoint, number][];
-    return entries.reduce<Breakpoint>(
-      (prev, [key, minWidth]) => (width >= minWidth ? key : prev),
-      "mobile"
-    );
-  };
+export function getBreakpoint(width: number): Breakpoint {
+  const entries = Object.entries(breakpoints) as [Breakpoint, number][];
+  return entries.reduce<Breakpoint>(
+    (previous, [name, minimumWidth]) =>
+      width >= minimumWidth ? name : previous,
+    "mobile",
+  );
+}
 
-  const [currentBreakpoint, setCurrentBreakpoint] =
-    useState<Breakpoint>("mobile");
+function subscribe(onStoreChange: () => void) {
+  window.addEventListener("resize", onStoreChange);
+  return () => window.removeEventListener("resize", onStoreChange);
+}
 
-  useEffect(() => {
-    const handleResize = () => {
-      const newBreakpoint = getBreakpoint(window.innerWidth);
-      setCurrentBreakpoint(newBreakpoint);
-    };
+function getSnapshot() {
+  return getBreakpoint(window.innerWidth);
+}
 
-    handleResize();
+function getServerSnapshot(): Breakpoint {
+  return "mobile";
+}
 
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  return currentBreakpoint;
-};
+export const useBreakpoint = (): Breakpoint =>
+  useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);

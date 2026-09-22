@@ -194,9 +194,15 @@ export type {
 } from "./utils/optional-value";
 export type {
   ResolvedStatusAppearance,
+  StatusAppearanceMap,
   StatusAppearance,
+  StatusResolverOptions,
   StatusDomain,
   StatusTone,
+} from "./utils/resolve-status-appearance";
+export {
+  normalizeStatus,
+  resolveStatusAppearance,
 } from "./utils/resolve-status-appearance";
 export { OtpCodeInput } from "./components/otp-code-input";
 export type {
@@ -209,6 +215,7 @@ export {
   FileList,
   FileUploadProgress,
   FileViewer,
+  validateFiles,
 } from "./components/file-upload";
 export { QRCode } from "./components/qr-code";
 export type {
@@ -221,15 +228,20 @@ export type {
   FileUploadProgressStatus,
   FileViewerProps,
   FileViewerSource,
+  FileValidationOptions,
+  FileValidationReason,
+  FileValidationResult,
 } from "./components/file-upload";
 export type { QRCodeErrorCorrectionLevel, QRCodeProps } from "./components/qr-code";
-export { breakpoints, useBreakpoint } from "./hooks/useBreakpoint";
+export { breakpoints, getBreakpoint, useBreakpoint } from "./hooks/useBreakpoint";
+export type { Breakpoint } from "./hooks/useBreakpoint";
 export { useContainerBreakpoint } from "./hooks/useContainerBreakpoint";
 export type {
   ContainerBreakpoint,
   ContainerBreakpointMap,
   UseContainerBreakpointOptions,
 } from "./hooks/useContainerBreakpoint";
+export { resolveContainerBreakpoint } from "./hooks/useContainerBreakpoint";
 export {
   AccessibilityPreferencesPanel,
   ContrastPreference,

@@ -382,6 +382,26 @@
           "value": "var(--primary-1)"
         },
         {
+          "property": "--focus-emphasis-outline-width",
+          "value": "3px"
+        },
+        {
+          "property": "--focus-emphasis-outline-offset",
+          "value": "2px"
+        },
+        {
+          "property": "--focus-emphasis-halo-width",
+          "value": "5px"
+        },
+        {
+          "property": "--link-emphasis-thickness",
+          "value": "0.12em"
+        },
+        {
+          "property": "--link-emphasis-offset",
+          "value": "0.18em"
+        },
+        {
           "property": "--icon-default",
           "value": "var(--tertiary-3)"
         },
@@ -872,6 +892,14 @@
         {
           "property": "--shell-gutter-desktop",
           "value": "40px"
+        },
+        {
+          "property": "--content-max-width",
+          "value": "1440px"
+        },
+        {
+          "property": "--content-gutter-inline",
+          "value": "clamp(1rem, 2.5vw, 2.5rem)"
         },
         {
           "property": "--z-header",
@@ -4424,6 +4452,53 @@
         {
           "property": "stroke-width",
           "value": "1.5"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-focus-emphasis=\"strong\"] :where(a, button, input, select, textarea, [tabindex]):focus-visible",
+      "declarations": [
+        {
+          "property": "outline",
+          "value": "var(--focus-emphasis-outline-width) solid rgb(var(--focus-ring)) !important"
+        },
+        {
+          "property": "outline-offset",
+          "value": "var(--focus-emphasis-outline-offset) !important"
+        },
+        {
+          "property": "box-shadow",
+          "value": "0 0 0 var(--focus-emphasis-halo-width) rgb(var(--surface-page)) !important"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-contrast=\"high\"][data-contrast-theme=\"dark\"][data-focus-emphasis=\"strong\"] :where(a, button, input, select, textarea, [tabindex]):focus-visible",
+      "declarations": [
+        {
+          "property": "outline-color",
+          "value": "#ffdf00 !important"
+        },
+        {
+          "property": "box-shadow",
+          "value": "0 0 0 var(--focus-emphasis-halo-width) #000000 !important"
+        }
+      ]
+    },
+    {
+      "selector": "html[data-link-emphasis=\"underline\"] a:not([role=\"button\"]):not([data-no-accessibility-underline])",
+      "declarations": [
+        {
+          "property": "text-decoration-line",
+          "value": "underline !important"
+        },
+        {
+          "property": "text-decoration-thickness",
+          "value": "var(--link-emphasis-thickness)"
+        },
+        {
+          "property": "text-underline-offset",
+          "value": "var(--link-emphasis-offset)"
         }
       ]
     }

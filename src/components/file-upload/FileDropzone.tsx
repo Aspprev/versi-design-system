@@ -2,12 +2,9 @@
 
 import classNames from "classnames";
 import { useId, useRef, useState, type ChangeEvent, type DragEvent, type ReactNode } from "react";
+import { validateFiles, type FileRejection } from "./validation";
 
-export interface FileRejection {
-  file: File;
-  reason: "type" | "size" | "count";
-  message: string;
-}
+export type { FileRejection } from "./validation";
 
 export interface FileDropzoneProps {
   accept?: string;
@@ -15,6 +12,9 @@ export interface FileDropzoneProps {
   maxFiles?: number;
   maxSize?: number;
   disabled?: boolean;
+  id?: string;
+  name?: string;
+  required?: boolean;
   label?: ReactNode;
   hint?: ReactNode;
   error?: ReactNode;
@@ -23,21 +23,15 @@ export interface FileDropzoneProps {
   onFilesRejected?: (rejections: FileRejection[]) => void;
 }
 
-const acceptsFile = (file: File, accept?: string) => {
-  if (!accept?.trim()) return true;
-  return accept.split(",").map((item) => item.trim().toLowerCase()).some((rule) => {
-    if (rule.endsWith("/*")) return file.type.toLowerCase().startsWith(rule.slice(0, -1));
-    if (rule.startsWith(".")) return file.name.toLowerCase().endsWith(rule);
-    return file.type.toLowerCase() === rule;
-  });
-};
-
 export function FileDropzone({
   accept,
   multiple = false,
   maxFiles = multiple ? Number.POSITIVE_INFINITY : 1,
   maxSize,
   disabled = false,
+  id,
+  name,
+  required = false,
   label = "Selecionar arquivos",
   hint = "Arraste e solte os arquivos aqui ou use o teclado para selecionar.",
   error,
@@ -45,35 +39,22 @@ export function FileDropzone({
   onFilesAccepted,
   onFilesRejected,
 }: FileDropzoneProps) {
-  const inputId = useId();
+  const generatedInputId = useId();
+  const inputId = id ?? generatedInputId;
   const messageId = `${inputId}-message`;
   const inputRef = useRef<HTMLInputElement>(null);
   const [isDragging, setIsDragging] = useState(false);
+  const [rejectionMessage, setRejectionMessage] = useState<string>();
 
   const processFiles = (fileList: FileList | File[]) => {
     if (disabled) return;
-    const selected = Array.from(fileList);
-    const accepted: File[] = [];
-    const rejected: FileRejection[] = [];
-    selected.forEach((file, index) => {
-      const reason = !acceptsFile(file, accept)
-        ? "type"
-        : maxSize !== undefined && file.size > maxSize
-          ? "size"
-          : index >= maxFiles
-            ? "count"
-            : undefined;
-      if (!reason) accepted.push(file);
-      else {
-        const message = reason === "type"
-          ? "Tipo de arquivo não permitido."
-          : reason === "size"
-            ? "O arquivo excede o tamanho máximo permitido."
-            : "Quantidade máxima de arquivos excedida.";
-        rejected.push({ file, reason, message });
-      }
+    const { accepted, rejected } = validateFiles(fileList, {
+      accept,
+      maxFiles,
+      maxSize,
+      multiple,
     });
-    if (!multiple && accepted.length > 1) accepted.splice(1);
+    setRejectionMessage(rejected.length ? rejected.map((item) => item.message).join(" ") : undefined);
     if (accepted.length) onFilesAccepted?.(accepted);
     if (rejected.length) onFilesRejected?.(rejected);
   };
@@ -87,7 +68,8 @@ export function FileDropzone({
     setIsDragging(false);
     processFiles(event.dataTransfer.files);
   };
-  const message = error || hint;
+  const hasError = Boolean(error || rejectionMessage);
+  const message = error || rejectionMessage || hint;
 
   return (
     <div
@@ -99,7 +81,7 @@ export function FileDropzone({
         "flex min-h-32 w-full cursor-pointer flex-col items-center justify-center rounded-sm border-2 border-dashed p-6 text-center transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring",
         isDragging ? "border-action-primary bg-primary-1/10" : "border-border-default bg-surface-card hover:border-border-strong",
         disabled && "cursor-not-allowed opacity-60",
-        Boolean(error) && "border-field-border-error",
+        hasError && "border-field-border-error",
         className,
       )}
     >
@@ -109,15 +91,18 @@ export function FileDropzone({
           ref={inputRef}
           id={inputId}
           type="file"
+          name={name}
           accept={accept}
           multiple={multiple}
           disabled={disabled}
+          required={required}
           onChange={handleInputChange}
           aria-describedby={message ? messageId : undefined}
+          aria-invalid={hasError ? true : undefined}
           className="sr-only"
         />
       </label>
-      {message && <span id={messageId} className={classNames("mt-1 text-sm", error ? "text-field-assistive-error" : "text-content-secondary")}>{message}</span>}
+      {message && <span id={messageId} role={hasError ? "alert" : undefined} className={classNames("mt-1 text-sm", hasError ? "text-field-assistive-error" : "text-content-secondary")}>{message}</span>}
     </div>
   );
 }

@@ -24,9 +24,17 @@ import {
 } from "date-fns";
 import { ptBR } from "date-fns/locale/pt-BR";
 import { FormikContext, FormikContextType, getIn } from "formik";
-import React, { useContext, useEffect, useMemo, useRef, useState } from "react";
+import React, {
+  useContext,
+  useEffect,
+  useId,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import { createPortal } from "react-dom";
 import { MdCalendarMonth, MdChevronLeft, MdChevronRight } from "react-icons/md";
+import { mergeAriaDescribedBy } from "../../utils/accessibility";
 import FieldFrame from "../field/FieldFrame";
 import {
   FIELD_CONTROL_CLASS,
@@ -47,6 +55,7 @@ export interface UnifiedDatePickerProps {
   placeholder?: string;
   minDate?: Date;
   maxDate?: Date;
+  /** @deprecated Use `disabled`. Kept as a compatibility alias. */
   isDisabled?: boolean;
   disabled?: boolean;
   name?: string;
@@ -57,6 +66,8 @@ export interface UnifiedDatePickerProps {
   navigationVariant?: DatePickerNavigationVariant;
   selectionMode?: DatePickerSelectionMode;
   showAdjacentDays?: boolean;
+  /** Accessible name used when no visible label is provided. */
+  ariaLabel?: string;
   className?: string;
 }
 
@@ -140,10 +151,12 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
   name = "data",
   error,
   errorText,
+  helperText,
   defaultView = "days",
   navigationVariant = "drilldown",
   selectionMode = "day",
   showAdjacentDays = true,
+  ariaLabel,
   className,
 }) => {
   const formik = useContext(
@@ -179,10 +192,23 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
   const containerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const calendarId = `date-picker-${useId()}`;
+  const wasOpenRef = useRef(false);
   const rafRef = useRef<number | null>(null);
   const [isMounted, setIsMounted] = useState(false);
   const [panelNeedsScroll, setPanelNeedsScroll] = useState(false);
   const [dropdownStyle, setDropdownStyle] = useState<React.CSSProperties>({});
+
+  useEffect(() => {
+    if (
+      wasOpenRef.current &&
+      !isOpen &&
+      dropdownRef.current?.contains(document.activeElement)
+    ) {
+      inputRef.current?.focus();
+    }
+    wasOpenRef.current = isOpen;
+  }, [isOpen]);
 
   useEffect(() => {
     setIsMounted(true);
@@ -218,7 +244,7 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
     };
 
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setIsOpen(false);
+      if (event.key === "Escape") closeCalendar();
     };
 
     document.addEventListener("mousedown", onMouseDown);
@@ -322,6 +348,11 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
     inputRef.current?.focus();
   };
 
+  const closeCalendar = () => {
+    setIsOpen(false);
+    inputRef.current?.focus();
+  };
+
   const getDaysInView = () => {
     const start = startOfWeek(startOfMonth(viewDate), { weekStartsOn: 0 });
     const end = endOfWeek(endOfMonth(viewDate), { weekStartsOn: 0 });
@@ -338,7 +369,7 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
     setInputError(null);
     setViewDate(day);
     touchField();
-    setIsOpen(false);
+    closeCalendar();
   };
 
   const handleMonthClick = (monthIndex: number) => {
@@ -358,7 +389,7 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
       setDraftValue(formatDateForInput(nextDate, selectionMode));
       setInputError(null);
       touchField();
-      setIsOpen(false);
+      closeCalendar();
       return;
     }
 
@@ -392,7 +423,7 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
       setDraftValue(formatDateForInput(nextDate, selectionMode));
       setInputError(null);
       touchField();
-      setIsOpen(false);
+      closeCalendar();
       return;
     }
 
@@ -420,6 +451,41 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
 
       return nextDate;
     });
+  };
+
+  const moveCalendarFocus = (
+    event: React.KeyboardEvent<HTMLButtonElement>,
+    columns: number,
+  ) => {
+    const movement: Record<string, number> = {
+      ArrowLeft: -1,
+      ArrowRight: 1,
+      ArrowUp: -columns,
+      ArrowDown: columns,
+    };
+    const buttons = Array.from(
+      dropdownRef.current?.querySelectorAll<HTMLButtonElement>(
+        '[data-calendar-option="true"]:not(:disabled)',
+      ) ?? [],
+    );
+    const currentIndex = buttons.indexOf(event.currentTarget);
+    if (currentIndex < 0) return;
+
+    let nextIndex = currentIndex;
+    if (event.key in movement) {
+      nextIndex = currentIndex + movement[event.key];
+    } else if (event.key === "Home") {
+      nextIndex = currentIndex - (currentIndex % columns);
+    } else if (event.key === "End") {
+      nextIndex = currentIndex - (currentIndex % columns) + columns - 1;
+    } else {
+      return;
+    }
+
+    const nextButton = buttons[nextIndex];
+    if (!nextButton) return;
+    event.preventDefault();
+    nextButton.focus();
   };
 
   const commitDraftValue = (rawValue: string) => {
@@ -521,6 +587,8 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
       ref={containerRef}
       label={label}
       labelFor={name}
+      description={helperText}
+      descriptionId={`${name}-description`}
       invalid={hasError}
       message={resolvedErrorText}
       messageId={errorId}
@@ -540,8 +608,18 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
           ref={inputRef}
           id={name}
           name={name}
+          aria-label={ariaLabel ?? (!label ? "Data" : undefined)}
+          role="combobox"
           aria-invalid={hasError || undefined}
-          aria-describedby={hasError && resolvedErrorText ? errorId : undefined}
+          aria-describedby={mergeAriaDescribedBy(
+            !hasError && helperText !== undefined
+              ? `${name}-description`
+              : undefined,
+            hasError && resolvedErrorText ? errorId : undefined,
+          )}
+          aria-haspopup="dialog"
+          aria-expanded={isOpen}
+          aria-controls={isOpen ? calendarId : undefined}
           type="text"
           inputMode="numeric"
           autoComplete="off"
@@ -574,7 +652,7 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
           onKeyDown={(event) => {
             if (event.key === "Enter") {
               commitDraftValue(draftValue);
-              setIsOpen(false);
+              closeCalendar();
             }
           }}
           className={FIELD_INPUT_CLASS}
@@ -599,10 +677,19 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
         ? createPortal(
             <div
               ref={dropdownRef}
+              id={calendarId}
+              role="dialog"
+              aria-label={
+                selectionMode === "year"
+                  ? "Selecionar ano"
+                  : selectionMode === "month"
+                    ? "Selecionar mÃªs"
+                    : "Selecionar data"
+              }
               style={dropdownStyle}
               className={classNames(
                 getFloatingLayerClass(containerRef.current, "popover"),
-                "rounded-sm border border-border-default bg-white shadow-md transition-all duration-150",
+                "rounded-sm border border-border-default bg-white shadow-md transition-all duration-150 motion-reduce:transition-none",
                 panelNeedsScroll
                   ? "overflow-y-auto overscroll-contain"
                   : "overflow-visible",
@@ -724,17 +811,22 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
 
               {mode === "days" && (
                 <div className="px-3">
-                  <div className="grid grid-cols-7 gap-x-1">
-                    {WEEKDAYS.map((weekday) => (
-                      <div
-                        key={weekday}
+                   <div className="grid grid-cols-7 gap-x-1" role="row">
+                     {WEEKDAYS.map((weekday) => (
+                       <div
+                         key={weekday}
+                         role="columnheader"
                         className="select-none py-0.5 text-center text-2xs font-semibold text-content-muted"
                       >
                         {weekday}
                       </div>
                     ))}
                   </div>
-                  <div className="grid grid-cols-7 gap-x-1">
+                   <div
+                     className="grid grid-cols-7 gap-x-1"
+                     role="grid"
+                     aria-label={`Dias de ${headerLabel}`}
+                   >
                     {getDaysInView().map((day, index) => {
                       const selected = selectedDate
                         ? isSameDay(day, selectedDate)
@@ -759,6 +851,11 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
                         <button
                           key={`${day.toISOString()}-${index}`}
                           type="button"
+                          data-calendar-option="true"
+                          aria-label={format(day, "dd/MM/yyyy")}
+                          aria-current={currentDay ? "date" : undefined}
+                          aria-pressed={selected}
+                          onKeyDown={(event) => moveCalendarFocus(event, 7)}
                           onClick={() => handleDayClick(day)}
                           disabled={dayDisabled}
                           className={classNames(
@@ -793,14 +890,26 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
               )}
 
               {mode === "months" && (
-                <div className="grid grid-cols-3 gap-1 px-3">
+                <div
+                  className="grid grid-cols-3 gap-1 px-3"
+                  role="group"
+                  aria-label="Meses do calendÃ¡rio"
+                >
                   {MONTHS.map((month, index) => {
                     const selected = index === viewDate.getMonth();
+                    const monthDate = new Date(viewDate.getFullYear(), index, 1);
+                    const monthDisabled =
+                      isBefore(endOfMonth(monthDate), startOfDay(minDate)) ||
+                      isAfter(startOfMonth(monthDate), startOfDay(maxDate));
 
                     return (
                       <button
                         key={month}
                         type="button"
+                        data-calendar-option="true"
+                        aria-pressed={selected}
+                        disabled={monthDisabled}
+                        onKeyDown={(event) => moveCalendarFocus(event, 3)}
                         onClick={() => handleMonthClick(index)}
                         className={classNames(
                           "rounded-sm py-1 text-xs capitalize transition-colors",
@@ -820,14 +929,23 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
               )}
 
               {mode === "years" && (
-                <div className="grid grid-cols-3 gap-1 px-3">
+                <div
+                  className="grid grid-cols-3 gap-1 px-3"
+                  role="group"
+                  aria-label="Anos do calendÃ¡rio"
+                >
                   {years.map((year) => {
                     const selected = year === viewDate.getFullYear();
+                    const yearDisabled = year < minYear || year > maxYear;
 
                     return (
                       <button
                         key={year}
                         type="button"
+                        data-calendar-option="true"
+                        aria-pressed={selected}
+                        disabled={yearDisabled}
+                        onKeyDown={(event) => moveCalendarFocus(event, 3)}
                         onClick={() => handleYearClick(year)}
                         className={classNames(
                           "rounded-sm py-1 text-xs transition-colors",

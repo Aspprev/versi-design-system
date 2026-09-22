@@ -50,6 +50,55 @@ export const StickyHeader: Story = {
   args: { stickyHeader: true, scrollAreaMaxHeight: "12rem", overflowMode: "scroll" },
 };
 
+const filterableColumns: ITableColumnConfig<Participant>[] = [
+  ...columns,
+  {
+    key: "status",
+    title: "Status",
+    accessor: (item) => item.plan,
+    widthUnits: 1,
+    filters: {
+      controls: [
+        {
+          id: "status",
+          type: "options",
+          label: "Filtrar por status",
+          optionList: [
+            { label: "Todos", value: "__all__" },
+            { label: "Básico", value: "Básico" },
+            { label: "Especial", value: "Especial" },
+          ],
+        },
+        {
+          id: "search",
+          type: "search",
+          label: "Pesquisar participante",
+          placeholder: "Nome",
+        },
+      ],
+    },
+  },
+];
+
+export const ResponsiveAdaptive: Story = {
+  render: (args) => (
+    <div className="max-w-[520px]">
+      <Table {...args} overflowMode="adaptive" header={columns} />
+    </div>
+  ),
+};
+
+export const Filterable: Story = {
+  render: (args) => (
+    <Table
+      {...args}
+      header={filterableColumns}
+      data={rows}
+      accessibleName="Participantes filtráveis"
+    />
+  ),
+};
+
 export const Expandable: Story = {
   render: (args) => {
     const [expandedRowId, setExpandedRowId] = useState<number | null>(null);
