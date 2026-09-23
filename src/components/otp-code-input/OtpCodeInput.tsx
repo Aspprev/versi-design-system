@@ -207,7 +207,7 @@ const OtpCodeInput = forwardRef<OtpCodeInputHandle, OtpCodeInputProps>(
           aria-labelledby={label ? `${groupId}-label` : undefined}
           aria-describedby={describedBy}
           aria-invalid={hasError || undefined}
-          className="mt-1 flex flex-wrap gap-2"
+          className="mt-1 flex w-full min-w-0 flex-wrap gap-2"
         >
           {Array.from({ length: safeLength }, (_, index) => (
             <input

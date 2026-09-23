@@ -74,6 +74,37 @@ export const Disabled: Story = {
   render: (args) => <CountryForm {...args} initialValue="Brasil" />,
 };
 
+export const WithoutFlags: Story = {
+  args: { showFlags: false },
+  render: (args) => <CountryForm {...args} initialValue="Brasil" />,
+  parameters: {
+    docs: {
+      description: {
+        story: "Oculta as bandeiras sem reservar espaço e mantém a busca funcional.",
+      },
+    },
+  },
+};
+
+export const ResponsiveGrid: Story = {
+  render: (args) => (
+    <Formik initialValues={{ [args.name]: "" }} onSubmit={() => undefined}>
+      <form className="grid min-w-0 grid-cols-1 gap-4 tablet:grid-cols-3">
+        <SelectCountry {...args} className="w-full" />
+        <SelectCountry {...args} name={`${args.name}-second`} className="w-full" />
+        <SelectCountry {...args} name={`${args.name}-third`} className="w-full" />
+      </form>
+    </Formik>
+  ),
+  parameters: {
+    docs: {
+      description: {
+        story: "Valida largura total em grid responsivo com três colunas.",
+      },
+    },
+  },
+};
+
 export const FullCountryList: Story = {
   render: (args) => <CountryForm {...args} />,
   parameters: {

@@ -70,4 +70,33 @@ describe("SelectCountry standalone", () => {
     expect(html).toContain("Escolha o país");
     expect(html).toContain("Nenhuma opção selecionada");
   });
+
+  it("oculta a bandeira sem reservar espaço quando showFlags é false", () => {
+    const html = renderToStaticMarkup(
+      <Formik initialValues={{ pais: "BR" }} onSubmit={() => undefined}>
+        <SelectCountry
+          name="pais"
+          label="País"
+          options={countries}
+          showFlags={false}
+          className="w-full"
+        />
+      </Formik>,
+    );
+
+    expect(html).toContain("Brasil");
+    expect(html).toContain('class="field-layout flex w-full min-w-0');
+    expect(html).not.toContain("h-5 w-7");
+    expect(html).not.toContain("bg-surface-muted");
+  });
+
+  it("mantém as bandeiras por padrão", () => {
+    const html = renderToStaticMarkup(
+      <Formik initialValues={{ pais: "BR" }} onSubmit={() => undefined}>
+        <SelectCountry name="pais" options={countries} />
+      </Formik>,
+    );
+
+    expect(html).toContain("h-5 w-7");
+  });
 });

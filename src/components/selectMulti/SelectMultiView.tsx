@@ -26,7 +26,15 @@ export interface SelectMultiViewProps extends InputHTMLAttributes<HTMLInputEleme
 }
 
 export function SelectMultiView(props: SelectMultiViewProps) {
-  const { options, error, label, checkedList = [], onClear, disabled } = props;
+  const {
+    options,
+    error,
+    label,
+    checkedList = [],
+    onClear,
+    disabled,
+    className,
+  } = props;
   const [isOpened, setIsOpened] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
@@ -137,7 +145,7 @@ export function SelectMultiView(props: SelectMultiViewProps) {
   return (
     <FieldFrame
       ref={containerRef}
-      className="multi-select-container"
+      className={cs("multi-select-container", className)}
       label={label}
       labelFor={triggerId}
       labelId={label ? labelId : undefined}
@@ -147,7 +155,7 @@ export function SelectMultiView(props: SelectMultiViewProps) {
     >
       <div
         aria-invalid={Boolean(error) || undefined}
-        className="relative mb-[4px] mt-4xs"
+        className="relative mb-[4px] mt-4xs w-full min-w-0"
       >
         <button
           type="button"
