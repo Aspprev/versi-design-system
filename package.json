@@ -58,7 +58,7 @@
   },
   "peerDependencies": {
     "@headlessui/react": "^2.2.9",
-    "apexcharts": "5.3.6",
+    "apexcharts": "7.4.0",
     "date-fns": "^4.1.0",
     "formik": "^2.4.9",
     "jsbarcode": "^3.12.3",
@@ -109,7 +109,7 @@
     "@types/qrcode": "^1.5.5",
     "@types/react": "^19.2.15",
     "@types/react-dom": "19",
-    "apexcharts": "5.3.6",
+    "apexcharts": "7.4.0",
     "autoprefixer": "^10.4.22",
     "date-fns": "^4.1.0",
     "eslint": "^10.11.0",
