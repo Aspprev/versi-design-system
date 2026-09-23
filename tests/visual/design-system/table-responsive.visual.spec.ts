@@ -11,6 +11,39 @@ test("tabela adaptativa usa o contêiner e mantém semântica acessível", async
   await expect(root).toBeVisible();
   await expect(root.locator('[data-responsive-mode="adaptive"]')).toBeVisible();
 
+  const row = root.locator("tbody tr").first();
+  await expect(row).toHaveAttribute("tabindex", "0");
+  await expect(row).toHaveAttribute("aria-label", /Linha 1 de/);
+  await expect(row).toHaveAttribute("aria-describedby", /.+/);
+  await row.focus();
+  await expect(row).toBeFocused();
+
+  const axeResults = await new AxeBuilder({ page })
+    .include("#storybook-root")
+    .analyze();
+
+  expect(
+    axeResults.violations,
+    axeResults.violations
+      .map((violation) => `${violation.id}: ${violation.help}`)
+      .join("\n"),
+  ).toEqual([]);
+});
+
+test("MobileCardTable mantém itens navegáveis e descritos", async ({ page }) => {
+  await page.goto(
+    "/iframe.html?id=components-data-display-table--mobile-card&viewMode=story",
+    { waitUntil: "networkidle" },
+  );
+
+  const root = page.locator("#storybook-root");
+  const item = root.getByRole("listitem").first();
+  await expect(item).toHaveAttribute("tabindex", "0");
+  await expect(item).toHaveAttribute("aria-label", /Item 1 de/);
+  await expect(item).toHaveAttribute("aria-describedby", /.+/);
+  await item.focus();
+  await expect(item).toBeFocused();
+
   const axeResults = await new AxeBuilder({ page })
     .include("#storybook-root")
     .analyze();

@@ -1,8 +1,5 @@
 "use client";
 
-import {
-  Switch as HeadlessSwitch,
-} from "@headlessui/react";
 import React, { useState } from "react";
 import useStyle from "./InputSwitch.style";
 import { MdCheck, MdOutlineClose, MdSunny, MdNightsStay } from "react-icons/md";
@@ -15,7 +12,7 @@ type NativeSwitchProps = {
   form?: string;
   autoFocus?: boolean;
   tabIndex?: number;
-} & (
+} & React.AriaAttributes & (
   | {
       "aria-label": string;
       "aria-labelledby"?: never;
@@ -47,6 +44,12 @@ export type SwitchProps = InputSwitchProps;
 
 const InputSwitch: React.FC<InputSwitchProps> = ({
   defaultEnable: enabledByDefault,
+  id,
+  name,
+  value,
+  form,
+  autoFocus,
+  tabIndex,
   variant = "primary",
   size = "md",
   disabled,
@@ -72,13 +75,32 @@ const InputSwitch: React.FC<InputSwitchProps> = ({
     onChange?.(newState);
   };
   return (
-    <HeadlessSwitch
-      checked={resolvedEnabled}
-      onChange={toggle}
-      disabled={disabled ?? false}
-      className={style.Container}
-      {...rest}
-    >
+    <>
+      {name && (
+        <input
+          type="checkbox"
+          name={name}
+          value={value ?? "on"}
+          form={form}
+          checked={resolvedEnabled}
+          readOnly
+          tabIndex={-1}
+          aria-hidden="true"
+          className="sr-only"
+        />
+      )}
+      <button
+        {...rest}
+        id={id}
+        type="button"
+        role="switch"
+        aria-checked={resolvedEnabled}
+        disabled={disabled ?? false}
+        autoFocus={autoFocus}
+        tabIndex={tabIndex}
+        onClick={toggle}
+        className={style.Container}
+      >
       {variant !== "contract" && variant !== "theme" && (
         <span className={style.Switch}>
           {Icon && <Icon aria-hidden="true" className={style.Icon} />}
@@ -108,7 +130,8 @@ const InputSwitch: React.FC<InputSwitchProps> = ({
           )}
         </span>
       )}
-    </HeadlessSwitch>
+      </button>
+    </>
   );
 };
 

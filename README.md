@@ -65,6 +65,12 @@ export function Resumo() {
 | `/styles.css` | estilos e tokens base |
 | `/themes.css` | presets de tema |
 
+Na linha 0.4.x, todos os nove caminhos acima fazem parte do contrato público,
+incluindo `@aspprev/versi-ds/charts`, `@aspprev/versi-ds/countries`, os cinco
+entrypoints de componentes e os dois entrypoints CSS. Eles são definidos no
+campo `exports` do `package.json`; arquivos internos de `src` não fazem parte
+do contrato.
+
 Evite deep imports. Use somente os entrypoints públicos documentados no `package.json`.
 
 ### APIs desta versão
@@ -172,7 +178,7 @@ npm run check:package
 npm run prepack
 ```
 
-O script `prepack` valida tokens, governança, segurança, TypeScript, build, tamanho e conteúdo do pacote. O projeto não possui um script `lint` separado.
+O script `prepack` valida tokens, governança, segurança, lint, TypeScript, build, tamanho e conteúdo do pacote.
 
 Para testar o exemplo integrado:
 

@@ -29,4 +29,19 @@ export const Disabled: Story = {
   args: { "aria-label": "Desabilitado", disabled: true, checked: true },
 };
 
+export const ExternalLabel: Story = {
+  render: () => (
+    <div className="flex flex-col gap-2">
+      <span id="input-switch-label">Receber notificações</span>
+      <span id="input-switch-help" className="text-sm text-content-secondary">
+        Ativa os avisos do sistema.
+      </span>
+      <InputSwitch
+        aria-labelledby="input-switch-label"
+        aria-describedby="input-switch-help"
+      />
+    </div>
+  ),
+};
+
 

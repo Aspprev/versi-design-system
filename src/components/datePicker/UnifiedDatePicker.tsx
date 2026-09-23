@@ -471,7 +471,7 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
     const currentIndex = buttons.indexOf(event.currentTarget);
     if (currentIndex < 0) return;
 
-    let nextIndex = currentIndex;
+    let nextIndex: number;
     if (event.key in movement) {
       nextIndex = currentIndex + movement[event.key];
     } else if (event.key === "Home") {
@@ -683,7 +683,7 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
                 selectionMode === "year"
                   ? "Selecionar ano"
                   : selectionMode === "month"
-                    ? "Selecionar mÃªs"
+                    ? "Selecionar mês"
                     : "Selecionar data"
               }
               style={dropdownStyle}
@@ -893,7 +893,7 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
                 <div
                   className="grid grid-cols-3 gap-1 px-3"
                   role="group"
-                  aria-label="Meses do calendÃ¡rio"
+                  aria-label="Meses do calendário"
                 >
                   {MONTHS.map((month, index) => {
                     const selected = index === viewDate.getMonth();
@@ -932,7 +932,7 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
                 <div
                   className="grid grid-cols-3 gap-1 px-3"
                   role="group"
-                  aria-label="Anos do calendÃ¡rio"
+                  aria-label="Anos do calendário"
                 >
                   {years.map((year) => {
                     const selected = year === viewDate.getFullYear();

@@ -70,8 +70,8 @@ describe("DatePicker standalone", () => {
     const html = renderToStaticMarkup(
       <DatePicker
         name="anoReferencia"
-        ariaLabel="Ano de referÃªncia"
-        label="Ano de referÃªncia"
+        ariaLabel="Ano de referência"
+        label="Ano de referência"
         selectionMode="year"
         minDate={new Date(2020, 0, 1)}
         maxDate={new Date(2030, 11, 31)}
@@ -79,7 +79,7 @@ describe("DatePicker standalone", () => {
       />,
     );
 
-    expect(html).toContain('aria-label="Ano de referÃªncia"');
+    expect(html).toContain('aria-label="Ano de referência"');
     expect(html).toContain('maxLength="4"');
     expect(html).toContain('aria-describedby="anoReferencia-description"');
     expect(html).toContain("Informe o ano do documento.");
