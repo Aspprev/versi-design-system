@@ -3,6 +3,10 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
 import { loadCountryFlags } from "../../src/data/country-flags-runtime";
+import {
+  COUNTRY_OPTIONS as BROWSER_COUNTRY_OPTIONS,
+  getCountryFlagUrl as getBrowserCountryFlagUrl,
+} from "../../src/countries-browser";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 
@@ -31,5 +35,14 @@ describe("country bundle loading", () => {
     expect(runtime).not.toMatch(/fetch\s*\(/);
     expect(runtime).not.toMatch(/https?:\/\//);
     expect(runtime).toContain("country-flag-chunks");
+  });
+
+  it("mantem URLs distintas para bandeiras no entrypoint browser", () => {
+    expect(getBrowserCountryFlagUrl("AF")).not.toBe(getBrowserCountryFlagUrl("AL"));
+    expect(getBrowserCountryFlagUrl("AF")).toContain("/flags/af.svg");
+    expect(getBrowserCountryFlagUrl("AL")).toContain("/flags/al.svg");
+    expect(BROWSER_COUNTRY_OPTIONS.find((country) => country.cca2 === "AF")?.flags.svg).toContain(
+      "/flags/af.svg",
+    );
   });
 });
