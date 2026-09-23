@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.4.2 — 2026-09-23 — correção das bandeiras nos seletores
+
+### Corrigido
+
+- Corrigida a resolução browser das bandeiras para que cada código ISO-2 use seu próprio asset, evitando que todos os países exibam a mesma bandeira.
+- Adicionado teste de regressão para o catálogo browser consumido por `SelectCountry` e `InputPhone`.
+
+### Compatibilidade
+
+- Nenhuma API pública ou regra de negócio foi alterada.
+
 ## 0.4.1 — 2026-09-22 — redução do bundle de países
 
 ### Alterado

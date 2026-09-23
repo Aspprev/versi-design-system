@@ -53,9 +53,12 @@ try {
     page.on("pageerror", error => errors.push(error.message));
     page.on("request", request => { if (new URL(request.url()).pathname.startsWith("/flags/")) requests.push(request.url()); });
     await page.goto(url);
-    await page.locator("img").first().waitFor();
-    await page.waitForFunction(() => [...document.images].length >= 2 && [...document.images].every(img => img.complete && img.naturalWidth > 0));
-    assert(await page.locator('img[src^="data:image/svg+xml;base64,"]').count() >= 2);
+    await page.locator("#browser-country-flags img").first().waitFor();
+    await page.waitForFunction(() => [...document.querySelectorAll("#browser-country-flags img")].length === 3 && [...document.querySelectorAll("#browser-country-flags img")].every(img => img.complete && img.naturalWidth > 0));
+    const flagSources = await page.locator("#browser-country-flags img").evaluateAll((images) => new Set(
+      images.map((image) => image.getAttribute("src")).filter(Boolean),
+    ).size);
+    assert.equal(flagSources, 3, "Expected distinct country flag sources");
     await page.getByRole("combobox").click();
     await page.getByRole("textbox", { name: /Pesquisar/ }).fill("Portugal");
     await page.getByRole("option").first().click();
