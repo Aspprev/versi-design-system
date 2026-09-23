@@ -1,4 +1,3 @@
-import countryFlags from "./data/country-flags.json";
 import {
   COUNTRY_OPTIONS as COUNTRY_METADATA_OPTIONS,
   filterCountryOptions,
@@ -14,11 +13,19 @@ export type {
 
 export { filterCountryOptions };
 
-export function getCountryFlagUrl(cca2?: string | null) {
+const countryFlagFiles = new Set(
+  COUNTRY_METADATA_OPTIONS.map((country) => country.cca2.toLowerCase()),
+);
+
+function normalizedCode(cca2?: string | null) {
   const code = String(cca2 || "").trim().toLowerCase();
-  return Object.prototype.hasOwnProperty.call(countryFlags, code)
-    ? countryFlags[code as keyof typeof countryFlags]
-    : "";
+  return /^[a-z]{2}$/.test(code) && countryFlagFiles.has(code) ? code : "";
+}
+
+/** Browser-safe synchronous URL for a flag shipped by this package. */
+export function getCountryFlagUrl(cca2?: string | null) {
+  const code = normalizedCode(cca2);
+  return code ? new URL(`./flags/${code}.svg`, import.meta.url).toString() : "";
 }
 
 function withCountryFlag(option: DesignSystemCountryOption): DesignSystemCountryOption {
@@ -31,15 +38,13 @@ function withCountryFlag(option: DesignSystemCountryOption): DesignSystemCountry
   };
 }
 
-/** Countries with their complete synchronous flag data for the `/countries` entrypoint. */
+/** Browser entrypoint: light metadata and package-local flag URLs. */
 export const COUNTRY_OPTIONS: DesignSystemCountryOption[] = COUNTRY_METADATA_OPTIONS.map(
   withCountryFlag,
 );
 
-/** Alias semântico para uso direto com o InputPhone. */
 export const PHONE_COUNTRY_OPTIONS = COUNTRY_OPTIONS;
 
-/** Retorna uma cópia para consumidores que precisam ordenar ou filtrar localmente. */
 export function getCountryOptions() {
   return getMetadataCountryOptions().map(withCountryFlag);
 }

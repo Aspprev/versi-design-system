@@ -49,7 +49,7 @@ export type {
   CountrySelectOption,
   CountrySelectProps,
 } from "./components/selectCountry";
-export type { CountryListFilter, CountryListMode } from "./countries";
+export type { CountryListFilter, CountryListMode } from "./data/country-metadata";
 export { RadioGroup } from "./components/radio-group/radio-group";
 export type { RadioGroupProps } from "./components/radio-group/radio-group";
 export { RadioCardGroup } from "./components/radioCardGroup/RadioCardGroup";

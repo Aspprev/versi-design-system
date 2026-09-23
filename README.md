@@ -107,6 +107,13 @@ Consulte [`docs/API-NOVOS-COMPONENTES.md`](docs/API-NOVOS-COMPONENTES.md) e o St
 
 Os tokens canônicos ficam em `tokens/design-system.tokens.json`. Arquivos CSS gerados não devem ser editados manualmente.
 
+## Bundle de paises e bandeiras
+
+`core` e `forms` usam metadados leves. `SelectCountry` e `InputPhone` carregam
+as bandeiras por chunks ESM internos do pacote, sem CDN ou requests externos.
+Consulte [`docs/BUNDLE-PAISES.md`](docs/BUNDLE-PAISES.md) para a estrategia,
+compatibilidade SSR e validacao do limite de 750 KB.
+
 ## Storybook
 
 Instale as dependências e inicie a documentação visual:

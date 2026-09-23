@@ -1,7 +1,7 @@
 ﻿import { Formik } from "formik";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
-import { COUNTRY_OPTIONS, getCountryFlagUrl } from "../../src/countries";
+import { COUNTRY_OPTIONS } from "../../src/countries";
 import { InputPhone } from "../../src/components/inputPhone/InputPhone";
 import SelectCountry from "../../src/components/selectCountry/SelectCountry";
 
@@ -18,9 +18,14 @@ describe("self-contained flags during SSR", () => {
             {component === "phone" ? <InputPhone name="phone" countries={[option]} /> : <SelectCountry name="country" options={[option]} />}
           </Formik>,
         );
-        expect(html).toContain(`src="${svg?.trim() || getCountryFlagUrl("BR")}"`);
+        if (svg?.trim()) {
+          expect(html).toContain(`src="${svg.trim()}"`);
+        } else {
+          // Default flags are loaded by an internal client chunk after hydration.
+          expect(html).not.toContain("<img");
+        }
         expect(html).not.toContain('/flags/');
-        expect(html).toContain('alt=""');
+        if (svg?.trim()) expect(html).toContain('alt=""');
       });
     }
     it(`${component} uses a placeholder for an unknown country`, () => {

@@ -20,10 +20,10 @@ import { calculateFloatingPanelRect } from "../../utils/floating-panel-position"
 import { getFloatingLayerClass } from "../../utils/floating-layer";
 import {
   filterCountryOptions,
-  getCountryFlagUrl,
   PHONE_COUNTRY_OPTIONS,
-  type CountryListFilter,
-} from "../../countries";
+} from "../../data/country-metadata";
+import type { CountryListFilter } from "../../data/country-metadata";
+import { CountryFlag } from "../countryFlag/CountryFlag";
 
 export type PhoneCountryOption = {
   label: string;
@@ -284,22 +284,12 @@ export function parsePhonePayload(
 }
 
 function renderFlag(option: PhoneCountryOption | null) {
-  const svgSrc = String(
-    option?.flags?.svg?.trim() || getCountryFlagUrl(option?.cca2),
-  ).trim();
-
-  if (!svgSrc) {
-    return <span className="h-5 w-7 shrink-0 rounded-sm bg-surface-muted" />;
-  }
-
   return (
-    <img
-      src={svgSrc}
+    <CountryFlag
+      cca2={option?.cca2}
+      src={option?.flags?.svg}
       alt=""
-      aria-hidden="true"
       className="h-5 w-7 shrink-0 object-contain"
-      loading="lazy"
-      referrerPolicy="no-referrer"
     />
   );
 }

@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const distRoot = path.join(root, "dist");
 const budgets = {
-  // Includes 250 embedded SVGs (~4.81 MB, ~1.70 MB gzip) shared by countries/forms.
+  // Initial package JS excludes the opt-in synchronous /countries entrypoint.
   "*.js": { bytes: 5_400_000, gzipBytes: 1_900_000 },
   "index.js": { bytes: 310_000, gzipBytes: 65_000 },
   // Per-entry limits complement the aggregate budget above.
@@ -15,7 +15,6 @@ const budgets = {
   "charts.js": { bytes: 10_000, gzipBytes: 4_000 },
   "overlays.js": { bytes: 10_000, gzipBytes: 4_000 },
   "documents.js": { bytes: 10_000, gzipBytes: 4_000 },
-  "countries.js": { bytes: 80_000, gzipBytes: 25_000 },
   "flags/*.svg": { bytes: 4_000_000, gzipBytes: 1_500_000 },
   "styles.css": { bytes: 125_000, gzipBytes: 25_000 },
   "themes.css": { bytes: 35_000, gzipBytes: 10_000 },
@@ -23,7 +22,9 @@ const budgets = {
 
 const report = Object.entries(budgets).map(([fileName, budget]) => {
   const content = fileName === "*.js"
-    ? Buffer.concat(fs.readdirSync(distRoot).filter((entry) => entry.endsWith(".js")).sort()
+    ? Buffer.concat(fs.readdirSync(distRoot)
+        .filter((entry) => entry.endsWith(".js") && entry !== "countries.js")
+        .sort()
         .map((entry) => fs.readFileSync(path.join(distRoot, entry))))
     : fileName === "flags/*.svg"
     ? Buffer.concat(
