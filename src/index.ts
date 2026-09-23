@@ -136,7 +136,7 @@ export type {
   CountrySelectOption,
   CountrySelectProps,
 } from "./components/selectCountry";
-export type { CountryListFilter, CountryListMode } from "./countries";
+export type { CountryListFilter, CountryListMode } from "./data/country-metadata";
 export {
   LazyApexChart,
   InteractiveDonutChart,

@@ -31,6 +31,7 @@ if (process.argv.includes("--clean")) {
 
 generateTokenFiles();
 await import("./generate-country-flags.mjs");
+await import("./generate-country-flag-chunks.mjs");
 
 fs.rmSync(distRoot, { recursive: true, force: true });
 
@@ -42,8 +43,11 @@ const tsup = runNode("tsup", "dist/cli-default.js", [
   "src/overlays.ts",
   "src/documents.ts",
   "src/countries.ts",
+  "src/countries-browser.ts",
   "--format",
   "esm",
+  "--target",
+  "es2020",
   "--dts",
   "--sourcemap",
   "--external",

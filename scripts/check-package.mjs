@@ -22,10 +22,13 @@ for (const [name, entry] of Object.entries(pkg.exports)) {
     }
   }
 }
+assert(fs.existsSync(path.join(root, pkg.exports["./countries"].browser)), "Entrada browser ausente");
 const { COUNTRY_OPTIONS, getCountryFlagUrl } = await import(pathToFileURL(path.join(root, "dist/countries.js")).href);
 assert.equal(COUNTRY_OPTIONS.length, 250);
 for (const file of fs.readdirSync(path.join(root, "dist")).filter(file => file.endsWith(".js"))) {
-  assert(!fs.readFileSync(path.join(root, "dist", file), "utf8").includes("/flags/"), `Root flags dependency in ${file}`);
+  if (file !== "countries-browser.js") {
+    assert(!fs.readFileSync(path.join(root, "dist", file), "utf8").includes("/flags/"), `Root flags dependency in ${file}`);
+  }
 }
 for (const country of COUNTRY_OPTIONS) {
   assert.equal(Buffer.from(getCountryFlagUrl(country.cca2).split(",")[1], "base64").toString(), fs.readFileSync(path.join(root, "dist/flags", `${country.cca2.toLowerCase()}.svg`), "utf8"));

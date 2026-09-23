@@ -46,8 +46,8 @@ function verify(entries) {
         const html = renderToStaticMarkup(createElement(Formik, {
           initialValues: { phone: { ddi: 55 }, country: 'Brasil' }, onSubmit() {}
         }, createElement(Component, { name: Component === InputPhone ? 'phone' : 'country' })));
-        assert(html.includes('src="' + getCountryFlagUrl('BR') + '"'));
         assert(!html.includes('/flags/'));
+        assert(!html.includes('src="data:image/svg+xml;base64,'));
       }
     }
     assert(renderToStaticMarkup(createElement(Button, null, 'Isolado')).includes('Isolado'));

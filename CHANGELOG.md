@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.4.1 — 2026-09-22 — redução do bundle de países
+
+### Alterado
+
+- `core` e `forms` não carregam o catálogo completo de bandeiras na entrada inicial.
+- `SelectCountry` e `InputPhone` carregam as bandeiras por 20 chunks ESM internos, sem CDN, HTTP externo ou dependência nova.
+- O maior chunk carregável pelo consumidor ficou abaixo de 333 KB, preservando o limite de 750 KB.
+
+### Compatibilidade
+
+- Mantidos os exports públicos, APIs síncronas e assinaturas de `COUNTRY_OPTIONS`, `PHONE_COUNTRY_OPTIONS`, `getCountryOptions`, `getCountryFlagUrl`, `filterCountryOptions`, `SelectCountry`, `InputPhone`, `PhoneInput`, `parsePhonePayload` e `buildPhonePayload`.
+- O entrypoint `/countries` mantém o comportamento síncrono completo. Nos componentes, o SSR usa placeholder para bandeiras padrão até a hidratação; `flags.svg` customizado continua imediato.
+
+### Validação
+
+- Testes unitários, SSR, Playwright/Axe, Next.js e Vite aprovados sem requests externos ou rota `/flags`.
+
+### Bundle e países na 0.4.0
+
+- `core` e `forms` usam metadados leves de países e não carregam o catálogo completo de bandeiras na entrada inicial.
+- `SelectCountry` e `InputPhone` carregam as bandeiras por chunks ESM internos, sem CDN, HTTP externo ou dependência nova; os 20 chunks ficaram abaixo de 333 KB.
+- O entrypoint público `/countries` mantém as APIs síncronas completas de países e bandeiras.
+- No SSR, `flags.svg` customizado continua imediato; bandeiras padrão exibem placeholder no primeiro render e são carregadas pelo pacote após a hidratação.
+
 ## 0.4.0 — 2026-09-22 — evolução de acessibilidade e contrato público
 
 ### Corrigido
