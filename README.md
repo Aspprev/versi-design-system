@@ -94,6 +94,8 @@ import {
 - `DatePicker` aceita `selectionMode="year"` e mantém `selectionMode="day"` como padrão.
 - `DomainStatusBadge` aceita `statusMap` para vocabulário específico do produto.
 - `Table` preserva os modos `fit`, `adaptive` e `scroll`; filtros e paginação respondem ao espaço do container.
+- `InputPhone`/`PhoneInput` e `SelectCountry` aceitam `showFlags`; o padrão é `true` e `showFlags={false}` remove a bandeira sem reservar espaço.
+- Os controles de formulário ocupam a largura disponível do container; `className="w-full"` pode ser usado em grids, flex containers e colunas responsivas.
 
 Consulte [`docs/API-NOVOS-COMPONENTES.md`](docs/API-NOVOS-COMPONENTES.md) e o Storybook para exemplos completos, estados de erro/carregamento e contratos de acessibilidade.
 

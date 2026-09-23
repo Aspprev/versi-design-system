@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.4.3 — 2026-09-23 — largura de formulários e controle de bandeiras
+
+### Alterado
+
+- Controles de formulário passaram a manter `w-full` e `min-w-0` nos wrappers internos, incluindo `InputPhone` em grids, flex containers e colunas responsivas.
+- Adicionada a prop opcional `showFlags` a `InputPhone`/`PhoneInput` e `SelectCountry`; o padrão permanece `true` e `false` remove a bandeira sem reservar espaço.
+- `SelectMulti` passou a aplicar o `className` recebido ao wrapper público do campo.
+
+### Compatibilidade
+
+- Nenhum formato de valor, helper de telefone, alias deprecated ou contrato de teclado/acessibilidade foi removido.
+
 ## 0.4.2 — 2026-09-23 — correção das bandeiras nos seletores
 
 ### Corrigido

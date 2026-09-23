@@ -68,6 +68,8 @@ export type InputPhoneProps = {
   countryList?: CountryListFilter;
   disabled?: boolean;
   className?: string;
+  /** Exibe as bandeiras do país. O padrão é true. */
+  showFlags?: boolean;
 };
 
 const DEFAULT_BRAZIL_DDI = 55;
@@ -283,7 +285,9 @@ export function parsePhonePayload(
   return parseStoredPhoneValue(rawValue, countries);
 }
 
-function renderFlag(option: PhoneCountryOption | null) {
+function renderFlag(option: PhoneCountryOption | null, showFlags: boolean) {
+  if (!showFlags) return null;
+
   return (
     <CountryFlag
       cca2={option?.cca2}
@@ -302,6 +306,7 @@ export function InputPhone({
   countryList,
   disabled,
   className,
+  showFlags = true,
 }: InputPhoneProps) {
   const availableCountries = useMemo(
     () =>
@@ -487,12 +492,12 @@ export function InputPhone({
     >
       <div
         ref={wrapperRef}
-        className="field-control-slot relative mt-4xs mb-[4px]"
+        className="field-control-slot relative mt-4xs mb-[4px] flex w-full min-w-0"
       >
         <div
           data-has-value={phoneDigits.length > 0}
           className={classNames(
-            "field-keyboard-focus-ring flex min-h-control-md items-center overflow-hidden rounded-sm border border-field-border-default bg-field-surface text-field-icon transition-colors focus-within:border-field-border-active focus-within:text-field-content data-[has-value=true]:text-field-content",
+            "field-keyboard-focus-ring flex w-full min-w-0 min-h-control-md items-center overflow-hidden rounded-sm border border-field-border-default bg-field-surface text-field-icon transition-colors focus-within:border-field-border-active focus-within:text-field-content data-[has-value=true]:text-field-content",
             {
               [FIELD_ERROR_CLASS]: hasError,
               [FIELD_DISABLED_CLASS]: disabled,
@@ -524,7 +529,7 @@ export function InputPhone({
               },
             )}
           >
-            {renderFlag(selectedCountry)}
+            {renderFlag(selectedCountry, showFlags)}
             <span className="text-sm">
               {selectedCountry?.idd.display || `+${value.ddi}`}
             </span>
@@ -671,7 +676,7 @@ export function InputPhone({
                     }}
                     className="flex w-full items-center gap-2 px-3 py-2 text-left text-sm hover:bg-surface-muted focus-visible:bg-surface-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-focus-ring"
                   >
-                    {renderFlag(country)}
+                    {renderFlag(country, showFlags)}
                     <span className="min-w-0 flex-1 truncate text-field-content">
                       {country.label}
                     </span>

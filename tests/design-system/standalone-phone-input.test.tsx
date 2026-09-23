@@ -78,4 +78,43 @@ describe("InputPhone standalone", () => {
       numero: "987654321",
     });
   });
+
+  it("mantém largura total no wrapper e permite ocultar bandeiras", () => {
+    const html = renderToStaticMarkup(
+      <Formik
+        initialValues={{ telefone: { ddi: 55, ddd: "11", numero: "987654321" } }}
+        onSubmit={() => undefined}
+      >
+        <form>
+          <InputPhone
+            name="telefone"
+            label="Telefone"
+            countries={countries}
+            className="w-full"
+            showFlags={false}
+          />
+        </form>
+      </Formik>,
+    );
+
+    expect(html).toContain("field-control-slot");
+    expect(html).toContain("w-full min-w-0");
+    expect(html).toContain("+55");
+    expect(html).not.toContain("h-5 w-7");
+  });
+
+  it("mantém as bandeiras por padrão", () => {
+    const html = renderToStaticMarkup(
+      <Formik
+        initialValues={{ telefone: { ddi: 55, ddd: "11", numero: "987654321" } }}
+        onSubmit={() => undefined}
+      >
+        <form>
+          <InputPhone name="telefone" countries={countries} />
+        </form>
+      </Formik>,
+    );
+
+    expect(html).toContain("h-5 w-7");
+  });
 });

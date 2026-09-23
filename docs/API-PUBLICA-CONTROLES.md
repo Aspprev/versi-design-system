@@ -10,10 +10,10 @@ Todos os controles abaixo sao client-only: usam estado, eventos de DOM, Formik, 
 | `InputStandalone` | Campo de texto sem Formik                     | `react-number-format`              | Controle por `value`/`onChange`, com as mesmas mascaras do `Input`                                                                       |
 | `InputSelect`     | Selecao simples com lista e busca opcional    | Formik                             | `name`, `options` e `label` opcionais; suporta renderizacao de opcao/valor                                                               |
 | `TextArea`        | Texto multilinha                              | Formik                             | `name` obrigatorio; aceita ajuda, erro, prefixo, sufixo e icone                                                                          |
-| `InputPhone`      | Telefone internacional com pais, DDD e numero | Formik, `react-number-format`      | `countries` opcional; use `countryList` para `all`, `include` ou `exclude`; use `buildPhonePayload`/`parsePhonePayload` no limite da API |
+| `InputPhone`      | Telefone internacional com pais, DDD e numero | Formik, `react-number-format`      | `countries` opcional; `showFlags` opcional (padrao `true`); use `countryList` para `all`, `include` ou `exclude`; use `buildPhonePayload`/`parsePhonePayload` no limite da API |
 | `DatePicker`      | Data digitada e calendario                    | Formik, `date-fns`                 | `value` ou campo Formik; suporta `minDate`, `maxDate`, `selectionMode` (day, month ou year), navegacao por teclado e retorno de foco |
 | `SelectMulti`     | Selecao multipla controlada                   | Nenhuma alem das dependencias base | `options` e `value` controlados; `onReset` limpa a selecao                                                                               |
-| `SelectCountry`   | Selecao de pais com bandeira                  | Formik, via `InputSelect`          | `options` opcional; use `countryList` para filtrar a lista padrao                                                                        |
+| `SelectCountry`   | Selecao de pais com bandeira                  | Formik, via `InputSelect`          | `options` opcional; `showFlags` opcional (padrao `true`); use `countryList` para filtrar a lista padrao                                  |
 
 Os nomes `SelectCountry`, `SelectMulti`, `InputPhone`, `DatePicker` e `Checkbox` sao os nomes canonicos. Os nomes anteriores `CountrySelect`, `MultiSelect`, `PhoneInput`, `Datepicker` e `CheckBox` continuam exportados como aliases depreciados durante a transicao.
 
@@ -23,6 +23,8 @@ Os nomes `SelectCountry`, `SelectMulti`, `InputPhone`, `DatePicker` e `Checkbox`
 - `Input`, `InputSelect`, `TextArea`, `InputPhone`, `DatePicker` e `SelectCountry` precisam estar dentro de `Formik` quando usados com o fluxo integrado. `InputStandalone` e `SelectMulti` podem ser controlados sem Formik.
 - Mensagens de erro integradas ao Formik aparecem depois que o campo esta marcado como tocado. Mensagens passadas diretamente pelas props seguem o contrato especifico de cada componente.
 - Os estados visuais usam tokens semanticos do CSS publico e respondem aos atributos de tema e contraste definidos no contrato de tokens.
+- Os controles de formulario ocupam a largura disponivel do container. `className="w-full"` pode ser aplicado pelo consumidor; os wrappers internos mantem `w-full min-w-0` para funcionar em grid, flex e colunas estreitas.
+- `InputPhone`/`PhoneInput` e `SelectCountry` aceitam `showFlags={false}` para remover completamente as bandeiras sem reservar espaco; o pais, DDI, busca, teclado e nomes acessiveis permanecem.
 - Mudancas de nome, tipo de prop, markup acessivel ou comportamento de selecao exigem atualizacao deste documento, de uma story, de um teste de contrato e do registro de evolucao.
 
 ## Dependencias e compatibilidade
@@ -35,7 +37,7 @@ permanecem no repositório; o npm contém dist, README e manifesto.
 
 ## Países, teclado e bandeiras
 
-SelectCountry usa o nome como valor na lista padrão (`Brasil`), com `cca2` separado (`BR`). `countryList.codes` sempre usa ISO-2. Ambos os seletores priorizam `flags.svg` customizado; sem ele, usam o SVG incorporado pelo pacote via ISO-2. Não precisam de rota `/flags`. Veja [Bandeiras](BANDEIRAS.md).
+SelectCountry usa o nome como valor na lista padrão (`Brasil`), com `cca2` separado (`BR`). `countryList.codes` sempre usa ISO-2. Ambos os seletores priorizam `flags.svg` customizado; sem ele, usam o SVG incorporado pelo pacote via ISO-2. `showFlags={false}` remove a renderização da bandeira sem alterar o valor ou o DDI. Não precisam de rota `/flags`. Veja [Bandeiras](BANDEIRAS.md).
 
 O seletor de país do InputPhone participa da ordem de Tab. Enter/Espaço ou setas abrem o painel; a busca recebe foco. Setas percorrem as opções e Enter/Espaço selecionam. Escape fecha e devolve foco ao botão; Tab fecha e avança ao telefone, Shift+Tab retorna ao botão. A busca e o painel têm nomes acessíveis. O campo usa `type="tel"` também no modo mascarado.
 

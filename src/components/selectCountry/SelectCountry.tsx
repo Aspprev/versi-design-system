@@ -28,9 +28,13 @@ export type SelectCountryProps = Omit<
   options?: SelectCountryOption[];
   /** Use `all` (padrao), `include` ou `exclude` com codigos ISO-2. */
   countryList?: CountryListFilter;
+  /** Exibe as bandeiras dos países. O padrão é true. */
+  showFlags?: boolean;
 };
 
-function renderFlag(option: SelectCountryOption) {
+function renderFlag(option: SelectCountryOption, showFlags: boolean) {
+  if (!showFlags) return null;
+
   return (
     <span
       aria-hidden="true"
@@ -48,6 +52,7 @@ function renderFlag(option: SelectCountryOption) {
 function renderCountryContent(
   option: SelectCountryOption | null,
   placeholder?: string,
+  showFlags = true,
 ) {
   if (!option) {
     return (
@@ -59,7 +64,7 @@ function renderCountryContent(
 
   return (
     <span className="flex w-full min-w-0 items-center gap-2">
-      {renderFlag(option)}
+      {renderFlag(option, showFlags)}
       <span className="block truncate overflow-hidden">{option.label}</span>
     </span>
   );
@@ -74,6 +79,7 @@ export function SelectCountry({
   defaultValue,
   onChange,
   className,
+  showFlags = true,
   ...props
 }: SelectCountryProps) {
   const availableOptions = filterCountryOptions(
@@ -92,10 +98,14 @@ export function SelectCountry({
       searchPlaceholder={searchPlaceholder}
       noOptionsText={noOptionsText}
       renderOption={(option) =>
-        renderCountryContent(option as SelectCountryOption)
+        renderCountryContent(option as SelectCountryOption, undefined, showFlags)
       }
       renderValue={(option, placeholder) =>
-        renderCountryContent(option as SelectCountryOption | null, placeholder)
+        renderCountryContent(
+          option as SelectCountryOption | null,
+          placeholder,
+          showFlags,
+        )
       }
     />
   );
