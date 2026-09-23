@@ -46,4 +46,23 @@ test.describe("componentes priorizados: teclado e acessibilidade", () => {
 
     expect((await new AxeBuilder({ page }).include("#storybook-root").analyze()).violations).toEqual([]);
   });
+
+  test("InputSwitch preserva aria-labelledby, foco e teclado", async ({ page }) => {
+    await page.emulateMedia({ reducedMotion: "reduce" });
+    await page.goto(
+      "/iframe.html?id=components-forms-inputswitch--external-label&viewMode=story",
+      { waitUntil: "networkidle" },
+    );
+
+    const switchControl = page.getByRole("switch");
+    await expect(switchControl).toHaveAttribute("aria-labelledby", "input-switch-label");
+    await expect(switchControl).toHaveAttribute("aria-describedby", "input-switch-help");
+    await switchControl.focus();
+    await expect(switchControl).toBeFocused();
+    await expect(switchControl).toHaveAttribute("aria-checked", "false");
+    await page.keyboard.press("Space");
+    await expect(switchControl).toHaveAttribute("aria-checked", "true");
+
+    expect((await new AxeBuilder({ page }).include("#storybook-root").analyze()).violations).toEqual([]);
+  });
 });

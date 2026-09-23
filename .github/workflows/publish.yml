@@ -32,6 +32,9 @@ jobs:
       - name: Audit dependencies
         run: npm run check:security
 
+      - name: Lint
+        run: npm run lint
+
       - name: Typecheck
         run: npm run typecheck
 

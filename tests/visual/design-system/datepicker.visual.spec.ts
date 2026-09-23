@@ -10,7 +10,7 @@ test("DatePicker por ano mantém nome, teclado e diálogo acessível", async ({ 
   const root = page.locator("#storybook-root");
   await expect(root).toBeVisible();
 
-  const input = page.getByRole("combobox", { name: "Ano de referÃªncia" });
+  const input = page.getByRole("combobox", { name: "Ano de referência" });
   await input.click();
 
   const dialog = page.getByRole("dialog", { name: "Selecionar ano" });

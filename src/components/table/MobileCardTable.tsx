@@ -166,6 +166,7 @@ function MobileCardTable<TData>({
                 <div
                   key={keyExtractor(item, index)}
                   role="listitem"
+                  tabIndex={0}
                   aria-label={`Item ${itemNumber} de ${pagination.totalItems}`}
                   aria-describedby={cardContentId}
                   className="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-focus-ring"

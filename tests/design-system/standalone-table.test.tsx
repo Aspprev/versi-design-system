@@ -61,7 +61,7 @@ describe("Table standalone", () => {
     expect(html).toContain("Visualizando de 1");
   });
 
-  it("usa o modo responsivo do contêiner e não cria foco artificial nas linhas", () => {
+  it("torna linhas e cartões alcançáveis por teclado sem perder a descrição", () => {
     const tableHtml = renderToStaticMarkup(
       <Table
         header={header}
@@ -81,7 +81,11 @@ describe("Table standalone", () => {
     );
 
     expect(tableHtml).toContain('data-responsive-mode="adaptive"');
-    expect(tableHtml).not.toContain('<tr tabindex="0"');
-    expect(cardsHtml).not.toContain('tabindex="0"');
+    expect(tableHtml).toContain('<tr tabindex="0"');
+    expect(tableHtml).toContain('aria-label="Linha 1 de 2"');
+    expect(tableHtml).toContain('aria-describedby="');
+    expect(cardsHtml).toContain('role="listitem"');
+    expect(cardsHtml).toContain('tabindex="0"');
+    expect(cardsHtml).toContain('aria-describedby="');
   });
 });

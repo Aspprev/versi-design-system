@@ -144,7 +144,7 @@ const Input: React.FC<InputProps> = ({
       : "password"
     : type;
 
-  const hasError = Boolean(meta.touched && meta.error);
+  const hasError = Boolean((meta.touched && meta.error) || error);
   const inputId = rest.id ?? name;
   const errorId = `${inputId}-error`;
   const ariaDescribedBy = mergeAriaDescribedBy(
@@ -224,6 +224,8 @@ const Input: React.FC<InputProps> = ({
     newValue = newValue.replace(/[óòõôö]/gi, "o");
     newValue = newValue.replace(/[úùûü]/gi, "u");
     newValue = newValue.replace(/[ç]/gi, "c");
+    // Mantém a lista explícita de caracteres removidos para preservar o contrato legado.
+    // eslint-disable-next-line no-useless-escape
     newValue = newValue.replace(/['"`´@!#$%&¨()*;:?\-_+={}\[\]\\\/|<>.,]/g, "");
     return newValue;
   };
@@ -653,6 +655,8 @@ export const InputStandalone: React.FC<InputStandaloneProps> = (props) => {
     newValue = newValue.replace(/[óòõôö]/gi, "o");
     newValue = newValue.replace(/[úùûü]/gi, "u");
     newValue = newValue.replace(/[ç]/gi, "c");
+    // Mantém a lista explícita de caracteres removidos para preservar o contrato legado.
+    // eslint-disable-next-line no-useless-escape
     newValue = newValue.replace(/['"`´@!#$%&¨()*;:?\-_+={}\[\]\\\/|<>.,]/g, "");
     return newValue;
   };

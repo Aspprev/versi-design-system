@@ -3,7 +3,6 @@
 import UnifiedDatePicker from "./UnifiedDatePicker";
 import type {
   DatePickerNavigationVariant as DatePickerNavigationVariantType,
-  DatePickerSelectionMode,
   UnifiedDatePickerProps,
 } from "./UnifiedDatePicker";
 

@@ -168,7 +168,7 @@ function Table<TData = unknown>(props: TableProps<TData>) {
       return normalizedHeader as IHeaderItem<TData>[];
     }
 
-    return normalizedHeader.map((item, columnIndex) => {
+    return normalizedHeader.map((item) => {
       const controls = item.filters?.controls?.map((control) => ({
         ...control,
         value:
@@ -381,7 +381,9 @@ function Table<TData = unknown>(props: TableProps<TData>) {
                 key={`row-group-${normalizedRowId ?? `${index}-${JSON.stringify(item)}`}`}
               >
                 <tr
+                  tabIndex={0}
                   aria-label={`Linha ${rowNumber} de ${internalPagination.totalItems}`}
+                  aria-describedby={rowContentIds.join(" ")}
                   data-table-row-stripe={
                     rowVariant === "striped" && index % 2 === 1 && !isExpanded
                       ? "true"

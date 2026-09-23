@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.4.0 — 2026-09-22 — evolução de acessibilidade e contrato público
+
+### Corrigido
+
+- `Table` passou a tornar cada linha de dados focável por teclado, preservando `aria-label`, `aria-describedby` e foco visível.
+- `MobileCardTable` passou a tornar cada item focável por teclado, preservando `role="listitem"`, nomes, descrições e interação com controles internos.
+- `InputSwitch` passou a preservar `aria-label`, `aria-labelledby`, `aria-describedby` e demais atributos ARIA no elemento com `role="switch"`, inclusive durante SSR.
+
+### Compatibilidade
+
+- Os nove entrypoints públicos da linha 0.4.x foram confirmados no campo `exports`: raiz, `core`, `forms`, `charts`, `countries`, `documents`, `overlays`, `styles.css` e `themes.css`.
+- Nenhum componente, prop ou entrypoint público foi removido.
+- Consumidores que ainda declaram `@aspprev/versi-ds: ^0.3.0` devem atualizar a faixa para `^0.4.0` para adotar esta versão.
+
+### Validação
+
+- Adicionados testes SSR, interação, teclado, foco visível e Axe para tabela, cartões móveis e `InputSwitch` em desktop/mobile.
+- Compatibilidade com zoom/reflow e redução de movimento permanece coberta pela matriz automatizada; zoom nativo, leitor de tela e contraste do sistema exigem validação manual.
+
 ## 0.3.0 — 2026-09-22 — em preparação
 
 ### Adicionado
