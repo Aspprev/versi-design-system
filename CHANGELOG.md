@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.9 — 2026-09-24 — ajuste de largura da paginação
+
+### Corrigido
+
+- Removidas larguras fixas dos controles com rótulo para evitar quebra de “Anterior” e “Próxima” em containers estreitos.
+- Adicionado `whitespace-nowrap` aos controles textuais da paginação standalone e do `Table`.
+
 ## 0.4.8 — 2026-09-24 — tamanhos e variantes da paginação
 
 ### Adicionado
