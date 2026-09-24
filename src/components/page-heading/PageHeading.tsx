@@ -1,9 +1,9 @@
 "use client";
 
-import Typography from "../typography/typography";
 import classNames from "classnames";
 import type { ReactNode } from "react";
 import { MdArrowBack } from "react-icons/md";
+import Typography from "../typography/typography";
 
 export type PageHeadingBackAction = {
   label: string;
@@ -41,6 +41,7 @@ function getBackHref(href?: string) {
   // React 18 only warns about javascript: links. Match browser URL parsing
   // without requiring window/document, including ignored tabs and newlines.
   const protocol = href
+    // eslint-disable-next-line no-control-regex
     .replace(/^[\u0000-\u0020]+/, "")
     .replace(/[\t\r\n]/g, "");
   return /^javascript:/i.test(protocol) ? undefined : href;
@@ -58,39 +59,43 @@ export default function PageHeading({
   const backHref = getBackHref(back?.href);
   const titleAttribute = getTitleAttribute(title);
   const backClassName =
-    "mb-2 inline-flex w-fit items-center gap-1 text-sm font-semibold text-content-link hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring";
+    "inline-flex w-fit items-center gap-1 text-sm font-semibold hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring";
 
   return (
     <header
       className={classNames(
-        "flex flex-col gap-3 tablet:flex-row tablet:items-start tablet:justify-between",
+        "flex w-full min-w-0 flex-col gap-3 tablet:flex-row tablet:items-start tablet:justify-between",
         { "mb-sm": spacing === "default" },
         className,
       )}
     >
-      <div className={classNames("min-w-0 flex-1", contentClassName)}>
-        {back && backHref ? (
-          <a className={backClassName} href={backHref}>
-            <BackContent label={back.label} />
-          </a>
-        ) : back ? (
-          <button
-            type="button"
-            className={backClassName}
-            onClick={back.onClick}
-          >
-            <BackContent label={back.label} />
-          </button>
-        ) : null}
+      <div
+        className={classNames("w-full min-w-0 tablet:flex-1", contentClassName)}
+      >
+        <div className="flex w-full min-w-0 items-center gap-4">
+          {back && backHref ? (
+            <a className={backClassName} href={backHref}>
+              <BackContent label={back.label} />
+            </a>
+          ) : back ? (
+            <button
+              type="button"
+              className={backClassName}
+              onClick={back.onClick}
+            >
+              <BackContent label={back.label} />
+            </button>
+          ) : null}
 
-        <Typography
-          element="h1"
-          semanticRole="page-title"
-          title={titleAttribute}
-          className="min-w-0 tablet:truncate"
-        >
-          {title}
-        </Typography>
+          <Typography
+            element="h1"
+            semanticRole="page-title"
+            title={titleAttribute}
+            className="block w-full min-w-0 overflow-hidden text-ellipsis tablet:truncate tablet:whitespace-nowrap"
+          >
+            {title}
+          </Typography>
+        </div>
         {subtitle !== undefined && subtitle !== null && (
           <Typography
             element="p"

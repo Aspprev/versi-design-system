@@ -71,8 +71,9 @@ describe("lote B/C do design system standalone", () => {
       />,
     );
 
-    expect(html).toContain("min-w-0 flex-1");
-    expect(html).toContain("tablet:truncate");
+    expect(html).toContain("w-full min-w-0 tablet:flex-1");
+    expect(html).toContain("block w-full min-w-0 overflow-hidden text-ellipsis");
+    expect(html).toContain("tablet:truncate tablet:whitespace-nowrap");
     expect(html).toContain("tablet:shrink-0");
     expect(html).toContain(
       'title="Contracheques e histórico de pagamentos disponíveis"',
