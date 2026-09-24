@@ -33,6 +33,9 @@ interface IProps<TData = unknown> extends React.HTMLAttributes<HTMLDivElement> {
   caption?: ReactNode;
   onFilterChange?: (value: string) => void;
   children?: ReactNode;
+  loading?: boolean;
+  loadingMessage?: ReactNode;
+  errorMessage?: ReactNode;
   showPagination?: boolean;
   pagination?: ITablePaginationProps;
   totalWidthUnits?: number;
@@ -62,6 +65,9 @@ const HEADER_DENSITY_CLASSES: Record<
 
 function TableView<TData>({
   children,
+  loading = false,
+  loadingMessage = "Carregando dados…",
+  errorMessage,
   header,
   accessibleName,
   caption,
@@ -454,6 +460,21 @@ function TableView<TData>({
             </tbody>
           )}
         </table>
+        {loading && (
+          <div
+            role="status"
+            aria-busy="true"
+            aria-live="polite"
+            className="pointer-events-none absolute inset-x-0 top-0 flex min-h-24 items-center justify-center bg-surface-card/80 p-4 text-sm text-content-secondary"
+          >
+            {loadingMessage}
+          </div>
+        )}
+        {!loading && errorMessage && (
+          <div role="alert" className="border-t border-field-border-error bg-feedback-danger-soft p-4 text-sm text-field-assistive-error">
+            {errorMessage}
+          </div>
+        )}
       </div>
       {openFilter !== null && filterCoords && header[openFilter]?.filters && (
         <div ref={filterRef} className="absolute z-popover">

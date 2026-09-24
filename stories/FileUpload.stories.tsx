@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, type ComponentProps } from "react";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import {
   FileDropzone,
@@ -9,9 +9,10 @@ import {
 
 const meta = {
   title: "Components/Documents/FileUpload",
+  component: FileDropzone,
   tags: ["autodocs"],
   parameters: { a11y: { disable: false } },
-} satisfies Meta;
+} satisfies Meta<typeof FileDropzone>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -20,7 +21,7 @@ function makeFile(name: string, type: string, content = "conteudo de exemplo") {
   return new File([content], name, { type, lastModified: 0 });
 }
 
-function UploadPlayground() {
+function UploadPlayground(props: ComponentProps<typeof FileDropzone>) {
   const [files, setFiles] = useState<FileUploadItem[]>([
     {
       id: "initial-file",
@@ -33,18 +34,15 @@ function UploadPlayground() {
   return (
     <div className="flex w-full max-w-2xl flex-col gap-4 p-4">
       <FileDropzone
-        accept="application/pdf,image/*"
-        multiple
-        maxFiles={3}
-        label="Adicionar arquivos"
-        hint="PDF ou imagem, ate 3 arquivos."
+        {...props}
         onFilesAccepted={(accepted) => {
           setFiles((current) => [
             ...current,
             ...accepted.map((file) => ({ file, status: "pending" as const })),
           ]);
+          props.onFilesAccepted?.(accepted);
         }}
-        onFilesRejected={() => undefined}
+        onFilesRejected={props.onFilesRejected}
       />
       <FileList
         files={files}
@@ -58,21 +56,47 @@ function UploadPlayground() {
 }
 
 export const Playground: Story = {
-  render: () => <UploadPlayground />,
+  args: {
+    accept: "application/pdf,image/*",
+    multiple: true,
+    maxFiles: 3,
+    label: "Adicionar arquivos",
+    hint: "Arraste PDF ou imagem, ate 3 arquivos.",
+  },
+  render: (args) => <UploadPlayground {...args} />,
 };
 
-export const DropzoneWithValidation: Story = {
-  render: () => (
+function ValidationPlayground(props: ComponentProps<typeof FileDropzone>) {
+  const [rejectionMessage, setRejectionMessage] = useState<string>();
+
+  return (
     <div className="w-full max-w-xl p-4">
       <FileDropzone
-        accept="application/pdf"
-        maxSize={5 * 1024 * 1024}
-        label="Selecionar comprovante"
-        hint="Somente PDF de ate 5 MB."
-        error="Selecione um arquivo PDF valido."
+        {...props}
+        error={rejectionMessage || props.error}
+        onFilesRejected={(rejections) => {
+          setRejectionMessage(rejections.map(({ message }) => message).join(" "));
+          props.onFilesRejected?.(rejections);
+        }}
       />
     </div>
-  ),
+  );
+}
+
+export const DropzoneWithValidation: Story = {
+  args: {
+    accept: "application/pdf",
+    maxSize: 5 * 1024 * 1024,
+    label: "Selecionar comprovante",
+    hint: "Somente PDF de ate 5 MB.",
+    messages: {
+      type: "Escolha um PDF valido.",
+      size: ({ fileName }) => `${fileName} ultrapassa o limite informado.`,
+      empty: ({ fileName }) => `${fileName} esta vazio.`,
+      invalid: ({ fileName }) => `${fileName} e invalido.`,
+    },
+  },
+  render: (args) => <ValidationPlayground {...args} />,
 };
 
 export const ProgressStates: Story = {

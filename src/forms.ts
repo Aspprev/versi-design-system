@@ -1,6 +1,11 @@
 /** Controles que podem trazer integração com Formik ou APIs de formulário. */
 export { Input, InputStandalone } from "./components/input";
-export type { InputProps, InputStandaloneProps } from "./components/input";
+export type {
+  InputFormatter,
+  InputMask,
+  InputProps,
+  InputStandaloneProps,
+} from "./components/input";
 export { InputSelect } from "./components/inputSelect";
 export type {
   InputSelectOption,

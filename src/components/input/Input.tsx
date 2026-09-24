@@ -15,6 +15,54 @@ import {
   FIELD_INPUT_CLASS,
 } from "../field/field-styles";
 
+export type InputMask =
+  | "cep"
+  | "conta"
+  | "currency"
+  | "cpf"
+  | "phone"
+  | "date"
+  | "datePicker"
+  | "specialChars"
+  | "cnpj"
+  | "agencia";
+
+/** Formats the current text without coupling the input to a domain field. */
+export type InputFormatter = (value: string) => string;
+
+function getFormattedCaretPosition(
+  rawValue: string,
+  formattedValue: string,
+  selectionStart: number | null,
+  formatter: InputFormatter,
+  sanitize: (value: string) => string,
+) {
+  if (selectionStart === null) return null;
+  if (selectionStart >= rawValue.length) return formattedValue.length;
+
+  // Format the untouched suffix and anchor the caret immediately before it.
+  // This keeps separators introduced by common formatters on the correct side
+  // of the caret without prescribing a domain-specific mask contract.
+  const formattedSuffix = sanitize(formatter(rawValue.slice(selectionStart)));
+  return Math.max(
+    0,
+    Math.min(formattedValue.length, formattedValue.length - formattedSuffix.length),
+  );
+}
+
+function restoreCaretPosition(
+  inputRef: React.RefObject<HTMLInputElement | null>,
+  position: number | null,
+) {
+  if (position === null || typeof window === "undefined") return;
+
+  window.requestAnimationFrame(() => {
+    const input = inputRef.current;
+    if (!input || document.activeElement !== input) return;
+    input.setSelectionRange(position, position);
+  });
+}
+
 export type InputProps = {
   name: string;
   label?: string;
@@ -22,17 +70,9 @@ export type InputProps = {
   placeholder?: string;
   prefix?: string;
   suffix?: string;
-  mask?:
-    | "cep"
-    | "conta"
-    | "currency"
-    | "cpf"
-    | "phone"
-    | "date"
-    | "datePicker"
-    | "specialChars"
-    | "cnpj"
-    | "agencia";
+  /** Existing named masks kept for compatibility. Prefer formatter for new masks. */
+  mask?: InputMask;
+  formatter?: InputFormatter;
   disabled?: boolean;
   error?: boolean;
   disallowSpaces?: boolean;
@@ -121,6 +161,7 @@ const Input: React.FC<InputProps> = ({
   prefix,
   suffix,
   mask,
+  formatter,
   disabled,
   error,
   disallowSpaces,
@@ -241,6 +282,44 @@ const Input: React.FC<InputProps> = ({
 
   const renderMaskedInput = (inputType?: string) => {
     const autoCompleteValue = rest.autoComplete;
+
+    if (formatter) {
+      const currentValue = String(safeValue(field.value));
+      return (
+        <input
+          {...rest}
+          {...accessibilityProps}
+          name={name}
+          ref={inputRef}
+          type={inputType === "date" ? "text" : inputType}
+          value={currentValue}
+          onChange={(event) => {
+            const rawValue = event.target.value;
+            const formattedValue = sanitizeValue(formatter(rawValue));
+            const caretPosition = getFormattedCaretPosition(
+              rawValue,
+              formattedValue,
+              event.target.selectionStart,
+              formatter,
+              sanitizeValue,
+            );
+            helpers.setValue(formattedValue);
+            restoreCaretPosition(inputRef, caretPosition);
+            rest.onChange?.({
+              ...event,
+              target: { ...event.target, value: formattedValue },
+              currentTarget: { ...event.currentTarget, value: formattedValue },
+            });
+          }}
+          onBlur={field.onBlur}
+          onPaste={handlePasteFormik}
+          placeholder={placeholder}
+          className={classNames(FIELD_INPUT_CLASS, className)}
+          autoComplete={autoCompleteValue}
+          disabled={disabled}
+        />
+      );
+    }
 
     if (mask === "currency") {
       const rawCurrencyValue =
@@ -543,17 +622,9 @@ export type InputStandaloneProps = {
   helperText?: string | React.ReactNode;
   prefix?: string;
   suffix?: string;
-  mask?:
-    | "cep"
-    | "conta"
-    | "currency"
-    | "cpf"
-    | "phone"
-    | "date"
-    | "datePicker"
-    | "specialChars"
-    | "cnpj"
-    | "agencia";
+  /** Existing named masks kept for compatibility. Prefer formatter for new masks. */
+  mask?: InputMask;
+  formatter?: InputFormatter;
   disabled?: boolean;
   error?: boolean;
   errorText?: string;
@@ -569,6 +640,7 @@ export const InputStandalone: React.FC<InputStandaloneProps> = (props) => {
     prefix,
     suffix,
     mask,
+    formatter,
     disabled,
     error,
     errorText,
@@ -672,6 +744,41 @@ export const InputStandalone: React.FC<InputStandaloneProps> = (props) => {
 
   const renderMaskedInput = (inputType?: string) => {
     const autoCompleteValue = rest.autoComplete;
+
+    if (formatter) {
+      const currentValue = String(safeValue(rest.value));
+      return (
+        <input
+          {...rest}
+          {...accessibilityProps}
+          ref={inputRef}
+          type={inputType === "date" ? "text" : inputType}
+          value={currentValue}
+          onChange={(event) => {
+            const rawValue = event.target.value;
+            const formattedValue = sanitizeValue(formatter(rawValue));
+            const caretPosition = getFormattedCaretPosition(
+              rawValue,
+              formattedValue,
+              event.target.selectionStart,
+              formatter,
+              sanitizeValue,
+            );
+            restoreCaretPosition(inputRef, caretPosition);
+            rest.onChange?.({
+              ...event,
+              target: { ...event.target, value: formattedValue },
+              currentTarget: { ...event.currentTarget, value: formattedValue },
+            });
+          }}
+          onPaste={handlePasteStandalone}
+          placeholder={rest.placeholder}
+          className={classNames(FIELD_INPUT_CLASS, className)}
+          autoComplete={autoCompleteValue}
+          disabled={disabled}
+        />
+      );
+    }
 
     if (mask === "currency") {
       const rawCurrencyValue =

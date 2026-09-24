@@ -111,6 +111,7 @@ const preview: Preview = {
       storySort: {
         order: [
           "Getting Started",
+          ["Introduction", "Installation", "Contributing", "Usage"],
           "Foundations",
           "Components",
           "Patterns",

@@ -2,7 +2,7 @@
 
 import classNames from "classnames";
 import { useId, useRef, useState, type ChangeEvent, type DragEvent, type ReactNode } from "react";
-import { validateFiles, type FileRejection } from "./validation";
+import { validateFiles, type FileRejection, type FileValidationMessage } from "./validation";
 
 export type { FileRejection } from "./validation";
 
@@ -18,6 +18,8 @@ export interface FileDropzoneProps {
   label?: ReactNode;
   hint?: ReactNode;
   error?: ReactNode;
+  messages?: Partial<Record<"type" | "size" | "count" | "empty" | "invalid", FileValidationMessage>>;
+  actions?: ReactNode;
   className?: string;
   onFilesAccepted?: (files: File[]) => void;
   onFilesRejected?: (rejections: FileRejection[]) => void;
@@ -35,6 +37,8 @@ export function FileDropzone({
   label = "Selecionar arquivos",
   hint = "Arraste e solte os arquivos aqui ou use o teclado para selecionar.",
   error,
+  messages,
+  actions,
   className,
   onFilesAccepted,
   onFilesRejected,
@@ -53,6 +57,7 @@ export function FileDropzone({
       maxFiles,
       maxSize,
       multiple,
+      messages,
     });
     setRejectionMessage(rejected.length ? rejected.map((item) => item.message).join(" ") : undefined);
     if (accepted.length) onFilesAccepted?.(accepted);
@@ -103,6 +108,7 @@ export function FileDropzone({
         />
       </label>
       {message && <span id={messageId} role={hasError ? "alert" : undefined} className={classNames("mt-1 text-sm", hasError ? "text-field-assistive-error" : "text-content-secondary")}>{message}</span>}
+      {actions && <div className="mt-3 flex flex-wrap justify-center gap-2">{actions}</div>}
     </div>
   );
 }

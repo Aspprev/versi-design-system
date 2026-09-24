@@ -116,6 +116,19 @@ export const Expandable: Story = {
   },
 };
 
+export const Loading: Story = {
+  args: {
+    loading: true,
+    loadingMessage: "Carregando participantes…",
+  },
+};
+
+export const Error: Story = {
+  args: {
+    errorMessage: "Não foi possível carregar os participantes.",
+  },
+};
+
 function MobileCards(props: MobileCardTableProps<Participant>) {
   const [expandedRowId, setExpandedRowId] = useState<number | null>(null);
   return (

@@ -25,6 +25,9 @@ export interface MobileCardTableProps<TData> {
   keyExtractor: (item: TData, index: number) => string;
   itemsPerPage?: number;
   emptyMessage?: string;
+  errorMessage?: ReactNode;
+  loading?: boolean;
+  loadingMessage?: ReactNode;
   wrapperClassName?: string;
   headerClassName?: string;
   emptyClassName?: string;
@@ -40,6 +43,9 @@ function MobileCardTable<TData>({
   keyExtractor,
   itemsPerPage = 10,
   emptyMessage = "Nenhum item encontrado.",
+  errorMessage,
+  loading = false,
+  loadingMessage = "Carregando dados…",
   wrapperClassName = "",
   headerClassName = "",
   emptyClassName = "",
@@ -140,7 +146,15 @@ function MobileCardTable<TData>({
           ))}
         </div>
 
-        {pagination.totalItems > 0 ? (
+        {loading ? (
+          <div role="status" aria-busy="true" aria-live="polite" className="p-6 text-center text-sm text-content-secondary">
+            {loadingMessage}
+          </div>
+        ) : errorMessage ? (
+          <div role="alert" className="p-6 text-center text-sm text-field-assistive-error">
+            {errorMessage}
+          </div>
+        ) : pagination.totalItems > 0 ? (
           <div role="list" aria-label="Itens da lista">
             {pagination.pageData.map((item, index) => (
             (() => {

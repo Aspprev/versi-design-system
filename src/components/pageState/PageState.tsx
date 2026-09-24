@@ -10,7 +10,7 @@ import {
   MdSearchOff,
 } from "react-icons/md";
 
-type PageStateVariant = "error" | "empty" | "unavailable" | "not-found";
+export type PageStateVariant = "error" | "empty" | "unavailable" | "not-found";
 
 export type PageStateProps = {
   variant: PageStateVariant;

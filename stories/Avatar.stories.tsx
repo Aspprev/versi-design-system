@@ -1,9 +1,20 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Avatar } from "../src";
 
-const meta = { title: "Components/Data Display/Avatar", component: Avatar, tags: ["autodocs"] } satisfies Meta<typeof Avatar>;
+const meta = {
+  title: "Components/Data Display/Avatar",
+  component: Avatar,
+  tags: ["autodocs"],
+} satisfies Meta<typeof Avatar>;
 export default meta;
 type Story = StoryObj<typeof meta>;
+
+export const Default: Story = {
+  args: {
+    name: "Ana Silva",
+    size: "md",
+  },
+};
 
 export const Sizes: Story = {
   render: () => (
@@ -12,8 +23,11 @@ export const Sizes: Story = {
       <Avatar name="Ana Silva" size="sm" />
       <Avatar name="Ana Silva" size="md" />
       <Avatar name="Ana Silva" size="lg" />
+      <Avatar name="Ana Silva" size="xl" />
     </div>
   ),
 };
 
-export const WithoutName: Story = { render: () => <Avatar size="lg" aria-label="Participante sem nome" /> };
+export const WithoutName: Story = {
+  render: () => <Avatar size="lg" aria-label="Participante sem nome" />,
+};

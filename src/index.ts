@@ -13,6 +13,7 @@ export type {
 export { default as Divider } from "./components/divider/Divider";
 
 export { default as LoadingDots } from "./components/loadingDots/LoadingDotsView";
+export type { LoadingDotsProps } from "./components/loadingDots/LoadingDotsView";
 
 export { default as Surface } from "./components/surface/Surface";
 export type { SurfaceProps } from "./components/surface/Surface";
@@ -24,6 +25,7 @@ export { default as Notice } from "./components/notice/NoticeView";
 export type { BoxProps } from "./components/notice/NoticeView";
 
 export { default as PageState } from "./components/pageState/PageState";
+export type { PageStateProps, PageStateVariant } from "./components/pageState/PageState";
 
 export { default as Tooltip } from "./components/tooltip/Tooltip";
 export type { TooltipProps } from "./components/tooltip/Tooltip";
@@ -70,7 +72,10 @@ export type {
   PageHeadingProps,
 } from "./components/page-heading/PageHeading";
 export { default as PageTabsHeader } from "./components/page-tabs";
-export type { PageTabItem } from "./components/page-tabs/PageTabsHeader";
+export type {
+  PageTabItem,
+  PageTabsHeaderProps,
+} from "./components/page-tabs/PageTabsHeader";
 export { InfoGrid, InfoItem } from "./components/info-grid";
 export type { InfoGridProps, InfoItemProps } from "./components/info-grid";
 export { FilterBar } from "./components/filter-bar";
@@ -87,7 +92,12 @@ export type {
 export { DocumentItem } from "./components/document-item";
 export type { DocumentItemDetail, DocumentItemProps } from "./components/document-item";
 export { Input, InputStandalone } from "./components/input";
-export type { InputProps, InputStandaloneProps } from "./components/input";
+export type {
+  InputFormatter,
+  InputMask,
+  InputProps,
+  InputStandaloneProps,
+} from "./components/input";
 export { InputSelect } from "./components/inputSelect";
 export type {
   InputSelectOption,
@@ -228,6 +238,9 @@ export type {
   FileUploadProgressStatus,
   FileViewerProps,
   FileViewerSource,
+  FileViewerSourceInput,
+  FileRejectionContext,
+  FileValidationMessage,
   FileValidationOptions,
   FileValidationReason,
   FileValidationResult,

@@ -1,5 +1,5 @@
-﻿import type { Meta, StoryObj } from "@storybook/react-vite";
-import { PageHeading, PageTabsHeader } from "../src";
+import type { Meta, StoryObj } from "@storybook/react-vite";
+import { PageHeading } from "../src";
 
 const meta = {
   title: "Components/Layout/PageHeading",
@@ -23,26 +23,11 @@ export const WithSubtitleAndBack: Story = {
 
 export const WithActions: Story = {
   args: {
-    title: "Minhas solicitaÃ§Ãµes",
+    title: "Minhas solicitacoes",
     actions: (
       <button type="button" className="rounded-sm bg-action-primary px-4 py-2 font-bold text-action-primary-content">
-        Nova solicitaÃ§Ã£o
+        Nova solicitacao
       </button>
     ),
   },
 };
-
-export const Tabs: Story = {
-  render: () => (
-    <PageTabsHeader
-      title="Meu benefÃ­cio"
-      tabs={[
-        { id: "overview", label: "VisÃ£o geral" },
-        { id: "history", label: "HistÃ³rico", notification: 2 },
-      ]}
-      activeTab="overview"
-      onTabChange={() => undefined}
-    />
-  ),
-};
-

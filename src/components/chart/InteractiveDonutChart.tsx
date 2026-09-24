@@ -9,6 +9,7 @@ import {
   useRef,
   useState,
   type KeyboardEvent,
+  type ReactNode,
 } from "react";
 import Chart, { type Props as DonutChartProps } from "./LazyApexChart";
 import {
@@ -25,6 +26,10 @@ export type InteractiveDonutProps = Omit<
 > & {
   options?: InteractiveDonutOptions;
   series: number[];
+  loading?: boolean;
+  loadingMessage?: ReactNode;
+  error?: ReactNode;
+  emptyMessage?: ReactNode;
   colors?: string[];
   mutedColors?: string[];
   valueFormatter?: (value: number) => string;
@@ -38,6 +43,10 @@ export type InteractiveDonutProps = Omit<
 export default function InteractiveDonutChart({
   options = {},
   series,
+  loading = false,
+  loadingMessage = "Carregando gráfico…",
+  error,
+  emptyMessage = "Nenhum dado disponível.",
   colors,
   mutedColors,
   valueFormatter = (value) =>
@@ -337,19 +346,33 @@ export default function InteractiveDonutChart({
       onKeyDown={handleKeyDown}
       className={`chart-keyboard-focus-ring relative min-w-0 rounded-sm ${className ?? ""}`.trim()}
     >
-      <Chart
-        key={highContrast ? "donut-high-contrast" : "donut-standard"}
-        {...rest}
-        className={chartClassName}
-        height={
-          responsiveHeight && measuredChartHeight
-            ? measuredChartHeight
-            : rest.height
-        }
-        options={interactiveOptions}
-        series={series}
-        type="donut"
-      />
+      {loading ? (
+        <div role="status" aria-busy="true" aria-live="polite" className="flex min-h-32 items-center justify-center text-sm text-content-secondary">
+          {loadingMessage}
+        </div>
+      ) : error ? (
+        <div role="alert" className="flex min-h-32 items-center justify-center text-sm text-field-assistive-error">
+          {error}
+        </div>
+      ) : series.length === 0 ? (
+        <div role="status" className="flex min-h-32 items-center justify-center text-sm text-content-secondary">
+          {emptyMessage}
+        </div>
+      ) : (
+        <Chart
+          key={highContrast ? "donut-high-contrast" : "donut-standard"}
+          {...rest}
+          className={chartClassName}
+          height={
+            responsiveHeight && measuredChartHeight
+              ? measuredChartHeight
+              : rest.height
+          }
+          options={interactiveOptions}
+          series={series}
+          type="donut"
+        />
+      )}
       {legendValue && pieCircle && (
         <div
           aria-hidden="true"

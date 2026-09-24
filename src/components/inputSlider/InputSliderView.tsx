@@ -10,6 +10,9 @@ export interface InputSliderProps {
   functionChange: React.Dispatch<React.SetStateAction<number>>;
   step?: number | null;
   prefix?: string;
+  /** Canonical suffix displayed beside the value. */
+  suffix?: string;
+  /** @deprecated Use `suffix`. Kept for migration compatibility. */
   sufix?: string;
   marks?: boolean | ReadonlyArray<{ value: number; label?: React.ReactNode }>;
   valueLabelDisplay?: "off" | "on" | "auto";
@@ -29,6 +32,7 @@ const InputSlider: React.FC<InputSliderProps> = ({
   functionChange,
   initialValue,
   prefix,
+  suffix,
   sufix,
   marks,
   valueLabelDisplay = "auto",
@@ -41,6 +45,7 @@ const InputSlider: React.FC<InputSliderProps> = ({
   ...rest
 }) => {
   const [value, setValue] = useState(initialValue);
+  const resolvedSuffix = suffix ?? sufix;
   const controlLabel = ariaLabel || name;
   const valueInputId = `${name}-value`;
 
@@ -106,6 +111,13 @@ const InputSlider: React.FC<InputSliderProps> = ({
           aria-label={`${controlLabel} valor`}
           disabled={disabled || inputDisabled}
         />
+      )}
+      {(showLabel || prefix || resolvedSuffix || valueFormmated) && (
+        <span className="shrink-0 text-sm text-content-secondary">
+          {prefix}
+          {valueFormmated ?? value}
+          {resolvedSuffix}
+        </span>
       )}
     </div>
   );
