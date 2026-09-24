@@ -20,6 +20,13 @@ const rows: Participant[] = [
   { id: 3, name: "Carla Souza", plan: "Normal", balance: "R$ 9.780,00" },
 ];
 
+const paginatedRows: Participant[] = Array.from({ length: 25 }, (_, index) => ({
+  id: index + 1,
+  name: `Participante ${index + 1}`,
+  plan: index % 2 === 0 ? "Básico" : "Especial",
+  balance: `R$ ${(index + 1) * 1000},00`,
+}));
+
 const columns: ITableColumnConfig<Participant>[] = [
   { key: "name", title: "Participante", accessor: (item) => item.name, widthUnits: 2 },
   { key: "plan", title: "Plano", accessor: (item) => item.plan, widthUnits: 1 },
@@ -41,6 +48,38 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {};
+
+export const WithPagination: Story = {
+  args: { data: paginatedRows, itemsPerPage: 5, showPagination: true },
+};
+
+export const WithArrowPagination: Story = {
+  args: {
+    data: paginatedRows,
+    itemsPerPage: 5,
+    showPagination: true,
+    paginationVariant: "arrows",
+  },
+};
+
+export const WithSmallPagination: Story = {
+  args: {
+    data: paginatedRows,
+    itemsPerPage: 5,
+    showPagination: true,
+    paginationSize: "small",
+  },
+};
+
+export const WithSmallArrowPagination: Story = {
+  args: {
+    data: paginatedRows,
+    itemsPerPage: 5,
+    showPagination: true,
+    paginationSize: "small",
+    paginationVariant: "arrows",
+  },
+};
 
 export const StripedCompact: Story = {
   args: { rowVariant: "striped", density: "compact", enableRowHover: true },

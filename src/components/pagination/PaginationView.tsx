@@ -1,16 +1,36 @@
 ﻿import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import cs from 'classnames';
 import PageButtons from './components/PageButtons';
+import {
+  PAGINATION_SIZE_CLASSES,
+  type PaginationSize,
+  type PaginationVariant,
+} from './pagination-styles';
+
+export type { PaginationSize, PaginationVariant } from './pagination-styles';
 
 export interface PaginationProps {
   currentPage: number;
   totalResults: number;
   perPage: number;
   onClick: (page: number) => void;
+  size?: PaginationSize;
+  variant?: PaginationVariant;
 }
 
 function PaginationView(props: PaginationProps) {
-  const { currentPage, totalResults, perPage, onClick } = props;
+  const {
+    currentPage,
+    totalResults,
+    perPage,
+    onClick,
+    size = "normal",
+    variant = "default",
+  } = props;
+  const totalPages = Math.max(1, Math.ceil(totalResults / perPage));
+  const sizeClasses = PAGINATION_SIZE_CLASSES[size];
+  const controlWidth =
+    variant === "arrows" ? sizeClasses.pageWidth : sizeClasses.controlWidth;
 
   return (
     <nav
@@ -22,16 +42,17 @@ function PaginationView(props: PaginationProps) {
         até {totalResults > (currentPage * perPage) ? currentPage * perPage : totalResults}{' '}
         de {totalResults} resultados
       </span>
-      <div className="flex items-stretch gap-1.5">
+      <div className={cs('flex items-stretch', sizeClasses.gap)}>
         {currentPage > 1 && (
           <button
             type="button"
-            className={cs('h-7 w-24 rounded-sm border border-border-default',
-              'flex items-center justify-center gap-1 text-content-primary text-sm',
+            aria-label="Ir para a página anterior"
+            className={cs(sizeClasses.itemHeight, controlWidth, sizeClasses.controlPadding, 'rounded-sm border border-border-default',
+              'flex items-center justify-center gap-1 text-content-primary', sizeClasses.text,
               'cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring')}
             onClick={() => onClick(currentPage - 1)}>
-            <MdChevronLeft size={10} aria-hidden="true" focusable="false" />
-            Anterior
+            <MdChevronLeft size={size === "small" ? 9 : 10} aria-hidden="true" focusable="false" />
+            {variant === "default" && "Anterior"}
           </button>
         )}
         <PageButtons
@@ -39,16 +60,18 @@ function PaginationView(props: PaginationProps) {
           totalResults={totalResults}
           perPage={perPage}
           onClick={onClick}
+          size={size}
         />
-        {currentPage < Math.ceil((totalResults / 10)) && (
+        {currentPage < totalPages && (
           <button
             type="button"
-            className={cs('h-7 w-24 rounded-sm border border-border-default',
-              'flex items-center justify-center gap-1 text-content-primary text-sm',
+            aria-label="Ir para a próxima página"
+            className={cs(sizeClasses.itemHeight, controlWidth, sizeClasses.controlPadding, 'rounded-sm border border-border-default',
+              'flex items-center justify-center gap-1 text-content-primary', sizeClasses.text,
               'cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring')}
             onClick={() => onClick(currentPage + 1)}>
-            Próxima
-            <MdChevronRight size={10} aria-hidden="true" focusable="false" />
+            {variant === "default" && "Próxima"}
+            <MdChevronRight size={size === "small" ? 9 : 10} aria-hidden="true" focusable="false" />
           </button>
         )}
       </div>

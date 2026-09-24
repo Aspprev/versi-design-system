@@ -43,7 +43,11 @@ export type { CircularLoadingProps } from "./components/circularLoading/Circular
 export { default as Modal } from "./components/Modal/Modal";
 export type { ModalProps } from "./components/Modal/Modal";
 export { default as Pagination } from "./components/pagination";
-export type { PaginationProps } from "./components/pagination/PaginationView";
+export type {
+  PaginationProps,
+  PaginationSize,
+  PaginationVariant,
+} from "./components/pagination/PaginationView";
 export { Checkbox, CheckBox } from "./components/checkbox/checkbox";
 export type { CheckboxProps, CheckBoxProps } from "./components/checkbox/checkbox";
 export { RadioGroup } from "./components/radio-group/radio-group";

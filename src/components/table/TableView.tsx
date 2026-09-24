@@ -16,6 +16,7 @@ import {
   MdKeyboardArrowRight,
   MdOutlineFilterAlt,
 } from "react-icons/md";
+import { PAGINATION_SIZE_CLASSES } from "../pagination/pagination-styles";
 import Filter, { IFilterControl } from "./components/filter/Filter";
 import NotFound from "./components/notFound";
 import {
@@ -336,6 +337,8 @@ function TableView<TData>({
   const paginationVariant = isNarrowContainer
     ? "arrows"
     : (pagination?.variant ?? "default");
+  const paginationSizeClasses =
+    PAGINATION_SIZE_CLASSES[pagination?.size ?? "normal"];
   const isAdaptiveCompact =
     overflowMode === "adaptive" &&
     tableWidth !== undefined &&
@@ -509,15 +512,13 @@ function TableView<TData>({
             {pagination.totalItems} resultados
           </p>
 
-          <div className="flex items-center gap-1">
+          <div className={`flex items-center ${paginationSizeClasses.gap}`}>
             <button
               type="button"
               onClick={pagination.onPrevious}
               disabled={pagination.currentPage === 1}
               aria-label="Ir para a página anterior"
-              className={`inline-flex min-h-11 min-w-11 items-center justify-center gap-1 rounded border border-border-default px-2 text-sm leading-none text-content-primary hover:border-border-strong disabled:cursor-not-allowed disabled:border-border-default disabled:opacity-50 ${
-                paginationVariant === "arrows" ? "min-w-6 tablet:min-w-7" : ""
-              }`}
+              className={`${paginationSizeClasses.itemHeight} inline-flex ${paginationVariant === "arrows" ? paginationSizeClasses.pageWidth : paginationSizeClasses.controlWidth} items-center justify-center gap-1 rounded border border-border-default ${paginationSizeClasses.controlPadding} ${paginationSizeClasses.text} leading-none text-content-primary hover:border-border-strong disabled:cursor-not-allowed disabled:border-border-default disabled:opacity-50`}
             >
               <MdKeyboardArrowLeft className="h-3 w-3 text-content-muted" />
               {paginationVariant !== "arrows" && "Anterior"}
@@ -526,7 +527,7 @@ function TableView<TData>({
             <div
               aria-live="polite"
               aria-atomic="true"
-              className="inline-flex h-6 min-w-6 items-center justify-center rounded border border-selection-border bg-selection-background px-1.5 text-sm font-bold leading-none text-selection-content tablet:h-7 tablet:min-w-7"
+              className={`${paginationSizeClasses.itemHeight} inline-flex ${paginationSizeClasses.pageWidth} items-center justify-center rounded border border-selection-border bg-selection-background ${paginationSizeClasses.controlPadding} ${paginationSizeClasses.text} font-bold leading-none text-selection-content`}
             >
               {pagination.currentPage}
             </div>
@@ -536,9 +537,7 @@ function TableView<TData>({
               onClick={pagination.onNext}
               disabled={pagination.currentPage === pagination.totalPages}
               aria-label="Ir para a próxima página"
-                className={`inline-flex min-h-11 min-w-11 items-center justify-center gap-1 rounded border border-border-default px-2 text-sm leading-none text-content-primary hover:border-border-strong disabled:cursor-not-allowed disabled:border-border-default disabled:opacity-50 ${
-                paginationVariant === "arrows" ? "min-w-6 tablet:min-w-7" : ""
-              }`}
+              className={`${paginationSizeClasses.itemHeight} inline-flex ${paginationVariant === "arrows" ? paginationSizeClasses.pageWidth : paginationSizeClasses.controlWidth} items-center justify-center gap-1 rounded border border-border-default ${paginationSizeClasses.controlPadding} ${paginationSizeClasses.text} leading-none text-content-primary hover:border-border-strong disabled:cursor-not-allowed disabled:border-border-default disabled:opacity-50`}
             >
               {paginationVariant !== "arrows" && "Próxima"}
               <MdKeyboardArrowRight className="h-3 w-3 text-content-muted" />
