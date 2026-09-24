@@ -10,8 +10,12 @@ export type FileViewerSource = string | Blob | {
   fileName?: string;
 };
 
+export type FileViewerSourceInput =
+  | FileViewerSource
+  | Promise<FileViewerSource | null | undefined>;
+
 export interface FileViewerProps {
-  source?: FileViewerSource;
+  source?: FileViewerSourceInput;
   fileName?: string;
   contentType?: string;
   loading?: boolean;
@@ -19,6 +23,8 @@ export interface FileViewerProps {
   onLoad?: () => void;
   onError?: (error: Error) => void;
   onDownload?: () => void;
+  /** Consumer-owned actions such as retry, share or remove. */
+  actions?: ReactNode;
   fallback?: ReactNode;
   title?: string;
   className?: string;
@@ -49,6 +55,7 @@ export function FileViewer({
   onLoad,
   onError,
   onDownload,
+  actions,
   fallback,
   title = fileName ?? "Visualização do arquivo",
   className,
@@ -56,11 +63,53 @@ export function FileViewer({
   const [objectUrl, setObjectUrl] = useState<string>();
   const [textContent, setTextContent] = useState<string>();
   const [readError, setReadError] = useState<Error | null>(null);
+  const [asyncSource, setAsyncSource] = useState<FileViewerSource>();
+  const [sourceLoading, setSourceLoading] = useState(false);
   const onLoadRef = useRef(onLoad);
   const onErrorRef = useRef(onError);
-  const resolved = typeof source === "object" && source !== null && !(source instanceof Blob) ? source : undefined;
-  const blob = source instanceof Blob ? source : resolved?.blob;
-  const url = typeof source === "string" ? source : resolved?.url;
+  const isAsyncSource = Boolean(
+    source &&
+      typeof source === "object" &&
+      "then" in source &&
+      typeof source.then === "function",
+  );
+
+  useEffect(() => {
+    if (!isAsyncSource) {
+      setAsyncSource(undefined);
+      setSourceLoading(false);
+      return;
+    }
+
+    let active = true;
+    setSourceLoading(true);
+    setReadError(null);
+
+    Promise.resolve(source as Promise<FileViewerSource | null | undefined>)
+      .then((nextSource) => {
+        if (!active) return;
+        setAsyncSource(nextSource ?? undefined);
+        setSourceLoading(false);
+      })
+      .catch((cause: unknown) => {
+        if (!active) return;
+        const nextError = toError(cause);
+        setReadError(nextError);
+        setSourceLoading(false);
+        onErrorRef.current?.(nextError);
+      });
+
+    return () => {
+      active = false;
+    };
+  }, [isAsyncSource, source]);
+
+  const resolvedSource: FileViewerSource | undefined = isAsyncSource
+    ? asyncSource
+    : (source as FileViewerSource | undefined);
+  const resolved = typeof resolvedSource === "object" && resolvedSource !== null && !(resolvedSource instanceof Blob) ? resolvedSource : undefined;
+  const blob = resolvedSource instanceof Blob ? resolvedSource : resolved?.blob;
+  const url = typeof resolvedSource === "string" ? resolvedSource : resolved?.url;
   const resolvedName = fileName ?? resolved?.fileName;
   const rawType = contentType?.trim() || resolved?.contentType || blob?.type || extensionType(resolvedName);
   const resolvedType = normalizeContentType(rawType);
@@ -98,7 +147,7 @@ export function FileViewer({
 
     if (isText) {
       blob.text()
-        .then((text) => {
+        .then((text: string) => {
           if (!active) return;
           setTextContent(text);
           onLoadRef.current?.();
@@ -124,7 +173,7 @@ export function FileViewer({
   };
   const handleLoad = () => onLoadRef.current?.();
 
-  if (loading) {
+  if (loading || sourceLoading) {
     return (
       <div
         className={classNames("flex min-h-32 items-center justify-center rounded-sm border border-border-default bg-surface-card p-6 text-content-secondary", className)}
@@ -182,7 +231,12 @@ export function FileViewer({
       {!resolvedType.startsWith("image/") && resolvedType !== "application/pdf" && !isText && (
         fallback ?? <p className="text-content-secondary">Este tipo de arquivo não possui visualização disponível.</p>
       )}
-      {download && <div className="flex justify-end">{download}</div>}
+      {(download || actions) && (
+        <div className="flex flex-wrap justify-end gap-2">
+          {actions}
+          {download}
+        </div>
+      )}
     </div>
   );
 }

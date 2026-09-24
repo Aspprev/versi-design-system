@@ -1,4 +1,5 @@
-﻿import type { Meta, StoryObj } from "@storybook/react-vite";
+import { useEffect, useState, type ComponentProps } from "react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { InputStandalone } from "../src";
 
 const meta = {
@@ -19,7 +20,7 @@ export const Masked: Story = {};
 
 export const Currency: Story = {
   args: {
-    label: "Valor da contribuiÃ§Ã£o",
+    label: "Valor da contribuição",
     mask: "currency",
     prefix: "R$",
     value: "125000",
@@ -30,8 +31,8 @@ export const Currency: Story = {
 export const Password: Story = {
   args: {
     label: "Senha",
-    type: "password",
     mask: undefined,
+    type: "password",
     autoComplete: "current-password",
   },
 };
@@ -42,16 +43,48 @@ export const Error: Story = {
     mask: undefined,
     type: "email",
     error: true,
-    errorText: "Informe um e-mail vÃ¡lido.",
+    errorText: "Informe um e-mail válido.",
   },
 };
 
 export const Disabled: Story = {
   args: {
-    label: "NÃºmero da inscriÃ§Ã£o",
+    label: "Número da inscrição",
     mask: undefined,
     value: "123456",
     disabled: true,
   },
 };
 
+function FormatterPlayground(
+  args: ComponentProps<typeof InputStandalone>,
+) {
+  const [value, setValue] = useState(String(args.value ?? ""));
+
+  useEffect(() => {
+    setValue(String(args.value ?? ""));
+  }, [args.value]);
+
+  return (
+    <InputStandalone
+      {...args}
+      value={value}
+      onChange={(event) => setValue(event.target.value)}
+    />
+  );
+}
+
+export const GenericFormatter: Story = {
+  args: {
+    label: "Código formatado",
+    mask: undefined,
+    value: "",
+    formatter: (value) => {
+      const compact = value.replace(/\D/g, "").slice(0, 10);
+      if (compact.length <= 4) return compact;
+      return `${compact.slice(0, 4)}-${compact.slice(4)}`;
+    },
+    helperText: "Digite, cole e edite para observar a preservação do cursor.",
+  },
+  render: (args) => <FormatterPlayground {...args} />,
+};

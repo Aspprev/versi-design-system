@@ -21,6 +21,12 @@ export type PageHeadingProps = {
   spacing?: "default" | "none";
 };
 
+function getTitleAttribute(title: ReactNode) {
+  return typeof title === "string" || typeof title === "number"
+    ? String(title)
+    : undefined;
+}
+
 function BackContent({ label }: Pick<PageHeadingBackAction, "label">) {
   return (
     <>
@@ -50,6 +56,7 @@ export default function PageHeading({
   spacing = "default",
 }: PageHeadingProps) {
   const backHref = getBackHref(back?.href);
+  const titleAttribute = getTitleAttribute(title);
   const backClassName =
     "mb-2 inline-flex w-fit items-center gap-1 text-sm font-semibold text-content-link hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring";
 
@@ -61,7 +68,7 @@ export default function PageHeading({
         className,
       )}
     >
-      <div className={classNames("min-w-0", contentClassName)}>
+      <div className={classNames("min-w-0 flex-1", contentClassName)}>
         {back && backHref ? (
           <a className={backClassName} href={backHref}>
             <BackContent label={back.label} />
@@ -76,7 +83,12 @@ export default function PageHeading({
           </button>
         ) : null}
 
-        <Typography element="h1" semanticRole="page-title">
+        <Typography
+          element="h1"
+          semanticRole="page-title"
+          title={titleAttribute}
+          className="min-w-0 tablet:truncate"
+        >
           {title}
         </Typography>
         {subtitle !== undefined && subtitle !== null && (
@@ -91,7 +103,7 @@ export default function PageHeading({
       </div>
 
       {actions && (
-        <div className="flex w-full flex-wrap items-center gap-2 tablet:w-auto tablet:justify-end">
+        <div className="flex w-full flex-wrap items-center gap-2 tablet:w-auto tablet:shrink-0 tablet:justify-end">
           {actions}
         </div>
       )}

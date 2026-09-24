@@ -55,6 +55,22 @@ export const Json: Story = {
   render: () => <JsonFileViewer />,
 };
 
+export const AsyncSource: Story = {
+  render: () => {
+    const source = useMemo(
+      () => Promise.resolve(new Blob(["Fonte assíncrona de exemplo."], { type: "text/plain" })),
+      [],
+    );
+    return (
+      <FileViewer
+        source={source}
+        fileName="async.txt"
+        title="Documento carregado de forma assíncrona"
+      />
+    );
+  },
+};
+
 export const Loading: Story = {
   args: {
     loading: true,
@@ -73,5 +89,14 @@ export const UnsupportedType: Story = {
     source: "https://example.com/documento.zip",
     fileName: "documento.zip",
     fallback: "O formato ZIP deve ser baixado para ser aberto.",
+  },
+};
+
+export const WithActions: Story = {
+  args: {
+    source: imageSource,
+    fileName: "compartilhavel.svg",
+    title: "Documento com ações",
+    actions: <button type="button">Compartilhar</button>,
   },
 };

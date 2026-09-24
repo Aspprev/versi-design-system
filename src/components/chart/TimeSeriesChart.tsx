@@ -2,7 +2,7 @@
 
 import { useHighContrastPreference } from "../../hooks/useHighContrastPreference";
 import { getChartTheme } from "../../utils/chart-theme";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import Chart, { type Props as ApexChartProps } from "./LazyApexChart";
 
 export type TimeSeriesChartOptions = NonNullable<ApexChartProps["options"]>;
@@ -10,6 +10,10 @@ export type TimeSeriesChartOptions = NonNullable<ApexChartProps["options"]>;
 export type TimeSeriesChartProps = Omit<ApexChartProps, "options"> & {
   options: TimeSeriesChartOptions;
   ariaLabel: string;
+  loading?: boolean;
+  loadingMessage?: ReactNode;
+  error?: ReactNode;
+  emptyMessage?: ReactNode;
   className?: string;
   chartClassName?: string;
   responsiveHeight?: boolean;
@@ -19,6 +23,10 @@ export type TimeSeriesChartProps = Omit<ApexChartProps, "options"> & {
 export default function TimeSeriesChart({
   options,
   ariaLabel,
+  loading = false,
+  loadingMessage = "Carregando gráfico…",
+  error,
+  emptyMessage = "Nenhum dado disponível.",
   className,
   chartClassName,
   responsiveHeight = false,
@@ -90,6 +98,13 @@ export default function TimeSeriesChart({
     responsiveHeight && measuredHeight ? measuredHeight : chartProps.height;
   const renderedWidth =
     responsiveHeight && measuredWidth ? measuredWidth : chartProps.width;
+  const hasSeriesData =
+    Array.isArray(chartProps.series) &&
+    chartProps.series.some((entry) => {
+      if (!entry || typeof entry !== "object") return false;
+      const data = (entry as { data?: unknown }).data;
+      return Array.isArray(data) ? data.length > 0 : data !== undefined;
+    });
   const xAxis = options.xaxis;
   const xAxisCategories = Array.isArray(xAxis?.categories)
     ? xAxis.categories
@@ -273,20 +288,29 @@ export default function TimeSeriesChart({
   };
 
   return (
-    <div
-      ref={containerRef}
-      role="img"
-      aria-label={ariaLabel}
-      className={className}
-    >
-      <Chart
-        key={renderKey}
-        {...chartProps}
-        className={chartClassName}
-        width={renderedWidth}
-        height={renderedHeight}
-        options={sharedOptions}
-      />
+    <div ref={containerRef} role="img" aria-label={ariaLabel} className={className}>
+      {loading ? (
+        <div role="status" aria-busy="true" aria-live="polite" className="flex min-h-32 items-center justify-center text-sm text-content-secondary">
+          {loadingMessage}
+        </div>
+      ) : error ? (
+        <div role="alert" className="flex min-h-32 items-center justify-center text-sm text-field-assistive-error">
+          {error}
+        </div>
+      ) : !hasSeriesData ? (
+        <div role="status" className="flex min-h-32 items-center justify-center text-sm text-content-secondary">
+          {emptyMessage}
+        </div>
+      ) : (
+        <Chart
+          key={renderKey}
+          {...chartProps}
+          className={chartClassName}
+          width={renderedWidth}
+          height={renderedHeight}
+          options={sharedOptions}
+        />
+      )}
     </div>
   );
 }

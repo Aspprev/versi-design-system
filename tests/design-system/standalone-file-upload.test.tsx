@@ -26,6 +26,8 @@ describe("primitives de upload e visualizacao", () => {
     expect(result.accepted.map((file) => file.name)).toEqual(["documento.pdf", "imagem.png"]);
     expect(result.rejected).toHaveLength(1);
     expect(result.rejected[0].reason).toBe("type");
+    expect(result.rejected[0].code).toBe("type");
+    expect(result.rejected[0].extension).toBe("js");
 
     expect(validateFiles([
       makeFile("primeiro.pdf", "application/pdf", "1"),
@@ -34,6 +36,38 @@ describe("primitives de upload e visualizacao", () => {
     expect(validateFiles([
       makeFile("grande.pdf", "application/pdf", "12345"),
     ], { accept: "application/pdf", maxSize: 4 }).rejected[0].reason).toBe("size");
+  });
+
+  it("permite mensagens do consumidor sem perder o contexto estruturado", () => {
+    const result = validateFiles([
+      makeFile("protocolo.pdf", "application/pdf", "12345"),
+    ], {
+      maxSize: 4,
+      messages: {
+        size: ({ fileName, size, maxSize }) =>
+          `${fileName}: ${size} bytes de ${maxSize} permitidos.`,
+      },
+    });
+
+    expect(result.rejected[0]).toMatchObject({
+      code: "size",
+      fileName: "protocolo.pdf",
+      size: 5,
+      maxSize: 4,
+      message: "protocolo.pdf: 5 bytes de 4 permitidos.",
+    });
+  });
+
+  it("rejeita arquivos vazios e arquivos sem metadados válidos", () => {
+    const empty = validateFiles([
+      makeFile("vazio.pdf", "application/pdf", ""),
+    ], { accept: "application/pdf" });
+    const invalid = validateFiles([
+      { name: "", size: 12, type: "application/pdf" } as File,
+    ]);
+
+    expect(empty.rejected[0]).toMatchObject({ code: "empty", reason: "empty" });
+    expect(invalid.rejected[0]).toMatchObject({ code: "invalid", reason: "invalid" });
   });
 
   it("mantem contrato publico e estados acessiveis no dropzone", () => {
@@ -51,5 +85,12 @@ describe("primitives de upload e visualizacao", () => {
     expect(renderToStaticMarkup(<FileViewer title="Documento" />)).toContain('role="region"');
     expect(renderToStaticMarkup(<FileViewer error="Arquivo indisponivel." />)).toContain('role="alert"');
     expect(renderToStaticMarkup(<FileViewer loading />)).toContain('aria-busy="true"');
+    expect(renderToStaticMarkup(
+      <FileViewer
+        source="https://example.com/documento.pdf"
+        contentType="application/pdf"
+        actions={<button type="button">Compartilhar</button>}
+      />,
+    )).toContain("Compartilhar");
   });
 });

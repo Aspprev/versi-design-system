@@ -40,6 +40,15 @@ body {
   box-shadow: var(--shadow-md);
 }
 
+.versi-docs-hero,
+.versi-docs-hero h1,
+.versi-docs-hero p,
+.versi-docs-hero a,
+.versi-docs-hero a:visited,
+.versi-docs-hero a:hover {
+  color: #ffffff !important;
+}
+
 .versi-docs-hero::after {
   position: absolute;
   right: -5rem;

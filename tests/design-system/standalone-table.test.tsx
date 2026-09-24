@@ -43,6 +43,32 @@ describe("Table standalone", () => {
     expect(html).toContain("Nenhum participante encontrado");
   });
 
+  it("expõe loading e erro mantendo o contrato desktop/mobile", () => {
+    const tableHtml = renderToStaticMarkup(
+      <Table
+        header={header}
+        data={data}
+        loading
+        loadingMessage="Carregando participantes"
+        errorMessage="Não foi possível carregar participantes"
+      />,
+    );
+    const cardsHtml = renderToStaticMarkup(
+      <MobileCardTable
+        headers={[{ label: "Nome" }]}
+        data={data}
+        keyExtractor={(item) => String(item.id)}
+        renderCard={(item) => <span>{item.name}</span>}
+        errorMessage="Não foi possível carregar participantes"
+      />,
+    );
+
+    expect(tableHtml).toContain('aria-busy="true"');
+    expect(tableHtml).toContain("Carregando participantes");
+    expect(cardsHtml).toContain('role="alert"');
+    expect(cardsHtml).toContain("Não foi possível carregar participantes");
+  });
+
   it("renderiza cartões móveis com região acessível e paginação", () => {
     const html = renderToStaticMarkup(
       <MobileCardTable

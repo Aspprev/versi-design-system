@@ -8,6 +8,8 @@ export type {
 } from "./FileDropzone";
 export { validateFiles } from "./validation";
 export type {
+  FileRejectionContext,
+  FileValidationMessage,
   FileValidationOptions,
   FileValidationReason,
   FileValidationResult,
@@ -21,4 +23,8 @@ export type {
   FileUploadProgressProps,
   FileUploadProgressStatus,
 } from "./FileUploadProgress";
-export type { FileViewerProps, FileViewerSource } from "./FileViewer";
+export type {
+  FileViewerProps,
+  FileViewerSource,
+  FileViewerSourceInput,
+} from "./FileViewer";

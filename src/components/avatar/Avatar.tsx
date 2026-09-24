@@ -5,7 +5,7 @@ import AvatarImage from "./AvatarImage";
 
 export type AvatarProps = {
   name?: string;
-  size?: "xs" | "sm" | "md" | "lg";
+  size?: "xs" | "sm" | "md" | "lg" | "xl";
   image?: string;
   description?: string;
 } & React.HTMLAttributes<HTMLDivElement>;
@@ -15,6 +15,7 @@ const avatarSizeMap = {
   sm: "w-6 h-6 text-sm",
   md: "w-8 h-8 text-xl",
   lg: "w-9 h-9 text-2xl",
+  xl: "w-[4rem] h-[4rem] text-[2rem]",
 };
 
 function Inicials(name: string) {

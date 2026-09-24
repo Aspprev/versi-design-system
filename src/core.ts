@@ -15,6 +15,7 @@ export type {
 } from "./components/typography/typography";
 export { default as Divider } from "./components/divider/Divider";
 export { default as LoadingDots } from "./components/loadingDots/LoadingDotsView";
+export type { LoadingDotsProps } from "./components/loadingDots/LoadingDotsView";
 export { default as Surface } from "./components/surface/Surface";
 export type { SurfaceProps } from "./components/surface/Surface";
 export { default as ModalCard } from "./components/modalCard/ModalCardView";
@@ -22,6 +23,7 @@ export type { ModalCardProps } from "./components/modalCard/ModalCardView";
 export { default as Notice } from "./components/notice/NoticeView";
 export type { BoxProps } from "./components/notice/NoticeView";
 export { default as PageState } from "./components/pageState/PageState";
+export type { PageStateProps, PageStateVariant } from "./components/pageState/PageState";
 export { default as Tooltip } from "./components/tooltip/Tooltip";
 export type { TooltipProps } from "./components/tooltip/Tooltip";
 export { default as Avatar } from "./components/avatar/Avatar";
@@ -53,7 +55,10 @@ export type {
   PageHeadingProps,
 } from "./components/page-heading/PageHeading";
 export { default as PageTabsHeader } from "./components/page-tabs";
-export type { PageTabItem } from "./components/page-tabs/PageTabsHeader";
+export type {
+  PageTabItem,
+  PageTabsHeaderProps,
+} from "./components/page-tabs/PageTabsHeader";
 export { InfoGrid, InfoItem } from "./components/info-grid";
 export type { InfoGridProps, InfoItemProps } from "./components/info-grid";
 export { FilterBar } from "./components/filter-bar";

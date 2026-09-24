@@ -90,6 +90,9 @@ import {
 
 - `OtpCodeInput` suporta `onComplete`, colagem de código, máscara, erro e controle por `value`/`values`.
 - `QRCode` suporta `description`, `ariaLabel`, `loading`, `error`, `size` e nível de correção.
+- `PageHeading` e `PageTabsHeader` mantêm o bloco do título flexível em tablet/desktop, truncam títulos longos com reticências e preservam o texto completo no atributo `title` quando o título é texto simples. O retorno (`back`) e as ações continuam disponíveis.
+- `Input` e `InputStandalone` aceitam `formatter={(value) => string}` para máscaras definidas pelo consumidor, sem props de domínio; as máscaras nomeadas existentes permanecem compatíveis.
+- `validateFiles` retorna `code`, nome, extensão, tamanho e limite da rejeição e aceita mensagens por código; `FileViewer` também aceita `Promise<FileViewerSource>` como source.
 - Upload e `FileViewer` são controlados pelo consumidor; transporte, autenticação, persistência e download não fazem parte do pacote.
 - `DatePicker` aceita `selectionMode="year"` e mantém `selectionMode="day"` como padrão.
 - `DomainStatusBadge` aceita `statusMap` para vocabulário específico do produto.
@@ -225,3 +228,10 @@ Ao criar ou alterar um componente:
 6. execute `npm run prepack` antes de gerar o pacote.
 
 Detalhes de contratos, governança e segurança ficam na pasta `docs/`. A documentação de uso visual deve permanecer principalmente no Storybook.
+### Contratos adicionados no lote seguinte
+
+- `Input` e `InputStandalone` preservam a posição do cursor ao aplicar um `formatter` genérico; máscaras de domínio continuam sendo definidas pelo consumidor.
+- `InputSlider` usa `suffix` como prop canônica e mantém `sufix` apenas como alias de migração. `Avatar` aceita `xl` além dos tamanhos existentes.
+- `validateFiles` também rejeita arquivos vazios ou inválidos, com mensagens customizáveis; `FileViewer` aceita um slot `actions`.
+- `TimeSeriesChart` e `InteractiveDonutChart` expõem estados genéricos de carregamento, erro e ausência de dados.
+- `BoletoBarCode` aceita `width`, `height`, `quietZone` e estado de erro; o payload de boleto continua sendo responsabilidade do consumidor.

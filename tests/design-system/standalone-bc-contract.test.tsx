@@ -7,6 +7,7 @@ import {
   InfoItem,
   InputStandalone,
   PageHeading,
+  PageTabsHeader,
   SkipLink,
   StatusBadge,
 } from "../../src";
@@ -55,6 +56,27 @@ describe("lote B/C do design system standalone", () => {
     expect(html).toContain("Tipo");
     expect(html).toContain("Pendente");
     expect(html).toContain('type="button"');
+  });
+
+  it("mantém títulos longos flexíveis e o texto completo no atributo title", () => {
+    const html = renderToStaticMarkup(
+      <PageTabsHeader
+        title="Contracheques e histórico de pagamentos disponíveis"
+        tabs={[
+          { id: "benefit", label: "Meu benefício" },
+          { id: "statements", label: "Contracheques" },
+        ]}
+        activeTab="statements"
+        onTabChange={() => undefined}
+      />,
+    );
+
+    expect(html).toContain("min-w-0 flex-1");
+    expect(html).toContain("tablet:truncate");
+    expect(html).toContain("tablet:shrink-0");
+    expect(html).toContain(
+      'title="Contracheques e histórico de pagamentos disponíveis"',
+    );
   });
 
   it("permite configurar o destino do skip link e mantém os recursos C server-safe", () => {

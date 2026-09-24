@@ -12,7 +12,7 @@ export type PageTabItem = {
   disabled?: boolean;
 };
 
-interface PageTabsHeaderProps {
+export interface PageTabsHeaderProps {
   title: string;
   tabs: PageTabItem[];
   activeTab: string;
@@ -33,12 +33,14 @@ export default function PageTabsHeader({
     <div
       className={`flex flex-col gap-4 tablet:flex-row tablet:items-end tablet:justify-between ${className}`}
     >
-      <PageHeading title={title} spacing="none" />
+      <div className="min-w-0 flex-1">
+        <PageHeading title={title} spacing="none" />
+      </div>
 
       {tabs.length > 1 && (
         <nav
           aria-label={title}
-          className="flex w-full max-w-full flex-row flex-nowrap items-end gap-3 overflow-x-auto tablet:w-fit tablet:justify-end tablet:overflow-visible"
+          className="flex w-full max-w-full flex-row flex-nowrap items-end gap-3 overflow-x-auto tablet:w-fit tablet:shrink-0 tablet:justify-end tablet:overflow-visible"
         >
           <div role="tablist" className="flex flex-nowrap items-end gap-3">
             {tabs.map((tab) => {

@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.4.4 — 2026-09-24 — evolução de layout, contratos e Storybook
+
+### Corrigido
+
+- `PageHeading` e `PageTabsHeader` passaram a reservar espaço flexível para títulos e largura necessária para abas, evitando quebra indevida em tablet/desktop.
+- Títulos textuais longos usam truncamento responsivo com o conteúdo completo disponível no atributo `title`; títulos compostos continuam sob controle do consumidor.
+- `FileViewer` passou a aceitar source assíncrono, mantendo loading, erro e fallback no componente visual.
+
+### Documentação
+
+- Adicionado o plano de evolução incremental em `docs/plano-evolucao-versi-ds-rpps.md`.
+- `PageTabsHeaderProps` passou a ser exportado pelos entrypoints raiz e `core`.
+- `InputFormatter`, tipos de estados públicos e rejeições estruturadas de arquivos foram documentados nos entrypoints especializados.
+
 ## 0.4.3 — 2026-09-23 — largura de formulários e controle de bandeiras
 
 ### Alterado
@@ -134,3 +148,10 @@ Importe os componentes pelos entrypoints públicos. Para seleção exclusiva de
 ano, substitua implementações locais por `DatePicker selectionMode="year"`;
 para arquivos, controle a fila e o upload no consumidor e passe os estados a
 `FileList`/`FileUploadProgress`.
+### Adicionado no lote seguinte
+
+- Preservação de caret para `formatter` genérico em `Input` e `InputStandalone`.
+- `suffix` canônico em `InputSlider`, suporte a `Avatar` `xl` e ações por slot em `FileViewer`.
+- Rejeições de upload para arquivo vazio ou inválido.
+- Estados de loading, erro e ausência de dados em charts.
+- Dimensões, quiet zone e erro configuráveis em `BoletoBarCode`.

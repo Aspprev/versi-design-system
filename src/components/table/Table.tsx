@@ -89,6 +89,8 @@ export interface TableProps<TData = unknown>
   itemsPerPage?: number;
   emptyMessage?: string;
   errorMessage?: ReactNode;
+  loading?: boolean;
+  loadingMessage?: ReactNode;
   totalWidthUnits?: number;
   showRowDivider?: boolean;
   enableRowHover?: boolean;
@@ -117,6 +119,8 @@ function Table<TData = unknown>(props: TableProps<TData>) {
     itemsPerPage = 10,
     emptyMessage = "Nenhum item encontrado",
     errorMessage,
+    loading = false,
+    loadingMessage = "Carregando dados…",
     totalWidthUnits,
     showRowDivider = false,
     enableRowHover = false,
@@ -544,6 +548,9 @@ function Table<TData = unknown>(props: TableProps<TData>) {
       accessibleName={accessibleName}
       caption={caption}
       onFilterChange={onFilterChange}
+      loading={loading}
+      loadingMessage={loadingMessage}
+      errorMessage={errorMessage}
       className={className}
       showPagination={resolvedShowPagination}
       pagination={resolvedPagination ?? undefined}

@@ -42,3 +42,8 @@ SelectCountry usa o nome como valor na lista padrão (`Brasil`), com `cca2` sepa
 O seletor de país do InputPhone participa da ordem de Tab. Enter/Espaço ou setas abrem o painel; a busca recebe foco. Setas percorrem as opções e Enter/Espaço selecionam. Escape fecha e devolve foco ao botão; Tab fecha e avança ao telefone, Shift+Tab retorna ao botão. A busca e o painel têm nomes acessíveis. O campo usa `type="tel"` também no modo mascarado.
 
 A escolha explícita preserva o país por ISO-2 enquanto o componente estiver montado, inclusive para países com o mesmo DDI. O payload `{ ddi, ddd, numero }` permanece compatível e não distingue esses países ao restaurar dados. A posição do painel pode ser recalculada sem retirar o foco das opções.
+## Contratos transversais
+
+- `Input` e `InputStandalone` aceitam `formatter` e preservam o caret durante edição, colagem e exclusão conforme a transformação fornecida pelo consumidor.
+- `InputSlider.suffix` é o nome canônico; `sufix` permanece somente como alias de migração.
+- `validateFiles` aceita limites, tipos/extensões e mensagens por código (`type`, `size`, `count`, `empty` e `invalid`).

@@ -40,6 +40,10 @@ const textVariants = cva("font-nunito", {
   },
 });
 
+/**
+ * Semantic text roles map to the DS typography tokens. They describe the
+ * purpose of the text, while `element` controls the rendered HTML element.
+ */
 export type TypographySemanticRole =
   | "page-title"
   | "section-title"
@@ -81,8 +85,11 @@ type TextElement =
 
 export type TypographyProps = VariantProps<typeof textVariants> & {
   children: React.ReactNode;
+  /** HTML element used for the content; it is independent from semanticRole. */
   element?: TextElement;
+  /** Optional semantic role with token-backed size, weight and color defaults. */
   semanticRole?: TypographySemanticRole;
+  /** Additional classes for layout or a consumer-specific presentation need. */
   className?: string;
 } & React.HTMLAttributes<HTMLElement>;
 
