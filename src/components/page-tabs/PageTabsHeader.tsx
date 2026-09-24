@@ -40,7 +40,7 @@ export default function PageTabsHeader({
       {tabs.length > 1 && (
         <nav
           aria-label={title}
-          className="flex w-full min-w-0 max-w-full flex-row flex-nowrap items-end gap-3 overflow-x-auto tablet:w-fit tablet:shrink-0 tablet:justify-end tablet:overflow-visible"
+          className="flex w-auto flex-row flex-nowrap items-end gap-3 overflow-x-auto tablet:w-fit tablet:shrink-0 tablet:justify-end tablet:overflow-visible"
         >
           <div role="tablist" className="flex flex-nowrap items-end gap-3">
             {tabs.map((tab) => {

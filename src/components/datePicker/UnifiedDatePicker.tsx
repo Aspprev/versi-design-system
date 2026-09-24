@@ -62,7 +62,6 @@ export interface UnifiedDatePickerProps {
   error?: boolean;
   errorText?: string;
   helperText?: string | React.ReactNode;
-  defaultView?: ViewMode;
   navigationVariant?: DatePickerNavigationVariant;
   selectionMode?: DatePickerSelectionMode;
   showAdjacentDays?: boolean;
@@ -95,21 +94,37 @@ const formatDateForInput = (
   selectionMode: DatePickerSelectionMode = "day",
 ) => {
   if (!date || !isValid(date)) return "";
-  return format(date, selectionMode === "year" ? "yyyy" : "dd/MM/yyyy");
+  return format(
+    date,
+    selectionMode === "year"
+      ? "yyyy"
+      : selectionMode === "month"
+        ? "MM/yyyy"
+        : "dd/MM/yyyy",
+  );
 };
 
 const formatInputValue = (
   value: string,
   selectionMode: DatePickerSelectionMode = "day",
 ) => {
-  const digits = value.replace(/\D/g, "").slice(0, selectionMode === "year" ? 4 : 8);
+  const digits = value
+    .replace(/\D/g, "")
+    .slice(0, selectionMode === "year" ? 4 : selectionMode === "month" ? 6 : 8);
   if (selectionMode === "year") return digits;
+  if (selectionMode === "month") {
+    if (digits.length <= 2) return digits;
+    return `${digits.slice(0, 2)}/${digits.slice(2)}`;
+  }
   if (digits.length <= 2) return digits;
   if (digits.length <= 4) return `${digits.slice(0, 2)}/${digits.slice(2)}`;
   return `${digits.slice(0, 2)}/${digits.slice(2, 4)}/${digits.slice(4)}`;
 };
 
-const parseDateValue = (value: unknown): Date | null => {
+const parseDateValue = (
+  value: unknown,
+  selectionMode: DatePickerSelectionMode = "day",
+): Date | null => {
   if (!value) return null;
 
   if (value instanceof Date) {
@@ -119,6 +134,27 @@ const parseDateValue = (value: unknown): Date | null => {
   if (typeof value === "string") {
     const trimmedValue = value.trim();
     if (!trimmedValue) return null;
+
+    if (selectionMode === "year" && /^\d{4}$/.test(trimmedValue)) {
+      const year = Number(trimmedValue);
+      const parsedYear = new Date(year, 0, 1);
+      return isValid(parsedYear) && parsedYear.getFullYear() === year
+        ? parsedYear
+        : null;
+    }
+
+    if (selectionMode === "month") {
+      const monthMatch = /^(\d{2})\/(\d{4})$/.exec(trimmedValue);
+      if (monthMatch) {
+        const month = Number(monthMatch[1]);
+        const year = Number(monthMatch[2]);
+        if (month < 1 || month > 12) return null;
+        const parsedMonth = new Date(year, month - 1, 1);
+        return isValid(parsedMonth) && parsedMonth.getFullYear() === year
+          ? parsedMonth
+          : null;
+      }
+    }
 
     const parsedPtBr = parse(trimmedValue, "dd/MM/yyyy", new Date());
     if (
@@ -143,7 +179,7 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
   onChange,
   onBlur,
   label,
-  placeholder = "dd/mm/aaaa",
+  placeholder,
   minDate = addYears(new Date(), -120),
   maxDate = addYears(new Date(), 120),
   isDisabled = false,
@@ -152,7 +188,6 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
   error,
   errorText,
   helperText,
-  defaultView = "days",
   navigationVariant = "drilldown",
   selectionMode = "day",
   showAdjacentDays = true,
@@ -170,8 +205,12 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
     ? getIn(formik.values, name)
     : undefined;
   const selectedDate = useMemo(
-    () => parseDateValue(hasFormikField ? formikRawValue : value),
-    [formikRawValue, hasFormikField, value],
+    () =>
+      parseDateValue(
+        hasFormikField ? formikRawValue : value,
+        selectionMode,
+      ),
+    [formikRawValue, hasFormikField, selectionMode, value],
   );
 
   const formikTouched = hasFormikField && formik
@@ -180,20 +219,34 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
   const formikError = hasFormikField && formik ? getIn(formik.errors, name) : undefined;
 
   const isFieldDisabled = disabled || isDisabled;
-  const resolvedPlaceholder = selectionMode === "year" ? "aaaa" : placeholder;
+  const resolvedPlaceholder =
+    placeholder ??
+    (selectionMode === "year"
+      ? "aaaa"
+      : selectionMode === "month"
+        ? "mm/aaaa"
+        : "dd/mm/aaaa");
   const [isOpen, setIsOpen] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
   const [draftValue, setDraftValue] = useState(
     formatDateForInput(selectedDate, selectionMode),
   );
   const [viewDate, setViewDate] = useState<Date>(getSafeViewDate(selectedDate));
-  const [mode, setMode] = useState<ViewMode>(defaultView);
+  const [mode, setMode] = useState<ViewMode>(
+    selectionMode === "year"
+      ? "years"
+      : selectionMode === "month"
+        ? "months"
+        : "days",
+  );
   const [inputError, setInputError] = useState<string | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const calendarId = `date-picker-${useId()}`;
   const wasOpenRef = useRef(false);
+  const skipFocusRestoreRef = useRef(false);
+  const suppressOpenOnFocusRef = useRef(false);
   const rafRef = useRef<number | null>(null);
   const [isMounted, setIsMounted] = useState(false);
   const [panelNeedsScroll, setPanelNeedsScroll] = useState(false);
@@ -203,10 +256,12 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
     if (
       wasOpenRef.current &&
       !isOpen &&
+      !skipFocusRestoreRef.current &&
       dropdownRef.current?.contains(document.activeElement)
     ) {
       inputRef.current?.focus();
     }
+    skipFocusRestoreRef.current = false;
     wasOpenRef.current = isOpen;
   }, [isOpen]);
 
@@ -229,9 +284,7 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
         ? "years"
         : selectionMode === "month"
           ? "months"
-          : navigationVariant === "dropdown"
-            ? "days"
-            : defaultView,
+          : "days",
     );
 
     const onMouseDown = (event: MouseEvent) => {
@@ -239,6 +292,7 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
         !containerRef.current?.contains(event.target as Node) &&
         !dropdownRef.current?.contains(event.target as Node)
       ) {
+        skipFocusRestoreRef.current = true;
         setIsOpen(false);
       }
     };
@@ -254,7 +308,7 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
       document.removeEventListener("mousedown", onMouseDown);
       document.removeEventListener("keydown", onKeyDown);
     };
-  }, [defaultView, isOpen, navigationVariant, selectionMode]);
+  }, [isOpen, navigationVariant, selectionMode]);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -326,7 +380,7 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
       window.removeEventListener("resize", scheduleDropdownPosition);
       window.removeEventListener("scroll", scheduleDropdownPosition, true);
     };
-  }, [isOpen, defaultView, navigationVariant, viewDate, draftValue]);
+  }, [isOpen, navigationVariant, viewDate, draftValue]);
 
   const syncValue = (nextDate: Date | null) => {
     if (hasFormikField && formik) {
@@ -350,6 +404,10 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
 
   const closeCalendar = () => {
     setIsOpen(false);
+
+    if (document.activeElement === inputRef.current) return;
+
+    suppressOpenOnFocusRef.current = true;
     inputRef.current?.focus();
   };
 
@@ -499,6 +557,40 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
       return;
     }
 
+    if (selectionMode === "month") {
+      if (normalizedValue.length < 7) {
+        syncValue(null);
+        setInputError("Mês incompleto");
+        return;
+      }
+
+      const parsedMonth = parseDateValue(normalizedValue, selectionMode);
+      if (!parsedMonth) {
+        syncValue(null);
+        setInputError("Mês inválido");
+        return;
+      }
+
+      const monthDisabled =
+        isBefore(endOfMonth(parsedMonth), startOfDay(minDate)) ||
+        isAfter(startOfMonth(parsedMonth), startOfDay(maxDate));
+      if (monthDisabled) {
+        syncValue(null);
+        setInputError("Mês fora do intervalo permitido");
+        return;
+      }
+
+      const nextDate = isBefore(parsedMonth, minDate)
+        ? minDate
+        : isAfter(parsedMonth, maxDate)
+          ? maxDate
+          : parsedMonth;
+      syncValue(nextDate);
+      setViewDate(nextDate);
+      setInputError(null);
+      return;
+    }
+
     if (selectionMode === "year") {
       if (normalizedValue.length < 4) {
         syncValue(null);
@@ -522,7 +614,7 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
       return;
     }
 
-    const parsedDate = parseDateValue(normalizedValue);
+    const parsedDate = parseDateValue(normalizedValue, selectionMode);
     if (!parsedDate) {
       syncValue(null);
       setInputError("Data invalida");
@@ -623,28 +715,42 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
           type="text"
           inputMode="numeric"
           autoComplete="off"
-           maxLength={selectionMode === "year" ? 4 : 10}
+          maxLength={
+            selectionMode === "year" ? 4 : selectionMode === "month" ? 7 : 10
+          }
           disabled={isFieldDisabled}
-           placeholder={resolvedPlaceholder}
+          placeholder={resolvedPlaceholder}
           value={draftValue}
           onClick={openCalendar}
           onFocus={() => {
             setIsEditing(true);
-            openCalendar();
+            const suppressOpen = suppressOpenOnFocusRef.current;
+            suppressOpenOnFocusRef.current = false;
+            if (!suppressOpen) openCalendar();
           }}
           onChange={(event) => {
-             const nextValue = formatInputValue(event.target.value, selectionMode);
+            const nextValue = formatInputValue(event.target.value, selectionMode);
             setDraftValue(nextValue);
             setInputError(null);
 
-             if (selectionMode === "day" && nextValue.length === 10) {
-              const parsedDate = parseDateValue(nextValue);
+            const expectedLength =
+              selectionMode === "year" ? 4 : selectionMode === "month" ? 7 : 10;
+            if (nextValue.length === expectedLength) {
+              const parsedDate = parseDateValue(nextValue, selectionMode);
               if (parsedDate) {
                 setViewDate(parsedDate);
               }
             }
           }}
           onBlur={(event) => {
+            const nextFocusedElement = event.relatedTarget as Node | null;
+            if (
+              nextFocusedElement &&
+              dropdownRef.current?.contains(nextFocusedElement)
+            ) {
+              return;
+            }
+
             setIsEditing(false);
             commitDraftValue(event.target.value);
             onBlur?.(event);
@@ -914,6 +1020,7 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
                         className={classNames(
                           "rounded-sm py-1 text-xs capitalize transition-colors",
                           {
+                            "cursor-not-allowed opacity-30": monthDisabled,
                             "border border-selection-border bg-selection-background font-semibold text-selection-content":
                               selected,
                             "text-content-primary hover:bg-primary-1/10":
@@ -950,6 +1057,7 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
                         className={classNames(
                           "rounded-sm py-1 text-xs transition-colors",
                           {
+                            "cursor-not-allowed opacity-30": yearDisabled,
                             "border border-selection-border bg-selection-background font-semibold text-selection-content":
                               selected,
                             "text-content-primary hover:bg-primary-1/10":

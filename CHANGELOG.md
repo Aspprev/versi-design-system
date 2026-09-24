@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.7 — 2026-09-24 — seleção mensal e anual do DatePicker
+
+### Corrigido
+
+- Removido `defaultView`; o modo inicial agora é derivado de `selectionMode`.
+- Corrigidos os formatos de valor e placeholder para seleção de mês (`MM/AAAA`) e ano (`AAAA`).
+- Corrigido o fechamento do calendário por clique externo e a troca de ano após uma seleção anterior.
+- Meses e anos fora dos limites mínimo/máximo agora recebem indicação visual de desabilitado.
+
 ## 0.4.6 — 2026-09-24 — ajustes finais de layout do PageHeading
 
 ### Corrigido
