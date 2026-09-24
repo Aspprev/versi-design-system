@@ -52,6 +52,21 @@ export const Default: Story = {
   render: (args) => <DatePickerForm {...args} />,
 };
 
+export const MonthSelection: Story = {
+  args: {
+    label: "Mês de referência",
+    name: "mesReferencia",
+    placeholder: "mm/aaaa",
+    selectionMode: "month",
+    minDate: new Date(2024, 5, 15),
+    maxDate: new Date(2024, 7, 31),
+    helperText: "Selecione o mês de referência.",
+  },
+  render: (args) => (
+    <DatePickerForm {...args} initialValue={new Date(2024, 6, 1)} />
+  ),
+};
+
 export const Filled: Story = {
   render: (args) => (
     <DatePickerForm {...args} initialValue={new Date(1991, 7, 26)} />
@@ -89,6 +104,7 @@ export const YearSelection: Story = {
   args: {
     label: "Ano de referência",
     name: "anoReferencia",
+    placeholder: "aaaa",
     selectionMode: "year",
     minDate: new Date(2020, 0, 1),
     maxDate: new Date(2030, 11, 31),

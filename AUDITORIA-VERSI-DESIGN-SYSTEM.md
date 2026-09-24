@@ -343,7 +343,7 @@ O agrupamento é coerente e evita deep imports. Os testes de entrypoints e publi
 
 ### 9.4 DatePicker
 
-**Estado:** um dos componentes mais importantes do pacote, já com seleção de dia, mês e ano, `defaultView`, `navigationVariant`, min/max, erro e navegação por teclado.
+**Estado:** um dos componentes mais importantes do pacote, já com seleção de dia, mês e ano via `selectionMode`, `navigationVariant`, min/max, erro e navegação por teclado.
 
 **Pontos fortes:** cobre a necessidade de seleção por ano e possui atenção a ARIA e controles de navegação.
 

@@ -85,6 +85,53 @@ describe("DatePicker standalone", () => {
     expect(html).toContain("Informe o ano do documento.");
   });
 
+  it("formata a seleÃ§Ã£o mensal somente como mÃªs e ano", () => {
+    const html = renderToStaticMarkup(
+      <DatePicker
+        name="mesReferencia"
+        label="MÃªs de referÃªncia"
+        value={new Date(2024, 7, 26)}
+        selectionMode="month"
+        minDate={new Date(2020, 0, 15)}
+        maxDate={new Date(2030, 11, 31)}
+      />,
+    );
+
+    expect(html).toContain('value="08/2024"');
+    expect(html).toContain('placeholder="mm/aaaa"');
+    expect(html).toContain('maxLength="7"');
+    expect(html).not.toContain('value="26/08/2024"');
+  });
+
+  it("formata a seleÃ§Ã£o anual somente como ano", () => {
+    const html = renderToStaticMarkup(
+      <DatePicker
+        name="anoReferenciaPreenchido"
+        label="Ano de referÃªncia"
+        value={new Date(2024, 7, 26)}
+        selectionMode="year"
+      />,
+    );
+
+    expect(html).toContain('value="2024"');
+    expect(html).toContain('placeholder="aaaa"');
+    expect(html).toContain('maxLength="4"');
+    expect(html).not.toContain('value="26/08/2024"');
+  });
+
+  it("respeita placeholder personalizado no modo ano", () => {
+    const html = renderToStaticMarkup(
+      <DatePicker
+        name="anoReferenciaCustomizado"
+        label="Ano de referÃªncia"
+        selectionMode="year"
+        placeholder="AAAA fiscal"
+      />,
+    );
+
+    expect(html).toContain('placeholder="AAAA fiscal"');
+  });
+
   it("mantem isDisabled como alias compatÃ­vel de disabled", () => {
     const html = renderToStaticMarkup(
       <DatePicker name="data" isDisabled label="Data" />,
