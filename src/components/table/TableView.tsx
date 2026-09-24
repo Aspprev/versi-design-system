@@ -518,7 +518,7 @@ function TableView<TData>({
               onClick={pagination.onPrevious}
               disabled={pagination.currentPage === 1}
               aria-label="Ir para a página anterior"
-              className={`${paginationSizeClasses.itemHeight} inline-flex ${paginationVariant === "arrows" ? paginationSizeClasses.pageWidth : paginationSizeClasses.controlWidth} items-center justify-center gap-1 rounded border border-border-default ${paginationSizeClasses.controlPadding} ${paginationSizeClasses.text} leading-none text-content-primary hover:border-border-strong disabled:cursor-not-allowed disabled:border-border-default disabled:opacity-50`}
+              className={`${paginationSizeClasses.itemHeight} inline-flex ${paginationVariant === "arrows" ? paginationSizeClasses.pageWidth : ""} items-center justify-center gap-1 whitespace-nowrap rounded border border-border-default ${paginationSizeClasses.controlPadding} ${paginationSizeClasses.text} leading-none text-content-primary hover:border-border-strong disabled:cursor-not-allowed disabled:border-border-default disabled:opacity-50`}
             >
               <MdKeyboardArrowLeft className="h-3 w-3 text-content-muted" />
               {paginationVariant !== "arrows" && "Anterior"}
@@ -537,7 +537,7 @@ function TableView<TData>({
               onClick={pagination.onNext}
               disabled={pagination.currentPage === pagination.totalPages}
               aria-label="Ir para a próxima página"
-              className={`${paginationSizeClasses.itemHeight} inline-flex ${paginationVariant === "arrows" ? paginationSizeClasses.pageWidth : paginationSizeClasses.controlWidth} items-center justify-center gap-1 rounded border border-border-default ${paginationSizeClasses.controlPadding} ${paginationSizeClasses.text} leading-none text-content-primary hover:border-border-strong disabled:cursor-not-allowed disabled:border-border-default disabled:opacity-50`}
+              className={`${paginationSizeClasses.itemHeight} inline-flex ${paginationVariant === "arrows" ? paginationSizeClasses.pageWidth : ""} items-center justify-center gap-1 whitespace-nowrap rounded border border-border-default ${paginationSizeClasses.controlPadding} ${paginationSizeClasses.text} leading-none text-content-primary hover:border-border-strong disabled:cursor-not-allowed disabled:border-border-default disabled:opacity-50`}
             >
               {paginationVariant !== "arrows" && "Próxima"}
               <MdKeyboardArrowRight className="h-3 w-3 text-content-muted" />

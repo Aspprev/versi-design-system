@@ -29,8 +29,7 @@ function PaginationView(props: PaginationProps) {
   } = props;
   const totalPages = Math.max(1, Math.ceil(totalResults / perPage));
   const sizeClasses = PAGINATION_SIZE_CLASSES[size];
-  const controlWidth =
-    variant === "arrows" ? sizeClasses.pageWidth : sizeClasses.controlWidth;
+  const controlWidth = variant === "arrows" ? sizeClasses.pageWidth : "";
 
   return (
     <nav
@@ -48,7 +47,7 @@ function PaginationView(props: PaginationProps) {
             type="button"
             aria-label="Ir para a página anterior"
             className={cs(sizeClasses.itemHeight, controlWidth, sizeClasses.controlPadding, 'rounded-sm border border-border-default',
-              'flex items-center justify-center gap-1 text-content-primary', sizeClasses.text,
+              'flex items-center justify-center gap-1 whitespace-nowrap text-content-primary', sizeClasses.text,
               'cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring')}
             onClick={() => onClick(currentPage - 1)}>
             <MdChevronLeft size={size === "small" ? 9 : 10} aria-hidden="true" focusable="false" />
@@ -67,7 +66,7 @@ function PaginationView(props: PaginationProps) {
             type="button"
             aria-label="Ir para a próxima página"
             className={cs(sizeClasses.itemHeight, controlWidth, sizeClasses.controlPadding, 'rounded-sm border border-border-default',
-              'flex items-center justify-center gap-1 text-content-primary', sizeClasses.text,
+              'flex items-center justify-center gap-1 whitespace-nowrap text-content-primary', sizeClasses.text,
               'cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring')}
             onClick={() => onClick(currentPage + 1)}>
             {variant === "default" && "Próxima"}

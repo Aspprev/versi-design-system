@@ -28,6 +28,7 @@ describe("altura consistente da paginação", () => {
     );
 
     expectSharedPaginationHeight(html);
+    expect(html).not.toContain("w-24");
     expect(html).toContain("Anterior");
     expect(html).toContain("Próxima");
     expect(html).toContain('aria-current="page"');
