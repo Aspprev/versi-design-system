@@ -31,3 +31,21 @@ export const WithActions: Story = {
     ),
   },
 };
+
+export const LongTitle: Story = {
+  args: {
+    title: "Histórico de atendimentos e solicitações disponíveis no portal",
+  },
+};
+
+export const FlexibleLimitedWidth: Story = {
+  args: {
+    title: "Meu benefício",
+    subtitle: "Confira os dados do seu benefício.",
+  },
+  render: (args) => (
+    <div className="flex w-full min-w-0 max-w-md">
+      <PageHeading {...args} />
+    </div>
+  ),
+};

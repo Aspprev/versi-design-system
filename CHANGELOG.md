@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.4.6 — 2026-09-24 — ajustes finais de layout do PageHeading
+
+### Corrigido
+
+- Ajustado o alinhamento estrutural entre o botão de retorno e o título do `PageHeading`, com cobertura atualizada nos testes unitários e visuais.
+
+## 0.4.5 — 2026-09-24 — correção de visibilidade dos cabeçalhos
+
+### Corrigido
+
+- `PageHeading` e `PageTabsHeader` passaram a garantir largura disponível nos wrappers flexíveis, mantendo títulos visíveis em layouts limitados e responsivos.
+- Títulos de página preservam truncamento responsivo, largura integral e o texto completo no atributo `title` quando aplicável.
+
 ## 0.4.4 — 2026-09-24 — evolução de layout, contratos e Storybook
 
 ### Corrigido

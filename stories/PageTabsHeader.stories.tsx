@@ -60,3 +60,28 @@ export const LongTitle: Story = {
 export const Small: Story = {
   args: { size: "small" },
 };
+
+export const FlexibleLimitedWidth: Story = {
+  args: {
+    title: "Histórico de atendimentos e informações do meu benefício",
+    tabs: [
+      { id: "benefit", label: "Meu benefício" },
+      { id: "statements", label: "Contracheques" },
+      { id: "history", label: "Ficha financeira" },
+    ],
+    activeTab: "benefit",
+  },
+  render: (args) => {
+    const [activeTab, setActiveTab] = useState(args.activeTab);
+
+    return (
+      <div className="flex w-full min-w-0 max-w-2xl">
+        <PageTabsHeader
+          {...args}
+          activeTab={activeTab}
+          onTabChange={setActiveTab}
+        />
+      </div>
+    );
+  },
+};

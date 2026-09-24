@@ -1,8 +1,8 @@
 "use client";
 
-import PageHeading from "../page-heading";
 import type { ComponentType, ReactNode } from "react";
 import type { IconBaseProps } from "react-icons";
+import PageHeading from "../page-heading";
 
 export type PageTabItem = {
   id: string;
@@ -31,16 +31,16 @@ export default function PageTabsHeader({
 }: PageTabsHeaderProps) {
   return (
     <div
-      className={`flex flex-col gap-4 tablet:flex-row tablet:items-end tablet:justify-between ${className}`}
+      className={`flex w-full min-w-0 flex-col gap-4 tablet:flex-row tablet:items-end tablet:justify-between ${className}`}
     >
-      <div className="min-w-0 flex-1">
+      <div className="w-full min-w-0 tablet:flex-1">
         <PageHeading title={title} spacing="none" />
       </div>
 
       {tabs.length > 1 && (
         <nav
           aria-label={title}
-          className="flex w-full max-w-full flex-row flex-nowrap items-end gap-3 overflow-x-auto tablet:w-fit tablet:shrink-0 tablet:justify-end tablet:overflow-visible"
+          className="flex w-full min-w-0 max-w-full flex-row flex-nowrap items-end gap-3 overflow-x-auto tablet:w-fit tablet:shrink-0 tablet:justify-end tablet:overflow-visible"
         >
           <div role="tablist" className="flex flex-nowrap items-end gap-3">
             {tabs.map((tab) => {
@@ -70,7 +70,7 @@ export default function PageTabsHeader({
                   <span>{tab.label}</span>
                   {tab.notification !== undefined &&
                     tab.notification !== null && (
-                      <span className="inline-flex min-h-4 min-w-4 items-center justify-center rounded-full bg-feedback-danger-strong px-1 text-2xs font-bold text-feedback-danger-on-strong">
+                      <span className="inline-flex min-h-4 min-w-4 items-center justify-center rounded-full bg-feedback-danger-strong px-1 text-2xs font-bold text-action-tertiary-content">
                         {tab.notification}
                       </span>
                     )}
