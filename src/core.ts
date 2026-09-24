@@ -40,7 +40,11 @@ export type { CircularLoadingProps } from "./components/circularLoading/Circular
 export { default as TextGroup } from "./components/text-group/TextGroup";
 export type { TextGroupProps } from "./components/text-group/TextGroup";
 export { default as Pagination } from "./components/pagination";
-export type { PaginationProps } from "./components/pagination/PaginationView";
+export type {
+  PaginationProps,
+  PaginationSize,
+  PaginationVariant,
+} from "./components/pagination/PaginationView";
 export { Checkbox, CheckBox } from "./components/checkbox/checkbox";
 export type { CheckboxProps, CheckBoxProps } from "./components/checkbox/checkbox";
 export { default as Slider } from "./components/slider/Slider";

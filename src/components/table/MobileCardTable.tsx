@@ -2,6 +2,7 @@
 
 import { ReactNode, useEffect, useId, useMemo, useState } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+import { PAGINATION_ITEM_HEIGHT_CLASS } from "../pagination/pagination-styles";
 
 export interface IMobileCardTableHeader {
   label: string;
@@ -251,7 +252,7 @@ function MobileCardTable<TData>({
               onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
               disabled={pagination.currentPage === 1}
               aria-label="Ir para a página anterior"
-              className="inline-flex h-7 items-center justify-center gap-1 rounded border border-border-default px-3 text-sm leading-none text-content-primary hover:border-border-strong disabled:cursor-not-allowed disabled:opacity-50"
+              className={`${PAGINATION_ITEM_HEIGHT_CLASS} inline-flex items-center justify-center gap-1 rounded border border-border-default px-3 text-sm leading-none text-content-primary hover:border-border-strong disabled:cursor-not-allowed disabled:opacity-50`}
             >
               <MdKeyboardArrowLeft className="h-3 w-3 text-content-muted" />
               Anterior
@@ -260,7 +261,7 @@ function MobileCardTable<TData>({
             <div
               aria-live="polite"
               aria-atomic="true"
-              className="inline-flex h-7 min-w-7 items-center justify-center rounded border border-selection-border bg-selection-background px-2 text-sm font-bold leading-none text-selection-content"
+              className={`${PAGINATION_ITEM_HEIGHT_CLASS} inline-flex min-w-7 items-center justify-center rounded border border-selection-border bg-selection-background px-2 text-sm font-bold leading-none text-selection-content`}
             >
               {pagination.currentPage}
             </div>
@@ -274,7 +275,7 @@ function MobileCardTable<TData>({
               }
               disabled={pagination.currentPage === pagination.totalPages}
               aria-label="Ir para a próxima página"
-              className="inline-flex h-7 items-center justify-center gap-1 rounded border border-border-default px-3 text-sm leading-none text-content-primary hover:border-border-strong disabled:cursor-not-allowed disabled:opacity-50"
+              className={`${PAGINATION_ITEM_HEIGHT_CLASS} inline-flex items-center justify-center gap-1 rounded border border-border-default px-3 text-sm leading-none text-content-primary hover:border-border-strong disabled:cursor-not-allowed disabled:opacity-50`}
             >
               Próximo
               <MdKeyboardArrowRight className="h-3 w-3 text-content-muted" />

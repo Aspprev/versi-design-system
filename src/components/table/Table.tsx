@@ -1,6 +1,10 @@
 "use client";
 
 import React, { ReactNode, useEffect, useId, useMemo, useState } from "react";
+import type {
+  PaginationSize,
+  PaginationVariant,
+} from "../pagination/pagination-styles";
 import TableView from "./TableView";
 import { IFilterControl, IFilterProps } from "./components/filter/Filter";
 
@@ -58,7 +62,8 @@ export interface ITablePaginationProps {
   endItem: number;
   onPrevious: () => void;
   onNext: () => void;
-  variant?: "default" | "arrows";
+  size?: PaginationSize;
+  variant?: PaginationVariant;
 }
 
 export interface ITableExpandableConfig<TData = unknown> {
@@ -94,7 +99,8 @@ export interface TableProps<TData = unknown>
   totalWidthUnits?: number;
   showRowDivider?: boolean;
   enableRowHover?: boolean;
-  paginationVariant?: "default" | "arrows";
+  paginationSize?: PaginationSize;
+  paginationVariant?: PaginationVariant;
   expandable?: ITableExpandableConfig<TData>;
   overflowMode?: TableOverflowMode;
   adaptiveBreakpoint?: number;
@@ -124,6 +130,7 @@ function Table<TData = unknown>(props: TableProps<TData>) {
     totalWidthUnits,
     showRowDivider = false,
     enableRowHover = false,
+    paginationSize = "normal",
     paginationVariant = "default",
     expandable,
     overflowMode,
@@ -493,6 +500,7 @@ function Table<TData = unknown>(props: TableProps<TData>) {
         totalItems: internalPagination.totalItems,
         startItem: internalPagination.startItem,
         endItem: internalPagination.endItem,
+        size: paginationSize,
         variant: paginationVariant,
         onPrevious: () => setCurrentPage((prev) => Math.max(prev - 1, 1)),
         onNext: () =>
@@ -503,6 +511,7 @@ function Table<TData = unknown>(props: TableProps<TData>) {
     : pagination
       ? {
           ...pagination,
+          size: pagination.size ?? "normal",
           variant: pagination.variant ?? "default",
         }
       : pagination;

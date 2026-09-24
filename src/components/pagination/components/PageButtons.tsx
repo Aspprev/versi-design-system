@@ -1,16 +1,19 @@
 ﻿import cs from 'classnames';
 import { ReactNode } from 'react';
+import { PAGINATION_SIZE_CLASSES, type PaginationSize } from '../pagination-styles';
 
 interface IProps {
   currentPage: number;
   totalResults: number;
   perPage: number;
   onClick: (page: number) => void;
+  size: PaginationSize;
 }
 
 function PageButtons(props: IProps) {
-  const { currentPage, totalResults, perPage, onClick } = props;
-  const pages = totalResults > 10 ? Math.ceil(totalResults / perPage) : 1;
+  const { currentPage, totalResults, perPage, onClick, size } = props;
+  const pages = Math.max(1, Math.ceil(totalResults / perPage));
+  const sizeClasses = PAGINATION_SIZE_CLASSES[size];
   let pagesAfter = (pages - currentPage) > 2 ? 2 : (pages - currentPage);
   let pagesBefore = currentPage > 2 ? 2 : currentPage === 2 ? 1 : 0;
   let buttonsBefore: ReactNode[] = [];
@@ -23,8 +26,8 @@ function PageButtons(props: IProps) {
         key={`page-${page}`}
         type='button'
         aria-label={`Página ${page}`}
-        className={cs('flex h-7 w-8 items-center justify-center rounded border border-border-default',
-          'cursor-pointer bg-surface-card text-sm text-content-primary hover:bg-surface-muted',
+        className={cs(sizeClasses.itemHeight, 'flex', sizeClasses.pageWidth, 'items-center justify-center rounded border border-border-default',
+          'cursor-pointer bg-surface-card', sizeClasses.text, 'text-content-primary hover:bg-surface-muted',
           'focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring')}
         onClick={() => onClick(page)}>
         {page}
@@ -40,8 +43,8 @@ function PageButtons(props: IProps) {
         key={`page-${page}`}
         type='button'
         aria-label={`Página ${page}`}
-        className={cs('flex h-7 w-8 items-center justify-center rounded border border-border-default',
-          'cursor-pointer bg-surface-card text-sm text-content-primary hover:bg-surface-muted',
+        className={cs(sizeClasses.itemHeight, 'flex', sizeClasses.pageWidth, 'items-center justify-center rounded border border-border-default',
+          'cursor-pointer bg-surface-card', sizeClasses.text, 'text-content-primary hover:bg-surface-muted',
           'focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring')}
         onClick={() => onClick(page)}>
         {page}
@@ -57,8 +60,8 @@ function PageButtons(props: IProps) {
         aria-label={`Página ${currentPage}, atual`}
       aria-current='page'
       disabled
-      className={cs('flex h-7 w-8 items-center justify-center rounded border border-selection-border',
-        'cursor-default bg-selection-background text-sm text-selection-content')}>
+      className={cs(sizeClasses.itemHeight, 'flex', sizeClasses.pageWidth, 'items-center justify-center rounded border border-selection-border',
+        'cursor-default bg-selection-background', sizeClasses.text, 'text-selection-content')}>
       {currentPage}
     </button>,
     ...buttonsAfter

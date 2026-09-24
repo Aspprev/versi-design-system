@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.4.8 — 2026-09-24 — tamanhos e variantes da paginação
+
+### Adicionado
+
+- `Pagination` e `Table` agora compartilham as opções de tamanho `normal` e `small`.
+- A paginação aceita controles com rótulos ou somente setas por meio das variantes `default` e `arrows`.
+- A paginação interna e controlada do `Table` passa a usar os mesmos tokens de geometria e tipografia do componente standalone.
+
+### Corrigido
+
+- Mantida a mesma altura visual entre controles laterais e página atual em todas as variantes de paginação.
+
 ## 0.4.7 — 2026-09-24 — seleção mensal e anual do DatePicker
 
 ### Corrigido
