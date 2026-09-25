@@ -12,7 +12,7 @@ const meta = {
     type: "bar",
     height: 280,
     width: "100%",
-    ariaLabel: "ContribuiÃ§Ãµes por mÃªs",
+    ariaLabel: "Contribuições por mês",
     options: {
       chart: {
         id: "design-system-lazy-chart",
@@ -26,7 +26,7 @@ const meta = {
         bar: { borderRadius: 4, columnWidth: "48%" },
       },
     },
-    series: [{ name: "ContribuiÃ§Ãµes", data: [12, 18, 16, 24, 27, 31] }],
+    series: [{ name: "Contribuições", data: [12, 18, 16, 24, 27, 31] }],
   },
 } satisfies Meta<typeof LazyApexChart>;
 
@@ -39,9 +39,9 @@ export const Donut: Story = {
   args: {
     type: "donut",
     height: 300,
-    ariaLabel: "DistribuiÃ§Ã£o das contribuiÃ§Ãµes",
+    ariaLabel: "Distribuição das contribuições",
     options: {
-      labels: ["BÃ¡sica", "Especial", "Normal"],
+      labels: ["Básica", "Especial", "Normal"],
       legend: { position: "bottom" },
     },
     series: [48, 32, 20],

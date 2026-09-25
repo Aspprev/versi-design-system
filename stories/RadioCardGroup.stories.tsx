@@ -9,7 +9,7 @@ type Story = StoryObj<typeof meta>;
 export const Plans: Story = {
   render: () => {
     const [value, setValue] = useState("monthly");
-    return <RadioCardGroup label="Forma de recebimento" value={value} onChange={setValue} columnsClassName="grid-cols-2" options={[{ value: "monthly", title: "Renda mensal", description: "Recebimento recorrente." }, { value: "single", title: "Pagamento Ãºnico", description: "Resgate em uma parcela." }]} />;
+    return <RadioCardGroup label="Forma de recebimento" value={value} onChange={setValue} columnsClassName="grid-cols-2" options={[{ value: "monthly", title: "Renda mensal", description: "Recebimento recorrente." }, { value: "single", title: "Pagamento único", description: "Resgate em uma parcela." }]} />;
   },
 };
 

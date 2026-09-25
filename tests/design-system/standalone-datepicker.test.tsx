@@ -66,7 +66,7 @@ describe("DatePicker standalone", () => {
     expect(html).toContain('for="dataInicio"');
   });
 
-  it("expÃµe o modo de seleÃ§Ã£o por ano e associa a ajuda ao campo", () => {
+  it("expõe o modo de seleção por ano e associa a ajuda ao campo", () => {
     const html = renderToStaticMarkup(
       <DatePicker
         name="anoReferencia"
@@ -85,11 +85,11 @@ describe("DatePicker standalone", () => {
     expect(html).toContain("Informe o ano do documento.");
   });
 
-  it("formata a seleÃ§Ã£o mensal somente como mÃªs e ano", () => {
+  it("formata a seleção mensal somente como mês e ano", () => {
     const html = renderToStaticMarkup(
       <DatePicker
         name="mesReferencia"
-        label="MÃªs de referÃªncia"
+        label="Mês de referência"
         value={new Date(2024, 7, 26)}
         selectionMode="month"
         minDate={new Date(2020, 0, 15)}
@@ -103,11 +103,11 @@ describe("DatePicker standalone", () => {
     expect(html).not.toContain('value="26/08/2024"');
   });
 
-  it("formata a seleÃ§Ã£o anual somente como ano", () => {
+  it("formata a seleção anual somente como ano", () => {
     const html = renderToStaticMarkup(
       <DatePicker
         name="anoReferenciaPreenchido"
-        label="Ano de referÃªncia"
+        label="Ano de referência"
         value={new Date(2024, 7, 26)}
         selectionMode="year"
       />,
@@ -123,7 +123,7 @@ describe("DatePicker standalone", () => {
     const html = renderToStaticMarkup(
       <DatePicker
         name="anoReferenciaCustomizado"
-        label="Ano de referÃªncia"
+        label="Ano de referência"
         selectionMode="year"
         placeholder="AAAA fiscal"
       />,
@@ -132,7 +132,7 @@ describe("DatePicker standalone", () => {
     expect(html).toContain('placeholder="AAAA fiscal"');
   });
 
-  it("mantem isDisabled como alias compatÃ­vel de disabled", () => {
+  it("mantem isDisabled como alias compatível de disabled", () => {
     const html = renderToStaticMarkup(
       <DatePicker name="data" isDisabled label="Data" />,
     );

@@ -8,5 +8,5 @@ const meta = { title: "Components/Utilities/ThemedImage", component: ThemedImage
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const LightAndDark: Story = { args: { source: { light, dark }, alt: "Logo temÃ¡tico", width: 220, height: 60 } };
+export const LightAndDark: Story = { args: { source: { light, dark }, alt: "Logo temático", width: 220, height: 60 } };
 

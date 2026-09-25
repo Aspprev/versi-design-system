@@ -17,7 +17,7 @@ export const SolidSuccess: Story = { args: { color: "green", appearance: "solid"
 export const SolidDanger: Story = { args: { children: "Cancelado", color: "red", appearance: "solid" } };
 export const Truncated: Story = {
   args: {
-    children: "Aguardando validaÃ§Ã£o do participante",
+    children: "Aguardando validação do participante",
     color: "orange",
     appearance: "soft",
     overflow: "truncate",

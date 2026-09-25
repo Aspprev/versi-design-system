@@ -3,7 +3,7 @@ import { Formik } from "formik";
 import { InputSelect, type InputSelectProps } from "../src";
 
 const options = [
-  { label: "Plano BÃ¡sico", value: "basico" },
+  { label: "Plano Básico", value: "basico" },
   { label: "Plano Especial", value: "especial" },
   { label: "Plano de Aposentadoria", value: "aposentadoria" },
 ];
@@ -11,7 +11,7 @@ const options = [
 const searchableOptions = [
   ...options,
   ...Array.from({ length: 9 }, (_, index) => ({
-    label: `OpÃ§Ã£o adicional ${index + 1}`,
+    label: `Opção adicional ${index + 1}`,
     value: `opcao-${index + 1}`,
   })),
 ];
@@ -22,8 +22,8 @@ const meta = {
   tags: ["autodocs"],
   args: {
     name: "plano",
-    label: "Plano previdenciÃ¡rio",
-    placeholder: "Selecione uma opÃ§Ã£o",
+    label: "Plano previdenciário",
+    placeholder: "Selecione uma opção",
     options,
   },
 } satisfies Meta<typeof InputSelect>;
