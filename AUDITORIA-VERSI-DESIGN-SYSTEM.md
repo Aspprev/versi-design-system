@@ -426,7 +426,7 @@ O transporte, retry com API, persistência, nome do campo e regra de documento o
 
 **Pontos fortes:** usa `table` real na versão tabular, `scope`, `aria-sort`, labels acessíveis, live regions de paginação, modo compacto e suporte à largura do container.
 
-**Riscos:** `TableView` concentra filtro/posicionamento/renderização/paginação; `MobileCardTable` cria uma representação paralela com semântica de lista e `tabIndex=0` por item, que precisa de validação para não produzir foco redundante. A lógica ainda mistura viewport (`useBreakpoint`) e largura do container. Há strings corrompidas em algumas saídas observadas (`atÃ©`, `pÃ¡gina`), que devem ser verificadas na origem/encoding.
+**Riscos:** `TableView` concentra filtro/posicionamento/renderização/paginação; `MobileCardTable` cria uma representação paralela com semântica de lista e `tabIndex=0` por item, que precisa de validação para não produzir foco redundante. A lógica ainda mistura viewport (`useBreakpoint`) e largura do container. Há strings corrompidas em algumas saídas observadas (`até`, `página`), que devem ser verificadas na origem/encoding.
 
 **Recomendação:** extrair modelo headless de colunas, filtros, ordenação e paginação; manter renderers separados para tabela, adaptive compact e cards. Preferir `useContainerBreakpoint` quando o layout depende da largura disponível. Garantir que filtros tenham foco inicial, escape, retorno de foco e anúncio de alteração.
 
@@ -599,7 +599,7 @@ Existem scripts para build, clean, tokens generate/check, size, governance, secu
 | Aliases públicos | Vários pares para o mesmo conceito. | DX e migrações ambíguas. | Média |
 | Viewport versus container | Hooks e tabelas misturam critérios. | Layout incorreto em shell com sidebar. | Média |
 | Stories agrupadas | Upload/FileViewer/QRCode não possuem cobertura dedicada clara. | Descoberta e regressão visual menores. | Média |
-| Strings/encoding em tabela | Saída observada com `atÃ©` e `pÃ¡gina`. | Problema visível e potencial acessibilidade. | Média |
+| Strings/encoding em tabela | Saída observada com `até` e `página`. | Problema visível e potencial acessibilidade. | Média |
 
 ## 17. Proposta de arquitetura futura
 

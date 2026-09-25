@@ -7,7 +7,7 @@ import {
 } from "../src";
 
 const options: SelectMultiOption[] = [
-  { label: "Plano BÃ¡sico", value: "basico" },
+  { label: "Plano Básico", value: "basico" },
   { label: "Plano Especial", value: "especial" },
   { label: "Plano de Aposentadoria", value: "aposentadoria" },
 ];
@@ -62,7 +62,7 @@ export const Selected: Story = {
 };
 
 export const Error: Story = {
-  args: { error: "Selecione ao menos uma opÃ§Ã£o." },
+  args: { error: "Selecione ao menos uma opção." },
   render: (args) => <SelectMultiForm {...args} />,
 };
 

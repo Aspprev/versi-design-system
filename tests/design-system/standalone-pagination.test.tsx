@@ -112,6 +112,6 @@ describe("altura consistente da paginação", () => {
     expect(html).toContain("box-border h-6 min-h-6");
     expect(html).toContain("w-6");
     expect(html).not.toContain("Anterior");
-    expect(html).not.toContain("PrÃ³xima");
+    expect(html).not.toContain("Próxima");
   });
 });

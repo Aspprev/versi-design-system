@@ -8,8 +8,8 @@ const meta = {
   tags: ["autodocs"],
   args: {
     name: "observacao",
-    label: "ObservaÃ§Ã£o",
-    placeholder: "Digite uma observaÃ§Ã£o",
+    label: "Observação",
+    placeholder: "Digite uma observação",
     rows: 4,
   },
 } satisfies Meta<typeof TextArea>;
@@ -49,13 +49,13 @@ export const Filled: Story = {
   render: (args) => (
     <TextAreaForm
       {...args}
-      initialValue="A contribuiÃ§Ã£o foi atualizada conforme solicitado."
+    initialValue="A contribuição foi atualizada conforme solicitado."
     />
   ),
 };
 
 export const WithHelperText: Story = {
-  args: { helperText: "Use este campo para incluir informaÃ§Ãµes complementares." },
+  args: { helperText: "Use este campo para incluir informações complementares." },
   render: (args) => <TextAreaForm {...args} />,
 };
 
@@ -63,7 +63,7 @@ export const Error: Story = {
   render: (args) => (
     <TextAreaForm
       {...args}
-      initialError="Informe uma observaÃ§Ã£o vÃ¡lida."
+    initialError="Informe uma observação válida."
       initialTouched
     />
   ),
@@ -72,7 +72,7 @@ export const Error: Story = {
 export const Disabled: Story = {
   args: { disabled: true },
   render: (args) => (
-    <TextAreaForm {...args} initialValue="Campo bloqueado para ediÃ§Ã£o." />
+    <TextAreaForm {...args} initialValue="Campo bloqueado para edição." />
   ),
 };
 

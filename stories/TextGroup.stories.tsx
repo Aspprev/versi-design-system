@@ -6,5 +6,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = { args: { title: "Participante", text: "Maria da Silva" } };
-export const Empty: Story = { args: { title: "Valor nÃ£o informado", text: "" } };
+export const Empty: Story = { args: { title: "Valor não informado", text: "" } };
 
