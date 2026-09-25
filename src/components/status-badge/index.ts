@@ -3,9 +3,12 @@ export type { DomainStatusBadgeProps } from "./DomainStatusBadge";
 export { StatusBadge, getStatusBadgeClassName } from "./StatusBadge";
 export type { StatusBadgeProps } from "./StatusBadge";
 export type {
+  LegacyStatusAppearanceConfig,
   ResolvedStatusAppearance,
+  StatusAppearanceConfig,
   StatusAppearanceMap,
   StatusAppearance,
+  StatusBadgeColor,
   StatusResolverOptions,
   StatusDomain,
   StatusTone,

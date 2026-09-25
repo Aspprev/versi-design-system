@@ -11,59 +11,51 @@ export type StatusDomain =
   | "protocol"
   | "request";
 
+export type StatusBadgeColor =
+  | "primary"
+  | "blue"
+  | "green"
+  | "orange"
+  | "yellow"
+  | "red"
+  | "slate"
+  | "black";
+
+/** @deprecated Use StatusBadgeColor in new status maps. */
 export type StatusTone = "info" | "warning" | "success" | "danger" | "neutral";
 export type StatusAppearance = "outline" | "soft" | "solid";
 
-export interface ResolvedStatusAppearance {
+export interface StatusAppearanceConfig {
+  color: StatusBadgeColor;
+  appearance: StatusAppearance;
+}
+
+/** Legacy map value accepted so existing consumers can migrate incrementally. */
+export interface LegacyStatusAppearanceConfig {
   tone: StatusTone;
   appearance: StatusAppearance;
 }
 
-/**
- * Map owned by the consuming application. Keys are normalized with
- * `normalizeStatus` before lookup, so accented and differently-cased labels
- * can be used safely by consumers.
- */
 export type StatusAppearanceMap = Readonly<
-  Record<string, ResolvedStatusAppearance>
+  Record<string, StatusAppearanceConfig | LegacyStatusAppearanceConfig>
 >;
 
 export interface StatusResolverOptions {
   map?: StatusAppearanceMap;
-  fallback?: ResolvedStatusAppearance;
+  color?: StatusBadgeColor;
+  tone?: StatusTone;
+  appearance?: StatusAppearance;
+  fallback?: StatusAppearanceConfig;
 }
 
-const NORMALIZED_STATUS = {
-  infoOutline: new Set(["ABERTO", "PAGO", "EM PAGAMENTO"]),
-  infoSolid: new Set([
-    "EM ANDAMENTO",
-    "SOLICITADO",
-    "NAO ASSINADO",
-    "AGUARDANDO ASSINATURA",
-  ]),
-  warning: new Set([
-    "EM ANALISE",
-    "PENDENTE",
-    "SUSPENSO",
-    "AGUARDANDO PARTICIPANTE",
-  ]),
-  success: new Set([
-    "DEFERIDO",
-    "QUITADO",
-    "LIBERADO",
-    "ATIVO",
-    "VIGENTE",
-    "RESPONDIDO",
-    "ASSINADO",
-  ]),
-  danger: new Set(["INDEFERIDO", "VENCIDO", "CANCELADO", "ERRO"]),
-  neutral: new Set([
-    "CONCLUIDO",
-    "ENCERRADO",
-    "FINALIZADO",
-    "RENEGOCIADO",
-    "INATIVO",
-  ]),
+export type ResolvedStatusAppearance = StatusAppearanceConfig;
+
+const TONE_TO_COLOR: Record<StatusTone, StatusBadgeColor> = {
+  info: "blue",
+  warning: "yellow",
+  success: "green",
+  danger: "red",
+  neutral: "slate",
 };
 
 export const normalizeStatus = (status: unknown): string =>
@@ -74,103 +66,56 @@ export const normalizeStatus = (status: unknown): string =>
     .trim()
     .toUpperCase();
 
-const resolveGenericStatus = (status: string): ResolvedStatusAppearance => {
-  if (NORMALIZED_STATUS.infoOutline.has(status)) {
-    return { tone: "info", appearance: "outline" };
-  }
-  if (NORMALIZED_STATUS.infoSolid.has(status)) {
-    return { tone: "info", appearance: "solid" };
-  }
-  if (NORMALIZED_STATUS.warning.has(status)) {
-    return { tone: "warning", appearance: "soft" };
-  }
-  if (NORMALIZED_STATUS.success.has(status)) {
-    return { tone: "success", appearance: "solid" };
-  }
-  if (NORMALIZED_STATUS.danger.has(status)) {
-    return { tone: "danger", appearance: "solid" };
-  }
-  if (NORMALIZED_STATUS.neutral.has(status)) {
-    return { tone: "neutral", appearance: "solid" };
-  }
-  return { tone: "neutral", appearance: "outline" };
-};
+const isLegacyConfig = (
+  config: StatusAppearanceConfig | LegacyStatusAppearanceConfig,
+): config is LegacyStatusAppearanceConfig => "tone" in config;
 
+const normalizeConfig = (
+  config: StatusAppearanceConfig | LegacyStatusAppearanceConfig,
+): StatusAppearanceConfig =>
+  isLegacyConfig(config)
+    ? { color: TONE_TO_COLOR[config.tone], appearance: config.appearance }
+    : config;
+
+/**
+ * Resolves only consumer configuration. Status names intentionally have no
+ * built-in business mapping in the Design System.
+ *
+ * Precedence: statusMap, explicit color, legacy tone, fallback.
+ */
 export const resolveStatusAppearance = (
   status: unknown,
   domain: StatusDomain = "generic",
   options?: StatusResolverOptions,
 ): ResolvedStatusAppearance => {
+  void domain;
   const normalized = normalizeStatus(status);
 
-  if (!normalized) {
-    return options?.fallback ?? { tone: "neutral", appearance: "outline" };
+  if (normalized && options?.map) {
+    const mappedAppearance = Object.entries(options.map).find(
+      ([key]) => normalizeStatus(key) === normalized,
+    )?.[1];
+
+    if (mappedAppearance) return normalizeConfig(mappedAppearance);
   }
 
-  const mappedAppearance = options?.map
-    ? Object.entries(options.map).find(
-        ([key]) => normalizeStatus(key) === normalized,
-      )?.[1]
-    : undefined;
-
-  if (mappedAppearance) return mappedAppearance;
-
-  if (domain === "beneficiary") {
-    if (normalized === "VIGENTE") return { tone: "success", appearance: "solid" };
-    if (normalized === "ENCERRADO") return { tone: "neutral", appearance: "solid" };
+  if (options?.color) {
+    return {
+      color: options.color,
+      appearance: options.appearance ?? "outline",
+    };
   }
 
-  if (domain === "document") {
-    if (["ANEXADO", "ASSINADO", "CONCLUIDO"].includes(normalized)) {
-      return { tone: "success", appearance: "solid" };
-    }
-    if (normalized.includes("AGUARDANDO") || normalized === "PENDENTE") {
-      return { tone: "warning", appearance: "soft" };
-    }
-    if (normalized === "BLOQUEADO") return { tone: "neutral", appearance: "solid" };
+  if (options?.tone) {
+    return {
+      color: TONE_TO_COLOR[options.tone],
+      appearance: options.appearance ?? "outline",
+    };
   }
 
-  if (domain === "signature") {
-    if (normalized === "ASSINADO") return { tone: "success", appearance: "solid" };
-    if (normalized.includes("AGUARDANDO")) return { tone: "warning", appearance: "soft" };
-    if (normalized === "NAO ASSINADO") return { tone: "info", appearance: "solid" };
-  }
-
-  if (domain === "benefit") {
-    if (normalized === "EM PAGAMENTO") return { tone: "info", appearance: "outline" };
-    if (normalized === "SUSPENSO") return { tone: "warning", appearance: "soft" };
-  }
-
-  if (domain === "participation") {
-    return { tone: "neutral", appearance: "solid" };
-  }
-
-  if (domain === "payment") {
-    if (["PAGO", "QUITADO", "LIBERADO"].includes(normalized)) {
-      return { tone: "success", appearance: "solid" };
-    }
-    if (["EM PAGAMENTO", "AGUARDANDO PAGAMENTO"].includes(normalized)) {
-      return { tone: "info", appearance: "outline" };
-    }
-    if (["VENCIDO", "ESTORNADO", "FALHOU"].includes(normalized)) {
-      return { tone: "danger", appearance: "solid" };
-    }
-  }
-
-  if (domain === "claim" || domain === "request" || domain === "protocol") {
-    if (["RECEBIDO", "PROTOCOLADO", "EMITIDO"].includes(normalized)) {
-      return { tone: "info", appearance: "outline" };
-    }
-    if (["EM ANALISE", "AGUARDANDO DOCUMENTACAO", "AGUARDANDO ANALISE"].includes(normalized)) {
-      return { tone: "warning", appearance: "soft" };
-    }
-    if (["APROVADO", "CONCEDIDO", "ATENDIDO"].includes(normalized)) {
-      return { tone: "success", appearance: "solid" };
-    }
-    if (["NEGADO", "ARQUIVADO", "RECUSADO"].includes(normalized)) {
-      return { tone: "danger", appearance: "solid" };
-    }
-  }
-
-  return options?.fallback ?? resolveGenericStatus(normalized);
+  return options?.fallback ?? { color: "slate", appearance: "outline" };
 };
+
+export const getStatusBadgeColorFromTone = (
+  tone: StatusTone,
+): StatusBadgeColor => TONE_TO_COLOR[tone];

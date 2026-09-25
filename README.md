@@ -95,7 +95,7 @@ import {
 - `validateFiles` retorna `code`, nome, extensão, tamanho e limite da rejeição e aceita mensagens por código; `FileViewer` também aceita `Promise<FileViewerSource>` como source.
 - Upload e `FileViewer` são controlados pelo consumidor; transporte, autenticação, persistência e download não fazem parte do pacote.
 - `DatePicker` aceita `selectionMode="year"` e mantém `selectionMode="day"` como padrão.
-- `DomainStatusBadge` aceita `statusMap` para vocabulário específico do produto.
+- `StatusBadge` oferece as cores `primary`, `blue`, `green`, `orange`, `yellow`, `red`, `slate` e `black` nas aparências `solid`, `soft` e `outline`. `DomainStatusBadge` aceita um `statusMap` definido pelo consumidor; o DS não associa nomes de status a cores.
 - `Table` preserva os modos `fit`, `adaptive` e `scroll`; filtros e paginação respondem ao espaço do container.
 - `InputPhone`/`PhoneInput` e `SelectCountry` aceitam `showFlags`; o padrão é `true` e `showFlags={false}` remove a bandeira sem reservar espaço.
 - Os controles de formulário ocupam a largura disponível do container; `className="w-full"` pode ser usado em grids, flex containers e colunas responsivas.

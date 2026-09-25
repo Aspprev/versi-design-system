@@ -113,9 +113,12 @@ export type {
   OptionalValuePolicy,
 } from "./utils/optional-value";
 export type {
+  LegacyStatusAppearanceConfig,
   ResolvedStatusAppearance,
+  StatusAppearanceConfig,
   StatusAppearanceMap,
   StatusAppearance,
+  StatusBadgeColor,
   StatusResolverOptions,
   StatusDomain,
   StatusTone,
