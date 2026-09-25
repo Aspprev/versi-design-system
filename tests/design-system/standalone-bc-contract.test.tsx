@@ -37,7 +37,7 @@ describe("lote B/C do design system standalone", () => {
     expect(html).toContain(">Situação</dt>");
     expect(html).toContain("<dd");
     expect(html).toContain("Ativo");
-    expect(html).toContain("bg-feedback-success-strong");
+    expect(html).toContain("bg-status-green-solid-background");
   });
 
   it("preserva slots e estados do item documental", () => {

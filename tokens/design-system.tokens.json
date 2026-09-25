@@ -1073,6 +1073,10 @@
         {
           "property": "--primary-5",
           "value": "235, 240, 255"
+        },
+        {
+          "property": "--action-primary-ghost-background",
+          "value": "var(--primary-5)"
         }
       ]
     },
@@ -1098,6 +1102,10 @@
         {
           "property": "--primary-5",
           "value": "255, 235, 215"
+        },
+        {
+          "property": "--action-primary-ghost-background",
+          "value": "var(--primary-5)"
         },
         {
           "property": "--content-link",
@@ -1129,6 +1137,10 @@
           "value": "255, 229, 219"
         },
         {
+          "property": "--action-primary-ghost-background",
+          "value": "var(--primary-5)"
+        },
+        {
           "property": "--content-link",
           "value": "var(--primary-2)"
         }
@@ -1156,6 +1168,10 @@
         {
           "property": "--primary-5",
           "value": "229, 245, 236"
+        },
+        {
+          "property": "--action-primary-ghost-background",
+          "value": "var(--primary-5)"
         }
       ]
     },
@@ -1181,6 +1197,10 @@
         {
           "property": "--primary-5",
           "value": "236, 242, 228"
+        },
+        {
+          "property": "--action-primary-ghost-background",
+          "value": "var(--primary-5)"
         }
       ]
     },
@@ -1206,6 +1226,10 @@
         {
           "property": "--primary-5",
           "value": "227, 250, 243"
+        },
+        {
+          "property": "--action-primary-ghost-background",
+          "value": "var(--primary-5)"
         },
         {
           "property": "--content-link",
@@ -1239,6 +1263,10 @@
         {
           "property": "--primary-5",
           "value": "231, 250, 228"
+        },
+        {
+          "property": "--action-primary-ghost-background",
+          "value": "var(--primary-5)"
         }
       ]
     },
@@ -1264,6 +1292,10 @@
         {
           "property": "--primary-5",
           "value": "255, 239, 236"
+        },
+        {
+          "property": "--action-primary-ghost-background",
+          "value": "var(--primary-5)"
         },
         {
           "property": "--content-link",
@@ -1295,6 +1327,10 @@
           "value": "233, 248, 255"
         },
         {
+          "property": "--action-primary-ghost-background",
+          "value": "var(--primary-5)"
+        },
+        {
           "property": "--content-link",
           "value": "var(--primary-2)"
         }
@@ -1322,6 +1358,10 @@
         {
           "property": "--primary-5",
           "value": "230, 239, 255"
+        },
+        {
+          "property": "--action-primary-ghost-background",
+          "value": "var(--primary-5)"
         }
       ]
     },
@@ -1347,6 +1387,10 @@
         {
           "property": "--action-primary-background-active",
           "value": "var(--primary-3)"
+        },
+        {
+          "property": "--action-primary-ghost-background",
+          "value": "var(--primary-5)"
         },
         {
           "property": "--selection-background",
@@ -4501,6 +4545,179 @@
           "value": "var(--link-emphasis-offset)"
         }
       ]
+    },
+    {
+      "selector": ":root",
+      "declarations": [
+        {
+          "property": "--status-blue-solid-background",
+          "value": "0, 108, 226"
+        },
+        {
+          "property": "--status-blue-solid-foreground",
+          "value": "255, 255, 255"
+        },
+        {
+          "property": "--status-blue-outline-border",
+          "value": "0, 108, 226"
+        },
+        {
+          "property": "--status-blue-outline-foreground",
+          "value": "7, 68, 138"
+        },
+        {
+          "property": "--status-blue-soft-background",
+          "value": "235, 240, 255"
+        },
+        {
+          "property": "--status-blue-soft-foreground",
+          "value": "7, 68, 138"
+        },
+        {
+          "property": "--status-green-solid-background",
+          "value": "46, 133, 71"
+        },
+        {
+          "property": "--status-green-solid-foreground",
+          "value": "255, 255, 255"
+        },
+        {
+          "property": "--status-green-outline-border",
+          "value": "46, 133, 71"
+        },
+        {
+          "property": "--status-green-outline-foreground",
+          "value": "0, 110, 47"
+        },
+        {
+          "property": "--status-green-soft-background",
+          "value": "237, 255, 245"
+        },
+        {
+          "property": "--status-green-soft-foreground",
+          "value": "0, 110, 47"
+        },
+        {
+          "property": "--status-orange-solid-background",
+          "value": "201, 76, 0"
+        },
+        {
+          "property": "--status-orange-solid-foreground",
+          "value": "255, 255, 255"
+        },
+        {
+          "property": "--status-orange-outline-border",
+          "value": "201, 76, 0"
+        },
+        {
+          "property": "--status-orange-outline-foreground",
+          "value": "201, 76, 0"
+        },
+        {
+          "property": "--status-orange-soft-background",
+          "value": "255, 247, 237"
+        },
+        {
+          "property": "--status-orange-soft-foreground",
+          "value": "154, 52, 18"
+        },
+        {
+          "property": "--status-yellow-solid-background",
+          "value": "234, 179, 8"
+        },
+        {
+          "property": "--status-yellow-solid-foreground",
+          "value": "25, 28, 31"
+        },
+        {
+          "property": "--status-yellow-outline-border",
+          "value": "234, 179, 8"
+        },
+        {
+          "property": "--status-yellow-outline-foreground",
+          "value": "133, 77, 14"
+        },
+        {
+          "property": "--status-yellow-soft-background",
+          "value": "254, 249, 195"
+        },
+        {
+          "property": "--status-yellow-soft-foreground",
+          "value": "133, 77, 14"
+        },
+        {
+          "property": "--status-red-solid-background",
+          "value": "168, 26, 10"
+        },
+        {
+          "property": "--status-red-solid-foreground",
+          "value": "255, 255, 255"
+        },
+        {
+          "property": "--status-red-outline-border",
+          "value": "168, 26, 10"
+        },
+        {
+          "property": "--status-red-outline-foreground",
+          "value": "131, 13, 0"
+        },
+        {
+          "property": "--status-red-soft-background",
+          "value": "255, 240, 240"
+        },
+        {
+          "property": "--status-red-soft-foreground",
+          "value": "131, 13, 0"
+        },
+        {
+          "property": "--status-slate-solid-background",
+          "value": "69, 90, 100"
+        },
+        {
+          "property": "--status-slate-solid-foreground",
+          "value": "255, 255, 255"
+        },
+        {
+          "property": "--status-slate-outline-border",
+          "value": "69, 90, 100"
+        },
+        {
+          "property": "--status-slate-outline-foreground",
+          "value": "25, 28, 31"
+        },
+        {
+          "property": "--status-slate-soft-background",
+          "value": "235, 235, 235"
+        },
+        {
+          "property": "--status-slate-soft-foreground",
+          "value": "25, 28, 31"
+        },
+        {
+          "property": "--status-black-solid-background",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--status-black-solid-foreground",
+          "value": "255, 255, 255"
+        },
+        {
+          "property": "--status-black-outline-border",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--status-black-outline-foreground",
+          "value": "0, 0, 0"
+        },
+        {
+          "property": "--status-black-soft-background",
+          "value": "235, 235, 235"
+        },
+        {
+          "property": "--status-black-soft-foreground",
+          "value": "0, 0, 0"
+        }
+      ]
     }
   ],
   "themes": [
@@ -4526,6 +4743,10 @@
         {
           "property": "--primary-5",
           "value": "235, 240, 255"
+        },
+        {
+          "property": "--action-primary-ghost-background",
+          "value": "var(--primary-5)"
         }
       ]
     },
@@ -4551,6 +4772,10 @@
         {
           "property": "--primary-5",
           "value": "233, 248, 255"
+        },
+        {
+          "property": "--action-primary-ghost-background",
+          "value": "var(--primary-5)"
         },
         {
           "property": "--content-link",
@@ -4580,6 +4805,10 @@
         {
           "property": "--primary-5",
           "value": "230, 239, 255"
+        },
+        {
+          "property": "--action-primary-ghost-background",
+          "value": "var(--primary-5)"
         }
       ]
     },
@@ -4605,6 +4834,10 @@
         {
           "property": "--primary-5",
           "value": "255, 235, 215"
+        },
+        {
+          "property": "--action-primary-ghost-background",
+          "value": "var(--primary-5)"
         },
         {
           "property": "--content-link",
@@ -4636,6 +4869,10 @@
           "value": "255, 229, 219"
         },
         {
+          "property": "--action-primary-ghost-background",
+          "value": "var(--primary-5)"
+        },
+        {
           "property": "--content-link",
           "value": "var(--primary-2)"
         }
@@ -4663,6 +4900,10 @@
         {
           "property": "--primary-5",
           "value": "229, 245, 236"
+        },
+        {
+          "property": "--action-primary-ghost-background",
+          "value": "var(--primary-5)"
         }
       ]
     },
@@ -4688,6 +4929,10 @@
         {
           "property": "--primary-5",
           "value": "236, 242, 228"
+        },
+        {
+          "property": "--action-primary-ghost-background",
+          "value": "var(--primary-5)"
         }
       ]
     },
@@ -4713,6 +4958,10 @@
         {
           "property": "--primary-5",
           "value": "227, 250, 243"
+        },
+        {
+          "property": "--action-primary-ghost-background",
+          "value": "var(--primary-5)"
         },
         {
           "property": "--content-link",
@@ -4746,6 +4995,10 @@
         {
           "property": "--primary-5",
           "value": "231, 250, 228"
+        },
+        {
+          "property": "--action-primary-ghost-background",
+          "value": "var(--primary-5)"
         }
       ]
     },
@@ -4771,6 +5024,10 @@
         {
           "property": "--primary-5",
           "value": "255, 239, 236"
+        },
+        {
+          "property": "--action-primary-ghost-background",
+          "value": "var(--primary-5)"
         },
         {
           "property": "--content-link",

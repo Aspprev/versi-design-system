@@ -271,6 +271,7 @@
     --primary-3: 22, 44, 100;
     --primary-4: 197, 214, 254;
     --primary-5: 235, 240, 255;
+    --action-primary-ghost-background: var(--primary-5);
   }
 
   .laranja1 {
@@ -279,6 +280,7 @@
     --primary-3: 146, 68, 0;
     --primary-4: 255, 196, 137;
     --primary-5: 255, 235, 215;
+    --action-primary-ghost-background: var(--primary-5);
     --content-link: var(--primary-3);
   }
 
@@ -288,6 +290,7 @@
     --primary-3: 128, 45, 11;
     --primary-4: 255, 151, 109;
     --primary-5: 255, 229, 219;
+    --action-primary-ghost-background: var(--primary-5);
     --content-link: var(--primary-2);
   }
 
@@ -297,6 +300,7 @@
     --primary-3: 0, 52, 22;
     --primary-4: 198, 238, 215;
     --primary-5: 229, 245, 236;
+    --action-primary-ghost-background: var(--primary-5);
   }
 
   .verde2 {
@@ -305,6 +309,7 @@
     --primary-3: 37, 54, 9;
     --primary-4: 170, 184, 148;
     --primary-5: 236, 242, 228;
+    --action-primary-ghost-background: var(--primary-5);
   }
 
   .verde3 {
@@ -313,6 +318,7 @@
     --primary-3: 0, 71, 51;
     --primary-4: 140, 221, 197;
     --primary-5: 227, 250, 243;
+    --action-primary-ghost-background: var(--primary-5);
     --content-link: var(--primary-2);
     --focus-ring: var(--primary-2);
   }
@@ -323,6 +329,7 @@
     --primary-3: 41, 87, 29;
     --primary-4: 169, 209, 163;
     --primary-5: 231, 250, 228;
+    --action-primary-ghost-background: var(--primary-5);
   }
 
   .rosa1 {
@@ -331,6 +338,7 @@
     --primary-3: 114, 49, 39;
     --primary-4: 245, 203, 197;
     --primary-5: 255, 239, 236;
+    --action-primary-ghost-background: var(--primary-5);
     --content-link: var(--primary-2);
   }
 
@@ -340,6 +348,7 @@
     --primary-3: 0, 53, 77;
     --primary-4: 142, 220, 255;
     --primary-5: 233, 248, 255;
+    --action-primary-ghost-background: var(--primary-5);
     --content-link: var(--primary-2);
   }
 
@@ -349,6 +358,7 @@
     --primary-3: 0, 19, 56;
     --primary-4: 161, 193, 254;
     --primary-5: 230, 239, 255;
+    --action-primary-ghost-background: var(--primary-5);
   }
 
   body {
@@ -357,6 +367,7 @@
     --action-primary-background: var(--primary-1);
     --action-primary-background-hover: var(--primary-2);
     --action-primary-background-active: var(--primary-3);
+    --action-primary-ghost-background: var(--primary-5);
     --selection-background: var(--primary-1);
     --selection-background-hover: var(--primary-2);
     --selection-border: var(--primary-1);
@@ -1290,5 +1301,50 @@
     text-decoration-line: underline !important;
     text-decoration-thickness: var(--link-emphasis-thickness);
     text-underline-offset: var(--link-emphasis-offset);
+  }
+
+  :root {
+    --status-blue-solid-background: 0, 108, 226;
+    --status-blue-solid-foreground: 255, 255, 255;
+    --status-blue-outline-border: 0, 108, 226;
+    --status-blue-outline-foreground: 7, 68, 138;
+    --status-blue-soft-background: 235, 240, 255;
+    --status-blue-soft-foreground: 7, 68, 138;
+    --status-green-solid-background: 46, 133, 71;
+    --status-green-solid-foreground: 255, 255, 255;
+    --status-green-outline-border: 46, 133, 71;
+    --status-green-outline-foreground: 0, 110, 47;
+    --status-green-soft-background: 237, 255, 245;
+    --status-green-soft-foreground: 0, 110, 47;
+    --status-orange-solid-background: 201, 76, 0;
+    --status-orange-solid-foreground: 255, 255, 255;
+    --status-orange-outline-border: 201, 76, 0;
+    --status-orange-outline-foreground: 201, 76, 0;
+    --status-orange-soft-background: 255, 247, 237;
+    --status-orange-soft-foreground: 154, 52, 18;
+    --status-yellow-solid-background: 234, 179, 8;
+    --status-yellow-solid-foreground: 25, 28, 31;
+    --status-yellow-outline-border: 234, 179, 8;
+    --status-yellow-outline-foreground: 133, 77, 14;
+    --status-yellow-soft-background: 254, 249, 195;
+    --status-yellow-soft-foreground: 133, 77, 14;
+    --status-red-solid-background: 168, 26, 10;
+    --status-red-solid-foreground: 255, 255, 255;
+    --status-red-outline-border: 168, 26, 10;
+    --status-red-outline-foreground: 131, 13, 0;
+    --status-red-soft-background: 255, 240, 240;
+    --status-red-soft-foreground: 131, 13, 0;
+    --status-slate-solid-background: 69, 90, 100;
+    --status-slate-solid-foreground: 255, 255, 255;
+    --status-slate-outline-border: 69, 90, 100;
+    --status-slate-outline-foreground: 25, 28, 31;
+    --status-slate-soft-background: 235, 235, 235;
+    --status-slate-soft-foreground: 25, 28, 31;
+    --status-black-solid-background: 0, 0, 0;
+    --status-black-solid-foreground: 255, 255, 255;
+    --status-black-outline-border: 0, 0, 0;
+    --status-black-outline-foreground: 0, 0, 0;
+    --status-black-soft-background: 235, 235, 235;
+    --status-black-soft-foreground: 0, 0, 0;
   }
 }

@@ -27,6 +27,30 @@ download específico permanecem no consumidor.
 
 ## Evolução dos existentes
 
+`StatusBadge` aceita a paleta fechada `primary | blue | green | orange | yellow |
+red | slate | black` e as aparências `solid | soft | outline`. `primary` acompanha
+o tema ativo; as demais cores são fixas e independentes da identidade do tenant.
+`tone` continua disponível como API legada.
+
+`DomainStatusBadge` recebe o mapa de status do consumidor. Os nomes são
+normalizados para aceitar acentos, caixa e espaços diferentes, mas nenhuma
+associação de negócio é hardcoded no Design System:
+
+```tsx
+const statusMap = {
+  "EM ANÁLISE": { color: "blue", appearance: "solid" },
+  DEFERIDO: { color: "green", appearance: "solid" },
+  "EM PROCESSAMENTO": { color: "orange", appearance: "solid" },
+  "EXIGÊNCIA PENDENTE": { color: "yellow", appearance: "solid" },
+  INDEFERIDO: { color: "red", appearance: "solid" },
+  CANCELADO: { color: "slate", appearance: "solid" },
+  ARQUIVADO: { color: "black", appearance: "solid" },
+  "STATUS DO CLIENTE": { color: "primary", appearance: "outline" },
+} satisfies StatusAppearanceMap;
+
+<DomainStatusBadge status={status} statusMap={statusMap} />
+```
+
 `DatePicker` agora aceita `selectionMode="month" | "year"`, mantendo
 `selectionMode="day"` como padrão, além de `ariaLabel`, descrições/erros
 associados e navegação por teclado. `DomainStatusBadge` aceita `statusMap` e

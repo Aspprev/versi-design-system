@@ -6,6 +6,7 @@
     --primary-3: 22, 44, 100;
     --primary-4: 197, 214, 254;
     --primary-5: 235, 240, 255;
+    --action-primary-ghost-background: var(--primary-5);
   }
 
   :is([data-ds-theme="azul2"], .azul2) {
@@ -14,6 +15,7 @@
     --primary-3: 0, 53, 77;
     --primary-4: 142, 220, 255;
     --primary-5: 233, 248, 255;
+    --action-primary-ghost-background: var(--primary-5);
     --content-link: var(--primary-2);
   }
 
@@ -23,6 +25,7 @@
     --primary-3: 0, 19, 56;
     --primary-4: 161, 193, 254;
     --primary-5: 230, 239, 255;
+    --action-primary-ghost-background: var(--primary-5);
   }
 
   :is([data-ds-theme="laranja1"], .laranja1) {
@@ -31,6 +34,7 @@
     --primary-3: 146, 68, 0;
     --primary-4: 255, 196, 137;
     --primary-5: 255, 235, 215;
+    --action-primary-ghost-background: var(--primary-5);
     --content-link: var(--primary-3);
   }
 
@@ -40,6 +44,7 @@
     --primary-3: 128, 45, 11;
     --primary-4: 255, 151, 109;
     --primary-5: 255, 229, 219;
+    --action-primary-ghost-background: var(--primary-5);
     --content-link: var(--primary-2);
   }
 
@@ -49,6 +54,7 @@
     --primary-3: 0, 52, 22;
     --primary-4: 198, 238, 215;
     --primary-5: 229, 245, 236;
+    --action-primary-ghost-background: var(--primary-5);
   }
 
   :is([data-ds-theme="verde2"], .verde2) {
@@ -57,6 +63,7 @@
     --primary-3: 37, 54, 9;
     --primary-4: 170, 184, 148;
     --primary-5: 236, 242, 228;
+    --action-primary-ghost-background: var(--primary-5);
   }
 
   :is([data-ds-theme="verde3"], .verde3) {
@@ -65,6 +72,7 @@
     --primary-3: 0, 71, 51;
     --primary-4: 140, 221, 197;
     --primary-5: 227, 250, 243;
+    --action-primary-ghost-background: var(--primary-5);
     --content-link: var(--primary-2);
     --focus-ring: var(--primary-2);
   }
@@ -75,6 +83,7 @@
     --primary-3: 41, 87, 29;
     --primary-4: 169, 209, 163;
     --primary-5: 231, 250, 228;
+    --action-primary-ghost-background: var(--primary-5);
   }
 
   :is([data-ds-theme="rosa1"], .rosa1) {
@@ -83,6 +92,7 @@
     --primary-3: 114, 49, 39;
     --primary-4: 245, 203, 197;
     --primary-5: 255, 239, 236;
+    --action-primary-ghost-background: var(--primary-5);
     --content-link: var(--primary-2);
   }
 
