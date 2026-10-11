@@ -64,7 +64,7 @@
     "formik": "^2.4.9",
     "jsbarcode": "^3.12.3",
     "react": ">=18.2.0 <20",
-    "react-apexcharts": "^1.9.0",
+    "react-apexcharts": "^2.1.1",
     "react-dom": ">=18.2.0 <20",
     "react-number-format": "^5.4.4"
   },
@@ -120,7 +120,7 @@
     "jsbarcode": "^3.12.3",
     "postcss": "8.5.26",
     "react": "^19.2.3",
-    "react-apexcharts": "^1.9.0",
+    "react-apexcharts": "^2.1.1",
     "react-dom": "^19.2.3",
     "react-number-format": "^5.4.4",
     "storybook": "^10.6.0",
