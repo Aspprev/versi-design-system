@@ -9,6 +9,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 import postcss from "postcss";
 import tailwind from "tailwindcss";
 import { chromium } from "@playwright/test";
+import { resolveNpmCli } from "./resolve-npm-cli.mjs";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const directory = path.join(root, "test-results/info-grid-consumer");
@@ -19,7 +20,7 @@ function run(command, args) {
   return result.stdout;
 }
 // Extract the actual npm artifact into a consumer node_modules, without a source alias.
-const npmCli = process.env.npm_execpath || path.join(path.dirname(process.execPath), "node_modules/npm/bin/npm-cli.js");
+const npmCli = resolveNpmCli();
 const [packed] = JSON.parse(run(process.execPath, [npmCli, "pack", "--ignore-scripts", "--json", "--pack-destination", directory]));
 const installed = path.join(directory, "node_modules/@aspprev/versi-ds");
 fs.mkdirSync(installed, { recursive: true });

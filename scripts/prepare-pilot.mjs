@@ -3,14 +3,16 @@ import path from "node:path";
 import assert from "node:assert/strict";
 import { fileURLToPath } from "node:url";
 import { spawnSync } from "node:child_process";
+import { resolveNpmCli } from "./resolve-npm-cli.mjs";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const pilot = path.join(root, "examples/pilot");
 const vendor = path.join(pilot, "vendor");
 const pkg = JSON.parse(fs.readFileSync(path.join(root, "package.json"), "utf8"));
 const artifact = `${pkg.name.replace(/^@/, "").replace("/", "-")}-${pkg.version}.tgz`;
+const npmCli = resolveNpmCli();
 function npm(args, cwd) {
-  const result = spawnSync(process.execPath, [process.env.npm_execpath, ...args], { cwd, stdio: "inherit" });
+  const result = spawnSync(process.execPath, [npmCli, ...args], { cwd, stdio: "inherit" });
   if (result.error) throw result.error;
   if (result.status !== 0) process.exit(result.status ?? 1);
 }
