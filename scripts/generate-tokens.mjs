@@ -7,6 +7,7 @@ const repositoryRoot = path.resolve(packageRoot, "..");
 const registryPath = path.join(packageRoot, "tokens", "design-system.tokens.json");
 
 const stripComments = (value) => value.replace(/\/\*[\s\S]*?\*\//g, "");
+const normalizeLineEndings = (value) => value.replace(/\r\n?/g, "\n");
 
 function matchingBrace(source, openIndex) {
   let depth = 0;
@@ -183,8 +184,8 @@ export function generateTokenFiles({ check = false } = {}) {
     throw new Error("Registro de tokens invalido: esperado version 1 com tokens e themes.");
   }
   const expected = {
-    tokens: renderTokens(registry),
-    themes: renderThemes(registry),
+    tokens: normalizeLineEndings(renderTokens(registry)),
+    themes: normalizeLineEndings(renderThemes(registry)),
   };
   const mismatches = [];
 
@@ -194,7 +195,7 @@ export function generateTokenFiles({ check = false } = {}) {
       const current = fs.existsSync(outputPath)
         ? fs.readFileSync(outputPath, "utf8")
         : "";
-      if (current !== content) {
+      if (normalizeLineEndings(current) !== content) {
         mismatches.push(path.relative(repositoryRoot, outputPath));
         if (!check) fs.writeFileSync(outputPath, content);
       }
@@ -206,7 +207,7 @@ export function generateTokenFiles({ check = false } = {}) {
   const currentTailwindColors = fs.existsSync(tailwindColorsPath)
     ? fs.readFileSync(tailwindColorsPath, "utf8")
     : "";
-  if (currentTailwindColors !== tailwindColors) {
+  if (normalizeLineEndings(currentTailwindColors) !== tailwindColors) {
     mismatches.push(path.relative(repositoryRoot, tailwindColorsPath));
     if (!check) fs.writeFileSync(tailwindColorsPath, tailwindColors);
   }
