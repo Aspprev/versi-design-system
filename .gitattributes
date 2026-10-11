@@ -1,0 +1,4 @@
+# Keep generated token artifacts identical in Windows and Linux checkouts.
+/src/tokens.css text eol=lf
+/src/themes.css text eol=lf
+/tokens/tailwind-colors.cjs text eol=lf
