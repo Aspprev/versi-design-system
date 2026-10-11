@@ -4,19 +4,21 @@ import os from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { spawnSync } from "node:child_process";
+import { resolveNpmCli } from "./resolve-npm-cli.mjs";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const pkg = JSON.parse(
   fs.readFileSync(path.join(root, "package.json"), "utf8"),
 );
 const react18 = process.argv.includes("--react18");
+const npmCli = resolveNpmCli();
 const temp = fs.mkdtempSync(path.join(os.tmpdir(), "versi-package-"));
 function run(args, cwd = temp) {
   const result = spawnSync(process.execPath, args, {
     cwd,
     encoding: "utf8",
     // Registry downloads and antivirus scans can exceed the compiler timeout.
-    timeout: args[0] === process.env.npm_execpath ? 600_000 : 240_000,
+    timeout: args[0] === npmCli ? 600_000 : 240_000,
   });
   assert.equal(
     result.status,
@@ -25,7 +27,7 @@ function run(args, cwd = temp) {
   );
   return result.stdout;
 }
-const npm = (...args) => run([process.env.npm_execpath, ...args]);
+const npm = (...args) => run([npmCli, ...args]);
 function verify(entries) {
   fs.writeFileSync(
     path.join(temp, "consumer.mjs"),
@@ -82,7 +84,7 @@ try {
   const [packed] = JSON.parse(
     run(
       [
-        process.env.npm_execpath,
+        npmCli,
         "pack",
         "--ignore-scripts",
         "--json",

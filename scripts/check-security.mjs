@@ -3,9 +3,9 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { spawnSync } from "node:child_process";
 import { verifyBuildSecurity } from "./check-build-security.mjs";
+import { resolveNpmCli } from "./resolve-npm-cli.mjs";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
-const npmCli = process.env.npm_execpath || path.join(path.dirname(process.execPath), "node_modules/npm/bin/npm-cli.js");
 
 export function assessAudit(result) {
   let report;
@@ -41,6 +41,7 @@ export function describeFinding(finding) {
 }
 
 export function runSecurityChecks(run = spawnSync, output = path.join(root, "test-results/security")) {
+  const npmCli = resolveNpmCli();
   fs.mkdirSync(output, { recursive: true });
   const summaries = [];
   for (const [id, cwd] of [["ds", root], ["pilot", path.join(root, "examples/pilot")]]) {

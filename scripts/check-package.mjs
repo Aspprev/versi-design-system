@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { spawnSync } from "node:child_process";
+import { resolveNpmCli } from "./resolve-npm-cli.mjs";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const pkg = JSON.parse(fs.readFileSync(path.join(root, "package.json"), "utf8"));
@@ -40,7 +41,7 @@ for (const file of expectedFlags) {
     fs.readFileSync(path.join(root, "public/flags", file), "utf8"));
 }
 // --ignore-scripts prevents recursion through prepack; prepack already built dist.
-const packed = spawnSync(process.execPath, [process.env.npm_execpath, "pack", "--dry-run", "--json", "--ignore-scripts"],
+const packed = spawnSync(process.execPath, [resolveNpmCli(), "pack", "--dry-run", "--json", "--ignore-scripts"],
   { cwd: root, encoding: "utf8" });
 assert.equal(packed.status, 0, `${packed.error || ""}\n${packed.stderr}`);
 const [report] = JSON.parse(packed.stdout);
