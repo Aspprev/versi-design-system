@@ -2,6 +2,48 @@ import { getCountryFlagUrl } from "../../flag-url";
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
 
+test("SelectCountry: showFlags=false oculta somente a bandeira do campo", async ({ page }) => {
+  await page.goto("/iframe.html?id=components-forms-selectcountry--without-flags&viewMode=story");
+  const trigger = page.getByRole("combobox");
+  await expect(trigger).toBeVisible();
+  await expect(trigger).toContainText("Brasil");
+  await expect(trigger.locator("img")).toHaveCount(0);
+  await trigger.click();
+  const search = page.getByRole("textbox", { name: /Pesquisar opções/ });
+  await search.fill("Portugal");
+  const option = page.getByRole("option").filter({ hasText: "Portugal" });
+  const flag = option.locator("img");
+  await expect(flag).toBeVisible();
+  await expect.poll(() => flag.evaluate(img => (img as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+  await option.click();
+  await expect(trigger).toContainText("Portugal");
+  await expect(trigger.locator("img")).toHaveCount(0);
+  await trigger.click();
+  await search.fill("Portugal");
+  await expect(option.locator("img")).toBeVisible();
+});
+
+test("InputPhone: showFlags=false oculta somente a bandeira do input", async ({ page }) => {
+  await page.goto("/iframe.html?id=components-forms-inputphone--without-flags&viewMode=story");
+  const trigger = page.getByRole("button", { name: /Selecionar país de/ });
+  await expect(trigger).toBeVisible();
+  await expect(trigger.locator("img")).toHaveCount(0);
+  await expect(trigger).toContainText("+55");
+  await trigger.click();
+  const search = page.getByRole("textbox", { name: "Pesquisar país ou DDI" });
+  await search.fill("Portugal");
+  const option = page.getByRole("dialog").getByRole("button").filter({ hasText: "Portugal" });
+  const flag = option.locator("img");
+  await expect(flag).toBeVisible();
+  await expect.poll(() => flag.evaluate(img => (img as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+  await option.click();
+  await expect(trigger).toContainText("+351");
+  await expect(trigger.locator("img")).toHaveCount(0);
+  await trigger.click();
+  await search.fill("Portugal");
+  await expect(option.locator("img")).toBeVisible();
+});
+
 for (const scheme of ["light", "dark"]) {
   for (const contrast of ["normal", "high"]) {
     for (const component of ["select-country", "input-phone"]) {

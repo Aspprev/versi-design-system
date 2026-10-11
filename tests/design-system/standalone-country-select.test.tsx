@@ -71,7 +71,7 @@ describe("SelectCountry standalone", () => {
     expect(html).toContain("Nenhuma opção selecionada");
   });
 
-  it("oculta a bandeira sem reservar espaço quando showFlags é false", () => {
+  it("oculta a bandeira do campo sem reservar espaço quando showFlags é false", () => {
     const html = renderToStaticMarkup(
       <Formik initialValues={{ pais: "BR" }} onSubmit={() => undefined}>
         <SelectCountry

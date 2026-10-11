@@ -28,7 +28,7 @@ export type SelectCountryProps = Omit<
   options?: SelectCountryOption[];
   /** Use `all` (padrao), `include` ou `exclude` com codigos ISO-2. */
   countryList?: CountryListFilter;
-  /** Exibe as bandeiras dos países. O padrão é true. */
+  /** Exibe a bandeira no campo. A lista de países sempre mantém as bandeiras. Padrão: true. */
   showFlags?: boolean;
 };
 
@@ -98,7 +98,7 @@ export function SelectCountry({
       searchPlaceholder={searchPlaceholder}
       noOptionsText={noOptionsText}
       renderOption={(option) =>
-        renderCountryContent(option as SelectCountryOption, undefined, showFlags)
+        renderCountryContent(option as SelectCountryOption)
       }
       renderValue={(option, placeholder) =>
         renderCountryContent(

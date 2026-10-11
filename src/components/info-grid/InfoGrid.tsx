@@ -3,11 +3,11 @@ import type { ComponentProps, ReactNode } from "react";
 import { resolveOptionalValue, type OptionalValuePolicy } from "../../utils/optional-value";
 
 const COLUMN_STYLES = {
-  1: "grid-cols-1",
-  2: "grid-cols-1 mobile:grid-cols-2",
-  3: "grid-cols-1 mobile:grid-cols-2 tablet:grid-cols-3",
-  4: "grid-cols-1 mobile:grid-cols-2 desktop:grid-cols-4",
-  6: "grid-cols-1 mobile:grid-cols-2 tablet:grid-cols-3 desktop:grid-cols-6",
+  1: "versi-info-grid--1",
+  2: "versi-info-grid--2",
+  3: "versi-info-grid--3",
+  4: "versi-info-grid--4",
+  6: "versi-info-grid--6",
 } as const;
 
 export interface InfoGridProps extends ComponentProps<"dl"> {
@@ -18,7 +18,7 @@ export function InfoGrid({ columns = 3, className, ...rest }: InfoGridProps) {
   return (
     <dl
       className={classNames(
-        "grid gap-x-8 gap-y-5",
+        "versi-info-grid grid gap-x-8 gap-y-5",
         COLUMN_STYLES[columns],
         className,
       )}

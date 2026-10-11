@@ -68,7 +68,7 @@ export type InputPhoneProps = {
   countryList?: CountryListFilter;
   disabled?: boolean;
   className?: string;
-  /** Exibe as bandeiras do país. O padrão é true. */
+  /** Exibe a bandeira no input. A lista de países sempre mantém as bandeiras. Padrão: true. */
   showFlags?: boolean;
 };
 
@@ -676,7 +676,7 @@ export function InputPhone({
                     }}
                     className="flex w-full items-center gap-2 px-3 py-2 text-left text-sm hover:bg-surface-muted focus-visible:bg-surface-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-focus-ring"
                   >
-                    {renderFlag(country, showFlags)}
+                    {renderFlag(country, true)}
                     <span className="min-w-0 flex-1 truncate text-field-content">
                       {country.label}
                     </span>
