@@ -1,6 +1,6 @@
 {
   "name": "@aspprev/versi-ds",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -98,6 +98,7 @@
     "react-icons": "^5.5.0"
   },
   "devDependencies": {
+    "braces": "file:vendor/braces-build",
     "@axe-core/playwright": "^4.13.0",
     "@eslint/js": "^10.0.1",
     "@headlessui/react": "^2.2.9",
@@ -139,6 +140,8 @@
     "check:bundle": "node scripts/check-bundle-splitting.mjs",
     "check:governance": "node scripts/check-governance.mjs",
     "check:security": "node scripts/check-security.mjs",
+    "check:release": "node scripts/check-release.mjs",
+    "check:build-security": "node scripts/check-build-security.mjs",
     "storybook": "storybook dev -p 6006",
     "storybook:standalone": "storybook dev -p 6007",
     "build-storybook": "storybook build",
@@ -159,6 +162,8 @@
     "test:info-grid-consumer": "npm run build && node scripts/test-info-grid-consumer.mjs"
   },
   "overrides": {
+    "braces": "$braces",
+    "postcss-selector-parser": "7.1.6",
     "tsup": {
       "esbuild": "^0.28.1"
     }

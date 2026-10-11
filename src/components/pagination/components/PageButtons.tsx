@@ -14,10 +14,10 @@ function PageButtons(props: IProps) {
   const { currentPage, totalResults, perPage, onClick, size } = props;
   const pages = Math.max(1, Math.ceil(totalResults / perPage));
   const sizeClasses = PAGINATION_SIZE_CLASSES[size];
-  let pagesAfter = (pages - currentPage) > 2 ? 2 : (pages - currentPage);
-  let pagesBefore = currentPage > 2 ? 2 : currentPage === 2 ? 1 : 0;
+  const pagesAfter = (pages - currentPage) > 2 ? 2 : (pages - currentPage);
+  const pagesBefore = currentPage > 2 ? 2 : currentPage === 2 ? 1 : 0;
   let buttonsBefore: ReactNode[] = [];
-  let buttonsAfter: ReactNode[] = [];
+  const buttonsAfter: ReactNode[] = [];
 
   for (let i = 1; i <= pagesBefore; i++) {
     const page = currentPage - i;

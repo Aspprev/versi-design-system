@@ -34,15 +34,12 @@ const InputSlider: React.FC<InputSliderProps> = ({
   prefix,
   suffix,
   sufix,
-  marks,
-  valueLabelDisplay = "auto",
   showLabel = false,
   disabled = false,
   inputDisabled = false,
   valueFormmated,
   showInput = false,
   ariaLabel,
-  ...rest
 }) => {
   const [value, setValue] = useState(initialValue);
   const resolvedSuffix = suffix ?? sufix;
@@ -54,7 +51,7 @@ const InputSlider: React.FC<InputSliderProps> = ({
       const parsedValue = Number(newValue);
       setValue(parsedValue);
     },
-    [functionChange]
+    []
   );
 
   const handleInputChange = useCallback(

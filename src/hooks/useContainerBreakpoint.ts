@@ -32,10 +32,8 @@ export function resolveContainerBreakpoint(
 }
 
 function getBreakpointMapKey(breakpoints: ContainerBreakpointMap) {
-  return Object.entries(breakpoints)
-    .sort(([first], [second]) => first.localeCompare(second))
-    .map(([name, threshold]) => `${name}:${threshold}`)
-    .join("|");
+  return JSON.stringify(Object.entries(breakpoints)
+    .sort(([, first], [, second]) => first - second));
 }
 
 export function useContainerBreakpoint<TElement extends HTMLElement = HTMLElement>(
@@ -45,10 +43,7 @@ export function useContainerBreakpoint<TElement extends HTMLElement = HTMLElemen
   const thresholds = options.breakpoints ?? defaultContainerBreakpoints;
   const thresholdsKey = getBreakpointMapKey(thresholds);
   const sortedThresholds = useMemo(
-    () =>
-      Object.entries(thresholds).sort(([, first], [, second]) =>
-        first === second ? 0 : first - second,
-      ),
+    () => JSON.parse(thresholdsKey) as [string, number][],
     [thresholdsKey],
   );
   const [current, setCurrent] = useState<ContainerBreakpoint>();

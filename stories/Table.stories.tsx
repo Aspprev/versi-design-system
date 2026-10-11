@@ -176,7 +176,7 @@ function MobileCards(props: MobileCardTableProps<Participant>) {
       expandable={{
         expandedRowId,
         getRowId: (item) => item.id,
-        onToggleRow: (rowId, item, index) => setExpandedRowId(expandedRowId === rowId ? null : Number(rowId)),
+        onToggleRow: (rowId) => setExpandedRowId(expandedRowId === rowId ? null : Number(rowId)),
         renderExpandedRow: (item) => <p className="text-sm">Detalhes de {item.name}</p>,
       }}
     />

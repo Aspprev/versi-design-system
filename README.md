@@ -228,6 +228,14 @@ npm run prepack
 
 O script `prepack` valida tokens, governança, segurança, lint, TypeScript, build, tamanho e conteúdo do pacote.
 
+Os workflows compartilham as validações de segurança, pacote e consumidores.
+Consulte [segurança do build e compatibilidade](docs/SEGURANCA-BUILD-COMPATIBILIDADE.md)
+para a correção local de build que preserva o suporte aos navegadores atuais.
+`npm run check:security` audita DS e piloto nos escopos completo e de produção,
+verifica a mitigação instalada e salva relatórios em `test-results/security`.
+`npm run check:release -- vX.Y.Z` confere a tag candidata contra os manifestos;
+no CI de publicação, a tag é obtida do evento do GitHub.
+
 Para testar o exemplo integrado:
 
 ```bash

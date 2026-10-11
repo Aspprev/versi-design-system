@@ -13,9 +13,16 @@ npm run pilot:prepare
 npm run pilot:dev
 ```
 
-Abra http://127.0.0.1:4175. A preparação executa npm pack com as verificações
-prepack, instala o .tgz em examples/pilot sem copiar bandeiras: os SVGs estão incorporados no JavaScript. O nome do artefato é derivado do manifesto atual;
+Abra http://127.0.0.1:4175. A preparação gera o build, executa `npm pack --ignore-scripts`,
+atualiza manifesto e lockfile e instala o tarball com `npm ci --ignore-scripts`.
+Ela compara todos os arquivos de `dist` com o pacote instalado. Não copia
+bandeiras: os SVGs estão incorporados no JavaScript. O nome do artefato é derivado do manifesto atual;
 a preparação não altera a versão nem publica no npm.
+
+Quando o build já estiver atualizado, use `npm run pilot:prepare -- --skip-build`.
+As validações de segurança e do pacote são executadas **após** a preparação;
+rode `npm run check:security` e `npm run check:package`. O CI usa essa mesma
+sequência para evitar auditar um piloto com um tarball antigo.
 
 Para testar o resultado de produção:
 
