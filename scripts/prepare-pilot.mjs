@@ -15,16 +15,28 @@ function npm(args, cwd) {
   if (result.status !== 0) process.exit(result.status ?? 1);
 }
 fs.mkdirSync(vendor, { recursive: true });
-npm(["pack", "--pack-destination", vendor], root);
+if (!process.argv.includes("--skip-build")) npm(["run", "build"], root);
+const built = JSON.parse(fs.readFileSync(path.join(root, "dist/manifest.json"), "utf8"));
+assert.equal(built.version, pkg.version, "O build deve corresponder à versão atual.");
+// Validation follows preparation; prepack would audit a stale pilot here.
+npm(["pack", "--ignore-scripts", "--pack-destination", vendor], root);
 const manifestPath = path.join(pilot, "package.json");
 const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
 manifest.dependencies[pkg.name] = `file:./vendor/${artifact}`;
 fs.writeFileSync(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
 // Explicit tarball install refreshes the artifact even when the version is unchanged.
-npm(["install", "--ignore-scripts", `./vendor/${artifact}`], pilot);
+npm(["install", "--package-lock-only", "--ignore-scripts", "--no-audit", "--no-fund", `./vendor/${artifact}`], pilot);
+npm(["ci", "--ignore-scripts", "--no-audit", "--no-fund"], pilot);
 const installed = path.join(pilot, "node_modules", pkg.name);
 assert(!fs.lstatSync(installed).isSymbolicLink(), "O piloto deve usar o tarball, não symlink.");
 assert.equal(fs.readFileSync(path.join(installed, "dist/index.js"), "utf8"), fs.readFileSync(path.join(root, "dist/index.js"), "utf8"));
+assert.equal(JSON.parse(fs.readFileSync(path.join(installed, "package.json"), "utf8")).version, pkg.version);
+for (const relative of fs.readdirSync(path.join(root, "dist"), { recursive: true })) {
+  const source = path.join(root, "dist", relative);
+  if (fs.statSync(source).isFile()) {
+    assert(fs.readFileSync(source).equals(fs.readFileSync(path.join(installed, "dist", relative))), `Artefato divergente: ${relative}`);
+  }
+}
 // The consumer must have no locally served flags.
 assert(!fs.existsSync(path.join(pilot, "public/flags")), "Remova public/flags legado do piloto.");
 console.log(`Piloto preparado com ${artifact}, instalado em node_modules próprio.`);

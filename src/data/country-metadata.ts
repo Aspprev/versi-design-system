@@ -31,8 +31,11 @@ type RawCountry = {
 };
 
 function text(value: unknown) {
+  // Country metadata must strip ASCII control characters before display.
+  // eslint-disable-next-line no-control-regex -- explicit sanitization range
+  const controls = /[\u0000-\u001F\u007F]/g;
   return typeof value === "string"
-    ? value.replace(/[\u0000-\u001F\u007F]/g, "").trim().slice(0, 120)
+    ? value.replace(controls, "").trim().slice(0, 120)
     : "";
 }
 

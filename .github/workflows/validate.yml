@@ -1,0 +1,60 @@
+name: Validate package and consumers
+
+on:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            examples/pilot/package-lock.json
+      - run: npm ci --ignore-scripts
+      - run: npm run check:release
+      - run: npm run tokens:check
+      - run: npm run check:governance
+      - run: npm run build
+      - run: npm run pilot:prepare -- --skip-build
+      - run: npm run check:security
+      - run: npm run lint -- --max-warnings=0
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run check:size
+      - run: npm run check:bundle
+      - run: npm run check:package
+      - run: npm run test:package
+      - run: npm run test:package -- --react18
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/test-info-grid-consumer.mjs
+      - run: npx playwright test countries.visual.spec.ts
+      - run: npm run test:pilot
+      - name: Pack the validated release artifact
+        run: |
+          mkdir -p test-results/release
+          npm pack --ignore-scripts --pack-destination test-results/release
+      - uses: actions/upload-artifact@v4
+        with:
+          name: validated-package
+          path: test-results/release/*.tgz
+          if-no-files-found: error
+      - name: Upload audit reports and browser diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-reports
+          path: |
+            test-results/security/
+            test-results/design-system-visual/
+            test-results/pilot/
+            playwright-report/
+          if-no-files-found: warn

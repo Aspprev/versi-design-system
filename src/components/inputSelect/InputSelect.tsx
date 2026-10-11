@@ -73,6 +73,10 @@ const InputSelect: React.FC<InputSelectProps> = ({
   onChange,
   ...rest
 }) => {
+  // Legacy props are intentionally consumed, rather than forwarded to the DOM.
+  // They have never changed this component's rendering; retain that contract.
+  void suffix;
+  void error;
   const isSearchable = searchable ?? options.length > 10;
 
   const normalizeSearchText = (value: string) =>

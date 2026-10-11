@@ -20,7 +20,7 @@ const avatarSizeMap = {
 
 function Inicials(name: string) {
   const nome = name;
-  if (!!nome) {
+  if (nome) {
     const array = nome.split(" ");
     const primeiraLetra = nome.charAt(0);
     const posicaoUltimoEspaco = nome.lastIndexOf(" ");
@@ -57,7 +57,7 @@ const Avatar: React.FC<AvatarProps> = ({
 
   const avatarComponent = image ? (
     <AvatarImage src={image} altDescription={description} />
-  ) : !!name ? (
+  ) : name ? (
     <span
       className={classNames(
         `flex items-center justify-center`,

@@ -2,23 +2,7 @@ name: Security and package checks
 
 on:
   push:
-    paths:
-      - "package.json"
-      - "package-lock.json"
-      - "src/**"
-      - "scripts/**"
-      - "examples/pilot/package.json"
-      - "examples/pilot/package-lock.json"
-      - ".github/workflows/security.yml"
   pull_request:
-    paths:
-      - "package.json"
-      - "package-lock.json"
-      - "src/**"
-      - "scripts/**"
-      - "examples/pilot/package.json"
-      - "examples/pilot/package-lock.json"
-      - ".github/workflows/security.yml"
   schedule:
     - cron: "17 3 * * 1"
   workflow_dispatch:
@@ -27,28 +11,5 @@ permissions:
   contents: read
 
 jobs:
-  security:
-    runs-on: ubuntu-latest
-    timeout-minutes: 20
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
-          cache-dependency-path: |
-            package-lock.json
-            examples/pilot/package-lock.json
-      - run: npm ci --ignore-scripts
-      - run: npm run build
-      - name: Prepare pilot vendor directory
-        run: mkdir -p examples/pilot/vendor
-      - run: npm pack --ignore-scripts --pack-destination examples/pilot/vendor
-      - name: Refresh pilot lockfile for generated tarball
-        working-directory: examples/pilot
-        run: npm install --ignore-scripts --no-audit --no-fund --package-lock-only ./vendor/*.tgz
-      - run: npm ci --prefix examples/pilot --ignore-scripts
-      - run: npm run check:security
-      - run: npm run lint
-      - run: npm run typecheck
-      - run: npm test
+  checks:
+    uses: ./.github/workflows/validate.yml

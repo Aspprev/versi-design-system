@@ -38,7 +38,9 @@ try {
     const url = `http://127.0.0.1:${port}`;
     let ready = false;
     for (let i = 0; i < 120; i++) {
-      try { if ((await fetch(url)).ok) { ready = true; break; } } catch {}
+      try { if ((await fetch(url)).ok) { ready = true; break; } } catch {
+        // The production server may still be starting; retry until the deadline.
+      }
       await new Promise(resolve => setTimeout(resolve, 500));
     }
     assert(ready, `${framework} server unavailable`);

@@ -15,7 +15,8 @@ function run(args, cwd = temp) {
   const result = spawnSync(process.execPath, args, {
     cwd,
     encoding: "utf8",
-    timeout: 240_000,
+    // Registry downloads and antivirus scans can exceed the compiler timeout.
+    timeout: args[0] === process.env.npm_execpath ? 600_000 : 240_000,
   });
   assert.equal(
     result.status,

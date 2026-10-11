@@ -17,7 +17,7 @@ export function Checkbox({
   layout = "row",
   ...props
 }: CheckboxProps) {
-  let containerClass = "";
+  let containerClass: string;
   if (layout === "col") {
     containerClass = "flex flex-col gap-y-3 mt-3";
   } else if (layout === "grid-2") {

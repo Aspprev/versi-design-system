@@ -75,7 +75,6 @@ export function FormErrorNavigation() {
 
       const form = event.target;
       let handled = false;
-      let observer: MutationObserver | undefined;
       const timers: number[] = [];
 
       const cleanup = () => {
@@ -94,7 +93,7 @@ export function FormErrorNavigation() {
         navigateToInvalidField(field);
       };
 
-      observer = new MutationObserver(tryNavigate);
+      const observer = new MutationObserver(tryNavigate);
       observer.observe(form, {
         attributeFilter: ["aria-invalid"],
         attributes: true,
