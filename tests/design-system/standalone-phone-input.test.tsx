@@ -79,7 +79,7 @@ describe("InputPhone standalone", () => {
     });
   });
 
-  it("mantém largura total no wrapper e permite ocultar bandeiras", () => {
+  it("mantém largura total no wrapper e permite ocultar a bandeira do input", () => {
     const html = renderToStaticMarkup(
       <Formik
         initialValues={{ telefone: { ddi: 55, ddd: "11", numero: "987654321" } }}

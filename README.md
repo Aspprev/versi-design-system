@@ -32,6 +32,42 @@ import "@aspprev/versi-ds/styles.css";
 import "@aspprev/versi-ds/themes.css";
 ```
 
+### InfoGrid em aplicações com Tailwind
+
+O layout de `InfoGrid` vem pronto em `@aspprev/versi-ds/styles.css`. Não é
+necessário incluir o pacote no `content` do Tailwind, usar `safelist` ou repetir
+classes responsivas no consumidor. Os breakpoints do componente são fixos:
+
+| `columns` | abaixo de 640px | a partir de 640px | a partir de 1024px | a partir de 1440px |
+| --- | --- | --- | --- | --- |
+| 1 | 1 | 1 | 1 | 1 |
+| 2 | 1 | 2 | 2 | 2 |
+| 3 (padrão) | 1 | 2 | 3 | 3 |
+| 4 | 1 | 2 | 2 | 4 |
+| 6 | 1 | 2 | 3 | 6 |
+
+As regras próprias `versi-info-grid*` usam `:where()` para permitir customização
+por `className`, inclusive `grid-cols-*` e variantes responsivas, independentemente
+da ordem entre o CSS do DS e as utilities do Tailwind 3 do consumidor. Para usar
+nomes como `mobile:`, `tablet:` e `desktop:` nas suas customizações, configure
+esses nomes no Tailwind da aplicação (640px, 1024px e 1440px, respectivamente).
+Classes personalizadas devem estar nos arquivos cobertos pelo `content` do consumidor.
+
+A implementação anterior compartilhava classes de colunas com o consumidor.
+Quando o CSS do consumidor vinha depois e gerava `tablet:grid-cols-3`, mas não
+`desktop:grid-cols-6`, a regra de tablet também se aplicava em desktop e vencia
+pela ordem de declaração e mesma especificidade. A geração da regra de desktop
+no pacote estava correta. Agora o layout usa seletores próprios, sem depender
+da geração parcial de utilities. Após atualizar o JS **e** o CSS do pacote,
+o contorno `className="tablet:grid-cols-3 desktop:grid-cols-6"` pode ser removido
+do portal: `<InfoGrid columns={6}>` é suficiente.
+
+Validação de navegador do artefato npm: `npm run test:info-grid-consumer`
+(requer Chromium instalado com `npx playwright install chromium`). O teste
+empacota e extrai o DS em um consumidor, gera Tailwind somente a partir do
+`src` desse consumidor e verifica `grid-template-columns` nas duas ordens de CSS,
+sem Tailwind adicional e com customização explícita por `className`.
+
 Use componentes pela raiz ou por um entrypoint público:
 
 ```tsx
@@ -97,7 +133,7 @@ import {
 - `DatePicker` aceita `selectionMode="year"` e mantém `selectionMode="day"` como padrão.
 - `StatusBadge` oferece as cores `primary`, `blue`, `green`, `orange`, `yellow`, `red`, `slate` e `black` nas aparências `solid`, `soft` e `outline`. `DomainStatusBadge` aceita um `statusMap` definido pelo consumidor; o DS não associa nomes de status a cores.
 - `Table` preserva os modos `fit`, `adaptive` e `scroll`; filtros e paginação respondem ao espaço do container.
-- `InputPhone`/`PhoneInput` e `SelectCountry` aceitam `showFlags`; o padrão é `true` e `showFlags={false}` remove a bandeira sem reservar espaço.
+- `InputPhone`/`PhoneInput` e `SelectCountry`/`CountrySelect` aceitam `showFlags` (padrão: `true`); `showFlags={false}` oculta somente a bandeira do campo, sem reservar espaço. A lista de países sempre mantém as bandeiras.
 - Os controles de formulário ocupam a largura disponível do container; `className="w-full"` pode ser usado em grids, flex containers e colunas responsivas.
 
 Consulte [`docs/API-NOVOS-COMPONENTES.md`](docs/API-NOVOS-COMPONENTES.md) e o Storybook para exemplos completos, estados de erro/carregamento e contratos de acessibilidade.

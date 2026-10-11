@@ -4,6 +4,35 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Component-owned layout: consumer Tailwind must not partially regenerate it.
+   Zero specificity lets explicit className utilities override these defaults,
+   regardless of stylesheet order. Keep outside Tailwind's prunable layers. */
+:where(.versi-info-grid) {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 640px) {
+  :where(.versi-info-grid--2, .versi-info-grid--3, .versi-info-grid--4, .versi-info-grid--6) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  :where(.versi-info-grid--3, .versi-info-grid--6) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1440px) {
+  :where(.versi-info-grid--4) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  :where(.versi-info-grid--6) {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
 @layer base {
   *,
   *::before,

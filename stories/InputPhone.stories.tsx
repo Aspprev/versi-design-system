@@ -90,7 +90,7 @@ export const WithoutFlags: Story = {
   parameters: {
     docs: {
       description: {
-        story: "Oculta as bandeiras sem remover o país, o DDI ou o fluxo de busca.",
+        story: "Oculta somente a bandeira do input; a lista de países mantém as bandeiras, o DDI e a busca.",
       },
     },
   },

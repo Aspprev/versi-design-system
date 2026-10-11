@@ -80,7 +80,7 @@ export const WithoutFlags: Story = {
   parameters: {
     docs: {
       description: {
-        story: "Oculta as bandeiras sem reservar espaço e mantém a busca funcional.",
+        story: "Oculta somente a bandeira do campo, sem reservar espaço; a lista mantém as bandeiras e a busca.",
       },
     },
   },

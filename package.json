@@ -1,6 +1,6 @@
 {
   "name": "@aspprev/versi-ds",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -155,7 +155,8 @@
     "pilot:build": "npm --prefix examples/pilot run build",
     "pilot:dev": "npm --prefix examples/pilot run dev",
     "test:pilot": "npm run pilot:build && playwright test --config=playwright.pilot.config.ts",
-    "test:flags-consumers": "node scripts/test-flags-consumers.mjs"
+    "test:flags-consumers": "node scripts/test-flags-consumers.mjs",
+    "test:info-grid-consumer": "npm run build && node scripts/test-info-grid-consumer.mjs"
   },
   "overrides": {
     "tsup": {
