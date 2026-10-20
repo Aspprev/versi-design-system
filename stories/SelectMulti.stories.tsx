@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import {
   SelectMulti,
@@ -71,5 +71,38 @@ export const Disabled: Story = {
   render: (args) => (
     <SelectMultiForm {...args} initialValue={["especial"]} />
   ),
+};
+
+function ResponsiveSelectionExample() {
+  const [width, setWidth] = useState(360);
+  const summaryOptions = [
+    { label: "Plano Básico", value: "basico" },
+    { label: "Plano Especial", value: "especial" },
+    { label: "Aposentadoria complementar", value: "aposentadoria" },
+    { label: "Pensão por morte", value: "pensao" },
+    { label: "Benefício proporcional diferido", value: "diferido" },
+  ];
+  return (
+    <div className="w-full max-w-3xl">
+      <label className="mb-4 flex flex-wrap items-center gap-2 text-content-primary">
+        Largura do campo: {width}px
+        <input type="range" min={180} max={720} value={width} onChange={(event) => setWidth(Number(event.target.value))} />
+      </label>
+      <div style={{ width, maxWidth: "100%" }}>
+        <SelectMultiForm name="resumo" label="Benefícios selecionados" options={summaryOptions} initialValue={summaryOptions.map((option) => option.value)} />
+      </div>
+    </div>
+  );
+}
+
+export const SelectedLabels: Story = {
+  render: () => <ResponsiveSelectionExample />,
+  parameters: {
+    docs: {
+      description: {
+        story: "Mostra os nomes selecionados que cabem no campo e +N para os restantes. A última etiqueta visível pode usar reticências para aproveitar o espaço restante. A seleção completa fica no texto acessível e no título ao passar o mouse. Ajuste a largura, altere as opções e use o X para limpar.",
+      },
+    },
+  },
 };
 

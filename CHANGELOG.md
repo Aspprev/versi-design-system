@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.5.5 — 2026-10-20 — resumo dos itens selecionados no MultiSelect
+
+### Alterado
+
+- MultiSelect exibe os nomes selecionados em etiquetas coloridas e um contador `+N` para os itens restantes.
+- O resumo acompanha a largura do campo e permite reticências na última etiqueta visível para aproveitar o espaço disponível.
+- A ação de limpar fica separada do contador e devolve o foco ao campo; os nomes completos permanecem no resumo acessível.
+
+### Documentado
+
+- Adicionado exemplo de largura ajustável no Storybook e testes de seleção, redimensionamento e limpeza em desktop e celular.
+
 ## 0.5.4 — 2026-10-20 — estados visuais dos formulários
 
 ### Alterado
