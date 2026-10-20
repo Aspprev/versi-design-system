@@ -11,7 +11,7 @@ const config: StorybookConfig = {
       ...viteConfig.server,
       watch: {
         ...viteConfig.server?.watch,
-        ignored: ["**/storybook-static/**", "**/playwright-report/**", "**/test-results/**"],
+        ignored: ["**/node_modules/**", "**/dist/**", "**/storybook-static/**", "**/playwright-report/**", "**/test-results/**", "**/coverage/**"],
       },
     },
   }),

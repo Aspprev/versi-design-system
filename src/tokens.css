@@ -95,7 +95,7 @@
     --border-default: var(--grayscale-4);
     --border-strong: var(--grayscale-2);
     --border-disabled: var(--grayscale-4);
-    --focus-ring: var(--primary-1);
+    --focus-ring: var(--primary-3);
     --focus-emphasis-outline-width: 3px;
     --focus-emphasis-outline-offset: 2px;
     --focus-emphasis-halo-width: 5px;
@@ -321,7 +321,6 @@
     --primary-5: 227, 250, 243;
     --action-primary-ghost-background: var(--primary-5);
     --content-link: var(--primary-2);
-    --focus-ring: var(--primary-2);
   }
 
   .verde4 {
@@ -364,7 +363,7 @@
 
   body {
     --content-link: var(--primary-1);
-    --focus-ring: var(--primary-1);
+    --focus-ring: var(--primary-3);
     --action-primary-background: var(--primary-1);
     --action-primary-background-hover: var(--primary-2);
     --action-primary-background-active: var(--primary-3);
@@ -1241,19 +1240,19 @@
     --shadow-button-focus: 0 0 0 2px #000000, 0 0 0 5px #ffdf00;
   }
 
-  html[data-contrast="high"][data-focus-navigation="keyboard"]
-    :where(a, button, input, select, textarea, [tabindex]):focus-visible,
-  html[data-contrast="high"][data-focus-navigation="keyboard"]
-    :where(.field-keyboard-focus-ring, .radio-option-focus):focus-within {
+  html[data-contrast="high"] :where(a, button, input, select, textarea, [tabindex]):not(:where(.sr-only, .field-inset-focus-ring, :disabled, [aria-disabled="true"], .field-keyboard-focus-ring .field-value, .radio-option-focus input)):focus-visible,
+html[data-contrast="high"] :where(.field-keyboard-focus-ring):has(.field-value:focus-visible),
+html[data-contrast="high"] :where(.radio-option-focus):has(input:focus-visible),
+html[data-contrast="high"] :where(.peer):focus-visible + :where(.checkbox-control-proxy, .radio-control-proxy) {
     outline: 3px solid #ffffff !important;
     outline-offset: 2px !important;
     box-shadow: 0 0 0 5px #000000 !important;
   }
 
-  html[data-contrast="high"][data-contrast-theme="dark"][data-focus-navigation="keyboard"]
-    :where(a, button, input, select, textarea, [tabindex]):focus-visible,
-  html[data-contrast="high"][data-contrast-theme="dark"][data-focus-navigation="keyboard"]
-    :where(.field-keyboard-focus-ring, .radio-option-focus):focus-within {
+  html[data-contrast="high"][data-contrast-theme="dark"] :where(a, button, input, select, textarea, [tabindex]):not(:where(.sr-only, .field-inset-focus-ring, :disabled, [aria-disabled="true"], .field-keyboard-focus-ring .field-value, .radio-option-focus input)):focus-visible,
+html[data-contrast="high"][data-contrast-theme="dark"] :where(.field-keyboard-focus-ring):has(.field-value:focus-visible),
+html[data-contrast="high"][data-contrast-theme="dark"] :where(.radio-option-focus):has(input:focus-visible),
+html[data-contrast="high"][data-contrast-theme="dark"] :where(.peer):focus-visible + :where(.checkbox-control-proxy, .radio-control-proxy) {
     outline-color: #ffdf00 !important;
     box-shadow: 0 0 0 5px #000000 !important;
   }
@@ -1290,13 +1289,19 @@
     stroke-width: 1.5;
   }
 
-  html[data-focus-emphasis="strong"] :where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  html[data-focus-emphasis="strong"] :where(a, button, input, select, textarea, [tabindex]):not(:where(.sr-only, .field-inset-focus-ring, :disabled, [aria-disabled="true"], .field-keyboard-focus-ring .field-value, .radio-option-focus input)):focus-visible,
+html[data-focus-emphasis="strong"] :where(.field-keyboard-focus-ring):has(.field-value:focus-visible),
+html[data-focus-emphasis="strong"] :where(.radio-option-focus):has(input:focus-visible),
+html[data-focus-emphasis="strong"] :where(.peer):focus-visible + :where(.checkbox-control-proxy, .radio-control-proxy) {
     outline: var(--focus-emphasis-outline-width) solid rgb(var(--focus-ring)) !important;
     outline-offset: var(--focus-emphasis-outline-offset) !important;
     box-shadow: 0 0 0 var(--focus-emphasis-halo-width) rgb(var(--surface-page)) !important;
   }
 
-  html[data-contrast="high"][data-contrast-theme="dark"][data-focus-emphasis="strong"] :where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  html[data-contrast="high"][data-contrast-theme="dark"][data-focus-emphasis="strong"] :where(a, button, input, select, textarea, [tabindex]):not(:where(.sr-only, .field-inset-focus-ring, :disabled, [aria-disabled="true"], .field-keyboard-focus-ring .field-value, .radio-option-focus input)):focus-visible,
+html[data-contrast="high"][data-contrast-theme="dark"][data-focus-emphasis="strong"] :where(.field-keyboard-focus-ring):has(.field-value:focus-visible),
+html[data-contrast="high"][data-contrast-theme="dark"][data-focus-emphasis="strong"] :where(.radio-option-focus):has(input:focus-visible),
+html[data-contrast="high"][data-contrast-theme="dark"][data-focus-emphasis="strong"] :where(.peer):focus-visible + :where(.checkbox-control-proxy, .radio-control-proxy) {
     outline-color: #ffdf00 !important;
     box-shadow: 0 0 0 var(--focus-emphasis-halo-width) #000000 !important;
   }
@@ -1350,5 +1355,15 @@
     --status-black-outline-foreground: 0, 0, 0;
     --status-black-soft-background: 235, 235, 235;
     --status-black-soft-foreground: 0, 0, 0;
+  }
+
+  :where(.field-inset-focus-ring):focus-visible {
+    outline: 2px solid rgb(var(--focus-ring)) !important;
+    outline-offset: -4px !important;
+    box-shadow: none !important;
+  }
+
+  html:is([data-contrast="high"], [data-focus-emphasis="strong"]) .field-inset-focus-ring:focus-visible {
+    outline-width: 3px !important;
   }
 }

@@ -316,7 +316,7 @@ const Slider: React.FC<SliderProps> = ({
       </div>
 
       {/* risquinhos */}
-      {ticks.map((tick, idx) => {
+      {ticks.map((_tick, idx) => {
         return (
           <div
             key={idx}

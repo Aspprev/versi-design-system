@@ -8,6 +8,8 @@
     "types": ["react", "react-dom"],
     "typeRoots": ["./node_modules/@types"],
     "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "noEmit": true,
     "esModuleInterop": true,
     "skipLibCheck": false

@@ -58,7 +58,7 @@ describe("layout estrutural de PageHeading e PageTabsHeader", () => {
     expect(twoTabs).toContain('class="flex w-full min-w-0');
     expect(twoTabs).toContain('class="w-full min-w-0 tablet:flex-1"');
     expect(twoTabs).toContain(
-      'class="flex w-auto flex-row flex-nowrap items-end gap-3 overflow-x-auto tablet:w-fit tablet:shrink-0',
+      'class="flex w-auto flex-row flex-nowrap items-end gap-3 overflow-x-auto p-1 tablet:w-fit tablet:shrink-0',
     );
     expect(twoTabs).toContain("tablet:w-fit tablet:shrink-0");
     expect(twoTabs.match(/role="tab"/g)).toHaveLength(2);

@@ -74,7 +74,6 @@
     --primary-5: 227, 250, 243;
     --action-primary-ghost-background: var(--primary-5);
     --content-link: var(--primary-2);
-    --focus-ring: var(--primary-2);
   }
 
   :is([data-ds-theme="verde4"], .verde4) {

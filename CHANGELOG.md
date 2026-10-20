@@ -1,5 +1,28 @@
 # Changelog
 
+## 0.5.7 — 2026-10-20 — foco acessível e manutenção do repositório
+
+### Corrigido
+
+- Foco visível por CSS sem depender de `FocusNavigationMode`, preservando a API existente por compatibilidade.
+- Campos de formulário exibem foco no contêiner sem substituir a borda de erro; prefixo do InputPhone recebe indicador interno para evitar recorte.
+- Opções do SelectMulti e cards de rádio transferem o foco para os elementos visíveis.
+- Indicadores usam o token semântico de foco; ajustado seu contraste nos temas claros e preservadas as cores específicas do escuro e do alto contraste.
+- Abas do PageTabsHeader usam uma única entrada por Tab, setas com retorno circular, Home/End e ignoram opções desabilitadas.
+
+### Técnico
+
+- Adicionados testes de regressão de foco, teclado e contraste nos presets de tema.
+- Padronizados os fins de linha das bandeiras geradas e do snapshot de build auditado; logs locais do Storybook passam a ser ignorados.
+- Removida a dependência da posição das declarações no teste de contraste dos tokens de status.
+- Atualizado o relatório de foco para separar os achados históricos das correções desta entrega.
+- Limpeza ampliada ao repositório: removidos imports e helper sem uso e ativadas verificações de variáveis não utilizadas no pacote e no piloto.
+- Lint ampliado para configurações e piloto, com regra específica para módulos CommonJS e exclusão do snapshot auditado de terceiros.
+- Geradores de bandeiras preservam arquivos idênticos; verificação não destrutiva dos chunks e de todos os gerados integrada ao CI e ao prepack.
+- CI passa a conferir também os testes de foco e os links internos do Storybook.
+- Storybook ignora também builds de subprojetos, dependências instaladas e cobertura no watcher, evitando recarregamentos durante a manutenção.
+- Atualizadas as instruções de manutenção e a árvore do Storybook; piloto sincronizado com o tarball local e caminho de dependência normalizado para evitar regravações desnecessárias do manifesto pelo npm.
+
 ## 0.5.6 — 2026-10-20 — organização e documentação do Storybook
 
 ### Documentado

@@ -1,8 +1,3 @@
-function toRgba(cssVariable) {
-  const color = `var(${cssVariable})`;
-  return ({ opacityValue }) => `rgba(${color}, ${opacityValue})`;
-}
-
 const generatedTokenColors = require("./tokens/tailwind-colors.cjs");
 
 /** @type {import('tailwindcss').Config} */

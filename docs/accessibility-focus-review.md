@@ -2,7 +2,20 @@
 
 ## Resultado
 
-Ainda existem falhas de foco visível. A biblioteca não deve ser apresentada como integralmente conforme à WCAG 2.2 a partir desta revisão.
+Os achados abaixo registram o estado da versão 0.5.6. As correções estão preparadas para a versão 0.5.7. A revisão e os testes não constituem certificação integral de conformidade WCAG 2.2.
+
+## Correções posteriores à revisão
+
+- Foco padrão e alto contraste funcionam com `:focus-visible`, sem exigir `FocusNavigationMode`. A API permanece disponível por compatibilidade.
+- Campos com foco visível destacam o contêiner, preservando a borda de erro. O prefixo do telefone usa foco interno para evitar recorte.
+- O foco dos inputs ocultos é transferido para os proxies visíveis; cards de rádio destacam o card.
+- O token de foco claro usa `primary-3`, com remoção das exceções inconsistentes. Escuro e alto contraste mantêm cores próprias. Switches, abas e ações auxiliares usam o token semântico.
+- As abas oferecem setas, Home/End, retorno circular e uma entrada por Tab, ignorando opções desabilitadas.
+- Testes de regressão ficam em `tests/visual/design-system/focus.visual.spec.ts`, cobrindo claro/escuro, alto contraste, campos com erro, proxies, telefone, abas e contraste dos presets.
+
+### Validação das correções
+
+Os 38 cenários de regressão passaram em Chromium desktop e emulação móvel. A matriz verifica indicadores sem provider, preservação da borda de erro, foco dos proxies, prefixo e entrada do telefone, navegação das abas e contraste mínimo de 3:1 do token de foco nos 11 presets, em claro e escuro, sobre as superfícies de página, card e campo. Tipagem, lint, geração do pacote, geração do Storybook e integridade dos tokens também foram verificados.
 
 ## Escopo e limites
 
@@ -10,7 +23,7 @@ Revisão do código dos componentes e das regras compartilhadas de foco. No Chro
 
 Esses 196 cenários são uma triagem, não 196 aprovações de acessibilidade. Não cobrem todas as propriedades, todos os controles internos, todas as combinações de superfície, leitores de tela ou navegadores. Componentes puramente visuais não precisam receber foco; seus controles opcionais e o contexto consumidor precisam ser avaliados separadamente.
 
-## Achados
+## Achados históricos — versão 0.5.6
 
 | Prioridade | Componentes ou regra | Evidência e consequência |
 | --- | --- | --- |
@@ -40,4 +53,4 @@ Button, OtpCodeInput, Pagination, controles de Table, FileViewer, ações de Not
 - [2.4.11 Focus Not Obscured (Minimum) — AA](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum): o componente focado não pode ficar inteiramente oculto por conteúdo criado pelo autor.
 - [2.4.13 Focus Appearance — AAA](https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance): requisitos adicionais de área e mudança de contraste. O equivalente a um contorno de 2px é referência deste critério AAA, não uma exigência universal do nível AA.
 
-Nenhum componente foi alterado nesta revisão.
+A análise inicial não alterou componentes. As correções posteriores descritas acima devem ser conferidas no código e nos testes da versão 0.5.7. Permanecem necessários testes no contexto consumidor, incluindo sobreposições, superfícies personalizadas e os navegadores suportados.

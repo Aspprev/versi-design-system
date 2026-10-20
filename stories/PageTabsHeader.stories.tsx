@@ -64,6 +64,19 @@ export const Small: Story = {
   args: { size: "small" },
 };
 
+export const KeyboardNavigation: Story = {
+  ...Default,
+  name: "Teclado e abas desabilitadas",
+  args: {
+    tabs: [
+      { id: "overview", label: "Visão geral" },
+      { id: "unavailable", label: "Indisponível", disabled: true },
+      { id: "history", label: "Histórico" },
+      { id: "documents", label: "Documentos" },
+    ],
+  },
+};
+
 export const FlexibleLimitedWidth: Story = {
   name: "Largura limitada",
   args: {

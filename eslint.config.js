@@ -12,20 +12,15 @@ export default tseslint.config(
       "test-results/**",
       "node_modules/**",
       "examples/pilot/dist/**",
+      "vendor/**",
+      "examples/pilot/vendor/**",
+      "coverage/**",
     ],
   },
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
   {
-    files: [
-      "src/**/*.{ts,tsx}",
-      "stories/**/*.{ts,tsx}",
-      ".storybook/**/*.{ts,tsx}",
-      "tests/**/*.{ts,tsx}",
-      "scripts/**/*.mjs",
-      "playwright.config.ts",
-      "playwright.pilot.config.ts",
-    ],
+    files: ["**/*.{js,cjs,mjs,ts,tsx}"],
     languageOptions: {
       ecmaVersion: "latest",
       globals: {
@@ -49,6 +44,10 @@ export default tseslint.config(
       "@typescript-eslint/consistent-type-imports": "off",
       "@typescript-eslint/no-unused-vars": "warn",
     },
+  },
+  {
+    files: ["**/*.cjs"],
+    rules: { "@typescript-eslint/no-require-imports": "off" },
   },
   {
     files: ["src/**/*.{ts,tsx}"],
