@@ -17,6 +17,19 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
+export const Error: Story = {
+  render: (args) => (
+    <Formik
+      initialValues={{ tipo: "" }}
+      initialErrors={{ tipo: "Selecione um tipo de benefício." }}
+      initialTouched={{ tipo: true }}
+      onSubmit={() => undefined}
+    >
+      <RadioGroup {...args} name="tipo" label="Tipo de benefício" />
+    </Formik>
+  ),
+};
+
 export const Default: Story = {
   render: () => (
     <Formik initialValues={{ tipo: "normal" }} onSubmit={() => undefined}>

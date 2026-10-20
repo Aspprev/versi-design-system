@@ -1,0 +1,10 @@
+html:not([data-color-scheme="dark"]):not([data-contrast="high"]) .placeholder-reference {
+  --field-placeholder: var(--comparison-placeholder);
+  --field-content-disabled: 112, 119, 128;
+  --field-placeholder-disabled: 112, 119, 128;
+}
+
+html[data-color-scheme="dark"]:not([data-contrast="high"]) .placeholder-reference {
+  --field-placeholder: var(--content-muted);
+  --field-placeholder-disabled: var(--field-content-disabled);
+}

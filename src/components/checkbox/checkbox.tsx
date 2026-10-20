@@ -31,7 +31,7 @@ export function Checkbox({
       {options.map((option) => (
         <label
           key={option.value}
-          className="mr-6 flex min-h-7 cursor-pointer items-center gap-2"
+          className={`mr-6 flex min-h-7 items-center gap-2 ${props.disabled ? "cursor-not-allowed" : "cursor-pointer"}`}
         >
           <input
             type="checkbox"
@@ -41,7 +41,7 @@ export function Checkbox({
             onChange={onChange}
             {...props}
           />
-          <span className="text-content-secondary">{option.label}</span>
+          <span className={props.disabled ? "text-field-content-disabled" : "text-content-secondary"}>{option.label}</span>
         </label>
       ))}
     </div>

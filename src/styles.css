@@ -53,6 +53,69 @@
 }
 
 @layer components {
+  html[data-contrast="high"] [data-has-value="true"] .field-value,
+  html[data-contrast="high"] .field-value[data-has-value="true"] {
+    font-weight: 600;
+  }
+
+  html[data-contrast="high"] .field-value::placeholder {
+    font-weight: 400;
+  }
+
+  .radio-control {
+    --radio-current: var(--radio-selected);
+    @apply h-4 w-4 shrink-0 appearance-none rounded-full border;
+    border-color: rgb(var(--radio-border));
+    background-color: rgb(var(--radio-surface));
+    transition: border-color 150ms, background-color 150ms,
+      background-image 150ms, box-shadow 150ms;
+  }
+
+  .radio-control:checked {
+    border-color: rgb(var(--radio-current));
+    background-image: radial-gradient(
+      circle,
+      rgb(var(--radio-current)) 0 5px,
+      transparent 5.5px
+    );
+  }
+
+  .radio-control[data-invalid="true"] {
+    --radio-current: var(--radio-error);
+    border-color: rgb(var(--radio-error));
+  }
+
+  .radio-control[data-invalid="true"]:not(:disabled) {
+    outline: 2px solid rgb(var(--radio-error));
+    outline-offset: 2px;
+    accent-color: rgb(var(--radio-error));
+  }
+
+  .radio-control:hover:not(:disabled),
+  label:hover .radio-control:not(:disabled) {
+    box-shadow: 0 0 0 4px rgba(var(--radio-current), 0.08);
+  }
+
+  .radio-control:active:not(:disabled),
+  label:active .radio-control:not(:disabled) {
+    box-shadow: 0 0 0 4px rgba(var(--radio-current), 0.16);
+  }
+
+  .radio-control:disabled {
+    --radio-current: var(--radio-disabled-content);
+    @apply cursor-not-allowed;
+    border-color: rgb(var(--radio-disabled-border));
+    background-color: rgb(var(--radio-disabled-surface));
+  }
+
+  .radio-control:focus:not([data-invalid="true"]) {
+    outline: none;
+  }
+
+  html[data-focus-navigation="keyboard"] .radio-control:focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-primary-1;
+  }
+
   .checkbox-control,
   input[type="checkbox"]:not(.peer):not(.sr-only):not(.hidden) {
     --checkbox-current: var(--checkbox-selected);
@@ -82,7 +145,10 @@
 
   .checkbox-control[aria-invalid="true"] {
     --checkbox-current: var(--checkbox-error);
+    border-width: 2px;
     border-color: rgb(var(--checkbox-error));
+    outline: 2px solid rgb(var(--checkbox-error));
+    outline-offset: 2px;
   }
 
   .checkbox-control:hover:not(:disabled),

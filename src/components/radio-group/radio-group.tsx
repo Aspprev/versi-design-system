@@ -40,7 +40,7 @@ export function RadioGroup({
         {options.map((option) => (
           <label
             key={option.value}
-            className="flex min-h-7 cursor-pointer items-center gap-2"
+            className={`flex min-h-7 items-center gap-2 ${rest.disabled ? "cursor-not-allowed" : "cursor-pointer"}`}
           >
             <input
               type="radio"
@@ -52,7 +52,7 @@ export function RadioGroup({
               data-invalid={hasError || undefined}
               className="radio-control"
             />
-            <span className="text-content-secondary">{option.label}</span>
+            <span className={rest.disabled ? "text-field-content-disabled" : "text-content-secondary"}>{option.label}</span>
           </label>
         ))}
       </div>

@@ -124,8 +124,9 @@
     --field-border-active: var(--grayscale-2);
     --field-border-error: var(--danger-6);
     --field-content: var(--text-primary);
-    --field-placeholder: var(--text-tertiary);
-    --field-content-disabled: var(--grayscale-3);
+    --field-placeholder: 161, 168, 176;
+    --field-content-disabled: 98, 107, 118;
+    --field-placeholder-disabled: 178, 184, 192;
     --field-icon: var(--grayscale-3);
     --field-assistive: var(--text-secondary);
     --field-assistive-error: var(--danger-6);
@@ -485,8 +486,9 @@
     --field-border-active: var(--border-strong);
     --field-border-error: var(--danger-1);
     --field-content: var(--content-primary);
-    --field-placeholder: var(--content-muted);
+    --field-placeholder: 112, 124, 138;
     --field-content-disabled: var(--content-disabled);
+    --field-placeholder-disabled: 91, 103, 117;
     --field-icon: var(--content-secondary);
     --field-assistive: var(--content-secondary);
     --field-assistive-error: var(--danger-2);
@@ -723,6 +725,7 @@
     --field-content: var(--text-primary);
     --field-placeholder: var(--text-tertiary);
     --field-content-disabled: var(--text-disabled);
+    --field-placeholder-disabled: var(--field-content-disabled);
     --field-icon: var(--tertiary-2);
     --field-assistive: var(--text-secondary);
     --field-assistive-error: var(--danger-2);
@@ -1156,8 +1159,9 @@
     --field-border-active: var(--primary-1);
     --field-border-error: var(--danger-1);
     --field-content: var(--white);
-    --field-placeholder: var(--grayscale-3);
+    --field-placeholder: 117, 117, 117;
     --field-content-disabled: var(--grayscale-4);
+    --field-placeholder-disabled: 155, 155, 155;
     --field-icon: var(--white);
     --field-assistive: var(--grayscale-2);
     --field-assistive-error: var(--danger-3);

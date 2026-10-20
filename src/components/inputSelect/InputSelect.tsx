@@ -379,7 +379,9 @@ const InputSelect: React.FC<InputSelectProps> = ({
   ) : (
     <span
       className={classNames("block w-full truncate overflow-hidden", {
-        "text-field-placeholder": !selectedOption && placeholder,
+        "text-field-placeholder": !disabled && !selectedOption && placeholder,
+        "text-field-content-disabled": disabled && Boolean(selectedOption),
+        "text-field-placeholder-disabled": disabled && !selectedOption,
       })}
     >
       {selectedOption ? selectedOption.label : placeholder}
@@ -548,7 +550,7 @@ const InputSelect: React.FC<InputSelectProps> = ({
             closeDropdown();
           }
         }}
-        className={classNames(`${FIELD_CONTROL_CLASS} px-2`, {
+        className={classNames(`${FIELD_CONTROL_CLASS} [--field-padding-x:var(--spacing-2xs)]`, {
           [FIELD_DISABLED_CLASS]: disabled,
           [FIELD_ERROR_CLASS]: hasError,
           "cursor-pointer": !disabled,
@@ -560,7 +562,8 @@ const InputSelect: React.FC<InputSelectProps> = ({
             className={classNames(`h-5 w-5`, {
               "text-field-assistive-error": hasError,
               "text-field-content": !hasError && (open || selectedOption),
-              "text-field-content-disabled": disabled,
+              "text-field-content-disabled": disabled && Boolean(selectedOption),
+              "text-field-placeholder-disabled": disabled && !selectedOption,
               "cursor-not-allowed": disabled,
               "cursor-pointer": !disabled,
             })}
@@ -570,10 +573,12 @@ const InputSelect: React.FC<InputSelectProps> = ({
 
         <span
           className={classNames(
-            "flex-1 min-w-0 flex items-center justify-between leading-5",
-            "bg-transparent text-field-content text-left",
+            "field-value flex-1 min-w-0 flex items-center justify-between leading-5",
+            "bg-transparent text-left",
             {
-              "text-field-content-disabled": disabled,
+              "text-field-content": !disabled,
+              "text-field-content-disabled": disabled && Boolean(selectedOption),
+              "text-field-placeholder-disabled": disabled && !selectedOption,
               "cursor-not-allowed": disabled,
               "cursor-pointer": !disabled,
             },
@@ -588,7 +593,8 @@ const InputSelect: React.FC<InputSelectProps> = ({
             className={classNames(`h-5 w-5`, {
               "text-field-assistive-error": hasError,
               "text-field-content": !hasError && (open || selectedOption),
-              "text-field-content-disabled": disabled,
+              "text-field-content-disabled": disabled && Boolean(selectedOption),
+              "text-field-placeholder-disabled": disabled && !selectedOption,
               "cursor-not-allowed": disabled,
               "cursor-pointer": !disabled,
             })}
@@ -596,11 +602,13 @@ const InputSelect: React.FC<InputSelectProps> = ({
         ) : (
           <span
             className={classNames(
-              "flex items-center justify-center text-field-icon",
+              "flex items-center justify-center",
               {
+                "text-field-icon": !hasError && !open && !selectedOption && !disabled,
                 "text-field-assistive-error": hasError,
                 "text-field-content": !hasError && (open || selectedOption),
-                "text-field-content-disabled": disabled,
+                "text-field-content-disabled": disabled && Boolean(selectedOption),
+              "text-field-placeholder-disabled": disabled && !selectedOption,
                 "cursor-not-allowed": disabled,
                 "cursor-pointer": !disabled,
               },

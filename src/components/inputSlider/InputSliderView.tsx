@@ -82,7 +82,7 @@ const InputSlider: React.FC<InputSliderProps> = ({
   return (
     <div className="w-full flex flex-row gap-2">
       <input
-        className="w-full range pr-6 accent-primary-1"
+        className="w-full range pr-6 accent-primary-1 disabled:cursor-not-allowed disabled:accent-field-content-disabled"
         type="range"
         name={name}
         id={name}
@@ -97,7 +97,7 @@ const InputSlider: React.FC<InputSliderProps> = ({
       {showInput && (
         <input
           id={valueInputId}
-          className="min-w-0"
+          className="min-w-0 disabled:cursor-not-allowed disabled:text-field-content-disabled"
           value={inputDisabled ? "-" : value}
           onChange={handleInputChange}
           onBlur={handleBlur}
@@ -110,7 +110,7 @@ const InputSlider: React.FC<InputSliderProps> = ({
         />
       )}
       {(showLabel || prefix || resolvedSuffix || valueFormmated) && (
-        <span className="shrink-0 text-sm text-content-secondary">
+        <span className={`shrink-0 text-sm ${disabled ? "text-field-content-disabled" : "text-content-secondary"}`}>
           {prefix}
           {valueFormmated ?? value}
           {resolvedSuffix}

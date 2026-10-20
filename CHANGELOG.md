@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.5.4 — 2026-10-20 — estados visuais dos formulários
+
+### Alterado
+
+- Reforçadas bordas e mensagens de validação nos componentes de formulário.
+- Padronizados placeholders, valores preenchidos e estados desabilitados nos temas claro, escuro e de alto contraste.
+- Valores preenchidos usam semibold no alto contraste; placeholders do alto contraste escuro ficam próximos ao mínimo WCAG AA de 4,5:1.
+- Radio segue a geometria do portal; prefixo do InputPhone ocupa menos espaço e acompanha os estados do campo.
+
+### Corrigido
+
+- A normalização inicial do InputPhone preserva erros de validação existentes.
+- Compensado o espaço das bordas de erro para reduzir deslocamentos internos.
+
+### Documentado
+
+- Padrão de crescimento por linha com FormGrid e comparações interativas de validação, placeholders e estados desabilitados no Storybook.
+
 ## 0.4.9 — 2026-09-24 — ajuste de largura da paginação
 
 ### Corrigido

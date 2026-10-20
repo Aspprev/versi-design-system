@@ -48,7 +48,7 @@ export function FileList({ files, accessibleName = "Arquivos selecionados", onRe
               {(status === "uploading" || status === "success" || status === "error") && (
                 <FileUploadProgress value={item.progress} status={progressStatus} label={`Progresso de ${item.file.name}`} />
               )}
-              {item.error && <p role="alert" className="mt-1 text-sm text-field-assistive-error">{item.error}</p>}
+              {item.error && <p role="alert" className="mt-1 text-sm font-semibold text-field-assistive-error">{item.error}</p>}
             </div>
             <div className="flex shrink-0 items-center gap-1">
               {actions?.(item, index)}

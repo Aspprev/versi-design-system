@@ -273,6 +273,8 @@ module.exports = {
         "field-content": "rgba(var(--field-content), <alpha-value>)",
         "field-placeholder":
           "rgba(var(--field-placeholder), <alpha-value>)",
+        "field-placeholder-disabled":
+          "rgba(var(--field-placeholder-disabled), <alpha-value>)",
         "field-content-disabled":
           "rgba(var(--field-content-disabled), <alpha-value>)",
         "field-icon": "rgba(var(--field-icon), <alpha-value>)",

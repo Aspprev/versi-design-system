@@ -1,0 +1,74 @@
+import { Meta, Canvas } from "@storybook/addon-docs/blocks";
+import * as FormLayoutStories from "../FormLayout.stories";
+
+<Meta title="Patterns/FormValidation" />
+
+# Formulários: crescimento por linha
+
+Use **crescimento por linha** em formulários com campos lado a lado. Quando uma mensagem de erro aparece, a linha assume a altura do maior campo. As linhas seguintes descem juntas e os campos vizinhos permanecem alinhados, sem reservar espaço vazio para mensagens que ainda não existem.
+
+Esse comportamento pertence ao **layout do formulário**. O componente de campo continua responsável por exibir a mensagem completa e associá-la ao controle acessível.
+
+## Exemplo interativo
+
+Ative e desative o erro para observar o movimento. Use a largura de celular para conferir o formulário com uma coluna.
+
+<Canvas of={FormLayoutStories.RowGrowth} />
+
+## Como usar
+
+O DS já oferece `FormGrid`. Coloque os campos como filhos diretos da grade, na ordem em que devem ser lidos e preenchidos: primeiro os dois campos da primeira linha, depois os da segunda, e assim por diante.
+
+```tsx
+import { FormGrid, InputStandalone } from "@aspprev/versi-ds";
+import "@aspprev/versi-ds/styles.css";
+
+export function DadosPessoais({ emailError }: { emailError?: string }) {
+  return (
+    <FormGrid columns={2} className="items-start">
+      <InputStandalone
+        name="email"
+        label="E-mail"
+        error={Boolean(emailError)}
+        errorText={emailError}
+      />
+      <InputStandalone name="cpf" label="CPF" />
+      <InputStandalone name="nome" label="Nome" />
+      <InputStandalone name="telefone" label="Telefone" />
+    </FormGrid>
+  );
+}
+```
+
+`columns={2}` usa uma coluna em telas pequenas e duas a partir do breakpoint `tablet` do DS. `items-start` mantém os campos no topo da linha. O mesmo padrão funciona com campos integrados ao Formik; o provider pode envolver a grade.
+
+Se o projeto usar uma grade própria, aplique o equivalente:
+
+```css
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 24px 20px;
+}
+
+@media (max-width: 767px) {
+  .form-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+```
+
+No CSS próprio, adapte os espaços e o breakpoint aos tokens e à configuração do projeto.
+
+## Cuidados de composição
+
+- Evite criar duas colunas verticais independentes: um erro em uma delas deslocaria apenas os campos daquela coluna.
+- Mantenha label, controle e mensagem dentro do mesmo componente de campo, na mesma célula da grade.
+- Deixe as mensagens quebrarem linha e crescerem naturalmente. Não use altura fixa, truncamento ou posicionamento absoluto para esconder o crescimento.
+- Preserve a ordem dos campos no código. Não use reordenação visual para corrigir alinhamento, pois ela pode divergir da navegação por teclado.
+- Mensagens de tamanhos diferentes são esperadas. A grade alinha o início das próximas linhas; labels com alturas diferentes ou controles de tamanhos diferentes podem exigir uma composição específica.
+
+## Comparação das alternativas
+
+Em [Components/Forms/ValidationLayout](?path=/story/components-forms-validationlayout--comparison), compare altura automática em colunas independentes, uma linha reservada e crescimento por linha. O padrão recomendado é **crescimento por linha**; os exemplos de reserva de espaço são apenas alternativas de demonstração.
