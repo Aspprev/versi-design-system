@@ -107,7 +107,7 @@ export function FileDropzone({
           className="sr-only"
         />
       </label>
-      {message && <span id={messageId} role={hasError ? "alert" : undefined} className={classNames("mt-1 text-sm", hasError ? "text-field-assistive-error" : "text-content-secondary")}>{message}</span>}
+      {message && <span id={messageId} role={hasError ? "alert" : undefined} className={classNames("mt-1 text-sm", hasError ? "font-semibold text-field-assistive-error" : "text-content-secondary")}>{message}</span>}
       {actions && <div className="mt-3 flex flex-wrap justify-center gap-2">{actions}</div>}
     </div>
   );

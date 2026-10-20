@@ -495,11 +495,15 @@
         },
         {
           "property": "--field-placeholder",
-          "value": "var(--text-tertiary)"
+          "value": "161, 168, 176"
         },
         {
           "property": "--field-content-disabled",
-          "value": "var(--grayscale-3)"
+          "value": "98, 107, 118"
+        },
+        {
+          "property": "--field-placeholder-disabled",
+          "value": "178, 184, 192"
         },
         {
           "property": "--field-icon",
@@ -1799,11 +1803,15 @@
         },
         {
           "property": "--field-placeholder",
-          "value": "var(--content-muted)"
+          "value": "112, 124, 138"
         },
         {
           "property": "--field-content-disabled",
           "value": "var(--content-disabled)"
+        },
+        {
+          "property": "--field-placeholder-disabled",
+          "value": "91, 103, 117"
         },
         {
           "property": "--field-icon",
@@ -2529,6 +2537,10 @@
         {
           "property": "--field-content-disabled",
           "value": "var(--text-disabled)"
+        },
+        {
+          "property": "--field-placeholder-disabled",
+          "value": "var(--field-content-disabled)"
         },
         {
           "property": "--field-icon",
@@ -4117,11 +4129,15 @@
         },
         {
           "property": "--field-placeholder",
-          "value": "var(--grayscale-3)"
+          "value": "117, 117, 117"
         },
         {
           "property": "--field-content-disabled",
           "value": "var(--grayscale-4)"
+        },
+        {
+          "property": "--field-placeholder-disabled",
+          "value": "155, 155, 155"
         },
         {
           "property": "--field-icon",

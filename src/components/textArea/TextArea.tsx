@@ -61,7 +61,8 @@ const TextArea: React.FC<TextAreaProps> = ({
       <div
         data-has-value={String(field.value ?? "").length > 0}
         className={classNames(
-          `${FIELD_CONTROL_CLASS} py-1`,
+          FIELD_CONTROL_CLASS,
+          hasError ? "py-[calc(var(--spacing-4xs)-1px)]" : "py-1",
           {
             [FIELD_DISABLED_CLASS]: disabled,
             [FIELD_ERROR_CLASS]: hasError,

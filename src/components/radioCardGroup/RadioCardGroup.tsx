@@ -126,14 +126,13 @@ export function RadioCardGroup({
               htmlFor={optionId}
               className={classNames(
                 "block rounded-md border p-4 transition-colors",
-                checked
-                  ? "border-primary-1 bg-primary-5"
-                  : "border-transparent bg-bg-light",
-                hasError && !checked
-                  ? "outline outline-1 outline-feedback-danger-border"
+                optionDisabled ? "bg-field-surface-disabled" : checked ? "bg-primary-5" : "bg-bg-light",
+                !hasError && (checked ? "border-primary-1" : "border-transparent"),
+                hasError
+                  ? "border-2 border-field-border-error p-[calc(var(--spacing-sm)-1px)]"
                   : "outline outline-1 outline-transparent",
                 optionDisabled
-                  ? "cursor-not-allowed opacity-60"
+                  ? "cursor-not-allowed"
                   : "cursor-pointer",
                 optionClassName,
               )}
@@ -157,11 +156,11 @@ export function RadioCardGroup({
                 />
 
                 <div className="min-w-0 flex-1">
-                  <div className="font-bold text-content-primary">
+                  <div className={classNames("font-bold", optionDisabled ? "text-field-content-disabled" : "text-content-primary")}>
                     {option.title}
                   </div>
                   {option.description && (
-                    <div className="mt-1 text-content-primary">
+                    <div className={classNames("mt-1", optionDisabled ? "text-field-content-disabled" : "text-content-primary")}>
                       {option.description}
                     </div>
                   )}
@@ -177,7 +176,7 @@ export function RadioCardGroup({
           id={errorId}
           role="alert"
           aria-live="assertive"
-          className="mt-1 text-xs tracking-wide text-feedback-danger-content"
+          className="mt-1 text-xs font-semibold tracking-wide text-feedback-danger-content"
         >
           {helperText}
         </span>

@@ -1,0 +1,25 @@
+/* Layout experiments are scoped to this Storybook comparison. */
+.validation-layout-demo {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 20px 12px;
+}
+
+.validation-layout-demo__column {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.validation-layout-demo--reserved .field-layout {
+  display: grid;
+  grid-template-rows: auto auto minmax(16px, auto);
+}
+
+@media (max-width: 359px) {
+  .validation-layout-demo {
+    column-gap: 8px;
+  }
+}

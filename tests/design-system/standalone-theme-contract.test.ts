@@ -20,6 +20,34 @@ const themeLabStory = readFileSync(
 );
 
 describe("Design System theme contract", () => {
+  it("mantem placeholders do alto contraste escuro proximos ao minimo AA de 4.5:1", () => {
+    const registry = JSON.parse(readFileSync(resolve(process.cwd(), "tokens/design-system.tokens.json"), "utf8"));
+    const rule = registry.tokens.find((entry: { selector: string; declarations: { property: string; value: string }[] }) =>
+      entry.selector.startsWith('html[data-contrast="high"][data-contrast-theme="dark"]') &&
+      entry.declarations.some((declaration) => declaration.property === "--field-placeholder"),
+    );
+    const declarations = new Map<string, string>(rule.declarations.map((entry: { property: string; value: string }) => [entry.property, entry.value]));
+    const rgb = (value: string): number[] => value.split(",").map(Number);
+    const luminance = (channels: number[]): number => channels.reduce((sum, channel, index) => {
+      const normalized = channel / 255;
+      const linear = normalized <= 0.04045 ? normalized / 12.92 : ((normalized + 0.055) / 1.055) ** 2.4;
+      return sum + linear * [0.2126, 0.7152, 0.0722][index];
+    }, 0);
+    const resolveColor = (property: string): number[] => {
+      const value = declarations.get(property)!;
+      const reference = /^var\((--[^)]+)\)$/.exec(value);
+      return reference ? resolveColor(reference[1]) : rgb(value);
+    };
+    for (const [foreground, background] of [
+      ["--field-placeholder", "--field-surface"],
+      ["--field-placeholder-disabled", "--field-surface-disabled"],
+    ]) {
+      const ratio = (luminance(resolveColor(foreground)) + 0.05) / (luminance(resolveColor(background)) + 0.05);
+      expect(ratio).toBeGreaterThanOrEqual(4.5);
+      expect(ratio).toBeLessThan(4.7);
+    }
+  });
+
   it("publica todos os presets do portal como data-ds-theme", () => {
     for (const theme of [
       "azul1",

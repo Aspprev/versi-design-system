@@ -768,12 +768,15 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
           type="button"
           disabled={isFieldDisabled}
           onClick={openCalendar}
-          className="flex items-center justify-center disabled:cursor-not-allowed"
+          className={classNames(
+            "flex items-center justify-center disabled:cursor-not-allowed",
+            draftValue ? "disabled:text-field-content-disabled" : "disabled:text-field-placeholder-disabled",
+          )}
           aria-label="Abrir calendario"
         >
           <MdCalendarMonth
             className={classNames("h-5 w-5", {
-              "text-field-assistive-error": hasError,
+              "text-field-assistive-error": hasError && !isFieldDisabled,
             })}
           />
         </button>

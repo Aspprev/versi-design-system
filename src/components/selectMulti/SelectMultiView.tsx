@@ -160,6 +160,7 @@ export function SelectMultiView(props: SelectMultiViewProps) {
         <button
           type="button"
           id={triggerId}
+          data-has-value={selectedCount > 0}
           ref={triggerRef}
           aria-controls={groupId}
           aria-expanded={isOpened}
@@ -182,7 +183,7 @@ export function SelectMultiView(props: SelectMultiViewProps) {
           }}
           className={cs(
             "flex h-control-md w-full cursor-pointer items-center justify-between rounded-sm border border-field-border-default bg-field-surface px-3 text-field-icon focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring",
-            error && "border-field-border-error text-field-assistive-error",
+            error && "border-2 px-[calc(var(--spacing-xs)-1px)] border-field-border-error text-field-assistive-error",
             !error &&
               isOpened &&
               "border-field-border-active text-field-content",
@@ -193,10 +194,12 @@ export function SelectMultiView(props: SelectMultiViewProps) {
         >
           <span
             className={cs(
-              "min-w-0 flex-1 truncate text-left text-base font-normal text-field-placeholder",
+              "min-w-0 flex-1 truncate text-left text-base font-normal",
               {
+                "text-field-placeholder": !disabled && selectedCount === 0,
                 "pr-12 text-field-content": !disabled && selectedCount > 0,
-                "text-field-content-disabled": disabled,
+                "text-field-content-disabled": disabled && selectedCount > 0,
+                "text-field-placeholder-disabled": disabled && selectedCount === 0,
               },
             )}
           >
@@ -205,12 +208,14 @@ export function SelectMultiView(props: SelectMultiViewProps) {
           <MdKeyboardArrowDown
             aria-hidden="true"
             className={cs(
-              "shrink-0 text-base text-field-icon transition-transform",
+              "shrink-0 text-base transition-transform",
               {
+                "text-field-icon": !error && !isOpened && selectedCount === 0 && !disabled,
                 "rotate-180": isOpened,
                 "text-field-assistive-error": error,
                 "text-field-content": !error && (isOpened || selectedCount > 0),
-                "text-field-content-disabled": disabled,
+                "text-field-content-disabled": disabled && selectedCount > 0,
+                "text-field-placeholder-disabled": disabled && !(selectedCount > 0),
               },
             )}
           />
@@ -273,9 +278,9 @@ export function SelectMultiView(props: SelectMultiViewProps) {
             aria-label={`Limpar seleção de ${label ?? "opções"}`}
             disabled={disabled}
             onClick={onClear}
-            className="absolute right-9 top-1/2 flex min-h-6 min-w-6 -translate-y-1/2 touch-manipulation items-center justify-center gap-1 rounded-full bg-action-primary px-2 text-xs text-action-primary-content focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring disabled:cursor-not-allowed"
+            className="absolute right-9 top-1/2 flex min-h-6 min-w-6 -translate-y-1/2 touch-manipulation items-center justify-center gap-1 rounded-full bg-action-primary px-2 text-xs text-action-primary-content focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring disabled:cursor-not-allowed disabled:bg-field-surface-disabled disabled:text-field-content-disabled"
           >
-            <span aria-hidden="true">{selectedCount}</span>
+            <span aria-hidden="true" className="field-value" data-has-value="true">{selectedCount}</span>
             <MdClose aria-hidden="true" size={10} />
           </button>
         )}

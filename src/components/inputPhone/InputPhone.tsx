@@ -438,7 +438,7 @@ export function InputPhone({
       field.value as RawPhonePayload,
       availableCountries,
     );
-    helpers.setValue(parsed);
+    helpers.setValue(parsed, false);
     initializedRef.current = true;
   }, [availableCountries, field.value, helpers]);
 
@@ -521,11 +521,16 @@ export function InputPhone({
             }}
             onBlur={() => helpers.setTouched(true)}
             className={classNames(
-              "flex h-full items-center gap-1.5 pl-2 pr-1 text-left",
-              "border-r border-field-border-default bg-transparent text-field-content focus:outline-none",
+              "flex shrink-0 self-stretch items-center gap-0.5 pl-1 pr-0.5 text-left",
+              "border-r bg-transparent focus:outline-none",
               {
+                "pl-[calc(var(--spacing-4xs)-1px)]": hasError,
+                "border-field-border-error text-field-assistive-error": hasError && !disabled,
+                "border-field-border-default text-field-content": !hasError && !disabled,
                 "cursor-pointer": !disabled,
-                "cursor-not-allowed text-content-disabled": disabled,
+                "cursor-not-allowed border-field-border-default": disabled,
+                "text-field-content-disabled": disabled && phoneDigits.length > 0,
+                "text-field-placeholder-disabled": disabled && phoneDigits.length === 0,
               },
             )}
           >
@@ -536,22 +541,26 @@ export function InputPhone({
             {open ? (
               <MdOutlineKeyboardArrowUp
                 className={classNames("h-4 w-4 shrink-0", {
-                  "text-field-assistive-error": hasError,
-                  "text-field-content": !hasError,
+                  "text-field-assistive-error": hasError && !disabled,
+                  "text-field-content": !hasError && !disabled,
+                  "text-field-content-disabled": disabled && phoneDigits.length > 0,
+                  "text-field-placeholder-disabled": disabled && phoneDigits.length === 0,
                 })}
               />
             ) : (
               <MdOutlineKeyboardArrowDown
                 className={classNames("h-4 w-4 shrink-0", {
-                  "text-field-assistive-error": hasError,
-                  "text-field-content": !hasError && phoneDigits.length > 0,
-                  "text-field-icon": !hasError && phoneDigits.length === 0,
+                  "text-field-assistive-error": hasError && !disabled,
+                  "text-field-content": !hasError && !disabled && phoneDigits.length > 0,
+                  "text-field-icon": !hasError && !disabled && phoneDigits.length === 0,
+                  "text-field-content-disabled": disabled && phoneDigits.length > 0,
+                  "text-field-placeholder-disabled": disabled && phoneDigits.length === 0,
                 })}
               />
             )}
           </button>
 
-          <div className="min-w-0 flex-1 pl-1 pr-3">
+          <div className={classNames("min-w-0 flex-1 pl-1", hasError ? "pr-[calc(var(--spacing-xs)-1px)]" : "pr-3")}>
             {phoneMask ? (
               <PatternFormat
                 id={name}

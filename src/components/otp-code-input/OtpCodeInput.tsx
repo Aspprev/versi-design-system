@@ -221,6 +221,7 @@ const OtpCodeInput = forwardRef<OtpCodeInputHandle, OtpCodeInputProps>(
               autoComplete={index === 0 ? "one-time-code" : "off"}
               maxLength={1}
               value={currentValues[index]}
+              data-has-value={Boolean(currentValues[index])}
               disabled={disabled}
               aria-label={`${label}, dígito ${index + 1} de ${safeLength}`}
               aria-invalid={hasError || undefined}
@@ -241,8 +242,8 @@ const OtpCodeInput = forwardRef<OtpCodeInputHandle, OtpCodeInputProps>(
                 if (!event.defaultPrevented) event.currentTarget.select();
               }}
               className={classNames(
-                "h-11 w-11 rounded-sm border bg-field-surface text-center text-lg font-bold text-field-content outline-none transition-colors focus-visible:border-field-border-active focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring disabled:cursor-not-allowed disabled:bg-field-surface-disabled",
-                hasError ? "border-field-border-error" : "border-field-border-default",
+                "field-value h-11 w-11 rounded-sm border bg-field-surface text-center text-lg font-bold text-field-content outline-none transition-colors focus-visible:border-field-border-active focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring disabled:cursor-not-allowed disabled:bg-field-surface-disabled disabled:text-field-content-disabled",
+                hasError ? "border-2 border-field-border-error focus-visible:border-field-border-error" : "border-field-border-default",
               )}
             />
           ))}
