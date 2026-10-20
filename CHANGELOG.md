@@ -1,5 +1,11 @@
 # Changelog
 
+## Não lançado
+
+### Documentação
+
+- Storybook: guia de configuração do styles.css, paleta ativa e matriz dos principais tokens nos 11 temas e quatro modos, incluindo campos desabilitados.
+
 ## 0.5.7 — 2026-10-20 — foco acessível e manutenção do repositório
 
 ### Corrigido
