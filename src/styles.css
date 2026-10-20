@@ -108,14 +108,6 @@
     background-color: rgb(var(--radio-disabled-surface));
   }
 
-  .radio-control:focus:not([data-invalid="true"]) {
-    outline: none;
-  }
-
-  html[data-focus-navigation="keyboard"] .radio-control:focus-visible {
-    @apply outline outline-2 outline-offset-2 outline-primary-1;
-  }
-
   .checkbox-control,
   input[type="checkbox"]:not(.peer):not(.sr-only):not(.hidden) {
     --checkbox-current: var(--checkbox-selected);
@@ -166,14 +158,6 @@
     @apply cursor-not-allowed;
     border-color: rgb(var(--checkbox-disabled-border));
     background-color: rgb(var(--checkbox-disabled-surface));
-  }
-
-  .checkbox-control:focus {
-    outline: none;
-  }
-
-  html[data-focus-navigation="keyboard"] .checkbox-control:focus-visible {
-    @apply outline outline-2 outline-offset-2 outline-primary-1;
   }
 
   .checkbox-control-proxy {
@@ -326,10 +310,17 @@ html[data-motion="reduce"] *::after {
   }
 }
 
-html[data-focus-navigation="keyboard"]
-  :where(a, button, input, select, textarea, [tabindex]):focus-visible {
+/* Native focus-visible works without a JavaScript provider. Composite fields
+   and hidden inputs transfer the indicator to their visible surface. */
+:where(a, button, input, select, textarea, [tabindex]):not(:where(.sr-only, .field-inset-focus-ring, :disabled, [aria-disabled="true"], .field-keyboard-focus-ring .field-value, .radio-option-focus input)):focus-visible,
+.checkbox-control:focus-visible,
+.radio-control:not(:where(.radio-option-focus input)):focus-visible,
+:where(.field-keyboard-focus-ring):has(.field-value:focus-visible),
+:where(.radio-option-focus):has(input:focus-visible),
+:where(.peer):focus-visible + :where(.checkbox-control-proxy, .radio-control-proxy) {
   outline: 2px solid rgb(var(--focus-ring));
   outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgb(var(--surface-page));
 }
 
 @layer components {

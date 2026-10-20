@@ -24,7 +24,7 @@ assert.equal(built.version, pkg.version, "O build deve corresponder à versão a
 npm(["pack", "--ignore-scripts", "--pack-destination", vendor], root);
 const manifestPath = path.join(pilot, "package.json");
 const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
-manifest.dependencies[pkg.name] = `file:./vendor/${artifact}`;
+manifest.dependencies[pkg.name] = `file:vendor/${artifact}`;
 fs.writeFileSync(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
 // Explicit tarball install refreshes the artifact even when the version is unchanged.
 npm(["install", "--package-lock-only", "--ignore-scripts", "--no-audit", "--no-fund", `./vendor/${artifact}`], pilot);

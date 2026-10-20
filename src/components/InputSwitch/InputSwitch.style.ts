@@ -39,7 +39,7 @@ const getInputSwitchStyles = ({
   const sizeStyle = SIZE_STYLES[size];
   const containerVariant = cva(
     classNames(
-      "switch-control relative inline-flex shrink-0 items-center rounded-full transition-colors before:absolute before:left-1/2 before:top-1/2 before:h-5 before:w-full before:min-w-5 before:-translate-x-1/2 before:-translate-y-1/2 before:content-[''] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-1 disabled:bg-switch-track-disabled",
+      "switch-control relative inline-flex shrink-0 items-center rounded-full transition-colors before:absolute before:left-1/2 before:top-1/2 before:h-5 before:w-full before:min-w-5 before:-translate-x-1/2 before:-translate-y-1/2 before:content-[''] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring disabled:bg-switch-track-disabled",
       sizeStyle.container,
       { "pointer-events-none": disabled },
     ),

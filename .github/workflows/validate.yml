@@ -21,7 +21,7 @@ jobs:
             examples/pilot/package-lock.json
       - run: npm ci --ignore-scripts
       - run: npm run check:release
-      - run: npm run tokens:check
+      - run: npm run check:generated
       - run: npm run check:governance
       - run: npm run build
       - run: npm run pilot:prepare -- --skip-build
@@ -36,7 +36,8 @@ jobs:
       - run: npm run test:package -- --react18
       - run: npx playwright install --with-deps chromium
       - run: node scripts/test-info-grid-consumer.mjs
-      - run: npx playwright test countries.visual.spec.ts
+      - run: npx playwright test countries.visual.spec.ts focus.visual.spec.ts
+      - run: node scripts/check-storybook-navigation.mjs
       - run: npm run test:pilot
       - name: Pack the validated release artifact
         run: |

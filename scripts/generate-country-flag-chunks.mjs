@@ -1,3 +1,4 @@
+import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -23,14 +24,28 @@ for (const [code, svg] of entries) {
 }
 if (Object.keys(current).length) chunks.push(current);
 
-fs.mkdirSync(output, { recursive: true });
-for (const name of fs.readdirSync(output)) {
-  if (/^flags-\d+\.json$/.test(name)) fs.unlinkSync(path.join(output, name));
-}
+const expected = new Map(chunks.map((chunk, index) => [
+  `flags-${String(index).padStart(2, "0")}.json`,
+  `${JSON.stringify(chunk, null, 2)}\n`,
+]));
+const existing = fs.existsSync(output)
+  ? fs.readdirSync(output).filter(name => /^flags-\d+\.json$/.test(name))
+  : [];
 
-for (const [index, chunk] of chunks.entries()) {
-  const name = `flags-${String(index).padStart(2, "0")}.json`;
-  fs.writeFileSync(path.join(output, name), `${JSON.stringify(chunk, null, 2)}\n`);
+if (process.argv.includes("--check")) {
+  assert.deepEqual(existing.sort(), [...expected.keys()].sort(), "Run node scripts/generate-country-flag-chunks.mjs");
+  for (const [name, content] of expected) {
+    assert.equal(fs.readFileSync(path.join(output, name), "utf8"), content, `Generated chunk differs: ${name}`);
+  }
+  process.stdout.write(`Country flag chunks verified: ${chunks.length}\n`);
+} else {
+  fs.mkdirSync(output, { recursive: true });
+  for (const name of existing) {
+    if (!expected.has(name)) fs.unlinkSync(path.join(output, name));
+  }
+  for (const [name, content] of expected) {
+    const target = path.join(output, name);
+    if (!fs.existsSync(target) || fs.readFileSync(target, "utf8") !== content) fs.writeFileSync(target, content);
+  }
+  process.stdout.write(`Country flag chunks generated: ${chunks.length}\n`);
 }
-
-process.stdout.write(`Country flag chunks generated: ${chunks.length}\n`);

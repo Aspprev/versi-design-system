@@ -1,8 +1,7 @@
-﻿import React from "react";
 
 export type AvatarImageProps = {
   src: string;
-  altDescription: string | "";
+  altDescription: string;
 };
 
 const AvatarImage = ({ src, altDescription }: AvatarImageProps) => {

@@ -32,10 +32,12 @@ const statusTokenRegistry = JSON.parse(
   }>;
 };
 
-const statusTokenRule = statusTokenRegistry.tokens.at(-1);
+const statusTokenDeclarations = statusTokenRegistry.tokens.flatMap(
+  (rule) => rule.declarations,
+);
 
 function statusRgb(property: string): [number, number, number] {
-  const value = statusTokenRule?.declarations.find(
+  const value = statusTokenDeclarations.find(
     (declaration) => declaration.property === property,
   )?.value;
   if (!value) throw new Error(`Missing status token ${property}`);

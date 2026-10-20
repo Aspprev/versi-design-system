@@ -170,45 +170,32 @@ O servidor usa a porta `6006`. Para a configuração standalone:
 npm run storybook:standalone
 ```
 
-A árvore da documentação é organizada assim:
+A árvore da documentação usa os nomes técnicos abaixo; a interface apresenta rótulos em português:
 
 ```text
 Getting Started
-├── Introduction
-├── Installation
-├── Usage
-└── Contributing
+  Introduction · Installation · Usage · Contributing
 
 Foundations
-├── Overview
-├── Colors
-├── Typography
-├── Spacing
-└── Shadows
+  Overview · Colors · Typography · Spacing · Shadows · Borders · Icons
 
 Components
-├── Actions
-├── Forms
-├── Feedback
-├── Data Display
-├── Documents
-├── Navigation
-├── Overlay
-├── Layout
-└── Accessibility
+  Overview (catálogo com busca)
+  Actions · Forms · Feedback · Data Display · Documents
+  Navigation · Overlay · Layout · Accessibility · Utilities
 
 Patterns
-├── Forms
-└── Feedback
+  Overview · Forms · Feedback · Data/Table · Documents/UploadFlow
+  Forms/FormStates · Forms/ValidationStates · Forms/FormValidation
 
 Themes
-├── Overview
-├── Comparison
-└── ThemeLab
+  Overview · Comparison · ThemeLab
 
 Guidelines
-├── Accessibility
-└── Usage
+  Accessibility · Usage · ComponentChoice · Compatibility
+
+Laboratory
+  Forms/PlaceholderComparison · Forms/ValidationLayout
 ```
 
 A toolbar permite comparar esquema de cores, preset, contraste, escala de fonte e movimento reduzido. O addon de acessibilidade permanece disponível para inspeção manual e os testes automatizados usam Axe nos cenários visuais.
@@ -217,6 +204,7 @@ A toolbar permite comparar esquema de cores, preset, contraste, escala de fonte 
 
 ```bash
 npm run tokens:check
+npm run check:generated
 npm run typecheck
 npm test
 npm run build
@@ -226,7 +214,7 @@ npm run check:package
 npm run prepack
 ```
 
-O script `prepack` valida tokens, governança, segurança, lint, TypeScript, build, tamanho e conteúdo do pacote.
+O script `prepack` valida tokens e bandeiras geradas, governança, segurança, lint, TypeScript, build, tamanho e conteúdo do pacote. `npm run lint -- --max-warnings=0` cobre fontes, histórias, testes, scripts, configurações e o piloto, preservando o snapshot auditado de terceiros fora da análise de estilo.
 
 Os workflows compartilham as validações de segurança, pacote e consumidores.
 Consulte [segurança do build e compatibilidade](docs/SEGURANCA-BUILD-COMPATIBILIDADE.md)

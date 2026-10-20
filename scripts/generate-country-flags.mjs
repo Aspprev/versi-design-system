@@ -16,6 +16,6 @@ const flags = Object.fromEntries(files.map(file => [
 const output = `${JSON.stringify(flags, null, 2)}\n`;
 if (process.argv.includes("--check")) {
   assert.equal(fs.readFileSync(target, "utf8"), output, "Run node scripts/generate-country-flags.mjs");
-} else {
+} else if (!fs.existsSync(target) || fs.readFileSync(target, "utf8") !== output) {
   fs.writeFileSync(target, output);
 }

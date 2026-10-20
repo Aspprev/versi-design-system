@@ -499,7 +499,7 @@ const InputSelect: React.FC<InputSelectProps> = ({
               onBlur={() => setHovered(false)}
               type="button"
               aria-label={`Mais informações sobre ${label ?? name}`}
-              className="rounded-sm pb-[3px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-1"
+              className="rounded-sm pb-[3px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring"
             >
               <MdInfoOutline
                 aria-hidden="true"

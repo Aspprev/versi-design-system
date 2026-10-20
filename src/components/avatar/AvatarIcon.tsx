@@ -1,4 +1,3 @@
-﻿import React from "react";
 import { MdOutlinePersonOutline } from "react-icons/md";
 export type AvatarIconProps = {
   name?: string;

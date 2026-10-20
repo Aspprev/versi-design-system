@@ -125,7 +125,7 @@ export function RadioCardGroup({
               key={option.value}
               htmlFor={optionId}
               className={classNames(
-                "block rounded-md border p-4 transition-colors",
+                "radio-option-focus block rounded-md border p-4 transition-colors",
                 optionDisabled ? "bg-field-surface-disabled" : checked ? "bg-primary-5" : "bg-bg-light",
                 !hasError && (checked ? "border-primary-1" : "border-transparent"),
                 hasError

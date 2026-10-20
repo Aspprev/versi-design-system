@@ -379,7 +379,7 @@
         },
         {
           "property": "--focus-ring",
-          "value": "var(--primary-1)"
+          "value": "var(--primary-3)"
         },
         {
           "property": "--focus-emphasis-outline-width",
@@ -1238,10 +1238,6 @@
         {
           "property": "--content-link",
           "value": "var(--primary-2)"
-        },
-        {
-          "property": "--focus-ring",
-          "value": "var(--primary-2)"
         }
       ]
     },
@@ -1378,7 +1374,7 @@
         },
         {
           "property": "--focus-ring",
-          "value": "var(--primary-1)"
+          "value": "var(--primary-3)"
         },
         {
           "property": "--action-primary-background",
@@ -4450,7 +4446,7 @@
       ]
     },
     {
-      "selector": "html[data-contrast=\"high\"][data-focus-navigation=\"keyboard\"]\r\n    :where(a, button, input, select, textarea, [tabindex]):focus-visible,\r\n  html[data-contrast=\"high\"][data-focus-navigation=\"keyboard\"]\r\n    :where(.field-keyboard-focus-ring, .radio-option-focus):focus-within",
+      "selector": "html[data-contrast=\"high\"] :where(a, button, input, select, textarea, [tabindex]):not(:where(.sr-only, .field-inset-focus-ring, :disabled, [aria-disabled=\"true\"], .field-keyboard-focus-ring .field-value, .radio-option-focus input)):focus-visible,\nhtml[data-contrast=\"high\"] :where(.field-keyboard-focus-ring):has(.field-value:focus-visible),\nhtml[data-contrast=\"high\"] :where(.radio-option-focus):has(input:focus-visible),\nhtml[data-contrast=\"high\"] :where(.peer):focus-visible + :where(.checkbox-control-proxy, .radio-control-proxy)",
       "declarations": [
         {
           "property": "outline",
@@ -4467,7 +4463,7 @@
       ]
     },
     {
-      "selector": "html[data-contrast=\"high\"][data-contrast-theme=\"dark\"][data-focus-navigation=\"keyboard\"]\r\n    :where(a, button, input, select, textarea, [tabindex]):focus-visible,\r\n  html[data-contrast=\"high\"][data-contrast-theme=\"dark\"][data-focus-navigation=\"keyboard\"]\r\n    :where(.field-keyboard-focus-ring, .radio-option-focus):focus-within",
+      "selector": "html[data-contrast=\"high\"][data-contrast-theme=\"dark\"] :where(a, button, input, select, textarea, [tabindex]):not(:where(.sr-only, .field-inset-focus-ring, :disabled, [aria-disabled=\"true\"], .field-keyboard-focus-ring .field-value, .radio-option-focus input)):focus-visible,\nhtml[data-contrast=\"high\"][data-contrast-theme=\"dark\"] :where(.field-keyboard-focus-ring):has(.field-value:focus-visible),\nhtml[data-contrast=\"high\"][data-contrast-theme=\"dark\"] :where(.radio-option-focus):has(input:focus-visible),\nhtml[data-contrast=\"high\"][data-contrast-theme=\"dark\"] :where(.peer):focus-visible + :where(.checkbox-control-proxy, .radio-control-proxy)",
       "declarations": [
         {
           "property": "outline-color",
@@ -4516,7 +4512,7 @@
       ]
     },
     {
-      "selector": "html[data-focus-emphasis=\"strong\"] :where(a, button, input, select, textarea, [tabindex]):focus-visible",
+      "selector": "html[data-focus-emphasis=\"strong\"] :where(a, button, input, select, textarea, [tabindex]):not(:where(.sr-only, .field-inset-focus-ring, :disabled, [aria-disabled=\"true\"], .field-keyboard-focus-ring .field-value, .radio-option-focus input)):focus-visible,\nhtml[data-focus-emphasis=\"strong\"] :where(.field-keyboard-focus-ring):has(.field-value:focus-visible),\nhtml[data-focus-emphasis=\"strong\"] :where(.radio-option-focus):has(input:focus-visible),\nhtml[data-focus-emphasis=\"strong\"] :where(.peer):focus-visible + :where(.checkbox-control-proxy, .radio-control-proxy)",
       "declarations": [
         {
           "property": "outline",
@@ -4533,7 +4529,7 @@
       ]
     },
     {
-      "selector": "html[data-contrast=\"high\"][data-contrast-theme=\"dark\"][data-focus-emphasis=\"strong\"] :where(a, button, input, select, textarea, [tabindex]):focus-visible",
+      "selector": "html[data-contrast=\"high\"][data-contrast-theme=\"dark\"][data-focus-emphasis=\"strong\"] :where(a, button, input, select, textarea, [tabindex]):not(:where(.sr-only, .field-inset-focus-ring, :disabled, [aria-disabled=\"true\"], .field-keyboard-focus-ring .field-value, .radio-option-focus input)):focus-visible,\nhtml[data-contrast=\"high\"][data-contrast-theme=\"dark\"][data-focus-emphasis=\"strong\"] :where(.field-keyboard-focus-ring):has(.field-value:focus-visible),\nhtml[data-contrast=\"high\"][data-contrast-theme=\"dark\"][data-focus-emphasis=\"strong\"] :where(.radio-option-focus):has(input:focus-visible),\nhtml[data-contrast=\"high\"][data-contrast-theme=\"dark\"][data-focus-emphasis=\"strong\"] :where(.peer):focus-visible + :where(.checkbox-control-proxy, .radio-control-proxy)",
       "declarations": [
         {
           "property": "outline-color",
@@ -4732,6 +4728,32 @@
         {
           "property": "--status-black-soft-foreground",
           "value": "0, 0, 0"
+        }
+      ]
+    },
+    {
+      "selector": ":where(.field-inset-focus-ring):focus-visible",
+      "declarations": [
+        {
+          "property": "outline",
+          "value": "2px solid rgb(var(--focus-ring)) !important"
+        },
+        {
+          "property": "outline-offset",
+          "value": "-4px !important"
+        },
+        {
+          "property": "box-shadow",
+          "value": "none !important"
+        }
+      ]
+    },
+    {
+      "selector": "html:is([data-contrast=\"high\"], [data-focus-emphasis=\"strong\"]) .field-inset-focus-ring:focus-visible",
+      "declarations": [
+        {
+          "property": "outline-width",
+          "value": "3px !important"
         }
       ]
     }
@@ -4981,10 +5003,6 @@
         },
         {
           "property": "--content-link",
-          "value": "var(--primary-2)"
-        },
-        {
-          "property": "--focus-ring",
           "value": "var(--primary-2)"
         }
       ]

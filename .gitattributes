@@ -2,3 +2,9 @@
 /src/tokens.css text eol=lf
 /src/themes.css text eol=lf
 /tokens/tailwind-colors.cjs text eol=lf
+
+# Generated flags and the audited build snapshot must also keep stable bytes.
+/public/flags/*.svg text eol=lf
+/src/data/country-flag-chunks/*.json text eol=lf
+/src/data/country-flags.json text eol=lf
+/vendor/braces-build/** text eol=lf

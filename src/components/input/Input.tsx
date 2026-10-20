@@ -534,7 +534,7 @@ const Input: React.FC<InputProps> = ({
               onBlur={() => setHovered(false)}
               type="button"
               aria-label={`Mais informações sobre ${label ?? name}`}
-              className="rounded-sm pb-[3px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-1"
+              className="rounded-sm pb-[3px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring"
             >
               <MdInfoOutline aria-hidden="true" className="mr-0 text-content-muted" />
             </button>
@@ -578,7 +578,7 @@ const Input: React.FC<InputProps> = ({
             aria-label={showPassword ? "Ocultar senha" : "Mostrar senha"}
             aria-pressed={showPassword}
             onClick={() => setShowPassword((prev) => !prev)}
-            className="flex items-center justify-center rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-1"
+            className="flex items-center justify-center rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring"
           >
             {showPassword ? (
               <MdVisibilityOff
@@ -1006,7 +1006,7 @@ export const InputStandalone: React.FC<InputStandaloneProps> = (props) => {
               onBlur={() => setHovered(false)}
               type="button"
               aria-label={`Mais informações sobre ${label ?? rest.name ?? "este campo"}`}
-              className="rounded-sm pb-[3px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-1"
+              className="rounded-sm pb-[3px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring"
             >
               <MdInfoOutline aria-hidden="true" className="mr-0 text-content-muted" />
             </button>
@@ -1054,7 +1054,7 @@ export const InputStandalone: React.FC<InputStandaloneProps> = (props) => {
             aria-label={showPassword ? "Ocultar senha" : "Mostrar senha"}
             aria-pressed={showPassword}
             onClick={() => setShowPassword((prev) => !prev)}
-            className="flex items-center justify-center rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-1"
+            className="flex items-center justify-center rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring"
           >
             {showPassword ? (
               <MdVisibilityOff

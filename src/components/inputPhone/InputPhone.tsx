@@ -522,7 +522,7 @@ export function InputPhone({
             onBlur={() => helpers.setTouched(true)}
             className={classNames(
               "flex shrink-0 self-stretch items-center gap-0.5 pl-1 pr-0.5 text-left",
-              "border-r bg-transparent focus:outline-none",
+              "field-inset-focus-ring border-r bg-transparent focus:outline-none",
               {
                 "pl-[calc(var(--spacing-4xs)-1px)]": hasError,
                 "border-field-border-error text-field-assistive-error": hasError && !disabled,
