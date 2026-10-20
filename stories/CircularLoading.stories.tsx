@@ -10,9 +10,11 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const WithMessage: Story = {
+  name: "Com mensagem",
   args: { size: 56, color: "primary", message: "Carregando dados..." },
 };
 export const WithoutTrack: Story = {
+  name: "Sem trilha",
   args: {
     size: 40,
     color: "success",

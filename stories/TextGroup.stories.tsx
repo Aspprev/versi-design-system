@@ -5,6 +5,8 @@ const meta = { title: "Components/Data Display/TextGroup", component: TextGroup,
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = { args: { title: "Participante", text: "Maria da Silva" } };
-export const Empty: Story = { args: { title: "Valor não informado", text: "" } };
+export const Default: Story = {
+  name: "Padrão", args: { title: "Participante", text: "Maria da Silva" } };
+export const Empty: Story = {
+  name: "Vazio", args: { title: "Valor não informado", text: "" } };
 

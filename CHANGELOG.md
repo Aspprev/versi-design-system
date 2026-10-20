@@ -1,5 +1,25 @@
 # Changelog
 
+## 0.5.6 — 2026-10-20 — organização e documentação do Storybook
+
+### Documentado
+
+- Catálogo pesquisável de componentes, navegação em português e documentação padronizada com propriedades, exemplos e orientações de uso.
+- Novos exemplos de busca e paginação, validação por linha, estados dos campos e envio de documentos com progresso e nova tentativa.
+- Fundamentos de bordas, raios e ícones, orientações de escolha de componentes e compatibilidade.
+- Comparações históricas reunidas no Laboratório, mantendo os links existentes.
+- Revisão de acessibilidade do foco, com limitações e correções pendentes registradas em `docs/accessibility-focus-review.md`. Esta versão não aplica essas correções aos componentes.
+
+### Corrigido
+
+- Exemplos interativos do Storybook passam a respeitar os controles de propriedades nos casos revisados.
+- Valores da paleta e laboratório de temas acompanham as preferências globais; a documentação acompanha o esquema claro ou escuro.
+- Espaçamento responsivo das prévias e recarregamentos provocados por arquivos gerados.
+
+### Adicionado
+
+- Verificação dos links internos e dos destinos do catálogo com `node scripts/check-storybook-navigation.mjs`, após gerar o Storybook.
+
 ## 0.5.5 — 2026-10-20 — resumo dos itens selecionados no MultiSelect
 
 ### Alterado

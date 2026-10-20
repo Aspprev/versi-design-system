@@ -7,6 +7,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const WithMarks: Story = {
+  name: "Com marcações",
   render: () => {
     const [value, setValue] = useState(35);
     return <div className="max-w-xl"><Slider min={0} max={100} step={5} value={value} onChange={setValue} marks={[0, 25, 50, 75, 100]} ariaLabel="Percentual de contribuição" getAriaValueText={(current) => `${current}%`} /></div>;

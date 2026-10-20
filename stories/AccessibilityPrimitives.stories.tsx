@@ -12,6 +12,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const SkipToContent: Story = {
+  name: "Pular para o conteúdo",
   args: { targetId: "storybook-main", label: "Pular para o conteúdo" },
   render: (args) => (
     <div className="relative min-h-32">

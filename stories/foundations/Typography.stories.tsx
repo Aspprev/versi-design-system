@@ -10,7 +10,7 @@ function TypographyFoundation() {
   return (
     <div className="mx-auto flex max-w-5xl flex-col gap-6">
       <div>
-        <h1 className="text-3xl font-bold text-content-primary">Typography</h1>
+        <h1 className="text-3xl font-bold text-content-primary">Tipografia</h1>
         <p className="mt-2 text-content-secondary">A família base, a escala e os line-heights vêm dos tokens do VERSI.</p>
       </div>
       <div className="rounded-md border border-border-subtle bg-surface-card p-6">
@@ -19,7 +19,7 @@ function TypographyFoundation() {
           {SAMPLES.map(([name, fallback]) => (
             <div className="flex flex-wrap items-baseline justify-between gap-4 py-4" key={name}>
               <span className="text-content-secondary"><code>--{name}</code> · {fallback}</span>
-              <span style={{ fontSize: `var(--${name})`, lineHeight: `var(--leading-${name.replace("text-", "")}, 1.4)` }}>VERSI Design System</span>
+              <span style={{ fontSize: `var(--${name})`, lineHeight: `var(--${name.startsWith("title-") ? "title-leading-" + name.slice(6) : "leading-" + name.slice(5)}, 1.4)` }}>VERSI Design System</span>
             </div>
           ))}
         </div>
@@ -39,4 +39,5 @@ function TypographyFoundation() {
 const meta = { title: "Foundations/Typography", component: TypographyFoundation } satisfies Meta<typeof TypographyFoundation>;
 export default meta;
 type Story = StoryObj<typeof meta>;
-export const Overview: Story = {};
+export const Overview: Story = {
+  name: "Visão geral",};

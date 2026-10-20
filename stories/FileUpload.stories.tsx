@@ -56,6 +56,7 @@ function UploadPlayground(props: ComponentProps<typeof FileDropzone>) {
 }
 
 export const Playground: Story = {
+  name: "Interativo",
   args: {
     accept: "application/pdf,image/*",
     multiple: true,
@@ -84,6 +85,7 @@ function ValidationPlayground(props: ComponentProps<typeof FileDropzone>) {
 }
 
 export const DropzoneWithValidation: Story = {
+  name: "Validação de arquivos",
   args: {
     accept: "application/pdf",
     maxSize: 5 * 1024 * 1024,
@@ -100,6 +102,7 @@ export const DropzoneWithValidation: Story = {
 };
 
 export const ProgressStates: Story = {
+  name: "Estados de progresso",
   render: () => (
     <div className="flex w-full max-w-xl flex-col gap-5 p-4">
       <FileUploadProgress value={35} label="Enviando comprovante.pdf" />
@@ -110,6 +113,7 @@ export const ProgressStates: Story = {
 };
 
 export const QueueWithRetry: Story = {
+  name: "Fila com nova tentativa",
   render: () => (
     <div className="w-full max-w-2xl p-4">
       <FileList

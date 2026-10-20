@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+﻿import { useArgs } from "storybook/preview-api";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Checkbox } from "../src";
 import FieldFrame from "../src/components/field/FieldFrame";
@@ -23,7 +23,16 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
+export const Options: Story = {
+  name: "Opções",
+  render: (args) => {
+    const [, updateArgs] = useArgs();
+    return <Checkbox {...args} onChange={event => { updateArgs({ value: event.target.value }); }} layout="col" name="contribuicao" />;
+  },
+};
+
 export const Error: Story = {
+  name: "Erro",
   render: (args) => (
     <FieldFrame
       label="Contribuição"
@@ -42,19 +51,4 @@ export const Error: Story = {
   ),
 };
 
-export const Options: Story = {
-  render: () => {
-    const [value, setValue] = useState("basica");
-
-    return (
-      <Checkbox
-        options={options}
-        value={value}
-        onChange={(event) => setValue(event.target.value)}
-        layout="col"
-        name="contribuicao"
-      />
-    );
-  },
-};
-
+export const Disabled: Story = { name: "Desabilitado", args: { disabled: true } };

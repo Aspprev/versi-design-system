@@ -11,6 +11,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  name: "Padrão",
   render: () => (
     <ModalCard>
       <Typography semanticRole="section-title" element="h2">

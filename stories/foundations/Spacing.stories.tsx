@@ -37,4 +37,5 @@ function SpacingFoundation() {
 const meta = { title: "Foundations/Spacing", component: SpacingFoundation } satisfies Meta<typeof SpacingFoundation>;
 export default meta;
 type Story = StoryObj<typeof meta>;
-export const Overview: Story = {};
+export const Overview: Story = {
+  name: "Visão geral",};

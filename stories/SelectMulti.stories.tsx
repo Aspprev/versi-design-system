@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import {
   SelectMulti,
@@ -30,7 +30,8 @@ function SelectMultiForm({
   initialValue = [],
   ...selectMultiProps
 }: SelectMultiProps & { initialValue?: string[] }) {
-  const [selected, setSelected] = useState(initialValue);
+  const [selected, setSelected] = useState<string[]>(Array.isArray(selectMultiProps.value) ? [...selectMultiProps.value] : initialValue);
+  useEffect(() => { if (Array.isArray(selectMultiProps.value)) setSelected([...selectMultiProps.value]); }, [selectMultiProps.value]);
 
   return (
     <form className="max-w-xl">
@@ -52,21 +53,25 @@ function SelectMultiForm({
 }
 
 export const Default: Story = {
+  name: "Padrão",
   render: (args) => <SelectMultiForm {...args} />,
 };
 
 export const Selected: Story = {
+  name: "Selecionado",
   render: (args) => (
     <SelectMultiForm {...args} initialValue={["basico", "especial"]} />
   ),
 };
 
 export const Error: Story = {
+  name: "Erro",
   args: { error: "Selecione ao menos uma opção." },
   render: (args) => <SelectMultiForm {...args} />,
 };
 
 export const Disabled: Story = {
+  name: "Desabilitado",
   args: { disabled: true },
   render: (args) => (
     <SelectMultiForm {...args} initialValue={["especial"]} />
@@ -96,6 +101,7 @@ function ResponsiveSelectionExample() {
 }
 
 export const SelectedLabels: Story = {
+  name: "Resumo da seleção",
   render: () => <ResponsiveSelectionExample />,
   parameters: {
     docs: {

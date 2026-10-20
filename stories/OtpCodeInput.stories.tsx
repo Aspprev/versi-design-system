@@ -4,6 +4,7 @@ import { OtpCodeInput } from "../src";
 
 const meta = {
   title: "Components/Forms/OtpCodeInput",
+  tags: ["autodocs"],
   component: OtpCodeInput,
   args: { label: "Código enviado por e-mail", length: 6 },
   parameters: { a11y: { disable: false } },
@@ -12,12 +13,17 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {};
-export const Error: Story = { args: { error: true, errorText: "Informe o código completo." } };
-export const Disabled: Story = { args: { disabled: true, value: "123456" } };
-export const EightCharacters: Story = { args: { length: 8, mask: "alphanumeric" } };
+export const Default: Story = {
+  name: "Padrão",};
+export const Error: Story = {
+  name: "Erro", args: { error: true, errorText: "Informe o código completo." } };
+export const Disabled: Story = {
+  name: "Desabilitado", args: { disabled: true, value: "123456" } };
+export const EightCharacters: Story = {
+  name: "Oito caracteres", args: { length: 8, mask: "alphanumeric" } };
 
 export const Completion: Story = {
+  name: "Preenchimento e conclusão",
   render: (args) => {
     const [completedValue, setCompletedValue] = useState<string>();
     const [completionCount, setCompletionCount] = useState(0);

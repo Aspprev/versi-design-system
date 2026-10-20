@@ -11,6 +11,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Plain: Story = {
+  name: "Simples",
   args: {
     title: "Comprovante de residência",
     description: "Arquivo PDF ou imagem com data de emissão recente.",
@@ -32,6 +33,7 @@ export const Plain: Story = {
 };
 
 export const Subtle: Story = {
+  name: "Suave",
   args: {
     title: "Documento assinado",
     label: "Declaração",

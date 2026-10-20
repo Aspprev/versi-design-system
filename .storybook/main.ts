@@ -5,6 +5,16 @@ const config: StorybookConfig = {
   addons: ["@storybook/addon-a11y", "@storybook/addon-docs"],
   framework: "@storybook/react-vite",
   staticDirs: ["../public"],
+  viteFinal: async (viteConfig) => ({
+    ...viteConfig,
+    server: {
+      ...viteConfig.server,
+      watch: {
+        ...viteConfig.server?.watch,
+        ignored: ["**/storybook-static/**", "**/playwright-report/**", "**/test-results/**"],
+      },
+    },
+  }),
 };
 
 export default config;

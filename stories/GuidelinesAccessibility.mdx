@@ -2,22 +2,22 @@ import { Meta } from "@storybook/addon-docs/blocks";
 
 <Meta title="Guidelines/Accessibility" />
 
-# Accessibility
+# Acessibilidade
 
-Use the VERSI components as part of an accessible interface from the first interaction. The component API should expose the information that assistive technologies need instead of relying on visual context alone.
+Os componentes precisam comunicar nome, estado e finalidade para quem usa teclado e tecnologias assistivas.
 
-## Required checks
+## Revisão manual
 
-- Every interactive control has an accessible name and a visible focus indicator.
-- Keyboard users can reach, operate and leave every interactive state without a pointer.
-- Validation errors are associated with their field and are announced when the interaction requires it.
-- Loading, success, empty and error states communicate their status without depending on color alone.
-- Text and controls remain usable at 200% and 400% zoom and at narrow viewport widths.
-- Motion-sensitive transitions honor the consumer's reduced-motion preference.
-- Focus emphasis is available through `data-focus-emphasis="strong"` and link emphasis through `data-link-emphasis="underline"`; consumers may opt out of individual links with `data-no-accessibility-underline`.
+- Use Tab e Shift+Tab para percorrer os controles. O foco deve estar visível e seguir uma ordem coerente.
+- Use Enter ou Espaço para acionar botões; confira as setas em grupos de opções e listas.
+- Abra menus e modais, use Escape e confira o retorno do foco ao acionador.
+- Associe erros ao campo e explique como corrigi-los. Cor sozinha não comunica validação.
+- Confira carregamento, sucesso e ausência de resultados com leitores de tela.
+- Teste telas estreitas, zoom de 200% e 400%, fonte ampliada e textos longos.
+- Respeite a preferência por movimento reduzido.
 
-## Storybook workflow
+## Ferramentas do Storybook
 
-Use the toolbar to compare light and dark schemes, high contrast, font scale and reduced motion. Use the Accessibility panel together with keyboard navigation; the automated visual suite also runs Axe against the priority scenarios.
+Use a toolbar para alternar tema, contraste, fonte, movimento e ênfase de foco. O painel Accessibility ajuda a detectar problemas automáticos; complemente com os passos manuais acima. Ausência de alertas automáticos não garante acessibilidade de toda a interface.
 
-When adding a story, include at least one realistic state with a label, an error or status message when applicable, and a keyboard interaction for composite controls.
+Ao adicionar uma história, inclua rótulos reais, mensagens de erro ou status quando pertinentes e uma interação de teclado para controles compostos.

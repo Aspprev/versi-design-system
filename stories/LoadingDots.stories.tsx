@@ -11,7 +11,10 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Announced: Story = { args: { announce: true } };
-export const Decorative: Story = { args: { announce: false } };
-export const FullContainer: Story = { args: { fullContainer: true } };
+export const Announced: Story = {
+  name: "Com anúncio acessível", args: { announce: true } };
+export const Decorative: Story = {
+  name: "Decorativo", args: { announce: false } };
+export const FullContainer: Story = {
+  name: "No container", args: { fullContainer: true } };
 

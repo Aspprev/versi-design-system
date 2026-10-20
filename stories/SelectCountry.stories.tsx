@@ -44,14 +44,17 @@ function CountryForm({
 }
 
 export const Default: Story = {
+  name: "Padrão",
   render: (args) => <CountryForm {...args} />,
 };
 
 export const Selected: Story = {
+  name: "Selecionado",
   render: (args) => <CountryForm {...args} initialValue="Brasil" />,
 };
 
 export const Searchable: Story = {
+  name: "Com busca",
   args: {
     searchable: true,
     searchPlaceholder: "Busque um país",
@@ -60,6 +63,7 @@ export const Searchable: Story = {
 };
 
 export const Error: Story = {
+  name: "Erro",
   render: (args) => (
     <CountryForm
       {...args}
@@ -70,11 +74,13 @@ export const Error: Story = {
 };
 
 export const Disabled: Story = {
+  name: "Desabilitado",
   args: { disabled: true },
   render: (args) => <CountryForm {...args} initialValue="Brasil" />,
 };
 
 export const WithoutFlags: Story = {
+  name: "Sem bandeiras",
   args: { showFlags: false },
   render: (args) => <CountryForm {...args} initialValue="Brasil" />,
   parameters: {
@@ -87,6 +93,7 @@ export const WithoutFlags: Story = {
 };
 
 export const ResponsiveGrid: Story = {
+  name: "Grade responsiva",
   render: (args) => (
     <Formik initialValues={{ [args.name]: "" }} onSubmit={() => undefined}>
       <form className="grid min-w-0 grid-cols-1 gap-4 tablet:grid-cols-3">
@@ -106,6 +113,8 @@ export const ResponsiveGrid: Story = {
 };
 
 export const FullCountryList: Story = {
+  name: "Lista completa de países",
+  tags: ["!dev"],
   render: (args) => <CountryForm {...args} />,
   parameters: {
     docs: {
@@ -117,6 +126,7 @@ export const FullCountryList: Story = {
 };
 
 export const IncludedCountries: Story = {
+  name: "Países incluídos",
   args: {
     countryList: { mode: "include", codes: ["BR", "PT", "US"] },
   },
@@ -131,6 +141,7 @@ export const IncludedCountries: Story = {
 };
 
 export const ExcludedCountries: Story = {
+  name: "Países excluídos",
   args: {
     countryList: { mode: "exclude", codes: ["BR", "PT"] },
   },

@@ -47,13 +47,16 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {};
+export const Default: Story = {
+  name: "Padrão",};
 
 export const WithPagination: Story = {
+  name: "Com paginação",
   args: { data: paginatedRows, itemsPerPage: 5, showPagination: true },
 };
 
 export const WithArrowPagination: Story = {
+  name: "Paginação com setas",
   args: {
     data: paginatedRows,
     itemsPerPage: 5,
@@ -63,6 +66,7 @@ export const WithArrowPagination: Story = {
 };
 
 export const WithSmallPagination: Story = {
+  name: "Paginação pequena",
   args: {
     data: paginatedRows,
     itemsPerPage: 5,
@@ -72,6 +76,7 @@ export const WithSmallPagination: Story = {
 };
 
 export const WithSmallArrowPagination: Story = {
+  name: "Setas pequenas na tabela",
   args: {
     data: paginatedRows,
     itemsPerPage: 5,
@@ -82,10 +87,12 @@ export const WithSmallArrowPagination: Story = {
 };
 
 export const StripedCompact: Story = {
+  name: "Compacta e alternada",
   args: { rowVariant: "striped", density: "compact", enableRowHover: true },
 };
 
 export const StickyHeader: Story = {
+  name: "Cabeçalho fixo",
   args: { stickyHeader: true, scrollAreaMaxHeight: "12rem", overflowMode: "scroll" },
 };
 
@@ -120,6 +127,7 @@ const filterableColumns: ITableColumnConfig<Participant>[] = [
 ];
 
 export const ResponsiveAdaptive: Story = {
+  name: "Responsiva adaptativa",
   render: (args) => (
     <div className="max-w-[520px]">
       <Table {...args} overflowMode="adaptive" header={columns} />
@@ -128,6 +136,7 @@ export const ResponsiveAdaptive: Story = {
 };
 
 export const Filterable: Story = {
+  name: "Com filtros",
   render: (args) => (
     <Table
       {...args}
@@ -139,6 +148,7 @@ export const Filterable: Story = {
 };
 
 export const Expandable: Story = {
+  name: "Linhas expansíveis",
   render: (args) => {
     const [expandedRowId, setExpandedRowId] = useState<number | null>(null);
     return (
@@ -156,6 +166,7 @@ export const Expandable: Story = {
 };
 
 export const Loading: Story = {
+  name: "Carregando",
   args: {
     loading: true,
     loadingMessage: "Carregando participantes…",
@@ -163,6 +174,7 @@ export const Loading: Story = {
 };
 
 export const Error: Story = {
+  name: "Erro",
   args: {
     errorMessage: "Não foi possível carregar os participantes.",
   },
@@ -184,6 +196,7 @@ function MobileCards(props: MobileCardTableProps<Participant>) {
 }
 
 export const MobileCard: Story = {
+  name: "Cartões no celular",
   render: () => (
     <MobileCards
       headers={[{ label: "Participante" }, { label: "Plano" }, { label: "Saldo" }]}

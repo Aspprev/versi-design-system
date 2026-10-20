@@ -18,16 +18,20 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {};
+export const Default: Story = {
+  name: "Padrão",};
 
 export const Loading: Story = {
+  name: "Carregando",
   args: { series: [], loading: true, loadingMessage: "Carregando dados..." },
 };
 
 export const Error: Story = {
+  name: "Erro",
   args: { series: [], error: "Nao foi possivel carregar os dados." },
 };
 
 export const Empty: Story = {
+  name: "Vazio",
   args: { series: [], emptyMessage: "Nenhum dado no periodo selecionado." },
 };

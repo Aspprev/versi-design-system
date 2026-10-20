@@ -46,16 +46,19 @@ function FormikInputExample({
 }
 
 export const Empty: Story = {
+  name: "Vazio",
   render: (args) => <FormikInputExample {...args} />,
 };
 
 export const Filled: Story = {
+  name: "Preenchido",
   render: (args) => (
     <FormikInputExample {...args} initialValue="participante@exemplo.com" />
   ),
 };
 
 export const ValidationError: Story = {
+  name: "Erro de validação",
   render: (args) => (
     <FormikInputExample
       {...args}
@@ -66,6 +69,7 @@ export const ValidationError: Story = {
 };
 
 export const MaskedCurrency: Story = {
+  name: "Moeda com Formik",
   args: {
     name: "contribuicao",
     label: "Valor da contribuição",

@@ -112,10 +112,12 @@ function renderPreferencesStory() {
 }
 
 export const Default: Story = {
+  name: "Padrão",
   render: renderPreferencesStory,
 };
 
 export const DarkHighContrast: Story = {
+  name: "Escuro com alto contraste",
   globals: {
     colorScheme: "dark",
     contrast: "high",

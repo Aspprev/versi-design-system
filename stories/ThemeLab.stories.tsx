@@ -1,5 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
+import { useGlobals } from "storybook/preview-api";
+import { useTokenValues } from "./shared/useTokenValues";
 import {
   Button,
   InputStandalone,
@@ -70,62 +72,18 @@ html[data-ds-theme="verde3"] {
 
 /* No Tailwind, importe o preset do DS como adaptador opcional. */`;
 
-function setRootAttribute(name: string, value: string): void {
-  if (typeof document === "undefined") return;
-  document.documentElement.setAttribute(name, value);
-}
+const TOKEN_NAMES = TOKEN_GROUPS.flatMap((group) => [...group.tokens]);
 
-function ThemeLab() {
-  const [theme, setTheme] = useState<ThemeId>("default");
-  const [colorScheme, setColorScheme] = useState<ColorScheme>("light");
-  const [contrast, setContrast] = useState<Contrast>("normal");
-  const [fontScale, setFontScale] = useState("default");
-  const [tokenValues, setTokenValues] = useState<Record<string, string>>({});
-
-  useEffect(() => {
-    if (typeof document === "undefined") return;
-    const root = document.documentElement;
-    const previous = {
-      theme: root.getAttribute("data-ds-theme"),
-      colorScheme: root.getAttribute("data-color-scheme"),
-      contrast: root.getAttribute("data-contrast"),
-      contrastTheme: root.getAttribute("data-contrast-theme"),
-      fontScale: root.getAttribute("data-font-scale"),
-    };
-
-    return () => {
-      const restore = (name: string, value: string | null) => {
-        if (value === null) root.removeAttribute(name);
-        else root.setAttribute(name, value);
-      };
-      restore("data-ds-theme", previous.theme);
-      restore("data-color-scheme", previous.colorScheme);
-      restore("data-contrast", previous.contrast);
-      restore("data-contrast-theme", previous.contrastTheme);
-      restore("data-font-scale", previous.fontScale);
-    };
-  }, []);
-
-  useEffect(() => {
-    setRootAttribute("data-ds-theme", theme);
-    setRootAttribute("data-color-scheme", colorScheme);
-    setRootAttribute("data-contrast", contrast);
-    setRootAttribute("data-contrast-theme", colorScheme);
-    setRootAttribute("data-font-scale", fontScale);
-
-    const frame = window.requestAnimationFrame(() => {
-      const styles = getComputedStyle(document.documentElement);
-      const values = Object.fromEntries(
-        TOKEN_GROUPS.flatMap((group) => group.tokens).map((token) => [
-          token,
-          styles.getPropertyValue(token).trim(),
-        ]),
-      );
-      setTokenValues(values);
-    });
-
-    return () => window.cancelAnimationFrame(frame);
-  }, [colorScheme, contrast, fontScale, theme]);
+function ThemeLab({ globals, updateGlobals }: { globals: Record<string, unknown>; updateGlobals: (values: Record<string, unknown>) => void }) {
+  const theme = (globals.dsTheme ?? "default") as ThemeId;
+  const colorScheme = (globals.colorScheme === "system" ? document.documentElement.dataset.colorScheme : globals.colorScheme ?? "light") as ColorScheme;
+  const contrast = (globals.contrast ?? "normal") as Contrast;
+  const fontScale = String(globals.fontScale ?? "default");
+  const setTheme = (value: ThemeId) => updateGlobals({ dsTheme: value });
+  const setColorScheme = (value: ColorScheme) => updateGlobals({ colorScheme: value });
+  const setContrast = (value: Contrast) => updateGlobals({ contrast: value });
+  const setFontScale = (value: string) => updateGlobals({ fontScale: value });
+  const tokenValues = useTokenValues(TOKEN_NAMES);
 
   const activeLabel = useMemo(
     () => (theme === "default" ? "Padrao" : theme),
@@ -136,7 +94,7 @@ function ThemeLab() {
     <div className="mx-auto flex w-full max-w-6xl flex-col gap-6">
       <div>
         <Typography semanticRole="page-title" element="h1">
-          ThemeLab
+          Laboratório de temas
         </Typography>
         <Typography variant="secondary" size="md">
           Laboratorio do contrato de tema do Design System. Use os controles
@@ -306,7 +264,7 @@ function ThemeLab() {
 
 const meta = {
   title: "Themes/ThemeLab",
-  component: ThemeLab,
+  render: () => { const [globals, updateGlobals] = useGlobals(); return <ThemeLab globals={globals} updateGlobals={updateGlobals} />; },
   tags: ["autodocs"],
   parameters: {
     docs: {
@@ -316,9 +274,10 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof ThemeLab>;
+} satisfies Meta;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Playground: Story = {};
+export const Playground: Story = {
+  name: "Interativo",};

@@ -85,11 +85,13 @@ function ValidationLayoutComparison() {
 }
 
 const meta = {
-  title: "Components/Forms/ValidationLayout",
+  id: "components-forms-validationlayout",
+  title: "Laboratory/Forms/ValidationLayout",
   component: ValidationLayoutComparison,
   parameters: { layout: "fullscreen" },
 } satisfies Meta<typeof ValidationLayoutComparison>;
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Comparison: Story = {};
+export const Comparison: Story = {
+  name: "Comparação",};

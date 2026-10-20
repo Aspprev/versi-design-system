@@ -33,9 +33,11 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {};
+export const Default: Story = {
+  name: "Padrão",};
 
 export const Donut: Story = {
+  name: "Gráfico de rosca",
   args: {
     type: "donut",
     height: 300,
