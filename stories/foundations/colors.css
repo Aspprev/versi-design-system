@@ -1,0 +1,33 @@
+.versi-colors { max-width: 1200px; margin: auto; color: rgb(var(--content-primary)); display: grid; gap: 24px; min-width: 0; line-height: 1.6; }
+.versi-colors > *, .versi-colors section { min-width: 0; }
+.versi-colors h1 { font-size: 2rem; font-weight: 800; }
+.versi-colors h2 { font-size: 1.4rem; font-weight: 700; margin-bottom: 12px; }
+.versi-colors h3 { font-size: 1.1rem; font-weight: 700; margin: 24px 0 12px; }
+.versi-colors p { margin: 12px 0; }
+.versi-colors nav { display: flex; flex-wrap: wrap; gap: 12px 24px; }
+.versi-colors a { color: rgb(var(--content-link)); text-decoration: underline; }
+.versi-colors-panel, .versi-colors details { border: 1px solid rgb(var(--border-default)); border-radius: 10px; padding: 20px; background: rgb(var(--surface-card-semantic)); margin: 12px 0; }
+.versi-colors pre { overflow: auto; max-width: 100%; padding: 16px; margin: 12px 0; background: rgb(var(--surface-muted)); border-radius: 6px; font-size: .85rem; }
+.versi-colors p code { overflow-wrap: anywhere; }
+.versi-colors summary { font-weight: 700; cursor: pointer; }
+.versi-colors button, .versi-colors select { padding: 6px 10px; border: 1px solid rgb(var(--border-default)); border-radius: 5px; color: rgb(var(--content-primary)); background: rgb(var(--surface-card-semantic)); font: inherit; }
+.versi-colors button { cursor: pointer; font-size: .85rem; }
+.versi-colors-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,240px),1fr)); gap: 12px; margin-top: 16px; }
+.versi-colors-swatch { overflow: hidden; border: 1px solid rgb(var(--border-default)); border-radius: 6px; min-width: 0; }
+.versi-colors-sample { height: 64px; border-bottom: 1px solid rgb(var(--border-default)); }
+.versi-colors-swatch > div:last-child { padding: 12px; display: grid; gap: 6px; }
+.versi-colors-swatch code { overflow-wrap: anywhere; font-size: .8rem; }
+.versi-colors-swatch small { color: rgb(var(--content-secondary)); }
+.versi-colors-filters { display: flex; flex-wrap: wrap; gap: 16px; margin: 20px 0; }
+.versi-colors-filters label { display: grid; gap: 4px; font-weight: 600; min-width: 0; max-width: 100%; }
+.versi-colors-filters select { max-width: 100%; }
+.versi-colors-scroll { overflow: auto; max-width: 100%; }
+.versi-colors table { border-collapse: collapse; width: 100%; font-size: .8rem; }
+.versi-colors caption { text-align: left; padding: 8px 0 16px; color: rgb(var(--content-secondary)); }
+.versi-colors th, .versi-colors td { padding: 12px; text-align: left; border-bottom: 1px solid rgb(var(--border-default)); }
+.versi-colors thead th { min-width: 140px; vertical-align: top; }
+.versi-colors th code { overflow-wrap: anywhere; }
+.versi-colors td { white-space: nowrap; }
+.versi-colors-chip { display: inline-block; width: 24px; height: 24px; vertical-align: middle; margin-right: 8px; border: 1px solid rgb(var(--border-default)); border-radius: 4px; }
+.versi-colors-frame { position: absolute; width: 1px; height: 1px; border: 0; clip-path: inset(100%); pointer-events: none; }
+@media (max-width: 600px) { .versi-colors-panel, .versi-colors details { padding: 12px; } }
