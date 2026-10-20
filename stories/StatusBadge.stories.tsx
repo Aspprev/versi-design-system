@@ -11,11 +11,16 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Outline: Story = { args: { color: "blue", appearance: "outline" } };
-export const SoftWarning: Story = { args: { color: "yellow", appearance: "soft" } };
-export const SolidSuccess: Story = { args: { color: "green", appearance: "solid" } };
-export const SolidDanger: Story = { args: { children: "Cancelado", color: "red", appearance: "solid" } };
+export const Outline: Story = {
+  name: "Contorno", args: { color: "blue", appearance: "outline" } };
+export const SoftWarning: Story = {
+  name: "Aviso suave", args: { color: "yellow", appearance: "soft" } };
+export const SolidSuccess: Story = {
+  name: "Sucesso sólido", args: { color: "green", appearance: "solid" } };
+export const SolidDanger: Story = {
+  name: "Erro sólido", args: { children: "Cancelado", color: "red", appearance: "solid" } };
 export const Truncated: Story = {
+  name: "Texto com reticências",
   args: {
     children: "Aguardando validação do participante",
     color: "orange",
@@ -25,6 +30,7 @@ export const Truncated: Story = {
 };
 
 export const DomainStatus: Story = {
+  name: "Estados de domínio",
   render: () => (
     <div className="flex flex-wrap gap-2">
       <DomainStatusBadge
@@ -41,6 +47,7 @@ export const DomainStatus: Story = {
 };
 
 export const ConsumerStatusMap: Story = {
+  name: "Mapeamento no consumidor",
   render: () => (
     <DomainStatusBadge
       status="Em revisao"
@@ -60,6 +67,7 @@ export const ConsumerStatusMap: Story = {
 };
 
 export const ClientStatusMap: Story = {
+  name: "Mapeamento por cliente",
   render: () => {
     const statusMap = {
       "EM ANÁLISE": { color: "blue", appearance: "solid" },

@@ -1,0 +1,27 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Guidelines/ComponentChoice" />
+
+# Como escolher o componente
+
+| Necessidade | Componente | Orientação |
+| --- | --- | --- |
+| Uma opção em uma lista curta | RadioGroup | Mantenha as alternativas visíveis. |
+| Uma opção em uma lista longa | InputSelect | Use rótulos claros e teste a busca. |
+| Várias opções | SelectMulti | Os nomes e o contador respeitam a largura disponível. |
+| Confirmar uma condição | Checkbox | Escreva a condição junto ao controle. |
+| Ativar uma preferência | InputSwitch | Use quando a alteração tem efeito imediato. |
+| Valor numérico em intervalo | Slider | Informe limites e unidade; ofereça entrada precisa quando necessário. |
+| Formulário com Formik | Input/Formik | Deixe valor, validação e envio sob o controle do formulário. |
+| Campo independente | InputStandalone | Controle valor e mensagem de erro na aplicação. |
+| Orientação persistente | Notice | Evite depender de tooltip para informação essencial. |
+| Informação complementar | Tooltip | Garanta acesso por foco e nome acessível no acionador. |
+| Interrupção que exige decisão | Modal | Reserve para ações que precisam de atenção imediata. |
+
+## Validação sem desalinhamento
+
+Use FormGrid para organizar os campos por linha. A mensagem aumenta a altura da linha inteira e a próxima linha começa alinhada. Evite montar cada coluna como uma pilha independente. Mostre o erro próximo ao campo e explique como corrigi-lo.
+
+## Estados para revisar
+
+Confira vazio, preenchido, erro, desabilitado vazio e desabilitado preenchido. Repita no tema claro, escuro, alto contraste e fonte ampliada. Carregamento e ausência de resultados também fazem parte do fluxo.

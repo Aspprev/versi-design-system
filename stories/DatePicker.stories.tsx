@@ -49,10 +49,12 @@ function DatePickerForm({
 }
 
 export const Default: Story = {
+  name: "Padrão",
   render: (args) => <DatePickerForm {...args} />,
 };
 
 export const MonthSelection: Story = {
+  name: "Seleção de mês",
   args: {
     label: "Mês de referência",
     name: "mesReferencia",
@@ -68,22 +70,26 @@ export const MonthSelection: Story = {
 };
 
 export const Filled: Story = {
+  name: "Preenchido",
   render: (args) => (
     <DatePickerForm {...args} initialValue={new Date(1991, 7, 26)} />
   ),
 };
 
 export const WithHelperText: Story = {
+  name: "Com texto de ajuda",
   args: { helperText: "Informe a data no formato dia/mês/ano." },
   render: (args) => <DatePickerForm {...args} />,
 };
 
 export const DropdownNavigation: Story = {
+  name: "Navegação do calendário",
   args: { navigationVariant: "dropdown" },
   render: (args) => <DatePickerForm {...args} />,
 };
 
 export const Error: Story = {
+  name: "Erro",
   render: (args) => (
     <DatePickerForm
       {...args}
@@ -94,6 +100,7 @@ export const Error: Story = {
 };
 
 export const Disabled: Story = {
+  name: "Desabilitado",
   args: { disabled: true },
   render: (args) => (
     <DatePickerForm {...args} initialValue={new Date(1991, 7, 26)} />
@@ -101,6 +108,7 @@ export const Disabled: Story = {
 };
 
 export const YearSelection: Story = {
+  name: "Seleção de ano",
   args: {
     label: "Ano de referência",
     name: "anoReferencia",

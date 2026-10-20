@@ -85,7 +85,8 @@ function ValidationComparison({ disabled = false, longMessage = false }) {
 }
 
 const meta = {
-  title: "Components/Forms/ValidationErrors",
+  id: "components-forms-validationerrors",
+  title: "Patterns/Forms/ValidationStates",
   component: ValidationComparison,
   parameters: { layout: "fullscreen" },
   args: { disabled: false, longMessage: false },
@@ -93,6 +94,9 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Comparison: Story = {};
-export const LongMessages: Story = { args: { longMessage: true } };
-export const Disabled: Story = { args: { disabled: true } };
+export const Comparison: Story = {
+  name: "Comparação",};
+export const LongMessages: Story = {
+  name: "Mensagens longas", args: { longMessage: true } };
+export const Disabled: Story = {
+  name: "Desabilitado", args: { disabled: true } };

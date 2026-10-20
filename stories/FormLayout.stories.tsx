@@ -30,6 +30,7 @@ function RowGrowthExample() {
 }
 
 export const RowGrowth: Story = {
+  name: "Crescimento por linha",
   render: () => <RowGrowthExample />,
   parameters: {
     docs: {
@@ -52,6 +53,7 @@ const Field = ({ label }: { label: string }) => (
 );
 
 export const TwoColumns: Story = {
+  name: "Duas colunas",
   args: { columns: 2 },
   render: (args) => (
     <FormGrid {...args}>
@@ -62,6 +64,7 @@ export const TwoColumns: Story = {
 };
 
 export const Actions: Story = {
+  name: "Ações do formulário",
   render: () => (
     <FormActions>
       <button
@@ -81,6 +84,7 @@ export const Actions: Story = {
 };
 
 export const FilterBarExample: Story = {
+  name: "Barra de filtros",
   render: () => (
     <FilterBar
       filters={

@@ -89,30 +89,36 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Theme: Story = {
+  name: "Tema",
   render: renderThemePreference,
 };
 
 export const ThemeDark: Story = {
+  name: "Tema escuro",
   globals: { colorScheme: "dark" },
   render: renderThemePreference,
 };
 
 export const Contrast: Story = {
+  name: "Contraste",
   globals: { contrast: "high" },
   render: renderContrastPreference,
 };
 
 export const FontSize: Story = {
+  name: "Tamanho da fonte",
   globals: { fontScale: "large" },
   render: renderFontSizePreference,
 };
 
 export const Reading: Story = {
+  name: "Leitura",
   globals: { motion: "reduce" },
   render: renderReadingPreferences,
 };
 
 export const AppliedReadingPreferences: Story = {
+  name: "Preferências de leitura aplicadas",
   globals: { emphasizeFocus: true, underlineLinks: true },
   render: () => (
     <section className="max-w-xl space-y-4">

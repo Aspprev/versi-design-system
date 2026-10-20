@@ -11,7 +11,10 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Card: Story = {};
-export const Subtle: Story = { args: { tone: "subtle", elevation: "none" } };
-export const FeedbackWarning: Story = { args: { tone: "warning" } };
+export const Card: Story = {
+  name: "Cartão",};
+export const Subtle: Story = {
+  name: "Suave", args: { tone: "subtle", elevation: "none" } };
+export const FeedbackWarning: Story = {
+  name: "Superfície de aviso", args: { tone: "warning" } };
 

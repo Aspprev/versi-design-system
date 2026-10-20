@@ -11,7 +11,10 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const WithoutLabel: Story = {};
-export const WithLabel: Story = { args: { children: "Seção" } };
-export const Subtle: Story = { args: { bgColor: "light" } };
+export const WithoutLabel: Story = {
+  name: "Sem rótulo",};
+export const WithLabel: Story = {
+  name: "Com rótulo", args: { children: "Seção" } };
+export const Subtle: Story = {
+  name: "Suave", args: { bgColor: "light" } };
 

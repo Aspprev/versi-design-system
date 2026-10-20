@@ -41,10 +41,12 @@ function PhoneForm({
 }
 
 export const Default: Story = {
+  name: "Padrão",
   render: (args) => <PhoneForm {...args} />,
 };
 
 export const Filled: Story = {
+  name: "Preenchido",
   render: (args) => (
     <PhoneForm
       {...args}
@@ -54,6 +56,8 @@ export const Filled: Story = {
 };
 
 export const SearchCountry: Story = {
+  name: "Busca de países",
+  tags: ["!dev"],
   render: (args) => <PhoneForm {...args} />,
   parameters: {
     docs: {
@@ -65,6 +69,7 @@ export const SearchCountry: Story = {
 };
 
 export const Error: Story = {
+  name: "Erro",
   render: (args) => (
     <PhoneForm
       {...args}
@@ -75,6 +80,7 @@ export const Error: Story = {
 };
 
 export const Disabled: Story = {
+  name: "Desabilitado",
   args: { disabled: true },
   render: (args) => (
     <PhoneForm
@@ -85,6 +91,7 @@ export const Disabled: Story = {
 };
 
 export const WithoutFlags: Story = {
+  name: "Sem bandeiras",
   args: { showFlags: false },
   render: (args) => <PhoneForm {...args} initialValue={{ ddi: 55, ddd: "11", numero: "987654321" }} />,
   parameters: {
@@ -97,6 +104,7 @@ export const WithoutFlags: Story = {
 };
 
 export const ResponsiveGrid: Story = {
+  name: "Grade responsiva",
   render: (args) => (
     <Formik initialValues={{ [args.name]: "" }} onSubmit={() => undefined}>
       <form className="grid min-w-0 grid-cols-1 gap-4 tablet:grid-cols-3">
@@ -116,6 +124,8 @@ export const ResponsiveGrid: Story = {
 };
 
 export const FullCountryList: Story = {
+  name: "Lista completa de países",
+  tags: ["!dev"],
   render: (args) => <PhoneForm {...args} />,
   parameters: {
     docs: {
@@ -128,6 +138,7 @@ export const FullCountryList: Story = {
 };
 
 export const IncludedCountries: Story = {
+  name: "Países incluídos",
   args: {
     countryList: { mode: "include", codes: ["BR", "PT", "US"] },
   },
@@ -142,6 +153,7 @@ export const IncludedCountries: Story = {
 };
 
 export const ExcludedCountries: Story = {
+  name: "Países excluídos",
   args: {
     countryList: { mode: "exclude", codes: ["BR", "PT"] },
   },

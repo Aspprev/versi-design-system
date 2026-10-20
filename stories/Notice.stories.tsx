@@ -11,8 +11,12 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Info: Story = { args: { type: "info" } };
-export const WarningDefault: Story = { args: { type: "warning", textColor: "default" } };
-export const WarningColor: Story = { args: { type: "warning", textColor: "color" } };
-export const Danger: Story = { args: { type: "danger", rounded: true } };
+export const Info: Story = {
+  name: "Informação", args: { type: "info" } };
+export const WarningDefault: Story = {
+  name: "Aviso padrão", args: { type: "warning", textColor: "default" } };
+export const WarningColor: Story = {
+  name: "Aviso colorido", args: { type: "warning", textColor: "color" } };
+export const Danger: Story = {
+  name: "Erro ou alerta crítico", args: { type: "danger", rounded: true } };
 

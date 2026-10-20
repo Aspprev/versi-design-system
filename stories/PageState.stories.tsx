@@ -15,7 +15,10 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Empty: Story = {};
-export const Error: Story = { args: { variant: "error", title: "Não foi possível carregar" } };
-export const WithRetry: Story = { args: { onRetry: () => undefined } };
+export const Empty: Story = {
+  name: "Vazio",};
+export const Error: Story = {
+  name: "Erro", args: { variant: "error", title: "Não foi possível carregar" } };
+export const WithRetry: Story = {
+  name: "Com nova tentativa", args: { onRetry: () => undefined } };
 

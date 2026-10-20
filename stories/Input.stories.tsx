@@ -1,11 +1,16 @@
 import { useEffect, useState, type ComponentProps } from "react";
 import type { Meta, StoryObj } from "@storybook/react-vite";
+import { useArgs } from "storybook/preview-api";
 import { InputStandalone } from "../src";
 
 const meta = {
   title: "Components/Forms/InputStandalone",
   component: InputStandalone,
   tags: ["autodocs"],
+  render: (args) => {
+    const [values, updateArgs] = useArgs();
+    return <InputStandalone {...args} value={values.value ?? ""} onChange={(event) => { args.onChange?.(event); updateArgs({ value: event.target.value }); }} />;
+  },
   args: {
     label: "CPF",
     placeholder: "000.000.000-00",
@@ -16,9 +21,11 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Masked: Story = {};
+export const Masked: Story = {
+  name: "Com máscara",};
 
 export const Currency: Story = {
+  name: "Valor monetário",
   args: {
     label: "Valor da contribuição",
     mask: "currency",
@@ -29,6 +36,7 @@ export const Currency: Story = {
 };
 
 export const Password: Story = {
+  name: "Senha",
   args: {
     label: "Senha",
     mask: undefined,
@@ -38,6 +46,7 @@ export const Password: Story = {
 };
 
 export const Error: Story = {
+  name: "Erro",
   args: {
     label: "E-mail",
     mask: undefined,
@@ -48,6 +57,7 @@ export const Error: Story = {
 };
 
 export const Disabled: Story = {
+  name: "Desabilitado",
   args: {
     label: "Número da inscrição",
     mask: undefined,
@@ -75,6 +85,7 @@ function FormatterPlayground(
 }
 
 export const GenericFormatter: Story = {
+  name: "Formatador livre",
   args: {
     label: "Código formatado",
     mask: undefined,

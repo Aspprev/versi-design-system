@@ -11,6 +11,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const ThreeColumns: Story = {
+  name: "Três colunas",
   args: { columns: 3 },
   render: (args) => (
     <InfoGrid {...args}>
@@ -22,6 +23,7 @@ export const ThreeColumns: Story = {
 };
 
 export const MetricAndOptional: Story = {
+  name: "Indicadores e valores opcionais",
   render: () => (
     <InfoGrid columns={2}>
       <InfoItem

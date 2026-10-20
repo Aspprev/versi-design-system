@@ -1,12 +1,13 @@
-import { useEffect, useState } from "react";
+import { useRef, useState } from "react";
 import type { Meta, StoryObj } from "@storybook/react-vite";
+import { useTokenValues } from "../shared/useTokenValues";
 
 type Token = { name: string; label: string };
 type TokenGroup = { title: string; tokens: Token[] };
 
 const GROUPS: TokenGroup[] = [
   {
-    title: "Brand",
+    title: "Identidade",
     tokens: ["primary", "secondary", "tertiary"].flatMap((family) =>
       Array.from({ length: 5 }, (_, index) => ({
         name: `--${family}-${index + 1}`,
@@ -15,7 +16,7 @@ const GROUPS: TokenGroup[] = [
     ),
   },
   {
-    title: "Neutrals",
+    title: "Neutros",
     tokens: [
       "--grayscale-1", "--grayscale-2", "--grayscale-3", "--grayscale-4", "--grayscale-5",
       "--bg-lighter", "--bg-light", "--bg-dark", "--bg-disabled",
@@ -30,7 +31,7 @@ const GROUPS: TokenGroup[] = [
     ].map((name) => ({ name, label: name.slice(2) })),
   },
   {
-    title: "Semantic",
+    title: "Semânticos",
     tokens: [
       "--content-primary", "--content-secondary", "--content-link", "--surface-page",
       "--surface-card-semantic", "--surface-muted", "--border-default", "--focus-ring",
@@ -38,29 +39,22 @@ const GROUPS: TokenGroup[] = [
   },
 ];
 
-function ColorSwatches() {
-  const [values, setValues] = useState<Record<string, string>>({});
+const TOKEN_NAMES = GROUPS.flatMap((group) => group.tokens.map((token) => token.name));
 
-  useEffect(() => {
-    const computed = getComputedStyle(document.documentElement);
-    setValues(
-      Object.fromEntries(
-        GROUPS.flatMap((group) => group.tokens).map((token) => [
-          token.name,
-          computed.getPropertyValue(token.name).trim(),
-        ]),
-      ),
-    );
-  }, []);
+function ColorSwatches() {
+  const root = useRef<HTMLDivElement>(null);
+  const values = useTokenValues(TOKEN_NAMES, root);
+  const [copied, setCopied] = useState("");
 
   return (
-    <div className="mx-auto flex max-w-6xl flex-col gap-8">
+    <div ref={root} className="mx-auto flex max-w-6xl flex-col gap-8">
       <div>
-        <h1 className="text-3xl font-bold text-content-primary">Colors</h1>
+        <h1 className="text-3xl font-bold text-content-primary">Cores</h1>
         <p className="mt-2 max-w-3xl text-content-secondary">
           Valores lidos diretamente dos tokens CSS ativos. Use a toolbar para observar o mesmo contrato em outros temas.
         </p>
       </div>
+      <p role="status" className="text-sm text-content-secondary">{copied || "Selecione um token para copiar seu nome CSS."}</p>
       {GROUPS.map((group) => (
         <section key={group.title}>
           <h2 className="mb-3 text-xl font-bold text-content-primary">{group.title}</h2>
@@ -72,6 +66,10 @@ function ColorSwatches() {
                   <strong className="block text-sm text-content-primary">{token.label}</strong>
                   <code className="mt-1 block break-all text-xs text-content-secondary">{token.name}</code>
                   <code className="mt-1 block text-xs text-content-muted">{values[token.name] || "-"}</code>
+                  <button type="button" className="mt-2 rounded-sm border border-border-default px-2 py-1 text-xs text-content-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-focus-ring" aria-label={`Copiar ${token.name}`} onClick={async () => {
+                    try { await navigator.clipboard.writeText(`var(${token.name})`); setCopied(`${token.name} copiado.`); }
+                    catch { setCopied("Não foi possível copiar. Selecione o nome do token e copie manualmente."); }
+                  }}>Copiar token</button>
                 </div>
               </article>
             ))}
@@ -85,4 +83,5 @@ function ColorSwatches() {
 const meta = { title: "Foundations/Colors", component: ColorSwatches } satisfies Meta<typeof ColorSwatches>;
 export default meta;
 type Story = StoryObj<typeof meta>;
-export const Overview: Story = {};
+export const Overview: Story = {
+  name: "Visão geral",};

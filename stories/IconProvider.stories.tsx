@@ -12,6 +12,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  name: "Padrão",
   render: () => (
     <IconProvider>
       <div className="flex items-center gap-4 text-content-link">

@@ -21,6 +21,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  name: "Padrão",
   render: (args) => {
     const [selected, setSelected] = useState<Range>(args.selected as Range);
 

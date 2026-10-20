@@ -25,4 +25,5 @@ function ShadowsFoundation() {
 const meta = { title: "Foundations/Shadows", component: ShadowsFoundation } satisfies Meta<typeof ShadowsFoundation>;
 export default meta;
 type Story = StoryObj<typeof meta>;
-export const Overview: Story = {};
+export const Overview: Story = {
+  name: "Visão geral",};

@@ -21,6 +21,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  name: "Padrão",
   render: (args) => {
     const [activeTab, setActiveTab] = useState(args.activeTab);
 
@@ -35,6 +36,7 @@ export const Default: Story = {
 };
 
 export const LongTitle: Story = {
+  name: "Título longo",
   args: {
     title: "Contracheques e historico de pagamentos disponiveis",
     tabs: [
@@ -58,10 +60,12 @@ export const LongTitle: Story = {
 };
 
 export const Small: Story = {
+  name: "Pequeno",
   args: { size: "small" },
 };
 
 export const FlexibleLimitedWidth: Story = {
+  name: "Largura limitada",
   args: {
     title: "Histórico de atendimentos e informações do meu benefício",
     tabs: [

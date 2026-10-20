@@ -42,10 +42,12 @@ function TextAreaForm({
 }
 
 export const Default: Story = {
+  name: "Padrão",
   render: (args) => <TextAreaForm {...args} />,
 };
 
 export const Filled: Story = {
+  name: "Preenchido",
   render: (args) => (
     <TextAreaForm
       {...args}
@@ -55,11 +57,13 @@ export const Filled: Story = {
 };
 
 export const WithHelperText: Story = {
+  name: "Com texto de ajuda",
   args: { helperText: "Use este campo para incluir informações complementares." },
   render: (args) => <TextAreaForm {...args} />,
 };
 
 export const Error: Story = {
+  name: "Erro",
   render: (args) => (
     <TextAreaForm
       {...args}
@@ -70,6 +74,7 @@ export const Error: Story = {
 };
 
 export const Disabled: Story = {
+  name: "Desabilitado",
   args: { disabled: true },
   render: (args) => (
     <TextAreaForm {...args} initialValue="Campo bloqueado para edição." />

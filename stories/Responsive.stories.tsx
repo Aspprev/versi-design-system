@@ -109,5 +109,6 @@ function ResponsivePlayground() {
 }
 
 export const Playground: Story = {
+  name: "Interativo",
   render: () => <ResponsivePlayground />,
 };

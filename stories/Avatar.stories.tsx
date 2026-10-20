@@ -10,6 +10,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  name: "Padrão",
   args: {
     name: "Ana Silva",
     size: "md",
@@ -17,6 +18,7 @@ export const Default: Story = {
 };
 
 export const Sizes: Story = {
+  name: "Tamanhos",
   render: () => (
     <div className="flex items-center gap-4">
       <Avatar name="Ana Silva" size="xs" />
@@ -29,5 +31,6 @@ export const Sizes: Story = {
 };
 
 export const WithoutName: Story = {
+  name: "Sem nome",
   render: () => <Avatar size="lg" aria-label="Participante sem nome" />,
 };

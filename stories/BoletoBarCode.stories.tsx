@@ -10,10 +10,12 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Standard: Story = {
+  name: "Padrão",
   args: { linhaDigitavel: "00190500954014481606906809350314337370000000100" },
 };
 
 export const ConfigurableSize: Story = {
+  name: "Tamanho configurável",
   args: {
     linhaDigitavel: "00190500954014481606906809350314337370000000100",
     width: 3,
@@ -23,6 +25,7 @@ export const ConfigurableSize: Story = {
 };
 
 export const Error: Story = {
+  name: "Erro",
   args: {
     linhaDigitavel: "00190500954014481606906809350314337370000000100",
     error: "Código indisponível.",

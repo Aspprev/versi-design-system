@@ -31,10 +31,12 @@ function JsonFileViewer() {
 }
 
 export const Text: Story = {
+  name: "Texto",
   render: () => <TextFileViewer />,
 };
 
 export const Image: Story = {
+  name: "Imagem",
   args: {
     source: imageSource,
     fileName: "preview.svg",
@@ -43,6 +45,7 @@ export const Image: Story = {
 };
 
 export const Pdf: Story = {
+  name: "PDF",
   args: {
     source: "https://example.com/documento.pdf",
     contentType: "application/pdf",
@@ -52,10 +55,12 @@ export const Pdf: Story = {
 };
 
 export const Json: Story = {
+  name: "JSON",
   render: () => <JsonFileViewer />,
 };
 
 export const AsyncSource: Story = {
+  name: "Carregamento assíncrono",
   render: () => {
     const source = useMemo(
       () => Promise.resolve(new Blob(["Fonte assíncrona de exemplo."], { type: "text/plain" })),
@@ -72,6 +77,7 @@ export const AsyncSource: Story = {
 };
 
 export const Loading: Story = {
+  name: "Carregando",
   args: {
     loading: true,
     title: "Carregando documento",
@@ -79,12 +85,14 @@ export const Loading: Story = {
 };
 
 export const Error: Story = {
+  name: "Erro",
   args: {
     error: "Nao foi possivel carregar o arquivo. Tente novamente.",
   },
 };
 
 export const UnsupportedType: Story = {
+  name: "Formato não suportado",
   args: {
     source: "https://example.com/documento.zip",
     fileName: "documento.zip",
@@ -93,6 +101,7 @@ export const UnsupportedType: Story = {
 };
 
 export const WithActions: Story = {
+  name: "Com ações",
   args: {
     source: imageSource,
     fileName: "compartilhavel.svg",

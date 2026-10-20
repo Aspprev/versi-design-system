@@ -1,6 +1,7 @@
 /// <reference types="vite/client" />
 
 import type { Preview } from "@storybook/react-vite";
+import { ComponentDocumentation, DocumentationContainer } from "./ComponentDocumentation";
 import "../src/styles.css";
 import "../src/themes.css";
 import "./preview.css";
@@ -19,7 +20,7 @@ const preview: Preview = {
     colorScheme: {
       description: "Esquema de cores",
       defaultValue: "light",
-      toolbar: { icon: "circlehollow", items: ["light", "dark", "system"] },
+      toolbar: { icon: "circlehollow", dynamicTitle: true, items: [{ value: "light", title: "Claro" }, { value: "dark", title: "Escuro" }, { value: "system", title: "Sistema" }] },
     },
     dsTheme: {
       description: "Preset de tema do Design System",
@@ -27,44 +28,38 @@ const preview: Preview = {
       toolbar: {
         icon: "paintbrush",
         items: [
-          "default",
-          "azul1",
-          "azul2",
-          "azul3",
-          "laranja1",
-          "laranja2",
-          "verde1",
-          "verde2",
-          "verde3",
-          "verde4",
-          "rosa1",
+          { value: "default", title: "Padrão" },
+          { value: "azul1", title: "Azul 1" }, { value: "azul2", title: "Azul 2" }, { value: "azul3", title: "Azul 3" },
+          { value: "laranja1", title: "Laranja 1" }, { value: "laranja2", title: "Laranja 2" },
+          { value: "verde1", title: "Verde 1" }, { value: "verde2", title: "Verde 2" }, { value: "verde3", title: "Verde 3" }, { value: "verde4", title: "Verde 4" },
+          { value: "rosa1", title: "Rosa 1" },
         ],
       },
     },
     contrast: {
       description: "Contraste",
       defaultValue: "normal",
-      toolbar: { icon: "contrast", items: ["normal", "high"] },
+      toolbar: { icon: "contrast", dynamicTitle: true, items: [{ value: "normal", title: "Contraste normal" }, { value: "high", title: "Alto contraste" }] },
     },
     fontScale: {
       description: "Escala de fonte",
       defaultValue: "default",
-      toolbar: { icon: "zoom", items: ["default", "large", "extra-large"] },
+      toolbar: { icon: "zoom", items: [{ value: "default", title: "Fonte padrão" }, { value: "large", title: "Fonte grande" }, { value: "extra-large", title: "Fonte muito grande" }] },
     },
     emphasizeFocus: {
       description: "Ênfase de foco",
       defaultValue: false,
-      toolbar: { icon: "accessibility", items: ["false", "true"] },
+      toolbar: { icon: "accessibility", items: [{ value: "false", title: "Foco padrão" }, { value: "true", title: "Foco reforçado" }] },
     },
     underlineLinks: {
       description: "Ênfase de links",
       defaultValue: false,
-      toolbar: { icon: "link", items: ["false", "true"] },
+      toolbar: { icon: "link", items: [{ value: "false", title: "Links padrão" }, { value: "true", title: "Sublinhar links" }] },
     },
     motion: {
       description: "Movimento",
       defaultValue: "full",
-      toolbar: { icon: "transfer", items: ["full", "reduce"] },
+      toolbar: { icon: "transfer", items: [{ value: "full", title: "Movimento normal" }, { value: "reduce", title: "Movimento reduzido" }] },
     },
   },
   decorators: [
@@ -99,14 +94,16 @@ const preview: Preview = {
       }
 
       return (
-        <main className="versi-story-shell bg-surface-card p-8 text-content-primary">
+        <div className="versi-story-shell bg-surface-card text-content-primary">
           <Story />
-        </main>
+        </div>
       );
     },
   ],
   parameters: {
     layout: "fullscreen",
+    docs: { container: DocumentationContainer, page: ComponentDocumentation, toc: true, source: { type: "dynamic", language: "tsx" } },
+    controls: { expanded: true, sort: "requiredFirst" },
     options: {
       storySort: {
         order: [
@@ -114,9 +111,11 @@ const preview: Preview = {
           ["Introduction", "Installation", "Contributing", "Usage"],
           "Foundations",
           "Components",
+          ["Overview", "Actions", "Forms", "Data Display", "Feedback", "Navigation", "Layout", "Documents", "Overlay", "Accessibility", "Utilities"],
           "Patterns",
           "Themes",
           "Guidelines",
+          "Laboratory",
         ],
       },
     },

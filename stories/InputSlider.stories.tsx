@@ -38,10 +38,12 @@ function InputSliderPlayground(args: ComponentProps<typeof InputSlider>) {
 }
 
 export const Default: Story = {
+  name: "Padrão",
   render: (args) => <InputSliderPlayground {...args} />,
 };
 
 export const WithInput: Story = {
+  name: "Com campo numérico",
   args: {
     showInput: true,
     showLabel: true,
@@ -51,6 +53,8 @@ export const WithInput: Story = {
 };
 
 export const LegacySufix: Story = {
+  name: "Compatibilidade: sufix legado",
+  tags: ["!dev"],
   args: {
     showLabel: true,
     sufix: " anos",

@@ -14,7 +14,17 @@ body {
 
 .versi-story-shell {
   box-sizing: border-box;
+  padding: clamp(16px, 2.5vw, 32px);
+  min-width: 0;
 }
+
+.versi-docs-lead { font-size: 1.1rem; line-height: 1.65; max-width: 72ch; }
+.versi-docs-preferences { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 16px; margin: 20px 0; border: 1px solid rgb(var(--border-subtle)); border-radius: var(--border-radius-sm); color: rgb(var(--content-secondary)); background: rgb(var(--surface-subtle)); }
+.versi-docs-preferences button { border: 1px solid rgb(var(--border-default)); border-radius: var(--border-radius-sm); padding: 6px 12px; color: rgb(var(--content-primary)); background: rgb(var(--surface-card)); cursor: pointer; }
+.versi-docs-preferences button:focus-visible { outline: 2px solid rgb(var(--focus-ring)); outline-offset: 3px; }
+.versi-catalog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 20px; }
+.versi-catalog-preview { display: flex; min-height: 110px; align-items: center; justify-content: center; padding: 12px; margin-bottom: 16px; overflow: hidden; border-radius: var(--border-radius-sm); background: rgb(var(--surface-subtle)); }
+.versi-catalog-preview > * { max-width: 100%; }
 
 .sb-show-main.sb-main-padded {
   padding: 0;

@@ -11,9 +11,11 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {};
+export const Default: Story = {
+  name: "Padrão",};
 
 export const WithSubtitleAndBack: Story = {
+  name: "Subtítulo e voltar",
   args: {
     title: "Dados pessoais",
     subtitle: "Confira e atualize seus dados.",
@@ -22,6 +24,7 @@ export const WithSubtitleAndBack: Story = {
 };
 
 export const WithActions: Story = {
+  name: "Com ações",
   args: {
     title: "Minhas solicitacoes",
     actions: (
@@ -33,12 +36,14 @@ export const WithActions: Story = {
 };
 
 export const LongTitle: Story = {
+  name: "Título longo",
   args: {
     title: "Histórico de atendimentos e solicitações disponíveis no portal",
   },
 };
 
 export const FlexibleLimitedWidth: Story = {
+  name: "Largura limitada",
   args: {
     title: "Meu benefício",
     subtitle: "Confira os dados do seu benefício.",

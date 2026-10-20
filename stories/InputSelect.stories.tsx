@@ -56,14 +56,17 @@ function SelectForm({
 }
 
 export const Default: Story = {
+  name: "Padrão",
   render: (args) => <SelectForm {...args} />,
 };
 
 export const Selected: Story = {
+  name: "Selecionado",
   render: (args) => <SelectForm {...args} initialValue="especial" />,
 };
 
 export const Searchable: Story = {
+  name: "Com busca",
   args: {
     options: searchableOptions,
     searchable: true,
@@ -74,6 +77,7 @@ export const Searchable: Story = {
 };
 
 export const Error: Story = {
+  name: "Erro",
   render: (args) => (
     <SelectForm
       {...args}
@@ -84,6 +88,7 @@ export const Error: Story = {
 };
 
 export const Disabled: Story = {
+  name: "Desabilitado",
   args: { disabled: true },
   render: (args) => <SelectForm {...args} initialValue="basico" />,
 };
