@@ -126,8 +126,8 @@ export function RadioCardGroup({
               htmlFor={optionId}
               className={classNames(
                 "radio-option-focus block rounded-md border p-4 transition-colors",
-                optionDisabled ? "bg-field-surface-disabled" : checked ? "bg-primary-5" : "bg-bg-light",
-                !hasError && (checked ? "border-primary-1" : "border-transparent"),
+                optionDisabled ? "bg-field-surface-disabled" : checked ? "bg-action-primary-ghost" : "bg-bg-light",
+                !hasError && (checked ? "border-content-link" : "border-transparent"),
                 hasError
                   ? "border-2 border-field-border-error p-[calc(var(--spacing-sm)-1px)]"
                   : "outline outline-1 outline-transparent",

@@ -1,0 +1,21 @@
+.legibility-matrix { display: grid; gap: 24px; max-width: 1280px; margin: auto; color: rgb(var(--content-primary)); line-height: 1.5; min-width: 0; }
+.legibility-matrix h1 { font-size: 2rem; font-weight: 800; }
+.legibility-matrix h2 { font-size: 1.4rem; font-weight: 700; margin-bottom: 12px; }
+.legibility-matrix h3 { font-weight: 700; margin: 12px 0; }
+.legibility-matrix p { margin: 12px 0; }
+.legibility-matrix section { min-width: 0; padding: 16px; border: 1px solid rgb(var(--border-default)); border-radius: 8px; }
+.legibility-status-context { padding: 16px; margin: 12px 0; border: 1px solid rgb(var(--border-default)); }
+.legibility-status-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,170px),1fr)); gap: 12px; }
+.legibility-matrix .context-page { background: rgb(var(--surface-page)); }
+.legibility-matrix .context-card { background: rgb(var(--surface-card-semantic)); }
+.legibility-matrix .context-table { background: rgb(var(--surface-subtle)); }
+.legibility-matrix .context-muted { background: rgb(var(--surface-muted)); }
+.legibility-actions { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; margin: 20px 0; }
+.legibility-actions > div { display: grid; gap: 8px; }
+.legibility-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,260px),1fr)); gap: 20px; margin: 20px 0; }
+.legibility-table-scroll { overflow: auto; margin: 16px 0; }
+.legibility-matrix table { border-collapse: collapse; width: 100%; }
+.legibility-matrix td, .legibility-matrix th { padding: 8px; text-align: left; border-bottom: 1px solid rgb(var(--border-default)); }
+.legibility-matrix details { margin: 16px 0; padding: 12px; border: 1px solid rgb(var(--border-default)); border-radius: 5px; }
+.legibility-matrix summary { cursor: pointer; font-weight: 700; margin-bottom: 12px; }
+.legibility-matrix .legibility-table-example { height: 240px; flex: none; overflow: hidden; }

@@ -827,7 +827,7 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
                             return nextDate;
                           })
                   }
-                  className="rounded-sm p-1 text-primary-1 transition-colors hover:bg-primary-1/10 disabled:cursor-not-allowed disabled:text-content-disabled"
+                  className="rounded-sm p-1 text-content-link transition-colors hover:bg-primary-1/10 disabled:cursor-not-allowed disabled:text-content-disabled"
                 >
                   <MdChevronLeft aria-hidden="true" className="h-5 w-5" />
                 </button>
@@ -885,7 +885,7 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
                             : "days",
                       )
                     }
-                    className="px-2 text-sm font-semibold capitalize text-content-primary transition-colors hover:text-primary-1"
+                    className="px-2 text-sm font-semibold capitalize text-content-primary transition-colors hover:text-content-link"
                   >
                     {headerLabel}
                   </button>
@@ -912,7 +912,7 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
                             return nextDate;
                           })
                   }
-                  className="rounded-sm p-1 text-primary-1 transition-colors hover:bg-primary-1/10 disabled:cursor-not-allowed disabled:text-content-disabled"
+                  className="rounded-sm p-1 text-content-link transition-colors hover:bg-primary-1/10 disabled:cursor-not-allowed disabled:text-content-disabled"
                 >
                   <MdChevronRight aria-hidden="true" className="h-5 w-5" />
                 </button>
@@ -981,7 +981,7 @@ const UnifiedDatePicker: React.FC<UnifiedDatePickerProps> = ({
                               {
                                 "border border-selection-border bg-selection-background font-semibold text-selection-content":
                                   selected,
-                                "border border-primary-1 text-primary-1 font-semibold group-hover:bg-primary-1/10":
+                                "border border-content-link text-content-link font-semibold group-hover:bg-primary-1/10":
                                   currentDay && inMonth && !selected,
                                 "text-content-primary group-hover:bg-primary-1/10":
                                   inMonth && !selected && !currentDay,

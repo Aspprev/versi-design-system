@@ -35,11 +35,11 @@ const VARIANT_STYLES = {
   flat: {
     disabled: `cursor-not-allowed border-disabled bg-surface-disabled text-content-disabled`,
     default: {
-      primary: `bg-action-primary text-action-primary-content hover:bg-action-primary-hover active:bg-action-primary-active`,
-      secondary: `bg-action-secondary text-action-secondary-content hover:bg-action-secondary-hover active:bg-action-secondary-active`,
+      primary: `bg-action-primary text-action-primary-content hover:bg-action-primary-hover hover:text-action-primary-content-hover active:bg-action-primary-active active:text-action-primary-content-active`,
+      secondary: `bg-action-secondary text-action-secondary-content hover:bg-action-secondary-hover hover:text-action-secondary-content-hover active:bg-action-secondary-active active:text-action-secondary-content-active`,
       tertiary: `bg-action-tertiary text-action-tertiary-content opacity-100 hover:bg-action-tertiary-hover active:bg-action-tertiary-active`,
-      danger: `bg-action-danger text-action-danger-content hover:bg-action-danger-hover active:bg-action-danger-active`,
-      warning: `bg-action-warning text-action-warning-content hover:bg-action-warning-hover active:bg-action-warning-active`,
+      danger: `bg-action-danger text-action-danger-content hover:bg-action-danger-hover hover:text-action-danger-content-hover active:bg-action-danger-active active:text-action-danger-content-active`,
+      warning: `bg-action-warning text-action-warning-content hover:bg-action-warning-hover hover:text-action-warning-content-hover active:bg-action-warning-active active:text-action-warning-content-active`,
     },
   },
   outline: {

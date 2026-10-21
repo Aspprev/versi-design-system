@@ -1,5 +1,12 @@
 # Evolução do Design System
 
+## 2026-10-20 — preparação da versão 0.5.8
+
+- Sete identidades de cliente e listas/tipos públicos de temas; demonstrações nos quatro modos e compatibilidade com os presets existentes.
+- Corrigidos pares funcionais de status, ações, seleções, switches e gráficos, preservando os placeholders e as escalas de marca.
+- Storybook ampliado com matriz de legibilidade e comparação antes/depois. Relatório e evidências em `docs/correcao-legibilidade/RELATORIO.md`.
+- Manifestos sincronizados em 0.5.8. Commit, PR, tag e publicação ficam a cargo da mantenedora; a tag v0.5.8 aciona o workflow de validação e publicação no npm.
+
 ## 2026-09-18 — aplicação piloto consumindo o tarball
 
 - Criado `examples/pilot`, aplicação React/Vite privada com manifesto, lockfile,

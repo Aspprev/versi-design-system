@@ -46,7 +46,7 @@ export default function FontSizePreference({
               onChange={() => onChange(option.value)}
               className="radio-control shrink-0"
             />
-            <span className="flex w-9 shrink-0 justify-center font-extrabold text-primary-1">
+            <span className="flex w-9 shrink-0 justify-center font-extrabold text-content-link">
               Aa
             </span>
             <span className="font-semibold">{option.label}</span>

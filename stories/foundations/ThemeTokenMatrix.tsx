@@ -14,7 +14,7 @@ export function ThemeTokenMatrix() {
   const tokens = GROUPS.find(item => item.title === group)!.tokens;
   return <section id="colors-matrix">
     <h2>Todos os temas e modos</h2>
-    <p>11 temas × 4 modos = 44 combinações. A matriz lê o CSS original do pacote em um documento isolado, sem alterar a toolbar. Personalizações locais da aplicação não entram nesta comparação.</p>
+    <p>{THEMES.length} temas × {MODES.length} modos = {THEMES.length * MODES.length} combinações. A matriz lê o CSS original do pacote em um documento isolado, sem alterar a toolbar. Personalizações locais da aplicação não entram nesta comparação.</p>
     <p>No alto contraste, algumas cores podem coincidir entre presets para priorizar a legibilidade. Selecione Campos para comparar conteúdo, placeholder e estados desabilitados.</p>
     <div className="versi-colors-filters">
       <label>Tema<select value={theme} onChange={e => setTheme(e.target.value)}><option value="all">Todos os temas</option>{THEMES.map(item => <option key={item}>{item}</option>)}</select></label>

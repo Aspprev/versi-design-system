@@ -143,12 +143,12 @@ const COLOR_TOKEN_PREFIXES = [
   "grayscale-", "overlay", "bg-", "text-", "content-", "action-",
   "selection-", "notice-", "surface-", "footer-", "feedback-", "border-", "status-",
   "focus-ring", "icon-", "field-", "switch-", "radio-", "checkbox-",
-  "loading-circular-", "chart-", "white",
+  "loading-circular-", "chart-", "brand-accent-", "white",
 ];
 
 function renderTailwindColors(registry) {
   const names = new Set();
-  for (const rule of registry.tokens) {
+  for (const rule of [...registry.tokens, ...registry.themes]) {
     for (const declaration of rule.declarations) {
       if (
         declaration.property.startsWith("--") &&

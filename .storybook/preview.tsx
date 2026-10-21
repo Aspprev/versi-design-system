@@ -1,5 +1,6 @@
 /// <reference types="vite/client" />
 
+import { CLIENT_THEMES } from "../src/theme-presets";
 import type { Preview } from "@storybook/react-vite";
 import { ComponentDocumentation, DocumentationContainer } from "./ComponentDocumentation";
 import "../src/styles.css";
@@ -33,6 +34,7 @@ const preview: Preview = {
           { value: "laranja1", title: "Laranja 1" }, { value: "laranja2", title: "Laranja 2" },
           { value: "verde1", title: "Verde 1" }, { value: "verde2", title: "Verde 2" }, { value: "verde3", title: "Verde 3" }, { value: "verde4", title: "Verde 4" },
           { value: "rosa1", title: "Rosa 1" },
+          ...CLIENT_THEMES.map(theme => ({ value: theme.id, title: "Cliente · " + theme.label })),
         ],
       },
     },

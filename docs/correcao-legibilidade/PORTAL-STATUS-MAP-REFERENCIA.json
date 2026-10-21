@@ -1,0 +1,245 @@
+{
+  "source": "por-portal-aspprev/src/config/status-map.ts (read-only snapshot for Storybook; consumer-owned semantics)",
+  "map": {
+    "ABERTO": {
+      "color": "blue",
+      "appearance": "outline"
+    },
+    "PAGO": {
+      "color": "blue",
+      "appearance": "outline"
+    },
+    "EM PAGAMENTO": {
+      "color": "blue",
+      "appearance": "outline"
+    },
+    "RECEBIDO": {
+      "color": "blue",
+      "appearance": "outline"
+    },
+    "PROTOCOLADO": {
+      "color": "blue",
+      "appearance": "outline"
+    },
+    "EMITIDO": {
+      "color": "blue",
+      "appearance": "outline"
+    },
+    "EM ANDAMENTO": {
+      "color": "blue",
+      "appearance": "solid"
+    },
+    "SOLICITADO": {
+      "color": "blue",
+      "appearance": "solid"
+    },
+    "NÃO ASSINADO": {
+      "color": "blue",
+      "appearance": "solid"
+    },
+    "AGUARDANDO ASSINATURA": {
+      "color": "blue",
+      "appearance": "solid"
+    },
+    "AGUARDANDO ANÁLISE": {
+      "color": "blue",
+      "appearance": "solid"
+    },
+    "EM ANÁLISE": {
+      "color": "blue",
+      "appearance": "solid"
+    },
+    "DEFERIDO": {
+      "color": "green",
+      "appearance": "solid"
+    },
+    "QUITADO": {
+      "color": "green",
+      "appearance": "solid"
+    },
+    "LIBERADO": {
+      "color": "green",
+      "appearance": "solid"
+    },
+    "ATIVO": {
+      "color": "green",
+      "appearance": "solid"
+    },
+    "VIGENTE": {
+      "color": "green",
+      "appearance": "solid"
+    },
+    "RESPONDIDO": {
+      "color": "green",
+      "appearance": "solid"
+    },
+    "ASSINADO": {
+      "color": "green",
+      "appearance": "solid"
+    },
+    "ANEXADO": {
+      "color": "green",
+      "appearance": "solid"
+    },
+    "APROVADO": {
+      "color": "green",
+      "appearance": "solid"
+    },
+    "CONCEDIDO": {
+      "color": "green",
+      "appearance": "solid"
+    },
+    "ATENDIDO": {
+      "color": "green",
+      "appearance": "solid"
+    },
+    "EM PROCESSAMENTO": {
+      "color": "orange",
+      "appearance": "solid"
+    },
+    "PROCESSANDO": {
+      "color": "orange",
+      "appearance": "solid"
+    },
+    "AGUARDANDO ASSINATURA PARTICIPANTE": {
+      "color": "orange",
+      "appearance": "solid"
+    },
+    "PENDENTE": {
+      "color": "yellow",
+      "appearance": "soft"
+    },
+    "EXIGÊNCIA PENDENTE": {
+      "color": "yellow",
+      "appearance": "solid"
+    },
+    "SUSPENSO": {
+      "color": "yellow",
+      "appearance": "soft"
+    },
+    "AGUARDANDO PARTICIPANTE": {
+      "color": "yellow",
+      "appearance": "soft"
+    },
+    "AGUARDANDO DOCUMENTAÇÃO": {
+      "color": "yellow",
+      "appearance": "soft"
+    },
+    "AGUARDANDO PAGAMENTO": {
+      "color": "yellow",
+      "appearance": "soft"
+    },
+    "INDEFERIDO": {
+      "color": "red",
+      "appearance": "solid"
+    },
+    "VENCIDO": {
+      "color": "red",
+      "appearance": "solid"
+    },
+    "ERRO": {
+      "color": "red",
+      "appearance": "solid"
+    },
+    "FALHOU": {
+      "color": "red",
+      "appearance": "solid"
+    },
+    "NEGADO": {
+      "color": "red",
+      "appearance": "solid"
+    },
+    "RECUSADO": {
+      "color": "red",
+      "appearance": "solid"
+    },
+    "CANCELADO": {
+      "color": "slate",
+      "appearance": "solid"
+    },
+    "ENCERRADO": {
+      "color": "slate",
+      "appearance": "solid"
+    },
+    "INATIVO": {
+      "color": "slate",
+      "appearance": "solid"
+    },
+    "BLOQUEADO": {
+      "color": "slate",
+      "appearance": "solid"
+    },
+    "CONCLUÍDO": {
+      "color": "slate",
+      "appearance": "solid"
+    },
+    "FINALIZADO": {
+      "color": "black",
+      "appearance": "solid"
+    },
+    "RENEGOCIADO": {
+      "color": "black",
+      "appearance": "solid"
+    },
+    "ARQUIVADO": {
+      "color": "black",
+      "appearance": "solid"
+    }
+  },
+  "byDomain": {
+    "loan": {
+      "ATIVO": {
+        "color": "blue",
+        "appearance": "solid"
+      }
+    },
+    "beneficiary": {
+      "ENCERRADO": {
+        "color": "slate",
+        "appearance": "solid"
+      }
+    },
+    "document": {
+      "ANEXADO": {
+        "color": "green",
+        "appearance": "solid"
+      },
+      "ASSINADO": {
+        "color": "green",
+        "appearance": "solid"
+      },
+      "CONCLUÍDO": {
+        "color": "green",
+        "appearance": "solid"
+      }
+    },
+    "signature": {
+      "NÃO ASSINADO": {
+        "color": "blue",
+        "appearance": "solid"
+      },
+      "AGUARDANDO ASSINATURA": {
+        "color": "blue",
+        "appearance": "solid"
+      },
+      "ASSINADO": {
+        "color": "green",
+        "appearance": "solid"
+      }
+    },
+    "participation": {
+      "ATIVO": {
+        "color": "green",
+        "appearance": "solid"
+      },
+      "INATIVO": {
+        "color": "slate",
+        "appearance": "solid"
+      }
+    }
+  },
+  "fallback": {
+    "color": "slate",
+    "appearance": "outline"
+  }
+}

@@ -16,8 +16,10 @@ const budgets = {
   "overlays.js": { bytes: 10_000, gzipBytes: 4_000 },
   "documents.js": { bytes: 10_000, gzipBytes: 4_000 },
   "flags/*.svg": { bytes: 4_000_000, gzipBytes: 1_500_000 },
-  "styles.css": { bytes: 125_000, gzipBytes: 25_000 },
-  "themes.css": { bytes: 35_000, gzipBytes: 10_000 },
+  // Includes functional defaults for styles-only consumers and chart labels.
+  "styles.css": { bytes: 135_000, gzipBytes: 27_000 },
+  // Includes seven client identities / four variants; shared values are grouped.
+  "themes.css": { bytes: 180_000, gzipBytes: 18_000 },
 };
 
 const report = Object.entries(budgets).map(([fileName, budget]) => {

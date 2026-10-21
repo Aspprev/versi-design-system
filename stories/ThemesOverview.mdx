@@ -11,7 +11,7 @@ O sistema de temas do VERSI usa atributos no elemento `html` e tokens CSS gerado
 | Atributo | Valores reais |
 | --- | --- |
 | `data-color-scheme` | `light`, `dark` |
-| `data-ds-theme` | `default`, `azul1`, `azul2`, `azul3`, `laranja1`, `laranja2`, `verde1`, `verde2`, `verde3`, `verde4`, `rosa1` |
+| `data-ds-theme` | `default`, `azul1`, `azul2`, `azul3`, `laranja1`, `laranja2`, `verde1`, `verde2`, `verde3`, `verde4`, `rosa1`, `basf`, `funssest`, `maisprevidencia`, `aceprev`, `cibrius`, `serpros`, `einvest` |
 | `data-contrast` | `normal`, `high` |
 | `data-contrast-theme` | `light`, `dark` — acompanhe `data-color-scheme` |
 | `data-font-scale` | `default`, `large`, `extra-large` |
@@ -32,4 +32,14 @@ As preferências `strong` e `underline` são demonstradas em **Components/Access
 
 Não edite os CSS gerados diretamente. Altere a fonte em `tokens/design-system.tokens.json` e execute `npm run tokens:generate`.
 
-O guia [Cores](?path=/story/foundations-colors--overview) reúne um exemplo completo de `styles.css` e os principais tokens dos 11 temas nos quatro modos.
+O guia [Cores](?path=/story/foundations-colors--overview) reúne um exemplo completo de `styles.css` e os principais tokens dos 18 temas nos quatro modos.
+
+## Identidades de clientes
+
+Os presets legados continuam disponíveis. Em **Temas → Clientes**, cada cliente tem quatro histórias: claro, escuro, alto contraste claro e alto contraste escuro, com paleta e componentes reais. Os valores são propostas para revisão visual, não certificações de manual de marca.
+
+BASF, FUNSSEST e Mais Previdência preservam a identidade e os placeholders dos claros exportados do DS 0.5.7; correções funcionais de legibilidade são documentadas separadamente. Nos demais modos reformulados, as ações alternativas são neutras. `--brand-accent-1`, `--brand-accent-2` e `--brand-accent-3` são detalhes opcionais de identidade; não substituem os tokens de feedback.
+
+Consulte [a integração dos temas de cliente](?path=/story/themes-clients-aceprev--dark) para experimentar os componentes. As instruções completas para o portal e as diferenças dos snapshots estão em `docs/temas-clientes/INTEGRACAO.md`.
+
+A matriz **Laboratório → Legibilidade** inclui antes/depois e o mapa real de status por domínio. O relatório de impactos e sincronização da prévia está em `docs/correcao-legibilidade/RELATORIO.md`.

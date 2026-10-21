@@ -88,7 +88,7 @@ function FilterView({
                       className={cs(
                         "min-h-6 flex items-start gap-2 px-3 py-0.5 cursor-pointer rounded",
                         control.value === option.value
-                          ? "bg-primary-5 text-primary-1"
+                          ? "bg-selection-background text-selection-content"
                           : "text-content-primary",
                       )}
                     >
@@ -135,7 +135,7 @@ function FilterView({
             className={cs(
               "min-h-10 flex items-start gap-2 px-3 py-1 cursor-pointer rounded",
               optionChecked === option.value
-                ? "bg-primary-5 text-primary-1"
+                ? "bg-selection-background text-selection-content"
                 : "text-content-primary",
             )}
           >

@@ -83,7 +83,7 @@ export default function PageTabsHeader({
                     size === "small" ? "px-0.5 py-0 text-sm" : "p-0.5 text-base"
                   } ${
                     isActive
-                      ? "border-primary-1 font-semibold text-primary-1"
+                      ? "border-content-link font-semibold text-content-link"
                       : "border-transparent text-content-secondary hover:text-content-muted"
                   }`}
                 >
@@ -93,7 +93,7 @@ export default function PageTabsHeader({
                   <span>{tab.label}</span>
                   {tab.notification !== undefined &&
                     tab.notification !== null && (
-                      <span className="inline-flex min-h-4 min-w-4 items-center justify-center rounded-full bg-feedback-danger-strong px-1 text-2xs font-bold text-action-tertiary-content">
+                      <span className="inline-flex min-h-4 min-w-4 items-center justify-center rounded-full bg-feedback-danger-strong px-1 text-2xs font-bold text-feedback-danger-on-strong">
                         {tab.notification}
                       </span>
                     )}

@@ -1,3 +1,4 @@
+import { DESIGN_SYSTEM_THEMES } from "../../src/theme-presets";
 export const GROUPS = [
   {
     "title": "Principais · Primary, Secondary e Tertiary",
@@ -73,7 +74,7 @@ export const GROUPS = [
   }
 ];
 export const TOKENS = [...new Set(GROUPS.flatMap(group => group.tokens))];
-export const THEMES = ['default', 'azul1', 'azul2', 'azul3', 'laranja1', 'laranja2', 'verde1', 'verde2', 'verde3', 'verde4', 'rosa1'];
+export const THEMES = DESIGN_SYSTEM_THEMES;
 export const MODES = [
  { label: 'Claro', scheme: 'light', contrast: 'normal' },
  { label: 'Escuro', scheme: 'dark', contrast: 'normal' },

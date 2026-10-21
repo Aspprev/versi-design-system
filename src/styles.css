@@ -4,6 +4,33 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Apex injects its own light/dark tooltip CSS. Scope these semantic defaults to
+   VERSI charts; extra specificity wins without changing consumer chart options. */
+.versi-chart .apexcharts-tooltip.apexcharts-theme-light,
+.versi-chart .apexcharts-tooltip.apexcharts-theme-dark,
+.versi-chart .donut-chart-tooltip,
+.versi-chart .time-series-chart-tooltip {
+  background: rgb(var(--chart-tooltip-background));
+  color: rgb(var(--chart-tooltip-content));
+  border-color: rgb(var(--border-default));
+}
+.versi-chart .apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title,
+.versi-chart .apexcharts-tooltip.apexcharts-theme-dark .apexcharts-tooltip-title {
+  background: rgb(var(--chart-tooltip-background));
+  color: rgb(var(--chart-tooltip-content));
+  border-color: rgb(var(--border-default));
+}
+.versi-chart .donut-chart-tooltip,
+.versi-chart .time-series-chart-tooltip { padding: 8px 12px; }
+.versi-chart rect[data-versi-chart-label] {
+  fill: rgb(var(--surface-card-semantic));
+  stroke: rgb(var(--border-default));
+  stroke-width: .75px;
+}
+.versi-chart text.apexcharts-pie-label[data-versi-semantic-label="true"] {
+  fill: rgb(var(--content-primary));
+}
+
 /* Component-owned layout: consumer Tailwind must not partially regenerate it.
    Zero specificity lets explicit className utilities override these defaults,
    regardless of stylesheet order. Keep outside Tailwind's prunable layers. */

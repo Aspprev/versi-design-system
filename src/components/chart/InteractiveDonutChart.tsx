@@ -1,7 +1,8 @@
 "use client";
 
 import { useHighContrastPreference } from "../../hooks/useHighContrastPreference";
-import { getChartTheme } from "../../utils/chart-theme";
+import { useChartTheme } from "../../hooks/useChartTheme";
+import { decorateDonutDataLabels } from "./donut-data-labels";
 import {
   useEffect,
   useId,
@@ -69,7 +70,7 @@ export default function InteractiveDonutChart({
   );
   const containerRef = useRef<HTMLDivElement>(null);
   const instructionsId = useId();
-  const chartTheme = getChartTheme();
+  const chartTheme = useChartTheme();
   const baseColors =
     !highContrast && colors?.length ? colors : chartTheme.donutSeries;
   const neutralColors = !highContrast && mutedColors?.length
@@ -227,11 +228,23 @@ export default function InteractiveDonutChart({
           },
       stroke: highContrast
         ? { ...options.stroke, colors: ["#ffffff"], width: 2 }
-        : options.stroke,
+        : (options.stroke ?? {}),
       chart: {
         ...options.chart,
         events: {
           ...options.chart?.events,
+          mounted(context, config) {
+            options.chart?.events?.mounted?.(context, config);
+            decorateDonutDataLabels(context.el, highContrast || !options.dataLabels?.style?.colors?.length);
+          },
+          updated(context, config) {
+            options.chart?.events?.updated?.(context, config);
+            decorateDonutDataLabels(context.el, highContrast || !options.dataLabels?.style?.colors?.length);
+          },
+          animationEnd(context, config) {
+            options.chart?.events?.animationEnd?.(context, config);
+            decorateDonutDataLabels(context.el, highContrast || !options.dataLabels?.style?.colors?.length);
+          },
           dataPointSelection(event, chart, config) {
             originalSelection?.(event, chart, config);
             const nextIndex = Number(config?.dataPointIndex);
@@ -344,7 +357,7 @@ export default function InteractiveDonutChart({
       aria-label={ariaLabel}
       aria-describedby={instructionsId}
       onKeyDown={handleKeyDown}
-      className={`chart-keyboard-focus-ring relative min-w-0 rounded-sm ${className ?? ""}`.trim()}
+      className={`versi-chart chart-keyboard-focus-ring relative min-w-0 rounded-sm ${className ?? ""}`.trim()}
     >
       {loading ? (
         <div role="status" aria-busy="true" aria-live="polite" className="flex min-h-32 items-center justify-center text-sm text-content-secondary">
@@ -360,7 +373,7 @@ export default function InteractiveDonutChart({
         </div>
       ) : (
         <Chart
-          key={highContrast ? "donut-high-contrast" : "donut-standard"}
+          key={[highContrast, ...chartTheme.donutSeries, ...chartTheme.mutedSeries, chartTheme.axis, chartTheme.surface].join("|")}
           {...rest}
           className={chartClassName}
           height={

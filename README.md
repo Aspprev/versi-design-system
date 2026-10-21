@@ -242,11 +242,16 @@ const root = document.documentElement;
 root.dataset.colorScheme = "dark";
 root.dataset.dsTheme = "azul1";
 root.dataset.contrast = "high";
+root.dataset.contrastTheme = "dark";
 root.dataset.fontScale = "large";
 root.dataset.motion = "reduce";
 ```
 
 Os valores válidos estão documentados em **Themes/Overview** no Storybook. Prefira tokens semânticos, como `--surface-page`, `--content-primary`, `--border-default` e `--focus-ring`, em vez de copiar valores de uma paleta.
+
+As identidades de cliente `basf`, `funssest`, `maisprevidencia`, `aceprev`, `cibrius`, `serpros` e `einvest` oferecem claro, escuro e alto contraste claro/escuro. Os presets legados continuam disponíveis. Consulte o [guia de integração e diferenças dos snapshots](docs/temas-clientes/INTEGRACAO.md) e **Temas → Clientes** no Storybook. As paletas são propostas para revisão visual.
+
+As entradas raiz e `/core` exportam `CLIENT_THEMES`, `LEGACY_THEMES`, `DESIGN_SYSTEM_THEMES` e os tipos `ClientTheme` e `DesignSystemTheme` para construir seletores no consumidor.
 
 ## Contribuição
 

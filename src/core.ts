@@ -136,3 +136,5 @@ export type {
   UseContainerBreakpointOptions,
 } from "./hooks/useContainerBreakpoint";
 export { resolveContainerBreakpoint } from "./hooks/useContainerBreakpoint";
+export { CLIENT_THEMES, LEGACY_THEMES, DESIGN_SYSTEM_THEMES } from "./theme-presets";
+export type { ClientTheme, DesignSystemTheme } from "./theme-presets";

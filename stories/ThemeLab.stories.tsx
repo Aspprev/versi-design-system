@@ -1,3 +1,4 @@
+import { CLIENT_THEMES, LEGACY_THEMES, type DesignSystemTheme } from "../src/theme-presets";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { useMemo } from "react";
 import { useGlobals } from "storybook/preview-api";
@@ -11,21 +12,7 @@ import {
   Typography,
 } from "../src";
 
-const THEME_OPTIONS = [
-  "default",
-  "azul1",
-  "azul2",
-  "azul3",
-  "laranja1",
-  "laranja2",
-  "verde1",
-  "verde2",
-  "verde3",
-  "verde4",
-  "rosa1",
-] as const;
-
-type ThemeId = (typeof THEME_OPTIONS)[number];
+type ThemeId = DesignSystemTheme;
 type ColorScheme = "light" | "dark";
 type Contrast = "normal" | "high";
 
@@ -111,11 +98,12 @@ function ThemeLab({ globals, updateGlobals }: { globals: Record<string, unknown>
               value={theme}
               onChange={(event) => setTheme(event.target.value as ThemeId)}
             >
-              {THEME_OPTIONS.map((option) => (
+              <optgroup label="Presets legados">{LEGACY_THEMES.map((option) => (
                 <option key={option} value={option}>
                   {option === "default" ? "Padrao" : option}
                 </option>
-              ))}
+              ))}</optgroup>
+              <optgroup label="Identidades de clientes">{CLIENT_THEMES.map(option => <option key={option.id} value={option.id}>{option.label}</option>)}</optgroup>
             </select>
           </label>
           <label className="flex flex-col gap-1 text-sm font-semibold">
