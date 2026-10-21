@@ -1,5 +1,11 @@
 # Evolução do Design System
 
+## 2026-10-20 — correção do bloqueio de segurança na publicação
+
+As duas execuções informadas para a 0.5.8 falharam em `check:security`, com alertas relacionados a `launch-editor` no Vite 8.3.0. As auditorias de produção passaram. O lockfile do Storybook e o manifesto/lockfile do piloto foram atualizados para Vite 8.3.4, mantendo a validação de segurança. A nova execução local das quatro auditorias passou sem alertas. Não houve alteração de componentes ou placeholders nesta correção.
+
+A tag v0.5.8 já enviada aponta para o commit anterior. Reexecutar essa Action não inclui a correção; publicar requer um novo commit e uma nova tag. A versão do manifesto permanece 0.5.8 até a preparação manual da próxima release.
+
 ## 2026-10-20 — preparação da versão 0.5.8
 
 - Sete identidades de cliente e listas/tipos públicos de temas; demonstrações nos quatro modos e compatibilidade com os presets existentes.
