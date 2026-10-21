@@ -1,0 +1,14 @@
+.brand-accent-examples { display: grid; gap: 20px; min-width: 0; color: rgb(var(--content-primary)); }
+.brand-detail-examples, .brand-before-after, .brand-example-charts { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px; min-width: 0; }
+.brand-accent-examples h2, .brand-accent-examples h3 { font-weight: 700; }
+.brand-detail-card { position: relative; overflow: hidden; border: 1px solid rgb(var(--border-default)); }
+.brand-icon-example { display: inline-flex; align-items: center; justify-content: center; }
+.brand-card-stripe { position: absolute; inset: auto 0 0; height: 4px; }
+.brand-chart-controls { display: flex; flex-wrap: wrap; gap: 16px; }
+.brand-illustration-example { margin: 0; }
+.brand-illustration-example svg { max-width: 100%; }
+.brand-gradient-example { height: 12px; border-radius: 6px; background-color: rgb(var(--surface-muted)); background-image: var(--brand-detail-gradient); }
+[data-accent="1"].brand-card-stripe { background-color: rgb(var(--brand-accent-1)); }
+[data-accent="2"].brand-card-stripe { background-color: rgb(var(--brand-accent-2)); }
+[data-accent="3"].brand-card-stripe { background-color: rgb(var(--brand-accent-3)); }
+html[data-contrast="high"] .brand-card-stripe { background-color: rgb(var(--content-primary)); }

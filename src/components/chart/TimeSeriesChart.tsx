@@ -1,6 +1,7 @@
 "use client";
 
 import { useHighContrastPreference } from "../../hooks/useHighContrastPreference";
+import { resolveChartBrandPalette, type ChartBrandPalette } from "../../utils/chart-brand-palette";
 import { useChartTheme } from "../../hooks/useChartTheme";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import Chart, { type Props as ApexChartProps } from "./LazyApexChart";
@@ -9,6 +10,8 @@ export type TimeSeriesChartOptions = NonNullable<ApexChartProps["options"]>;
 
 export type TimeSeriesChartProps = Omit<ApexChartProps, "options"> & {
   options: TimeSeriesChartOptions;
+  brandPalette?: ChartBrandPalette;
+  seriesKeys?: readonly string[];
   ariaLabel: string;
   loading?: boolean;
   loadingMessage?: ReactNode;
@@ -22,6 +25,8 @@ export type TimeSeriesChartProps = Omit<ApexChartProps, "options"> & {
 
 export default function TimeSeriesChart({
   options,
+  brandPalette,
+  seriesKeys,
   ariaLabel,
   loading = false,
   loadingMessage = "Carregando gráfico…",
@@ -36,6 +41,10 @@ export default function TimeSeriesChart({
   const storedHighContrast = useHighContrastPreference();
   const highContrast = highContrastOverride ?? storedHighContrast;
   const theme = useChartTheme();
+  const keys: readonly string[] = seriesKeys ?? (chartProps.series ?? []).map((entry: unknown, index: number) => entry && typeof entry === "object" && "name" in entry ? String(entry.name) : String(index));
+  if (brandPalette && keys.length !== chartProps.series?.length) throw new Error("TimeSeriesChart: seriesKeys must match the series count.");
+  const brandColors = brandPalette ? resolveChartBrandPalette(theme, brandPalette, keys) : undefined;
+  const resolvedColors = highContrast ? (brandColors ?? [...theme.series]) : (options.colors ?? brandColors ?? [...theme.series]);
   const containerRef = useRef<HTMLDivElement>(null);
   const [measuredHeight, setMeasuredHeight] = useState<number | null>(null);
   const [measuredWidth, setMeasuredWidth] = useState<number | null>(null);
@@ -46,6 +55,7 @@ export default function TimeSeriesChart({
     theme.grid,
     theme.surface,
     ...theme.series,
+    ...(brandColors ?? []),
   ].join("|");
 
   useEffect(() => {
@@ -176,7 +186,8 @@ export default function TimeSeriesChart({
 
   const sharedOptions: TimeSeriesChartOptions = {
     ...options,
-    colors: highContrast ? [...theme.series] : (options.colors ?? [...theme.series]),
+    colors: resolvedColors,
+    fill: highContrast && brandPalette ? { ...options.fill, type: "solid", opacity: 1 } : (options.fill ?? {}),
     chart: {
       toolbar: { show: false },
       zoom: { enabled: false },
@@ -218,9 +229,9 @@ export default function TimeSeriesChart({
       width: 2,
       curve: "straight",
       ...options.stroke,
-      colors: highContrast ? [...theme.series] : options.stroke?.colors,
+      colors: highContrast ? resolvedColors : options.stroke?.colors,
       dashArray: highContrast
-        ? [0, 6, 2, 8, 4, 10, 1, 7, 3, 9, 5, 11]
+        ? (brandPalette ? keys.map(key => brandPalette.categories.indexOf(key) * 2) : [0, 6, 2, 8, 4, 10, 1, 7, 3, 9, 5, 11])
         : (options.stroke?.dashArray ?? 0),
     },
     markers: {

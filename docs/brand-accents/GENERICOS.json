@@ -1,0 +1,295 @@
+{
+  "date": "2026-10-21",
+  "status": "proposal-for-ds",
+  "sourcePackageVersion": "0.5.9",
+  "scope": "Only optional brand accents for generic presets; no primary, neutral, feedback or client theme changes",
+  "highContrastPolicy": "Neutral functional fallback; decorative variants intentionally converge. Validate rendered components before release.",
+  "themes": [
+    {
+      "id": "default",
+      "reference": "VERSI — cores extraídas dos SVGs locais; azul permanece primário",
+      "variants": {
+        "light": {
+          "--brand-accent-1": "0, 219, 155",
+          "--brand-accent-2": "181, 165, 255",
+          "--brand-accent-3": "201, 177, 255"
+        },
+        "dark": {
+          "--brand-accent-1": "0, 219, 155",
+          "--brand-accent-2": "181, 165, 255",
+          "--brand-accent-3": "201, 177, 255"
+        },
+        "high-light": {
+          "--brand-accent-1": "17, 17, 17",
+          "--brand-accent-2": "17, 17, 17",
+          "--brand-accent-3": "17, 17, 17"
+        },
+        "high-dark": {
+          "--brand-accent-1": "255, 255, 255",
+          "--brand-accent-2": "255, 255, 255",
+          "--brand-accent-3": "255, 255, 255"
+        }
+      }
+    },
+    {
+      "id": "azul1",
+      "reference": "VERSI — cores extraídas dos SVGs locais; azul permanece primário",
+      "variants": {
+        "light": {
+          "--brand-accent-1": "0, 219, 155",
+          "--brand-accent-2": "181, 165, 255",
+          "--brand-accent-3": "201, 177, 255"
+        },
+        "dark": {
+          "--brand-accent-1": "0, 219, 155",
+          "--brand-accent-2": "181, 165, 255",
+          "--brand-accent-3": "201, 177, 255"
+        },
+        "high-light": {
+          "--brand-accent-1": "17, 17, 17",
+          "--brand-accent-2": "17, 17, 17",
+          "--brand-accent-3": "17, 17, 17"
+        },
+        "high-dark": {
+          "--brand-accent-1": "255, 255, 255",
+          "--brand-accent-2": "255, 255, 255",
+          "--brand-accent-3": "255, 255, 255"
+        }
+      }
+    },
+    {
+      "id": "azul2",
+      "reference": "VERSI — cores extraídas dos SVGs locais; azul permanece primário",
+      "variants": {
+        "light": {
+          "--brand-accent-1": "0, 219, 155",
+          "--brand-accent-2": "181, 165, 255",
+          "--brand-accent-3": "201, 177, 255"
+        },
+        "dark": {
+          "--brand-accent-1": "0, 219, 155",
+          "--brand-accent-2": "181, 165, 255",
+          "--brand-accent-3": "201, 177, 255"
+        },
+        "high-light": {
+          "--brand-accent-1": "17, 17, 17",
+          "--brand-accent-2": "17, 17, 17",
+          "--brand-accent-3": "17, 17, 17"
+        },
+        "high-dark": {
+          "--brand-accent-1": "255, 255, 255",
+          "--brand-accent-2": "255, 255, 255",
+          "--brand-accent-3": "255, 255, 255"
+        }
+      }
+    },
+    {
+      "id": "azul3",
+      "reference": "VERSI — cores extraídas dos SVGs locais; azul permanece primário",
+      "variants": {
+        "light": {
+          "--brand-accent-1": "0, 219, 155",
+          "--brand-accent-2": "181, 165, 255",
+          "--brand-accent-3": "201, 177, 255"
+        },
+        "dark": {
+          "--brand-accent-1": "0, 219, 155",
+          "--brand-accent-2": "181, 165, 255",
+          "--brand-accent-3": "201, 177, 255"
+        },
+        "high-light": {
+          "--brand-accent-1": "17, 17, 17",
+          "--brand-accent-2": "17, 17, 17",
+          "--brand-accent-3": "17, 17, 17"
+        },
+        "high-dark": {
+          "--brand-accent-1": "255, 255, 255",
+          "--brand-accent-2": "255, 255, 255",
+          "--brand-accent-3": "255, 255, 255"
+        }
+      }
+    },
+    {
+      "id": "laranja1",
+      "reference": "custom2140 como referência dos apoios; preset compartilhado anteriormente com custom2178, sem vínculo exclusivo",
+      "variants": {
+        "light": {
+          "--brand-accent-1": "89, 176, 202",
+          "--brand-accent-2": "141, 156, 37",
+          "--brand-accent-3": "66, 126, 128"
+        },
+        "dark": {
+          "--brand-accent-1": "119, 190, 212",
+          "--brand-accent-2": "162, 174, 76",
+          "--brand-accent-3": "66, 126, 128"
+        },
+        "high-light": {
+          "--brand-accent-1": "17, 17, 17",
+          "--brand-accent-2": "17, 17, 17",
+          "--brand-accent-3": "17, 17, 17"
+        },
+        "high-dark": {
+          "--brand-accent-1": "255, 255, 255",
+          "--brand-accent-2": "255, 255, 255",
+          "--brand-accent-3": "255, 255, 255"
+        }
+      }
+    },
+    {
+      "id": "laranja2",
+      "reference": "custom2156 — cinzas e tons quentes",
+      "variants": {
+        "light": {
+          "--brand-accent-1": "107, 107, 107",
+          "--brand-accent-2": "242, 174, 121",
+          "--brand-accent-3": "198, 143, 99"
+        },
+        "dark": {
+          "--brand-accent-1": "134, 134, 134",
+          "--brand-accent-2": "244, 189, 145",
+          "--brand-accent-3": "244, 189, 145"
+        },
+        "high-light": {
+          "--brand-accent-1": "17, 17, 17",
+          "--brand-accent-2": "17, 17, 17",
+          "--brand-accent-3": "17, 17, 17"
+        },
+        "high-dark": {
+          "--brand-accent-1": "255, 255, 255",
+          "--brand-accent-2": "255, 255, 255",
+          "--brand-accent-3": "255, 255, 255"
+        }
+      }
+    },
+    {
+      "id": "verde1",
+      "reference": "Proposta genérica para verde: azul VERSI, lavanda e verde azulado; sem associação oficial a cliente",
+      "variants": {
+        "light": {
+          "--brand-accent-1": "0, 108, 226",
+          "--brand-accent-2": "181, 165, 255",
+          "--brand-accent-3": "66, 126, 128"
+        },
+        "dark": {
+          "--brand-accent-1": "46, 134, 231",
+          "--brand-accent-2": "194, 181, 255",
+          "--brand-accent-3": "100, 149, 151"
+        },
+        "high-light": {
+          "--brand-accent-1": "17, 17, 17",
+          "--brand-accent-2": "17, 17, 17",
+          "--brand-accent-3": "17, 17, 17"
+        },
+        "high-dark": {
+          "--brand-accent-1": "255, 255, 255",
+          "--brand-accent-2": "255, 255, 255",
+          "--brand-accent-3": "255, 255, 255"
+        }
+      }
+    },
+    {
+      "id": "verde2",
+      "reference": "Proposta genérica para oliva: verde azulado, dourado suave e azul acinzentado; sem associação oficial a cliente",
+      "variants": {
+        "light": {
+          "--brand-accent-1": "66, 126, 128",
+          "--brand-accent-2": "201, 174, 89",
+          "--brand-accent-3": "54, 79, 85"
+        },
+        "dark": {
+          "--brand-accent-1": "100, 149, 151",
+          "--brand-accent-2": "211, 189, 119",
+          "--brand-accent-3": "90, 111, 116"
+        },
+        "high-light": {
+          "--brand-accent-1": "17, 17, 17",
+          "--brand-accent-2": "17, 17, 17",
+          "--brand-accent-3": "17, 17, 17"
+        },
+        "high-dark": {
+          "--brand-accent-1": "255, 255, 255",
+          "--brand-accent-2": "255, 255, 255",
+          "--brand-accent-3": "255, 255, 255"
+        }
+      }
+    },
+    {
+      "id": "verde3",
+      "reference": "custom2157 — azul e marinho",
+      "variants": {
+        "light": {
+          "--brand-accent-1": "20, 123, 163",
+          "--brand-accent-2": "28, 43, 96",
+          "--brand-accent-3": "23, 35, 79"
+        },
+        "dark": {
+          "--brand-accent-1": "62, 147, 180",
+          "--brand-accent-2": "69, 81, 125",
+          "--brand-accent-3": "69, 81, 125"
+        },
+        "high-light": {
+          "--brand-accent-1": "17, 17, 17",
+          "--brand-accent-2": "17, 17, 17",
+          "--brand-accent-3": "17, 17, 17"
+        },
+        "high-dark": {
+          "--brand-accent-1": "255, 255, 255",
+          "--brand-accent-2": "255, 255, 255",
+          "--brand-accent-3": "255, 255, 255"
+        }
+      }
+    },
+    {
+      "id": "verde4",
+      "reference": "custom2170 — marinho e verde azulado",
+      "variants": {
+        "light": {
+          "--brand-accent-1": "41, 56, 92",
+          "--brand-accent-2": "97, 168, 173",
+          "--brand-accent-3": "80, 138, 142"
+        },
+        "dark": {
+          "--brand-accent-1": "80, 92, 121",
+          "--brand-accent-2": "125, 184, 188",
+          "--brand-accent-3": "125, 184, 188"
+        },
+        "high-light": {
+          "--brand-accent-1": "17, 17, 17",
+          "--brand-accent-2": "17, 17, 17",
+          "--brand-accent-3": "17, 17, 17"
+        },
+        "high-dark": {
+          "--brand-accent-1": "255, 255, 255",
+          "--brand-accent-2": "255, 255, 255",
+          "--brand-accent-3": "255, 255, 255"
+        }
+      }
+    },
+    {
+      "id": "rosa1",
+      "reference": "custom2133 — dourado, lavanda e anil",
+      "variants": {
+        "light": {
+          "--brand-accent-1": "248, 207, 128",
+          "--brand-accent-2": "173, 157, 212",
+          "--brand-accent-3": "69, 70, 125"
+        },
+        "dark": {
+          "--brand-accent-1": "249, 216, 151",
+          "--brand-accent-2": "188, 175, 220",
+          "--brand-accent-3": "69, 70, 125"
+        },
+        "high-light": {
+          "--brand-accent-1": "17, 17, 17",
+          "--brand-accent-2": "17, 17, 17",
+          "--brand-accent-3": "17, 17, 17"
+        },
+        "high-dark": {
+          "--brand-accent-1": "255, 255, 255",
+          "--brand-accent-2": "255, 255, 255",
+          "--brand-accent-3": "255, 255, 255"
+        }
+      }
+    }
+  ]
+}

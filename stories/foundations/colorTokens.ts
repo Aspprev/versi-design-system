@@ -1,4 +1,8 @@
 import { DESIGN_SYSTEM_THEMES } from "../../src/theme-presets";
+export const BRAND_ACCENTS = ["--brand-accent-1", "--brand-accent-2", "--brand-accent-3"] as const;
+export const BRAND_ACCENT_DETAILS = [1, 2, 3].flatMap(n => [
+  `--brand-accent-${n}-soft`, `--brand-accent-${n}-content`, `--brand-accent-${n}-border`, `--chart-brand-accent-${n}`,
+]);
 export const GROUPS = [
   {
     "title": "Principais · Primary, Secondary e Tertiary",
@@ -19,6 +23,14 @@ export const GROUPS = [
       "--tertiary-4",
       "--tertiary-5"
     ]
+  },
+  {
+    "title": "Cores do cliente · Brand accents",
+    "tokens": [...BRAND_ACCENTS]
+  },
+  {
+    "title": "Detalhes de marca · Apresentação",
+    "tokens": BRAND_ACCENT_DETAILS
   },
   {
     "title": "Semânticos",

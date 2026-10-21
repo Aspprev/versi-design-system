@@ -25,3 +25,6 @@ export {
   getChartTheme,
 } from "./utils/chart-theme";
 
+
+export { resolveChartBrandPalette } from "./utils/chart-brand-palette";
+export type { ChartBrandPalette, ChartSeriesRole } from "./utils/chart-brand-palette";

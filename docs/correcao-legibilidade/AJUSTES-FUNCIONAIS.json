@@ -2590,7 +2590,7 @@
         "--field-assistive-error": "255, 204, 204"
       }
     },
-    "basf": {
+    "custom2178": {
       "light": {
         "--feedback-danger-strong": "128, 0, 24",
         "--feedback-danger-soft": "255, 240, 243",
@@ -2743,7 +2743,7 @@
         "--status-black-outline-foreground": "138, 138, 138"
       }
     },
-    "funssest": {
+    "custom2156": {
       "light": {
         "--feedback-danger-strong": "128, 0, 24",
         "--feedback-danger-soft": "255, 240, 243",
@@ -2896,7 +2896,7 @@
         "--status-black-outline-foreground": "138, 138, 138"
       }
     },
-    "maisprevidencia": {
+    "custom2140": {
       "light": {
         "--feedback-danger-strong": "128, 0, 24",
         "--feedback-danger-soft": "255, 240, 243",
@@ -3049,7 +3049,7 @@
         "--status-black-outline-foreground": "138, 138, 138"
       }
     },
-    "aceprev": {
+    "custom2133": {
       "light": {
         "--content-link": "155, 90, 86",
         "--status-primary-outline-foreground": "155, 90, 86",
@@ -3192,7 +3192,7 @@
         "--status-black-outline-foreground": "138, 138, 138"
       }
     },
-    "cibrius": {
+    "custom2170": {
       "light": {
         "--content-link": "92, 117, 45",
         "--status-primary-outline-foreground": "92, 117, 45",
@@ -3330,7 +3330,7 @@
         "--status-black-outline-foreground": "138, 138, 138"
       }
     },
-    "serpros": {
+    "custom2162": {
       "light": {
         "--content-link": "0, 118, 154",
         "--status-primary-outline-foreground": "0, 118, 154",
@@ -3473,7 +3473,7 @@
         "--status-black-outline-foreground": "138, 138, 138"
       }
     },
-    "einvest": {
+    "custom2157": {
       "light": {
         "--content-link": "7, 125, 62",
         "--status-primary-outline-foreground": "7, 125, 62",

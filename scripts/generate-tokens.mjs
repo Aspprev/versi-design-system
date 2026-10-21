@@ -152,7 +152,11 @@ function renderTailwindColors(registry) {
     for (const declaration of rule.declarations) {
       if (
         declaration.property.startsWith("--") &&
-        COLOR_TOKEN_PREFIXES.some((prefix) => declaration.property.slice(2).startsWith(prefix))
+        (declaration.type
+          ? declaration.type === "color"
+          : declaration.property.startsWith("--brand-accent-")
+            ? /^--brand-accent-[123](?:-(?:soft|content|border))?$/.test(declaration.property)
+            : COLOR_TOKEN_PREFIXES.some((prefix) => declaration.property.slice(2).startsWith(prefix)))
       ) {
         names.add(declaration.property.slice(2));
       }

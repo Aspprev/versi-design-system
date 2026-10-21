@@ -249,7 +249,7 @@ root.dataset.motion = "reduce";
 
 Os valores válidos estão documentados em **Themes/Overview** no Storybook. Prefira tokens semânticos, como `--surface-page`, `--content-primary`, `--border-default` e `--focus-ring`, em vez de copiar valores de uma paleta.
 
-As identidades de cliente `basf`, `funssest`, `maisprevidencia`, `aceprev`, `cibrius`, `serpros` e `einvest` oferecem claro, escuro e alto contraste claro/escuro. Os presets legados continuam disponíveis. Consulte o [guia de integração e diferenças dos snapshots](docs/temas-clientes/INTEGRACAO.md) e **Temas → Clientes** no Storybook. As paletas são propostas para revisão visual.
+As identidades de cliente `custom2178`, `custom2156`, `custom2140`, `custom2133`, `custom2170`, `custom2162` e `custom2157` oferecem claro, escuro e alto contraste claro/escuro. Os presets legados continuam disponíveis. Consulte o [guia de integração e diferenças dos snapshots](docs/temas-clientes/INTEGRACAO.md) e **Temas → Clientes** no Storybook. As paletas são propostas para revisão visual.
 
 As entradas raiz e `/core` exportam `CLIENT_THEMES`, `LEGACY_THEMES`, `DESIGN_SYSTEM_THEMES` e os tipos `ClientTheme` e `DesignSystemTheme` para construir seletores no consumidor.
 
@@ -272,3 +272,8 @@ Detalhes de contratos, governança e segurança ficam na pasta `docs/`. A docume
 - `validateFiles` também rejeita arquivos vazios ou inválidos, com mensagens customizáveis; `FileViewer` aceita um slot `actions`.
 - `TimeSeriesChart` e `InteractiveDonutChart` expõem estados genéricos de carregamento, erro e ausência de dados.
 - `BoletoBarCode` aceita `width`, `height`, `quietZone` e estado de erro; o payload de boleto continua sendo responsabilidade do consumidor.
+
+
+## Detalhes opcionais de marca
+
+Os acentos dos clientes têm pares de apresentação e uso explícito no Surface e nos gráficos, com fallback legado e suporte aos quatro modos. Veja [o contrato e a migração dos estilos temporários do portal](docs/brand-accents/README.md).

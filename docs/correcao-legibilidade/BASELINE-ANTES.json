@@ -10187,7 +10187,7 @@
         "--action-secondary-ghost-background": "34,34,34"
       }
     },
-    "basf": {
+    "custom2178": {
       "light": {
         "--status-black-soft-foreground": "0,0,0",
         "--action-danger-background-hover": "131,13,0",
@@ -11128,7 +11128,7 @@
         "--action-secondary-ghost-background": "34, 34, 34"
       }
     },
-    "funssest": {
+    "custom2156": {
       "light": {
         "--status-black-soft-foreground": "0,0,0",
         "--action-danger-background-hover": "131,13,0",
@@ -12069,7 +12069,7 @@
         "--action-secondary-ghost-background": "34, 34, 34"
       }
     },
-    "maisprevidencia": {
+    "custom2140": {
       "light": {
         "--status-black-soft-foreground": "0,0,0",
         "--action-danger-background-hover": "131,13,0",
@@ -13010,7 +13010,7 @@
         "--action-secondary-ghost-background": "34, 34, 34"
       }
     },
-    "aceprev": {
+    "custom2133": {
       "light": {
         "--status-black-soft-foreground": "0,0,0",
         "--action-danger-background-hover": "131,13,0",
@@ -13952,7 +13952,7 @@
         "--action-secondary-ghost-background": "34, 34, 34"
       }
     },
-    "cibrius": {
+    "custom2170": {
       "light": {
         "--status-black-soft-foreground": "0,0,0",
         "--action-danger-background-hover": "131,13,0",
@@ -14894,7 +14894,7 @@
         "--action-secondary-ghost-background": "34, 34, 34"
       }
     },
-    "serpros": {
+    "custom2162": {
       "light": {
         "--status-black-soft-foreground": "0,0,0",
         "--action-danger-background-hover": "131,13,0",
@@ -15836,7 +15836,7 @@
         "--action-secondary-ghost-background": "34, 34, 34"
       }
     },
-    "einvest": {
+    "custom2157": {
       "light": {
         "--status-black-soft-foreground": "0,0,0",
         "--action-danger-background-hover": "131,13,0",

@@ -6,6 +6,7 @@ import { readLegibility, settle } from "./legibility.helpers";
 type Tokens = Record<string, string>;
 const baseline = JSON.parse(readFileSync("docs/correcao-legibilidade/BASELINE-ANTES.json", "utf8")).themes as Record<string, Record<string, Tokens>>;
 const corrections = JSON.parse(readFileSync("docs/correcao-legibilidade/AJUSTES-FUNCIONAIS.json", "utf8")).overrides as typeof baseline;
+const restorations = JSON.parse(readFileSync("docs/temas-clientes/ROSA1-RESTAURACAO.json", "utf8")).overrides as typeof baseline;
 const css = readFileSync("dist/styles.css", "utf8") + "\n" + readFileSync("dist/themes.css", "utf8");
 const normalize = (tokens: Tokens) => Object.fromEntries(Object.entries(tokens).map(([key, value]) => [key, value.replace(/\s/g, "")]));
 const consumer = "body { margin: 0; color: rgb(var(--content-primary)); background: rgb(var(--surface-page)); }";
@@ -32,7 +33,7 @@ test("CSS distribuído: 288 contextos, diferenças documentadas e valores proteg
   await page.addStyleTag({ content: css + consumer });
   const differences: object[] = [];
   for (const theme of DESIGN_SYSTEM_THEMES) for (const mode of ["light", "dark", "high-light", "high-dark"]) {
-    const expected = { ...baseline[theme][mode], ...corrections[theme][mode] };
+    const expected = { ...baseline[theme][mode], ...corrections[theme][mode], ...restorations[theme]?.[mode] };
     for (const host of ["html", "body"]) for (const identity of ["attribute", "class"]) {
       const actual = await page.evaluate(({ theme, mode, host, identity, names }) => {
         for (const el of [document.documentElement, document.body]) { el.className = ""; el.removeAttribute("data-ds-theme"); }
@@ -45,7 +46,7 @@ test("CSS distribuído: 288 contextos, diferenças documentadas e valores proteg
       const a = normalize(actual), e = normalize(expected);
       for (const key of Object.keys(e)) if (a[key] !== e[key]) differences.push({ theme, mode, host, identity, key, expected:e[key], actual:a[key] });
       for (const key of Object.keys(baseline[theme][mode]).filter(key => /^--(primary|secondary|tertiary)-\d|^--brand-accent-|placeholder|^--content-secondary$/.test(key))) {
-        expect.soft(actual[key]?.replace(/\s/g, ""), `${theme}/${mode}: protegido ${key}`).toBe(baseline[theme][mode][key].replace(/\s/g, ""));
+        expect.soft(actual[key]?.replace(/\s/g, ""), `${theme}/${mode}: protegido ${key}`).toBe((restorations[theme]?.[mode]?.[key] ?? baseline[theme][mode][key]).replace(/\s/g, ""));
       }
     }
   }

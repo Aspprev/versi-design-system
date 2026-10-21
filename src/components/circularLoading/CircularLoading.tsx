@@ -25,7 +25,7 @@ export type CircularLoadingProps = {
 const colorMap = {
   white: "rgb(var(--white))",
   primary: "rgb(var(--loading-circular-indicator))",
-  secondary: "rgb(var(--secondary-1))",
+  secondary: "rgb(var(--content-brand-secondary))",
   tertiary: "rgb(var(--tertiary-1))",
   danger: "rgb(var(--feedback-danger-strong))",
   warning: "rgb(var(--feedback-warning-strong))",

@@ -2,6 +2,8 @@
 import React from "react";
 
 export type SurfaceProps = React.HTMLAttributes<HTMLDivElement> & {
+  /** Optional brand detail, independent of feedback. Inherits a neutral fallback on legacy themes. */
+  brandAccent?: 1 | 2 | 3;
   elevation?: "none" | "sm" | "md";
   padding?: "none" | "compact" | "default";
   radius?: "none" | "sm" | "md";
@@ -50,6 +52,12 @@ const TONE_STYLES: Record<NonNullable<SurfaceProps["tone"]>, string> = {
   transparent: "bg-transparent",
 };
 
+const BRAND_STYLES = {
+  1: "bg-brand-accent-1-soft text-brand-accent-1-content border-brand-accent-1-border",
+  2: "bg-brand-accent-2-soft text-brand-accent-2-content border-brand-accent-2-border",
+  3: "bg-brand-accent-3-soft text-brand-accent-3-content border-brand-accent-3-border",
+};
+
 export default function Surface({
   children,
   className,
@@ -57,6 +65,7 @@ export default function Surface({
   padding = "default",
   radius = "md",
   tone = "card",
+  brandAccent,
   ...rest
 }: SurfaceProps) {
   return (
@@ -66,7 +75,7 @@ export default function Surface({
         ELEVATION_STYLES[elevation],
         PADDING_STYLES[padding],
         RADIUS_STYLES[radius],
-        TONE_STYLES[tone],
+        brandAccent ? BRAND_STYLES[brandAccent] : TONE_STYLES[tone],
         className,
       )}
       {...rest}

@@ -1,5 +1,17 @@
 # Evolução do Design System
 
+## 2026-10-21 — acentos genéricos e IDs públicos de produção
+
+Integrada a proposta de acentos dos onze genéricos nos quatro modos, com default implícito e apresentação opcional. Identidades customizadas passam a usar exclusivamente códigos `custom{PRD}` nos materiais públicos atuais, sem aliases anteriores. A comparação de 288 contextos preservou todos os valores dos customizados e restringiu as diferenças genéricas aos acentos permitidos. As entradas originais com identificação nominal foram preservadas localmente em área ignorada pelo Git; o histórico Git não foi reescrito. Migração coordenada do consumidor em `brand-accents/GENERICOS-E-IDENTIFICADORES.md`, sem copiar a tabela privada de correspondência. Versão mantida em 0.5.9, sem publicação ou alterações no portal.
+
+## 2026-10-21 — contrato opcional de detalhes de marca
+
+Adicionados pares tipados de apresentação dos acentos, fallback neutro, prop opcional no Surface e catálogo de categorias/papéis para gráficos. Referências de marca, páginas/cards padrão, feedback e placeholders permanecem protegidos. custom2157 tem degradê decorativo opcional, suprimido no alto contraste. Novos exemplos por cliente, comparação padrão/com acento e instruções para migrar os estilos temporários do portal em `brand-accents/README.md`. Nenhum arquivo do portal foi alterado e a versão permanece 0.5.9.
+
+## 2026-10-21 — rosa1 independente do tema custom2133
+
+Restaurada a identidade escura normal do rosa1 anterior à adaptação custom2133, tomando como referência o registro do commit 880ef0d aplicado pela classe no body. A restauração é equivalente por classe/atributo em html/body e mantém os placeholders aprovados. Os pares de status permanecem corrigidos; o conteúdo secundário de marca usa o verde legível da paleta restaurada. As diferenças explícitas estão em `temas-clientes/ROSA1-RESTAURACAO.json`. O tema custom2133 e os demais modos permanecem intactos. Sem aumento de versão, commit ou publicação.
+
 ## 2026-10-20 — correção do bloqueio de segurança na publicação
 
 As duas execuções informadas para a 0.5.8 falharam em `check:security`, com alertas relacionados a `launch-editor` no Vite 8.3.0. As auditorias de produção passaram. O lockfile do Storybook e o manifesto/lockfile do piloto foram atualizados para Vite 8.3.4, mantendo a validação de segurança. A nova execução local das quatro auditorias passou sem alertas. Não houve alteração de componentes ou placeholders nesta correção.

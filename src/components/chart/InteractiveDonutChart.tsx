@@ -1,6 +1,7 @@
 "use client";
 
 import { useHighContrastPreference } from "../../hooks/useHighContrastPreference";
+import { resolveChartBrandPalette, type ChartBrandPalette } from "../../utils/chart-brand-palette";
 import { useChartTheme } from "../../hooks/useChartTheme";
 import { decorateDonutDataLabels } from "./donut-data-labels";
 import {
@@ -32,6 +33,8 @@ export type InteractiveDonutProps = Omit<
   error?: ReactNode;
   emptyMessage?: ReactNode;
   colors?: string[];
+  brandPalette?: ChartBrandPalette;
+  seriesKeys?: readonly string[];
   mutedColors?: string[];
   valueFormatter?: (value: number) => string;
   ariaLabel?: string;
@@ -49,6 +52,8 @@ export default function InteractiveDonutChart({
   error,
   emptyMessage = "Nenhum dado disponível.",
   colors,
+  brandPalette,
+  seriesKeys,
   mutedColors,
   valueFormatter = (value) =>
     new Intl.NumberFormat("pt-BR", {
@@ -71,21 +76,40 @@ export default function InteractiveDonutChart({
   const containerRef = useRef<HTMLDivElement>(null);
   const instructionsId = useId();
   const chartTheme = useChartTheme();
+  const keys = useMemo(() => seriesKeys ?? options.labels ?? Array.from({ length: series.length }, (_, index) => String(index)), [seriesKeys, options.labels, series.length]);
+  if (brandPalette && keys.length !== series.length) throw new Error("InteractiveDonutChart: seriesKeys must match the series count.");
+  const brandColors = brandPalette ? resolveChartBrandPalette(chartTheme, brandPalette, keys) : undefined;
+  const customColors = colors?.length ? colors : options.colors?.length ? options.colors : undefined;
   const baseColors =
-    !highContrast && colors?.length ? colors : chartTheme.donutSeries;
+    !highContrast && customColors ? customColors : brandColors ?? chartTheme.donutSeries;
   const neutralColors = !highContrast && mutedColors?.length
     ? mutedColors
     : chartTheme.mutedSeries;
   const labels = useMemo(() => options.labels ?? [], [options.labels]);
+  const previousKeys = useRef(keys);
+  useEffect(() => {
+    if (brandPalette) {
+      const previous = previousKeys.current;
+      const remap = (index: number | null) => {
+        if (index === null) return null;
+        const next = keys.indexOf(previous[index]);
+        return next < 0 ? null : next;
+      };
+      setSelectedIndex(remap);
+      setLegendSelectedIndex(remap);
+    }
+    previousKeys.current = keys;
+  }, [brandPalette, keys]);
 
   useEffect(() => {
+    if (brandPalette) return;
     setSelectedIndex((current) =>
       current !== null && current >= series.length ? null : current,
     );
     setLegendSelectedIndex((current) =>
       current !== null && current >= series.length ? null : current,
     );
-  }, [series.length]);
+  }, [series.length, brandPalette]);
 
   useEffect(() => {
     const resetOnOutsideClick = (event: PointerEvent) => {
@@ -209,7 +233,7 @@ export default function InteractiveDonutChart({
         ? {
             type: "pattern",
             pattern: {
-              style: [
+              style: brandPalette ? keys.map(key => ["verticalLines", "horizontalLines", "slantedLines", "squares", "circles"][brandPalette.categories.indexOf(key) % 5]) : [
                 "verticalLines",
                 "horizontalLines",
                 "slantedLines",
@@ -227,7 +251,7 @@ export default function InteractiveDonutChart({
             opacity: options.fill?.opacity ?? 1,
           },
       stroke: highContrast
-        ? { ...options.stroke, colors: ["#ffffff"], width: 2 }
+        ? { ...options.stroke, colors: [brandPalette ? chartTheme.axis : "#ffffff"], width: 2 }
         : (options.stroke ?? {}),
       chart: {
         ...options.chart,
@@ -305,6 +329,8 @@ export default function InteractiveDonutChart({
       },
     };
   }, [
+    brandPalette,
+    keys,
     chartTheme.axis,
     displayColors,
     highContrast,
@@ -373,7 +399,7 @@ export default function InteractiveDonutChart({
         </div>
       ) : (
         <Chart
-          key={[highContrast, ...chartTheme.donutSeries, ...chartTheme.mutedSeries, chartTheme.axis, chartTheme.surface].join("|")}
+          key={[highContrast, ...chartTheme.donutSeries, ...(brandColors ?? []), ...chartTheme.mutedSeries, chartTheme.axis, chartTheme.surface].join("|")}
           {...rest}
           className={chartClassName}
           height={
