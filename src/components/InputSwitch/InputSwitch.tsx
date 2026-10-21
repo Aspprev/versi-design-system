@@ -26,7 +26,7 @@ type NativeSwitchProps = {
 export type InputSwitchProps = {
   defaultEnable?: boolean;
   checked?: boolean;
-  variant?: "primary" | "secondary" | "tertiary" | "contract" | "theme";
+  variant?: "primary" | "secondary" | "contract" | "theme";
   size?: "sm" | "md" | "lg";
   disabled?: boolean;
   onChange?: (enabled: boolean) => void;

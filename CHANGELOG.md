@@ -1,6 +1,35 @@
 # Changelog
 
-## Não lançado
+## 0.7.0 — 2026-10-21 — ações, seleções e cores semânticas
+
+### Migração incompatível
+
+- A família cromática tertiary da 0.6.0 passa a secondary em tokens e nas APIs de Button, InputSwitch, Notice, LoadingDots e CircularLoading. A antiga família secondary foi removida, sem aliases tertiary. Revise os usos e overrides no consumidor; guia em `docs/migrations/0.7.0-secondary.md`.
+- A hierarquia textual (`content-secondary`, `text-tertiary` e Typography tertiary), os placeholders, as primárias e os três acentos de marca permanecem independentes dessa migração.
+
+### Adicionado
+
+- Button aceita `color="success"` nas variantes flat, outline e plain, com estados de carregamento/desabilitado e cores próprias por modo.
+- InputSelect e SelectMulti aceitam seções `{ title, options: [{ label, value }] }` na mesma prop options, preservando listas simples. Títulos sem fundo, texto suave e recuo menor que as opções; teclado, busca do InputSelect e resumo do SelectMulti preservados.
+- SelectMulti oferece `minSelected` e `maxSelected` opcionais, aplicados à seleção inteira. Ao atingir os limites, bloqueia novas marcações ou remoções; mínimo positivo bloqueia limpar tudo. O formulário continua responsável por validar valores iniciais abaixo do mínimo no envio.
+- Contrato opt-in de cores para SVGs inline, compatível com `portal-illustration`: papéis estruturais, acentos explícitos e suaves, primeiros planos e pares próprios de alto contraste, mantendo sucesso/erro/aviso independentes da marca. Exemplos e testes nos 18 temas em `docs/illustrations`.
+
+### Corrigido
+
+- Button primary preenchido usa texto branco no claro comum, inclusive em hover, pressionado e carregamento. Escuro e alto contraste mantêm seus pares semânticos.
+- Carregamento dos botões secondary, danger e success acompanha o primeiro plano do botão; upload concluído usa sucesso semântico.
+- CircularLoading secondary usa `content-primary`, corrigindo a leitura no escuro e sobre muted no alto contraste escuro.
+- Escala secondary neutralizada no alto contraste escuro. Trilha desligada do switch reforçada, com mínimo medido de 3,45:1 sobre page/card/muted nos 18 temas; modos comuns preservados.
+- SelectMulti usa painel flutuante que respeita os limites do viewport, acompanha rolagem/redimensionamento e permanece interativo dentro de modais. Escape devolve o foco e Tab segue os controles do formulário.
+- Removida a sombra dos números nas fatias do InteractiveDonutChart, mantendo o fundo neutro dos rótulos e as demais opções de dataLabels.
+
+### Documentação
+
+- Storybook com exemplos de success/danger/warning, listas com seções, limites de seleção e SelectMulti junto ao rodapé e dentro de modal.
+- Laboratórios Secondary e Status nos quatro modos e Foundations/Illustrations. Comparação da primária custom2133 permanece uma prévia isolada, sem mudar a paleta do pacote.
+- Referências e regressões de cores preservam os snapshots históricos e explicitam as diferenças aprovadas. Detalhes em `docs/migrations`.
+
+## 0.6.0
 
 ### Migração de temas
 
@@ -9,7 +38,7 @@
 
 ### Corrigido
 
-- CircularLoading na variante secondary usa conte?do sem?ntico, corrigindo o contraste sobre superf?cie muted no alto contraste escuro.
+- CircularLoading na variante secondary usa conteúdo semântico, corrigindo o contraste sobre superfície muted no alto contraste escuro.
 
 ### Alterado
 

@@ -22,3 +22,21 @@ export const Loading: Story = {
 export const Disabled: Story = {
   name: "Desabilitado", args: { disabled: true } };
 
+
+const renderStatus: NonNullable<Story["render"]> = (args) => <div className="flex flex-wrap gap-4">
+  <Button {...args} variant="flat" />
+  <Button {...args} variant="outline" />
+  <Button {...args} variant="plain" />
+  <Button {...args} variant="flat" loading />
+  <Button {...args} variant="flat" disabled />
+</div>;
+
+export const Success: Story = {
+  name: "Sucesso", args: { color: "success", children: "Confirmar" }, render: renderStatus,
+};
+export const Danger: Story = {
+  name: "Perigo", args: { color: "danger", children: "Excluir" }, render: renderStatus,
+};
+export const Warning: Story = {
+  name: "Aviso", args: { color: "warning", children: "Prosseguir com atenção" }, render: renderStatus,
+};

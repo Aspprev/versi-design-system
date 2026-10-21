@@ -25,13 +25,25 @@ export type InputSelectOption = {
   value: string;
 };
 
+/** Option values must be unique across the entire select. */
+export type InputSelectGroup = {
+  title: string;
+  options: InputSelectOption[];
+};
+
+export type InputSelectItem = InputSelectOption | InputSelectGroup;
+
+function isOptionGroup(item: InputSelectItem): item is InputSelectGroup {
+  return "options" in item;
+}
+
 export type InputSelectProps = {
   name: string;
   label?: string;
   helperText?: string | React.ReactNode;
   placeholder?: string;
   defaultValue?: InputSelectOption;
-  options: InputSelectOption[];
+  options: InputSelectItem[];
   prefix?: string;
   suffix?: string;
   disabled?: boolean;
@@ -77,7 +89,8 @@ const InputSelect: React.FC<InputSelectProps> = ({
   // They have never changed this component's rendering; retain that contract.
   void suffix;
   void error;
-  const isSearchable = searchable ?? options.length > 10;
+  const flatOptions = options.flatMap(item => isOptionGroup(item) ? item.options : [item]);
+  const isSearchable = searchable ?? flatOptions.length > 10;
 
   const normalizeSearchText = (value: string) =>
     value
@@ -190,7 +203,7 @@ const InputSelect: React.FC<InputSelectProps> = ({
   }, [open, updateDropdownPosition]);
 
   const selectedOption =
-    options.find((o) => o.value === (field.value || defaultValue?.value)) ||
+    flatOptions.find((o) => o.value === (field.value || defaultValue?.value)) ||
     null;
 
   const closeDropdown = useCallback((restoreFocus = false) => {
@@ -222,7 +235,7 @@ const InputSelect: React.FC<InputSelectProps> = ({
   }, []);
 
   const handleSelect = (value: string) => {
-    const option = options.find((candidate) => candidate.value === value);
+    const option = flatOptions.find((candidate) => candidate.value === value);
 
     helpers.setValue(value);
     helpers.setTouched(true);
@@ -270,20 +283,16 @@ const InputSelect: React.FC<InputSelectProps> = ({
   const hasError = meta.touched && meta.error;
   const errorId = `${selectId}-error`;
   const normalizedSearch = normalizeSearchText(searchTerm.trim());
-  const filteredOptions = isSearchable
-    ? options.filter((option) => {
-        const label = normalizeSearchText(String(option.label || ""));
-        const value = normalizeSearchText(String(option.value || ""));
-        const extraSearch = normalizeSearchText(
-          String(searchAccessor?.(option) || ""),
-        );
-        return (
-          label.includes(normalizedSearch) ||
-          value.includes(normalizedSearch) ||
-          extraSearch.includes(normalizedSearch)
-        );
-      })
-    : options;
+  const matchesSearch = (option: InputSelectOption) =>
+    [option.label, option.value, searchAccessor?.(option) ?? ""]
+      .some(text => normalizeSearchText(text).includes(normalizedSearch));
+  const filteredItems = options.flatMap<InputSelectItem>((item) => {
+    if (!isOptionGroup(item)) return !isSearchable || matchesSearch(item) ? [item] : [];
+    const groupMatches = normalizeSearchText(item.title).includes(normalizedSearch);
+    const visibleOptions = !isSearchable || groupMatches ? item.options : item.options.filter(matchesSearch);
+    return visibleOptions.length ? [{ ...item, options: visibleOptions }] : [];
+  });
+  const filteredOptions = filteredItems.flatMap(item => isOptionGroup(item) ? item.options : [item]);
   const resultAnnouncement =
     filteredOptions.length === 0
       ? noOptionsText
@@ -388,6 +397,25 @@ const InputSelect: React.FC<InputSelectProps> = ({
     </span>
   );
 
+  const renderOptionButton = (opc: InputSelectOption) => (
+    <button
+      key={opc.value}
+      type="button"
+      role="option"
+      aria-selected={selectedOption?.value === opc.value}
+      tabIndex={-1}
+      onMouseDown={(e) => {
+        e.preventDefault();
+        e.stopPropagation();
+      }}
+      onClick={() => handleSelect(opc.value)}
+      onKeyDown={handleOptionKeyDown}
+      className="w-full px-4 py-2 text-left text-sm hover:bg-surface-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-focus-ring"
+    >
+      {renderOption ? renderOption(opc) : opc.label}
+    </button>
+  );
+
   const dropdownContent =
     open && !disabled ? (
       <div
@@ -456,24 +484,14 @@ const InputSelect: React.FC<InputSelectProps> = ({
               {noOptionsText}
             </div>
           ) : (
-            filteredOptions.map((opc) => (
-              <button
-                key={opc.value}
-                type="button"
-                role="option"
-                aria-selected={selectedOption?.value === opc.value}
-                tabIndex={-1}
-                onMouseDown={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                }}
-                onClick={() => handleSelect(opc.value)}
-                onKeyDown={handleOptionKeyDown}
-                className="w-full px-3 py-2 text-left text-sm hover:bg-surface-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-focus-ring"
-              >
-                {renderOption ? renderOption(opc) : opc.label}
-              </button>
-            ))
+            filteredItems.map((item, index) => isOptionGroup(item) ? (
+              <div key={`group-${index}`} role="group" aria-labelledby={`${listboxId}-group-${index}`}>
+                <div id={`${listboxId}-group-${index}`} className="px-2 pb-1 pt-3 text-xs font-semibold text-content-secondary">
+                  {item.title}
+                </div>
+                {item.options.map(renderOptionButton)}
+              </div>
+            ) : renderOptionButton(item))
           )}
         </div>
       </div>

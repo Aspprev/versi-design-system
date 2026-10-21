@@ -5,6 +5,8 @@ export {
 } from "./SelectMulti";
 export type {
   SelectMultiOption,
+  SelectMultiGroup,
+  SelectMultiItem,
   SelectMultiProps,
   MultiSelectOption,
   MultiSelectProps,

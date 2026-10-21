@@ -277,3 +277,11 @@ Detalhes de contratos, governança e segurança ficam na pasta `docs/`. A docume
 ## Detalhes opcionais de marca
 
 Os acentos dos clientes têm pares de apresentação e uso explícito no Surface e nos gráficos, com fallback legado e suporte aos quatro modos. Veja [o contrato e a migração dos estilos temporários do portal](docs/brand-accents/README.md).
+
+## Migração de ações alternativas
+
+Na 0.7.0, a família cromática tertiary da 0.6.0 passa a secondary e a antiga secondary é removida. Consulte o [guia de migração](docs/migrations/0.7.0-secondary.md) para atualizar props e overrides. Os papéis de texto neutro e os três acentos de marca continuam independentes.
+
+## Ilustrações com cores semânticas
+
+SVGs inline podem optar pelo [contrato de ilustrações](docs/illustrations/README.md), com compatibilidade com os atributos do portal, acentos de marca explícitos e pares próprios de alto contraste.

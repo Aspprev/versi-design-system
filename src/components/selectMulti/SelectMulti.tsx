@@ -6,8 +6,20 @@ export interface SelectMultiOption {
   value: string;
 }
 
-export interface SelectMultiProps extends InputHTMLAttributes<HTMLInputElement> {
+/** Values must be unique across the entire select. */
+export interface SelectMultiGroup {
+  title: string;
   options: SelectMultiOption[];
+}
+
+export type SelectMultiItem = SelectMultiOption | SelectMultiGroup;
+
+export interface SelectMultiProps extends InputHTMLAttributes<HTMLInputElement> {
+  options: SelectMultiItem[];
+  /** Blocks removal at this count; validate an initially empty form on submit. */
+  minSelected?: number;
+  /** Blocks new selections at this count. */
+  maxSelected?: number;
   label?: string;
   error?: string;
   onReset?: () => void;

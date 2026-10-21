@@ -36,7 +36,7 @@ jobs:
       - run: npm run test:package -- --react18
       - run: npx playwright install --with-deps chromium
       - run: node scripts/test-info-grid-consumer.mjs
-      - run: npx playwright test countries.visual.spec.ts focus.visual.spec.ts client-themes.visual.spec.ts legibility.visual.spec.ts legibility-distribution.visual.spec.ts legibility-interactions.visual.spec.ts legibility-mobile.visual.spec.ts brand-accents.visual.spec.ts
+      - run: npx playwright test countries.visual.spec.ts focus.visual.spec.ts client-themes.visual.spec.ts legibility.visual.spec.ts legibility-distribution.visual.spec.ts legibility-interactions.visual.spec.ts legibility-mobile.visual.spec.ts brand-accents.visual.spec.ts secondary-migration.visual.spec.ts illustrations.visual.spec.ts input-select-groups.visual.spec.ts multi-select.visual.spec.ts
       - run: node scripts/check-storybook-navigation.mjs
       - run: npm run test:pilot
       - name: Pack the validated release artifact

@@ -1,9 +1,13 @@
 "use client";
 
 import cs from "classnames";
+import { Portal } from "@headlessui/react";
+import { calculateFloatingPanelRect } from "../../utils/floating-panel-position";
+import type { SelectMultiOption, SelectMultiItem } from "./SelectMulti";
 import {
   InputHTMLAttributes,
   KeyboardEvent,
+  useCallback,
   useEffect,
   useId,
   useRef,
@@ -14,10 +18,9 @@ import FieldFrame from "../field/FieldFrame";
 import { getFloatingLayerClass } from "../../utils/floating-layer";
 
 export interface SelectMultiViewProps extends InputHTMLAttributes<HTMLInputElement> {
-  options: {
-    label: string;
-    value: string;
-  }[];
+  options: SelectMultiItem[];
+  minSelected?: number;
+  maxSelected?: number;
   label?: string;
   error?: string;
   checkedList?: string[];
@@ -28,6 +31,8 @@ export interface SelectMultiViewProps extends InputHTMLAttributes<HTMLInputEleme
 export function SelectMultiView(props: SelectMultiViewProps) {
   const {
     options,
+    minSelected,
+    maxSelected,
     error,
     label,
     checkedList = [],
@@ -48,9 +53,19 @@ export function SelectMultiView(props: SelectMultiViewProps) {
   const groupId = `${baseId}-options`;
   const summaryId = `${baseId}-summary`;
   const errorId = `${baseId}-error`;
+  const flatOptions = options.flatMap(item => "options" in item ? item.options : [item]);
+  const minimum = Number.isFinite(minSelected) ? Math.max(0, Math.floor(minSelected!)) : 0;
+  const maximum = Number.isFinite(maxSelected) ? Math.max(minimum, Math.floor(maxSelected!)) : Infinity;
   const selectedCount = checkedList.length;
+  const limitsId = `${baseId}-limits`;
+  const limitsText = minimum > 0 && maximum < Infinity
+    ? `Selecione de ${minimum} a ${maximum} opções.`
+    : minimum > 0 ? `Selecione pelo menos ${minimum} opções.`
+      : maximum < Infinity ? `Selecione até ${maximum} opções.` : "";
+  const optionUnavailable = (checked: boolean) => Boolean(disabled) ||
+    (checked ? selectedCount <= minimum : selectedCount >= maximum);
   const selectedLabels = checkedList.map((value) =>
-    options.find((option) => option.value === value)?.label ?? value,
+    flatOptions.find((option) => option.value === value)?.label ?? value,
   );
   const selectionKey = JSON.stringify(selectedLabels);
   const displayedCount = Math.min(selectedCount, visibleCount ?? selectedCount);
@@ -68,7 +83,7 @@ export function SelectMultiView(props: SelectMultiViewProps) {
   const accessibleSummary = selectedCount > 0
     ? `${selectedSummary}: ${selectedLabels.join(", ")}`
     : selectedSummary;
-  const describedBy = [summaryId, error ? errorId : undefined]
+  const describedBy = [summaryId, limitsText ? limitsId : undefined, error ? errorId : undefined]
     .filter(Boolean)
     .join(" ");
   const floatingLayerClass = getFloatingLayerClass(
@@ -137,13 +152,13 @@ export function SelectMultiView(props: SelectMultiViewProps) {
     if (!isOpened) return;
 
     groupRef.current
-      ?.querySelector<HTMLInputElement>('input[type="checkbox"]')
+      ?.querySelector<HTMLInputElement>('input[type="checkbox"]:not([disabled])')
       ?.focus({ preventScroll: true });
   }, [isOpened]);
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (!containerRef.current?.contains(event.target as Node)) {
+      if (!containerRef.current?.contains(event.target as Node) && !groupRef.current?.contains(event.target as Node)) {
         setIsOpened(false);
       }
     }
@@ -157,6 +172,50 @@ export function SelectMultiView(props: SelectMultiViewProps) {
     };
   }, [isOpened]);
 
+  const updatePanelPosition = useCallback(() => {
+      const trigger = triggerRef.current;
+      const panel = groupRef.current;
+      if (!trigger || !panel) return;
+      const rect = calculateFloatingPanelRect({
+        trigger: trigger.getBoundingClientRect(),
+        panel: { width: trigger.getBoundingClientRect().width, height: Math.min(panel.scrollHeight, 240) },
+        viewport: { width: window.innerWidth, height: window.innerHeight },
+      });
+      Object.assign(panel.style, { top: `${rect.top}px`, left: `${rect.left}px`, width: `${rect.width}px`, maxHeight: `${rect.maxHeight}px` });
+  }, []);
+  const setPanelRef = useCallback((panel: HTMLDivElement | null) => {
+    groupRef.current = panel;
+    if (!panel) return;
+    updatePanelPosition();
+    panel.querySelector<HTMLInputElement>('input:not([disabled])')?.focus({ preventScroll: true });
+  }, [updatePanelPosition]);
+
+  useEffect(() => {
+    if (!isOpened) return;
+    let frame: number | undefined;
+
+    const schedule = () => {
+      if (frame !== undefined) return;
+      frame = window.requestAnimationFrame(() => { frame = undefined; updatePanelPosition(); });
+    };
+    // Portal mounts after this component's effects. Observe it when its ref attaches.
+    const observer = new ResizeObserver(schedule);
+    if (triggerRef.current) observer.observe(triggerRef.current);
+    updatePanelPosition();
+    window.addEventListener("scroll", schedule, true);
+    window.addEventListener("resize", schedule);
+    window.visualViewport?.addEventListener("resize", schedule);
+    window.visualViewport?.addEventListener("scroll", schedule);
+    return () => {
+      if (frame !== undefined) window.cancelAnimationFrame(frame);
+      observer.disconnect();
+      window.removeEventListener("scroll", schedule, true);
+      window.removeEventListener("resize", schedule);
+      window.visualViewport?.removeEventListener("resize", schedule);
+      window.visualViewport?.removeEventListener("scroll", schedule);
+    };
+  }, [isOpened, options, updatePanelPosition]);
+
   useEffect(() => {
     if (disabled) setIsOpened(false);
   }, [disabled]);
@@ -169,7 +228,19 @@ export function SelectMultiView(props: SelectMultiViewProps) {
     );
     const currentIndex = checkboxes.indexOf(event.currentTarget);
 
+    if (event.key === "Tab") {
+      event.preventDefault();
+      const scope = triggerRef.current?.closest('[role="dialog"]') ?? document;
+      const focusable = Array.from(scope.querySelectorAll<HTMLElement>('a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'))
+        .filter(el => !groupRef.current?.contains(el) && el.getClientRects().length > 0);
+      const current = focusable.indexOf(triggerRef.current!);
+      const next = (current + (event.shiftKey ? -1 : 1) + focusable.length) % focusable.length;
+      setIsOpened(false);
+      focusable[next]?.focus({ preventScroll: true });
+      return;
+    }
     if (event.key === "Escape") {
+      event.stopPropagation();
       event.preventDefault();
       closeAndFocusTrigger();
       return;
@@ -206,6 +277,39 @@ export function SelectMultiView(props: SelectMultiViewProps) {
     const nextIndex =
       (currentIndex + direction + checkboxes.length) % checkboxes.length;
     checkboxes[nextIndex]?.focus({ preventScroll: true });
+  };
+
+  const renderOption = (option: SelectMultiOption) => {
+    const isChecked = checkedList.includes(option.value);
+    const unavailable = optionUnavailable(isChecked);
+    return (
+      <label
+        key={option.value}
+        className={cs(
+          "flex min-h-10 items-center gap-2 rounded px-4 py-2",
+          isChecked && "bg-selection-background text-selection-content",
+          unavailable ? "cursor-not-allowed" : "cursor-pointer",
+        )}
+      >
+        <input
+          type="checkbox"
+          className="peer sr-only"
+          value={option.value}
+          checked={isChecked}
+          name={props.name}
+          onChange={(event) => {
+            if (!optionUnavailable(isChecked)) props.onChange?.(event);
+          }}
+          onKeyDown={handleOptionKeyDown}
+          aria-invalid={Boolean(error) || undefined}
+          aria-describedby={[limitsText ? limitsId : undefined, error ? errorId : undefined].filter(Boolean).join(" ") || undefined}
+          disabled={disabled}
+          aria-disabled={unavailable || undefined}
+        />
+        <span aria-hidden="true" className="checkbox-control-proxy" />
+        {option.label}
+      </label>
+    );
   };
 
   return (
@@ -309,58 +413,37 @@ export function SelectMultiView(props: SelectMultiViewProps) {
         </span>
 
         {isOpened && (
+          <Portal>
           <div
             id={groupId}
-            ref={groupRef}
+            ref={setPanelRef}
             role="group"
             aria-labelledby={label ? labelId : undefined}
             aria-label={label ? undefined : "Opções disponíveis"}
-            aria-describedby={summaryId}
+            aria-describedby={describedBy}
             className={cs(
-              "absolute top-[100%] w-full rounded-sm bg-surface-card p-3",
+              "fixed max-h-60 overflow-y-auto overscroll-contain rounded-sm border border-field-border-default bg-surface-card text-content-primary",
               menuLayerClass,
               "flex flex-col items-stretch gap-2 shadow-md",
             )}
           >
-            {options.map((option, index) => {
-              const isChecked = checkedList.includes(option.value);
-
-              return (
-                <label
-                  key={option.value}
-                  className={cs(
-                    "flex h-10 cursor-pointer items-center gap-2 rounded p-2",
-                    isChecked && "bg-selection-background text-selection-content",
-                    disabled && "cursor-not-allowed",
-                  )}
-                >
-                  <input
-                    id={`${baseId}-option-${index}`}
-                    type="checkbox"
-                    className="peer sr-only"
-                    value={option.value}
-                    checked={isChecked}
-                    name={props.name}
-                    onChange={props.onChange}
-                    onKeyDown={handleOptionKeyDown}
-                    aria-invalid={Boolean(error) || undefined}
-                    aria-describedby={error ? errorId : undefined}
-                    disabled={disabled}
-                  />
-                  <span aria-hidden="true" className="checkbox-control-proxy" />
-                  {option.label}
-                </label>
-              );
-            })}
+            {options.map((item, index) => "options" in item ? (
+              item.options.length > 0 && <div key={`group-${index}`} role="group" aria-labelledby={`${groupId}-${index}`}>
+                <div id={`${groupId}-${index}`} className="px-2 pb-1 pt-3 text-xs font-semibold text-content-secondary">{item.title}</div>
+                {item.options.map(renderOption)}
+              </div>
+            ) : renderOption(item))}
           </div>
+          </Portal>
         )}
 
         {selectedCount > 0 && onClear && (
           <button
             type="button"
             aria-label={`Limpar seleção de ${label ?? "opções"}`}
-            disabled={disabled}
+            disabled={disabled || minimum > 0}
             onClick={() => {
+              if (minimum > 0) return;
               onClear();
               triggerRef.current?.focus({ preventScroll: true });
             }}
@@ -370,6 +453,7 @@ export function SelectMultiView(props: SelectMultiViewProps) {
           </button>
         )}
       </div>
+      {limitsText && <span id={limitsId} className="block text-xs text-content-secondary">{limitsText}</span>}
     </FieldFrame>
   );
 }

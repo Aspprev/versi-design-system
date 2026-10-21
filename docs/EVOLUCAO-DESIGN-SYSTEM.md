@@ -260,3 +260,7 @@ sem public/flags e sem erros de hidratação/runtime. Tarball: 295 arquivos,
 (1.701.601 bytes gzip), com CSP img-src data: e carregamento do mapa completo
 como limitações documentadas em BANDEIRAS.md. Publicação e escolha de versão
 permanecem fora desta alteração.
+
+## 0.7.0 — simplificação de secondary
+
+A família cromática tertiary da 0.6.0 passa a secondary nas cinco APIs de componentes e no registro de tokens. A antiga secondary é removida. Preservados os papéis neutros de tipografia, placeholders, acentos e cores funcionais independentes. Guia e referência em [migração de secondary](migrations/0.7.0-secondary.md).

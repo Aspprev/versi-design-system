@@ -2,6 +2,8 @@ import { readFileSync } from "node:fs";
 import { expect, test, type Locator } from "@playwright/test";
 import { CLIENT_THEMES } from "../../../src/theme-presets";
 
+import { promoteTertiaryTokens } from "../../helpers/theme-role-migration";
+
 const css = readFileSync("src/tokens.css", "utf8") + "\n" + readFileSync("src/themes.css", "utf8");
 const modes = ["light", "dark", "high-light", "high-dark"] as const;
 type Mode = typeof modes[number];
@@ -10,7 +12,7 @@ const reference = (id: string) => {
   // Identity snapshots remain immutable. Documented functional fixes take
   // precedence so a stale exported status cannot reintroduce a known defect.
   const corrections = JSON.parse(readFileSync("docs/correcao-legibilidade/AJUSTES-FUNCIONAIS.json", "utf8"));
-  for (const mode of modes) proposal.variants[mode] = { ...proposal.variants[mode], ...corrections.overrides[id]?.[mode] };
+  for (const mode of modes) proposal.variants[mode] = promoteTertiaryTokens({ ...proposal.variants[mode], ...corrections.overrides[id]?.[mode] }, mode);
   return proposal;
 };
 const normalize = (values: Record<string, string>) => Object.fromEntries(Object.entries(values).map(([key, value]) => [key, value.replace(/\s/g, "")]));
@@ -70,7 +72,7 @@ for (const { id } of CLIENT_THEMES) {
     await expect.poll(() => page.locator("body").evaluate(el => getComputedStyle(el).getPropertyValue("--primary-1").replace(/\s/g, ""))).toBe(expected["--primary-1"].replace(/\s/g, ""));
     const surface = expected["--surface-card-semantic"];
     if (high) {
-      for (const family of ["primary", "secondary", "tertiary", "danger", "warning"]) {
+      for (const family of ["primary", "secondary", "danger", "warning"]) {
         const button = main.getByTestId(`action-${family}`);
         for (const state of ["default", "hover", "active"] as const) {
           if (state !== "default") await button.hover();

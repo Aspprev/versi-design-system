@@ -84,6 +84,9 @@ for (const theme of DESIGN_SYSTEM_THEMES) {
       const series=await page.locator("body").evaluate(el=>getComputedStyle(el).getPropertyValue("--chart-1").replace(/\s/g,""));
       await expect.poll(()=>line.evaluate(el=>getComputedStyle(el).stroke.match(/[\d.]+/g)?.slice(0,3).join(","))).toBe(series);
       await expect(page.locator(".client-theme-charts rect[data-versi-chart-label]")).toHaveCount(3);
+      expect(await page.locator(".client-theme-charts text.apexcharts-pie-label").evaluateAll(labels => labels.every(label =>
+        !label.hasAttribute("filter") && getComputedStyle(label).filter === "none" && getComputedStyle(label).textShadow === "none",
+      ))).toBe(true);
       await settle(page.locator("main"));
       if(value.startsWith("high")) {
         const text=await readLegibility(page,"main .client-theme-charts");

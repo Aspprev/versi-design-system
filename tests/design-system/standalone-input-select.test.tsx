@@ -75,4 +75,17 @@ describe("InputSelect standalone", () => {
     expect(html).toContain('aria-label="Escolha o plano"');
     expect(html).toContain('role="combobox"');
   });
+  it("resolve valores do Formik e defaultValue dentro de seções", () => {
+    const grouped = [{ title: "Planos", options }];
+    for (const value of ["especial", ""]) {
+      const html = renderToStaticMarkup(
+        <Formik initialValues={{ plano: value }} onSubmit={() => undefined}>
+          <InputSelect name="plano" options={grouped} defaultValue={options[1]} />
+        </Formik>,
+      );
+      expect(html).toContain("Selecionado: Plano Especial");
+      expect(html).toContain('data-has-value="true"');
+    }
+  });
+
 });

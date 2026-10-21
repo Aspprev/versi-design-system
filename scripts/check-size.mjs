@@ -16,8 +16,8 @@ const budgets = {
   "overlays.js": { bytes: 10_000, gzipBytes: 4_000 },
   "documents.js": { bytes: 10_000, gzipBytes: 4_000 },
   "flags/*.svg": { bytes: 4_000_000, gzipBytes: 1_500_000 },
-  // Includes functional defaults for styles-only consumers and chart labels.
-  "styles.css": { bytes: 135_000, gzipBytes: 27_000 },
+  // Includes functional defaults, chart labels and the opt-in SVG contract.
+  "styles.css": { bytes: 140_000, gzipBytes: 27_000 },
   // Includes seven custom identities and eleven generic accent variants / four modes.
   "themes.css": { bytes: 250_000, gzipBytes: 23_000 },
 };

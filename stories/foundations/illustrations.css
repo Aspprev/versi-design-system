@@ -1,0 +1,8 @@
+.illustration-docs { max-width: 1100px; margin: 0 auto; padding: 24px; display: grid; gap: 24px; color: rgb(var(--content-primary)); background: rgb(var(--surface-page)); }
+.illustration-docs h1 { font-size: 26px; font-weight: 800; }
+.illustration-docs h2 { font-size: 20px; font-weight: 700; }
+.illustration-docs p { margin: 10px 0; }
+.illustration-docs svg { max-width: 100%; height: auto; }
+.illustration-docs pre { overflow-x: auto; background: rgb(var(--surface-muted)); padding: 16px; }
+.illustration-surface { padding: 18px; border: 1px solid rgb(var(--border-default)); border-radius: 8px; }
+.illustration-samples { display: flex; flex-wrap: wrap; gap: 12px; }

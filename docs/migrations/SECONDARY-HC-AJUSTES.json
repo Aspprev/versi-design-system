@@ -1,0 +1,366 @@
+{
+  "date": "2026-10-21",
+  "mode": "high-dark",
+  "contexts": [
+    {
+      "theme": "default",
+      "values": {
+        "--switch-track-off": "117, 117, 117",
+        "--switch-knob": "0, 0, 0",
+        "--surface-page": "0, 0, 0",
+        "--surface-card-semantic": "11, 11, 11",
+        "--surface-muted": "34, 34, 34",
+        "--secondary-1": "229, 231, 235",
+        "--secondary-2": "209, 213, 219",
+        "--secondary-3": "156, 163, 175",
+        "--secondary-4": "117, 117, 117",
+        "--secondary-5": "31, 33, 37"
+      },
+      "trackContrast": {
+        "--surface-page": 4.557768319672582,
+        "--surface-card-semantic": 4.271850322056835,
+        "--surface-muted": 3.45304871474382
+      }
+    },
+    {
+      "theme": "azul1",
+      "values": {
+        "--switch-track-off": "117, 117, 117",
+        "--switch-knob": "0, 0, 0",
+        "--surface-page": "0, 0, 0",
+        "--surface-card-semantic": "11, 11, 11",
+        "--surface-muted": "34, 34, 34",
+        "--secondary-1": "229, 231, 235",
+        "--secondary-2": "209, 213, 219",
+        "--secondary-3": "156, 163, 175",
+        "--secondary-4": "117, 117, 117",
+        "--secondary-5": "31, 33, 37"
+      },
+      "trackContrast": {
+        "--surface-page": 4.557768319672582,
+        "--surface-card-semantic": 4.271850322056835,
+        "--surface-muted": 3.45304871474382
+      }
+    },
+    {
+      "theme": "azul2",
+      "values": {
+        "--switch-track-off": "117, 117, 117",
+        "--switch-knob": "0, 0, 0",
+        "--surface-page": "0, 0, 0",
+        "--surface-card-semantic": "11, 11, 11",
+        "--surface-muted": "34, 34, 34",
+        "--secondary-1": "229, 231, 235",
+        "--secondary-2": "209, 213, 219",
+        "--secondary-3": "156, 163, 175",
+        "--secondary-4": "117, 117, 117",
+        "--secondary-5": "31, 33, 37"
+      },
+      "trackContrast": {
+        "--surface-page": 4.557768319672582,
+        "--surface-card-semantic": 4.271850322056835,
+        "--surface-muted": 3.45304871474382
+      }
+    },
+    {
+      "theme": "azul3",
+      "values": {
+        "--switch-track-off": "117, 117, 117",
+        "--switch-knob": "0, 0, 0",
+        "--surface-page": "0, 0, 0",
+        "--surface-card-semantic": "11, 11, 11",
+        "--surface-muted": "34, 34, 34",
+        "--secondary-1": "229, 231, 235",
+        "--secondary-2": "209, 213, 219",
+        "--secondary-3": "156, 163, 175",
+        "--secondary-4": "117, 117, 117",
+        "--secondary-5": "31, 33, 37"
+      },
+      "trackContrast": {
+        "--surface-page": 4.557768319672582,
+        "--surface-card-semantic": 4.271850322056835,
+        "--surface-muted": 3.45304871474382
+      }
+    },
+    {
+      "theme": "laranja1",
+      "values": {
+        "--switch-track-off": "117, 117, 117",
+        "--switch-knob": "0, 0, 0",
+        "--surface-page": "0, 0, 0",
+        "--surface-card-semantic": "11, 11, 11",
+        "--surface-muted": "34, 34, 34",
+        "--secondary-1": "229, 231, 235",
+        "--secondary-2": "209, 213, 219",
+        "--secondary-3": "156, 163, 175",
+        "--secondary-4": "117, 117, 117",
+        "--secondary-5": "31, 33, 37"
+      },
+      "trackContrast": {
+        "--surface-page": 4.557768319672582,
+        "--surface-card-semantic": 4.271850322056835,
+        "--surface-muted": 3.45304871474382
+      }
+    },
+    {
+      "theme": "laranja2",
+      "values": {
+        "--switch-track-off": "117, 117, 117",
+        "--switch-knob": "0, 0, 0",
+        "--surface-page": "0, 0, 0",
+        "--surface-card-semantic": "11, 11, 11",
+        "--surface-muted": "34, 34, 34",
+        "--secondary-1": "229, 231, 235",
+        "--secondary-2": "209, 213, 219",
+        "--secondary-3": "156, 163, 175",
+        "--secondary-4": "117, 117, 117",
+        "--secondary-5": "31, 33, 37"
+      },
+      "trackContrast": {
+        "--surface-page": 4.557768319672582,
+        "--surface-card-semantic": 4.271850322056835,
+        "--surface-muted": 3.45304871474382
+      }
+    },
+    {
+      "theme": "verde1",
+      "values": {
+        "--switch-track-off": "117, 117, 117",
+        "--switch-knob": "0, 0, 0",
+        "--surface-page": "0, 0, 0",
+        "--surface-card-semantic": "11, 11, 11",
+        "--surface-muted": "34, 34, 34",
+        "--secondary-1": "229, 231, 235",
+        "--secondary-2": "209, 213, 219",
+        "--secondary-3": "156, 163, 175",
+        "--secondary-4": "117, 117, 117",
+        "--secondary-5": "31, 33, 37"
+      },
+      "trackContrast": {
+        "--surface-page": 4.557768319672582,
+        "--surface-card-semantic": 4.271850322056835,
+        "--surface-muted": 3.45304871474382
+      }
+    },
+    {
+      "theme": "verde2",
+      "values": {
+        "--switch-track-off": "117, 117, 117",
+        "--switch-knob": "0, 0, 0",
+        "--surface-page": "0, 0, 0",
+        "--surface-card-semantic": "11, 11, 11",
+        "--surface-muted": "34, 34, 34",
+        "--secondary-1": "229, 231, 235",
+        "--secondary-2": "209, 213, 219",
+        "--secondary-3": "156, 163, 175",
+        "--secondary-4": "117, 117, 117",
+        "--secondary-5": "31, 33, 37"
+      },
+      "trackContrast": {
+        "--surface-page": 4.557768319672582,
+        "--surface-card-semantic": 4.271850322056835,
+        "--surface-muted": 3.45304871474382
+      }
+    },
+    {
+      "theme": "verde3",
+      "values": {
+        "--switch-track-off": "117, 117, 117",
+        "--switch-knob": "0, 0, 0",
+        "--surface-page": "0, 0, 0",
+        "--surface-card-semantic": "11, 11, 11",
+        "--surface-muted": "34, 34, 34",
+        "--secondary-1": "229, 231, 235",
+        "--secondary-2": "209, 213, 219",
+        "--secondary-3": "156, 163, 175",
+        "--secondary-4": "117, 117, 117",
+        "--secondary-5": "31, 33, 37"
+      },
+      "trackContrast": {
+        "--surface-page": 4.557768319672582,
+        "--surface-card-semantic": 4.271850322056835,
+        "--surface-muted": 3.45304871474382
+      }
+    },
+    {
+      "theme": "verde4",
+      "values": {
+        "--switch-track-off": "117, 117, 117",
+        "--switch-knob": "0, 0, 0",
+        "--surface-page": "0, 0, 0",
+        "--surface-card-semantic": "11, 11, 11",
+        "--surface-muted": "34, 34, 34",
+        "--secondary-1": "229, 231, 235",
+        "--secondary-2": "209, 213, 219",
+        "--secondary-3": "156, 163, 175",
+        "--secondary-4": "117, 117, 117",
+        "--secondary-5": "31, 33, 37"
+      },
+      "trackContrast": {
+        "--surface-page": 4.557768319672582,
+        "--surface-card-semantic": 4.271850322056835,
+        "--surface-muted": 3.45304871474382
+      }
+    },
+    {
+      "theme": "rosa1",
+      "values": {
+        "--switch-track-off": "117, 117, 117",
+        "--switch-knob": "0, 0, 0",
+        "--surface-page": "0, 0, 0",
+        "--surface-card-semantic": "11, 11, 11",
+        "--surface-muted": "34, 34, 34",
+        "--secondary-1": "229, 231, 235",
+        "--secondary-2": "209, 213, 219",
+        "--secondary-3": "156, 163, 175",
+        "--secondary-4": "117, 117, 117",
+        "--secondary-5": "31, 33, 37"
+      },
+      "trackContrast": {
+        "--surface-page": 4.557768319672582,
+        "--surface-card-semantic": 4.271850322056835,
+        "--surface-muted": 3.45304871474382
+      }
+    },
+    {
+      "theme": "custom2178",
+      "values": {
+        "--switch-track-off": "117, 117, 117",
+        "--switch-knob": "255, 255, 255",
+        "--surface-page": "0,0,0",
+        "--surface-card-semantic": "11,11,11",
+        "--surface-muted": "34,34,34",
+        "--secondary-1": "229, 231, 235",
+        "--secondary-2": "209, 213, 219",
+        "--secondary-3": "156, 163, 175",
+        "--secondary-4": "117, 117, 117",
+        "--secondary-5": "31, 33, 37"
+      },
+      "trackContrast": {
+        "--surface-page": 4.557768319672582,
+        "--surface-card-semantic": 4.271850322056835,
+        "--surface-muted": 3.45304871474382
+      }
+    },
+    {
+      "theme": "custom2156",
+      "values": {
+        "--switch-track-off": "117, 117, 117",
+        "--switch-knob": "255, 255, 255",
+        "--surface-page": "0,0,0",
+        "--surface-card-semantic": "11,11,11",
+        "--surface-muted": "34,34,34",
+        "--secondary-1": "229, 231, 235",
+        "--secondary-2": "209, 213, 219",
+        "--secondary-3": "156, 163, 175",
+        "--secondary-4": "117, 117, 117",
+        "--secondary-5": "31, 33, 37"
+      },
+      "trackContrast": {
+        "--surface-page": 4.557768319672582,
+        "--surface-card-semantic": 4.271850322056835,
+        "--surface-muted": 3.45304871474382
+      }
+    },
+    {
+      "theme": "custom2140",
+      "values": {
+        "--switch-track-off": "117, 117, 117",
+        "--switch-knob": "255, 255, 255",
+        "--surface-page": "0,0,0",
+        "--surface-card-semantic": "11,11,11",
+        "--surface-muted": "34,34,34",
+        "--secondary-1": "229, 231, 235",
+        "--secondary-2": "209, 213, 219",
+        "--secondary-3": "156, 163, 175",
+        "--secondary-4": "117, 117, 117",
+        "--secondary-5": "31, 33, 37"
+      },
+      "trackContrast": {
+        "--surface-page": 4.557768319672582,
+        "--surface-card-semantic": 4.271850322056835,
+        "--surface-muted": 3.45304871474382
+      }
+    },
+    {
+      "theme": "custom2133",
+      "values": {
+        "--switch-track-off": "117, 117, 117",
+        "--switch-knob": "255, 255, 255",
+        "--surface-page": "0,0,0",
+        "--surface-card-semantic": "11,11,11",
+        "--surface-muted": "34,34,34",
+        "--secondary-1": "229, 231, 235",
+        "--secondary-2": "209, 213, 219",
+        "--secondary-3": "156, 163, 175",
+        "--secondary-4": "117, 117, 117",
+        "--secondary-5": "31, 33, 37"
+      },
+      "trackContrast": {
+        "--surface-page": 4.557768319672582,
+        "--surface-card-semantic": 4.271850322056835,
+        "--surface-muted": 3.45304871474382
+      }
+    },
+    {
+      "theme": "custom2170",
+      "values": {
+        "--switch-track-off": "117, 117, 117",
+        "--switch-knob": "255, 255, 255",
+        "--surface-page": "0,0,0",
+        "--surface-card-semantic": "11,11,11",
+        "--surface-muted": "34,34,34",
+        "--secondary-1": "229, 231, 235",
+        "--secondary-2": "209, 213, 219",
+        "--secondary-3": "156, 163, 175",
+        "--secondary-4": "117, 117, 117",
+        "--secondary-5": "31, 33, 37"
+      },
+      "trackContrast": {
+        "--surface-page": 4.557768319672582,
+        "--surface-card-semantic": 4.271850322056835,
+        "--surface-muted": 3.45304871474382
+      }
+    },
+    {
+      "theme": "custom2162",
+      "values": {
+        "--switch-track-off": "117, 117, 117",
+        "--switch-knob": "255, 255, 255",
+        "--surface-page": "0,0,0",
+        "--surface-card-semantic": "11,11,11",
+        "--surface-muted": "34,34,34",
+        "--secondary-1": "229, 231, 235",
+        "--secondary-2": "209, 213, 219",
+        "--secondary-3": "156, 163, 175",
+        "--secondary-4": "117, 117, 117",
+        "--secondary-5": "31, 33, 37"
+      },
+      "trackContrast": {
+        "--surface-page": 4.557768319672582,
+        "--surface-card-semantic": 4.271850322056835,
+        "--surface-muted": 3.45304871474382
+      }
+    },
+    {
+      "theme": "custom2157",
+      "values": {
+        "--switch-track-off": "117, 117, 117",
+        "--switch-knob": "255, 255, 255",
+        "--surface-page": "0,0,0",
+        "--surface-card-semantic": "11,11,11",
+        "--surface-muted": "34,34,34",
+        "--secondary-1": "229, 231, 235",
+        "--secondary-2": "209, 213, 219",
+        "--secondary-3": "156, 163, 175",
+        "--secondary-4": "117, 117, 117",
+        "--secondary-5": "31, 33, 37"
+      },
+      "trackContrast": {
+        "--surface-page": 4.557768319672582,
+        "--surface-card-semantic": 4.271850322056835,
+        "--surface-muted": 3.45304871474382
+      }
+    }
+  ]
+}

@@ -25,7 +25,6 @@ export const Variants: Story = {
     <div className="flex flex-wrap items-center gap-5">
       <InputSwitch aria-label="Primário" defaultEnable variant="primary" />
       <InputSwitch aria-label="Secundário" defaultEnable variant="secondary" />
-      <InputSwitch aria-label="Terciário" defaultEnable variant="tertiary" />
       <InputSwitch aria-label="Com contrato" defaultEnable variant="contract" />
       <InputSwitch aria-label="Tema" defaultEnable variant="theme" />
       <InputSwitch aria-label="Notificações" icon={MdNotifications} />

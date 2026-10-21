@@ -56,11 +56,6 @@ const getInputSwitchStyles = ({
             { "bg-switch-track-secondary-on": enabled },
             { "bg-switch-track-off": !enabled },
           ),
-          tertiary: classNames(
-            "[--switch-state-layer:var(--switch-track-tertiary-on)]",
-            { "bg-switch-track-tertiary-on": enabled },
-            { "bg-switch-track-off": !enabled },
-          ),
           contract: classNames(
             enabled
               ? "bg-switch-track-contract-on [--switch-state-layer:var(--switch-track-contract-on)]"

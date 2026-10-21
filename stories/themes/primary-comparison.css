@@ -1,0 +1,14 @@
+.primary-comparison { --comparison-surface: rgb(var(--surface-card-semantic)); display: grid; gap: 24px; max-width: 1360px; margin: auto; color: rgb(var(--content-primary)); }
+.primary-comparison h1 { font-size: 26px; font-weight: 800; }
+.primary-comparison h2 { font-size: 19px; font-weight: 700; }
+.primary-comparison p { margin-top: 10px; }
+.primary-comparison-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px; }
+.primary-comparison-card { min-width: 0; display: grid; gap: 18px; align-content: start; padding: 20px; border: 1px solid rgb(var(--border-default)); border-radius: 10px; background: var(--comparison-surface); color: rgb(var(--content-primary)); }
+.primary-comparison-swatches { display: grid; gap: 8px; }
+.primary-comparison-hero { display: grid; place-items: center; height: 100px; border-radius: 8px; font-size: 26px; font-weight: 800; }
+.primary-comparison-swatches > div { display: grid; grid-template-columns: 44px 1fr auto; gap: 10px; align-items: center; }
+.primary-comparison-swatches span { height: 40px; border-radius: 6px; border: 1px solid rgb(var(--border-default)); }
+.primary-comparison-swatches code, .primary-comparison-swatches strong { font-size: 13px; }
+.primary-comparison-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.primary-comparison-states { display: flex; flex-wrap: wrap; gap: 6px; }
+.primary-comparison-states span { padding: 8px 10px; border-radius: 5px; font-weight: 600; font-size: 13px; }

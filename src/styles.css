@@ -1,8 +1,18 @@
 @import "./tokens.css";
+@import "./illustrations.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Filled primary buttons use white content in normal light mode. Keep this
+   component-scoped so links, notices and HC/dark semantic pairs stay intact.
+   Loading buttons retain the marker; explicitly disabled variants do not. */
+html:not([data-color-scheme="dark"]):not([data-contrast="high"]) .versi-button-primary-flat {
+  --action-primary-content: 255, 255, 255;
+  --action-primary-content-hover: 255, 255, 255;
+  --action-primary-content-active: 255, 255, 255;
+}
 
 /* Apex injects its own light/dark tooltip CSS. Scope these semantic defaults to
    VERSI charts; extra specificity wins without changing consumer chart options. */
@@ -29,6 +39,10 @@
 }
 .versi-chart text.apexcharts-pie-label[data-versi-semantic-label="true"] {
   fill: rgb(var(--content-primary));
+}
+.versi-chart text.apexcharts-pie-label {
+  filter: none;
+  text-shadow: none;
 }
 
 /* Component-owned layout: consumer Tailwind must not partially regenerate it.

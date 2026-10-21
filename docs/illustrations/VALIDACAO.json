@@ -1,0 +1,5163 @@
+{
+  "description": "Computed SVG colors from the distributed CSS; local validation on 2026-10-21. Normal modes and legacy mappings also passed in the browser.",
+  "themes": 18,
+  "contexts": 72,
+  "highContrastContexts": 36,
+  "thresholds": {
+    "symbols": 3,
+    "text": 4.5
+  },
+  "existingTokenChanges": 0,
+  "minimumTextContrast": 4.562166423971538,
+  "minimumSymbolContrast": 4.562166423971538,
+  "highContrastResults": [
+    {
+      "theme": "custom2178",
+      "mode": "high-light",
+      "minimumTextContrast": 4.603076268690502,
+      "minimumSymbolContrast": 4.603076268690502,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "131,63,0",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "131,63,0",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "131,63,0",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "131,63,0",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "error",
+          "bg": "168,26,10",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "warning",
+          "bg": "142,109,6",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "131,63,0",
+          "text": null,
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        }
+      ]
+    },
+    {
+      "theme": "custom2178",
+      "mode": "high-dark",
+      "minimumTextContrast": 4.562166423971538,
+      "minimumSymbolContrast": 4.562166423971538,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "255,164,81",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "255,164,81",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "255,164,81",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "255,164,81",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "error",
+          "bg": "192,91,80",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "warning",
+          "bg": "234,179,8",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "255,164,81",
+          "text": null,
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        }
+      ]
+    },
+    {
+      "theme": "verde3",
+      "mode": "high-light",
+      "minimumTextContrast": 4.603076268690502,
+      "minimumSymbolContrast": 4.603076268690502,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "error",
+          "bg": "168,26,10",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "warning",
+          "bg": "142,109,6",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "33,33,33",
+          "text": null,
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        }
+      ]
+    },
+    {
+      "theme": "verde3",
+      "mode": "high-dark",
+      "minimumTextContrast": 4.562166423971538,
+      "minimumSymbolContrast": 4.562166423971538,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "error",
+          "bg": "192,91,80",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "warning",
+          "bg": "234,179,8",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "255,223,0",
+          "text": null,
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        }
+      ]
+    },
+    {
+      "theme": "azul1",
+      "mode": "high-light",
+      "minimumTextContrast": 4.603076268690502,
+      "minimumSymbolContrast": 4.603076268690502,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "error",
+          "bg": "168,26,10",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "warning",
+          "bg": "142,109,6",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "33,33,33",
+          "text": null,
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        }
+      ]
+    },
+    {
+      "theme": "azul1",
+      "mode": "high-dark",
+      "minimumTextContrast": 4.562166423971538,
+      "minimumSymbolContrast": 4.562166423971538,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "error",
+          "bg": "192,91,80",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "warning",
+          "bg": "234,179,8",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "255,223,0",
+          "text": null,
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        }
+      ]
+    },
+    {
+      "theme": "verde4",
+      "mode": "high-light",
+      "minimumTextContrast": 4.603076268690502,
+      "minimumSymbolContrast": 4.603076268690502,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "error",
+          "bg": "168,26,10",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "warning",
+          "bg": "142,109,6",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "33,33,33",
+          "text": null,
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        }
+      ]
+    },
+    {
+      "theme": "verde4",
+      "mode": "high-dark",
+      "minimumTextContrast": 4.562166423971538,
+      "minimumSymbolContrast": 4.562166423971538,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "error",
+          "bg": "192,91,80",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "warning",
+          "bg": "234,179,8",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "255,223,0",
+          "text": null,
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        }
+      ]
+    },
+    {
+      "theme": "custom2140",
+      "mode": "high-light",
+      "minimumTextContrast": 4.603076268690502,
+      "minimumSymbolContrast": 4.603076268690502,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "131,63,0",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "131,63,0",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "131,63,0",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "131,63,0",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "error",
+          "bg": "168,26,10",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "warning",
+          "bg": "142,109,6",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "131,63,0",
+          "text": null,
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        }
+      ]
+    },
+    {
+      "theme": "custom2140",
+      "mode": "high-dark",
+      "minimumTextContrast": 4.562166423971538,
+      "minimumSymbolContrast": 4.562166423971538,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "255,172,106",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "255,172,106",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "255,172,106",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "255,172,106",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "error",
+          "bg": "192,91,80",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "warning",
+          "bg": "234,179,8",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "255,172,106",
+          "text": null,
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        }
+      ]
+    },
+    {
+      "theme": "custom2170",
+      "mode": "high-light",
+      "minimumTextContrast": 4.603076268690502,
+      "minimumSymbolContrast": 4.603076268690502,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "73,94,36",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "73,94,36",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "73,94,36",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "73,94,36",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "error",
+          "bg": "168,26,10",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "warning",
+          "bg": "142,109,6",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "73,94,36",
+          "text": null,
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        }
+      ]
+    },
+    {
+      "theme": "custom2170",
+      "mode": "high-dark",
+      "minimumTextContrast": 4.562166423971538,
+      "minimumSymbolContrast": 4.562166423971538,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "171,201,104",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "171,201,104",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "171,201,104",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "171,201,104",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "error",
+          "bg": "192,91,80",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "warning",
+          "bg": "234,179,8",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "171,201,104",
+          "text": null,
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        }
+      ]
+    },
+    {
+      "theme": "laranja1",
+      "mode": "high-light",
+      "minimumTextContrast": 4.603076268690502,
+      "minimumSymbolContrast": 4.603076268690502,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "error",
+          "bg": "168,26,10",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "warning",
+          "bg": "142,109,6",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "33,33,33",
+          "text": null,
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        }
+      ]
+    },
+    {
+      "theme": "laranja1",
+      "mode": "high-dark",
+      "minimumTextContrast": 4.562166423971538,
+      "minimumSymbolContrast": 4.562166423971538,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "error",
+          "bg": "192,91,80",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "warning",
+          "bg": "234,179,8",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "255,223,0",
+          "text": null,
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        }
+      ]
+    },
+    {
+      "theme": "azul3",
+      "mode": "high-light",
+      "minimumTextContrast": 4.603076268690502,
+      "minimumSymbolContrast": 4.603076268690502,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "error",
+          "bg": "168,26,10",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "warning",
+          "bg": "142,109,6",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "33,33,33",
+          "text": null,
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        }
+      ]
+    },
+    {
+      "theme": "azul3",
+      "mode": "high-dark",
+      "minimumTextContrast": 4.562166423971538,
+      "minimumSymbolContrast": 4.562166423971538,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "error",
+          "bg": "192,91,80",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "warning",
+          "bg": "234,179,8",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "255,223,0",
+          "text": null,
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        }
+      ]
+    },
+    {
+      "theme": "rosa1",
+      "mode": "high-light",
+      "minimumTextContrast": 4.603076268690502,
+      "minimumSymbolContrast": 4.603076268690502,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "error",
+          "bg": "168,26,10",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "warning",
+          "bg": "142,109,6",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "33,33,33",
+          "text": null,
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        }
+      ]
+    },
+    {
+      "theme": "rosa1",
+      "mode": "high-dark",
+      "minimumTextContrast": 4.562166423971538,
+      "minimumSymbolContrast": 4.562166423971538,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "error",
+          "bg": "192,91,80",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "warning",
+          "bg": "234,179,8",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "255,223,0",
+          "text": null,
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        }
+      ]
+    },
+    {
+      "theme": "verde2",
+      "mode": "high-light",
+      "minimumTextContrast": 4.603076268690502,
+      "minimumSymbolContrast": 4.603076268690502,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "error",
+          "bg": "168,26,10",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "warning",
+          "bg": "142,109,6",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "33,33,33",
+          "text": null,
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        }
+      ]
+    },
+    {
+      "theme": "verde2",
+      "mode": "high-dark",
+      "minimumTextContrast": 4.562166423971538,
+      "minimumSymbolContrast": 4.562166423971538,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "error",
+          "bg": "192,91,80",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "warning",
+          "bg": "234,179,8",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "255,223,0",
+          "text": null,
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        }
+      ]
+    },
+    {
+      "theme": "verde1",
+      "mode": "high-light",
+      "minimumTextContrast": 4.603076268690502,
+      "minimumSymbolContrast": 4.603076268690502,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "error",
+          "bg": "168,26,10",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "warning",
+          "bg": "142,109,6",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "33,33,33",
+          "text": null,
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        }
+      ]
+    },
+    {
+      "theme": "verde1",
+      "mode": "high-dark",
+      "minimumTextContrast": 4.562166423971538,
+      "minimumSymbolContrast": 4.562166423971538,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "error",
+          "bg": "192,91,80",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "warning",
+          "bg": "234,179,8",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "255,223,0",
+          "text": null,
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        }
+      ]
+    },
+    {
+      "theme": "default",
+      "mode": "high-light",
+      "minimumTextContrast": 4.603076268690502,
+      "minimumSymbolContrast": 4.603076268690502,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "error",
+          "bg": "168,26,10",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "warning",
+          "bg": "142,109,6",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "33,33,33",
+          "text": null,
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        }
+      ]
+    },
+    {
+      "theme": "default",
+      "mode": "high-dark",
+      "minimumTextContrast": 4.562166423971538,
+      "minimumSymbolContrast": 4.562166423971538,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "error",
+          "bg": "192,91,80",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "warning",
+          "bg": "234,179,8",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "255,223,0",
+          "text": null,
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        }
+      ]
+    },
+    {
+      "theme": "azul2",
+      "mode": "high-light",
+      "minimumTextContrast": 4.603076268690502,
+      "minimumSymbolContrast": 4.603076268690502,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "error",
+          "bg": "168,26,10",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "warning",
+          "bg": "142,109,6",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "33,33,33",
+          "text": null,
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        }
+      ]
+    },
+    {
+      "theme": "azul2",
+      "mode": "high-dark",
+      "minimumTextContrast": 4.562166423971538,
+      "minimumSymbolContrast": 4.562166423971538,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "error",
+          "bg": "192,91,80",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "warning",
+          "bg": "234,179,8",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "255,223,0",
+          "text": null,
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        }
+      ]
+    },
+    {
+      "theme": "custom2157",
+      "mode": "high-light",
+      "minimumTextContrast": 4.603076268690502,
+      "minimumSymbolContrast": 4.603076268690502,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "6,103,52",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "6,103,52",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "6,103,52",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "6,103,52",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "error",
+          "bg": "168,26,10",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "warning",
+          "bg": "142,109,6",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "6,103,52",
+          "text": null,
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        }
+      ]
+    },
+    {
+      "theme": "custom2157",
+      "mode": "high-dark",
+      "minimumTextContrast": 4.562166423971538,
+      "minimumSymbolContrast": 4.562166423971538,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "85,217,156",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "85,217,156",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "85,217,156",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "85,217,156",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "error",
+          "bg": "192,91,80",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "warning",
+          "bg": "234,179,8",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "85,217,156",
+          "text": null,
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        }
+      ]
+    },
+    {
+      "theme": "custom2162",
+      "mode": "high-light",
+      "minimumTextContrast": 4.603076268690502,
+      "minimumSymbolContrast": 4.603076268690502,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "0,93,121",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "0,93,121",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "0,93,121",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "0,93,121",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "error",
+          "bg": "168,26,10",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "warning",
+          "bg": "142,109,6",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "0,93,121",
+          "text": null,
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        }
+      ]
+    },
+    {
+      "theme": "custom2162",
+      "mode": "high-dark",
+      "minimumTextContrast": 4.562166423971538,
+      "minimumSymbolContrast": 4.562166423971538,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "87,206,240",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "87,206,240",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "87,206,240",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "87,206,240",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "error",
+          "bg": "192,91,80",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "warning",
+          "bg": "234,179,8",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "87,206,240",
+          "text": null,
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        }
+      ]
+    },
+    {
+      "theme": "custom2133",
+      "mode": "high-light",
+      "minimumTextContrast": 4.603076268690502,
+      "minimumSymbolContrast": 4.603076268690502,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "121,72,67",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "121,72,67",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "121,72,67",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "121,72,67",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "error",
+          "bg": "168,26,10",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "warning",
+          "bg": "142,109,6",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "121,72,67",
+          "text": null,
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        }
+      ]
+    },
+    {
+      "theme": "custom2133",
+      "mode": "high-dark",
+      "minimumTextContrast": 4.562166423971538,
+      "minimumSymbolContrast": 4.562166423971538,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "239,139,132",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "239,139,132",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "239,139,132",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "239,139,132",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "error",
+          "bg": "192,91,80",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "warning",
+          "bg": "234,179,8",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "239,139,132",
+          "text": null,
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        }
+      ]
+    },
+    {
+      "theme": "laranja2",
+      "mode": "high-light",
+      "minimumTextContrast": 4.603076268690502,
+      "minimumSymbolContrast": 4.603076268690502,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "33,33,33",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "error",
+          "bg": "168,26,10",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "warning",
+          "bg": "142,109,6",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "33,33,33",
+          "text": null,
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        }
+      ]
+    },
+    {
+      "theme": "laranja2",
+      "mode": "high-dark",
+      "minimumTextContrast": 4.562166423971538,
+      "minimumSymbolContrast": 4.562166423971538,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "255,223,0",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "error",
+          "bg": "192,91,80",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "warning",
+          "bg": "234,179,8",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "255,223,0",
+          "text": null,
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        }
+      ]
+    },
+    {
+      "theme": "custom2156",
+      "mode": "high-light",
+      "minimumTextContrast": 4.603076268690502,
+      "minimumSymbolContrast": 4.603076268690502,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "147,57,20",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "147,57,20",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "147,57,20",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "147,57,20",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "229,229,229",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "error",
+          "bg": "168,26,10",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "warning",
+          "bg": "142,109,6",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "147,57,20",
+          "text": null,
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "245,245,245"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "255,255,255"
+        },
+        {
+          "kind": "text",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "symbol",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        },
+        {
+          "kind": "stroke",
+          "fg": "0,0,0",
+          "bg": "229,229,229"
+        }
+      ]
+    },
+    {
+      "theme": "custom2156",
+      "mode": "high-dark",
+      "minimumTextContrast": 4.562166423971538,
+      "minimumSymbolContrast": 4.562166423971538,
+      "brandReferencesDoNotAffectResult": true,
+      "pairs": [
+        {
+          "name": "primary",
+          "bg": "255,148,92",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-solid",
+          "bg": "255,148,92",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-1-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-2-solid",
+          "bg": "255,148,92",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-2-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "accent-3-solid",
+          "bg": "255,148,92",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "accent-3-soft",
+          "bg": "34,34,34",
+          "text": "255,255,255",
+          "symbol": "255,255,255"
+        },
+        {
+          "name": "success",
+          "bg": "46,133,71",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "error",
+          "bg": "192,91,80",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "warning",
+          "bg": "234,179,8",
+          "text": "0,0,0",
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-primary",
+          "bg": "255,148,92",
+          "text": null,
+          "symbol": "0,0,0"
+        },
+        {
+          "name": "legacy-success",
+          "bg": "46,133,71",
+          "text": null,
+          "symbol": "255,255,255"
+        }
+      ],
+      "informational": [
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "0,0,0"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "11,11,11"
+        },
+        {
+          "kind": "text",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "symbol",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        },
+        {
+          "kind": "stroke",
+          "fg": "255,255,255",
+          "bg": "34,34,34"
+        }
+      ]
+    }
+  ]
+}

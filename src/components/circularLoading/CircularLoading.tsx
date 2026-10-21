@@ -11,9 +11,7 @@ export type CircularLoadingProps = {
   withTrack?: boolean;
   color?:
     | "white"
-    | "primary"
-    | "secondary"
-    | "tertiary"
+    | "primary"    | "secondary"
     | "danger"
     | "warning"
     | "success";
@@ -24,9 +22,7 @@ export type CircularLoadingProps = {
 
 const colorMap = {
   white: "rgb(var(--white))",
-  primary: "rgb(var(--loading-circular-indicator))",
-  secondary: "rgb(var(--content-brand-secondary))",
-  tertiary: "rgb(var(--tertiary-1))",
+  primary: "rgb(var(--loading-circular-indicator))",  secondary: "rgb(var(--content-primary))",
   danger: "rgb(var(--feedback-danger-strong))",
   warning: "rgb(var(--feedback-warning-strong))",
   success: "rgb(var(--feedback-success-strong))",
@@ -109,5 +105,3 @@ export default function CircularLoading({
     </div>
   );
 }
-
-
