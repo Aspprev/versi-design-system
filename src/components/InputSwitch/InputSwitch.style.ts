@@ -105,16 +105,16 @@ const getInputSwitchStyles = ({
   const iconClasses = classNames(
     "aria-disabled:text-font-disabled",
     sizeStyle.icon,
-    { "text-feedback-success-content": enabled && !disabled },
-    { "text-feedback-danger-content": !enabled && !disabled },
+    { "text-switch-knob-icon-on": enabled && !disabled },
+    { "text-switch-knob-icon-off": !enabled && !disabled },
     { "text-content-disabled": disabled },
   );
 
   const iconClassesTheme = classNames(
     "aria-disabled:text-font-disabled",
     sizeStyle.icon,
-    { "text-content-inverse": enabled && !disabled },
-    { "text-feedback-warning-content": !enabled && !disabled },
+    { "text-switch-knob-theme-icon-on": enabled && !disabled },
+    { "text-switch-knob-theme-icon-off": !enabled && !disabled },
     { "text-content-disabled": disabled },
   );
 

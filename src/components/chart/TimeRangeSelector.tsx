@@ -33,7 +33,7 @@ export default function TimeRangeSelector<T extends string | number>({
             className={`shrink-0 whitespace-nowrap rounded-sm border px-2.5 py-1 text-sm font-semibold transition-colors ${
               isSelected
                 ? "border-selection-border bg-selection-background text-selection-content"
-                : "border-primary-1 text-primary-1 hover:bg-primary-5"
+                : "border-content-link text-content-link hover:bg-action-primary-ghost"
             }`}
           >
             {range}

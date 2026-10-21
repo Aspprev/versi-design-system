@@ -80,8 +80,8 @@ describe("StatusBadge standalone", () => {
             appearance === "solid"
               ? "bg-action-primary"
               : appearance === "soft"
-                ? "bg-primary-5"
-                : "border-primary-1",
+                ? "bg-status-primary-soft-background"
+                : "border-status-primary-outline-border",
           );
         } else {
           expect(html).toContain(`status-${color}-${appearance}`);
@@ -147,7 +147,7 @@ describe("StatusBadge standalone", () => {
     const html = renderToStaticMarkup(
       <DomainStatusBadge status="  Status do Cliente " statusMap={statusMap} />,
     );
-    expect(html).toContain("border-primary-1");
+    expect(html).toContain("border-status-primary-outline-border");
     expect(html).toContain("Status do Cliente");
   });
 

@@ -1,10 +1,30 @@
 # Changelog
 
-## Não lançado
+## 0.5.8 — 2026-10-20 — temas de clientes e legibilidade
+
+### Adicionado
+
+- Sete identidades de cliente: basf, funssest, maisprevidencia, aceprev, cibrius, serpros e einvest, com quatro variantes e equivalência entre classe/atributo no html/body.
+- Listas e tipos públicos de temas, acentos opcionais de marca e 28 demonstrações no Storybook, separadas dos presets legados.
+- Testes de equivalência com os JSONs fornecidos e validação dos modos de alto contraste em componentes reais.
+
+### Corrigido
+
+- Legibilidade de status outline/soft no escuro, incluindo o fallback neutro, e pares de alto contraste nos fundos de página, card, tabela e muted.
+- Uso de tokens de conteúdo em abas, navegação e seleções; knob e ícones de switches, estados de ações e equivalência de classe/atributo no html/body.
+- Tooltips de gráficos acompanham os tokens do modo e porcentagens do donut ganham um fundo neutro legível.
+
+- Gráficos montados acompanham alterações de identidade e modo; séries sem cores explícitas usam os tokens do tema.
+
+### Alterado
+
+- Tema rosa1 no modo escuro normal: coral, amarelo e lilás inspirados na identidade Aceprev; superfícies quentes e conteúdo escuro nas ações coloridas.
 
 ### Documentação
 
-- Storybook: guia de configuração do styles.css, paleta ativa e matriz dos principais tokens nos 11 temas e quatro modos, incluindo campos desabilitados.
+- Laboratório de legibilidade com matriz de componentes, comparação antes/depois e relatório de validação; placeholders preservados em todos os modos.
+
+- Storybook: guia de configuração do styles.css, paleta ativa e matriz dos principais tokens nos 18 temas e quatro modos, incluindo campos desabilitados.
 
 ## 0.5.7 — 2026-10-20 — foco acessível e manutenção do repositório
 

@@ -21,7 +21,7 @@ export default function PreferenceSection({
     >
       <legend className="sr-only">{title}</legend>
       <div className="mb-4 flex items-start gap-3">
-        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary-5 text-primary-1">
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-action-primary-ghost text-content-link">
           <Icon aria-hidden="true" className="h-5 w-5" />
         </span>
         <div>

@@ -79,7 +79,7 @@ export default function ReadingPreferences({
             />
             <span>
               <span className="flex items-center gap-2 font-semibold">
-                <Icon aria-hidden="true" className="h-5 w-5 shrink-0 text-primary-1" />
+                <Icon aria-hidden="true" className="h-5 w-5 shrink-0 text-content-link" />
                 {label}
               </span>
               <span className="mt-1 block text-sm text-content-secondary">

@@ -1,7 +1,7 @@
 "use client";
 
 import { useHighContrastPreference } from "../../hooks/useHighContrastPreference";
-import { getChartTheme } from "../../utils/chart-theme";
+import { useChartTheme } from "../../hooks/useChartTheme";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import Chart, { type Props as ApexChartProps } from "./LazyApexChart";
 
@@ -35,7 +35,7 @@ export default function TimeSeriesChart({
 }: TimeSeriesChartProps) {
   const storedHighContrast = useHighContrastPreference();
   const highContrast = highContrastOverride ?? storedHighContrast;
-  const theme = getChartTheme();
+  const theme = useChartTheme();
   const containerRef = useRef<HTMLDivElement>(null);
   const [measuredHeight, setMeasuredHeight] = useState<number | null>(null);
   const [measuredWidth, setMeasuredWidth] = useState<number | null>(null);
@@ -176,7 +176,7 @@ export default function TimeSeriesChart({
 
   const sharedOptions: TimeSeriesChartOptions = {
     ...options,
-    colors: highContrast ? [...theme.series] : options.colors,
+    colors: highContrast ? [...theme.series] : (options.colors ?? [...theme.series]),
     chart: {
       toolbar: { show: false },
       zoom: { enabled: false },
@@ -233,13 +233,13 @@ export default function TimeSeriesChart({
     annotations: highContrast
       ? {
           ...options.annotations,
-          xaxis: options.annotations?.xaxis?.map((annotation, index) => ({
+          xaxis: (options.annotations?.xaxis ?? []).map((annotation, index) => ({
             ...annotation,
             fillColor: theme.series[index % theme.series.length],
             opacity: 0.28,
           })),
         }
-      : options.annotations,
+      : (options.annotations ?? {}),
     xaxis: {
       tooltip: { enabled: false },
       axisBorder: { color: theme.axisBorder },
@@ -288,7 +288,7 @@ export default function TimeSeriesChart({
   };
 
   return (
-    <div ref={containerRef} role="img" aria-label={ariaLabel} className={className}>
+    <div ref={containerRef} role="img" aria-label={ariaLabel} className={`versi-chart ${className ?? ""}`.trim()}>
       {loading ? (
         <div role="status" aria-busy="true" aria-live="polite" className="flex min-h-32 items-center justify-center text-sm text-content-secondary">
           {loadingMessage}

@@ -284,3 +284,5 @@ export type {
   ReadingPreferencesProps,
   ThemePreferenceProps,
 } from "./components/accessibility-preferences";
+export { CLIENT_THEMES, LEGACY_THEMES, DESIGN_SYSTEM_THEMES } from "./theme-presets";
+export type { ClientTheme, DesignSystemTheme } from "./theme-presets";

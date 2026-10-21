@@ -1,0 +1,981 @@
+{
+  "scope": "Rendered DS components in portal catalog, supplied proposal tokens, computed color pairs below 2.5:1 used for triage, not WCAG certification",
+  "records": [
+    {
+      "client": "basf",
+      "mode": "dark",
+      "tab": "status",
+      "text": "PENDENTE",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-6 px-2 py-0.5 text-sm border-status-slate-outline-border text-status-slate-outline-foreground whitespace-normal break-words",
+      "fg": "rgb(25, 28, 31)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.06,
+      "borderRatio": 2.24,
+      "placeholderRatio": null
+    },
+    {
+      "client": "basf",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-blue-outline-border text-status-blue-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(7, 68, 138)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.7,
+      "borderRatio": 3.28,
+      "placeholderRatio": null
+    },
+    {
+      "client": "basf",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-yellow-outline-border text-status-yellow-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(133, 77, 14)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 2.37,
+      "borderRatio": 8.46,
+      "placeholderRatio": null
+    },
+    {
+      "client": "basf",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-red-outline-border text-status-red-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(131, 13, 0)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.56,
+      "borderRatio": 2.18,
+      "placeholderRatio": null
+    },
+    {
+      "client": "basf",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-slate-outline-border text-status-slate-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(25, 28, 31)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.06,
+      "borderRatio": 2.24,
+      "placeholderRatio": null
+    },
+    {
+      "client": "basf",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-black-outline-border text-status-black-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(0, 0, 0)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.29,
+      "borderRatio": 1.29,
+      "placeholderRatio": null
+    },
+    {
+      "client": "funssest",
+      "mode": "dark",
+      "tab": "status",
+      "text": "PENDENTE",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-6 px-2 py-0.5 text-sm border-status-slate-outline-border text-status-slate-outline-foreground whitespace-normal break-words",
+      "fg": "rgb(25, 28, 31)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.06,
+      "borderRatio": 2.24,
+      "placeholderRatio": null
+    },
+    {
+      "client": "funssest",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-blue-outline-border text-status-blue-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(7, 68, 138)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.7,
+      "borderRatio": 3.28,
+      "placeholderRatio": null
+    },
+    {
+      "client": "funssest",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-yellow-outline-border text-status-yellow-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(133, 77, 14)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 2.37,
+      "borderRatio": 8.46,
+      "placeholderRatio": null
+    },
+    {
+      "client": "funssest",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-red-outline-border text-status-red-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(131, 13, 0)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.56,
+      "borderRatio": 2.18,
+      "placeholderRatio": null
+    },
+    {
+      "client": "funssest",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-slate-outline-border text-status-slate-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(25, 28, 31)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.06,
+      "borderRatio": 2.24,
+      "placeholderRatio": null
+    },
+    {
+      "client": "funssest",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-black-outline-border text-status-black-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(0, 0, 0)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.29,
+      "borderRatio": 1.29,
+      "placeholderRatio": null
+    },
+    {
+      "client": "maisprevidencia",
+      "mode": "dark",
+      "tab": "status",
+      "text": "PENDENTE",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-6 px-2 py-0.5 text-sm border-status-slate-outline-border text-status-slate-outline-foreground whitespace-normal break-words",
+      "fg": "rgb(25, 28, 31)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.06,
+      "borderRatio": 2.24,
+      "placeholderRatio": null
+    },
+    {
+      "client": "maisprevidencia",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-blue-outline-border text-status-blue-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(7, 68, 138)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.7,
+      "borderRatio": 3.28,
+      "placeholderRatio": null
+    },
+    {
+      "client": "maisprevidencia",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-yellow-outline-border text-status-yellow-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(133, 77, 14)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 2.37,
+      "borderRatio": 8.46,
+      "placeholderRatio": null
+    },
+    {
+      "client": "maisprevidencia",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-red-outline-border text-status-red-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(131, 13, 0)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.56,
+      "borderRatio": 2.18,
+      "placeholderRatio": null
+    },
+    {
+      "client": "maisprevidencia",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-slate-outline-border text-status-slate-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(25, 28, 31)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.06,
+      "borderRatio": 2.24,
+      "placeholderRatio": null
+    },
+    {
+      "client": "maisprevidencia",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-black-outline-border text-status-black-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(0, 0, 0)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.29,
+      "borderRatio": 1.29,
+      "placeholderRatio": null
+    },
+    {
+      "client": "aceprev",
+      "mode": "light",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-primary-1 text-primary-1 overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(239, 139, 132)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 2.41,
+      "borderRatio": 2.41,
+      "placeholderRatio": null
+    },
+    {
+      "client": "aceprev",
+      "mode": "dark",
+      "tab": "status",
+      "text": "PENDENTE",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-6 px-2 py-0.5 text-sm border-status-slate-outline-border text-status-slate-outline-foreground whitespace-normal break-words",
+      "fg": "rgb(25, 28, 31)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.06,
+      "borderRatio": 2.24,
+      "placeholderRatio": null
+    },
+    {
+      "client": "aceprev",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-blue-outline-border text-status-blue-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(7, 68, 138)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.7,
+      "borderRatio": 3.28,
+      "placeholderRatio": null
+    },
+    {
+      "client": "aceprev",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-yellow-outline-border text-status-yellow-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(133, 77, 14)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 2.37,
+      "borderRatio": 8.46,
+      "placeholderRatio": null
+    },
+    {
+      "client": "aceprev",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-red-outline-border text-status-red-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(131, 13, 0)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.56,
+      "borderRatio": 2.18,
+      "placeholderRatio": null
+    },
+    {
+      "client": "aceprev",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-slate-outline-border text-status-slate-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(25, 28, 31)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.06,
+      "borderRatio": 2.24,
+      "placeholderRatio": null
+    },
+    {
+      "client": "aceprev",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-black-outline-border text-status-black-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(0, 0, 0)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.29,
+      "borderRatio": 1.29,
+      "placeholderRatio": null
+    },
+    {
+      "client": "cibrius",
+      "mode": "dark",
+      "tab": "status",
+      "text": "PENDENTE",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-6 px-2 py-0.5 text-sm border-status-slate-outline-border text-status-slate-outline-foreground whitespace-normal break-words",
+      "fg": "rgb(25, 28, 31)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.06,
+      "borderRatio": 2.24,
+      "placeholderRatio": null
+    },
+    {
+      "client": "cibrius",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-blue-outline-border text-status-blue-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(7, 68, 138)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.7,
+      "borderRatio": 3.28,
+      "placeholderRatio": null
+    },
+    {
+      "client": "cibrius",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-yellow-outline-border text-status-yellow-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(133, 77, 14)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 2.37,
+      "borderRatio": 8.46,
+      "placeholderRatio": null
+    },
+    {
+      "client": "cibrius",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-red-outline-border text-status-red-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(131, 13, 0)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.56,
+      "borderRatio": 2.18,
+      "placeholderRatio": null
+    },
+    {
+      "client": "cibrius",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-slate-outline-border text-status-slate-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(25, 28, 31)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.06,
+      "borderRatio": 2.24,
+      "placeholderRatio": null
+    },
+    {
+      "client": "cibrius",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-black-outline-border text-status-black-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(0, 0, 0)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.29,
+      "borderRatio": 1.29,
+      "placeholderRatio": null
+    },
+    {
+      "client": "serpros",
+      "mode": "dark",
+      "tab": "status",
+      "text": "PENDENTE",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-6 px-2 py-0.5 text-sm border-status-slate-outline-border text-status-slate-outline-foreground whitespace-normal break-words",
+      "fg": "rgb(25, 28, 31)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.06,
+      "borderRatio": 2.24,
+      "placeholderRatio": null
+    },
+    {
+      "client": "serpros",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-blue-outline-border text-status-blue-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(7, 68, 138)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.7,
+      "borderRatio": 3.28,
+      "placeholderRatio": null
+    },
+    {
+      "client": "serpros",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-yellow-outline-border text-status-yellow-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(133, 77, 14)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 2.37,
+      "borderRatio": 8.46,
+      "placeholderRatio": null
+    },
+    {
+      "client": "serpros",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-red-outline-border text-status-red-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(131, 13, 0)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.56,
+      "borderRatio": 2.18,
+      "placeholderRatio": null
+    },
+    {
+      "client": "serpros",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-slate-outline-border text-status-slate-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(25, 28, 31)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.06,
+      "borderRatio": 2.24,
+      "placeholderRatio": null
+    },
+    {
+      "client": "serpros",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-black-outline-border text-status-black-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(0, 0, 0)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.29,
+      "borderRatio": 1.29,
+      "placeholderRatio": null
+    },
+    {
+      "client": "einvest",
+      "mode": "dark",
+      "tab": "status",
+      "text": "PENDENTE",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-6 px-2 py-0.5 text-sm border-status-slate-outline-border text-status-slate-outline-foreground whitespace-normal break-words",
+      "fg": "rgb(25, 28, 31)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.06,
+      "borderRatio": 2.24,
+      "placeholderRatio": null
+    },
+    {
+      "client": "einvest",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-blue-outline-border text-status-blue-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(7, 68, 138)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.7,
+      "borderRatio": 3.28,
+      "placeholderRatio": null
+    },
+    {
+      "client": "einvest",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-yellow-outline-border text-status-yellow-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(133, 77, 14)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 2.37,
+      "borderRatio": 8.46,
+      "placeholderRatio": null
+    },
+    {
+      "client": "einvest",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-red-outline-border text-status-red-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(131, 13, 0)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.56,
+      "borderRatio": 2.18,
+      "placeholderRatio": null
+    },
+    {
+      "client": "einvest",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-slate-outline-border text-status-slate-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(25, 28, 31)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.06,
+      "borderRatio": 2.24,
+      "placeholderRatio": null
+    },
+    {
+      "client": "einvest",
+      "mode": "dark",
+      "tab": "status",
+      "text": "outline",
+      "className": "inline-flex w-fit max-w-full items-center justify-center rounded-sm border-2 text-center font-bold uppercase tracking-wide min-h-5 px-1 py-0.5 text-xs border-status-black-outline-border text-status-black-outline-foreground overflow-hidden text-ellipsis whitespace-nowrap",
+      "fg": "rgb(0, 0, 0)",
+      "bg": [
+        27,
+        33,
+        40
+      ],
+      "ratio": 1.29,
+      "borderRatio": 1.29,
+      "placeholderRatio": null
+    },
+    {
+      "client": "aceprev",
+      "mode": "light",
+      "tab": "components",
+      "text": "Storybook do versi-ds",
+      "className": "inline-flex min-h-10 items-center gap-2 rounded-sm border border-primary-1 px-3 py-2 text-sm font-semibold text-primary-1 transition hover:bg-primary-5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-focus-ring",
+      "fg": "rgb(239, 139, 132)",
+      "bg": [
+        244,
+        247,
+        248
+      ],
+      "ratio": 2.24,
+      "borderRatio": 2.24,
+      "placeholderRatio": null
+    },
+    {
+      "client": "aceprev",
+      "mode": "light",
+      "tab": "components",
+      "text": "Componentes básicos",
+      "className": "inline-flex items-center gap-1 whitespace-nowrap border-b-[3px] transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring disabled:cursor-not-allowed disabled:opacity-50 tablet:px-1 px-0.5 py-0 text-sm border-primary-1 font-semibold text-primary-1",
+      "fg": "rgb(239, 139, 132)",
+      "bg": [
+        244,
+        247,
+        248
+      ],
+      "ratio": 2.24,
+      "borderRatio": 2.24,
+      "placeholderRatio": null
+    },
+    {
+      "client": "aceprev",
+      "mode": "light",
+      "tab": "components",
+      "text": "primary",
+      "className": "\n          flex items-center justify-center rounded-sm px-xs border-[1px] gap-4xs leading-none\n          focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring\n          border-content-link text-content-link hover:border-action-primary-hover hover:text-content-link active:bg-selection-background active:border-action-primary-active active:text-content-on-brand\n          undefined\n          h-control-md\n          w-auto\n        ",
+      "fg": "rgb(239, 139, 132)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 2.41,
+      "borderRatio": 2.41,
+      "placeholderRatio": null
+    },
+    {
+      "client": "aceprev",
+      "mode": "light",
+      "tab": "components",
+      "text": "primary",
+      "className": "\n          flex items-center justify-center rounded-sm px-xs border-[1px] gap-4xs leading-none\n          focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring\n          border-transparent text-content-link hover:bg-action-primary-ghost hover:text-content-link active:border-content-link\n          undefined\n          h-control-md\n          w-auto\n        ",
+      "fg": "rgb(239, 139, 132)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 2.41,
+      "borderRatio": 21,
+      "placeholderRatio": null
+    },
+    {
+      "client": "basf",
+      "mode": "light",
+      "tab": "forms",
+      "text": "Digite um nome",
+      "className": "field-value w-full border-none bg-transparent text-field-content outline-none placeholder:text-field-placeholder focus:outline-none disabled:text-field-content-disabled disabled:placeholder:text-field-placeholder-disabled",
+      "fg": "rgb(24, 24, 24)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 17.76,
+      "borderRatio": 1.24,
+      "placeholderRatio": 2.4
+    },
+    {
+      "client": "funssest",
+      "mode": "light",
+      "tab": "forms",
+      "text": "Digite um nome",
+      "className": "field-value w-full border-none bg-transparent text-field-content outline-none placeholder:text-field-placeholder focus:outline-none disabled:text-field-content-disabled disabled:placeholder:text-field-placeholder-disabled",
+      "fg": "rgb(24, 24, 24)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 17.76,
+      "borderRatio": 1.24,
+      "placeholderRatio": 2.4
+    },
+    {
+      "client": "maisprevidencia",
+      "mode": "light",
+      "tab": "forms",
+      "text": "Digite um nome",
+      "className": "field-value w-full border-none bg-transparent text-field-content outline-none placeholder:text-field-placeholder focus:outline-none disabled:text-field-content-disabled disabled:placeholder:text-field-placeholder-disabled",
+      "fg": "rgb(24, 24, 24)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 17.76,
+      "borderRatio": 1.24,
+      "placeholderRatio": 2.4
+    },
+    {
+      "client": "aceprev",
+      "mode": "light",
+      "tab": "forms",
+      "text": "Storybook do versi-ds",
+      "className": "inline-flex min-h-10 items-center gap-2 rounded-sm border border-primary-1 px-3 py-2 text-sm font-semibold text-primary-1 transition hover:bg-primary-5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-focus-ring",
+      "fg": "rgb(239, 139, 132)",
+      "bg": [
+        244,
+        247,
+        248
+      ],
+      "ratio": 2.24,
+      "borderRatio": 2.24,
+      "placeholderRatio": null
+    },
+    {
+      "client": "aceprev",
+      "mode": "light",
+      "tab": "forms",
+      "text": "Formulários",
+      "className": "inline-flex items-center gap-1 whitespace-nowrap border-b-[3px] transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring disabled:cursor-not-allowed disabled:opacity-50 tablet:px-1 px-0.5 py-0 text-sm border-primary-1 font-semibold text-primary-1",
+      "fg": "rgb(239, 139, 132)",
+      "bg": [
+        244,
+        247,
+        248
+      ],
+      "ratio": 2.24,
+      "borderRatio": 2.24,
+      "placeholderRatio": null
+    },
+    {
+      "client": "aceprev",
+      "mode": "light",
+      "tab": "forms",
+      "text": "Digite um nome",
+      "className": "field-value w-full border-none bg-transparent text-field-content outline-none placeholder:text-field-placeholder focus:outline-none disabled:text-field-content-disabled disabled:placeholder:text-field-placeholder-disabled",
+      "fg": "rgb(24, 24, 24)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 17.76,
+      "borderRatio": 1.24,
+      "placeholderRatio": 2.4
+    },
+    {
+      "client": "aceprev",
+      "mode": "light",
+      "tab": "forms",
+      "text": "Limpar",
+      "className": "\n          flex items-center justify-center rounded-sm px-xs border-[1px] gap-4xs leading-none\n          focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring\n          border-content-link text-content-link hover:border-action-primary-hover hover:text-content-link active:bg-selection-background active:border-action-primary-active active:text-content-on-brand\n          undefined\n          h-control-md\n          w-auto\n        ",
+      "fg": "rgb(239, 139, 132)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 2.41,
+      "borderRatio": 2.41,
+      "placeholderRatio": null
+    },
+    {
+      "client": "cibrius",
+      "mode": "light",
+      "tab": "forms",
+      "text": "Digite um nome",
+      "className": "field-value w-full border-none bg-transparent text-field-content outline-none placeholder:text-field-placeholder focus:outline-none disabled:text-field-content-disabled disabled:placeholder:text-field-placeholder-disabled",
+      "fg": "rgb(24, 24, 24)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 17.76,
+      "borderRatio": 1.24,
+      "placeholderRatio": 2.4
+    },
+    {
+      "client": "serpros",
+      "mode": "light",
+      "tab": "forms",
+      "text": "Digite um nome",
+      "className": "field-value w-full border-none bg-transparent text-field-content outline-none placeholder:text-field-placeholder focus:outline-none disabled:text-field-content-disabled disabled:placeholder:text-field-placeholder-disabled",
+      "fg": "rgb(24, 24, 24)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 17.76,
+      "borderRatio": 1.24,
+      "placeholderRatio": 2.4
+    },
+    {
+      "client": "einvest",
+      "mode": "light",
+      "tab": "forms",
+      "text": "Digite um nome",
+      "className": "field-value w-full border-none bg-transparent text-field-content outline-none placeholder:text-field-placeholder focus:outline-none disabled:text-field-content-disabled disabled:placeholder:text-field-placeholder-disabled",
+      "fg": "rgb(24, 24, 24)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 17.76,
+      "borderRatio": 1.24,
+      "placeholderRatio": 2.4
+    },
+    {
+      "client": "aceprev",
+      "mode": "light",
+      "tab": "feedback",
+      "text": "Storybook do versi-ds",
+      "className": "inline-flex min-h-10 items-center gap-2 rounded-sm border border-primary-1 px-3 py-2 text-sm font-semibold text-primary-1 transition hover:bg-primary-5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-focus-ring",
+      "fg": "rgb(239, 139, 132)",
+      "bg": [
+        244,
+        247,
+        248
+      ],
+      "ratio": 2.24,
+      "borderRatio": 2.24,
+      "placeholderRatio": null
+    },
+    {
+      "client": "aceprev",
+      "mode": "light",
+      "tab": "feedback",
+      "text": "Feedback",
+      "className": "inline-flex items-center gap-1 whitespace-nowrap border-b-[3px] transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring disabled:cursor-not-allowed disabled:opacity-50 tablet:px-1 px-0.5 py-0 text-sm border-primary-1 font-semibold text-primary-1",
+      "fg": "rgb(239, 139, 132)",
+      "bg": [
+        244,
+        247,
+        248
+      ],
+      "ratio": 2.24,
+      "borderRatio": 2.24,
+      "placeholderRatio": null
+    },
+    {
+      "client": "aceprev",
+      "mode": "light",
+      "tab": "feedback",
+      "text": "Tentar novamente",
+      "className": "\n          flex items-center justify-center rounded-sm px-xs border-[1px] gap-4xs leading-none\n          focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring\n          border-content-link text-content-link hover:border-action-primary-hover hover:text-content-link active:bg-selection-background active:border-action-primary-active active:text-content-on-brand\n          w-full mobile:w-auto\n          h-control-md\n          w-auto\n        ",
+      "fg": "rgb(239, 139, 132)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 2.41,
+      "borderRatio": 2.41,
+      "placeholderRatio": null
+    },
+    {
+      "client": "aceprev",
+      "mode": "light",
+      "tab": "feedback",
+      "text": "Modal success",
+      "className": "\n          flex items-center justify-center rounded-sm px-xs border-[1px] gap-4xs leading-none\n          focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring\n          border-content-link text-content-link hover:border-action-primary-hover hover:text-content-link active:bg-selection-background active:border-action-primary-active active:text-content-on-brand\n          undefined\n          h-control-md\n          w-auto\n        ",
+      "fg": "rgb(239, 139, 132)",
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 2.41,
+      "borderRatio": 2.41,
+      "placeholderRatio": null
+    }
+  ]
+}

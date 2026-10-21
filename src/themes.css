@@ -132,3 +132,3344 @@
     --action-primary-background-hover: 190, 72, 104;
     --action-primary-background-active: 125, 41, 72;
   }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.rosa1, [data-ds-theme="rosa1"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"]) body {
+    --primary-1: 239, 139, 132;
+    --primary-2: 247, 162, 153;
+    --primary-3: 226, 119, 113;
+    --primary-4: 94, 53, 53;
+    --primary-5: 49, 32, 35;
+    --secondary-1: 248, 207, 128;
+    --secondary-2: 255, 222, 160;
+    --secondary-3: 234, 184, 104;
+    --secondary-4: 86, 65, 35;
+    --secondary-5: 46, 37, 28;
+    --tertiary-1: 173, 157, 212;
+    --tertiary-2: 193, 179, 228;
+    --tertiary-3: 155, 136, 194;
+    --tertiary-4: 72, 58, 83;
+    --tertiary-5: 38, 31, 45;
+    --bg-light: 24, 22, 28;
+    --bg-lighter: 33, 29, 37;
+    --bg-dark: 43, 37, 47;
+    --bg-disabled: 51, 45, 56;
+    --surface-card: 33, 29, 37;
+    --content-link: var(--primary-1);
+    --focus-ring: var(--secondary-1);
+    --action-primary-background: var(--primary-1);
+    --action-primary-background-hover: var(--primary-2);
+    --action-primary-background-active: var(--primary-3);
+    --action-primary-content: 24, 22, 28;
+    --action-primary-ghost-background: var(--primary-5);
+    --action-secondary-background: var(--secondary-1);
+    --action-secondary-background-hover: var(--secondary-2);
+    --action-secondary-background-active: var(--secondary-3);
+    --action-secondary-content: 24, 22, 28;
+    --action-tertiary-background: var(--tertiary-1);
+    --action-tertiary-background-hover: var(--tertiary-2);
+    --action-tertiary-background-active: var(--tertiary-3);
+    --action-tertiary-content: 24, 22, 28;
+    --notice-secondary-content: 24, 22, 28;
+    --selection-content: 24, 22, 28;
+    --content-on-brand: 24, 22, 28;
+    --switch-track-primary-on: 181, 86, 81;
+    --selection-background: var(--primary-1);
+    --selection-background-hover: var(--primary-2);
+    --checkbox-selected: 181, 86, 81;
+    --chart-1: var(--primary-1);
+    --chart-2: var(--tertiary-1);
+    --chart-3: var(--secondary-1);
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+    --white: 255,255,255;
+    --secondary-1: 0,110,47;
+    --secondary-2: 0,81,34;
+    --secondary-3: 0,52,22;
+    --secondary-4: 198,238,215;
+    --secondary-5: 237,255,245;
+    --tertiary-1: 25,28,31;
+    --tertiary-2: 69,90,100;
+    --tertiary-3: 112,119,128;
+    --tertiary-4: 201,206,212;
+    --tertiary-5: 235,235,235;
+    --danger-1: 168,26,10;
+    --danger-2: 131,13,0;
+    --danger-3: 89,9,0;
+    --danger-4: 249,202,200;
+    --danger-5: 255,240,240;
+    --danger-6: 216,8,19;
+    --warning-1: 234,179,8;
+    --warning-2: 158,108,3;
+    --warning-3: 161,98,7;
+    --warning-4: 254,249,195;
+    --warning-5: 254,252,232;
+    --success-1: 46,133,71;
+    --success-2: 153,233,187;
+    --success-3: 237,255,245;
+    --grayscale-1: 25,28,31;
+    --grayscale-2: 69,90,100;
+    --grayscale-3: 112,119,128;
+    --grayscale-4: 201,206,212;
+    --grayscale-5: 235,235,235;
+    --overlay: 153,153,153;
+    --bg-lighter: 251,254,255;
+    --bg-light: 244,247,248;
+    --bg-dark: 239,239,239;
+    --bg-disabled: 235,235,235;
+    --surface-card: 255,255,255;
+    --text-primary: 24,24,24;
+    --text-secondary: 92,92,92;
+    --text-tertiary: 105,105,105;
+    --text-disabled: 163,164,165;
+    --content-primary: 24,24,24;
+    --content-secondary: 92,92,92;
+    --content-muted: 105,105,105;
+    --content-disabled: 163,164,165;
+    --content-inverse: 255,255,255;
+    --action-secondary-content: 255,255,255;
+    --action-tertiary-content: 255,255,255;
+    --action-danger-background: 168,26,10;
+    --action-danger-background-hover: 131,13,0;
+    --action-danger-background-active: 89,9,0;
+    --action-danger-content: 255,255,255;
+    --notice-secondary-content: 255,255,255;
+    --action-warning-background: 161,98,7;
+    --action-warning-background-hover: 133,77,14;
+    --action-warning-background-active: 113,63,18;
+    --action-warning-content: 255,255,255;
+    --surface-page: 244,247,248;
+    --surface-card-semantic: 255,255,255;
+    --surface-subtle: 251,254,255;
+    --surface-muted: 239,239,239;
+    --surface-disabled: 235,235,235;
+    --surface-action-neutral: 25,28,31;
+    --surface-tooltip: 25,28,31;
+    --footer-background: 19,19,19;
+    --border-subtle: 235,235,235;
+    --border-default: 201,206,212;
+    --border-strong: 69,90,100;
+    --border-disabled: 201,206,212;
+    --icon-default: 112,119,128;
+    --field-surface: 255,255,255;
+    --field-surface-disabled: 244,247,248;
+    --field-border-default: 112,119,128;
+    --field-border-active: 69,90,100;
+    --field-border-error: 216,8,19;
+    --field-content: 24,24,24;
+    --field-placeholder: 161,168,176;
+    --field-content-disabled: 98,107,118;
+    --field-placeholder-disabled: 178,184,192;
+    --field-icon: 112,119,128;
+    --field-assistive: 92,92,92;
+    --switch-track-off: 201,206,212;
+    --switch-track-disabled: 201,206,212;
+    --switch-track-contract-on: 46,133,71;
+    --switch-track-contract-off: 168,26,10;
+    --switch-track-theme-on: 25,28,31;
+    --switch-knob: 255,255,255;
+    --switch-knob-disabled: 244,247,248;
+    --switch-knob-theme-on: 0,0,0;
+    --radio-surface: 255,255,255;
+    --radio-border: 69,90,100;
+    --radio-error: 216,8,19;
+    --radio-disabled-border: 201,206,212;
+    --radio-disabled-surface: 244,247,248;
+    --radio-disabled-content: 112,119,128;
+    --checkbox-surface: 255,255,255;
+    --checkbox-border: 69,90,100;
+    --checkbox-error: 216,8,19;
+    --checkbox-disabled-border: 201,206,212;
+    --checkbox-disabled-surface: 244,247,248;
+    --checkbox-disabled-content: 112,119,128;
+    --loading-circular-track: 235,235,235;
+    --chart-muted-1: 197,202,208;
+    --chart-muted-2: 217,221,225;
+    --chart-muted-3: 236,238,240;
+    --chart-muted-4: 174,181,189;
+    --chart-tooltip-background: 25,28,31;
+    --chart-tooltip-content: 255,255,255;
+    --chart-line-neutral: 24,24,24;
+    --chart-grid: 229,231,235;
+    --chart-axis: 107,114,128;
+    --chart-axis-border: 209,213,219;
+    --chart-tooltip-text: 17,24,39;
+    --status-blue-solid-background: 0,108,226;
+    --status-blue-solid-foreground: 255,255,255;
+    --status-blue-outline-border: 0,108,226;
+    --status-blue-outline-foreground: 7,68,138;
+    --status-blue-soft-background: 235,240,255;
+    --status-blue-soft-foreground: 7,68,138;
+    --status-green-solid-background: 46,133,71;
+    --status-green-solid-foreground: 255,255,255;
+    --status-green-outline-border: 46,133,71;
+    --status-green-outline-foreground: 0,110,47;
+    --status-green-soft-background: 237,255,245;
+    --status-green-soft-foreground: 0,110,47;
+    --status-orange-solid-background: 201,76,0;
+    --status-orange-solid-foreground: 255,255,255;
+    --status-orange-outline-border: 201,76,0;
+    --status-orange-outline-foreground: 201,76,0;
+    --status-orange-soft-background: 255,247,237;
+    --status-orange-soft-foreground: 154,52,18;
+    --status-yellow-solid-background: 234,179,8;
+    --status-yellow-solid-foreground: 25,28,31;
+    --status-yellow-outline-border: 234,179,8;
+    --status-yellow-outline-foreground: 133,77,14;
+    --status-yellow-soft-background: 254,249,195;
+    --status-yellow-soft-foreground: 133,77,14;
+    --status-red-solid-background: 168,26,10;
+    --status-red-solid-foreground: 255,255,255;
+    --status-red-outline-border: 168,26,10;
+    --status-red-outline-foreground: 131,13,0;
+    --status-red-soft-background: 255,240,240;
+    --status-red-soft-foreground: 131,13,0;
+    --status-slate-solid-background: 69,90,100;
+    --status-slate-solid-foreground: 255,255,255;
+    --status-slate-outline-border: 69,90,100;
+    --status-slate-outline-foreground: 25,28,31;
+    --status-slate-soft-background: 235,235,235;
+    --status-slate-soft-foreground: 25,28,31;
+    --status-black-solid-background: 0,0,0;
+    --status-black-solid-foreground: 255,255,255;
+    --status-black-outline-border: 0,0,0;
+    --status-black-outline-foreground: 0,0,0;
+    --status-black-soft-background: 235,235,235;
+    --status-black-soft-foreground: 0,0,0;
+    --focus-indicator-color: rgb(var(--focus-ring));
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.basf, [data-ds-theme="basf"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"]) body {
+    --primary-1: 234, 113, 0;
+    --primary-2: 200, 93, 0;
+    --primary-3: 146, 68, 0;
+    --primary-4: 255, 196, 137;
+    --primary-5: 255, 235, 215;
+    --content-link: 146, 68, 0;
+    --content-on-brand: 255,255,255;
+    --action-primary-background: 234, 113, 0;
+    --action-primary-background-hover: 200, 93, 0;
+    --action-primary-background-active: 146, 68, 0;
+    --action-primary-content: 255,255,255;
+    --action-primary-ghost-background: 255, 235, 215;
+    --action-secondary-background: 0,110,47;
+    --action-secondary-background-hover: 0,81,34;
+    --action-secondary-background-active: 0,52,22;
+    --action-secondary-ghost-background: 237,255,245;
+    --action-tertiary-background: 25,28,31;
+    --action-tertiary-background-hover: 69,90,100;
+    --action-tertiary-background-active: 112,119,128;
+    --content-brand-secondary: 0,110,47;
+    --selection-background: 234, 113, 0;
+    --selection-background-hover: 200, 93, 0;
+    --selection-border: 234, 113, 0;
+    --selection-content: 255,255,255;
+    --focus-ring: 146, 68, 0;
+    --feedback-danger-strong: 168,26,10;
+    --feedback-danger-soft: 255,240,240;
+    --feedback-danger-border: 168,26,10;
+    --feedback-danger-content: 168,26,10;
+    --feedback-warning-strong: 158,108,3;
+    --feedback-warning-soft: 254,252,232;
+    --feedback-warning-border: 158,108,3;
+    --feedback-warning-content: 161,98,7;
+    --feedback-success-strong: 46,133,71;
+    --feedback-success-soft: 237,255,245;
+    --feedback-success-border: 46,133,71;
+    --feedback-success-content: 0,110,47;
+    --feedback-info-strong: 234, 113, 0;
+    --feedback-info-soft: 255, 235, 215;
+    --feedback-info-border: 234, 113, 0;
+    --feedback-info-content: 200, 93, 0;
+    --field-assistive-error: 216,8,19;
+    --switch-track-primary-on: 234, 113, 0;
+    --switch-track-secondary-on: 0,110,47;
+    --switch-track-tertiary-on: 25,28,31;
+    --switch-track-theme-off: 255, 235, 215;
+    --radio-selected: 234, 113, 0;
+    --checkbox-selected: 234, 113, 0;
+    --loading-circular-indicator: 234, 113, 0;
+    --chart-1: 15,98,193;
+    --chart-2: 22,211,154;
+    --chart-3: 254,176,25;
+    --chart-4: 255,69,96;
+    --chart-5: 119,93,208;
+    --chart-6: 0,184,217;
+    --chart-7: 255,143,0;
+    --chart-8: 38,166,154;
+    --chart-9: 236,64,122;
+    --chart-10: 124,179,66;
+    --chart-11: 92,107,192;
+    --chart-12: 141,110,99;
+    --chart-donut-1: 102,210,136;
+    --chart-donut-2: 49,130,246;
+    --chart-donut-3: 255,194,92;
+    --chart-donut-4: 124,88,232;
+    --chart-donut-5: 255,107,107;
+    --chart-donut-6: 0,184,217;
+    --chart-donut-7: 255,143,0;
+    --chart-donut-8: 38,166,154;
+    --chart-donut-9: 236,64,122;
+    --chart-donut-10: 124,179,66;
+    --chart-donut-11: 92,107,192;
+    --chart-donut-12: 141,110,99;
+    --chart-balance: 0,167,111;
+    --chart-invested: 30,144,255;
+    --brand-accent-1: 204, 0, 51;
+    --brand-accent-2: 246, 195, 67;
+    --brand-accent-3: 202, 160, 55;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.funssest, [data-ds-theme="funssest"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.funssest, [data-ds-theme="funssest"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.funssest, [data-ds-theme="funssest"]) body {
+    --primary-1: 242, 93, 33;
+    --primary-2: 181, 68, 22;
+    --primary-3: 128, 45, 11;
+    --primary-4: 255, 151, 109;
+    --primary-5: 255, 229, 219;
+    --content-link: 181, 68, 22;
+    --content-on-brand: 255,255,255;
+    --action-primary-background: 242, 93, 33;
+    --action-primary-background-hover: 181, 68, 22;
+    --action-primary-background-active: 128, 45, 11;
+    --action-primary-content: 255,255,255;
+    --action-primary-ghost-background: 255, 229, 219;
+    --action-secondary-background: 0,110,47;
+    --action-secondary-background-hover: 0,81,34;
+    --action-secondary-background-active: 0,52,22;
+    --action-secondary-ghost-background: 237,255,245;
+    --action-tertiary-background: 25,28,31;
+    --action-tertiary-background-hover: 69,90,100;
+    --action-tertiary-background-active: 112,119,128;
+    --content-brand-secondary: 0,110,47;
+    --selection-background: 242, 93, 33;
+    --selection-background-hover: 181, 68, 22;
+    --selection-border: 242, 93, 33;
+    --selection-content: 255,255,255;
+    --focus-ring: 128, 45, 11;
+    --feedback-danger-strong: 168,26,10;
+    --feedback-danger-soft: 255,240,240;
+    --feedback-danger-border: 168,26,10;
+    --feedback-danger-content: 168,26,10;
+    --feedback-warning-strong: 158,108,3;
+    --feedback-warning-soft: 254,252,232;
+    --feedback-warning-border: 158,108,3;
+    --feedback-warning-content: 161,98,7;
+    --feedback-success-strong: 46,133,71;
+    --feedback-success-soft: 237,255,245;
+    --feedback-success-border: 46,133,71;
+    --feedback-success-content: 0,110,47;
+    --feedback-info-strong: 242, 93, 33;
+    --feedback-info-soft: 255, 229, 219;
+    --feedback-info-border: 242, 93, 33;
+    --feedback-info-content: 181, 68, 22;
+    --field-assistive-error: 216,8,19;
+    --switch-track-primary-on: 242, 93, 33;
+    --switch-track-secondary-on: 0,110,47;
+    --switch-track-tertiary-on: 25,28,31;
+    --switch-track-theme-off: 255, 229, 219;
+    --radio-selected: 242, 93, 33;
+    --checkbox-selected: 242, 93, 33;
+    --loading-circular-indicator: 242, 93, 33;
+    --chart-1: 15,98,193;
+    --chart-2: 22,211,154;
+    --chart-3: 254,176,25;
+    --chart-4: 255,69,96;
+    --chart-5: 119,93,208;
+    --chart-6: 0,184,217;
+    --chart-7: 255,143,0;
+    --chart-8: 38,166,154;
+    --chart-9: 236,64,122;
+    --chart-10: 124,179,66;
+    --chart-11: 92,107,192;
+    --chart-12: 141,110,99;
+    --chart-donut-1: 102,210,136;
+    --chart-donut-2: 49,130,246;
+    --chart-donut-3: 255,194,92;
+    --chart-donut-4: 124,88,232;
+    --chart-donut-5: 255,107,107;
+    --chart-donut-6: 0,184,217;
+    --chart-donut-7: 255,143,0;
+    --chart-donut-8: 38,166,154;
+    --chart-donut-9: 236,64,122;
+    --chart-donut-10: 124,179,66;
+    --chart-donut-11: 92,107,192;
+    --chart-donut-12: 141,110,99;
+    --chart-balance: 0,167,111;
+    --chart-invested: 30,144,255;
+    --brand-accent-1: 107, 107, 107;
+    --brand-accent-2: 242, 174, 121;
+    --brand-accent-3: 198, 143, 99;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.maisprevidencia, [data-ds-theme="maisprevidencia"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.maisprevidencia, [data-ds-theme="maisprevidencia"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.maisprevidencia, [data-ds-theme="maisprevidencia"]) body {
+    --primary-1: 234, 113, 0;
+    --primary-2: 200, 93, 0;
+    --primary-3: 146, 68, 0;
+    --primary-4: 255, 196, 137;
+    --primary-5: 255, 235, 215;
+    --content-link: 146, 68, 0;
+    --content-on-brand: 255,255,255;
+    --action-primary-background: 234, 113, 0;
+    --action-primary-background-hover: 200, 93, 0;
+    --action-primary-background-active: 146, 68, 0;
+    --action-primary-content: 255,255,255;
+    --action-primary-ghost-background: 255, 235, 215;
+    --action-secondary-background: 0,110,47;
+    --action-secondary-background-hover: 0,81,34;
+    --action-secondary-background-active: 0,52,22;
+    --action-secondary-ghost-background: 237,255,245;
+    --action-tertiary-background: 25,28,31;
+    --action-tertiary-background-hover: 69,90,100;
+    --action-tertiary-background-active: 112,119,128;
+    --content-brand-secondary: 0,110,47;
+    --selection-background: 234, 113, 0;
+    --selection-background-hover: 200, 93, 0;
+    --selection-border: 234, 113, 0;
+    --selection-content: 255,255,255;
+    --focus-ring: 146, 68, 0;
+    --feedback-danger-strong: 168,26,10;
+    --feedback-danger-soft: 255,240,240;
+    --feedback-danger-border: 168,26,10;
+    --feedback-danger-content: 168,26,10;
+    --feedback-warning-strong: 158,108,3;
+    --feedback-warning-soft: 254,252,232;
+    --feedback-warning-border: 158,108,3;
+    --feedback-warning-content: 161,98,7;
+    --feedback-success-strong: 46,133,71;
+    --feedback-success-soft: 237,255,245;
+    --feedback-success-border: 46,133,71;
+    --feedback-success-content: 0,110,47;
+    --feedback-info-strong: 234, 113, 0;
+    --feedback-info-soft: 255, 235, 215;
+    --feedback-info-border: 234, 113, 0;
+    --feedback-info-content: 200, 93, 0;
+    --field-assistive-error: 216,8,19;
+    --switch-track-primary-on: 234, 113, 0;
+    --switch-track-secondary-on: 0,110,47;
+    --switch-track-tertiary-on: 25,28,31;
+    --switch-track-theme-off: 255, 235, 215;
+    --radio-selected: 234, 113, 0;
+    --checkbox-selected: 234, 113, 0;
+    --loading-circular-indicator: 234, 113, 0;
+    --chart-1: 15,98,193;
+    --chart-2: 22,211,154;
+    --chart-3: 254,176,25;
+    --chart-4: 255,69,96;
+    --chart-5: 119,93,208;
+    --chart-6: 0,184,217;
+    --chart-7: 255,143,0;
+    --chart-8: 38,166,154;
+    --chart-9: 236,64,122;
+    --chart-10: 124,179,66;
+    --chart-11: 92,107,192;
+    --chart-12: 141,110,99;
+    --chart-donut-1: 102,210,136;
+    --chart-donut-2: 49,130,246;
+    --chart-donut-3: 255,194,92;
+    --chart-donut-4: 124,88,232;
+    --chart-donut-5: 255,107,107;
+    --chart-donut-6: 0,184,217;
+    --chart-donut-7: 255,143,0;
+    --chart-donut-8: 38,166,154;
+    --chart-donut-9: 236,64,122;
+    --chart-donut-10: 124,179,66;
+    --chart-donut-11: 92,107,192;
+    --chart-donut-12: 141,110,99;
+    --chart-balance: 0,167,111;
+    --chart-invested: 30,144,255;
+    --brand-accent-1: 89, 176, 202;
+    --brand-accent-2: 141, 156, 37;
+    --brand-accent-3: 66, 126, 128;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.aceprev, [data-ds-theme="aceprev"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.aceprev, [data-ds-theme="aceprev"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.aceprev, [data-ds-theme="aceprev"]) body {
+    --primary-1: 239, 139, 132;
+    --primary-2: 215, 125, 119;
+    --primary-3: 191, 111, 106;
+    --primary-4: 249, 211, 208;
+    --primary-5: 253, 243, 243;
+    --content-link: 239, 139, 132;
+    --content-on-brand: 20, 25, 31;
+    --action-primary-background: 239, 139, 132;
+    --action-primary-background-hover: 215, 125, 119;
+    --action-primary-background-active: 191, 111, 106;
+    --action-primary-content: 20, 25, 31;
+    --action-primary-ghost-background: 253, 243, 243;
+    --action-secondary-background: 41, 51, 62;
+    --action-secondary-background-hover: 29, 38, 48;
+    --action-secondary-background-active: 17, 24, 32;
+    --action-secondary-ghost-background: 239, 239, 239;
+    --action-tertiary-background: 41, 51, 62;
+    --action-tertiary-background-hover: 29, 38, 48;
+    --action-tertiary-background-active: 17, 24, 32;
+    --content-brand-secondary: 41, 51, 62;
+    --selection-background: 239, 139, 132;
+    --selection-background-hover: 215, 125, 119;
+    --selection-border: 239, 139, 132;
+    --selection-content: 20, 25, 31;
+    --focus-ring: 239, 139, 132;
+    --feedback-danger-strong: 128, 0, 24;
+    --feedback-danger-soft: 255, 240, 243;
+    --feedback-danger-border: 128, 0, 24;
+    --feedback-danger-content: 128, 0, 24;
+    --feedback-warning-strong: 107, 67, 0;
+    --feedback-warning-soft: 255, 248, 225;
+    --feedback-warning-border: 107, 67, 0;
+    --feedback-warning-content: 107, 67, 0;
+    --feedback-success-strong: 0, 107, 53;
+    --feedback-success-soft: 239, 255, 245;
+    --feedback-success-border: 0, 107, 53;
+    --feedback-success-content: 0, 107, 53;
+    --feedback-info-strong: 22, 79, 133;
+    --feedback-info-soft: 238, 246, 255;
+    --feedback-info-border: 22, 79, 133;
+    --feedback-info-content: 22, 79, 133;
+    --field-assistive-error: 128, 0, 24;
+    --switch-track-primary-on: 239, 139, 132;
+    --switch-track-secondary-on: 239, 139, 132;
+    --switch-track-tertiary-on: 239, 139, 132;
+    --switch-track-theme-off: 235,240,255;
+    --radio-selected: 239, 139, 132;
+    --checkbox-selected: 239, 139, 132;
+    --loading-circular-indicator: 15,98,193;
+    --chart-1: 239, 139, 132;
+    --chart-2: 248, 207, 128;
+    --chart-3: 173, 157, 212;
+    --chart-4: 134, 100, 176;
+    --chart-5: 222, 128, 100;
+    --chart-6: 75, 169, 173;
+    --chart-7: 79, 134, 198;
+    --chart-8: 198, 106, 160;
+    --chart-9: 156, 120, 67;
+    --chart-10: 108, 155, 116;
+    --chart-11: 131, 117, 198;
+    --chart-12: 161, 91, 82;
+    --chart-donut-1: 239, 139, 132;
+    --chart-donut-2: 248, 207, 128;
+    --chart-donut-3: 173, 157, 212;
+    --chart-donut-4: 134, 100, 176;
+    --chart-donut-5: 222, 128, 100;
+    --chart-donut-6: 75, 169, 173;
+    --chart-donut-7: 79, 134, 198;
+    --chart-donut-8: 198, 106, 160;
+    --chart-donut-9: 156, 120, 67;
+    --chart-donut-10: 108, 155, 116;
+    --chart-donut-11: 131, 117, 198;
+    --chart-donut-12: 161, 91, 82;
+    --chart-balance: 239, 139, 132;
+    --chart-invested: 248, 207, 128;
+    --brand-accent-1: 248, 207, 128;
+    --brand-accent-2: 173, 157, 212;
+    --brand-accent-3: 69, 70, 125;
+    --action-tertiary-ghost-background: 239, 239, 239;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.cibrius, [data-ds-theme="cibrius"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.cibrius, [data-ds-theme="cibrius"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.cibrius, [data-ds-theme="cibrius"]) body {
+    --primary-1: 121, 154, 59;
+    --primary-2: 109, 139, 53;
+    --primary-3: 97, 123, 47;
+    --primary-4: 204, 217, 181;
+    --primary-5: 242, 245, 235;
+    --content-link: 121, 154, 59;
+    --content-on-brand: 20, 25, 31;
+    --action-primary-background: 121, 154, 59;
+    --action-primary-background-hover: 109, 139, 53;
+    --action-primary-background-active: 97, 123, 47;
+    --action-primary-content: 20, 25, 31;
+    --action-primary-ghost-background: 242, 245, 235;
+    --action-secondary-background: 41, 51, 62;
+    --action-secondary-background-hover: 29, 38, 48;
+    --action-secondary-background-active: 17, 24, 32;
+    --action-secondary-ghost-background: 239, 239, 239;
+    --action-tertiary-background: 41, 51, 62;
+    --action-tertiary-background-hover: 29, 38, 48;
+    --action-tertiary-background-active: 17, 24, 32;
+    --content-brand-secondary: 41, 51, 62;
+    --selection-background: 121, 154, 59;
+    --selection-background-hover: 109, 139, 53;
+    --selection-border: 121, 154, 59;
+    --selection-content: 20, 25, 31;
+    --focus-ring: 121, 154, 59;
+    --feedback-danger-strong: 128, 0, 24;
+    --feedback-danger-soft: 255, 240, 243;
+    --feedback-danger-border: 128, 0, 24;
+    --feedback-danger-content: 128, 0, 24;
+    --feedback-warning-strong: 107, 67, 0;
+    --feedback-warning-soft: 255, 248, 225;
+    --feedback-warning-border: 107, 67, 0;
+    --feedback-warning-content: 107, 67, 0;
+    --feedback-success-strong: 0, 107, 53;
+    --feedback-success-soft: 239, 255, 245;
+    --feedback-success-border: 0, 107, 53;
+    --feedback-success-content: 0, 107, 53;
+    --feedback-info-strong: 22, 79, 133;
+    --feedback-info-soft: 238, 246, 255;
+    --feedback-info-border: 22, 79, 133;
+    --feedback-info-content: 22, 79, 133;
+    --field-assistive-error: 128, 0, 24;
+    --switch-track-primary-on: 121, 154, 59;
+    --switch-track-secondary-on: 121, 154, 59;
+    --switch-track-tertiary-on: 121, 154, 59;
+    --switch-track-theme-off: 235,240,255;
+    --radio-selected: 121, 154, 59;
+    --checkbox-selected: 121, 154, 59;
+    --loading-circular-indicator: 15,98,193;
+    --chart-1: 121, 154, 59;
+    --chart-2: 41, 56, 92;
+    --chart-3: 97, 168, 173;
+    --chart-4: 134, 100, 176;
+    --chart-5: 222, 128, 100;
+    --chart-6: 75, 169, 173;
+    --chart-7: 79, 134, 198;
+    --chart-8: 198, 106, 160;
+    --chart-9: 156, 120, 67;
+    --chart-10: 108, 155, 116;
+    --chart-11: 131, 117, 198;
+    --chart-12: 161, 91, 82;
+    --chart-donut-1: 121, 154, 59;
+    --chart-donut-2: 41, 56, 92;
+    --chart-donut-3: 97, 168, 173;
+    --chart-donut-4: 134, 100, 176;
+    --chart-donut-5: 222, 128, 100;
+    --chart-donut-6: 75, 169, 173;
+    --chart-donut-7: 79, 134, 198;
+    --chart-donut-8: 198, 106, 160;
+    --chart-donut-9: 156, 120, 67;
+    --chart-donut-10: 108, 155, 116;
+    --chart-donut-11: 131, 117, 198;
+    --chart-donut-12: 161, 91, 82;
+    --chart-balance: 121, 154, 59;
+    --chart-invested: 41, 56, 92;
+    --brand-accent-1: 41, 56, 92;
+    --brand-accent-2: 97, 168, 173;
+    --brand-accent-3: 80, 138, 142;
+    --action-tertiary-ghost-background: 239, 239, 239;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.serpros, [data-ds-theme="serpros"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.serpros, [data-ds-theme="serpros"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.serpros, [data-ds-theme="serpros"]) body {
+    --primary-1: 0, 166, 217;
+    --primary-2: 0, 149, 195;
+    --primary-3: 0, 133, 174;
+    --primary-4: 158, 221, 241;
+    --primary-5: 230, 246, 251;
+    --content-link: 0, 166, 217;
+    --content-on-brand: 20, 25, 31;
+    --action-primary-background: 0, 166, 217;
+    --action-primary-background-hover: 0, 149, 195;
+    --action-primary-background-active: 0, 133, 174;
+    --action-primary-content: 20, 25, 31;
+    --action-primary-ghost-background: 230, 246, 251;
+    --action-secondary-background: 41, 51, 62;
+    --action-secondary-background-hover: 29, 38, 48;
+    --action-secondary-background-active: 17, 24, 32;
+    --action-secondary-ghost-background: 239, 239, 239;
+    --action-tertiary-background: 41, 51, 62;
+    --action-tertiary-background-hover: 29, 38, 48;
+    --action-tertiary-background-active: 17, 24, 32;
+    --content-brand-secondary: 41, 51, 62;
+    --selection-background: 0, 166, 217;
+    --selection-background-hover: 0, 149, 195;
+    --selection-border: 0, 166, 217;
+    --selection-content: 20, 25, 31;
+    --focus-ring: 0, 166, 217;
+    --feedback-danger-strong: 128, 0, 24;
+    --feedback-danger-soft: 255, 240, 243;
+    --feedback-danger-border: 128, 0, 24;
+    --feedback-danger-content: 128, 0, 24;
+    --feedback-warning-strong: 107, 67, 0;
+    --feedback-warning-soft: 255, 248, 225;
+    --feedback-warning-border: 107, 67, 0;
+    --feedback-warning-content: 107, 67, 0;
+    --feedback-success-strong: 0, 107, 53;
+    --feedback-success-soft: 239, 255, 245;
+    --feedback-success-border: 0, 107, 53;
+    --feedback-success-content: 0, 107, 53;
+    --feedback-info-strong: 22, 79, 133;
+    --feedback-info-soft: 238, 246, 255;
+    --feedback-info-border: 22, 79, 133;
+    --feedback-info-content: 22, 79, 133;
+    --field-assistive-error: 128, 0, 24;
+    --switch-track-primary-on: 0, 166, 217;
+    --switch-track-secondary-on: 0, 166, 217;
+    --switch-track-tertiary-on: 0, 166, 217;
+    --switch-track-theme-off: 235,240,255;
+    --radio-selected: 0, 166, 217;
+    --checkbox-selected: 0, 166, 217;
+    --loading-circular-indicator: 15,98,193;
+    --chart-1: 0, 166, 217;
+    --chart-2: 167, 197, 22;
+    --chart-3: 243, 154, 50;
+    --chart-4: 134, 100, 176;
+    --chart-5: 222, 128, 100;
+    --chart-6: 75, 169, 173;
+    --chart-7: 79, 134, 198;
+    --chart-8: 198, 106, 160;
+    --chart-9: 156, 120, 67;
+    --chart-10: 108, 155, 116;
+    --chart-11: 131, 117, 198;
+    --chart-12: 161, 91, 82;
+    --chart-donut-1: 0, 166, 217;
+    --chart-donut-2: 167, 197, 22;
+    --chart-donut-3: 243, 154, 50;
+    --chart-donut-4: 134, 100, 176;
+    --chart-donut-5: 222, 128, 100;
+    --chart-donut-6: 75, 169, 173;
+    --chart-donut-7: 79, 134, 198;
+    --chart-donut-8: 198, 106, 160;
+    --chart-donut-9: 156, 120, 67;
+    --chart-donut-10: 108, 155, 116;
+    --chart-donut-11: 131, 117, 198;
+    --chart-donut-12: 161, 91, 82;
+    --chart-balance: 0, 166, 217;
+    --chart-invested: 167, 197, 22;
+    --brand-accent-1: 167, 197, 22;
+    --brand-accent-2: 243, 154, 50;
+    --brand-accent-3: 199, 126, 41;
+    --action-tertiary-ghost-background: 239, 239, 239;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.einvest, [data-ds-theme="einvest"]) body {
+    --primary-1: 7, 133, 66;
+    --primary-2: 6, 120, 59;
+    --primary-3: 6, 106, 53;
+    --primary-4: 161, 209, 183;
+    --primary-5: 230, 243, 236;
+    --content-link: 7, 133, 66;
+    --content-on-brand: 255, 255, 255;
+    --action-primary-background: 7, 133, 66;
+    --action-primary-background-hover: 6, 120, 59;
+    --action-primary-background-active: 6, 106, 53;
+    --action-primary-content: 255, 255, 255;
+    --action-primary-ghost-background: 230, 243, 236;
+    --action-secondary-background: 41, 51, 62;
+    --action-secondary-background-hover: 29, 38, 48;
+    --action-secondary-background-active: 17, 24, 32;
+    --action-secondary-ghost-background: 239, 239, 239;
+    --action-tertiary-background: 41, 51, 62;
+    --action-tertiary-background-hover: 29, 38, 48;
+    --action-tertiary-background-active: 17, 24, 32;
+    --content-brand-secondary: 41, 51, 62;
+    --selection-background: 7, 133, 66;
+    --selection-background-hover: 6, 120, 59;
+    --selection-border: 7, 133, 66;
+    --selection-content: 255, 255, 255;
+    --focus-ring: 7, 133, 66;
+    --feedback-danger-strong: 128, 0, 24;
+    --feedback-danger-soft: 255, 240, 243;
+    --feedback-danger-border: 128, 0, 24;
+    --feedback-danger-content: 128, 0, 24;
+    --feedback-warning-strong: 107, 67, 0;
+    --feedback-warning-soft: 255, 248, 225;
+    --feedback-warning-border: 107, 67, 0;
+    --feedback-warning-content: 107, 67, 0;
+    --feedback-success-strong: 0, 107, 53;
+    --feedback-success-soft: 239, 255, 245;
+    --feedback-success-border: 0, 107, 53;
+    --feedback-success-content: 0, 107, 53;
+    --feedback-info-strong: 22, 79, 133;
+    --feedback-info-soft: 238, 246, 255;
+    --feedback-info-border: 22, 79, 133;
+    --feedback-info-content: 22, 79, 133;
+    --field-assistive-error: 128, 0, 24;
+    --switch-track-primary-on: 7, 133, 66;
+    --switch-track-secondary-on: 7, 133, 66;
+    --switch-track-tertiary-on: 7, 133, 66;
+    --switch-track-theme-off: 235,240,255;
+    --radio-selected: 7, 133, 66;
+    --checkbox-selected: 7, 133, 66;
+    --loading-circular-indicator: 15,98,193;
+    --chart-1: 7, 133, 66;
+    --chart-2: 20, 123, 163;
+    --chart-3: 28, 43, 96;
+    --chart-4: 134, 100, 176;
+    --chart-5: 222, 128, 100;
+    --chart-6: 75, 169, 173;
+    --chart-7: 79, 134, 198;
+    --chart-8: 198, 106, 160;
+    --chart-9: 156, 120, 67;
+    --chart-10: 108, 155, 116;
+    --chart-11: 131, 117, 198;
+    --chart-12: 161, 91, 82;
+    --chart-donut-1: 7, 133, 66;
+    --chart-donut-2: 20, 123, 163;
+    --chart-donut-3: 28, 43, 96;
+    --chart-donut-4: 134, 100, 176;
+    --chart-donut-5: 222, 128, 100;
+    --chart-donut-6: 75, 169, 173;
+    --chart-donut-7: 79, 134, 198;
+    --chart-donut-8: 198, 106, 160;
+    --chart-donut-9: 156, 120, 67;
+    --chart-donut-10: 108, 155, 116;
+    --chart-donut-11: 131, 117, 198;
+    --chart-donut-12: 161, 91, 82;
+    --chart-balance: 7, 133, 66;
+    --chart-invested: 20, 123, 163;
+    --brand-accent-1: 20, 123, 163;
+    --brand-accent-2: 28, 43, 96;
+    --brand-accent-3: 23, 35, 79;
+    --action-tertiary-ghost-background: 239, 239, 239;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+    --white: 255,255,255;
+    --secondary-1: 111,218,145;
+    --secondary-2: 155,233,179;
+    --secondary-3: 202,246,216;
+    --secondary-4: 198,238,215;
+    --secondary-5: 237,255,245;
+    --tertiary-1: 25,28,31;
+    --tertiary-2: 69,90,100;
+    --tertiary-3: 112,119,128;
+    --tertiary-4: 201,206,212;
+    --tertiary-5: 235,235,235;
+    --danger-1: 255,139,145;
+    --danger-2: 255,174,178;
+    --danger-3: 255,205,208;
+    --danger-4: 100,45,51;
+    --danger-5: 58,29,34;
+    --danger-6: 255,139,145;
+    --warning-1: 255,213,92;
+    --warning-2: 255,202,40;
+    --warning-3: 255,220,119;
+    --warning-4: 91,70,17;
+    --warning-5: 55,43,15;
+    --success-1: 110,231,160;
+    --success-2: 8,122,62;
+    --success-3: 24,56,36;
+    --grayscale-1: 245,247,250;
+    --grayscale-2: 212,219,226;
+    --grayscale-3: 174,185,196;
+    --grayscale-4: 126,139,153;
+    --grayscale-5: 63,74,86;
+    --overlay: 153,153,153;
+    --bg-lighter: 27,33,40;
+    --bg-light: 20,25,31;
+    --bg-dark: 38,46,55;
+    --bg-disabled: 48,57,67;
+    --surface-card: 27,33,40;
+    --text-primary: 245,247,250;
+    --text-secondary: 212,219,226;
+    --text-tertiary: 190,199,208;
+    --text-disabled: 174,185,196;
+    --content-primary: 245,247,250;
+    --content-secondary: 212,219,226;
+    --content-muted: 190,199,208;
+    --content-disabled: 174,185,196;
+    --content-inverse: 255,255,255;
+    --content-on-brand: 20, 25, 31;
+    --action-primary-content: 20, 25, 31;
+    --action-secondary-background: 212, 219, 226;
+    --action-secondary-background-hover: 232, 237, 242;
+    --action-secondary-background-active: 188, 200, 211;
+    --action-secondary-content: 20, 25, 31;
+    --action-secondary-ghost-background: 38, 46, 55;
+    --action-tertiary-background: 212, 219, 226;
+    --action-tertiary-background-hover: 232, 237, 242;
+    --action-tertiary-background-active: 188, 200, 211;
+    --action-tertiary-content: 20, 25, 31;
+    --action-danger-background: 168,26,10;
+    --action-danger-background-hover: 131,13,0;
+    --action-danger-background-active: 89,9,0;
+    --action-danger-content: 255,255,255;
+    --content-brand-secondary: 212, 219, 226;
+    --selection-content: 20, 25, 31;
+    --notice-secondary-content: 20, 25, 31;
+    --action-warning-background: 161,98,7;
+    --action-warning-background-hover: 133,77,14;
+    --action-warning-background-active: 113,63,18;
+    --action-warning-content: 255,255,255;
+    --surface-page: 20,25,31;
+    --surface-card-semantic: 27,33,40;
+    --surface-subtle: 27,33,40;
+    --surface-muted: 38,46,55;
+    --surface-disabled: 48,57,67;
+    --surface-action-neutral: 9, 12, 16;
+    --surface-tooltip: 9,12,16;
+    --footer-background: 9,12,16;
+    --border-subtle: 63,74,86;
+    --border-default: 126,139,153;
+    --border-strong: 190,199,208;
+    --border-disabled: 99,112,126;
+    --icon-default: 212,219,226;
+    --feedback-danger-strong: 255, 204, 204;
+    --feedback-danger-soft: 55, 9, 9;
+    --feedback-danger-border: 255, 204, 204;
+    --feedback-danger-content: 255, 204, 204;
+    --feedback-warning-strong: 255, 235, 102;
+    --feedback-warning-soft: 38, 33, 0;
+    --feedback-warning-border: 255, 235, 102;
+    --feedback-warning-content: 255, 235, 102;
+    --feedback-success-strong: 110, 231, 160;
+    --feedback-success-soft: 5, 46, 22;
+    --feedback-success-border: 110, 231, 160;
+    --feedback-success-content: 110, 231, 160;
+    --feedback-info-strong: 147, 197, 253;
+    --feedback-info-soft: 16, 41, 64;
+    --feedback-info-border: 147, 197, 253;
+    --feedback-info-content: 147, 197, 253;
+    --field-surface: 27,33,40;
+    --field-surface-disabled: 48,57,67;
+    --field-border-default: 126,139,153;
+    --field-border-active: 190,199,208;
+    --field-border-error: 255,139,145;
+    --field-content: 245,247,250;
+    --field-placeholder: 112,124,138;
+    --field-content-disabled: 174,185,196;
+    --field-placeholder-disabled: 91,103,117;
+    --field-icon: 212,219,226;
+    --field-assistive: 212,219,226;
+    --field-assistive-error: 255, 204, 204;
+    --switch-track-off: 126,139,153;
+    --switch-track-disabled: 201,206,212;
+    --switch-track-contract-on: 46,133,71;
+    --switch-track-contract-off: 168,26,10;
+    --switch-track-theme-on: 25,28,31;
+    --switch-track-theme-off: 25,47,68;
+    --switch-knob: 255, 255, 255;
+    --switch-knob-disabled: 244,247,248;
+    --switch-knob-theme-on: 0,0,0;
+    --radio-surface: 27,33,40;
+    --radio-border: 190,199,208;
+    --radio-error: 216,8,19;
+    --radio-disabled-border: 201,206,212;
+    --radio-disabled-surface: 244,247,248;
+    --radio-disabled-content: 112,119,128;
+    --checkbox-surface: 27,33,40;
+    --checkbox-border: 190,199,208;
+    --checkbox-error: 216,8,19;
+    --checkbox-disabled-border: 201,206,212;
+    --checkbox-disabled-surface: 244,247,248;
+    --checkbox-disabled-content: 112,119,128;
+    --loading-circular-track: 63,74,86;
+    --loading-circular-indicator: 74,144,226;
+    --chart-4: 134, 100, 176;
+    --chart-5: 222, 128, 100;
+    --chart-6: 75, 169, 173;
+    --chart-7: 79, 134, 198;
+    --chart-8: 198, 106, 160;
+    --chart-9: 156, 120, 67;
+    --chart-10: 108, 155, 116;
+    --chart-11: 131, 117, 198;
+    --chart-12: 161, 91, 82;
+    --chart-donut-4: 134, 100, 176;
+    --chart-donut-5: 222, 128, 100;
+    --chart-donut-6: 75, 169, 173;
+    --chart-donut-7: 79, 134, 198;
+    --chart-donut-8: 198, 106, 160;
+    --chart-donut-9: 156, 120, 67;
+    --chart-donut-10: 108, 155, 116;
+    --chart-donut-11: 131, 117, 198;
+    --chart-donut-12: 161, 91, 82;
+    --chart-muted-1: 197,202,208;
+    --chart-muted-2: 217,221,225;
+    --chart-muted-3: 236,238,240;
+    --chart-muted-4: 174,181,189;
+    --chart-tooltip-background: 245,247,250;
+    --chart-tooltip-content: 20,25,31;
+    --chart-line-neutral: 245,247,250;
+    --chart-grid: 99,112,126;
+    --chart-axis: 212,219,226;
+    --chart-axis-border: 126,139,153;
+    --chart-tooltip-text: 20,25,31;
+    --status-blue-solid-background: 0,108,226;
+    --status-blue-solid-foreground: 255,255,255;
+    --status-blue-outline-border: 0,108,226;
+    --status-blue-outline-foreground: 7,68,138;
+    --status-blue-soft-background: 235,240,255;
+    --status-blue-soft-foreground: 7,68,138;
+    --status-green-solid-background: 46,133,71;
+    --status-green-solid-foreground: 255,255,255;
+    --status-green-outline-border: 46,133,71;
+    --status-green-outline-foreground: 0,110,47;
+    --status-green-soft-background: 237,255,245;
+    --status-green-soft-foreground: 0,110,47;
+    --status-orange-solid-background: 201,76,0;
+    --status-orange-solid-foreground: 255,255,255;
+    --status-orange-outline-border: 201,76,0;
+    --status-orange-outline-foreground: 201,76,0;
+    --status-orange-soft-background: 255,247,237;
+    --status-orange-soft-foreground: 154,52,18;
+    --status-yellow-solid-background: 234,179,8;
+    --status-yellow-solid-foreground: 25,28,31;
+    --status-yellow-outline-border: 234,179,8;
+    --status-yellow-outline-foreground: 133,77,14;
+    --status-yellow-soft-background: 254,249,195;
+    --status-yellow-soft-foreground: 133,77,14;
+    --status-red-solid-background: 168,26,10;
+    --status-red-solid-foreground: 255,255,255;
+    --status-red-outline-border: 168,26,10;
+    --status-red-outline-foreground: 131,13,0;
+    --status-red-soft-background: 255,240,240;
+    --status-red-soft-foreground: 131,13,0;
+    --status-slate-solid-background: 69,90,100;
+    --status-slate-solid-foreground: 255,255,255;
+    --status-slate-outline-border: 69,90,100;
+    --status-slate-outline-foreground: 25,28,31;
+    --status-slate-soft-background: 235,235,235;
+    --status-slate-soft-foreground: 25,28,31;
+    --status-black-solid-background: 0,0,0;
+    --status-black-solid-foreground: 255,255,255;
+    --status-black-outline-border: 0,0,0;
+    --status-black-outline-foreground: 0,0,0;
+    --status-black-soft-background: 235,235,235;
+    --status-black-soft-foreground: 0,0,0;
+    --action-tertiary-ghost-background: 38, 46, 55;
+    --focus-indicator-color: rgb(var(--focus-ring));
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.basf, [data-ds-theme="basf"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"]) body {
+    --primary-1: 255, 164, 81;
+    --primary-2: 255, 175, 102;
+    --primary-3: 204, 131, 65;
+    --primary-4: 97, 62, 31;
+    --primary-5: 60, 49, 40;
+    --content-link: 255, 164, 81;
+    --action-primary-background: 255, 164, 81;
+    --action-primary-background-hover: 255, 175, 102;
+    --action-primary-background-active: 204, 131, 65;
+    --action-primary-ghost-background: 60, 49, 40;
+    --selection-background: 255, 164, 81;
+    --selection-background-hover: 255, 175, 102;
+    --selection-border: 255, 164, 81;
+    --focus-ring: 255, 164, 81;
+    --switch-track-primary-on: 173, 112, 55;
+    --switch-track-secondary-on: 173, 112, 55;
+    --switch-track-tertiary-on: 173, 112, 55;
+    --radio-selected: 173, 112, 55;
+    --checkbox-selected: 173, 112, 55;
+    --chart-1: 255, 164, 81;
+    --chart-2: 213, 46, 88;
+    --chart-3: 248, 206, 101;
+    --chart-donut-1: 255, 164, 81;
+    --chart-donut-2: 213, 46, 88;
+    --chart-donut-3: 248, 206, 101;
+    --chart-balance: 255, 164, 81;
+    --chart-invested: 204, 0, 51;
+    --brand-accent-1: 213, 46, 88;
+    --brand-accent-2: 248, 206, 101;
+    --brand-accent-3: 248, 206, 101;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.funssest, [data-ds-theme="funssest"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.funssest, [data-ds-theme="funssest"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.funssest, [data-ds-theme="funssest"]) body {
+    --primary-1: 255, 148, 92;
+    --primary-2: 255, 161, 112;
+    --primary-3: 204, 118, 74;
+    --primary-4: 97, 56, 35;
+    --primary-5: 60, 46, 41;
+    --content-link: 255, 148, 92;
+    --action-primary-background: 255, 148, 92;
+    --action-primary-background-hover: 255, 161, 112;
+    --action-primary-background-active: 204, 118, 74;
+    --action-primary-ghost-background: 60, 46, 41;
+    --selection-background: 255, 148, 92;
+    --selection-background-hover: 255, 161, 112;
+    --selection-border: 255, 148, 92;
+    --focus-ring: 255, 148, 92;
+    --switch-track-primary-on: 173, 101, 63;
+    --switch-track-secondary-on: 173, 101, 63;
+    --switch-track-tertiary-on: 173, 101, 63;
+    --radio-selected: 173, 101, 63;
+    --checkbox-selected: 173, 101, 63;
+    --chart-1: 255, 148, 92;
+    --chart-2: 134, 134, 134;
+    --chart-3: 244, 189, 145;
+    --chart-donut-1: 255, 148, 92;
+    --chart-donut-2: 134, 134, 134;
+    --chart-donut-3: 244, 189, 145;
+    --chart-balance: 255, 148, 92;
+    --chart-invested: 107, 107, 107;
+    --brand-accent-1: 134, 134, 134;
+    --brand-accent-2: 244, 189, 145;
+    --brand-accent-3: 244, 189, 145;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.maisprevidencia, [data-ds-theme="maisprevidencia"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.maisprevidencia, [data-ds-theme="maisprevidencia"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.maisprevidencia, [data-ds-theme="maisprevidencia"]) body {
+    --primary-1: 255, 172, 106;
+    --primary-2: 255, 182, 124;
+    --primary-3: 204, 138, 85;
+    --primary-4: 97, 65, 40;
+    --primary-5: 60, 50, 44;
+    --content-link: 255, 172, 106;
+    --action-primary-background: 255, 172, 106;
+    --action-primary-background-hover: 255, 182, 124;
+    --action-primary-background-active: 204, 138, 85;
+    --action-primary-ghost-background: 60, 50, 44;
+    --selection-background: 255, 172, 106;
+    --selection-background-hover: 255, 182, 124;
+    --selection-border: 255, 172, 106;
+    --focus-ring: 255, 172, 106;
+    --switch-track-primary-on: 173, 117, 72;
+    --switch-track-secondary-on: 173, 117, 72;
+    --switch-track-tertiary-on: 173, 117, 72;
+    --radio-selected: 173, 117, 72;
+    --checkbox-selected: 173, 117, 72;
+    --chart-1: 255, 172, 106;
+    --chart-2: 119, 190, 212;
+    --chart-3: 162, 174, 76;
+    --chart-donut-1: 255, 172, 106;
+    --chart-donut-2: 119, 190, 212;
+    --chart-donut-3: 162, 174, 76;
+    --chart-balance: 255, 172, 106;
+    --chart-invested: 89, 176, 202;
+    --brand-accent-1: 119, 190, 212;
+    --brand-accent-2: 162, 174, 76;
+    --brand-accent-3: 66, 126, 128;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.aceprev, [data-ds-theme="aceprev"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.aceprev, [data-ds-theme="aceprev"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.aceprev, [data-ds-theme="aceprev"]) body {
+    --primary-1: 239, 139, 132;
+    --primary-2: 241, 153, 147;
+    --primary-3: 191, 111, 106;
+    --primary-4: 91, 53, 50;
+    --primary-5: 57, 44, 48;
+    --content-link: 239, 139, 132;
+    --action-primary-background: 239, 139, 132;
+    --action-primary-background-hover: 241, 153, 147;
+    --action-primary-background-active: 191, 111, 106;
+    --action-primary-ghost-background: 57, 44, 48;
+    --selection-background: 239, 139, 132;
+    --selection-background-hover: 241, 153, 147;
+    --selection-border: 239, 139, 132;
+    --focus-ring: 248, 207, 128;
+    --switch-track-primary-on: 163, 95, 90;
+    --switch-track-secondary-on: 163, 95, 90;
+    --switch-track-tertiary-on: 163, 95, 90;
+    --radio-selected: 163, 95, 90;
+    --checkbox-selected: 163, 95, 90;
+    --chart-1: 239, 139, 132;
+    --chart-2: 249, 216, 151;
+    --chart-3: 188, 175, 220;
+    --chart-donut-1: 239, 139, 132;
+    --chart-donut-2: 249, 216, 151;
+    --chart-donut-3: 188, 175, 220;
+    --chart-balance: 239, 139, 132;
+    --chart-invested: 248, 207, 128;
+    --brand-accent-1: 249, 216, 151;
+    --brand-accent-2: 188, 175, 220;
+    --brand-accent-3: 69, 70, 125;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.cibrius, [data-ds-theme="cibrius"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.cibrius, [data-ds-theme="cibrius"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.cibrius, [data-ds-theme="cibrius"]) body {
+    --primary-1: 171, 201, 104;
+    --primary-2: 181, 207, 122;
+    --primary-3: 137, 161, 83;
+    --primary-4: 65, 76, 40;
+    --primary-5: 46, 55, 43;
+    --content-link: 171, 201, 104;
+    --action-primary-background: 171, 201, 104;
+    --action-primary-background-hover: 181, 207, 122;
+    --action-primary-background-active: 137, 161, 83;
+    --action-primary-ghost-background: 46, 55, 43;
+    --selection-background: 171, 201, 104;
+    --selection-background-hover: 181, 207, 122;
+    --selection-border: 171, 201, 104;
+    --focus-ring: 171, 201, 104;
+    --switch-track-primary-on: 116, 137, 71;
+    --switch-track-secondary-on: 116, 137, 71;
+    --switch-track-tertiary-on: 116, 137, 71;
+    --radio-selected: 116, 137, 71;
+    --checkbox-selected: 116, 137, 71;
+    --chart-1: 171, 201, 104;
+    --chart-2: 80, 92, 121;
+    --chart-3: 125, 184, 188;
+    --chart-donut-1: 171, 201, 104;
+    --chart-donut-2: 80, 92, 121;
+    --chart-donut-3: 125, 184, 188;
+    --chart-balance: 171, 201, 104;
+    --chart-invested: 41, 56, 92;
+    --brand-accent-1: 80, 92, 121;
+    --brand-accent-2: 125, 184, 188;
+    --brand-accent-3: 125, 184, 188;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.serpros, [data-ds-theme="serpros"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.serpros, [data-ds-theme="serpros"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.serpros, [data-ds-theme="serpros"]) body {
+    --primary-1: 87, 206, 240;
+    --primary-2: 107, 212, 242;
+    --primary-3: 70, 165, 192;
+    --primary-4: 33, 78, 91;
+    --primary-5: 31, 56, 67;
+    --content-link: 87, 206, 240;
+    --action-primary-background: 87, 206, 240;
+    --action-primary-background-hover: 107, 212, 242;
+    --action-primary-background-active: 70, 165, 192;
+    --action-primary-ghost-background: 31, 56, 67;
+    --selection-background: 87, 206, 240;
+    --selection-background-hover: 107, 212, 242;
+    --selection-border: 87, 206, 240;
+    --focus-ring: 87, 206, 240;
+    --switch-track-primary-on: 59, 140, 163;
+    --switch-track-secondary-on: 59, 140, 163;
+    --switch-track-tertiary-on: 59, 140, 163;
+    --radio-selected: 59, 140, 163;
+    --checkbox-selected: 59, 140, 163;
+    --chart-1: 87, 206, 240;
+    --chart-2: 183, 207, 64;
+    --chart-3: 245, 172, 87;
+    --chart-donut-1: 87, 206, 240;
+    --chart-donut-2: 183, 207, 64;
+    --chart-donut-3: 245, 172, 87;
+    --chart-balance: 87, 206, 240;
+    --chart-invested: 167, 197, 22;
+    --brand-accent-1: 183, 207, 64;
+    --brand-accent-2: 245, 172, 87;
+    --brand-accent-3: 245, 172, 87;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.einvest, [data-ds-theme="einvest"]) body {
+    --primary-1: 85, 217, 156;
+    --primary-2: 105, 222, 168;
+    --primary-3: 68, 174, 125;
+    --primary-4: 32, 82, 59;
+    --primary-5: 31, 58, 52;
+    --content-link: 85, 217, 156;
+    --action-primary-background: 85, 217, 156;
+    --action-primary-background-hover: 105, 222, 168;
+    --action-primary-background-active: 68, 174, 125;
+    --action-primary-ghost-background: 31, 58, 52;
+    --selection-background: 85, 217, 156;
+    --selection-background-hover: 105, 222, 168;
+    --selection-border: 85, 217, 156;
+    --focus-ring: 85, 217, 156;
+    --switch-track-primary-on: 58, 148, 106;
+    --switch-track-secondary-on: 58, 148, 106;
+    --switch-track-tertiary-on: 58, 148, 106;
+    --radio-selected: 58, 148, 106;
+    --checkbox-selected: 58, 148, 106;
+    --chart-1: 85, 217, 156;
+    --chart-2: 62, 147, 180;
+    --chart-3: 69, 81, 125;
+    --chart-donut-1: 85, 217, 156;
+    --chart-donut-2: 62, 147, 180;
+    --chart-donut-3: 69, 81, 125;
+    --chart-balance: 85, 217, 156;
+    --chart-invested: 20, 123, 163;
+    --brand-accent-1: 62, 147, 180;
+    --brand-accent-2: 69, 81, 125;
+    --brand-accent-3: 69, 81, 125;
+  }
+
+  html[data-color-scheme="light"][data-contrast="high"] :is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+    --white: 255,255,255;
+    --secondary-1: 0,102,46;
+    --secondary-2: 0,77,34;
+    --secondary-3: 0,50,22;
+    --secondary-4: 213,245,225;
+    --secondary-5: 244,255,248;
+    --tertiary-1: 17,17,17;
+    --tertiary-2: 61,61,61;
+    --tertiary-3: 95,95,95;
+    --tertiary-4: 118,118,118;
+    --tertiary-5: 242,242,242;
+    --danger-1: 176,0,32;
+    --danger-2: 128,0,24;
+    --danger-3: 89,0,16;
+    --danger-4: 118,118,118;
+    --danger-5: 255,240,243;
+    --danger-6: 176,0,32;
+    --warning-1: 107,67,0;
+    --warning-2: 107,67,0;
+    --warning-3: 107,67,0;
+    --warning-4: 118,118,118;
+    --warning-5: 255,248,225;
+    --success-1: 0,107,53;
+    --success-2: 205,244,220;
+    --success-3: 239,255,245;
+    --grayscale-1: 17,17,17;
+    --grayscale-2: 61,61,61;
+    --grayscale-3: 95,95,95;
+    --grayscale-4: 118,118,118;
+    --grayscale-5: 232,232,232;
+    --overlay: 0,0,0;
+    --bg-lighter: 255,255,255;
+    --bg-light: 245,245,245;
+    --bg-dark: 229,229,229;
+    --bg-disabled: 232,232,232;
+    --surface-card: 255,255,255;
+    --text-primary: 0,0,0;
+    --text-secondary: 49,49,49;
+    --text-tertiary: 73,73,73;
+    --text-disabled: 89,89,89;
+    --content-primary: 0,0,0;
+    --content-secondary: 49,49,49;
+    --content-muted: 73,73,73;
+    --content-disabled: 89,89,89;
+    --content-inverse: 255,255,255;
+    --content-on-brand: 255, 255, 255;
+    --action-primary-content: 255, 255, 255;
+    --action-secondary-background: 41, 51, 62;
+    --action-secondary-background-hover: 29, 38, 48;
+    --action-secondary-background-active: 17, 24, 32;
+    --action-secondary-content: 255, 255, 255;
+    --action-secondary-ghost-background: 229, 229, 229;
+    --action-tertiary-background: 41, 51, 62;
+    --action-tertiary-background-hover: 29, 38, 48;
+    --action-tertiary-background-active: 17, 24, 32;
+    --action-tertiary-content: 255, 255, 255;
+    --action-danger-background: 168,26,10;
+    --action-danger-background-hover: 131,13,0;
+    --action-danger-background-active: 89,9,0;
+    --action-danger-content: 255,255,255;
+    --content-brand-secondary: 41, 51, 62;
+    --selection-content: 255, 255, 255;
+    --notice-secondary-content: 255, 255, 255;
+    --action-warning-background: 107,67,0;
+    --action-warning-background-hover: 86,53,0;
+    --action-warning-background-active: 64,39,0;
+    --action-warning-content: 255,255,255;
+    --surface-page: 245,245,245;
+    --surface-card-semantic: 255,255,255;
+    --surface-subtle: 255,255,255;
+    --surface-muted: 229,229,229;
+    --surface-disabled: 232,232,232;
+    --surface-action-neutral: 25, 28, 31;
+    --surface-tooltip: 17,17,17;
+    --footer-background: 0,0,0;
+    --border-subtle: 118,118,118;
+    --border-default: 118,118,118;
+    --border-strong: 17,17,17;
+    --border-disabled: 118,118,118;
+    --focus-ring: 0, 0, 0;
+    --icon-default: 61,61,61;
+    --feedback-danger-strong: 128, 0, 24;
+    --feedback-danger-soft: 255, 240, 243;
+    --feedback-danger-border: 128, 0, 24;
+    --feedback-danger-content: 128, 0, 24;
+    --feedback-warning-strong: 107, 67, 0;
+    --feedback-warning-soft: 255, 248, 225;
+    --feedback-warning-border: 107, 67, 0;
+    --feedback-warning-content: 107, 67, 0;
+    --feedback-success-strong: 0, 107, 53;
+    --feedback-success-soft: 239, 255, 245;
+    --feedback-success-border: 0, 107, 53;
+    --feedback-success-content: 0, 107, 53;
+    --feedback-info-strong: 22, 79, 133;
+    --feedback-info-soft: 238, 246, 255;
+    --feedback-info-border: 22, 79, 133;
+    --feedback-info-content: 22, 79, 133;
+    --field-surface: 255,255,255;
+    --field-surface-disabled: 232,232,232;
+    --field-border-default: 118,118,118;
+    --field-border-active: 17,17,17;
+    --field-border-error: 176,0,32;
+    --field-content: 0,0,0;
+    --field-placeholder: 73,73,73;
+    --field-content-disabled: 89,89,89;
+    --field-placeholder-disabled: 89,89,89;
+    --field-icon: 61,61,61;
+    --field-assistive: 49,49,49;
+    --field-assistive-error: 128, 0, 24;
+    --switch-track-off: 118,118,118;
+    --switch-track-disabled: 118,118,118;
+    --switch-track-primary-on: 118, 118, 118;
+    --switch-track-secondary-on: 118, 118, 118;
+    --switch-track-tertiary-on: 118, 118, 118;
+    --switch-track-contract-on: 0,107,53;
+    --switch-track-contract-off: 176,0,32;
+    --switch-track-theme-on: 17,17,17;
+    --switch-track-theme-off: 118,118,118;
+    --switch-knob: 255, 255, 255;
+    --switch-knob-disabled: 245,245,245;
+    --switch-knob-theme-on: 255,255,255;
+    --radio-surface: 255,255,255;
+    --radio-border: 17,17,17;
+    --radio-selected: 118, 118, 118;
+    --radio-error: 176,0,32;
+    --radio-disabled-border: 118,118,118;
+    --radio-disabled-surface: 232,232,232;
+    --radio-disabled-content: 89,89,89;
+    --checkbox-surface: 255,255,255;
+    --checkbox-border: 17,17,17;
+    --checkbox-selected: 118, 118, 118;
+    --checkbox-error: 176,0,32;
+    --checkbox-disabled-border: 118,118,118;
+    --checkbox-disabled-surface: 232,232,232;
+    --checkbox-disabled-content: 89,89,89;
+    --loading-circular-track: 232,232,232;
+    --loading-circular-indicator: 15,98,193;
+    --chart-4: 134, 100, 176;
+    --chart-5: 204, 118, 92;
+    --chart-6: 69, 155, 159;
+    --chart-7: 79, 134, 198;
+    --chart-8: 198, 106, 160;
+    --chart-9: 156, 120, 67;
+    --chart-10: 108, 155, 116;
+    --chart-11: 131, 117, 198;
+    --chart-12: 161, 91, 82;
+    --chart-donut-4: 134, 100, 176;
+    --chart-donut-5: 204, 118, 92;
+    --chart-donut-6: 69, 155, 159;
+    --chart-donut-7: 79, 134, 198;
+    --chart-donut-8: 198, 106, 160;
+    --chart-donut-9: 156, 120, 67;
+    --chart-donut-10: 108, 155, 116;
+    --chart-donut-11: 131, 117, 198;
+    --chart-donut-12: 161, 91, 82;
+    --chart-muted-1: 73,73,73;
+    --chart-muted-2: 95,95,95;
+    --chart-muted-3: 118,118,118;
+    --chart-muted-4: 49,49,49;
+    --chart-tooltip-background: 0,0,0;
+    --chart-tooltip-content: 255,255,255;
+    --chart-line-neutral: 0,0,0;
+    --chart-grid: 118,118,118;
+    --chart-axis: 49,49,49;
+    --chart-axis-border: 95,95,95;
+    --chart-tooltip-text: 255,255,255;
+    --status-blue-solid-background: 0, 108, 226;
+    --status-blue-solid-foreground: 255, 255, 255;
+    --status-blue-outline-border: 0, 108, 226;
+    --status-blue-outline-foreground: 0, 108, 226;
+    --status-blue-soft-background: 255, 255, 255;
+    --status-blue-soft-foreground: 0, 108, 226;
+    --status-green-solid-background: 46, 133, 71;
+    --status-green-solid-foreground: 255, 255, 255;
+    --status-green-outline-border: 46, 133, 71;
+    --status-green-outline-foreground: 46, 133, 71;
+    --status-green-soft-background: 255, 255, 255;
+    --status-green-soft-foreground: 46, 133, 71;
+    --status-orange-solid-background: 201, 76, 0;
+    --status-orange-solid-foreground: 255, 255, 255;
+    --status-orange-outline-border: 201, 76, 0;
+    --status-orange-outline-foreground: 201, 76, 0;
+    --status-orange-soft-background: 255, 255, 255;
+    --status-orange-soft-foreground: 201, 76, 0;
+    --status-yellow-solid-background: 142, 109, 6;
+    --status-yellow-solid-foreground: 255, 255, 255;
+    --status-yellow-outline-border: 142, 109, 6;
+    --status-yellow-outline-foreground: 142, 109, 6;
+    --status-yellow-soft-background: 255, 255, 255;
+    --status-yellow-soft-foreground: 142, 109, 6;
+    --status-red-solid-background: 168, 26, 10;
+    --status-red-solid-foreground: 255, 255, 255;
+    --status-red-outline-border: 168, 26, 10;
+    --status-red-outline-foreground: 168, 26, 10;
+    --status-red-soft-background: 255, 255, 255;
+    --status-red-soft-foreground: 168, 26, 10;
+    --status-slate-solid-background: 69, 90, 100;
+    --status-slate-solid-foreground: 255, 255, 255;
+    --status-slate-outline-border: 69, 90, 100;
+    --status-slate-outline-foreground: 69, 90, 100;
+    --status-slate-soft-background: 255, 255, 255;
+    --status-slate-soft-foreground: 69, 90, 100;
+    --status-black-solid-background: 0, 0, 0;
+    --status-black-solid-foreground: 255, 255, 255;
+    --status-black-outline-border: 0, 0, 0;
+    --status-black-outline-foreground: 0, 0, 0;
+    --status-black-soft-background: 255, 255, 255;
+    --status-black-soft-foreground: 0, 0, 0;
+    --action-tertiary-ghost-background: 229, 229, 229;
+    --focus-indicator-color: rgb(var(--focus-ring));
+  }
+
+  html[data-color-scheme="light"][data-contrast="high"] :is(.basf, [data-ds-theme="basf"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"]) body {
+    --primary-1: 131, 63, 0;
+    --primary-2: 118, 57, 0;
+    --primary-3: 105, 50, 0;
+    --primary-4: 208, 182, 158;
+    --primary-5: 243, 236, 230;
+    --content-link: 131, 63, 0;
+    --action-primary-background: 131, 63, 0;
+    --action-primary-background-hover: 118, 57, 0;
+    --action-primary-background-active: 105, 50, 0;
+    --action-primary-ghost-background: 243, 236, 230;
+    --selection-background: 131, 63, 0;
+    --selection-background-hover: 118, 57, 0;
+    --selection-border: 131, 63, 0;
+    --chart-1: 131, 63, 0;
+    --chart-2: 204, 0, 51;
+    --chart-3: 137, 109, 37;
+    --chart-donut-1: 131, 63, 0;
+    --chart-donut-2: 204, 0, 51;
+    --chart-donut-3: 137, 109, 37;
+    --chart-balance: 131, 63, 0;
+    --chart-invested: 204, 0, 51;
+    --brand-accent-1: 204, 0, 51;
+    --brand-accent-2: 137, 109, 37;
+    --brand-accent-3: 144, 114, 40;
+  }
+
+  html[data-color-scheme="light"][data-contrast="high"] :is(.funssest, [data-ds-theme="funssest"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.funssest, [data-ds-theme="funssest"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.funssest, [data-ds-theme="funssest"]) body {
+    --primary-1: 147, 57, 20;
+    --primary-2: 132, 51, 18;
+    --primary-3: 118, 46, 16;
+    --primary-4: 214, 180, 166;
+    --primary-5: 244, 235, 232;
+    --content-link: 147, 57, 20;
+    --action-primary-background: 147, 57, 20;
+    --action-primary-background-hover: 132, 51, 18;
+    --action-primary-background-active: 118, 46, 16;
+    --action-primary-ghost-background: 244, 235, 232;
+    --selection-background: 147, 57, 20;
+    --selection-background-hover: 132, 51, 18;
+    --selection-border: 147, 57, 20;
+    --chart-1: 147, 57, 20;
+    --chart-2: 107, 107, 107;
+    --chart-3: 147, 105, 73;
+    --chart-donut-1: 147, 57, 20;
+    --chart-donut-2: 107, 107, 107;
+    --chart-donut-3: 147, 105, 73;
+    --chart-balance: 147, 57, 20;
+    --chart-invested: 107, 107, 107;
+    --brand-accent-1: 107, 107, 107;
+    --brand-accent-2: 147, 105, 73;
+    --brand-accent-3: 142, 102, 71;
+  }
+
+  html[data-color-scheme="light"][data-contrast="high"] :is(.maisprevidencia, [data-ds-theme="maisprevidencia"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.maisprevidencia, [data-ds-theme="maisprevidencia"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.maisprevidencia, [data-ds-theme="maisprevidencia"]) body {
+    --primary-1: 131, 63, 0;
+    --primary-2: 118, 57, 0;
+    --primary-3: 105, 50, 0;
+    --primary-4: 208, 182, 158;
+    --primary-5: 243, 236, 230;
+    --content-link: 131, 63, 0;
+    --action-primary-background: 131, 63, 0;
+    --action-primary-background-hover: 118, 57, 0;
+    --action-primary-background-active: 105, 50, 0;
+    --action-primary-ghost-background: 243, 236, 230;
+    --selection-background: 131, 63, 0;
+    --selection-background-hover: 118, 57, 0;
+    --selection-border: 131, 63, 0;
+    --chart-1: 131, 63, 0;
+    --chart-2: 63, 126, 144;
+    --chart-3: 110, 121, 29;
+    --chart-donut-1: 131, 63, 0;
+    --chart-donut-2: 63, 126, 144;
+    --chart-donut-3: 110, 121, 29;
+    --chart-balance: 131, 63, 0;
+    --chart-invested: 75, 149, 171;
+    --brand-accent-1: 63, 126, 144;
+    --brand-accent-2: 110, 121, 29;
+    --brand-accent-3: 66, 126, 128;
+  }
+
+  html[data-color-scheme="light"][data-contrast="high"] :is(.aceprev, [data-ds-theme="aceprev"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.aceprev, [data-ds-theme="aceprev"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.aceprev, [data-ds-theme="aceprev"]) body {
+    --primary-1: 121, 72, 67;
+    --primary-2: 109, 65, 60;
+    --primary-3: 97, 58, 54;
+    --primary-4: 204, 185, 184;
+    --primary-5: 242, 237, 236;
+    --content-link: 121, 72, 67;
+    --action-primary-background: 121, 72, 67;
+    --action-primary-background-hover: 109, 65, 60;
+    --action-primary-background-active: 97, 58, 54;
+    --action-primary-ghost-background: 242, 237, 236;
+    --selection-background: 121, 72, 67;
+    --selection-background-hover: 109, 65, 60;
+    --selection-border: 121, 72, 67;
+    --chart-1: 121, 72, 67;
+    --chart-2: 139, 115, 72;
+    --chart-3: 123, 111, 152;
+    --chart-donut-1: 121, 72, 67;
+    --chart-donut-2: 139, 115, 72;
+    --chart-donut-3: 123, 111, 152;
+    --chart-balance: 121, 72, 67;
+    --chart-invested: 164, 136, 85;
+    --brand-accent-1: 139, 115, 72;
+    --brand-accent-2: 123, 111, 152;
+    --brand-accent-3: 69, 70, 125;
+  }
+
+  html[data-color-scheme="light"][data-contrast="high"] :is(.cibrius, [data-ds-theme="cibrius"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.cibrius, [data-ds-theme="cibrius"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.cibrius, [data-ds-theme="cibrius"]) body {
+    --primary-1: 73, 94, 36;
+    --primary-2: 66, 85, 32;
+    --primary-3: 58, 75, 29;
+    --primary-4: 186, 194, 172;
+    --primary-5: 237, 239, 233;
+    --content-link: 73, 94, 36;
+    --action-primary-background: 73, 94, 36;
+    --action-primary-background-hover: 66, 85, 32;
+    --action-primary-background-active: 58, 75, 29;
+    --action-primary-ghost-background: 237, 239, 233;
+    --selection-background: 73, 94, 36;
+    --selection-background-hover: 66, 85, 32;
+    --selection-border: 73, 94, 36;
+    --chart-1: 73, 94, 36;
+    --chart-2: 41, 56, 92;
+    --chart-3: 69, 121, 123;
+    --chart-donut-1: 73, 94, 36;
+    --chart-donut-2: 41, 56, 92;
+    --chart-donut-3: 69, 121, 123;
+    --chart-balance: 73, 94, 36;
+    --chart-invested: 41, 56, 92;
+    --brand-accent-1: 41, 56, 92;
+    --brand-accent-2: 69, 121, 123;
+    --brand-accent-3: 74, 127, 131;
+  }
+
+  html[data-color-scheme="light"][data-contrast="high"] :is(.serpros, [data-ds-theme="serpros"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.serpros, [data-ds-theme="serpros"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.serpros, [data-ds-theme="serpros"]) body {
+    --primary-1: 0, 93, 121;
+    --primary-2: 0, 84, 109;
+    --primary-3: 0, 74, 97;
+    --primary-4: 158, 193, 204;
+    --primary-5: 230, 239, 242;
+    --content-link: 0, 93, 121;
+    --action-primary-background: 0, 93, 121;
+    --action-primary-background-hover: 0, 84, 109;
+    --action-primary-background-active: 0, 74, 97;
+    --action-primary-ghost-background: 230, 239, 242;
+    --selection-background: 0, 93, 121;
+    --selection-background-hover: 0, 84, 109;
+    --selection-border: 0, 93, 121;
+    --chart-1: 0, 93, 121;
+    --chart-2: 102, 121, 14;
+    --chart-3: 161, 102, 33;
+    --chart-donut-1: 0, 93, 121;
+    --chart-donut-2: 102, 121, 14;
+    --chart-donut-3: 161, 102, 33;
+    --chart-balance: 0, 93, 121;
+    --chart-invested: 131, 154, 17;
+    --brand-accent-1: 102, 121, 14;
+    --brand-accent-2: 161, 102, 33;
+    --brand-accent-3: 155, 98, 32;
+  }
+
+  html[data-color-scheme="light"][data-contrast="high"] :is(.einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.einvest, [data-ds-theme="einvest"]) body {
+    --primary-1: 6, 103, 52;
+    --primary-2: 5, 93, 47;
+    --primary-3: 5, 82, 42;
+    --primary-4: 160, 197, 178;
+    --primary-5: 230, 240, 235;
+    --content-link: 6, 103, 52;
+    --action-primary-background: 6, 103, 52;
+    --action-primary-background-hover: 5, 93, 47;
+    --action-primary-background-active: 5, 82, 42;
+    --action-primary-ghost-background: 230, 240, 235;
+    --selection-background: 6, 103, 52;
+    --selection-background-hover: 5, 93, 47;
+    --selection-border: 6, 103, 52;
+    --chart-1: 6, 103, 52;
+    --chart-2: 20, 123, 163;
+    --chart-3: 28, 43, 96;
+    --chart-donut-1: 6, 103, 52;
+    --chart-donut-2: 20, 123, 163;
+    --chart-donut-3: 28, 43, 96;
+    --chart-balance: 6, 103, 52;
+    --chart-invested: 20, 123, 163;
+    --brand-accent-1: 20, 123, 163;
+    --brand-accent-2: 28, 43, 96;
+    --brand-accent-3: 23, 35, 79;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+    --white: 255,255,255;
+    --secondary-1: 0,103,122;
+    --secondary-2: 0,83,102;
+    --secondary-3: 0,61,77;
+    --secondary-4: 103,232,249;
+    --secondary-5: 0,43,54;
+    --tertiary-1: 143,36,94;
+    --tertiary-2: 112,24,70;
+    --tertiary-3: 80,13,49;
+    --tertiary-4: 244,114,182;
+    --tertiary-5: 55,7,31;
+    --danger-1: 185,28,28;
+    --danger-2: 153,27,27;
+    --danger-3: 127,29,29;
+    --danger-4: 255,123,123;
+    --danger-5: 55,9,9;
+    --danger-6: 255,107,107;
+    --warning-1: 255,223,0;
+    --warning-2: 255,198,0;
+    --warning-3: 255,235,102;
+    --warning-4: 128,96,0;
+    --warning-5: 38,33,0;
+    --success-1: 8,122,62;
+    --success-2: 110,231,160;
+    --success-3: 5,46,22;
+    --grayscale-1: 255,255,255;
+    --grayscale-2: 245,245,245;
+    --grayscale-3: 224,224,224;
+    --grayscale-4: 189,189,189;
+    --grayscale-5: 51,51,51;
+    --overlay: 0,0,0;
+    --bg-lighter: 0,0,0;
+    --bg-light: 0,0,0;
+    --bg-dark: 20,20,20;
+    --bg-disabled: 51,51,51;
+    --surface-card: 11,11,11;
+    --text-primary: 255,255,255;
+    --text-secondary: 245,245,245;
+    --text-tertiary: 224,224,224;
+    --text-disabled: 189,189,189;
+    --content-primary: 255,255,255;
+    --content-secondary: 245,245,245;
+    --content-muted: 224,224,224;
+    --content-disabled: 189,189,189;
+    --content-inverse: 255,255,255;
+    --content-on-brand: 0, 0, 0;
+    --action-primary-content: 0, 0, 0;
+    --action-secondary-background: 212, 219, 226;
+    --action-secondary-background-hover: 232, 237, 242;
+    --action-secondary-background-active: 188, 200, 211;
+    --action-secondary-content: 20, 25, 31;
+    --action-secondary-ghost-background: 34, 34, 34;
+    --action-tertiary-background: 212, 219, 226;
+    --action-tertiary-background-hover: 232, 237, 242;
+    --action-tertiary-background-active: 188, 200, 211;
+    --action-tertiary-content: 20, 25, 31;
+    --action-danger-background: 168,26,10;
+    --action-danger-background-hover: 131,13,0;
+    --action-danger-background-active: 89,9,0;
+    --action-danger-content: 255,255,255;
+    --content-brand-secondary: 212, 219, 226;
+    --selection-content: 0, 0, 0;
+    --notice-secondary-content: 20, 25, 31;
+    --action-warning-background: 255,223,0;
+    --action-warning-background-hover: 255,198,0;
+    --action-warning-background-active: 255,235,102;
+    --action-warning-content: 0,0,0;
+    --surface-page: 0,0,0;
+    --surface-card-semantic: 11,11,11;
+    --surface-subtle: 20,20,20;
+    --surface-muted: 34,34,34;
+    --surface-disabled: 51,51,51;
+    --surface-action-neutral: 9, 12, 16;
+    --surface-tooltip: 0,0,0;
+    --footer-background: 0,0,0;
+    --border-subtle: 189,189,189;
+    --border-default: 245,245,245;
+    --border-strong: 255,223,0;
+    --border-disabled: 117,117,117;
+    --focus-ring: 255, 255, 255;
+    --icon-default: 255,255,255;
+    --feedback-danger-strong: 255, 204, 204;
+    --feedback-danger-soft: 55, 9, 9;
+    --feedback-danger-border: 255, 204, 204;
+    --feedback-danger-content: 255, 204, 204;
+    --feedback-warning-strong: 255, 235, 102;
+    --feedback-warning-soft: 38, 33, 0;
+    --feedback-warning-border: 255, 235, 102;
+    --feedback-warning-content: 255, 235, 102;
+    --feedback-success-strong: 110, 231, 160;
+    --feedback-success-soft: 5, 46, 22;
+    --feedback-success-border: 110, 231, 160;
+    --feedback-success-content: 110, 231, 160;
+    --feedback-info-strong: 147, 197, 253;
+    --feedback-info-soft: 16, 41, 64;
+    --feedback-info-border: 147, 197, 253;
+    --feedback-info-content: 147, 197, 253;
+    --field-surface: 0,0,0;
+    --field-surface-disabled: 51,51,51;
+    --field-border-default: 224,224,224;
+    --field-border-active: 255,223,0;
+    --field-border-error: 185,28,28;
+    --field-content: 255,255,255;
+    --field-placeholder: 117,117,117;
+    --field-content-disabled: 189,189,189;
+    --field-placeholder-disabled: 155,155,155;
+    --field-icon: 255,255,255;
+    --field-assistive: 245,245,245;
+    --field-assistive-error: 255, 204, 204;
+    --switch-track-off: 97,97,97;
+    --switch-track-disabled: 66,66,66;
+    --switch-track-primary-on: 118, 118, 118;
+    --switch-track-secondary-on: 118, 118, 118;
+    --switch-track-tertiary-on: 118, 118, 118;
+    --switch-track-contract-on: 255,223,0;
+    --switch-track-contract-off: 255,223,0;
+    --switch-track-theme-on: 255,223,0;
+    --switch-track-theme-off: 189,189,189;
+    --switch-knob: 255, 255, 255;
+    --switch-knob-disabled: 189,189,189;
+    --switch-knob-theme-on: 0,0,0;
+    --radio-surface: 0,0,0;
+    --radio-border: 255,255,255;
+    --radio-selected: 118, 118, 118;
+    --radio-error: 185,28,28;
+    --radio-disabled-border: 189,189,189;
+    --radio-disabled-surface: 51,51,51;
+    --radio-disabled-content: 189,189,189;
+    --checkbox-surface: 0,0,0;
+    --checkbox-border: 255,255,255;
+    --checkbox-selected: 118, 118, 118;
+    --checkbox-error: 185,28,28;
+    --checkbox-disabled-border: 189,189,189;
+    --checkbox-disabled-surface: 51,51,51;
+    --checkbox-disabled-content: 189,189,189;
+    --loading-circular-track: 51,51,51;
+    --loading-circular-indicator: 255,223,0;
+    --chart-4: 134, 100, 176;
+    --chart-5: 222, 128, 100;
+    --chart-6: 75, 169, 173;
+    --chart-7: 79, 134, 198;
+    --chart-8: 198, 106, 160;
+    --chart-9: 156, 120, 67;
+    --chart-10: 108, 155, 116;
+    --chart-11: 131, 117, 198;
+    --chart-12: 161, 91, 82;
+    --chart-donut-4: 134, 100, 176;
+    --chart-donut-5: 222, 128, 100;
+    --chart-donut-6: 75, 169, 173;
+    --chart-donut-7: 79, 134, 198;
+    --chart-donut-8: 198, 106, 160;
+    --chart-donut-9: 156, 120, 67;
+    --chart-donut-10: 108, 155, 116;
+    --chart-donut-11: 131, 117, 198;
+    --chart-donut-12: 161, 91, 82;
+    --chart-muted-1: 245,245,245;
+    --chart-muted-2: 224,224,224;
+    --chart-muted-3: 189,189,189;
+    --chart-muted-4: 255,255,255;
+    --chart-tooltip-background: 0,0,0;
+    --chart-tooltip-content: 255,255,255;
+    --chart-line-neutral: 255,255,255;
+    --chart-grid: 189,189,189;
+    --chart-axis: 255,255,255;
+    --chart-axis-border: 224,224,224;
+    --chart-tooltip-text: 255,255,255;
+    --status-blue-solid-background: 20, 120, 228;
+    --status-blue-solid-foreground: 0, 0, 0;
+    --status-blue-outline-border: 20, 120, 228;
+    --status-blue-outline-foreground: 20, 120, 228;
+    --status-blue-soft-background: 20, 20, 20;
+    --status-blue-soft-foreground: 39, 131, 230;
+    --status-green-solid-background: 46, 133, 71;
+    --status-green-solid-foreground: 0, 0, 0;
+    --status-green-outline-border: 46, 133, 71;
+    --status-green-outline-foreground: 63, 143, 86;
+    --status-green-soft-background: 20, 20, 20;
+    --status-green-soft-foreground: 63, 143, 86;
+    --status-orange-solid-background: 201, 76, 0;
+    --status-orange-solid-foreground: 0, 0, 0;
+    --status-orange-outline-border: 201, 76, 0;
+    --status-orange-outline-foreground: 205, 90, 20;
+    --status-orange-soft-background: 20, 20, 20;
+    --status-orange-soft-foreground: 209, 103, 39;
+    --status-yellow-solid-background: 234, 179, 8;
+    --status-yellow-solid-foreground: 0, 0, 0;
+    --status-yellow-outline-border: 234, 179, 8;
+    --status-yellow-outline-foreground: 234, 179, 8;
+    --status-yellow-soft-background: 20, 20, 20;
+    --status-yellow-soft-foreground: 234, 179, 8;
+    --status-red-solid-background: 192, 91, 80;
+    --status-red-solid-foreground: 0, 0, 0;
+    --status-red-outline-border: 192, 91, 80;
+    --status-red-outline-foreground: 192, 91, 80;
+    --status-red-soft-background: 20, 20, 20;
+    --status-red-soft-foreground: 197, 104, 94;
+    --status-slate-solid-background: 111, 126, 134;
+    --status-slate-solid-foreground: 0, 0, 0;
+    --status-slate-outline-border: 111, 126, 134;
+    --status-slate-outline-foreground: 111, 126, 134;
+    --status-slate-soft-background: 20, 20, 20;
+    --status-slate-soft-foreground: 123, 136, 144;
+    --status-black-solid-background: 123, 123, 123;
+    --status-black-solid-foreground: 0, 0, 0;
+    --status-black-outline-border: 123, 123, 123;
+    --status-black-outline-foreground: 123, 123, 123;
+    --status-black-soft-background: 20, 20, 20;
+    --status-black-soft-foreground: 134, 134, 134;
+    --action-tertiary-ghost-background: 34, 34, 34;
+    --focus-indicator-color: rgb(var(--focus-ring));
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.basf, [data-ds-theme="basf"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"]) body {
+    --primary-1: 255, 164, 81;
+    --primary-2: 255, 175, 102;
+    --primary-3: 204, 131, 65;
+    --primary-4: 97, 62, 31;
+    --primary-5: 60, 49, 40;
+    --content-link: 255, 164, 81;
+    --action-primary-background: 255, 164, 81;
+    --action-primary-background-hover: 255, 175, 102;
+    --action-primary-background-active: 204, 131, 65;
+    --action-primary-ghost-background: 60, 49, 40;
+    --selection-background: 255, 164, 81;
+    --selection-background-hover: 255, 175, 102;
+    --selection-border: 255, 164, 81;
+    --chart-1: 255, 164, 81;
+    --chart-2: 218, 72, 109;
+    --chart-3: 246, 195, 67;
+    --chart-donut-1: 255, 164, 81;
+    --chart-donut-2: 218, 72, 109;
+    --chart-donut-3: 246, 195, 67;
+    --chart-balance: 255, 164, 81;
+    --chart-invested: 204, 0, 51;
+    --brand-accent-1: 218, 72, 109;
+    --brand-accent-2: 246, 195, 67;
+    --brand-accent-3: 248, 206, 101;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.funssest, [data-ds-theme="funssest"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.funssest, [data-ds-theme="funssest"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.funssest, [data-ds-theme="funssest"]) body {
+    --primary-1: 255, 148, 92;
+    --primary-2: 255, 161, 112;
+    --primary-3: 204, 118, 74;
+    --primary-4: 97, 56, 35;
+    --primary-5: 60, 46, 41;
+    --content-link: 255, 148, 92;
+    --action-primary-background: 255, 148, 92;
+    --action-primary-background-hover: 255, 161, 112;
+    --action-primary-background-active: 204, 118, 74;
+    --action-primary-ghost-background: 60, 46, 41;
+    --selection-background: 255, 148, 92;
+    --selection-background-hover: 255, 161, 112;
+    --selection-border: 255, 148, 92;
+    --chart-1: 255, 148, 92;
+    --chart-2: 130, 130, 130;
+    --chart-3: 242, 174, 121;
+    --chart-donut-1: 255, 148, 92;
+    --chart-donut-2: 130, 130, 130;
+    --chart-donut-3: 242, 174, 121;
+    --chart-balance: 255, 148, 92;
+    --chart-invested: 107, 107, 107;
+    --brand-accent-1: 130, 130, 130;
+    --brand-accent-2: 242, 174, 121;
+    --brand-accent-3: 244, 189, 145;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.maisprevidencia, [data-ds-theme="maisprevidencia"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.maisprevidencia, [data-ds-theme="maisprevidencia"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.maisprevidencia, [data-ds-theme="maisprevidencia"]) body {
+    --primary-1: 255, 172, 106;
+    --primary-2: 255, 182, 124;
+    --primary-3: 204, 138, 85;
+    --primary-4: 97, 65, 40;
+    --primary-5: 60, 50, 44;
+    --content-link: 255, 172, 106;
+    --action-primary-background: 255, 172, 106;
+    --action-primary-background-hover: 255, 182, 124;
+    --action-primary-background-active: 204, 138, 85;
+    --action-primary-ghost-background: 60, 50, 44;
+    --selection-background: 255, 172, 106;
+    --selection-background-hover: 255, 182, 124;
+    --selection-border: 255, 172, 106;
+    --chart-1: 255, 172, 106;
+    --chart-2: 89, 176, 202;
+    --chart-3: 141, 156, 37;
+    --chart-donut-1: 255, 172, 106;
+    --chart-donut-2: 89, 176, 202;
+    --chart-donut-3: 141, 156, 37;
+    --chart-balance: 255, 172, 106;
+    --chart-invested: 89, 176, 202;
+    --brand-accent-1: 89, 176, 202;
+    --brand-accent-2: 141, 156, 37;
+    --brand-accent-3: 81, 136, 138;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.aceprev, [data-ds-theme="aceprev"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.aceprev, [data-ds-theme="aceprev"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.aceprev, [data-ds-theme="aceprev"]) body {
+    --primary-1: 239, 139, 132;
+    --primary-2: 241, 153, 147;
+    --primary-3: 191, 111, 106;
+    --primary-4: 91, 53, 50;
+    --primary-5: 57, 44, 48;
+    --content-link: 239, 139, 132;
+    --action-primary-background: 239, 139, 132;
+    --action-primary-background-hover: 241, 153, 147;
+    --action-primary-background-active: 191, 111, 106;
+    --action-primary-ghost-background: 57, 44, 48;
+    --selection-background: 239, 139, 132;
+    --selection-background-hover: 241, 153, 147;
+    --selection-border: 239, 139, 132;
+    --chart-1: 239, 139, 132;
+    --chart-2: 248, 207, 128;
+    --chart-3: 173, 157, 212;
+    --chart-donut-1: 239, 139, 132;
+    --chart-donut-2: 248, 207, 128;
+    --chart-donut-3: 173, 157, 212;
+    --chart-balance: 239, 139, 132;
+    --chart-invested: 248, 207, 128;
+    --brand-accent-1: 248, 207, 128;
+    --brand-accent-2: 173, 157, 212;
+    --brand-accent-3: 123, 123, 162;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.cibrius, [data-ds-theme="cibrius"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.cibrius, [data-ds-theme="cibrius"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.cibrius, [data-ds-theme="cibrius"]) body {
+    --primary-1: 171, 201, 104;
+    --primary-2: 181, 207, 122;
+    --primary-3: 137, 161, 83;
+    --primary-4: 65, 76, 40;
+    --primary-5: 46, 55, 43;
+    --content-link: 171, 201, 104;
+    --action-primary-background: 171, 201, 104;
+    --action-primary-background-hover: 181, 207, 122;
+    --action-primary-background-active: 137, 161, 83;
+    --action-primary-ghost-background: 46, 55, 43;
+    --selection-background: 171, 201, 104;
+    --selection-background-hover: 181, 207, 122;
+    --selection-border: 171, 201, 104;
+    --chart-1: 171, 201, 104;
+    --chart-2: 113, 123, 147;
+    --chart-3: 97, 168, 173;
+    --chart-donut-1: 171, 201, 104;
+    --chart-donut-2: 113, 123, 147;
+    --chart-donut-3: 97, 168, 173;
+    --chart-balance: 171, 201, 104;
+    --chart-invested: 88, 100, 128;
+    --brand-accent-1: 113, 123, 147;
+    --brand-accent-2: 97, 168, 173;
+    --brand-accent-3: 125, 184, 188;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.serpros, [data-ds-theme="serpros"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.serpros, [data-ds-theme="serpros"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.serpros, [data-ds-theme="serpros"]) body {
+    --primary-1: 87, 206, 240;
+    --primary-2: 107, 212, 242;
+    --primary-3: 70, 165, 192;
+    --primary-4: 33, 78, 91;
+    --primary-5: 31, 56, 67;
+    --content-link: 87, 206, 240;
+    --action-primary-background: 87, 206, 240;
+    --action-primary-background-hover: 107, 212, 242;
+    --action-primary-background-active: 70, 165, 192;
+    --action-primary-ghost-background: 31, 56, 67;
+    --selection-background: 87, 206, 240;
+    --selection-background-hover: 107, 212, 242;
+    --selection-border: 87, 206, 240;
+    --chart-1: 87, 206, 240;
+    --chart-2: 167, 197, 22;
+    --chart-3: 243, 154, 50;
+    --chart-donut-1: 87, 206, 240;
+    --chart-donut-2: 167, 197, 22;
+    --chart-donut-3: 243, 154, 50;
+    --chart-balance: 87, 206, 240;
+    --chart-invested: 167, 197, 22;
+    --brand-accent-1: 167, 197, 22;
+    --brand-accent-2: 243, 154, 50;
+    --brand-accent-3: 245, 172, 87;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.einvest, [data-ds-theme="einvest"]) body {
+    --primary-1: 85, 217, 156;
+    --primary-2: 105, 222, 168;
+    --primary-3: 68, 174, 125;
+    --primary-4: 32, 82, 59;
+    --primary-5: 31, 58, 52;
+    --content-link: 85, 217, 156;
+    --action-primary-background: 85, 217, 156;
+    --action-primary-background-hover: 105, 222, 168;
+    --action-primary-background-active: 68, 174, 125;
+    --action-primary-ghost-background: 31, 58, 52;
+    --selection-background: 85, 217, 156;
+    --selection-background-hover: 105, 222, 168;
+    --selection-border: 85, 217, 156;
+    --chart-1: 85, 217, 156;
+    --chart-2: 39, 134, 170;
+    --chart-3: 117, 126, 159;
+    --chart-donut-1: 85, 217, 156;
+    --chart-donut-2: 39, 134, 170;
+    --chart-donut-3: 117, 126, 159;
+    --chart-balance: 85, 217, 156;
+    --chart-invested: 20, 123, 163;
+    --brand-accent-1: 39, 134, 170;
+    --brand-accent-2: 117, 126, 159;
+    --brand-accent-3: 111, 120, 154;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"]) body {
+    --feedback-danger-strong: 128, 0, 24;
+    --feedback-danger-soft: 255, 240, 243;
+    --feedback-danger-border: 128, 0, 24;
+    --feedback-danger-content: 128, 0, 24;
+    --feedback-warning-strong: 107, 67, 0;
+    --feedback-warning-soft: 255, 248, 225;
+    --feedback-warning-border: 107, 67, 0;
+    --feedback-warning-content: 107, 67, 0;
+    --feedback-success-strong: 0, 107, 53;
+    --feedback-success-soft: 239, 255, 245;
+    --feedback-success-border: 0, 107, 53;
+    --feedback-success-content: 0, 107, 53;
+    --feedback-info-strong: 22, 79, 133;
+    --feedback-info-soft: 238, 246, 255;
+    --feedback-info-border: 22, 79, 133;
+    --feedback-info-content: 22, 79, 133;
+    --action-primary-content-hover: 255,255,255;
+    --action-primary-content-active: 255,255,255;
+    --content-brand-secondary: 0,110,47;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"]) body {
+    --status-primary-outline-foreground: 15,98,193;
+    --status-primary-outline-border: 15,98,193;
+    --status-primary-soft-foreground: 15,98,193;
+    --status-primary-soft-background: 235,240,255;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+    --switch-knob-theme-on: 255, 255, 255;
+    --switch-track-off: 141, 144, 148;
+    --switch-knob-icon-on: 0, 107, 53;
+    --switch-knob-icon-off: 128, 0, 24;
+    --switch-knob-theme-icon-on: 0, 0, 0;
+    --switch-knob-theme-icon-off: 0, 0, 0;
+    --feedback-danger-on-strong: 255, 255, 255;
+    --chart-tooltip-text: 255,255,255;
+    --action-secondary-content-hover: 255,255,255;
+    --action-secondary-content-active: 255,255,255;
+    --action-tertiary-content-hover: 255,255,255;
+    --action-tertiary-content-active: 255,255,255;
+    --action-danger-content-hover: 255,255,255;
+    --action-danger-content-active: 255,255,255;
+    --action-warning-content-hover: 255,255,255;
+    --action-warning-content-active: 255,255,255;
+    --action-danger-background: 168,26,10;
+    --action-danger-background-hover: 131,13,0;
+    --action-danger-background-active: 89,9,0;
+    --action-warning-background: 161,98,7;
+    --action-warning-background-hover: 133,77,14;
+    --action-warning-background-active: 113,63,18;
+    --action-danger-content: 255,255,255;
+    --action-warning-content: 255,255,255;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+    --switch-track-theme-off: 139, 142, 150;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.azul1, [data-ds-theme="azul1"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.azul1, [data-ds-theme="azul1"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.azul1, [data-ds-theme="azul1"]) body {
+    --status-primary-outline-foreground: 15, 98, 193;
+    --status-primary-outline-border: 15, 98, 193;
+    --status-primary-soft-foreground: 15, 98, 193;
+    --status-primary-soft-background: 235, 240, 255;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.azul2, [data-ds-theme="azul2"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.azul2, [data-ds-theme="azul2"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.azul2, [data-ds-theme="azul2"]) body {
+    --chart-1: 13, 150, 212;
+    --content-link: 10, 116, 163;
+    --status-primary-outline-foreground: 10, 116, 163;
+    --status-primary-outline-border: 10, 116, 163;
+    --status-primary-soft-foreground: 10, 116, 163;
+    --status-primary-soft-background: 233, 248, 255;
+    --switch-track-theme-off: 135, 144, 148;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.azul3, [data-ds-theme="azul3"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.azul3, [data-ds-theme="azul3"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.azul3, [data-ds-theme="azul3"]) body {
+    --chart-1: 19, 52, 116;
+    --status-primary-outline-foreground: 19, 52, 116;
+    --status-primary-outline-border: 19, 52, 116;
+    --status-primary-soft-foreground: 19, 52, 116;
+    --status-primary-soft-background: 230, 239, 255;
+    --switch-track-theme-off: 138, 143, 153;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.laranja1, [data-ds-theme="laranja1"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja1, [data-ds-theme="laranja1"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja1, [data-ds-theme="laranja1"]) body {
+    --chart-1: 234, 113, 0;
+    --content-link: 171, 82, 0;
+    --status-primary-outline-foreground: 171, 82, 0;
+    --status-primary-outline-border: 171, 82, 0;
+    --status-primary-soft-foreground: 171, 82, 0;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.laranja1, [data-ds-theme="laranja1"], .basf, [data-ds-theme="basf"], .maisprevidencia, [data-ds-theme="maisprevidencia"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja1, [data-ds-theme="laranja1"], .basf, [data-ds-theme="basf"], .maisprevidencia, [data-ds-theme="maisprevidencia"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja1, [data-ds-theme="laranja1"], .basf, [data-ds-theme="basf"], .maisprevidencia, [data-ds-theme="maisprevidencia"]) body {
+    --status-primary-soft-background: 255, 235, 215;
+    --switch-track-theme-off: 153, 141, 129;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.laranja2, [data-ds-theme="laranja2"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja2, [data-ds-theme="laranja2"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja2, [data-ds-theme="laranja2"]) body {
+    --chart-1: 242, 93, 33;
+    --content-link: 182, 70, 25;
+    --status-primary-outline-foreground: 182, 70, 25;
+    --status-primary-outline-border: 182, 70, 25;
+    --status-primary-soft-foreground: 182, 70, 25;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.laranja2, [data-ds-theme="laranja2"], .funssest, [data-ds-theme="funssest"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja2, [data-ds-theme="laranja2"], .funssest, [data-ds-theme="funssest"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja2, [data-ds-theme="laranja2"], .funssest, [data-ds-theme="funssest"]) body {
+    --status-primary-soft-background: 255, 229, 219;
+    --switch-track-theme-off: 156, 140, 134;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.verde1, [data-ds-theme="verde1"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde1, [data-ds-theme="verde1"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde1, [data-ds-theme="verde1"]) body {
+    --chart-1: 0, 110, 47;
+    --status-primary-outline-foreground: 0, 110, 47;
+    --status-primary-outline-border: 0, 110, 47;
+    --status-primary-soft-foreground: 0, 110, 47;
+    --status-primary-soft-background: 229, 245, 236;
+    --switch-track-theme-off: 135, 145, 139;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.verde2, [data-ds-theme="verde2"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde2, [data-ds-theme="verde2"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde2, [data-ds-theme="verde2"]) body {
+    --chart-1: 85, 112, 41;
+    --status-primary-outline-foreground: 85, 112, 41;
+    --status-primary-outline-border: 85, 112, 41;
+    --status-primary-soft-foreground: 85, 112, 41;
+    --status-primary-soft-background: 236, 242, 228;
+    --switch-track-theme-off: 142, 145, 137;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.verde3, [data-ds-theme="verde3"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde3, [data-ds-theme="verde3"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde3, [data-ds-theme="verde3"]) body {
+    --chart-1: 11, 174, 126;
+    --content-link: 8, 124, 89;
+    --status-primary-outline-foreground: 8, 124, 89;
+    --status-primary-outline-border: 8, 124, 89;
+    --status-primary-soft-foreground: 8, 124, 89;
+    --status-primary-soft-background: 227, 250, 243;
+    --checkbox-selected: 10, 162, 117;
+    --radio-selected: 11, 169, 122;
+    --switch-track-primary-on: 10, 162, 117;
+    --switch-track-theme-off: 132, 145, 141;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.verde4, [data-ds-theme="verde4"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde4, [data-ds-theme="verde4"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde4, [data-ds-theme="verde4"]) body {
+    --chart-1: 64, 128, 50;
+    --content-link: 61, 122, 48;
+    --status-primary-outline-foreground: 61, 122, 48;
+    --status-primary-outline-border: 61, 122, 48;
+    --status-primary-soft-foreground: 61, 122, 48;
+    --status-primary-soft-background: 231, 250, 228;
+    --switch-track-theme-off: 134, 145, 132;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.rosa1, [data-ds-theme="rosa1"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"]) body {
+    --chart-1: 217, 118, 103;
+    --content-link: 161, 87, 76;
+    --status-primary-outline-foreground: 161, 87, 76;
+    --status-primary-outline-border: 161, 87, 76;
+    --status-primary-soft-foreground: 161, 87, 76;
+    --status-primary-soft-background: 255, 239, 236;
+    --switch-track-theme-off: 150, 141, 139;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.basf, [data-ds-theme="basf"], .maisprevidencia, [data-ds-theme="maisprevidencia"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"], .maisprevidencia, [data-ds-theme="maisprevidencia"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"], .maisprevidencia, [data-ds-theme="maisprevidencia"]) body {
+    --status-primary-outline-foreground: 146, 68, 0;
+    --status-primary-outline-border: 146, 68, 0;
+    --status-primary-soft-foreground: 146, 68, 0;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.funssest, [data-ds-theme="funssest"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.funssest, [data-ds-theme="funssest"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.funssest, [data-ds-theme="funssest"]) body {
+    --status-primary-outline-foreground: 181, 68, 22;
+    --status-primary-outline-border: 181, 68, 22;
+    --status-primary-soft-foreground: 181, 68, 22;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.aceprev, [data-ds-theme="aceprev"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.aceprev, [data-ds-theme="aceprev"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.aceprev, [data-ds-theme="aceprev"]) body {
+    --content-link: 155, 90, 86;
+    --status-primary-outline-foreground: 155, 90, 86;
+    --status-primary-outline-border: 155, 90, 86;
+    --status-primary-soft-foreground: 155, 90, 86;
+    --status-primary-soft-background: 253, 243, 243;
+    --checkbox-selected: 206, 120, 114;
+    --radio-selected: 213, 124, 117;
+    --switch-track-primary-on: 206, 120, 114;
+    --switch-track-secondary-on: 206, 120, 114;
+    --switch-track-tertiary-on: 206, 120, 114;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"]) body {
+    --action-primary-content-hover: 20, 25, 31;
+    --action-primary-content-active: 20, 25, 31;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+    --content-brand-secondary: 41, 51, 62;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.cibrius, [data-ds-theme="cibrius"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.cibrius, [data-ds-theme="cibrius"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.cibrius, [data-ds-theme="cibrius"]) body {
+    --content-link: 92, 117, 45;
+    --status-primary-outline-foreground: 92, 117, 45;
+    --status-primary-outline-border: 92, 117, 45;
+    --status-primary-soft-foreground: 92, 117, 45;
+    --status-primary-soft-background: 242, 245, 235;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.serpros, [data-ds-theme="serpros"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.serpros, [data-ds-theme="serpros"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.serpros, [data-ds-theme="serpros"]) body {
+    --content-link: 0, 118, 154;
+    --status-primary-outline-foreground: 0, 118, 154;
+    --status-primary-outline-border: 0, 118, 154;
+    --status-primary-soft-foreground: 0, 118, 154;
+    --status-primary-soft-background: 230, 246, 251;
+    --checkbox-selected: 0, 154, 202;
+    --radio-selected: 0, 159, 208;
+    --switch-track-primary-on: 0, 154, 202;
+    --switch-track-secondary-on: 0, 154, 202;
+    --switch-track-tertiary-on: 0, 154, 202;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.einvest, [data-ds-theme="einvest"]) body {
+    --content-link: 7, 125, 62;
+    --status-primary-outline-foreground: 7, 125, 62;
+    --status-primary-outline-border: 7, 125, 62;
+    --status-primary-soft-foreground: 7, 125, 62;
+    --status-primary-soft-background: 230, 243, 236;
+    --action-primary-content-hover: 255, 255, 255;
+    --action-primary-content-active: 255, 255, 255;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"]) body {
+    --feedback-info-strong: 147, 197, 253;
+    --feedback-info-border: 147, 197, 253;
+    --feedback-info-content: 147, 197, 253;
+    --feedback-danger-strong: 255, 204, 204;
+    --feedback-danger-soft: 55, 9, 9;
+    --feedback-danger-border: 255, 204, 204;
+    --feedback-danger-content: 255, 204, 204;
+    --feedback-warning-strong: 255, 235, 102;
+    --feedback-warning-soft: 38, 33, 0;
+    --feedback-warning-border: 255, 235, 102;
+    --feedback-warning-content: 255, 235, 102;
+    --feedback-success-soft: 5, 46, 22;
+    --feedback-success-content: 110, 231, 160;
+    --feedback-info-soft: 16, 41, 64;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"]) body {
+    --checkbox-selected: 105, 147, 186;
+    --selection-content: 144,202,255;
+    --radio-selected: 144,202,255;
+    --chart-1: 144,202,255;
+    --content-link: 144,202,255;
+    --selection-border: 144,202,255;
+    --loading-circular-indicator: 144,202,255;
+    --status-primary-outline-foreground: 144,202,255;
+    --status-primary-outline-border: 144,202,255;
+    --status-primary-soft-foreground: 144,202,255;
+    --status-primary-soft-background: 38,46,55;
+    --switch-track-primary-on: 34, 111, 198;
+    --switch-track-secondary-on: 31, 127, 72;
+    --switch-track-tertiary-on: 110, 112, 114;
+    --action-primary-content-hover: 255,255,255;
+    --action-primary-content-active: 255,255,255;
+    --action-secondary-content-hover: 255,255,255;
+    --action-secondary-content-active: 255,255,255;
+    --action-tertiary-content-hover: 255,255,255;
+    --action-tertiary-content-active: 255,255,255;
+    --content-brand-secondary: 92, 162, 122;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"]) body {
+    --primary-3: 22,44,100;
+    --primary-2: 7,68,138;
+    --primary-1: 15,98,193;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+    --status-blue-outline-foreground: 147, 197, 253;
+    --status-blue-outline-border: 147, 197, 253;
+    --status-blue-soft-foreground: 147, 197, 253;
+    --status-blue-soft-background: 20, 39, 61;
+    --status-green-outline-foreground: 134, 239, 172;
+    --status-green-outline-border: 134, 239, 172;
+    --status-green-soft-foreground: 134, 239, 172;
+    --status-green-soft-background: 18, 43, 31;
+    --status-orange-outline-foreground: 253, 186, 116;
+    --status-orange-outline-border: 253, 186, 116;
+    --status-orange-soft-foreground: 253, 186, 116;
+    --status-orange-soft-background: 53, 34, 22;
+    --status-yellow-outline-foreground: 253, 224, 71;
+    --status-yellow-outline-border: 253, 224, 71;
+    --status-yellow-soft-foreground: 253, 224, 71;
+    --status-yellow-soft-background: 46, 39, 17;
+    --status-red-outline-foreground: 252, 165, 165;
+    --status-red-outline-border: 252, 165, 165;
+    --status-red-soft-foreground: 252, 165, 165;
+    --status-red-soft-background: 51, 27, 32;
+    --status-slate-outline-foreground: 203, 213, 225;
+    --status-slate-outline-border: 203, 213, 225;
+    --status-slate-soft-foreground: 203, 213, 225;
+    --status-slate-soft-background: 36, 43, 52;
+    --status-black-outline-foreground: 226, 232, 240;
+    --status-black-outline-border: 226, 232, 240;
+    --status-black-soft-foreground: 226, 232, 240;
+    --status-black-soft-background: 38, 42, 48;
+    --switch-knob-icon-on: 78, 164, 114;
+    --switch-knob-icon-off: 173, 139, 139;
+    --switch-knob-theme-icon-off: 0, 0, 0;
+    --feedback-danger-on-strong: 0, 0, 0;
+    --action-danger-content-hover: 255,255,255;
+    --action-danger-content-active: 255,255,255;
+    --action-warning-content-hover: 255,255,255;
+    --action-warning-content-active: 255,255,255;
+    --action-danger-background: 168,26,10;
+    --action-danger-background-hover: 131,13,0;
+    --action-danger-background-active: 89,9,0;
+    --action-warning-background: 161,98,7;
+    --action-warning-background-hover: 133,77,14;
+    --action-warning-background-active: 113,63,18;
+    --action-danger-content: 255,255,255;
+    --action-warning-content: 255,255,255;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+    --switch-knob-theme-on: 255, 255, 255;
+    --switch-track-contract-off: 187, 76, 64;
+    --switch-track-theme-on: 110, 112, 114;
+    --switch-track-theme-off: 99, 114, 128;
+    --switch-knob-theme-icon-on: 0, 0, 0;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"]) body {
+    --primary-3: 80, 105, 170;
+    --primary-2: 52, 117, 194;
+    --primary-1: 74, 144, 226;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"]) body {
+    --action-primary-background-hover: 15,98,193;
+    --action-primary-background: 7,68,138;
+    --action-primary-background-active: 22,44,100;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.laranja2, [data-ds-theme="laranja2"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.laranja2, [data-ds-theme="laranja2"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.laranja2, [data-ds-theme="laranja2"]) body {
+    --primary-3: 146, 68, 0;
+    --primary-2: 200, 93, 0;
+    --primary-1: 234, 113, 0;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.rosa1, [data-ds-theme="rosa1"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"]) body {
+    --switch-knob-disabled: 24, 22, 28;
+    --switch-track-theme-on: 173, 157, 212;
+    --checkbox-disabled-surface: 24, 22, 28;
+    --switch-track-tertiary-on: 149, 135, 182;
+    --radio-disabled-surface: 24, 22, 28;
+    --content-brand-secondary: 248, 207, 128;
+    --switch-track-secondary-on: 166, 139, 86;
+    --status-primary-soft-background: 49, 32, 35;
+    --switch-track-contract-off: 186, 74, 61;
+    --switch-track-theme-off: 96, 111, 126;
+    --switch-knob-theme-icon-on: 255, 255, 255;
+    --action-primary-content-hover: 24, 22, 28;
+    --action-primary-content-active: 24, 22, 28;
+    --action-secondary-content-hover: 24, 22, 28;
+    --action-secondary-content-active: 24, 22, 28;
+    --action-tertiary-content-hover: 24, 22, 28;
+    --action-tertiary-content-active: 24, 22, 28;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.rosa1, [data-ds-theme="rosa1"], .aceprev, [data-ds-theme="aceprev"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"], .aceprev, [data-ds-theme="aceprev"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"], .aceprev, [data-ds-theme="aceprev"]) body {
+    --status-primary-outline-foreground: 239, 139, 132;
+    --status-primary-outline-border: 239, 139, 132;
+    --status-primary-soft-foreground: 239, 139, 132;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.basf, [data-ds-theme="basf"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"]) body {
+    --status-primary-outline-foreground: 255, 164, 81;
+    --status-primary-outline-border: 255, 164, 81;
+    --status-primary-soft-foreground: 255, 164, 81;
+    --status-primary-soft-background: 60, 49, 40;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+    --action-primary-content-hover: 20, 25, 31;
+    --action-primary-content-active: 20, 25, 31;
+    --action-secondary-content-hover: 20, 25, 31;
+    --action-secondary-content-active: 20, 25, 31;
+    --action-tertiary-content-hover: 20, 25, 31;
+    --action-tertiary-content-active: 20, 25, 31;
+    --content-brand-secondary: 212, 219, 226;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.funssest, [data-ds-theme="funssest"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.funssest, [data-ds-theme="funssest"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.funssest, [data-ds-theme="funssest"]) body {
+    --status-primary-outline-foreground: 255, 148, 92;
+    --status-primary-outline-border: 255, 148, 92;
+    --status-primary-soft-foreground: 255, 148, 92;
+    --status-primary-soft-background: 60, 46, 41;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.maisprevidencia, [data-ds-theme="maisprevidencia"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.maisprevidencia, [data-ds-theme="maisprevidencia"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.maisprevidencia, [data-ds-theme="maisprevidencia"]) body {
+    --status-primary-outline-foreground: 255, 172, 106;
+    --status-primary-outline-border: 255, 172, 106;
+    --status-primary-soft-foreground: 255, 172, 106;
+    --status-primary-soft-background: 60, 50, 44;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.aceprev, [data-ds-theme="aceprev"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.aceprev, [data-ds-theme="aceprev"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.aceprev, [data-ds-theme="aceprev"]) body {
+    --status-primary-soft-background: 57, 44, 48;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.cibrius, [data-ds-theme="cibrius"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.cibrius, [data-ds-theme="cibrius"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.cibrius, [data-ds-theme="cibrius"]) body {
+    --status-primary-outline-foreground: 171, 201, 104;
+    --status-primary-outline-border: 171, 201, 104;
+    --status-primary-soft-foreground: 171, 201, 104;
+    --status-primary-soft-background: 46, 55, 43;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.serpros, [data-ds-theme="serpros"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.serpros, [data-ds-theme="serpros"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.serpros, [data-ds-theme="serpros"]) body {
+    --status-primary-outline-foreground: 87, 206, 240;
+    --status-primary-outline-border: 87, 206, 240;
+    --status-primary-soft-foreground: 87, 206, 240;
+    --status-primary-soft-background: 31, 56, 67;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.einvest, [data-ds-theme="einvest"]) body {
+    --status-primary-outline-foreground: 85, 217, 156;
+    --status-primary-outline-border: 85, 217, 156;
+    --status-primary-soft-foreground: 85, 217, 156;
+    --status-primary-soft-background: 31, 58, 52;
+  }
+
+  html[data-color-scheme="light"][data-contrast="high"] :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"]) body {
+    --action-primary-background-hover: 0,0,0;
+    --feedback-info-strong: 22, 79, 133;
+    --chart-donut-12: 93,59,47;
+    --selection-background: 248,250,252;
+    --chart-12: 93,59,47;
+    --checkbox-selected: 33,33,33;
+    --switch-track-primary-on: 33,33,33;
+    --primary-4: 118,118,118;
+    --selection-content: 0, 0, 0;
+    --chart-2: 0,102,46;
+    --action-primary-background: 33,33,33;
+    --chart-donut-1: 33,33,33;
+    --chart-donut-5: 73,0,146;
+    --chart-donut-11: 45,55,145;
+    --chart-donut-7: 128,45,0;
+    --chart-6: 0,92,92;
+    --chart-balance: 0,102,46;
+    --action-primary-background-active: 0,0,0;
+    --primary-3: 0,0,0;
+    --chart-3: 176,0,32;
+    --radio-selected: 33,33,33;
+    --primary-2: 0,0,0;
+    --feedback-info-border: 22, 79, 133;
+    --chart-1: 33,33,33;
+    --chart-10: 67,87,0;
+    --chart-7: 128,45,0;
+    --chart-donut-6: 0,92,92;
+    --feedback-info-soft: 238, 246, 255;
+    --chart-donut-3: 176,0,32;
+    --primary-5: 248,250,252;
+    --feedback-info-content: 22, 79, 133;
+    --chart-8: 0,88,80;
+    --chart-donut-4: 107,67,0;
+    --content-link: 33,33,33;
+    --selection-border: 33,33,33;
+    --chart-4: 107,67,0;
+    --chart-invested: 33,33,33;
+    --chart-donut-2: 0,102,46;
+    --chart-donut-9: 136,0,85;
+    --loading-circular-indicator: 33,33,33;
+    --chart-5: 73,0,146;
+    --chart-9: 136,0,85;
+    --chart-11: 45,55,145;
+    --primary-1: 33,33,33;
+    --action-primary-ghost-background: 248,250,252;
+    --chart-donut-8: 0,88,80;
+    --chart-donut-10: 67,87,0;
+    --feedback-danger-strong: 128, 0, 24;
+    --feedback-danger-border: 128, 0, 24;
+    --feedback-success-content: 0, 107, 53;
+    --status-primary-outline-foreground: 33,33,33;
+    --status-primary-outline-border: 33,33,33;
+    --status-primary-soft-foreground: 33,33,33;
+    --status-primary-soft-background: 248,250,252;
+    --action-tertiary-content-active: 0, 0, 0;
+    --content-on-brand: 0, 0, 0;
+    --content-brand-secondary: 0,110,47;
+  }
+
+  html[data-color-scheme="light"][data-contrast="high"] :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+    --status-blue-outline-foreground: 0, 99, 208;
+    --status-blue-soft-background: 255, 255, 255;
+    --status-blue-soft-foreground: 0, 108, 226;
+    --status-green-outline-foreground: 40, 117, 62;
+    --status-green-soft-background: 255, 255, 255;
+    --status-green-soft-foreground: 46, 133, 71;
+    --status-orange-soft-background: 255, 255, 255;
+    --status-orange-soft-foreground: 201, 76, 0;
+    --status-yellow-solid-background: 142, 109, 6;
+    --status-yellow-solid-foreground: 255, 255, 255;
+    --status-yellow-outline-border: 142, 109, 6;
+    --status-yellow-outline-foreground: 128, 98, 5;
+    --status-yellow-soft-background: 255, 255, 255;
+    --status-yellow-soft-foreground: 142, 109, 6;
+    --status-red-outline-foreground: 168, 26, 10;
+    --status-red-soft-background: 255, 255, 255;
+    --status-red-soft-foreground: 168, 26, 10;
+    --status-slate-outline-foreground: 69, 90, 100;
+    --status-slate-soft-background: 255, 255, 255;
+    --status-slate-soft-foreground: 69, 90, 100;
+    --status-black-soft-background: 255, 255, 255;
+    --action-primary-content-hover: 255, 255, 255;
+    --action-primary-content-active: 255, 255, 255;
+    --action-secondary-content-hover: 255, 255, 255;
+    --action-secondary-content-active: 255, 255, 255;
+    --action-tertiary-content-hover: 255, 255, 255;
+    --action-danger-content-hover: 255, 255, 255;
+    --action-danger-content-active: 255, 255, 255;
+    --action-warning-content-hover: 255, 255, 255;
+    --action-warning-content-active: 255, 255, 255;
+    --switch-knob-icon-on: 0, 107, 53;
+    --switch-knob-icon-off: 128, 0, 24;
+    --switch-knob-theme-icon-on: 0, 0, 0;
+    --switch-knob-theme-icon-off: 0, 0, 0;
+    --feedback-danger-on-strong: 255, 255, 255;
+    --action-danger-background: 168,26,10;
+    --action-danger-background-hover: 131,13,0;
+    --action-danger-background-active: 89,9,0;
+    --action-warning-background: 107,67,0;
+    --action-warning-background-hover: 86,53,0;
+    --action-warning-background-active: 64,39,0;
+    --action-danger-content: 255, 255, 255;
+    --action-warning-content: 255, 255, 255;
+    --status-blue-solid-background: 0, 108, 226;
+    --status-blue-solid-foreground: 255, 255, 255;
+    --status-blue-outline-border: 0, 108, 226;
+    --status-green-solid-background: 46, 133, 71;
+    --status-green-solid-foreground: 255, 255, 255;
+    --status-green-outline-border: 46, 133, 71;
+    --status-orange-solid-background: 201, 76, 0;
+    --status-orange-solid-foreground: 255, 255, 255;
+    --status-orange-outline-border: 201, 76, 0;
+    --status-orange-outline-foreground: 177, 67, 0;
+    --status-red-solid-background: 168, 26, 10;
+    --status-red-solid-foreground: 255, 255, 255;
+    --status-red-outline-border: 168, 26, 10;
+    --status-slate-solid-background: 69, 90, 100;
+    --status-slate-solid-foreground: 255, 255, 255;
+    --status-slate-outline-border: 69, 90, 100;
+    --status-black-solid-background: 0, 0, 0;
+    --status-black-solid-foreground: 255, 255, 255;
+    --status-black-outline-border: 0, 0, 0;
+    --status-black-outline-foreground: 0, 0, 0;
+    --status-black-soft-foreground: 0, 0, 0;
+  }
+
+  html[data-color-scheme="light"][data-contrast="high"] :is(.basf, [data-ds-theme="basf"], .maisprevidencia, [data-ds-theme="maisprevidencia"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"], .maisprevidencia, [data-ds-theme="maisprevidencia"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"], .maisprevidencia, [data-ds-theme="maisprevidencia"]) body {
+    --status-primary-outline-foreground: 131, 63, 0;
+    --status-primary-outline-border: 131, 63, 0;
+    --status-primary-soft-foreground: 131, 63, 0;
+    --status-primary-soft-background: 243, 236, 230;
+  }
+
+  html[data-color-scheme="light"][data-contrast="high"] :is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+    --action-tertiary-content-active: 255, 255, 255;
+    --content-brand-secondary: 41, 51, 62;
+  }
+
+  html[data-color-scheme="light"][data-contrast="high"] :is(.funssest, [data-ds-theme="funssest"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.funssest, [data-ds-theme="funssest"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.funssest, [data-ds-theme="funssest"]) body {
+    --status-primary-outline-foreground: 147, 57, 20;
+    --status-primary-outline-border: 147, 57, 20;
+    --status-primary-soft-foreground: 147, 57, 20;
+    --status-primary-soft-background: 244, 235, 232;
+  }
+
+  html[data-color-scheme="light"][data-contrast="high"] :is(.aceprev, [data-ds-theme="aceprev"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.aceprev, [data-ds-theme="aceprev"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.aceprev, [data-ds-theme="aceprev"]) body {
+    --status-primary-outline-foreground: 121, 72, 67;
+    --status-primary-outline-border: 121, 72, 67;
+    --status-primary-soft-foreground: 121, 72, 67;
+    --status-primary-soft-background: 242, 237, 236;
+  }
+
+  html[data-color-scheme="light"][data-contrast="high"] :is(.cibrius, [data-ds-theme="cibrius"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.cibrius, [data-ds-theme="cibrius"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.cibrius, [data-ds-theme="cibrius"]) body {
+    --status-primary-outline-foreground: 73, 94, 36;
+    --status-primary-outline-border: 73, 94, 36;
+    --status-primary-soft-foreground: 73, 94, 36;
+    --status-primary-soft-background: 237, 239, 233;
+  }
+
+  html[data-color-scheme="light"][data-contrast="high"] :is(.serpros, [data-ds-theme="serpros"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.serpros, [data-ds-theme="serpros"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.serpros, [data-ds-theme="serpros"]) body {
+    --status-primary-outline-foreground: 0, 93, 121;
+    --status-primary-outline-border: 0, 93, 121;
+    --status-primary-soft-foreground: 0, 93, 121;
+    --status-primary-soft-background: 230, 239, 242;
+  }
+
+  html[data-color-scheme="light"][data-contrast="high"] :is(.einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.einvest, [data-ds-theme="einvest"]) body {
+    --status-primary-outline-foreground: 6, 103, 52;
+    --status-primary-outline-border: 6, 103, 52;
+    --status-primary-soft-foreground: 6, 103, 52;
+    --status-primary-soft-background: 230, 240, 235;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"]) body {
+    --feedback-danger-strong: 255, 204, 204;
+    --feedback-danger-border: 255, 204, 204;
+    --feedback-warning-strong: 255, 235, 102;
+    --feedback-warning-border: 255, 235, 102;
+    --feedback-success-strong: 110, 231, 160;
+    --feedback-success-border: 110, 231, 160;
+    --feedback-info-strong: 147, 197, 253;
+    --feedback-info-soft: 16, 41, 64;
+    --feedback-info-border: 147, 197, 253;
+    --feedback-info-content: 147, 197, 253;
+    --status-primary-outline-foreground: 255,223,0;
+    --status-primary-outline-border: 255,223,0;
+    --status-primary-soft-foreground: 255,223,0;
+    --status-primary-soft-background: 34,34,34;
+    --action-secondary-content-hover: 255, 255, 255;
+    --action-secondary-content-active: 255, 255, 255;
+    --action-tertiary-content-hover: 255, 255, 255;
+    --switch-knob-icon-on: 110, 231, 160;
+    --switch-knob-icon-off: 255, 204, 204;
+    --switch-knob-theme-icon-off: 255, 255, 255;
+    --content-brand-secondary: 74, 152, 107;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+    --status-blue-solid-background: 20, 120, 228;
+    --status-blue-solid-foreground: 0, 0, 0;
+    --status-blue-outline-border: 20, 120, 228;
+    --status-blue-outline-foreground: 51, 138, 232;
+    --status-blue-soft-background: 20, 20, 20;
+    --status-blue-soft-foreground: 39, 131, 230;
+    --status-green-solid-foreground: 0, 0, 0;
+    --status-green-outline-foreground: 78, 152, 100;
+    --status-green-soft-background: 20, 20, 20;
+    --status-green-soft-foreground: 63, 143, 86;
+    --status-orange-solid-foreground: 0, 0, 0;
+    --status-orange-outline-foreground: 211, 108, 46;
+    --status-orange-soft-background: 20, 20, 20;
+    --status-orange-soft-foreground: 209, 103, 39;
+    --status-yellow-solid-foreground: 0, 0, 0;
+    --status-yellow-outline-foreground: 234, 179, 8;
+    --status-yellow-soft-background: 20, 20, 20;
+    --status-yellow-soft-foreground: 234, 179, 8;
+    --status-red-solid-background: 192, 91, 80;
+    --status-red-solid-foreground: 0, 0, 0;
+    --status-red-outline-border: 192, 91, 80;
+    --status-red-outline-foreground: 200, 112, 103;
+    --status-red-soft-background: 20, 20, 20;
+    --status-red-soft-foreground: 197, 104, 94;
+    --status-slate-solid-background: 111, 126, 134;
+    --status-slate-solid-foreground: 0, 0, 0;
+    --status-slate-outline-border: 111, 126, 134;
+    --status-slate-outline-foreground: 125, 139, 146;
+    --status-slate-soft-background: 20, 20, 20;
+    --status-slate-soft-foreground: 123, 136, 144;
+    --status-black-solid-background: 123, 123, 123;
+    --status-black-solid-foreground: 0, 0, 0;
+    --status-black-outline-border: 123, 123, 123;
+    --status-black-outline-foreground: 138, 138, 138;
+    --status-black-soft-background: 20, 20, 20;
+    --status-black-soft-foreground: 134, 134, 134;
+    --action-primary-content-hover: 0, 0, 0;
+    --action-primary-content-active: 0, 0, 0;
+    --action-tertiary-content-active: 0, 0, 0;
+    --action-danger-content-hover: 255, 255, 255;
+    --action-danger-content-active: 255, 255, 255;
+    --action-warning-content-hover: 0, 0, 0;
+    --action-warning-content-active: 0, 0, 0;
+    --switch-knob-theme-icon-on: 255, 255, 255;
+    --feedback-danger-on-strong: 0, 0, 0;
+    --action-danger-background: 168,26,10;
+    --action-danger-background-hover: 131,13,0;
+    --action-danger-background-active: 89,9,0;
+    --action-warning-background: 255,223,0;
+    --action-warning-background-hover: 255,198,0;
+    --action-warning-background-active: 255,235,102;
+    --action-danger-content: 255, 255, 255;
+    --action-warning-content: 0, 0, 0;
+    --status-green-solid-background: 46, 133, 71;
+    --status-green-outline-border: 46, 133, 71;
+    --status-orange-solid-background: 201, 76, 0;
+    --status-orange-outline-border: 201, 76, 0;
+    --status-yellow-solid-background: 234, 179, 8;
+    --status-yellow-outline-border: 234, 179, 8;
+    --field-assistive-error: 255, 204, 204;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"]) body {
+    --action-primary-background-hover: 255,198,0;
+    --action-primary-background: 255,223,0;
+    --action-primary-background-active: 230,168,0;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"]) body {
+    --switch-track-contract-off: 255,223,0;
+    --checkbox-selected: 255,223,0;
+    --switch-track-primary-on: 255,223,0;
+    --switch-track-theme-on: 255,223,0;
+    --primary-3: 230,168,0;
+    --border-strong: 255,223,0;
+    --switch-track-tertiary-on: 255,223,0;
+    --field-border-active: 255,223,0;
+    --radio-selected: 255,223,0;
+    --primary-2: 255,198,0;
+    --switch-track-secondary-on: 255,223,0;
+    --switch-track-contract-on: 255,223,0;
+    --content-link: 255,223,0;
+    --focus-ring: 255,223,0;
+    --selection-border: 255,223,0;
+    --loading-circular-indicator: 255,223,0;
+    --primary-1: 255,223,0;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.basf, [data-ds-theme="basf"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"]) body {
+    --status-primary-outline-foreground: 255, 164, 81;
+    --status-primary-outline-border: 255, 164, 81;
+    --status-primary-soft-foreground: 255, 164, 81;
+    --status-primary-soft-background: 60, 49, 40;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+    --action-secondary-content: 0, 0, 0;
+    --action-secondary-content-hover: 0, 0, 0;
+    --action-secondary-content-active: 0, 0, 0;
+    --action-tertiary-content: 0, 0, 0;
+    --action-tertiary-content-hover: 0, 0, 0;
+    --switch-track-contract-on: 163, 143, 0;
+    --switch-track-contract-off: 163, 143, 0;
+    --switch-track-theme-off: 142, 142, 142;
+    --switch-knob-icon-on: 78, 164, 114;
+    --switch-knob-icon-off: 173, 139, 139;
+    --switch-knob-theme-icon-off: 0, 0, 0;
+    --content-brand-secondary: 212, 219, 226;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.funssest, [data-ds-theme="funssest"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.funssest, [data-ds-theme="funssest"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.funssest, [data-ds-theme="funssest"]) body {
+    --status-primary-outline-foreground: 255, 148, 92;
+    --status-primary-outline-border: 255, 148, 92;
+    --status-primary-soft-foreground: 255, 148, 92;
+    --status-primary-soft-background: 60, 46, 41;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.maisprevidencia, [data-ds-theme="maisprevidencia"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.maisprevidencia, [data-ds-theme="maisprevidencia"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.maisprevidencia, [data-ds-theme="maisprevidencia"]) body {
+    --status-primary-outline-foreground: 255, 172, 106;
+    --status-primary-outline-border: 255, 172, 106;
+    --status-primary-soft-foreground: 255, 172, 106;
+    --status-primary-soft-background: 60, 50, 44;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.aceprev, [data-ds-theme="aceprev"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.aceprev, [data-ds-theme="aceprev"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.aceprev, [data-ds-theme="aceprev"]) body {
+    --status-primary-outline-foreground: 239, 139, 132;
+    --status-primary-outline-border: 239, 139, 132;
+    --status-primary-soft-foreground: 239, 139, 132;
+    --status-primary-soft-background: 57, 44, 48;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.cibrius, [data-ds-theme="cibrius"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.cibrius, [data-ds-theme="cibrius"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.cibrius, [data-ds-theme="cibrius"]) body {
+    --status-primary-outline-foreground: 171, 201, 104;
+    --status-primary-outline-border: 171, 201, 104;
+    --status-primary-soft-foreground: 171, 201, 104;
+    --status-primary-soft-background: 46, 55, 43;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.serpros, [data-ds-theme="serpros"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.serpros, [data-ds-theme="serpros"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.serpros, [data-ds-theme="serpros"]) body {
+    --status-primary-outline-foreground: 87, 206, 240;
+    --status-primary-outline-border: 87, 206, 240;
+    --status-primary-soft-foreground: 87, 206, 240;
+    --status-primary-soft-background: 31, 56, 67;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.einvest, [data-ds-theme="einvest"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.einvest, [data-ds-theme="einvest"]) body {
+    --status-primary-outline-foreground: 85, 217, 156;
+    --status-primary-outline-border: 85, 217, 156;
+    --status-primary-soft-foreground: 85, 217, 156;
+    --status-primary-soft-background: 31, 58, 52;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]):where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .basf, .funssest, .maisprevidencia, .aceprev, .cibrius, .serpros, .einvest)) body:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .basf, .funssest, .maisprevidencia, .aceprev, .cibrius, .serpros, .einvest)) {
+    --feedback-danger-strong: 128, 0, 24;
+    --feedback-danger-soft: 255, 240, 243;
+    --feedback-danger-border: 128, 0, 24;
+    --feedback-danger-content: 128, 0, 24;
+    --feedback-warning-strong: 107, 67, 0;
+    --feedback-warning-soft: 255, 248, 225;
+    --feedback-warning-border: 107, 67, 0;
+    --feedback-warning-content: 107, 67, 0;
+    --feedback-success-strong: 0, 107, 53;
+    --feedback-success-soft: 239, 255, 245;
+    --feedback-success-border: 0, 107, 53;
+    --feedback-success-content: 0, 107, 53;
+    --feedback-info-strong: 22, 79, 133;
+    --feedback-info-soft: 238, 246, 255;
+    --feedback-info-border: 22, 79, 133;
+    --feedback-info-content: 22, 79, 133;
+    --status-primary-outline-foreground: 15,98,193;
+    --status-primary-outline-border: 15,98,193;
+    --status-primary-soft-foreground: 15,98,193;
+    --status-primary-soft-background: 235,240,255;
+    --switch-knob-theme-on: 255, 255, 255;
+    --switch-track-theme-off: 139, 142, 150;
+    --switch-track-off: 141, 144, 148;
+    --switch-knob-icon-on: 0, 107, 53;
+    --switch-knob-icon-off: 128, 0, 24;
+    --switch-knob-theme-icon-on: 0, 0, 0;
+    --switch-knob-theme-icon-off: 0, 0, 0;
+    --feedback-danger-on-strong: 255, 255, 255;
+    --chart-tooltip-text: 255,255,255;
+    --action-primary-content-hover: 255,255,255;
+    --action-primary-content-active: 255,255,255;
+    --action-secondary-content-hover: 255,255,255;
+    --action-secondary-content-active: 255,255,255;
+    --action-tertiary-content-hover: 255,255,255;
+    --action-tertiary-content-active: 255,255,255;
+    --action-danger-content-hover: 255,255,255;
+    --action-danger-content-active: 255,255,255;
+    --action-warning-content-hover: 255,255,255;
+    --action-warning-content-active: 255,255,255;
+    --action-danger-background: 168,26,10;
+    --action-danger-background-hover: 131,13,0;
+    --action-danger-background-active: 89,9,0;
+    --action-warning-background: 161,98,7;
+    --action-warning-background-hover: 133,77,14;
+    --action-warning-background-active: 113,63,18;
+    --action-danger-content: 255,255,255;
+    --action-warning-content: 255,255,255;
+    --content-brand-secondary: 0,110,47;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]):where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .basf, .funssest, .maisprevidencia, .aceprev, .cibrius, .serpros, .einvest)) body:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .basf, .funssest, .maisprevidencia, .aceprev, .cibrius, .serpros, .einvest)) {
+    --feedback-info-strong: 147, 197, 253;
+    --checkbox-selected: 105, 147, 186;
+    --selection-content: 144,202,255;
+    --primary-3: 22,44,100;
+    --radio-selected: 144,202,255;
+    --primary-2: 7,68,138;
+    --feedback-info-border: 147, 197, 253;
+    --chart-1: 144,202,255;
+    --feedback-info-content: 147, 197, 253;
+    --content-link: 144,202,255;
+    --selection-border: 144,202,255;
+    --loading-circular-indicator: 144,202,255;
+    --primary-1: 15,98,193;
+    --feedback-danger-strong: 255, 204, 204;
+    --feedback-danger-soft: 55, 9, 9;
+    --feedback-danger-border: 255, 204, 204;
+    --feedback-danger-content: 255, 204, 204;
+    --feedback-warning-strong: 255, 235, 102;
+    --feedback-warning-soft: 38, 33, 0;
+    --feedback-warning-border: 255, 235, 102;
+    --feedback-warning-content: 255, 235, 102;
+    --feedback-success-soft: 5, 46, 22;
+    --feedback-success-content: 110, 231, 160;
+    --feedback-info-soft: 16, 41, 64;
+    --status-blue-outline-foreground: 147, 197, 253;
+    --status-blue-outline-border: 147, 197, 253;
+    --status-blue-soft-foreground: 147, 197, 253;
+    --status-blue-soft-background: 20, 39, 61;
+    --status-green-outline-foreground: 134, 239, 172;
+    --status-green-outline-border: 134, 239, 172;
+    --status-green-soft-foreground: 134, 239, 172;
+    --status-green-soft-background: 18, 43, 31;
+    --status-orange-outline-foreground: 253, 186, 116;
+    --status-orange-outline-border: 253, 186, 116;
+    --status-orange-soft-foreground: 253, 186, 116;
+    --status-orange-soft-background: 53, 34, 22;
+    --status-yellow-outline-foreground: 253, 224, 71;
+    --status-yellow-outline-border: 253, 224, 71;
+    --status-yellow-soft-foreground: 253, 224, 71;
+    --status-yellow-soft-background: 46, 39, 17;
+    --status-red-outline-foreground: 252, 165, 165;
+    --status-red-outline-border: 252, 165, 165;
+    --status-red-soft-foreground: 252, 165, 165;
+    --status-red-soft-background: 51, 27, 32;
+    --status-slate-outline-foreground: 203, 213, 225;
+    --status-slate-outline-border: 203, 213, 225;
+    --status-slate-soft-foreground: 203, 213, 225;
+    --status-slate-soft-background: 36, 43, 52;
+    --status-black-outline-foreground: 226, 232, 240;
+    --status-black-outline-border: 226, 232, 240;
+    --status-black-soft-foreground: 226, 232, 240;
+    --status-black-soft-background: 38, 42, 48;
+    --status-primary-outline-foreground: 144,202,255;
+    --status-primary-outline-border: 144,202,255;
+    --status-primary-soft-foreground: 144,202,255;
+    --status-primary-soft-background: 38,46,55;
+    --switch-knob-theme-on: 255, 255, 255;
+    --switch-track-primary-on: 34, 111, 198;
+    --switch-track-secondary-on: 31, 127, 72;
+    --switch-track-tertiary-on: 110, 112, 114;
+    --switch-track-contract-off: 187, 76, 64;
+    --switch-track-theme-on: 110, 112, 114;
+    --switch-track-theme-off: 99, 114, 128;
+    --switch-knob-icon-on: 78, 164, 114;
+    --switch-knob-icon-off: 173, 139, 139;
+    --switch-knob-theme-icon-on: 0, 0, 0;
+    --switch-knob-theme-icon-off: 0, 0, 0;
+    --feedback-danger-on-strong: 0, 0, 0;
+    --action-primary-content-hover: 255,255,255;
+    --action-primary-content-active: 255,255,255;
+    --action-secondary-content-hover: 255,255,255;
+    --action-secondary-content-active: 255,255,255;
+    --action-tertiary-content-hover: 255,255,255;
+    --action-tertiary-content-active: 255,255,255;
+    --action-danger-content-hover: 255,255,255;
+    --action-danger-content-active: 255,255,255;
+    --action-warning-content-hover: 255,255,255;
+    --action-warning-content-active: 255,255,255;
+    --action-danger-background: 168,26,10;
+    --action-danger-background-hover: 131,13,0;
+    --action-danger-background-active: 89,9,0;
+    --action-warning-background: 161,98,7;
+    --action-warning-background-hover: 133,77,14;
+    --action-warning-background-active: 113,63,18;
+    --action-danger-content: 255,255,255;
+    --action-warning-content: 255,255,255;
+    --content-brand-secondary: 92, 162, 122;
+  }
+
+  html[data-color-scheme="light"][data-contrast="high"]:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .basf, .funssest, .maisprevidencia, .aceprev, .cibrius, .serpros, .einvest)) body:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .basf, .funssest, .maisprevidencia, .aceprev, .cibrius, .serpros, .einvest)) {
+    --action-primary-background-hover: 0,0,0;
+    --feedback-info-strong: 22, 79, 133;
+    --chart-donut-12: 93,59,47;
+    --selection-background: 248,250,252;
+    --chart-12: 93,59,47;
+    --checkbox-selected: 33,33,33;
+    --switch-track-primary-on: 33,33,33;
+    --primary-4: 118,118,118;
+    --selection-content: 0, 0, 0;
+    --chart-2: 0,102,46;
+    --action-primary-background: 33,33,33;
+    --chart-donut-1: 33,33,33;
+    --chart-donut-5: 73,0,146;
+    --chart-donut-11: 45,55,145;
+    --chart-donut-7: 128,45,0;
+    --chart-6: 0,92,92;
+    --chart-balance: 0,102,46;
+    --action-primary-background-active: 0,0,0;
+    --primary-3: 0,0,0;
+    --chart-3: 176,0,32;
+    --radio-selected: 33,33,33;
+    --primary-2: 0,0,0;
+    --feedback-info-border: 22, 79, 133;
+    --chart-1: 33,33,33;
+    --chart-10: 67,87,0;
+    --chart-7: 128,45,0;
+    --chart-donut-6: 0,92,92;
+    --feedback-info-soft: 238, 246, 255;
+    --chart-donut-3: 176,0,32;
+    --primary-5: 248,250,252;
+    --feedback-info-content: 22, 79, 133;
+    --chart-8: 0,88,80;
+    --chart-donut-4: 107,67,0;
+    --content-link: 33,33,33;
+    --selection-border: 33,33,33;
+    --chart-4: 107,67,0;
+    --chart-invested: 33,33,33;
+    --chart-donut-2: 0,102,46;
+    --chart-donut-9: 136,0,85;
+    --loading-circular-indicator: 33,33,33;
+    --chart-5: 73,0,146;
+    --chart-9: 136,0,85;
+    --chart-11: 45,55,145;
+    --primary-1: 33,33,33;
+    --action-primary-ghost-background: 248,250,252;
+    --chart-donut-8: 0,88,80;
+    --chart-donut-10: 67,87,0;
+    --feedback-danger-strong: 128, 0, 24;
+    --feedback-danger-border: 128, 0, 24;
+    --feedback-success-content: 0, 107, 53;
+    --status-blue-outline-foreground: 0, 99, 208;
+    --status-blue-soft-background: 255, 255, 255;
+    --status-blue-soft-foreground: 0, 108, 226;
+    --status-green-outline-foreground: 40, 117, 62;
+    --status-green-soft-background: 255, 255, 255;
+    --status-green-soft-foreground: 46, 133, 71;
+    --status-orange-soft-background: 255, 255, 255;
+    --status-orange-soft-foreground: 201, 76, 0;
+    --status-yellow-solid-background: 142, 109, 6;
+    --status-yellow-solid-foreground: 255, 255, 255;
+    --status-yellow-outline-border: 142, 109, 6;
+    --status-yellow-outline-foreground: 128, 98, 5;
+    --status-yellow-soft-background: 255, 255, 255;
+    --status-yellow-soft-foreground: 142, 109, 6;
+    --status-red-outline-foreground: 168, 26, 10;
+    --status-red-soft-background: 255, 255, 255;
+    --status-red-soft-foreground: 168, 26, 10;
+    --status-slate-outline-foreground: 69, 90, 100;
+    --status-slate-soft-background: 255, 255, 255;
+    --status-slate-soft-foreground: 69, 90, 100;
+    --status-black-soft-background: 255, 255, 255;
+    --status-primary-outline-foreground: 33,33,33;
+    --status-primary-outline-border: 33,33,33;
+    --status-primary-soft-foreground: 33,33,33;
+    --status-primary-soft-background: 248,250,252;
+    --action-primary-content-hover: 255, 255, 255;
+    --action-primary-content-active: 255, 255, 255;
+    --action-secondary-content-hover: 255, 255, 255;
+    --action-secondary-content-active: 255, 255, 255;
+    --action-tertiary-content-hover: 255, 255, 255;
+    --action-tertiary-content-active: 0, 0, 0;
+    --action-danger-content-hover: 255, 255, 255;
+    --action-danger-content-active: 255, 255, 255;
+    --action-warning-content-hover: 255, 255, 255;
+    --action-warning-content-active: 255, 255, 255;
+    --content-on-brand: 0, 0, 0;
+    --switch-knob-icon-on: 0, 107, 53;
+    --switch-knob-icon-off: 128, 0, 24;
+    --switch-knob-theme-icon-on: 0, 0, 0;
+    --switch-knob-theme-icon-off: 0, 0, 0;
+    --feedback-danger-on-strong: 255, 255, 255;
+    --action-danger-background: 168,26,10;
+    --action-danger-background-hover: 131,13,0;
+    --action-danger-background-active: 89,9,0;
+    --action-warning-background: 107,67,0;
+    --action-warning-background-hover: 86,53,0;
+    --action-warning-background-active: 64,39,0;
+    --action-danger-content: 255, 255, 255;
+    --action-warning-content: 255, 255, 255;
+    --content-brand-secondary: 0,110,47;
+    --status-blue-solid-background: 0, 108, 226;
+    --status-blue-solid-foreground: 255, 255, 255;
+    --status-blue-outline-border: 0, 108, 226;
+    --status-green-solid-background: 46, 133, 71;
+    --status-green-solid-foreground: 255, 255, 255;
+    --status-green-outline-border: 46, 133, 71;
+    --status-orange-solid-background: 201, 76, 0;
+    --status-orange-solid-foreground: 255, 255, 255;
+    --status-orange-outline-border: 201, 76, 0;
+    --status-orange-outline-foreground: 177, 67, 0;
+    --status-red-solid-background: 168, 26, 10;
+    --status-red-solid-foreground: 255, 255, 255;
+    --status-red-outline-border: 168, 26, 10;
+    --status-slate-solid-background: 69, 90, 100;
+    --status-slate-solid-foreground: 255, 255, 255;
+    --status-slate-outline-border: 69, 90, 100;
+    --status-black-solid-background: 0, 0, 0;
+    --status-black-solid-foreground: 255, 255, 255;
+    --status-black-outline-border: 0, 0, 0;
+    --status-black-outline-foreground: 0, 0, 0;
+    --status-black-soft-foreground: 0, 0, 0;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"]:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .basf, .funssest, .maisprevidencia, .aceprev, .cibrius, .serpros, .einvest)) body:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .basf, .funssest, .maisprevidencia, .aceprev, .cibrius, .serpros, .einvest)) {
+    --feedback-danger-strong: 255, 204, 204;
+    --feedback-danger-border: 255, 204, 204;
+    --feedback-warning-strong: 255, 235, 102;
+    --feedback-warning-border: 255, 235, 102;
+    --feedback-success-strong: 110, 231, 160;
+    --feedback-success-border: 110, 231, 160;
+    --feedback-info-strong: 147, 197, 253;
+    --feedback-info-soft: 16, 41, 64;
+    --feedback-info-border: 147, 197, 253;
+    --feedback-info-content: 147, 197, 253;
+    --status-blue-solid-background: 20, 120, 228;
+    --status-blue-solid-foreground: 0, 0, 0;
+    --status-blue-outline-border: 20, 120, 228;
+    --status-blue-outline-foreground: 51, 138, 232;
+    --status-blue-soft-background: 20, 20, 20;
+    --status-blue-soft-foreground: 39, 131, 230;
+    --status-green-solid-foreground: 0, 0, 0;
+    --status-green-outline-foreground: 78, 152, 100;
+    --status-green-soft-background: 20, 20, 20;
+    --status-green-soft-foreground: 63, 143, 86;
+    --status-orange-solid-foreground: 0, 0, 0;
+    --status-orange-outline-foreground: 211, 108, 46;
+    --status-orange-soft-background: 20, 20, 20;
+    --status-orange-soft-foreground: 209, 103, 39;
+    --status-yellow-solid-foreground: 0, 0, 0;
+    --status-yellow-outline-foreground: 234, 179, 8;
+    --status-yellow-soft-background: 20, 20, 20;
+    --status-yellow-soft-foreground: 234, 179, 8;
+    --status-red-solid-background: 192, 91, 80;
+    --status-red-solid-foreground: 0, 0, 0;
+    --status-red-outline-border: 192, 91, 80;
+    --status-red-outline-foreground: 200, 112, 103;
+    --status-red-soft-background: 20, 20, 20;
+    --status-red-soft-foreground: 197, 104, 94;
+    --status-slate-solid-background: 111, 126, 134;
+    --status-slate-solid-foreground: 0, 0, 0;
+    --status-slate-outline-border: 111, 126, 134;
+    --status-slate-outline-foreground: 125, 139, 146;
+    --status-slate-soft-background: 20, 20, 20;
+    --status-slate-soft-foreground: 123, 136, 144;
+    --status-black-solid-background: 123, 123, 123;
+    --status-black-solid-foreground: 0, 0, 0;
+    --status-black-outline-border: 123, 123, 123;
+    --status-black-outline-foreground: 138, 138, 138;
+    --status-black-soft-background: 20, 20, 20;
+    --status-black-soft-foreground: 134, 134, 134;
+    --status-primary-outline-foreground: 255,223,0;
+    --status-primary-outline-border: 255,223,0;
+    --status-primary-soft-foreground: 255,223,0;
+    --status-primary-soft-background: 34,34,34;
+    --action-primary-content-hover: 0, 0, 0;
+    --action-primary-content-active: 0, 0, 0;
+    --action-secondary-content-hover: 255, 255, 255;
+    --action-secondary-content-active: 255, 255, 255;
+    --action-tertiary-content-hover: 255, 255, 255;
+    --action-tertiary-content-active: 0, 0, 0;
+    --action-danger-content-hover: 255, 255, 255;
+    --action-danger-content-active: 255, 255, 255;
+    --action-warning-content-hover: 0, 0, 0;
+    --action-warning-content-active: 0, 0, 0;
+    --switch-knob-icon-on: 110, 231, 160;
+    --switch-knob-icon-off: 255, 204, 204;
+    --switch-knob-theme-icon-on: 255, 255, 255;
+    --switch-knob-theme-icon-off: 255, 255, 255;
+    --feedback-danger-on-strong: 0, 0, 0;
+    --action-danger-background: 168,26,10;
+    --action-danger-background-hover: 131,13,0;
+    --action-danger-background-active: 89,9,0;
+    --action-warning-background: 255,223,0;
+    --action-warning-background-hover: 255,198,0;
+    --action-warning-background-active: 255,235,102;
+    --action-danger-content: 255, 255, 255;
+    --action-warning-content: 0, 0, 0;
+    --content-brand-secondary: 74, 152, 107;
+    --status-green-solid-background: 46, 133, 71;
+    --status-green-outline-border: 46, 133, 71;
+    --status-orange-solid-background: 201, 76, 0;
+    --status-orange-outline-border: 201, 76, 0;
+    --status-yellow-solid-background: 234, 179, 8;
+    --status-yellow-outline-border: 234, 179, 8;
+    --field-assistive-error: 255, 204, 204;
+  }

@@ -9,8 +9,8 @@ import type { HTMLAttributes, ReactNode } from "react";
 
 const COLOR_STYLES: Record<StatusBadgeColor, Record<StatusAppearance, string>> = {
   primary: {
-    outline: "border-primary-1 text-primary-1",
-    soft: "border-primary-1 bg-primary-5 text-primary-2",
+    outline: "border-status-primary-outline-border text-status-primary-outline-foreground",
+    soft: "border-status-primary-outline-border bg-status-primary-soft-background text-status-primary-soft-foreground",
     solid: "border-action-primary bg-action-primary text-action-primary-content",
   },
   blue: {

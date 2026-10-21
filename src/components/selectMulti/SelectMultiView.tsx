@@ -330,7 +330,7 @@ export function SelectMultiView(props: SelectMultiViewProps) {
                   key={option.value}
                   className={cs(
                     "flex h-10 cursor-pointer items-center gap-2 rounded p-2",
-                    isChecked && "bg-primary-5 text-primary-1",
+                    isChecked && "bg-selection-background text-selection-content",
                     disabled && "cursor-not-allowed",
                   )}
                 >
