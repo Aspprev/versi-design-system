@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import {
   SelectMulti,
+  Modal,
   type SelectMultiOption,
   type SelectMultiProps,
 } from "../src";
@@ -112,3 +113,43 @@ export const SelectedLabels: Story = {
   },
 };
 
+
+export const Grouped: Story = {
+  name: "Com seções",
+  args: {
+    options: [
+      { title: "Planos previdenciários", options },
+      { title: "Benefícios adicionais", options: [
+        { label: "Auxílio saúde", value: "saude" },
+        { label: "Auxílio educação", value: "educacao" },
+      ] },
+    ],
+  },
+  render: (args) => <SelectMultiForm {...args} />,
+  parameters: { docs: { description: { story: "options aceita a lista simples ou [{ title, options: [{ label, value }] }]. Os values devem ser únicos em toda a lista; os títulos não são selecionáveis. O resumo continua exibindo os nomes escolhidos." } } },
+};
+
+export const SelectionLimits: Story = {
+  ...Grouped,
+  name: "Mínimo e máximo de seleção",
+  args: { ...Grouped.args, minSelected: 1, maxSelected: 3 },
+  render: (args) => <SelectMultiForm {...args} initialValue={["basico"]} />,
+  parameters: { docs: { description: { story: "minSelected impede remover a última seleção ao atingir o mínimo e desabilita limpar tudo quando maior que zero. maxSelected bloqueia novas marcações ao atingir o máximo. Ambos são opcionais e valem para a lista inteira. Valores externos não são alterados: um formulário inicialmente vazio ainda precisa validar o mínimo no envio. Limites são inteiros não negativos; máximo menor que mínimo assume o mínimo." } } },
+};
+
+export const NearViewportEdge: Story = {
+  name: "Próximo ao rodapé",
+  ...{ args: Grouped.args },
+  render: (args) => <div style={{ minHeight: "140vh", paddingTop: "75vh" }}><SelectMultiForm {...args} /><button type="button">Próximo campo</button></div>,
+};
+function ModalSelectExample(args: SelectMultiProps) {
+  const [open, setOpen] = useState(false);
+  return <><button type="button" onClick={() => setOpen(true)}>Abrir seleção em modal</button>
+    <Modal isOpen={open} onClose={() => setOpen(false)} title="Selecionar benefícios">
+      <div className="max-h-32 overflow-auto"><SelectMultiForm {...args} /></div>
+    </Modal></>;
+}
+export const InsideModal: Story = {
+  name: "Dentro de modal", args: Grouped.args,
+  render: (args) => <ModalSelectExample {...args} />,
+};

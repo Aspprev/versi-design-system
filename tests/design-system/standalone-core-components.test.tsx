@@ -31,16 +31,16 @@ describe("componentes essenciais do Design System standalone", () => {
     expect(html).not.toContain("radio-control");
   });
 
-  it("expõe as variantes de tema e terciária do InputSwitch", () => {
+  it("expõe as variantes de tema e secundária do InputSwitch", () => {
     const themeHtml = renderToStaticMarkup(
       <InputSwitch aria-label="Tema" defaultEnable variant="theme" />,
     );
-    const tertiaryHtml = renderToStaticMarkup(
-      <InputSwitch aria-label="Terciário" defaultEnable variant="tertiary" />,
+    const secondaryHtml = renderToStaticMarkup(
+      <InputSwitch aria-label="Secundário" defaultEnable variant="secondary" />,
     );
 
     expect(themeHtml).toContain("bg-switch-track-theme-on");
-    expect(tertiaryHtml).toContain("bg-switch-track-tertiary-on");
+    expect(secondaryHtml).toContain("bg-switch-track-secondary-on");
   });
 
   it("mantém o contrato acessível do Button durante o carregamento", () => {

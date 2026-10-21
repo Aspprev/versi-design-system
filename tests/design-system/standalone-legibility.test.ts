@@ -2,6 +2,8 @@ import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import { contrastRatio } from "../helpers/contrast";
 
+import { promoteTertiaryTokens } from "../helpers/theme-role-migration";
+
 type Variants = Record<string, Record<string, string>>;
 const baseline = JSON.parse(readFileSync("docs/correcao-legibilidade/BASELINE-ANTES.json", "utf8")).themes as Record<string, Variants>;
 const corrections = JSON.parse(readFileSync("docs/correcao-legibilidade/AJUSTES-FUNCIONAIS.json", "utf8")).overrides as Record<string, Variants>;
@@ -14,7 +16,7 @@ describe("Pares funcionais de legibilidade", () => {
       }
     });
     for (const mode of ["high-light", "high-dark"]) it(`${id}/${mode}: pares de status e ações`, () => {
-      const values = { ...variants[mode], ...corrections[id][mode] };
+      const values = promoteTertiaryTokens({ ...variants[mode], ...corrections[id][mode] });
       for (const color of ["primary", "blue", "green", "orange", "yellow", "red", "slate", "black"]) {
         for (const surface of ["--surface-page", "--surface-card-semantic", "--surface-subtle", "--surface-muted"]) {
           expect(contrastRatio(values[`--status-${color}-outline-foreground`], values[surface])).toBeGreaterThanOrEqual(4.5);
@@ -26,7 +28,7 @@ describe("Pares funcionais de legibilidade", () => {
           expect(contrastRatio(fg, bg)).toBeGreaterThanOrEqual(4.5);
         }
       }
-      for (const family of ["primary", "secondary", "tertiary", "danger", "warning"]) for (const suffix of ["", "-hover", "-active"]) {
+      for (const family of ["primary", "secondary", "danger", "warning"]) for (const suffix of ["", "-hover", "-active"]) {
         expect(contrastRatio(values[`--action-${family}-content${suffix}`], values[`--action-${family}-background${suffix}`])).toBeGreaterThanOrEqual(4.5);
       }
       for (const role of ["selected", "error"]) {
@@ -34,7 +36,7 @@ describe("Pares funcionais de legibilidade", () => {
         expect(contrastRatio(mode === "high-dark" ? "0,0,0" : "255,255,255", values[`--checkbox-${role}`])).toBeGreaterThanOrEqual(3);
         expect(contrastRatio(values[`--radio-${role}`], values["--radio-surface"])).toBeGreaterThanOrEqual(3);
       }
-      for (const variant of ["primary", "secondary", "tertiary", "contract", "theme"]) {
+      for (const variant of ["primary", "secondary", "contract", "theme"]) {
         const knob = variant === "theme" ? values["--switch-knob-theme-on"] : values["--switch-knob"];
         expect(contrastRatio(knob, values[`--switch-track-${variant}-on`])).toBeGreaterThanOrEqual(3);
       }

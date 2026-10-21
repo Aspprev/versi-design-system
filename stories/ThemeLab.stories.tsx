@@ -163,7 +163,7 @@ function ThemeLab({ globals, updateGlobals }: { globals: Record<string, unknown>
             <Button color="secondary" variant="outline">
               Acao secundaria
             </Button>
-            <Button color="tertiary" variant="plain">
+            <Button color="secondary" variant="plain">
               Acao simples
             </Button>
             <StatusBadge tone="success" appearance="solid">

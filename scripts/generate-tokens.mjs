@@ -139,7 +139,7 @@ function renderThemes(registry) {
 }
 
 const COLOR_TOKEN_PREFIXES = [
-  "primary-", "secondary-", "tertiary-", "danger-", "warning-", "success-",
+  "primary-", "secondary-", "danger-", "warning-", "success-",
   "grayscale-", "overlay", "bg-", "text-", "content-", "action-",
   "selection-", "notice-", "surface-", "footer-", "feedback-", "border-", "status-",
   "focus-ring", "icon-", "field-", "switch-", "radio-", "checkbox-",

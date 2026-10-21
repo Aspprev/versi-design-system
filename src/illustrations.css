@@ -1,0 +1,142 @@
+/* Opt-in inline SVG contract. Full CSS colors intentionally match the portal
+   variables; palette/content tokens inside rgb() remain RGB channels. */
+:is(.versi-illustration, .portal-illustration) {
+  --illustration-accent: rgb(var(--content-link));
+  --illustration-accent-soft: color-mix(in srgb, rgb(var(--brand-accent-2, var(--primary-1))) 22%, rgb(var(--surface-card-semantic)));
+  --illustration-background: rgb(var(--surface-muted));
+  --illustration-surface: rgb(var(--surface-card-semantic));
+  --illustration-ink: rgb(var(--surface-action-neutral));
+  --illustration-detail: rgb(var(--border-strong));
+  --illustration-muted: rgb(var(--content-muted));
+  --illustration-outline: rgb(var(--border-default));
+  --illustration-highlight: rgb(var(--white));
+  --illustration-on-primary: rgb(var(--illustration-primary-content));
+  --illustration-on-soft: rgb(var(--content-primary));
+  --illustration-support: var(--illustration-accent);
+  --illustration-support-soft: var(--illustration-accent-soft);
+  --illustration-support-content: var(--illustration-on-primary);
+  --illustration-support-outline: var(--illustration-ink);
+  --illustration-success: rgb(var(--status-green-solid-background));
+  --illustration-on-success: rgb(var(--status-green-solid-foreground));
+  --illustration-error: rgb(var(--status-red-solid-background));
+  --illustration-on-error: rgb(var(--status-red-solid-foreground));
+  --illustration-warning: rgb(var(--status-yellow-solid-background));
+  --illustration-on-warning: rgb(var(--status-yellow-solid-foreground));
+  fill: var(--illustration-accent);
+}
+
+/* New semantic assets use readable ink in both schemes. The portal alias
+   retains its existing normal-mode ink mapping for compatibility. */
+.versi-illustration { --illustration-ink: rgb(var(--content-primary)); }
+
+html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.versi-illustration, .portal-illustration) {
+  --illustration-accent: rgb(var(--primary-1));
+}
+html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.versi-illustration, .portal-illustration) {
+  --illustration-device-screen: color-mix(in srgb, rgb(var(--surface-card-semantic)) 75%, white);
+}
+
+/* Existing portal neutral roles. Narrative colors, white fills and status
+   colors are never replaced by a blanket fill selector. */
+:is(.versi-illustration, .portal-illustration) :is([fill="#191C1F"], [data-illustration-role="ink"]) { fill: var(--illustration-ink); }
+:is(.versi-illustration, .portal-illustration) :is([fill="#455A64"], [data-illustration-role="detail"]) { fill: var(--illustration-detail); }
+:is(.versi-illustration, .portal-illustration) :is([fill="#C9CED4"], [fill="#E0E0E0"], [fill="#D9D9D9"], [data-illustration-role="outline"]) { fill: var(--illustration-outline); }
+:is(.versi-illustration, .portal-illustration) :is([fill="#F4F7F8"], [fill="#EBEBEB"], [fill="#EFEFEF"], [fill="#F5F5F5"], [data-illustration-role="background"]) { fill: var(--illustration-background); }
+:is(.versi-illustration, .portal-illustration) :is([fill="#FBFEFF"], [data-illustration-role="surface"]) { fill: var(--illustration-surface); }
+:is(.versi-illustration, .portal-illustration) :is([fill="#707780"], [data-illustration-role="muted"]) { fill: var(--illustration-muted); }
+:is(.versi-illustration, .portal-illustration) :is([fill="#EBF0FF"], [data-illustration-role="accent-soft"]) { fill: var(--illustration-accent-soft); }
+:is(.versi-illustration, .portal-illustration) [data-illustration-role="accent"] { fill: var(--illustration-accent); }
+:is(.versi-illustration, .portal-illustration) [data-illustration-role="highlight"] { fill: var(--illustration-highlight); }
+:is(.versi-illustration, .portal-illustration) [data-illustration-role="on-primary"] { fill: var(--illustration-on-primary); }
+:is(.versi-illustration, .portal-illustration) [data-illustration-role="on-soft"] { fill: var(--illustration-on-soft); }
+:is(.versi-illustration, .portal-illustration) [data-illustration-stroke="outline"] { stroke: var(--illustration-outline); }
+
+/* Numbered groups share a background/foreground pair with their children.
+   Existing data-brand-accent attributes on individual shapes still work. */
+:is(.versi-illustration, .portal-illustration) [data-brand-accent="1"] {
+  --illustration-support: rgb(var(--brand-accent-1, var(--primary-1)));
+  --illustration-support-content: rgb(var(--illustration-brand-accent-1-content));
+}
+:is(.versi-illustration, .portal-illustration) [data-brand-accent="2"] {
+  --illustration-support: rgb(var(--brand-accent-2, var(--primary-1)));
+  --illustration-support-content: rgb(var(--illustration-brand-accent-2-content));
+}
+:is(.versi-illustration, .portal-illustration) [data-brand-accent="3"] {
+  --illustration-support: rgb(var(--brand-accent-3, var(--primary-1)));
+  --illustration-support-content: rgb(var(--illustration-brand-accent-3-content));
+}
+:is(.versi-illustration, .portal-illustration) [data-brand-accent] {
+  --illustration-support-soft: color-mix(in srgb, var(--illustration-support) 22%, rgb(var(--surface-card-semantic)));
+}
+:is(.versi-illustration, .portal-illustration) [data-brand-accent]:not(:is([data-illustration-success], [data-illustration-error], [data-illustration-warning], [data-illustration-role="success"], [data-illustration-role="error"], [data-illustration-role="warning"])) {
+  fill: var(--illustration-support);
+}
+:is(.versi-illustration, .portal-illustration) [data-brand-accent-tone="soft"] {
+  --illustration-support-content: var(--illustration-on-soft);
+}
+:is(.versi-illustration, .portal-illustration) [data-brand-accent-tone="soft"]:not(:is([data-illustration-success], [data-illustration-error], [data-illustration-warning], [data-illustration-role="success"], [data-illustration-role="error"], [data-illustration-role="warning"])) {
+  fill: var(--illustration-support-soft);
+}
+:is(.versi-illustration, .portal-illustration) [data-illustration-role="support"] { fill: var(--illustration-support); }
+:is(.versi-illustration, .portal-illustration) [data-brand-accent-tone="soft"] [data-illustration-role="support"] { fill: var(--illustration-support-soft); }
+:is(.versi-illustration, .portal-illustration) [data-illustration-role="on-support"] {
+  fill: var(--illustration-support-content);
+  stroke: var(--illustration-support-content);
+  stroke-width: .35;
+  paint-order: stroke fill;
+}
+
+/* Legacy sibling checks cannot infer their accent index. Preserve their
+   normal-mode treatment; numbered groups above provide explicit foregrounds. */
+html:not([data-contrast="high"]) :is(.versi-illustration, .portal-illustration) :is([data-brand-accent-check], [data-brand-accent-label]) {
+  fill: #fff;
+  stroke: #191c1f;
+  stroke-width: .8;
+  paint-order: stroke fill;
+}
+
+/* HC uses its own semantic pairs. No decorative brand accent participates. */
+html[data-contrast="high"] :is(.versi-illustration, .portal-illustration) {
+  --illustration-accent: rgb(var(--action-primary-background));
+  --illustration-accent-soft: rgb(var(--surface-muted));
+  --illustration-ink: rgb(var(--content-primary));
+  --illustration-detail: rgb(var(--content-primary));
+  --illustration-muted: rgb(var(--content-primary));
+  --illustration-outline: rgb(var(--content-primary));
+  --illustration-highlight: rgb(var(--action-primary-content));
+  --illustration-on-primary: rgb(var(--action-primary-content));
+  --illustration-device-screen: var(--illustration-surface);
+}
+html[data-contrast="high"] :is(.versi-illustration, .portal-illustration) [data-brand-accent] {
+  --illustration-support: var(--illustration-accent);
+  --illustration-support-soft: var(--illustration-accent-soft);
+  --illustration-support-content: var(--illustration-on-primary);
+}
+html[data-contrast="high"] :is(.versi-illustration, .portal-illustration) [data-brand-accent-tone="soft"] {
+  --illustration-support-content: var(--illustration-on-soft);
+  stroke: var(--illustration-outline);
+  stroke-width: 1;
+}
+html[data-contrast="high"] :is(.versi-illustration, .portal-illustration) [data-illustration-on-primary] {
+  fill: var(--illustration-on-primary);
+  stroke: var(--illustration-on-primary);
+  stroke-width: .8;
+  paint-order: stroke fill;
+}
+html[data-contrast="high"] :is(.versi-illustration, .portal-illustration) :is([data-brand-accent-check], [data-brand-accent-label]) {
+  fill: var(--illustration-support-content);
+  stroke: var(--illustration-support-content);
+  stroke-width: .8;
+  paint-order: stroke fill;
+}
+
+/* Semantic states override decorative markers on the same element. */
+:is(.versi-illustration, .portal-illustration) [data-illustration-role="success"],
+html[data-contrast="high"] :is(.versi-illustration, .portal-illustration) [data-illustration-success] { fill: var(--illustration-success); }
+:is(.versi-illustration, .portal-illustration) [data-illustration-role="error"],
+html[data-contrast="high"] :is(.versi-illustration, .portal-illustration) [data-illustration-error] { fill: var(--illustration-error); }
+:is(.versi-illustration, .portal-illustration) [data-illustration-role="warning"],
+html[data-contrast="high"] :is(.versi-illustration, .portal-illustration) [data-illustration-warning] { fill: var(--illustration-warning); }
+:is(.versi-illustration, .portal-illustration) [data-illustration-role="on-success"] { fill: var(--illustration-on-success); }
+:is(.versi-illustration, .portal-illustration) [data-illustration-role="on-error"] { fill: var(--illustration-on-error); }
+:is(.versi-illustration, .portal-illustration) [data-illustration-role="on-warning"] { fill: var(--illustration-on-warning); }

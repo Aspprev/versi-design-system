@@ -48,7 +48,11 @@ export function FileUploadProgress({
         <div
           className={classNames(
             "h-full rounded-full transition-[width] duration-200",
-            status === "error" ? "bg-feedback-danger-strong" : "bg-action-primary",
+            status === "error"
+              ? "bg-feedback-danger-strong"
+              : status === "success"
+                ? "bg-feedback-success-strong"
+                : "bg-action-primary",
             resolvedValue === undefined ? "w-1/2 animate-pulse" : undefined,
           )}
           style={resolvedValue === undefined ? undefined : { width: `${resolvedValue}%` }}

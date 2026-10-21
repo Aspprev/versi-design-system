@@ -229,6 +229,10 @@ export default function InteractiveDonutChart({
     return {
       ...options,
       colors: displayColors,
+      dataLabels: {
+        ...options.dataLabels,
+        dropShadow: { ...options.dataLabels?.dropShadow, enabled: false },
+      },
       fill: highContrast
         ? {
             type: "pattern",

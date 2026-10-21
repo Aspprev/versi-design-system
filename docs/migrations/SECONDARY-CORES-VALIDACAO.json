@@ -1,0 +1,214 @@
+{
+  "date": "2026-10-21",
+  "themes": 18,
+  "contexts": 54,
+  "buttonStateSamples": 486,
+  "buttonSurfacePairs": 1458,
+  "scope": "Computed secondary colors: dark normal and both high-contrast modes; page/card/muted surfaces. No color changes.",
+  "modes": [
+    {
+      "mode": "dark",
+      "themes": 18,
+      "minimumButtonText": 4.526465153412331,
+      "minimumNoticeText": 12.645494270504654,
+      "minimumEnabledSwitchKnob": 3.4767330950550823,
+      "minimumOpaqueLoader": 12.802601584439891,
+      "minimumOffSwitchTrackOnMuted": 3.9519996437580547,
+      "defaultFillVersusSurfaces": {
+        "page": {
+          "text": 17.111818692182336,
+          "fill": 1.03250880076226,
+          "border": 14.270442942851265
+        },
+        "card-semantic": {
+          "text": 17.111818692182336,
+          "fill": 1.0550537581155486,
+          "border": 13.099933847742983
+        },
+        "muted": {
+          "text": 17.111818692182336,
+          "fill": 1.2453973050597833,
+          "border": 11.097771274254406
+        }
+      },
+      "rawPalette": {
+        "--secondary-1": {
+          "color": "rgb(25, 28, 31)",
+          "surfaces": {
+            "page": 1.03250880076226,
+            "card-semantic": 1.0550537581155486,
+            "muted": 1.2453973050597833
+          }
+        },
+        "--secondary-2": {
+          "color": "rgb(69, 90, 100)",
+          "surfaces": {
+            "page": 2.4394834510570576,
+            "card-semantic": 2.239388921527486,
+            "muted": 1.8971260720902898
+          }
+        },
+        "--secondary-3": {
+          "color": "rgb(112, 119, 128)",
+          "surfaces": {
+            "page": 3.9032893876156534,
+            "card-semantic": 3.583128636660653,
+            "muted": 3.0354918214142046
+          }
+        },
+        "--secondary-4": {
+          "color": "rgb(201, 206, 212)",
+          "surfaces": {
+            "page": 11.158431487959017,
+            "card-semantic": 10.243179901438255,
+            "muted": 8.677636771943478
+          }
+        },
+        "--secondary-5": {
+          "color": "rgb(235, 235, 235)",
+          "surfaces": {
+            "page": 14.820507858644358,
+            "card-semantic": 13.604880613425797,
+            "muted": 11.525543183361249
+          }
+        }
+      }
+    },
+    {
+      "mode": "high-light",
+      "themes": 18,
+      "minimumButtonText": 4.526465153412331,
+      "minimumNoticeText": 12.825413934568024,
+      "minimumEnabledSwitchKnob": 4.542224959605253,
+      "minimumOpaqueLoader": 16.67075583052387,
+      "minimumOffSwitchTrackOnMuted": 3.6058249156614437,
+      "defaultFillVersusSurfaces": {
+        "page": {
+          "text": 17.111818692182336,
+          "fill": 15.695590011594511,
+          "border": 1.1356224109529707
+        },
+        "card-semantic": {
+          "text": 17.111818692182336,
+          "fill": 17.111818692182336,
+          "border": 1.238090749353873
+        },
+        "muted": {
+          "text": 17.111818692182336,
+          "fill": 13.584140534931716,
+          "border": 1.0174463670767513
+        }
+      },
+      "rawPalette": {
+        "--secondary-1": {
+          "color": "rgb(17, 17, 17)",
+          "surfaces": {
+            "page": 17.320238625461315,
+            "card-semantic": 18.883060964594996,
+            "muted": 14.990233270174272
+          }
+        },
+        "--secondary-2": {
+          "color": "rgb(61, 61, 61)",
+          "surfaces": {
+            "page": 9.963252382944114,
+            "card-semantic": 10.862246544121685,
+            "muted": 8.622945709904968
+          }
+        },
+        "--secondary-3": {
+          "color": "rgb(95, 95, 95)",
+          "surfaces": {
+            "page": 5.857004058061344,
+            "card-semantic": 6.385487353255615,
+            "muted": 5.069090501191547
+          }
+        },
+        "--secondary-4": {
+          "color": "rgb(118, 118, 118)",
+          "surfaces": {
+            "page": 4.166295937845939,
+            "card-semantic": 4.542224959605253,
+            "muted": 3.6058249156614437
+          }
+        },
+        "--secondary-5": {
+          "color": "rgb(242, 242, 242)",
+          "surfaces": {
+            "page": 1.026841788448828,
+            "card-semantic": 1.1194947432057414,
+            "muted": 1.1252316660587698
+          }
+        }
+      }
+    },
+    {
+      "mode": "high-dark",
+      "themes": 18,
+      "minimumButtonText": 4.526465153412331,
+      "minimumNoticeText": 15.030214263394026,
+      "minimumEnabledSwitchKnob": 3.3907685597669124,
+      "minimumOpaqueLoader": 15.909984431773273,
+      "minimumOffSwitchTrackOnMuted": 2.5689083332208504,
+      "defaultFillVersusSurfaces": {
+        "page": {
+          "text": 17.111818692182336,
+          "fill": 1.227221979016994,
+          "border": 16.96159995619008
+        },
+        "card-semantic": {
+          "text": 17.111818692182336,
+          "fill": 1.150235869530898,
+          "border": 15.897564587191424
+        },
+        "muted": {
+          "text": 17.111818692182336,
+          "fill": 1.0755396251682636,
+          "border": 12.85041863052145
+        }
+      },
+      "rawPalette": {
+        "--secondary-1": {
+          "color": "rgb(143, 36, 94)",
+          "surfaces": {
+            "page": 2.581908873679093,
+            "card-semantic": 2.4199405235103666,
+            "muted": 1.956101427832935
+          }
+        },
+        "--secondary-2": {
+          "color": "rgb(112, 24, 70)",
+          "surfaces": {
+            "page": 1.908041783204522,
+            "card-semantic": 1.788346474501291,
+            "muted": 1.4455673840931837
+          }
+        },
+        "--secondary-3": {
+          "color": "rgb(80, 13, 49)",
+          "surfaces": {
+            "page": 1.4430144409601333,
+            "card-semantic": 1.3524912351821865,
+            "muted": 1.0932541566904634
+          }
+        },
+        "--secondary-4": {
+          "color": "rgb(244, 114, 182)",
+          "surfaces": {
+            "page": 7.929024615410461,
+            "card-semantic": 7.4316209120894925,
+            "muted": 6.007174199539405
+          }
+        },
+        "--secondary-5": {
+          "color": "rgb(55, 7, 31)",
+          "surfaces": {
+            "page": 1.2126223457524776,
+            "card-semantic": 1.136552100701811,
+            "muted": 1.0884888208877013
+          }
+        }
+      }
+    }
+  ]
+}

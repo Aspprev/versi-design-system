@@ -5,7 +5,7 @@ export const BRAND_ACCENT_DETAILS = [1, 2, 3].flatMap(n => [
 ]);
 export const GROUPS = [
   {
-    "title": "Principais · Primary, Secondary e Tertiary",
+    "title": "Principais · Primary e Secondary",
     "tokens": [
       "--primary-1",
       "--primary-2",
@@ -17,11 +17,6 @@ export const GROUPS = [
       "--secondary-3",
       "--secondary-4",
       "--secondary-5",
-      "--tertiary-1",
-      "--tertiary-2",
-      "--tertiary-3",
-      "--tertiary-4",
-      "--tertiary-5"
     ]
   },
   {

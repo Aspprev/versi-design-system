@@ -9,16 +9,11 @@
     --primary-3: 22, 44, 100;
     --primary-4: 197, 214, 254;
     --primary-5: 235, 240, 255;
-    --secondary-1: 0, 110, 47;
-    --secondary-2: 0, 81, 34;
-    --secondary-3: 0, 52, 22;
-    --secondary-4: 198, 238, 215;
-    --secondary-5: 237, 255, 245;
-    --tertiary-1: 25, 28, 31;
-    --tertiary-2: 69, 90, 100;
-    --tertiary-3: 112, 119, 128;
-    --tertiary-4: 201, 206, 212;
-    --tertiary-5: 235, 235, 235;
+    --secondary-1: 25, 28, 31;
+    --secondary-2: 69, 90, 100;
+    --secondary-3: 112, 119, 128;
+    --secondary-4: 201, 206, 212;
+    --secondary-5: 235, 235, 235;
     --danger-1: 168, 26, 10;
     --danger-2: 131, 13, 0;
     --danger-3: 89, 9, 0;
@@ -60,25 +55,18 @@
     --action-primary-background-active: var(--primary-3);
     --action-primary-content: var(--white);
     --action-primary-ghost-background: var(--primary-5);
-    --action-secondary-background: var(--secondary-1);
+    --action-secondary-background: var(--surface-action-neutral);
     --action-secondary-background-hover: var(--secondary-2);
     --action-secondary-background-active: var(--secondary-3);
-    --action-secondary-content: var(--notice-secondary-content);
-    --action-secondary-ghost-background: var(--secondary-5);
-    --action-tertiary-background: var(--surface-action-neutral);
-    --action-tertiary-background-hover: var(--tertiary-2);
-    --action-tertiary-background-active: var(--tertiary-3);
-    --action-tertiary-content: var(--white);
+    --action-secondary-content: var(--white);
     --action-danger-background: var(--feedback-danger-strong);
     --action-danger-background-hover: var(--danger-2);
     --action-danger-background-active: var(--danger-3);
     --action-danger-content: var(--white);
-    --content-brand-secondary: var(--secondary-1);
     --selection-background: var(--primary-1);
     --selection-background-hover: var(--primary-2);
     --selection-border: var(--primary-1);
     --selection-content: var(--white);
-    --notice-secondary-content: var(--white);
     --action-warning-background: var(--warning-3);
     --action-warning-background-hover: 133, 77, 14;
     --action-warning-background-active: 113, 63, 18;
@@ -88,8 +76,8 @@
     --surface-subtle: var(--bg-lighter);
     --surface-muted: var(--bg-dark);
     --surface-disabled: var(--bg-disabled);
-    --surface-action-neutral: var(--tertiary-1);
-    --surface-tooltip: var(--tertiary-1);
+    --surface-action-neutral: var(--secondary-1);
+    --surface-tooltip: var(--secondary-1);
     --footer-background: 19, 19, 19;
     --border-subtle: var(--grayscale-5);
     --border-default: var(--grayscale-4);
@@ -101,7 +89,7 @@
     --focus-emphasis-halo-width: 5px;
     --link-emphasis-thickness: 0.12em;
     --link-emphasis-offset: 0.18em;
-    --icon-default: var(--tertiary-3);
+    --icon-default: var(--secondary-3);
     --feedback-danger-strong: var(--danger-1);
     --feedback-danger-soft: var(--danger-5);
     --feedback-danger-border: var(--danger-1);
@@ -113,7 +101,6 @@
     --feedback-success-strong: var(--success-1);
     --feedback-success-soft: var(--success-3);
     --feedback-success-border: var(--success-1);
-    --feedback-success-content: var(--secondary-1);
     --feedback-info-strong: var(--primary-1);
     --feedback-info-soft: var(--primary-5);
     --feedback-info-border: var(--primary-1);
@@ -134,7 +121,6 @@
     --switch-track-disabled: var(--grayscale-4);
     --switch-track-primary-on: var(--primary-1);
     --switch-track-secondary-on: var(--secondary-1);
-    --switch-track-tertiary-on: var(--tertiary-1);
     --switch-track-contract-on: var(--success-1);
     --switch-track-contract-off: var(--danger-1);
     --switch-track-theme-on: var(--surface-action-neutral);
@@ -277,12 +263,19 @@
     --action-primary-content-active: var(--action-primary-content);
     --action-secondary-content-hover: var(--action-secondary-content);
     --action-secondary-content-active: var(--action-secondary-content);
-    --action-tertiary-content-hover: var(--action-tertiary-content);
-    --action-tertiary-content-active: var(--action-tertiary-content);
     --action-danger-content-hover: var(--action-danger-content);
     --action-danger-content-active: var(--action-danger-content);
     --action-warning-content-hover: var(--action-warning-content);
     --action-warning-content-active: var(--action-warning-content);
+    --feedback-success-content: 0, 110, 47;
+    --illustration-primary-content: 255, 255, 255;
+    --illustration-brand-accent-1-content: 0, 0, 0;
+    --illustration-brand-accent-2-content: 0, 0, 0;
+    --illustration-brand-accent-3-content: 0, 0, 0;
+    --action-success-background: 0, 107, 53;
+    --action-success-background-hover: 0, 88, 43;
+    --action-success-background-active: 0, 70, 34;
+    --action-success-content: 255, 255, 255;
   }
 
   .azul1 {
@@ -413,8 +406,6 @@
     --action-primary-content-active: var(--action-primary-content);
     --action-secondary-content-hover: var(--action-secondary-content);
     --action-secondary-content-active: var(--action-secondary-content);
-    --action-tertiary-content-hover: var(--action-tertiary-content);
-    --action-tertiary-content-active: var(--action-tertiary-content);
     --action-danger-content-hover: var(--action-danger-content);
     --action-danger-content-active: var(--action-danger-content);
     --action-warning-content-hover: var(--action-warning-content);
@@ -456,13 +447,11 @@
     --content-muted: var(--text-tertiary);
     --content-disabled: var(--text-disabled);
     --content-link: 144, 202, 255;
-    --notice-secondary-content: 0, 0, 0;
     --action-primary-background: 7, 68, 138;
     --action-primary-background-hover: 15, 98, 193;
     --action-primary-background-active: 22, 44, 100;
     --action-primary-content: var(--white);
     --action-primary-ghost-background: var(--surface-muted);
-    --action-secondary-ghost-background: var(--surface-muted);
     --selection-background: var(--surface-muted);
     --selection-background-hover: var(--surface-subtle);
     --selection-border: var(--content-link);
@@ -498,9 +487,6 @@
     --success-1: 110, 231, 160;
     --success-2: 8, 122, 62;
     --success-3: 24, 56, 36;
-    --secondary-1: 111, 218, 145;
-    --secondary-2: 155, 233, 179;
-    --secondary-3: 202, 246, 216;
     --feedback-danger-strong: var(--danger-1);
     --feedback-danger-soft: var(--danger-5);
     --feedback-danger-border: var(--danger-1);
@@ -665,16 +651,11 @@
     --primary-3: 0, 0, 0;
     --primary-4: 118, 118, 118;
     --primary-5: 248, 250, 252;
-    --secondary-1: 0, 102, 46;
-    --secondary-2: 0, 77, 34;
-    --secondary-3: 0, 50, 22;
-    --secondary-4: 213, 245, 225;
-    --secondary-5: 244, 255, 248;
-    --tertiary-1: 17, 17, 17;
-    --tertiary-2: 61, 61, 61;
-    --tertiary-3: 95, 95, 95;
-    --tertiary-4: 118, 118, 118;
-    --tertiary-5: 242, 242, 242;
+    --secondary-1: 17, 17, 17;
+    --secondary-2: 61, 61, 61;
+    --secondary-3: 95, 95, 95;
+    --secondary-4: 118, 118, 118;
+    --secondary-5: 242, 242, 242;
     --danger-1: 176, 0, 32;
     --danger-2: 128, 0, 24;
     --danger-3: 89, 0, 16;
@@ -711,7 +692,6 @@
     --content-link: var(--primary-1);
     --content-inverse: var(--white);
     --content-on-brand: var(--white);
-    --notice-secondary-content: var(--white);
     --action-primary-background: var(--primary-1);
     --action-primary-background-hover: var(--primary-2);
     --action-primary-background-active: var(--primary-3);
@@ -729,15 +709,15 @@
     --surface-subtle: var(--bg-lighter);
     --surface-muted: var(--bg-dark);
     --surface-disabled: var(--bg-disabled);
-    --surface-action-neutral: var(--tertiary-1);
-    --surface-tooltip: var(--tertiary-1);
+    --surface-action-neutral: var(--secondary-1);
+    --surface-tooltip: var(--secondary-1);
     --footer-background: 0, 0, 0;
     --border-subtle: var(--grayscale-4);
     --border-default: var(--grayscale-4);
     --border-strong: var(--grayscale-1);
     --border-disabled: var(--grayscale-4);
     --focus-ring: 0, 0, 0;
-    --icon-default: var(--tertiary-2);
+    --icon-default: var(--secondary-2);
     --feedback-danger-strong: var(--danger-1);
     --feedback-danger-soft: var(--danger-5);
     --feedback-danger-border: var(--danger-1);
@@ -749,7 +729,6 @@
     --feedback-success-strong: var(--success-1);
     --feedback-success-soft: var(--success-3);
     --feedback-success-border: var(--success-1);
-    --feedback-success-content: var(--secondary-2);
     --feedback-info-strong: var(--primary-1);
     --feedback-info-soft: var(--primary-5);
     --feedback-info-border: var(--primary-1);
@@ -763,17 +742,16 @@
     --field-placeholder: var(--text-tertiary);
     --field-content-disabled: var(--text-disabled);
     --field-placeholder-disabled: var(--field-content-disabled);
-    --field-icon: var(--tertiary-2);
+    --field-icon: var(--secondary-2);
     --field-assistive: var(--text-secondary);
     --field-assistive-error: var(--danger-2);
     --switch-track-off: var(--grayscale-4);
     --switch-track-disabled: var(--grayscale-4);
     --switch-track-primary-on: var(--primary-1);
     --switch-track-secondary-on: var(--secondary-1);
-    --switch-track-tertiary-on: var(--tertiary-1);
     --switch-track-contract-on: var(--success-1);
     --switch-track-contract-off: var(--danger-1);
-    --switch-track-theme-on: var(--tertiary-1);
+    --switch-track-theme-on: var(--secondary-1);
     --switch-track-theme-off: var(--grayscale-4);
     --switch-knob: var(--white);
     --switch-knob-disabled: var(--bg-light);
@@ -834,6 +812,7 @@
     --shadow-focus: 0 0 0 2px #ffffff, 0 0 0 4px #000000;
     --shadow-outline: 0 0 0 2px #000000;
     --shadow-button-focus: 0 0 0 2px #ffffff, 0 0 0 4px #000000;
+    --feedback-success-content: 0, 77, 34;
   }
 
   html[data-contrast="high"] .default {
@@ -1103,16 +1082,11 @@
     --primary-3: 230, 168, 0;
     --primary-4: 255, 235, 102;
     --primary-5: 38, 33, 0;
-    --secondary-1: 0, 103, 122;
-    --secondary-2: 0, 83, 102;
-    --secondary-3: 0, 61, 77;
-    --secondary-4: 103, 232, 249;
-    --secondary-5: 0, 43, 54;
-    --tertiary-1: 143, 36, 94;
-    --tertiary-2: 112, 24, 70;
-    --tertiary-3: 80, 13, 49;
-    --tertiary-4: 244, 114, 182;
-    --tertiary-5: 55, 7, 31;
+    --secondary-1: 229, 231, 235;
+    --secondary-2: 209, 213, 219;
+    --secondary-3: 156, 163, 175;
+    --secondary-4: 117, 117, 117;
+    --secondary-5: 31, 33, 37;
     --danger-1: 185, 28, 28;
     --danger-2: 153, 27, 27;
     --danger-3: 127, 29, 29;
@@ -1147,7 +1121,6 @@
     --content-muted: var(--text-tertiary);
     --content-disabled: var(--text-disabled);
     --content-link: var(--primary-1);
-    --notice-secondary-content: var(--white);
     --action-primary-background: var(--primary-1);
     --action-primary-background-hover: var(--primary-2);
     --action-primary-background-active: var(--primary-3);
@@ -1186,9 +1159,6 @@
     --feedback-success-soft: var(--success-3);
     --feedback-success-border: var(--success-1);
     --feedback-success-content: 110, 231, 160;
-    --feedback-info-strong: var(--secondary-1);
-    --feedback-info-soft: var(--secondary-5);
-    --feedback-info-border: var(--secondary-1);
     --feedback-info-content: 103, 232, 249;
     --field-surface: 0, 0, 0;
     --field-surface-disabled: var(--bg-disabled);
@@ -1202,11 +1172,10 @@
     --field-icon: var(--white);
     --field-assistive: var(--grayscale-2);
     --field-assistive-error: var(--feedback-danger-content);
-    --switch-track-off: 97, 97, 97;
+    --switch-track-off: 117, 117, 117;
     --switch-track-disabled: 66, 66, 66;
     --switch-track-primary-on: var(--primary-1);
     --switch-track-secondary-on: var(--primary-1);
-    --switch-track-tertiary-on: var(--primary-1);
     --switch-track-contract-on: var(--primary-1);
     --switch-track-contract-off: var(--primary-1);
     --switch-track-theme-on: var(--primary-1);
@@ -1262,7 +1231,6 @@
     --chart-tooltip-content: 255, 255, 255;
     --chart-line-neutral: var(--white);
     --chart-balance: var(--success-1);
-    --chart-invested: var(--secondary-1);
     --chart-grid: 189, 189, 189;
     --chart-axis: 255, 255, 255;
     --chart-axis-border: 224, 224, 224;
@@ -1276,6 +1244,10 @@
     --shadow-focus: 0 0 0 2px #000000, 0 0 0 5px #ffdf00;
     --shadow-outline: 0 0 0 2px #ffdf00;
     --shadow-button-focus: 0 0 0 2px #000000, 0 0 0 5px #ffdf00;
+    --feedback-info-strong: 0, 103, 122;
+    --feedback-info-soft: 0, 43, 54;
+    --feedback-info-border: 0, 103, 122;
+    --chart-invested: 0, 103, 122;
   }
 
   html[data-contrast="high"] :where(a, button, input, select, textarea, [tabindex]):not(:where(.sr-only, .field-inset-focus-ring, :disabled, [aria-disabled="true"], .field-keyboard-focus-ring .field-value, .radio-option-focus input)):focus-visible,
@@ -1441,8 +1413,6 @@ html[data-color-scheme="light"]:not([data-contrast="high"]):where(.default, [dat
     --action-primary-content-active: 255,255,255;
     --action-secondary-content-hover: 255,255,255;
     --action-secondary-content-active: 255,255,255;
-    --action-tertiary-content-hover: 255,255,255;
-    --action-tertiary-content-active: 255,255,255;
     --action-danger-content-hover: 255,255,255;
     --action-danger-content-active: 255,255,255;
     --action-warning-content-hover: 255,255,255;
@@ -1455,7 +1425,6 @@ html[data-color-scheme="light"]:not([data-contrast="high"]):where(.default, [dat
     --action-warning-background-active: 113,63,18;
     --action-danger-content: 255,255,255;
     --action-warning-content: 255,255,255;
-    --content-brand-secondary: 0,110,47;
   }
 
   html[data-color-scheme="dark"]:not([data-contrast="high"]):where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157)) body:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157)),
@@ -1519,8 +1488,7 @@ html[data-color-scheme="dark"]:not([data-contrast="high"]):where(.default, [data
     --status-primary-soft-background: 38,46,55;
     --switch-knob-theme-on: 255, 255, 255;
     --switch-track-primary-on: 34, 111, 198;
-    --switch-track-secondary-on: 31, 127, 72;
-    --switch-track-tertiary-on: 110, 112, 114;
+    --switch-track-secondary-on: 110, 112, 114;
     --switch-track-contract-off: 187, 76, 64;
     --switch-track-theme-on: 110, 112, 114;
     --switch-track-theme-off: 99, 114, 128;
@@ -1533,8 +1501,6 @@ html[data-color-scheme="dark"]:not([data-contrast="high"]):where(.default, [data
     --action-primary-content-active: 255,255,255;
     --action-secondary-content-hover: 255,255,255;
     --action-secondary-content-active: 255,255,255;
-    --action-tertiary-content-hover: 255,255,255;
-    --action-tertiary-content-active: 255,255,255;
     --action-danger-content-hover: 255,255,255;
     --action-danger-content-active: 255,255,255;
     --action-warning-content-hover: 255,255,255;
@@ -1547,7 +1513,6 @@ html[data-color-scheme="dark"]:not([data-contrast="high"]):where(.default, [data
     --action-warning-background-active: 113,63,18;
     --action-danger-content: 255,255,255;
     --action-warning-content: 255,255,255;
-    --content-brand-secondary: 92, 162, 122;
   }
 
   html[data-color-scheme="light"][data-contrast="high"]:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157)) body:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157)),
@@ -1631,9 +1596,7 @@ html[data-color-scheme="light"][data-contrast="high"]:where(.default, [data-ds-t
     --action-primary-content-hover: 255, 255, 255;
     --action-primary-content-active: 255, 255, 255;
     --action-secondary-content-hover: 255, 255, 255;
-    --action-secondary-content-active: 255, 255, 255;
-    --action-tertiary-content-hover: 255, 255, 255;
-    --action-tertiary-content-active: 0, 0, 0;
+    --action-secondary-content-active: 0, 0, 0;
     --action-danger-content-hover: 255, 255, 255;
     --action-danger-content-active: 255, 255, 255;
     --action-warning-content-hover: 255, 255, 255;
@@ -1652,7 +1615,6 @@ html[data-color-scheme="light"][data-contrast="high"]:where(.default, [data-ds-t
     --action-warning-background-active: 64,39,0;
     --action-danger-content: 255, 255, 255;
     --action-warning-content: 255, 255, 255;
-    --content-brand-secondary: 0,110,47;
     --status-blue-solid-background: 0, 108, 226;
     --status-blue-solid-foreground: 255, 255, 255;
     --status-blue-outline-border: 0, 108, 226;
@@ -1732,9 +1694,7 @@ html[data-color-scheme="dark"][data-contrast="high"]:where(.default, [data-ds-th
     --action-primary-content-hover: 0, 0, 0;
     --action-primary-content-active: 0, 0, 0;
     --action-secondary-content-hover: 255, 255, 255;
-    --action-secondary-content-active: 255, 255, 255;
-    --action-tertiary-content-hover: 255, 255, 255;
-    --action-tertiary-content-active: 0, 0, 0;
+    --action-secondary-content-active: 0, 0, 0;
     --action-danger-content-hover: 255, 255, 255;
     --action-danger-content-active: 255, 255, 255;
     --action-warning-content-hover: 0, 0, 0;
@@ -1752,7 +1712,6 @@ html[data-color-scheme="dark"][data-contrast="high"]:where(.default, [data-ds-th
     --action-warning-background-active: 255,235,102;
     --action-danger-content: 255, 255, 255;
     --action-warning-content: 0, 0, 0;
-    --content-brand-secondary: 74, 152, 107;
     --status-green-solid-background: 46, 133, 71;
     --status-green-outline-border: 46, 133, 71;
     --status-orange-solid-background: 201, 76, 0;
@@ -1866,5 +1825,40 @@ html[data-contrast="high"][data-contrast-theme="dark"]:is(.default, [data-ds-the
     --brand-accent-3-soft: 34, 34, 34;
     --brand-accent-3-content: 255, 255, 255;
     --brand-accent-3-border: 245, 245, 245;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]), html[data-color-scheme="dark"]:not([data-contrast="high"]) body {
+    --illustration-primary-content: 0, 0, 0;
+    --illustration-brand-accent-1-content: 0, 0, 0;
+    --illustration-brand-accent-2-content: 0, 0, 0;
+    --illustration-brand-accent-3-content: 0, 0, 0;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="light"], html[data-contrast="high"][data-contrast-theme="light"] body {
+    --illustration-primary-content: 255, 255, 255;
+    --illustration-brand-accent-1-content: 255, 255, 255;
+    --illustration-brand-accent-2-content: 255, 255, 255;
+    --illustration-brand-accent-3-content: 255, 255, 255;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="dark"], html[data-contrast="high"][data-contrast-theme="dark"] body {
+    --illustration-primary-content: 0, 0, 0;
+    --illustration-brand-accent-1-content: 0, 0, 0;
+    --illustration-brand-accent-2-content: 0, 0, 0;
+    --illustration-brand-accent-3-content: 0, 0, 0;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]), html[data-color-scheme="dark"]:not([data-contrast="high"]) body {
+    --action-success-background: 110, 231, 160;
+    --action-success-background-hover: 153, 233, 187;
+    --action-success-background-active: 77, 207, 133;
+    --action-success-content: 0, 0, 0;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="dark"], html[data-contrast="high"][data-contrast-theme="dark"] body {
+    --action-success-background: 110, 231, 160;
+    --action-success-background-hover: 153, 233, 187;
+    --action-success-background-active: 77, 207, 133;
+    --action-success-content: 0, 0, 0;
   }
 }

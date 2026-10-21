@@ -33,7 +33,7 @@ export function ClientThemeGallery({ client }: { client: ClientTheme }) {
       {client === "custom2157" && <p>O degradê verde–azul pode ser usado em detalhes decorativos nos modos comuns; não faz parte do contrato de tokens RGB e não é necessário no alto contraste.</p>}
     </section>
     <section aria-label="Ações e estados"><h2>Ações e estados</h2><div className="client-theme-actions">
-      {(["primary", "secondary", "tertiary", "danger", "warning"] as const).map(color => <Button type="button" key={color} color={color} data-testid={`action-${color}`}>{color}</Button>)}
+      {(["primary", "secondary", "danger", "warning"] as const).map(color => <Button type="button" key={color} color={color} data-testid={`action-${color}`}>{color}</Button>)}
       <Button type="button" variant="outline">Contorno</Button><Button type="button" variant="plain">Texto</Button><Button type="button" disabled>Desabilitado</Button>
       <Button type="button" onClick={() => setModalOpen(true)}>Abrir modal</Button>
     </div><p>Use Tab para conferir o foco; passe o mouse e mantenha o botão pressionado para conferir hover e active.</p></section>

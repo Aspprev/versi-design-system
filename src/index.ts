@@ -104,7 +104,7 @@ export type {
 } from "./components/input";
 export { InputSelect } from "./components/inputSelect";
 export type {
-  InputSelectOption,
+  InputSelectOption, InputSelectGroup, InputSelectItem,
   InputSelectProps,
 } from "./components/inputSelect";
 export { TextArea } from "./components/textArea";
@@ -137,6 +137,8 @@ export type {
 export { SelectMulti, MultiSelect } from "./components/selectMulti";
 export type {
   SelectMultiOption,
+  SelectMultiGroup,
+  SelectMultiItem,
   SelectMultiProps,
   SelectMultiViewProps,
   MultiSelectOption,

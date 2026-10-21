@@ -3,6 +3,8 @@ import { expect, test } from "@playwright/test";
 import { DESIGN_SYSTEM_THEMES } from "../../../src/theme-presets";
 import { readLegibility, settle } from "./legibility.helpers";
 
+import { promoteTertiaryTokens } from "../../helpers/theme-role-migration";
+
 type Tokens = Record<string, string>;
 const baseline = JSON.parse(readFileSync("docs/correcao-legibilidade/BASELINE-ANTES.json", "utf8")).themes as Record<string, Record<string, Tokens>>;
 const corrections = JSON.parse(readFileSync("docs/correcao-legibilidade/AJUSTES-FUNCIONAIS.json", "utf8")).overrides as typeof baseline;
@@ -16,7 +18,7 @@ test("tema padrão mantém as correções com styles.css isolado", async ({ page
   await page.setContent("<html><head></head><body></body></html>");
   await page.addStyleTag({ content:readFileSync("dist/styles.css","utf8")+consumer });
   for(const mode of ["light","dark","high-light","high-dark"]) {
-    const expected={...baseline.default[mode],...corrections.default[mode]};
+    const expected=promoteTertiaryTokens({...baseline.default[mode],...corrections.default[mode]}, mode);
     const actual=await page.evaluate(({mode,names})=>{
       Object.assign(document.documentElement.dataset,{colorScheme:mode.endsWith("dark")?"dark":"light",contrast:mode.startsWith("high")?"high":"normal",contrastTheme:mode.endsWith("dark")?"dark":"light"});
       const s=getComputedStyle(document.body);return Object.fromEntries(names.map(key=>[key,s.getPropertyValue(key).trim()]));
@@ -33,7 +35,7 @@ test("CSS distribuído: 288 contextos, diferenças documentadas e valores proteg
   await page.addStyleTag({ content: css + consumer });
   const differences: object[] = [];
   for (const theme of DESIGN_SYSTEM_THEMES) for (const mode of ["light", "dark", "high-light", "high-dark"]) {
-    const expected = { ...baseline[theme][mode], ...corrections[theme][mode], ...restorations[theme]?.[mode] };
+    const expected = promoteTertiaryTokens({ ...baseline[theme][mode], ...corrections[theme][mode], ...restorations[theme]?.[mode] }, mode);
     for (const host of ["html", "body"]) for (const identity of ["attribute", "class"]) {
       const actual = await page.evaluate(({ theme, mode, host, identity, names }) => {
         for (const el of [document.documentElement, document.body]) { el.className = ""; el.removeAttribute("data-ds-theme"); }
@@ -45,8 +47,8 @@ test("CSS distribuído: 288 contextos, diferenças documentadas e valores proteg
       }, { theme, mode, host, identity, names:Object.keys(expected) });
       const a = normalize(actual), e = normalize(expected);
       for (const key of Object.keys(e)) if (a[key] !== e[key]) differences.push({ theme, mode, host, identity, key, expected:e[key], actual:a[key] });
-      for (const key of Object.keys(baseline[theme][mode]).filter(key => /^--(primary|secondary|tertiary)-\d|^--brand-accent-|placeholder|^--content-secondary$/.test(key))) {
-        expect.soft(actual[key]?.replace(/\s/g, ""), `${theme}/${mode}: protegido ${key}`).toBe((restorations[theme]?.[mode]?.[key] ?? baseline[theme][mode][key]).replace(/\s/g, ""));
+      for (const key of Object.keys(expected).filter(key => /^--(primary|secondary)-\d|^--brand-accent-|placeholder|^--content-secondary$/.test(key))) {
+        expect.soft(actual[key]?.replace(/\s/g, ""), `${theme}/${mode}: protegido ${key}`).toBe(expected[key].replace(/\s/g, ""));
       }
     }
   }

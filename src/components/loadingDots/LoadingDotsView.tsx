@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import { cva, VariantProps } from "class-variance-authority";
 
 const colorVariant = cva(`w-[14px] h-[14px] rounded-full`, {
@@ -6,12 +6,14 @@ const colorVariant = cva(`w-[14px] h-[14px] rounded-full`, {
     color: {
       white: "bg-content-inverse",
       primary: "bg-content-link",
-      secondary: "bg-content-brand-secondary",
-      tertiary: "bg-content-primary",
+      secondary: "bg-content-primary",
       danger: "bg-feedback-danger-content",
       warning: "bg-feedback-warning-content",
       success: "bg-feedback-success-content",
       actionPrimary: "bg-action-primary-content",
+      actionSecondary: "bg-action-secondary-content",
+      actionDanger: "bg-action-danger-content",
+      actionSuccess: "bg-action-success-content",
       actionWarning: "bg-action-warning-content",
     },
     defaultVariants: {
@@ -23,13 +25,14 @@ const colorVariant = cva(`w-[14px] h-[14px] rounded-full`, {
 export type LoadingDotsProps = VariantProps<typeof colorVariant> & {
   color?:
     | "white"
-    | "primary"
-    | "secondary"
-    | "tertiary"
+    | "primary"    | "secondary"
     | "danger"
     | "warning"
     | "success"
     | "actionPrimary"
+    | "actionSecondary"
+    | "actionDanger"
+    | "actionSuccess"
     | "actionWarning";
   fullContainer?: boolean;
   announce?: boolean;
@@ -77,4 +80,3 @@ const LoadingDots: React.FC<LoadingDotsProps> = ({
 };
 
 export default LoadingDots;
-

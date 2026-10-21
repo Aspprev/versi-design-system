@@ -93,3 +93,21 @@ export const Disabled: Story = {
   render: (args) => <SelectForm {...args} initialValue="basico" />,
 };
 
+
+export const Grouped: Story = {
+  name: "Com seções",
+  args: {
+    options: [
+      { title: "Planos previdenciários", options },
+      { title: "Benefícios adicionais", options: [
+        { label: "Auxílio saúde", value: "saude" },
+        { label: "Auxílio educação", value: "educacao" },
+      ] },
+    ],
+  },
+  parameters: { docs: { description: { story: "Use options: [{ title, options: [{ label, value }] }]. Os títulos não são selecionáveis; os values devem ser únicos em toda a lista. A busca filtra opções e títulos de seção. Grupos sem resultados ficam ocultos. Listas simples continuam funcionando." } } },
+  render: (args) => <SelectForm {...args} />,
+};
+export const GroupedSearchable: Story = {
+  ...Grouped, name: "Seções com busca", args: { ...Grouped.args, searchable: true },
+};

@@ -1,5 +1,7 @@
 # Usos de secondary
 
+> Registro histórico da 0.6.0. Na 0.7.0, o antigo tertiary passa a secondary; consulte [a migração atual](../migrations/0.7.0-secondary.md). Os usos e vínculos descritos abaixo são anteriores a essa mudança.
+
 Conferência de 21/10/2026. A escala `secondary-1…5` é uma paleta de marca; não equivale a `brand-accent-1/2/3` nem ao texto neutro `content-secondary`.
 
 | Componente | Seleção explícita | Tokens consumidos |

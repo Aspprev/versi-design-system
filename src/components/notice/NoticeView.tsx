@@ -1,4 +1,4 @@
-﻿import classNames from "classnames";
+import classNames from "classnames";
 import React from "react";
 import { IconBaseProps } from "react-icons";
 import { MdClose, MdHelpOutline } from "react-icons/md";
@@ -7,9 +7,7 @@ export type BoxProps = {
   rounded?: boolean;
   type?:
     | "info"
-    | "primary"
-    | "secondary"
-    | "tertiary"
+    | "primary"    | "secondary"
     | "gray"
     | "success"
     | "warning"
@@ -25,7 +23,6 @@ const boxClassMap = {
   info: "bg-feedback-info-soft",
   primary: "border border-selection-border bg-selection-background",
   secondary: "bg-action-secondary",
-  tertiary: "bg-action-tertiary",
   gray: "bg-surface-muted",
   success: "bg-feedback-success-soft",
   warning: "bg-feedback-warning-soft",
@@ -36,7 +33,6 @@ const colorTextClassMap = {
   info: "text-feedback-info-content",
   primary: "text-selection-content",
   secondary: "text-action-secondary-content",
-  tertiary: "text-action-tertiary-content",
   gray: "text-content-link",
   success: "text-feedback-success-content",
   warning: "text-feedback-warning-content",
@@ -47,7 +43,6 @@ const defaultTextClassMap = {
   info: "text-content-primary",
   primary: "text-selection-content",
   secondary: "text-action-secondary-content",
-  tertiary: "text-action-tertiary-content",
   gray: "text-content-primary",
   success: "text-content-primary",
   warning: "text-content-primary",
@@ -128,4 +123,3 @@ const NoticeView: React.FC<BoxProps> = ({
 };
 
 export default NoticeView;
-

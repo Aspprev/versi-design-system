@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import type { IconBaseProps } from "react-icons";
 import LoadingDots from "../loadingDots";
 
@@ -6,7 +6,7 @@ export type ButtonProps = {
   children?: React.ReactNode;
   disabled?: boolean;
   variant?: "flat" | "outline" | "plain";
-  color?: "primary" | "secondary" | "tertiary" | "danger" | "warning";
+  color?: "primary" | "secondary" | "danger" | "warning" | "success";
   size?: "small" | "medium" | "large";
   width?: "auto" | "full";
   loading?: boolean;
@@ -35,30 +35,28 @@ const VARIANT_STYLES = {
   flat: {
     disabled: `cursor-not-allowed border-disabled bg-surface-disabled text-content-disabled`,
     default: {
-      primary: `bg-action-primary text-action-primary-content hover:bg-action-primary-hover hover:text-action-primary-content-hover active:bg-action-primary-active active:text-action-primary-content-active`,
-      secondary: `bg-action-secondary text-action-secondary-content hover:bg-action-secondary-hover hover:text-action-secondary-content-hover active:bg-action-secondary-active active:text-action-secondary-content-active`,
-      tertiary: `bg-action-tertiary text-action-tertiary-content opacity-100 hover:bg-action-tertiary-hover active:bg-action-tertiary-active`,
+      primary: `versi-button-primary-flat bg-action-primary text-action-primary-content hover:bg-action-primary-hover hover:text-action-primary-content-hover active:bg-action-primary-active active:text-action-primary-content-active`,
+      secondary: `bg-action-secondary text-action-secondary-content opacity-100 hover:bg-action-secondary-hover active:bg-action-secondary-active`,
       danger: `bg-action-danger text-action-danger-content hover:bg-action-danger-hover hover:text-action-danger-content-hover active:bg-action-danger-active active:text-action-danger-content-active`,
+      success: `bg-action-success-background text-action-success-content hover:bg-action-success-background-hover active:bg-action-success-background-active`,
       warning: `bg-action-warning text-action-warning-content hover:bg-action-warning-hover hover:text-action-warning-content-hover active:bg-action-warning-active active:text-action-warning-content-active`,
     },
   },
   outline: {
     disabled: `cursor-not-allowed border-disabled bg-surface-disabled text-content-disabled`,
     default: {
-      primary: `border-content-link text-content-link hover:border-action-primary-hover hover:text-content-link active:bg-selection-background active:border-action-primary-active active:text-content-on-brand`,
-      secondary: `border-content-brand-secondary text-content-brand-secondary hover:border-action-secondary-hover hover:text-content-brand-secondary active:bg-action-secondary active:border-action-secondary-active active:text-action-secondary-content`,
-      tertiary: `border-border-strong text-content-primary hover:text-content-secondary active:bg-surface-muted active:text-content-muted`,
+      primary: `border-content-link text-content-link hover:border-action-primary-hover hover:text-content-link active:bg-selection-background active:border-action-primary-active active:text-content-on-brand`,      secondary: `border-border-strong text-content-primary hover:text-content-secondary active:bg-surface-muted active:text-content-muted`,
       danger: `border-feedback-danger-border text-feedback-danger-content hover:border-action-danger-hover hover:text-feedback-danger-content active:bg-feedback-danger-soft active:border-action-danger-active active:text-feedback-danger-content`,
+      success: `border-feedback-success-border text-feedback-success-content hover:bg-feedback-success-soft active:bg-feedback-success-soft active:border-feedback-success-content`,
       warning: `border-feedback-warning-border text-feedback-warning-content hover:text-feedback-warning-content active:bg-feedback-warning-soft active:border-feedback-warning-content active:text-feedback-warning-content`,
     },
   },
   plain: {
     disabled: `cursor-not-allowed border-none text-content-disabled`,
     default: {
-      primary: `border-transparent text-content-link hover:bg-action-primary-ghost hover:text-content-link active:border-content-link`,
-      secondary: `border-transparent text-content-brand-secondary hover:bg-action-secondary-ghost hover:text-content-brand-secondary active:border-content-brand-secondary`,
-      tertiary: `border-transparent text-content-primary hover:bg-surface-muted hover:text-content-muted active:border-border-default`,
+      primary: `border-transparent text-content-link hover:bg-action-primary-ghost hover:text-content-link active:border-content-link`,      secondary: `border-transparent text-content-primary hover:bg-surface-muted hover:text-content-muted active:border-border-default`,
       danger: `border-transparent text-feedback-danger-content hover:bg-feedback-danger-soft hover:text-feedback-danger-content active:border-feedback-danger-content`,
+      success: `border-transparent text-feedback-success-content hover:bg-feedback-success-soft active:border-feedback-success-content`,
       warning: `border-transparent text-feedback-warning-content hover:bg-feedback-warning-soft hover:text-feedback-warning-content active:border-feedback-warning-content`,
     },
   },
@@ -86,6 +84,14 @@ function getSize(size: ButtonProps["size"]) {
       return `h-control-lg`;
   }
 }
+
+const FLAT_LOADING_COLORS = {
+  primary: "actionPrimary",
+  secondary: "actionSecondary",
+  success: "actionSuccess",
+  warning: "actionWarning",
+  danger: "actionDanger",
+} as const satisfies Record<NonNullable<ButtonProps["color"]>, React.ComponentProps<typeof LoadingDots>["color"]>;
 
 const WIDTH_STYLES: Record<NonNullable<ButtonProps["width"]>, string> = {
   auto: "w-auto",
@@ -133,15 +139,7 @@ const Button: React.FC<ButtonProps> = ({
         {loading && (
           <span aria-hidden="true">
             <LoadingDots
-              color={
-                variant !== "flat"
-                  ? color
-                  : color === "primary"
-                    ? "actionPrimary"
-                    : color === "warning"
-                      ? "actionWarning"
-                      : "white"
-              }
+              color={variant !== "flat" ? color : FLAT_LOADING_COLORS[color]}
               announce={false}
             />
           </span>
@@ -165,4 +163,3 @@ const Button: React.FC<ButtonProps> = ({
 };
 
 export default Button;
-
