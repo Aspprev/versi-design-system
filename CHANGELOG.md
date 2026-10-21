@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.7.1 — 2026-10-21 — segurança do Storybook
+
+### Corrigido
+
+- Atualizados Storybook, addon-a11y, addon-docs e react-vite para 10.6.3, removendo o alerta crítico GHSA-f2ph-cmg5-wxc8 que bloqueou a tag v0.7.0. A auditoria de segurança permanece obrigatória.
+- A publicação da 0.7.0 foi interrompida antes do job publish; a 0.7.1 inclui os ajustes funcionais descritos abaixo.
+
 ## 0.7.0 — 2026-10-21 — ações, seleções e cores semânticas
 
 ### Migração incompatível
