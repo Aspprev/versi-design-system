@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.9
+
+### Corrigido
+
+- Atualizado o Vite de 8.3.0 para 8.3.4 no lockfile do Storybook e no consumidor piloto, removendo os alertas de segurança que bloquearam a publicação da 0.5.8. A auditoria permanece obrigatória no CI.
+
 ## 0.5.8 — 2026-10-20 — temas de clientes e legibilidade
 
 ### Adicionado
@@ -288,6 +294,7 @@ Importe os componentes pelos entrypoints públicos. Para seleção exclusiva de
 ano, substitua implementações locais por `DatePicker selectionMode="year"`;
 para arquivos, controle a fila e o upload no consumidor e passe os estados a
 `FileList`/`FileUploadProgress`.
+
 ### Adicionado no lote seguinte
 
 - Preservação de caret para `formatter` genérico em `Input` e `InputStandalone`.
