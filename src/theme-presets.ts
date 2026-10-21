@@ -6,13 +6,13 @@ export const LEGACY_THEMES = [
 
 /** Client palettes are proposals for visual review, not certified brand manuals. */
 export const CLIENT_THEMES = [
-  { id: "basf", label: "BASF" },
-  { id: "funssest", label: "FUNSSEST" },
-  { id: "maisprevidencia", label: "Mais Previdência" },
-  { id: "aceprev", label: "ACEPREV" },
-  { id: "cibrius", label: "Cibrius" },
-  { id: "serpros", label: "SERPROS" },
-  { id: "einvest", label: "E-Invest" },
+  { id: "custom2178", label: "custom2178" },
+  { id: "custom2156", label: "custom2156" },
+  { id: "custom2140", label: "custom2140" },
+  { id: "custom2133", label: "custom2133" },
+  { id: "custom2170", label: "custom2170" },
+  { id: "custom2162", label: "custom2162" },
+  { id: "custom2157", label: "custom2157" },
 ] as const;
 
 export const DESIGN_SYSTEM_THEMES = [

@@ -1,5 +1,27 @@
 # Changelog
 
+## Não lançado
+
+### Migração de temas
+
+- Identidades customizadas passam a usar exclusivamente códigos `custom{PRD}` em seletores, tipos, metadados, arquivos e Storybook. Sem aliases para os identificadores anteriores; o consumidor precisa migrar suas preferências e sua resolução de tema de forma coordenada. As cores dos sete customizados foram preservadas.
+- Os onze presets genéricos recebem acentos opcionais nos quatro modos, incluindo default implícito, sem alterar primárias, neutros, ações, feedback/status, gráficos ou placeholders. Os acentos VERSI comuns são verde, lavanda e lilás; o alto contraste usa a apresentação neutra intencional.
+
+### Corrigido
+
+- CircularLoading na variante secondary usa conte?do sem?ntico, corrigindo o contraste sobre superf?cie muted no alto contraste escuro.
+
+### Alterado
+
+- Restaurada a identidade anterior do rosa1 no escuro normal, com ações rosadas, cores secundárias/terciárias e superfícies originais. A identidade custom2133 permanece no tema próprio, preservando placeholders e correções de legibilidade.
+- Storybook exibe os três brand accents em um grupo próprio na paleta, na matriz de temas/modos e no laboratório. Galerias de clientes destacam as cores da marca com valores HEX e RGB.
+
+### Adicionado
+
+- Pares opcionais `brand-accent-{n}-soft/content/border`, com apresentação funcional nos quatro modos e fallback neutro de alto contraste, sem alterar referências de marca dos customizados, feedback ou placeholders.
+- Prop `brandAccent` no Surface e catálogo `brandPalette`/`seriesKeys` nos gráficos, com resolvedor compartilhado, papéis explícitos e identidade estável ao filtrar/reordenar. As paletas legadas continuam padrão.
+- Demonstrações de detalhes, ilustração geométrica, gráficos de seis categorias, cores customizadas e fallback no Storybook; documentação de migração dos estilos temporários do portal.
+
 ## 0.5.9
 
 ### Corrigido
@@ -10,7 +32,7 @@
 
 ### Adicionado
 
-- Sete identidades de cliente: basf, funssest, maisprevidencia, aceprev, cibrius, serpros e einvest, com quatro variantes e equivalência entre classe/atributo no html/body.
+- Sete identidades de cliente: custom2178, custom2156, custom2140, custom2133, custom2170, custom2162 e custom2157, com quatro variantes e equivalência entre classe/atributo no html/body.
 - Listas e tipos públicos de temas, acentos opcionais de marca e 28 demonstrações no Storybook, separadas dos presets legados.
 - Testes de equivalência com os JSONs fornecidos e validação dos modos de alto contraste em componentes reais.
 
@@ -24,7 +46,7 @@
 
 ### Alterado
 
-- Tema rosa1 no modo escuro normal: coral, amarelo e lilás inspirados na identidade Aceprev; superfícies quentes e conteúdo escuro nas ações coloridas.
+- Tema rosa1 no modo escuro normal: coral, amarelo e lilás inspirados na identidade custom2133; superfícies quentes e conteúdo escuro nas ações coloridas.
 
 ### Documentação
 

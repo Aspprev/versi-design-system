@@ -1,20 +1,20 @@
 # Temas de cliente — proposta para revisão
 
-Os sete JSONs e CSSs desta pasta foram extraídos de `docs/temas-clientes-para-ds.zip` e são as referências recebidas. Os JSONs usam um esquema de exportação; o contrato nativo continua em `tokens/design-system.tokens.json`. Não há atualização de versão nem publicação nesta integração.
+Os sete JSONs e CSSs desta pasta são referências recebidas, com identificadores públicos anonimizados; os arquivos originais ficam apenas em armazenamento local ignorado pelo Git. Os JSONs usam um esquema de exportação; o contrato nativo continua em `tokens/design-system.tokens.json`. Não há atualização de versão nem publicação nesta integração.
 
 ## Identificadores
 
 | Cliente | `data-ds-theme` ou classe |
 | --- | --- |
-| BASF | `basf` |
-| FUNSSEST | `funssest` |
-| Mais Previdência | `maisprevidencia` |
-| ACEPREV | `aceprev` |
-| Cibrius | `cibrius` |
-| SERPROS | `serpros` |
-| E-Invest | `einvest` |
+| custom2178 | `custom2178` |
+| custom2156 | `custom2156` |
+| custom2140 | `custom2140` |
+| custom2133 | `custom2133` |
+| custom2170 | `custom2170` |
+| custom2162 | `custom2162` |
+| custom2157 | `custom2157` |
 
-Os nomes legados permanecem disponíveis. O ajuste local anterior de `rosa1` escuro também foi preservado: `aceprev` é uma identidade independente, baseada no JSON recebido, com fundos neutros e ações alternativas neutras.
+Os nomes legados permanecem disponíveis. O `rosa1` escuro voltou à identidade anterior à adaptação do cliente; `custom2133` é uma identidade independente, baseada no JSON recebido, com fundos neutros e ações alternativas neutras. A restauração preserva placeholders e as correções de legibilidade. As diferenças estão em `ROSA1-RESTAURACAO.json`.
 
 ## Consumir no portal
 
@@ -26,7 +26,7 @@ Depois de consumir um build do pacote que contenha esta integração, importe os
 ```
 
 ```html
-<html lang="pt-BR" data-ds-theme="aceprev"
+<html lang="pt-BR" data-ds-theme="custom2133"
   data-color-scheme="dark" data-contrast="normal"
   data-contrast-theme="dark">
 ```
@@ -38,11 +38,11 @@ Depois de consumir um build do pacote que contenha esta integração, importe os
 | `high-light` | `light` | `high` | `light` |
 | `high-dark` | `dark` | `high` | `dark` |
 
-A identidade pode estar no `html` ou no `body`, como classe (`class="aceprev"`) ou atributo. Modo e contraste ficam no `html`. Prefira uma única identidade no documento; o `body` permite que dropdowns e modais portados herdem os mesmos valores. Contextos de tema restritos a um contêiner precisam propagar a identidade aos seus próprios portais.
+A identidade pode estar no `html` ou no `body`, como classe (`class="custom2133"`) ou atributo. Modo e contraste ficam no `html`. Prefira uma única identidade no documento; o `body` permite que dropdowns e modais portados herdem os mesmos valores. Contextos de tema restritos a um contêiner precisam propagar a identidade aos seus próprios portais.
 
 O pacote exporta `CLIENT_THEMES`, `LEGACY_THEMES`, `DESIGN_SYSTEM_THEMES`, `ClientTheme` e `DesignSystemTheme` pelas entradas raiz e `/core`. Não é necessário importar JavaScript para usar os CSS.
 
-As cores são canais RGB: `color: rgb(var(--content-primary))`. Use `--brand-accent-1/2/3` somente em detalhes opcionais da marca. Feedback de erro, sucesso, aviso e informação continua independente. O degradê decorativo verde–azul de E-Invest não é um token RGB e não foi aplicado automaticamente a controles.
+As cores são canais RGB: `color: rgb(var(--content-primary))`. Use `--brand-accent-1/2/3` somente em detalhes opcionais da marca. Feedback de erro, sucesso, aviso e informação continua independente. O degradê decorativo verde–azul de custom2157 não é um token RGB e não foi aplicado automaticamente a controles.
 
 Ao adotar os novos nomes, remova os overrides temporários equivalentes do portal. Nenhum arquivo do portal foi alterado por esta integração.
 
@@ -56,8 +56,8 @@ A comparação com o estado local do DS 0.5.7 revelou estas diferenças, já exi
 
 | Novos temas | Token | Snapshot mantido | Preset local antes da integração |
 | --- | --- | --- | --- |
-| BASF / Mais Previdência (`laranja1`) | `--content-link` | `146, 68, 0` | `234, 113, 0` |
-| FUNSSEST (`laranja2`) | `--content-link` | `181, 68, 22` | `242, 93, 33` |
+| custom2178 / custom2140 (`laranja1`) | `--content-link` | `146, 68, 0` | `234, 113, 0` |
+| custom2156 (`laranja2`) | `--content-link` | `181, 68, 22` | `242, 93, 33` |
 | Os três claros | `--chart-1` | `15, 98, 193` | Primária laranja de cada preset |
 
 Os três acentos `--brand-accent-*` são novos e não existiam nos presets locais. Os outros 227 valores de cada snapshot coincidem com o contexto local comparado. A implementação mantém os snapshots nos novos nomes e não modifica os presets laranja para fazê-los coincidir.
@@ -106,3 +106,8 @@ Abra **Temas → Clientes → [cliente]** no Storybook para revisar cada uma das
 - As 28 demonstrações não apresentaram erros de execução dos gráficos durante as interações exercitadas. Os limites e escopo da verificação de acessibilidade estão descritos acima.
 
 O estado atual e os impactos pontuais nos claros preservados estão em [Correção de legibilidade](../correcao-legibilidade/RELATORIO.md). As referências originais continuam disponíveis; os testes aplicam as diferenças funcionais documentadas para não reintroduzir defeitos do snapshot.
+
+
+## Detalhes opcionais de marca
+
+Os acentos dos clientes têm pares de apresentação e uso explícito no Surface e nos gráficos, com fallback legado e suporte aos quatro modos. Veja [o contrato e a migração dos estilos temporários do portal](../brand-accents/README.md).

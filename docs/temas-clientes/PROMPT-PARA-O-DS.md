@@ -4,24 +4,24 @@ Implemente no @aspprev/versi-ds os sete temas de cliente contidos nos arquivos a
 
 Os JSONs são o contrato de valores desta proposta e contêm quatro variantes: light, dark, high-light e high-dark. Os CSSs mostram os seletores de referência. O JSON exportado NÃO é o esquema nativo do registro do DS: converta para o esquema existente. Os valores são canais RGB separados por vírgulas. Leia as instruções locais do repositório antes de editar.
 
-Identificadores públicos dos novos temas: basf, funssest, maisprevidencia, aceprev, cibrius, serpros e einvest. Não substituir nem remover os temas legados default, azul*, verde*, laranja* e rosa1. Não modificar o portal a partir deste trabalho.
+Identificadores públicos dos novos temas: custom2178, custom2156, custom2140, custom2133, custom2170, custom2162 e custom2157. Não substituir nem remover os temas legados default, azul*, verde*, laranja* e rosa1. Não modificar o portal a partir deste trabalho.
 
 Restrições obrigatórias:
 
-1. Preservar os valores claros exportados de BASF e Mais Previdência (snapshot de laranja1 do DS 0.5.7) e FUNSSEST (snapshot de laranja2 do DS 0.5.7). Não corrigir automaticamente o contraste desses claros nem alterar os presets legados para implementar os novos nomes. Compare todos os tokens, não só a primária. Se o DS local já tiver uma base diferente da 0.5.7, explicite a diferença em vez de sobrescrever silenciosamente o snapshot.
+1. Preservar os valores claros exportados de custom2178 e custom2140 (snapshot de laranja1 do DS 0.5.7) e custom2156 (snapshot de laranja2 do DS 0.5.7). Não corrigir automaticamente o contraste desses claros nem alterar os presets legados para implementar os novos nomes. Compare todos os tokens, não só a primária. Se o DS local já tiver uma base diferente da 0.5.7, explicite a diferença em vez de sobrescrever silenciosamente o snapshot.
 2. Nos temas claros e escuros comuns, identidade e conforto visual são os critérios; índices WCAG não são bloqueio de aprovação nesses dois modos. Nos dois modos de ALTO CONTRASTE, validar os pares aplicáveis segundo WCAG, incluindo texto, controles, foco, feedback, gráficos e estados de hover/active. Não declarar conformidade completa apenas com testes de tokens.
 3. Manter fundos neutros compartilhados. Não recolorir erro, sucesso, aviso ou informação com a marca. Nos modos reformulados, as ações alternativas são neutras. Os `brand-accent-1/2/3` são acentos opcionais, não feedback nem uma obrigação de três paletas interativas.
 4. Os arquivos exportam valores resolvidos para compatibilidade e revisão. Podem ser representados por referências/aliases internos para evitar repetição, desde que os valores computados se mantenham. Não excluir tokens/APIs legados nesta integração e não mapear globalmente secondary para success. A preservação do claro em produção tem prioridade sobre a limpeza desses aliases.
 5. Garantir equivalência de classe e atributo data-ds-theme, com identidade no body ou no html. Modo e contraste ficam no html. Os tokens semânticos precisam resolver também no body, onde alguns já são redefinidos. Os modos comuns devem excluir data-contrast="high"; o alto contraste deve prevalecer. Evitar !important como solução geral.
 
 Direção visual:
-- BASF: laranja principal; vermelho e amarelo discretos como apoio.
-- FUNSSEST: laranja e cinzas.
-- Mais Previdência: laranja, azul claro, oliva e verde azulado.
-- ACEPREV: salmão/coral, dourado, lavanda e anil nos detalhes.
-- Cibrius: verde, marinho e verde azulado.
-- SERPROS: azul claro, verde-lima e pequenos detalhes laranja.
-- E-Invest: verde, azul e marinho. Degradê verde–azul apenas em detalhes decorativos nos modos comuns; não obrigatório em botões ou superfícies, e dispensado no alto contraste. O degradê da galeria do portal é uma composição visual e não está codificado como token RGB nestes arquivos.
+- custom2178: laranja principal; vermelho e amarelo discretos como apoio.
+- custom2156: laranja e cinzas.
+- custom2140: laranja, azul claro, oliva e verde azulado.
+- custom2133: salmão/coral, dourado, lavanda e anil nos detalhes.
+- custom2170: verde, marinho e verde azulado.
+- custom2162: azul claro, verde-lima e pequenos detalhes laranja.
+- custom2157: verde, azul e marinho. Degradê verde–azul apenas em detalhes decorativos nos modos comuns; não obrigatório em botões ou superfícies, e dispensado no alto contraste. O degradê da galeria do portal é uma composição visual e não está codificado como token RGB nestes arquivos.
 
 Procedimento:
 

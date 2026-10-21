@@ -286,3 +286,6 @@ export type {
 } from "./components/accessibility-preferences";
 export { CLIENT_THEMES, LEGACY_THEMES, DESIGN_SYSTEM_THEMES } from "./theme-presets";
 export type { ClientTheme, DesignSystemTheme } from "./theme-presets";
+
+export { resolveChartBrandPalette } from "./utils/chart-brand-palette";
+export type { ChartBrandPalette, ChartSeriesRole } from "./utils/chart-brand-palette";

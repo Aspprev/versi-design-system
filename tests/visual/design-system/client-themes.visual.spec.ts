@@ -129,7 +129,7 @@ for (const { id } of CLIENT_THEMES) {
     await expect(option).toBeVisible();
     expect(await option.evaluate(el => getComputedStyle(el).getPropertyValue("--primary-1").replace(/\s/g, ""))).toBe(expected["--primary-1"].replace(/\s/g, ""));
     await option.click();
-    await expect(main.locator(".apexcharts-canvas")).toHaveCount(2);
+    await expect(main.locator(".client-theme-charts .apexcharts-canvas")).toHaveCount(2);
     await expect(main.locator(".apexcharts-pie-series path").first()).toBeVisible();
     expect(runtimeErrors).toEqual([]);
     await info.attach("contexto", { body: JSON.stringify({ id, mode }), contentType: "application/json" });
@@ -137,13 +137,13 @@ for (const { id } of CLIENT_THEMES) {
 }
 
 test("gráficos já montados atualizam cores sem remontar a página", async ({ page }) => {
-  await page.goto("/iframe.html?id=themes-clients-aceprev--dark&viewMode=story");
-  await expect(page.locator(".apexcharts-canvas")).toHaveCount(2);
+  await page.goto("/iframe.html?id=themes-clients-custom2133--dark&viewMode=story");
+  await expect(page.locator(".client-theme-charts .apexcharts-canvas")).toHaveCount(2);
   const series = page.locator(".apexcharts-line-series path.apexcharts-line").first();
   const before = await series.getAttribute("stroke");
-  await page.evaluate(() => { document.documentElement.dataset.dsTheme = "serpros"; });
+  await page.evaluate(() => { document.documentElement.dataset.dsTheme = "custom2162"; });
   await expect.poll(() => series.getAttribute("stroke")).not.toBe(before);
-  const expected = reference("serpros").variants.dark["--chart-1"].replace(/\s/g, "");
+  const expected = reference("custom2162").variants.dark["--chart-1"].replace(/\s/g, "");
   await expect.poll(() => page.locator(".apexcharts-pie-series path").first().getAttribute("fill").then(value => value?.replace(/\s/g, ""))).toBe(`rgba(${expected},1)`);
 });
 
@@ -154,36 +154,36 @@ test("galerias de clientes cabem no celular", async ({ page }) => {
     const entry = Object.values(index.entries as Record<string, { id: string; importPath: string }>).find(item => item.importPath.endsWith(`/${id}.stories.tsx`) && item.id.endsWith("--dark"));
     await page.goto(`/iframe.html?id=${entry!.id}&viewMode=story`);
     await expect(page.locator("main.client-theme-gallery")).toBeVisible();
-    await expect(page.locator(".apexcharts-canvas")).toHaveCount(2);
+    await expect(page.locator(".client-theme-charts .apexcharts-canvas")).toHaveCount(2);
     await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   }
 });
 
 test("portais herdam a identidade aplicada como classe ou atributo no html/body", async ({ page }) => {
-  await page.goto("/iframe.html?id=themes-clients-aceprev--high-dark&viewMode=story");
+  await page.goto("/iframe.html?id=themes-clients-custom2133--high-dark&viewMode=story");
   const main = page.locator("main.client-theme-gallery");
   await expect(main).toBeVisible();
   for (const target of ["html", "body"]) for (const identity of ["class", "attribute"]) {
     await page.evaluate(({ target, identity }) => {
       for (const el of [document.documentElement, document.body]) {
-        el.classList.remove("aceprev", "basf");
+        el.classList.remove("custom2133", "custom2178");
         el.removeAttribute("data-ds-theme");
       }
       const element = target === "html" ? document.documentElement : document.body;
-      if (identity === "class") element.classList.add("basf");
-      else element.dataset.dsTheme = "basf";
+      if (identity === "class") element.classList.add("custom2178");
+      else element.dataset.dsTheme = "custom2178";
     }, { target, identity });
     await main.getByRole("button", { name: "Abrir modal", exact: true }).click();
     const dialog = page.getByRole("dialog");
     const close = dialog.getByRole("button", { name: "Concluir" });
     await expect(close).toBeVisible();
-    expect(await close.evaluate(el => getComputedStyle(el).getPropertyValue("--primary-1").replace(/\s/g, ""))).toBe(reference("basf").variants["high-dark"]["--primary-1"].replace(/\s/g, ""));
+    expect(await close.evaluate(el => getComputedStyle(el).getPropertyValue("--primary-1").replace(/\s/g, ""))).toBe(reference("custom2178").variants["high-dark"]["--primary-1"].replace(/\s/g, ""));
     await close.click();
     await expect(dialog).toHaveCount(0);
     await main.getByRole("combobox").click();
     const option = page.getByRole("option", { name: "Plano básico" });
     await expect(option).toBeVisible();
-    expect(await option.evaluate(el => getComputedStyle(el).getPropertyValue("--primary-1").replace(/\s/g, ""))).toBe(reference("basf").variants["high-dark"]["--primary-1"].replace(/\s/g, ""));
+    expect(await option.evaluate(el => getComputedStyle(el).getPropertyValue("--primary-1").replace(/\s/g, ""))).toBe(reference("custom2178").variants["high-dark"]["--primary-1"].replace(/\s/g, ""));
     await option.click();
   }
 });

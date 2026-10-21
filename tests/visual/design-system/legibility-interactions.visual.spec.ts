@@ -74,16 +74,16 @@ for (const theme of DESIGN_SYSTEM_THEMES) {
     test.skip(info.project.name === "chromium-mobile", "Cobertura completa no desktop; smoke responsivo separado.");
     test.setTimeout(180_000);
     const errors: string[]=[]; page.on("pageerror",error=>errors.push(error.message));
-    await page.goto("/iframe.html?id=themes-clients-aceprev--light&viewMode=story");
+    await page.goto("/iframe.html?id=themes-clients-custom2133--light&viewMode=story");
     await expect(page.locator("main.client-theme-gallery")).toBeVisible();
     await distributed(page,"stories/themes/client-themes.css");
     for (const value of ["light","dark","high-light","high-dark"]) {
       await mode(page,theme,value);
-      await expect(page.locator(".apexcharts-canvas")).toHaveCount(2);
+      await expect(page.locator(".client-theme-charts .apexcharts-canvas")).toHaveCount(2);
       const line=page.locator(".apexcharts-line-series .apexcharts-line").first();
       const series=await page.locator("body").evaluate(el=>getComputedStyle(el).getPropertyValue("--chart-1").replace(/\s/g,""));
       await expect.poll(()=>line.evaluate(el=>getComputedStyle(el).stroke.match(/[\d.]+/g)?.slice(0,3).join(","))).toBe(series);
-      await expect(page.locator("rect[data-versi-chart-label]")).toHaveCount(3);
+      await expect(page.locator(".client-theme-charts rect[data-versi-chart-label]")).toHaveCount(3);
       await settle(page.locator("main"));
       if(value.startsWith("high")) {
         const text=await readLegibility(page,"main .client-theme-charts");
@@ -117,7 +117,7 @@ for (const theme of DESIGN_SYSTEM_THEMES) {
 }
 
 test("inline antigo do portal encobre a correção até ser removido", async ({ page })=>{
-  await page.goto("/iframe.html?id=laboratory-legibility--dark&viewMode=story&globals=dsTheme:aceprev");
+  await page.goto("/iframe.html?id=laboratory-legibility--dark&viewMode=story&globals=dsTheme:custom2133");
   await expect(page.locator('[data-audit="unmapped"]')).toBeVisible();
   await distributed(page,"stories/laboratory/legibility.css");
   const token="--status-slate-outline-foreground";

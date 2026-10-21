@@ -48,6 +48,7 @@ export const getChartTheme = () => ({
   mutedSeries: MUTED_SERIES_FALLBACKS.map((fallback, index) =>
     readColorToken(`--chart-muted-${index + 1}`, fallback),
   ),
+  brandSeries: [0, 1, 2].map(index => readColorToken(`--chart-brand-accent-${index + 1}`, readColorToken(`--chart-${index + 1}`, SERIES_FALLBACKS[index]))),
   balance: readColorToken("--chart-balance", "#00a76f"),
   invested: readColorToken("--chart-invested", "#1e90ff"),
   grid: readColorToken("--chart-grid", "#e5e7eb"),

@@ -12,11 +12,14 @@ import {
   Typography,
 } from "../src";
 
+import { BRAND_ACCENTS } from "./foundations/colorTokens";
+
 type ThemeId = DesignSystemTheme;
 type ColorScheme = "light" | "dark";
 type Contrast = "normal" | "high";
 
 const TOKEN_GROUPS = [
+  { label: "Cores do cliente · Brand accents", tokens: BRAND_ACCENTS },
   {
     label: "Conteudo",
     tokens: ["--content-primary", "--content-secondary", "--content-link"],
@@ -98,12 +101,12 @@ function ThemeLab({ globals, updateGlobals }: { globals: Record<string, unknown>
               value={theme}
               onChange={(event) => setTheme(event.target.value as ThemeId)}
             >
-              <optgroup label="Presets legados">{LEGACY_THEMES.map((option) => (
+              <optgroup label="Presets genéricos">{LEGACY_THEMES.map((option) => (
                 <option key={option} value={option}>
                   {option === "default" ? "Padrao" : option}
                 </option>
               ))}</optgroup>
-              <optgroup label="Identidades de clientes">{CLIENT_THEMES.map(option => <option key={option.id} value={option.id}>{option.label}</option>)}</optgroup>
+              <optgroup label="Temas customizados">{CLIENT_THEMES.map(option => <option key={option.id} value={option.id}>{option.label}</option>)}</optgroup>
             </select>
           </label>
           <label className="flex flex-col gap-1 text-sm font-semibold">
@@ -205,7 +208,7 @@ function ThemeLab({ globals, updateGlobals }: { globals: Record<string, unknown>
                             backgroundColor: `rgb(${tokenValues[token]})`,
                           }}
                         />
-                        <code>{tokenValues[token] || "-"}</code>
+                        <code>{tokenValues[token] || "Não definido neste tema"}</code>
                       </span>
                     </div>
                   ))}

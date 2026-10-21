@@ -9,10 +9,9 @@ npm run check:release -- v0.5.8
 git add .
 git commit -m "release: preparar versi-ds 0.5.8"
 git push -u origin docs/storybook-colors
-gh pr create --base master --head docs/storybook-colors --title "release: versi-ds 0.5.8" --body-file docs/PR-0.5.8.md
 ```
 
-Se a PR dessa branch já estiver aberta, use-a; não é necessário criar outra. Também pode abrir e mesclar pela interface do GitHub.
+Abra a [PR pelo navegador](https://github.com/Aspprev/versi-design-system/compare/master...docs/storybook-colors?expand=1), com título `release: versi-ds 0.5.8` e descrição de `docs/PR-0.5.8.md`. Se a PR dessa branch já estiver aberta, use-a. O GitHub CLI não está instalado neste ambiente.
 
 ## Após mesclar a PR
 
@@ -24,10 +23,9 @@ git pull --ff-only origin master
 npm run check:release -- v0.5.8
 git tag -a v0.5.8 -m "Release 0.5.8"
 git push origin v0.5.8
-gh run list --workflow publish.yml --limit 5
 ```
 
-O push da tag aciona **Publish package**. O workflow valida, constrói o pacote e publica o artefato validado via npm trusted publishing. Não é necessário executar `npm publish` localmente. Se o ambiente `npm-publish` solicitar aprovação no GitHub, aprove o deployment para liberar a publicação.
+O push da tag aciona **Publish package**. Acompanhe pela [aba Actions](https://github.com/Aspprev/versi-design-system/actions). O workflow valida, constrói o pacote e publica o artefato validado via npm trusted publishing. Não é necessário executar `npm publish` localmente. Se o ambiente `npm-publish` solicitar aprovação no GitHub, aprove o deployment para liberar a publicação.
 
 Após o workflow terminar com sucesso, no projeto consumidor:
 

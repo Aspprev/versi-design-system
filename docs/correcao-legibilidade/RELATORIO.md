@@ -35,7 +35,7 @@ Correções implementadas e versão 0.5.8 preparada localmente, sem commit, tag 
 
 ## Antes / depois medido
 
-Status outline no card escuro da ACEPREV (`27,33,40`), sem overrides inline. Outros temas usam os mesmos pares funcionais de status no escuro.
+Status outline no card escuro da custom2133 (`27,33,40`), sem overrides inline. Outros temas usam os mesmos pares funcionais de status no escuro.
 
 | Cor | Antes | Depois |
 | --- | ---: | ---: |
@@ -60,7 +60,7 @@ Consulta somente de leitura a `por-portal-aspprev/src/config/status-map.ts` e ao
 
 ## Impacto nos claros em produção
 
-BASF, Mais Previdência e FUNSSEST mantêm suas escalas de marca, acentos, superfícies e placeholders. Os ajustes funcionais são pontuais: definição da trilha off e do knob/ícone de tema, papéis de conteúdo em navegação/seleção e comportamento de estados quando aplicável. O controle de contrato continua semântico, sem depender da paleta de identidade. Os links de conteúdo desses três claros já eram mais escuros e não são redesenhados.
+custom2178, custom2140 e custom2156 mantêm suas escalas de marca, acentos, superfícies e placeholders. Os ajustes funcionais são pontuais: definição da trilha off e do knob/ícone de tema, papéis de conteúdo em navegação/seleção e comportamento de estados quando aplicável. O controle de contrato continua semântico, sem depender da paleta de identidade. Os links de conteúdo desses três claros já eram mais escuros e não são redesenhados.
 
 Os ajustes exatos por tema/modo estão em `AJUSTES-FUNCIONAIS.json`. Tokens legados e props públicas não foram removidos. O status primário e estados de ação ganharam papéis adicionais; a entrada `styles.css` também recebe defaults funcionais para o tema padrão, inclusive sem `themes.css`.
 
@@ -82,7 +82,7 @@ Não há declaração de conformidade WCAG completa. Cores/formatadores e HTML c
 Nenhum arquivo do portal foi modificado. O pacote instalado ainda é 0.5.7; não basta olhar esse número para saber se contém o build local corrigido. Para teste antes de publicar, use um tarball local recém-gerado e confirme o CSS carregado.
 
 1. Importe `styles.css` e depois `themes.css` do build corrigido.
-2. Aplique um identificador novo (`aceprev`, `basf`, etc.) em uma única identidade no html ou body. Não deixe uma classe legada conflitante no outro host.
+2. Aplique um identificador novo (`custom2133`, `custom2178`, etc.) em uma única identidade no html ou body. Não deixe uma classe legada conflitante no outro host.
 3. Modo/contraste ficam no html; mantenha `data-contrast-theme` alinhado ao esquema efetivo.
 4. **Desligue a prévia antiga com `?previewTema=0` para avaliar o DS limpo.** O componente `TenantThemePreview` aplica e reaplica snapshots inline no body; atualizar apenas o CSS não vence esses valores.
 5. Para manter a prévia, sincronize suas funções/snapshots ou deixe que os valores funcionais venham do pacote. Mantenha somente a identidade necessária e os placeholders desejados; não reintroduza a paleta funcional antiga.
@@ -97,7 +97,7 @@ Use a lista de diferenças documentadas para sincronizar a prévia e compare sep
 - 18 testes da matriz de componentes passaram nos quatro modos. A rodada final do CSS distribuído, interações, gráficos e celular passou com 58 testes.
 - Os 288 contextos de CSS construído confirmaram os valores esperados e a preservação dos placeholders, incluindo variantes desabilitadas.
 - Build do pacote e do Storybook, TypeScript, lint sem avisos, geração de tokens, tamanho, composição do bundle, conteúdo do pacote e navegação passaram. O catálogo contém 322 entradas e 49 componentes.
-- Evidências conferidas visualmente: [status antes/depois](evidencias/status-aceprev-antes-depois.png), [controles claros](evidencias/controles-aceprev-claro.png) e [gráficos escuros](evidencias/graficos-aceprev-escuro.png).
+- Evidências conferidas visualmente: [status antes/depois](evidencias/status-custom2133-antes-depois.png), [controles claros](evidencias/controles-custom2133-claro.png) e [gráficos escuros](evidencias/graficos-custom2133-escuro.png).
 
 ## Referências de implementação
 

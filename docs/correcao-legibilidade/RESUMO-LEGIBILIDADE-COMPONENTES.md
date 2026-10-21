@@ -18,17 +18,17 @@ O corte de 2,5:1 localiza casos graves; não representa um requisito de produto 
 | Red outline em card escuro | Texto 1,56:1 |
 | Yellow outline em card escuro | Texto 2,37:1 |
 | Placeholder em campo branco, sete temas claros | 2,40:1 |
-| Links/navegação e ações sem fundo na ACEPREV clara | Aproximadamente 2,24–2,41:1 |
+| Links/navegação e ações sem fundo na custom2133 clara | Aproximadamente 2,24–2,41:1 |
 
 Os status slate também aparecem em fallback de status não mapeado. A amostra renderizada reproduziu, por exemplo, PENDENTE com slate outline pouco visível. Não foi afirmado que o rótulo REPROVADO do screenshot possui um mapeamento explícito específico; o DS deve reproduzir o caminho do domínio/fallback.
 
-Após estabilizar as transições, a triagem das abas de botões, campos e avisos em modo escuro não encontrou outros pares textuais abaixo de 2,5:1 nos elementos amostrados. Isso não comprova legibilidade suficiente de todos os componentes. Na análise de tokens, check branco e knob branco sobre coral na ACEPREV clara também merecem revisão (2,41:1), mas não foram medidos como texto renderizado do controle.
+Após estabilizar as transições, a triagem das abas de botões, campos e avisos em modo escuro não encontrou outros pares textuais abaixo de 2,5:1 nos elementos amostrados. Isso não comprova legibilidade suficiente de todos os componentes. Na análise de tokens, check branco e knob branco sobre coral na custom2133 clara também merecem revisão (2,41:1), mas não foram medidos como texto renderizado do controle.
 
 ## Causa e integração
 
 Os tokens `status-*-outline-*` herdados do claro permanecem no modo escuro comum. As propostas exportadas corrigiam status apenas nos altos contrastes. Essa lacuna precisa ser corrigida tanto na implementação do DS quanto nos snapshots funcionais usados pela prévia: esta aplica tokens inline e pode encobrir uma correção futura do pacote.
 
-Nos modos comuns, preservar identidade sem aceitar conteúdo quase invisível. Nos altos contrastes, também testar formalmente os índices aplicáveis. Preservar os claros em produção de BASF, Mais e FUNSSEST, isolando correções necessárias ao componente/modo e documentando impactos.
+Nos modos comuns, preservar identidade sem aceitar conteúdo quase invisível. Nos altos contrastes, também testar formalmente os índices aplicáveis. Preservar os claros em produção de custom2178, custom2140 e custom2156, isolando correções necessárias ao componente/modo e documentando impactos.
 
 ## Arquivos
 

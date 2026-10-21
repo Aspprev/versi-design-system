@@ -10,3 +10,9 @@ playwright-report
 
 *.tgz
 debug-storybook*.log
+
+/.local/
+
+/AGENTS.md
+
+/docs/COMANDOS-E-PREFERENCIAS.md

@@ -584,56 +584,6 @@
     --action-primary-background-active: 125, 41, 72;
   }
 
-  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.rosa1, [data-ds-theme="rosa1"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"]) body {
-    --primary-1: 239, 139, 132;
-    --primary-2: 247, 162, 153;
-    --primary-3: 226, 119, 113;
-    --primary-4: 94, 53, 53;
-    --primary-5: 49, 32, 35;
-    --secondary-1: 248, 207, 128;
-    --secondary-2: 255, 222, 160;
-    --secondary-3: 234, 184, 104;
-    --secondary-4: 86, 65, 35;
-    --secondary-5: 46, 37, 28;
-    --tertiary-1: 173, 157, 212;
-    --tertiary-2: 193, 179, 228;
-    --tertiary-3: 155, 136, 194;
-    --tertiary-4: 72, 58, 83;
-    --tertiary-5: 38, 31, 45;
-    --bg-light: 24, 22, 28;
-    --bg-lighter: 33, 29, 37;
-    --bg-dark: 43, 37, 47;
-    --bg-disabled: 51, 45, 56;
-    --surface-card: 33, 29, 37;
-    --content-link: var(--primary-1);
-    --focus-ring: var(--secondary-1);
-    --action-primary-background: var(--primary-1);
-    --action-primary-background-hover: var(--primary-2);
-    --action-primary-background-active: var(--primary-3);
-    --action-primary-content: 24, 22, 28;
-    --action-primary-ghost-background: var(--primary-5);
-    --action-secondary-background: var(--secondary-1);
-    --action-secondary-background-hover: var(--secondary-2);
-    --action-secondary-background-active: var(--secondary-3);
-    --action-secondary-content: 24, 22, 28;
-    --action-tertiary-background: var(--tertiary-1);
-    --action-tertiary-background-hover: var(--tertiary-2);
-    --action-tertiary-background-active: var(--tertiary-3);
-    --action-tertiary-content: 24, 22, 28;
-    --notice-secondary-content: 24, 22, 28;
-    --selection-content: 24, 22, 28;
-    --content-on-brand: 24, 22, 28;
-    --switch-track-primary-on: 181, 86, 81;
-    --selection-background: var(--primary-1);
-    --selection-background-hover: var(--primary-2);
-    --checkbox-selected: 181, 86, 81;
-    --chart-1: var(--primary-1);
-    --chart-2: var(--tertiary-1);
-    --chart-3: var(--secondary-1);
-  }
-
   html[data-color-scheme="dark"] :where(.bg-white) {
     background-color: rgb(var(--surface-card-semantic)) !important;
   }
@@ -1455,7 +1405,7 @@ html[data-contrast="high"][data-contrast-theme="dark"][data-focus-emphasis="stro
     outline-width: 3px !important;
   }
 
-  html[data-color-scheme="light"]:not([data-contrast="high"]):where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .basf, .funssest, .maisprevidencia, .aceprev, .cibrius, .serpros, .einvest)) body:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .basf, .funssest, .maisprevidencia, .aceprev, .cibrius, .serpros, .einvest)),
+  html[data-color-scheme="light"]:not([data-contrast="high"]):where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157)) body:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157)),
 html[data-color-scheme="light"]:not([data-contrast="high"]) :where(.default, [data-ds-theme="default"]),
 html[data-color-scheme="light"]:not([data-contrast="high"]):where(.default, [data-ds-theme="default"]) body {
     --feedback-danger-strong: 128, 0, 24;
@@ -1508,7 +1458,7 @@ html[data-color-scheme="light"]:not([data-contrast="high"]):where(.default, [dat
     --content-brand-secondary: 0,110,47;
   }
 
-  html[data-color-scheme="dark"]:not([data-contrast="high"]):where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .basf, .funssest, .maisprevidencia, .aceprev, .cibrius, .serpros, .einvest)) body:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .basf, .funssest, .maisprevidencia, .aceprev, .cibrius, .serpros, .einvest)),
+  html[data-color-scheme="dark"]:not([data-contrast="high"]):where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157)) body:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157)),
 html[data-color-scheme="dark"]:not([data-contrast="high"]) :where(.default, [data-ds-theme="default"]),
 html[data-color-scheme="dark"]:not([data-contrast="high"]):where(.default, [data-ds-theme="default"]) body {
     --feedback-info-strong: 147, 197, 253;
@@ -1600,7 +1550,7 @@ html[data-color-scheme="dark"]:not([data-contrast="high"]):where(.default, [data
     --content-brand-secondary: 92, 162, 122;
   }
 
-  html[data-color-scheme="light"][data-contrast="high"]:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .basf, .funssest, .maisprevidencia, .aceprev, .cibrius, .serpros, .einvest)) body:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .basf, .funssest, .maisprevidencia, .aceprev, .cibrius, .serpros, .einvest)),
+  html[data-color-scheme="light"][data-contrast="high"]:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157)) body:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157)),
 html[data-color-scheme="light"][data-contrast="high"] :where(.default, [data-ds-theme="default"]),
 html[data-color-scheme="light"][data-contrast="high"]:where(.default, [data-ds-theme="default"]) body {
     --action-primary-background-hover: 0,0,0;
@@ -1726,7 +1676,7 @@ html[data-color-scheme="light"][data-contrast="high"]:where(.default, [data-ds-t
     --status-black-soft-foreground: 0, 0, 0;
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"]:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .basf, .funssest, .maisprevidencia, .aceprev, .cibrius, .serpros, .einvest)) body:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .basf, .funssest, .maisprevidencia, .aceprev, .cibrius, .serpros, .einvest)),
+  html[data-color-scheme="dark"][data-contrast="high"]:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157)) body:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157)),
 html[data-color-scheme="dark"][data-contrast="high"] :where(.default, [data-ds-theme="default"]),
 html[data-color-scheme="dark"][data-contrast="high"]:where(.default, [data-ds-theme="default"]) body {
     --feedback-danger-strong: 255, 204, 204;
@@ -1810,5 +1760,111 @@ html[data-color-scheme="dark"][data-contrast="high"]:where(.default, [data-ds-th
     --status-yellow-solid-background: 234, 179, 8;
     --status-yellow-outline-border: 234, 179, 8;
     --field-assistive-error: 255, 204, 204;
+  }
+
+  :where(html, body) {
+    --brand-accent-1-soft: var(--surface-muted);
+    --brand-accent-1-content: var(--content-primary);
+    --brand-accent-1-border: var(--border-default);
+    --chart-brand-accent-1: var(--chart-1);
+    --brand-accent-2-soft: var(--surface-muted);
+    --brand-accent-2-content: var(--content-primary);
+    --brand-accent-2-border: var(--border-default);
+    --chart-brand-accent-2: var(--chart-2);
+    --brand-accent-3-soft: var(--surface-muted);
+    --brand-accent-3-content: var(--content-primary);
+    --brand-accent-3-border: var(--border-default);
+    --chart-brand-accent-3: var(--chart-3);
+    --brand-detail-gradient: none;
+  }
+
+  :root {
+    --brand-accent-1: 0, 219, 155;
+    --brand-accent-2: 181, 165, 255;
+    --brand-accent-3: 201, 177, 255;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="light"] {
+    --brand-accent-1: 17, 17, 17;
+    --brand-accent-2: 17, 17, 17;
+    --brand-accent-3: 17, 17, 17;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="dark"] {
+    --brand-accent-1: 255, 255, 255;
+    --brand-accent-2: 255, 255, 255;
+    --brand-accent-3: 255, 255, 255;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]):where(:not([data-ds-theme], .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157, .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1)) body:where(:not([data-ds-theme], .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157, .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1)),
+html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"]) body {
+    --brand-accent-1: 0, 219, 155;
+    --brand-accent-2: 181, 165, 255;
+    --brand-accent-3: 201, 177, 255;
+    --brand-accent-1-soft: 219, 250, 241;
+    --brand-accent-1-content: 24, 24, 24;
+    --brand-accent-1-border: 102, 233, 195;
+    --brand-accent-2-soft: 245, 242, 255;
+    --brand-accent-2-content: 24, 24, 24;
+    --brand-accent-2-border: 211, 201, 255;
+    --brand-accent-3-soft: 247, 244, 255;
+    --brand-accent-3-content: 24, 24, 24;
+    --brand-accent-3-border: 223, 208, 255;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]):where(:not([data-ds-theme], .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157, .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1)) body:where(:not([data-ds-theme], .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157, .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1)),
+html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"]) body {
+    --brand-accent-1: 0, 219, 155;
+    --brand-accent-2: 181, 165, 255;
+    --brand-accent-3: 201, 177, 255;
+    --brand-accent-1-soft: 23, 59, 56;
+    --brand-accent-1-content: 245, 247, 250;
+    --brand-accent-1-border: 11, 145, 109;
+    --brand-accent-2-soft: 49, 51, 70;
+    --brand-accent-2-content: 245, 247, 250;
+    --brand-accent-2-border: 119, 112, 169;
+    --brand-accent-3-soft: 51, 53, 70;
+    --brand-accent-3-content: 245, 247, 250;
+    --brand-accent-3-border: 131, 119, 169;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="light"]:where(:not([data-ds-theme], .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157, .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1)) body:where(:not([data-ds-theme], .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157, .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1)),
+html[data-contrast="high"][data-contrast-theme="light"] :is(.default, [data-ds-theme="default"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.default, [data-ds-theme="default"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.default, [data-ds-theme="default"]) body {
+    --brand-accent-1: 17, 17, 17;
+    --brand-accent-2: 17, 17, 17;
+    --brand-accent-3: 17, 17, 17;
+    --brand-accent-1-soft: 229, 229, 229;
+    --brand-accent-1-content: 0, 0, 0;
+    --brand-accent-1-border: 118, 118, 118;
+    --brand-accent-2-soft: 229, 229, 229;
+    --brand-accent-2-content: 0, 0, 0;
+    --brand-accent-2-border: 118, 118, 118;
+    --brand-accent-3-soft: 229, 229, 229;
+    --brand-accent-3-content: 0, 0, 0;
+    --brand-accent-3-border: 118, 118, 118;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="dark"]:where(:not([data-ds-theme], .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157, .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1)) body:where(:not([data-ds-theme], .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157, .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1)),
+html[data-contrast="high"][data-contrast-theme="dark"] :is(.default, [data-ds-theme="default"]),
+html[data-contrast="high"][data-contrast-theme="dark"]:is(.default, [data-ds-theme="default"]),
+html[data-contrast="high"][data-contrast-theme="dark"]:is(.default, [data-ds-theme="default"]) body {
+    --brand-accent-1: 255, 255, 255;
+    --brand-accent-2: 255, 255, 255;
+    --brand-accent-3: 255, 255, 255;
+    --brand-accent-1-soft: 34, 34, 34;
+    --brand-accent-1-content: 255, 255, 255;
+    --brand-accent-1-border: 245, 245, 245;
+    --brand-accent-2-soft: 34, 34, 34;
+    --brand-accent-2-content: 255, 255, 255;
+    --brand-accent-2-border: 245, 245, 245;
+    --brand-accent-3-soft: 34, 34, 34;
+    --brand-accent-3-content: 255, 255, 255;
+    --brand-accent-3-border: 245, 245, 245;
   }
 }

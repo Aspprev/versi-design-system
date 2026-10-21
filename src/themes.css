@@ -133,59 +133,9 @@
     --action-primary-background-active: 125, 41, 72;
   }
 
-  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.rosa1, [data-ds-theme="rosa1"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"]) body {
-    --primary-1: 239, 139, 132;
-    --primary-2: 247, 162, 153;
-    --primary-3: 226, 119, 113;
-    --primary-4: 94, 53, 53;
-    --primary-5: 49, 32, 35;
-    --secondary-1: 248, 207, 128;
-    --secondary-2: 255, 222, 160;
-    --secondary-3: 234, 184, 104;
-    --secondary-4: 86, 65, 35;
-    --secondary-5: 46, 37, 28;
-    --tertiary-1: 173, 157, 212;
-    --tertiary-2: 193, 179, 228;
-    --tertiary-3: 155, 136, 194;
-    --tertiary-4: 72, 58, 83;
-    --tertiary-5: 38, 31, 45;
-    --bg-light: 24, 22, 28;
-    --bg-lighter: 33, 29, 37;
-    --bg-dark: 43, 37, 47;
-    --bg-disabled: 51, 45, 56;
-    --surface-card: 33, 29, 37;
-    --content-link: var(--primary-1);
-    --focus-ring: var(--secondary-1);
-    --action-primary-background: var(--primary-1);
-    --action-primary-background-hover: var(--primary-2);
-    --action-primary-background-active: var(--primary-3);
-    --action-primary-content: 24, 22, 28;
-    --action-primary-ghost-background: var(--primary-5);
-    --action-secondary-background: var(--secondary-1);
-    --action-secondary-background-hover: var(--secondary-2);
-    --action-secondary-background-active: var(--secondary-3);
-    --action-secondary-content: 24, 22, 28;
-    --action-tertiary-background: var(--tertiary-1);
-    --action-tertiary-background-hover: var(--tertiary-2);
-    --action-tertiary-background-active: var(--tertiary-3);
-    --action-tertiary-content: 24, 22, 28;
-    --notice-secondary-content: 24, 22, 28;
-    --selection-content: 24, 22, 28;
-    --content-on-brand: 24, 22, 28;
-    --switch-track-primary-on: 181, 86, 81;
-    --selection-background: var(--primary-1);
-    --selection-background-hover: var(--primary-2);
-    --checkbox-selected: 181, 86, 81;
-    --chart-1: var(--primary-1);
-    --chart-2: var(--tertiary-1);
-    --chart-3: var(--secondary-1);
-  }
-
-  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]) body {
     --white: 255,255,255;
     --secondary-1: 0,110,47;
     --secondary-2: 0,81,34;
@@ -343,9 +293,9 @@ html[data-color-scheme="light"]:not([data-contrast="high"]):is(.basf, [data-ds-t
     --focus-indicator-color: rgb(var(--focus-ring));
   }
 
-  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.basf, [data-ds-theme="basf"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"]) body {
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2178, [data-ds-theme="custom2178"]) body {
     --primary-1: 234, 113, 0;
     --primary-2: 200, 93, 0;
     --primary-3: 146, 68, 0;
@@ -426,9 +376,9 @@ html[data-color-scheme="light"]:not([data-contrast="high"]):is(.basf, [data-ds-t
     --brand-accent-3: 202, 160, 55;
   }
 
-  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.funssest, [data-ds-theme="funssest"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.funssest, [data-ds-theme="funssest"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.funssest, [data-ds-theme="funssest"]) body {
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2156, [data-ds-theme="custom2156"]) body {
     --primary-1: 242, 93, 33;
     --primary-2: 181, 68, 22;
     --primary-3: 128, 45, 11;
@@ -509,9 +459,9 @@ html[data-color-scheme="light"]:not([data-contrast="high"]):is(.funssest, [data-
     --brand-accent-3: 198, 143, 99;
   }
 
-  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.maisprevidencia, [data-ds-theme="maisprevidencia"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.maisprevidencia, [data-ds-theme="maisprevidencia"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.maisprevidencia, [data-ds-theme="maisprevidencia"]) body {
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2140, [data-ds-theme="custom2140"]) body {
     --primary-1: 234, 113, 0;
     --primary-2: 200, 93, 0;
     --primary-3: 146, 68, 0;
@@ -592,9 +542,9 @@ html[data-color-scheme="light"]:not([data-contrast="high"]):is(.maisprevidencia,
     --brand-accent-3: 66, 126, 128;
   }
 
-  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.aceprev, [data-ds-theme="aceprev"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.aceprev, [data-ds-theme="aceprev"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.aceprev, [data-ds-theme="aceprev"]) body {
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2133, [data-ds-theme="custom2133"]) body {
     --primary-1: 239, 139, 132;
     --primary-2: 215, 125, 119;
     --primary-3: 191, 111, 106;
@@ -676,9 +626,9 @@ html[data-color-scheme="light"]:not([data-contrast="high"]):is(.aceprev, [data-d
     --action-tertiary-ghost-background: 239, 239, 239;
   }
 
-  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.cibrius, [data-ds-theme="cibrius"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.cibrius, [data-ds-theme="cibrius"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.cibrius, [data-ds-theme="cibrius"]) body {
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2170, [data-ds-theme="custom2170"]) body {
     --primary-1: 121, 154, 59;
     --primary-2: 109, 139, 53;
     --primary-3: 97, 123, 47;
@@ -760,9 +710,9 @@ html[data-color-scheme="light"]:not([data-contrast="high"]):is(.cibrius, [data-d
     --action-tertiary-ghost-background: 239, 239, 239;
   }
 
-  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.serpros, [data-ds-theme="serpros"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.serpros, [data-ds-theme="serpros"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.serpros, [data-ds-theme="serpros"]) body {
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2162, [data-ds-theme="custom2162"]) body {
     --primary-1: 0, 166, 217;
     --primary-2: 0, 149, 195;
     --primary-3: 0, 133, 174;
@@ -844,9 +794,9 @@ html[data-color-scheme="light"]:not([data-contrast="high"]):is(.serpros, [data-d
     --action-tertiary-ghost-background: 239, 239, 239;
   }
 
-  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.einvest, [data-ds-theme="einvest"]) body {
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2157, [data-ds-theme="custom2157"]) body {
     --primary-1: 7, 133, 66;
     --primary-2: 6, 120, 59;
     --primary-3: 6, 106, 53;
@@ -928,9 +878,9 @@ html[data-color-scheme="light"]:not([data-contrast="high"]):is(.einvest, [data-d
     --action-tertiary-ghost-background: 239, 239, 239;
   }
 
-  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]) body {
     --white: 255,255,255;
     --secondary-1: 111,218,145;
     --secondary-2: 155,233,179;
@@ -1137,9 +1087,9 @@ html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.basf, [data-ds-th
     --focus-indicator-color: rgb(var(--focus-ring));
   }
 
-  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.basf, [data-ds-theme="basf"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"]) body {
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2178, [data-ds-theme="custom2178"]) body {
     --primary-1: 255, 164, 81;
     --primary-2: 255, 175, 102;
     --primary-3: 204, 131, 65;
@@ -1172,9 +1122,9 @@ html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.basf, [data-ds-th
     --brand-accent-3: 248, 206, 101;
   }
 
-  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.funssest, [data-ds-theme="funssest"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.funssest, [data-ds-theme="funssest"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.funssest, [data-ds-theme="funssest"]) body {
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2156, [data-ds-theme="custom2156"]) body {
     --primary-1: 255, 148, 92;
     --primary-2: 255, 161, 112;
     --primary-3: 204, 118, 74;
@@ -1207,9 +1157,9 @@ html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.funssest, [data-d
     --brand-accent-3: 244, 189, 145;
   }
 
-  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.maisprevidencia, [data-ds-theme="maisprevidencia"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.maisprevidencia, [data-ds-theme="maisprevidencia"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.maisprevidencia, [data-ds-theme="maisprevidencia"]) body {
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2140, [data-ds-theme="custom2140"]) body {
     --primary-1: 255, 172, 106;
     --primary-2: 255, 182, 124;
     --primary-3: 204, 138, 85;
@@ -1242,9 +1192,9 @@ html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.maisprevidencia, 
     --brand-accent-3: 66, 126, 128;
   }
 
-  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.aceprev, [data-ds-theme="aceprev"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.aceprev, [data-ds-theme="aceprev"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.aceprev, [data-ds-theme="aceprev"]) body {
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2133, [data-ds-theme="custom2133"]) body {
     --primary-1: 239, 139, 132;
     --primary-2: 241, 153, 147;
     --primary-3: 191, 111, 106;
@@ -1277,9 +1227,9 @@ html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.aceprev, [data-ds
     --brand-accent-3: 69, 70, 125;
   }
 
-  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.cibrius, [data-ds-theme="cibrius"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.cibrius, [data-ds-theme="cibrius"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.cibrius, [data-ds-theme="cibrius"]) body {
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2170, [data-ds-theme="custom2170"]) body {
     --primary-1: 171, 201, 104;
     --primary-2: 181, 207, 122;
     --primary-3: 137, 161, 83;
@@ -1312,9 +1262,9 @@ html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.cibrius, [data-ds
     --brand-accent-3: 125, 184, 188;
   }
 
-  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.serpros, [data-ds-theme="serpros"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.serpros, [data-ds-theme="serpros"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.serpros, [data-ds-theme="serpros"]) body {
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2162, [data-ds-theme="custom2162"]) body {
     --primary-1: 87, 206, 240;
     --primary-2: 107, 212, 242;
     --primary-3: 70, 165, 192;
@@ -1347,9 +1297,9 @@ html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.serpros, [data-ds
     --brand-accent-3: 245, 172, 87;
   }
 
-  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.einvest, [data-ds-theme="einvest"]) body {
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2157, [data-ds-theme="custom2157"]) body {
     --primary-1: 85, 217, 156;
     --primary-2: 105, 222, 168;
     --primary-3: 68, 174, 125;
@@ -1382,9 +1332,9 @@ html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.einvest, [data-ds
     --brand-accent-3: 69, 81, 125;
   }
 
-  html[data-color-scheme="light"][data-contrast="high"] :is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+  html[data-color-scheme="light"][data-contrast="high"] :is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]) body {
     --white: 255,255,255;
     --secondary-1: 0,102,46;
     --secondary-2: 0,77,34;
@@ -1597,9 +1547,9 @@ html[data-color-scheme="light"][data-contrast="high"]:is(.basf, [data-ds-theme="
     --focus-indicator-color: rgb(var(--focus-ring));
   }
 
-  html[data-color-scheme="light"][data-contrast="high"] :is(.basf, [data-ds-theme="basf"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"]) body {
+  html[data-color-scheme="light"][data-contrast="high"] :is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"]) body {
     --primary-1: 131, 63, 0;
     --primary-2: 118, 57, 0;
     --primary-3: 105, 50, 0;
@@ -1626,9 +1576,9 @@ html[data-color-scheme="light"][data-contrast="high"]:is(.basf, [data-ds-theme="
     --brand-accent-3: 144, 114, 40;
   }
 
-  html[data-color-scheme="light"][data-contrast="high"] :is(.funssest, [data-ds-theme="funssest"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.funssest, [data-ds-theme="funssest"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.funssest, [data-ds-theme="funssest"]) body {
+  html[data-color-scheme="light"][data-contrast="high"] :is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2156, [data-ds-theme="custom2156"]) body {
     --primary-1: 147, 57, 20;
     --primary-2: 132, 51, 18;
     --primary-3: 118, 46, 16;
@@ -1655,9 +1605,9 @@ html[data-color-scheme="light"][data-contrast="high"]:is(.funssest, [data-ds-the
     --brand-accent-3: 142, 102, 71;
   }
 
-  html[data-color-scheme="light"][data-contrast="high"] :is(.maisprevidencia, [data-ds-theme="maisprevidencia"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.maisprevidencia, [data-ds-theme="maisprevidencia"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.maisprevidencia, [data-ds-theme="maisprevidencia"]) body {
+  html[data-color-scheme="light"][data-contrast="high"] :is(.custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2140, [data-ds-theme="custom2140"]) body {
     --primary-1: 131, 63, 0;
     --primary-2: 118, 57, 0;
     --primary-3: 105, 50, 0;
@@ -1684,9 +1634,9 @@ html[data-color-scheme="light"][data-contrast="high"]:is(.maisprevidencia, [data
     --brand-accent-3: 66, 126, 128;
   }
 
-  html[data-color-scheme="light"][data-contrast="high"] :is(.aceprev, [data-ds-theme="aceprev"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.aceprev, [data-ds-theme="aceprev"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.aceprev, [data-ds-theme="aceprev"]) body {
+  html[data-color-scheme="light"][data-contrast="high"] :is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2133, [data-ds-theme="custom2133"]) body {
     --primary-1: 121, 72, 67;
     --primary-2: 109, 65, 60;
     --primary-3: 97, 58, 54;
@@ -1713,9 +1663,9 @@ html[data-color-scheme="light"][data-contrast="high"]:is(.aceprev, [data-ds-them
     --brand-accent-3: 69, 70, 125;
   }
 
-  html[data-color-scheme="light"][data-contrast="high"] :is(.cibrius, [data-ds-theme="cibrius"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.cibrius, [data-ds-theme="cibrius"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.cibrius, [data-ds-theme="cibrius"]) body {
+  html[data-color-scheme="light"][data-contrast="high"] :is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2170, [data-ds-theme="custom2170"]) body {
     --primary-1: 73, 94, 36;
     --primary-2: 66, 85, 32;
     --primary-3: 58, 75, 29;
@@ -1742,9 +1692,9 @@ html[data-color-scheme="light"][data-contrast="high"]:is(.cibrius, [data-ds-them
     --brand-accent-3: 74, 127, 131;
   }
 
-  html[data-color-scheme="light"][data-contrast="high"] :is(.serpros, [data-ds-theme="serpros"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.serpros, [data-ds-theme="serpros"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.serpros, [data-ds-theme="serpros"]) body {
+  html[data-color-scheme="light"][data-contrast="high"] :is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2162, [data-ds-theme="custom2162"]) body {
     --primary-1: 0, 93, 121;
     --primary-2: 0, 84, 109;
     --primary-3: 0, 74, 97;
@@ -1771,9 +1721,9 @@ html[data-color-scheme="light"][data-contrast="high"]:is(.serpros, [data-ds-them
     --brand-accent-3: 155, 98, 32;
   }
 
-  html[data-color-scheme="light"][data-contrast="high"] :is(.einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.einvest, [data-ds-theme="einvest"]) body {
+  html[data-color-scheme="light"][data-contrast="high"] :is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2157, [data-ds-theme="custom2157"]) body {
     --primary-1: 6, 103, 52;
     --primary-2: 5, 93, 47;
     --primary-3: 5, 82, 42;
@@ -1800,9 +1750,9 @@ html[data-color-scheme="light"][data-contrast="high"]:is(.einvest, [data-ds-them
     --brand-accent-3: 23, 35, 79;
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]) body {
     --white: 255,255,255;
     --secondary-1: 0,103,122;
     --secondary-2: 0,83,102;
@@ -2015,9 +1965,9 @@ html[data-color-scheme="dark"][data-contrast="high"]:is(.basf, [data-ds-theme="b
     --focus-indicator-color: rgb(var(--focus-ring));
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.basf, [data-ds-theme="basf"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"]) body {
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"]) body {
     --primary-1: 255, 164, 81;
     --primary-2: 255, 175, 102;
     --primary-3: 204, 131, 65;
@@ -2044,9 +1994,9 @@ html[data-color-scheme="dark"][data-contrast="high"]:is(.basf, [data-ds-theme="b
     --brand-accent-3: 248, 206, 101;
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.funssest, [data-ds-theme="funssest"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.funssest, [data-ds-theme="funssest"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.funssest, [data-ds-theme="funssest"]) body {
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2156, [data-ds-theme="custom2156"]) body {
     --primary-1: 255, 148, 92;
     --primary-2: 255, 161, 112;
     --primary-3: 204, 118, 74;
@@ -2073,9 +2023,9 @@ html[data-color-scheme="dark"][data-contrast="high"]:is(.funssest, [data-ds-them
     --brand-accent-3: 244, 189, 145;
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.maisprevidencia, [data-ds-theme="maisprevidencia"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.maisprevidencia, [data-ds-theme="maisprevidencia"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.maisprevidencia, [data-ds-theme="maisprevidencia"]) body {
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2140, [data-ds-theme="custom2140"]) body {
     --primary-1: 255, 172, 106;
     --primary-2: 255, 182, 124;
     --primary-3: 204, 138, 85;
@@ -2102,9 +2052,9 @@ html[data-color-scheme="dark"][data-contrast="high"]:is(.maisprevidencia, [data-
     --brand-accent-3: 81, 136, 138;
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.aceprev, [data-ds-theme="aceprev"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.aceprev, [data-ds-theme="aceprev"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.aceprev, [data-ds-theme="aceprev"]) body {
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2133, [data-ds-theme="custom2133"]) body {
     --primary-1: 239, 139, 132;
     --primary-2: 241, 153, 147;
     --primary-3: 191, 111, 106;
@@ -2131,9 +2081,9 @@ html[data-color-scheme="dark"][data-contrast="high"]:is(.aceprev, [data-ds-theme
     --brand-accent-3: 123, 123, 162;
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.cibrius, [data-ds-theme="cibrius"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.cibrius, [data-ds-theme="cibrius"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.cibrius, [data-ds-theme="cibrius"]) body {
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2170, [data-ds-theme="custom2170"]) body {
     --primary-1: 171, 201, 104;
     --primary-2: 181, 207, 122;
     --primary-3: 137, 161, 83;
@@ -2160,9 +2110,9 @@ html[data-color-scheme="dark"][data-contrast="high"]:is(.cibrius, [data-ds-theme
     --brand-accent-3: 125, 184, 188;
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.serpros, [data-ds-theme="serpros"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.serpros, [data-ds-theme="serpros"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.serpros, [data-ds-theme="serpros"]) body {
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2162, [data-ds-theme="custom2162"]) body {
     --primary-1: 87, 206, 240;
     --primary-2: 107, 212, 242;
     --primary-3: 70, 165, 192;
@@ -2189,9 +2139,9 @@ html[data-color-scheme="dark"][data-contrast="high"]:is(.serpros, [data-ds-theme
     --brand-accent-3: 245, 172, 87;
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.einvest, [data-ds-theme="einvest"]) body {
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2157, [data-ds-theme="custom2157"]) body {
     --primary-1: 85, 217, 156;
     --primary-2: 105, 222, 168;
     --primary-3: 68, 174, 125;
@@ -2218,9 +2168,9 @@ html[data-color-scheme="dark"][data-contrast="high"]:is(.einvest, [data-ds-theme
     --brand-accent-3: 111, 120, 154;
   }
 
-  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"]) body {
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"]) body {
     --feedback-danger-strong: 128, 0, 24;
     --feedback-danger-soft: 255, 240, 243;
     --feedback-danger-border: 128, 0, 24;
@@ -2251,9 +2201,9 @@ html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-d
     --status-primary-soft-background: 235,240,255;
   }
 
-  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]) body {
     --switch-knob-theme-on: 255, 255, 255;
     --switch-track-off: 141, 144, 148;
     --switch-knob-icon-on: 0, 107, 53;
@@ -2280,9 +2230,9 @@ html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-d
     --action-warning-content: 255,255,255;
   }
 
-  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]) body {
     --switch-track-theme-off: 139, 142, 150;
   }
 
@@ -2328,9 +2278,9 @@ html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja1, [data-
     --status-primary-soft-foreground: 171, 82, 0;
   }
 
-  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.laranja1, [data-ds-theme="laranja1"], .basf, [data-ds-theme="basf"], .maisprevidencia, [data-ds-theme="maisprevidencia"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja1, [data-ds-theme="laranja1"], .basf, [data-ds-theme="basf"], .maisprevidencia, [data-ds-theme="maisprevidencia"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja1, [data-ds-theme="laranja1"], .basf, [data-ds-theme="basf"], .maisprevidencia, [data-ds-theme="maisprevidencia"]) body {
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.laranja1, [data-ds-theme="laranja1"], .custom2178, [data-ds-theme="custom2178"], .custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja1, [data-ds-theme="laranja1"], .custom2178, [data-ds-theme="custom2178"], .custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja1, [data-ds-theme="laranja1"], .custom2178, [data-ds-theme="custom2178"], .custom2140, [data-ds-theme="custom2140"]) body {
     --status-primary-soft-background: 255, 235, 215;
     --switch-track-theme-off: 153, 141, 129;
   }
@@ -2345,9 +2295,9 @@ html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja2, [data-
     --status-primary-soft-foreground: 182, 70, 25;
   }
 
-  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.laranja2, [data-ds-theme="laranja2"], .funssest, [data-ds-theme="funssest"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja2, [data-ds-theme="laranja2"], .funssest, [data-ds-theme="funssest"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja2, [data-ds-theme="laranja2"], .funssest, [data-ds-theme="funssest"]) body {
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.laranja2, [data-ds-theme="laranja2"], .custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja2, [data-ds-theme="laranja2"], .custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja2, [data-ds-theme="laranja2"], .custom2156, [data-ds-theme="custom2156"]) body {
     --status-primary-soft-background: 255, 229, 219;
     --switch-track-theme-off: 156, 140, 134;
   }
@@ -2413,25 +2363,25 @@ html[data-color-scheme="light"]:not([data-contrast="high"]):is(.rosa1, [data-ds-
     --switch-track-theme-off: 150, 141, 139;
   }
 
-  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.basf, [data-ds-theme="basf"], .maisprevidencia, [data-ds-theme="maisprevidencia"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"], .maisprevidencia, [data-ds-theme="maisprevidencia"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"], .maisprevidencia, [data-ds-theme="maisprevidencia"]) body {
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2178, [data-ds-theme="custom2178"], .custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2178, [data-ds-theme="custom2178"], .custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2178, [data-ds-theme="custom2178"], .custom2140, [data-ds-theme="custom2140"]) body {
     --status-primary-outline-foreground: 146, 68, 0;
     --status-primary-outline-border: 146, 68, 0;
     --status-primary-soft-foreground: 146, 68, 0;
   }
 
-  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.funssest, [data-ds-theme="funssest"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.funssest, [data-ds-theme="funssest"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.funssest, [data-ds-theme="funssest"]) body {
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2156, [data-ds-theme="custom2156"]) body {
     --status-primary-outline-foreground: 181, 68, 22;
     --status-primary-outline-border: 181, 68, 22;
     --status-primary-soft-foreground: 181, 68, 22;
   }
 
-  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.aceprev, [data-ds-theme="aceprev"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.aceprev, [data-ds-theme="aceprev"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.aceprev, [data-ds-theme="aceprev"]) body {
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2133, [data-ds-theme="custom2133"]) body {
     --content-link: 155, 90, 86;
     --status-primary-outline-foreground: 155, 90, 86;
     --status-primary-outline-border: 155, 90, 86;
@@ -2444,22 +2394,22 @@ html[data-color-scheme="light"]:not([data-contrast="high"]):is(.aceprev, [data-d
     --switch-track-tertiary-on: 206, 120, 114;
   }
 
-  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"]) body {
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"]) body {
     --action-primary-content-hover: 20, 25, 31;
     --action-primary-content-active: 20, 25, 31;
   }
 
-  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]) body {
     --content-brand-secondary: 41, 51, 62;
   }
 
-  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.cibrius, [data-ds-theme="cibrius"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.cibrius, [data-ds-theme="cibrius"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.cibrius, [data-ds-theme="cibrius"]) body {
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2170, [data-ds-theme="custom2170"]) body {
     --content-link: 92, 117, 45;
     --status-primary-outline-foreground: 92, 117, 45;
     --status-primary-outline-border: 92, 117, 45;
@@ -2467,9 +2417,9 @@ html[data-color-scheme="light"]:not([data-contrast="high"]):is(.cibrius, [data-d
     --status-primary-soft-background: 242, 245, 235;
   }
 
-  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.serpros, [data-ds-theme="serpros"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.serpros, [data-ds-theme="serpros"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.serpros, [data-ds-theme="serpros"]) body {
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2162, [data-ds-theme="custom2162"]) body {
     --content-link: 0, 118, 154;
     --status-primary-outline-foreground: 0, 118, 154;
     --status-primary-outline-border: 0, 118, 154;
@@ -2482,9 +2432,9 @@ html[data-color-scheme="light"]:not([data-contrast="high"]):is(.serpros, [data-d
     --switch-track-tertiary-on: 0, 154, 202;
   }
 
-  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="light"]:not([data-contrast="high"]):is(.einvest, [data-ds-theme="einvest"]) body {
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2157, [data-ds-theme="custom2157"]) body {
     --content-link: 7, 125, 62;
     --status-primary-outline-foreground: 7, 125, 62;
     --status-primary-outline-border: 7, 125, 62;
@@ -2547,9 +2497,9 @@ html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds
     --primary-1: 15,98,193;
   }
 
-  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]) body {
     --status-blue-outline-foreground: 147, 197, 253;
     --status-blue-outline-border: 147, 197, 253;
     --status-blue-soft-foreground: 147, 197, 253;
@@ -2596,9 +2546,9 @@ html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds
     --action-warning-content: 255,255,255;
   }
 
-  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]) body {
     --switch-knob-theme-on: 255, 255, 255;
     --switch-track-contract-off: 187, 76, 64;
     --switch-track-theme-on: 110, 112, 114;
@@ -2652,26 +2602,26 @@ html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.rosa1, [data-ds-t
     --action-tertiary-content-active: 24, 22, 28;
   }
 
-  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.rosa1, [data-ds-theme="rosa1"], .aceprev, [data-ds-theme="aceprev"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"], .aceprev, [data-ds-theme="aceprev"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"], .aceprev, [data-ds-theme="aceprev"]) body {
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.rosa1, [data-ds-theme="rosa1"], .custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"], .custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"], .custom2133, [data-ds-theme="custom2133"]) body {
     --status-primary-outline-foreground: 239, 139, 132;
     --status-primary-outline-border: 239, 139, 132;
     --status-primary-soft-foreground: 239, 139, 132;
   }
 
-  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.basf, [data-ds-theme="basf"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"]) body {
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2178, [data-ds-theme="custom2178"]) body {
     --status-primary-outline-foreground: 255, 164, 81;
     --status-primary-outline-border: 255, 164, 81;
     --status-primary-soft-foreground: 255, 164, 81;
     --status-primary-soft-background: 60, 49, 40;
   }
 
-  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]) body {
     --action-primary-content-hover: 20, 25, 31;
     --action-primary-content-active: 20, 25, 31;
     --action-secondary-content-hover: 20, 25, 31;
@@ -2681,51 +2631,51 @@ html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.basf, [data-ds-th
     --content-brand-secondary: 212, 219, 226;
   }
 
-  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.funssest, [data-ds-theme="funssest"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.funssest, [data-ds-theme="funssest"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.funssest, [data-ds-theme="funssest"]) body {
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2156, [data-ds-theme="custom2156"]) body {
     --status-primary-outline-foreground: 255, 148, 92;
     --status-primary-outline-border: 255, 148, 92;
     --status-primary-soft-foreground: 255, 148, 92;
     --status-primary-soft-background: 60, 46, 41;
   }
 
-  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.maisprevidencia, [data-ds-theme="maisprevidencia"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.maisprevidencia, [data-ds-theme="maisprevidencia"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.maisprevidencia, [data-ds-theme="maisprevidencia"]) body {
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2140, [data-ds-theme="custom2140"]) body {
     --status-primary-outline-foreground: 255, 172, 106;
     --status-primary-outline-border: 255, 172, 106;
     --status-primary-soft-foreground: 255, 172, 106;
     --status-primary-soft-background: 60, 50, 44;
   }
 
-  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.aceprev, [data-ds-theme="aceprev"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.aceprev, [data-ds-theme="aceprev"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.aceprev, [data-ds-theme="aceprev"]) body {
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2133, [data-ds-theme="custom2133"]) body {
     --status-primary-soft-background: 57, 44, 48;
   }
 
-  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.cibrius, [data-ds-theme="cibrius"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.cibrius, [data-ds-theme="cibrius"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.cibrius, [data-ds-theme="cibrius"]) body {
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2170, [data-ds-theme="custom2170"]) body {
     --status-primary-outline-foreground: 171, 201, 104;
     --status-primary-outline-border: 171, 201, 104;
     --status-primary-soft-foreground: 171, 201, 104;
     --status-primary-soft-background: 46, 55, 43;
   }
 
-  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.serpros, [data-ds-theme="serpros"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.serpros, [data-ds-theme="serpros"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.serpros, [data-ds-theme="serpros"]) body {
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2162, [data-ds-theme="custom2162"]) body {
     --status-primary-outline-foreground: 87, 206, 240;
     --status-primary-outline-border: 87, 206, 240;
     --status-primary-soft-foreground: 87, 206, 240;
     --status-primary-soft-background: 31, 56, 67;
   }
 
-  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.einvest, [data-ds-theme="einvest"]) body {
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2157, [data-ds-theme="custom2157"]) body {
     --status-primary-outline-foreground: 85, 217, 156;
     --status-primary-outline-border: 85, 217, 156;
     --status-primary-soft-foreground: 85, 217, 156;
@@ -2794,9 +2744,9 @@ html[data-color-scheme="light"][data-contrast="high"]:is(.default, [data-ds-them
     --content-brand-secondary: 0,110,47;
   }
 
-  html[data-color-scheme="light"][data-contrast="high"] :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+  html[data-color-scheme="light"][data-contrast="high"] :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]) body {
     --status-blue-outline-foreground: 0, 99, 208;
     --status-blue-soft-background: 255, 255, 255;
     --status-blue-soft-foreground: 0, 108, 226;
@@ -2863,61 +2813,61 @@ html[data-color-scheme="light"][data-contrast="high"]:is(.default, [data-ds-them
     --status-black-soft-foreground: 0, 0, 0;
   }
 
-  html[data-color-scheme="light"][data-contrast="high"] :is(.basf, [data-ds-theme="basf"], .maisprevidencia, [data-ds-theme="maisprevidencia"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"], .maisprevidencia, [data-ds-theme="maisprevidencia"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"], .maisprevidencia, [data-ds-theme="maisprevidencia"]) body {
+  html[data-color-scheme="light"][data-contrast="high"] :is(.custom2178, [data-ds-theme="custom2178"], .custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"], .custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"], .custom2140, [data-ds-theme="custom2140"]) body {
     --status-primary-outline-foreground: 131, 63, 0;
     --status-primary-outline-border: 131, 63, 0;
     --status-primary-soft-foreground: 131, 63, 0;
     --status-primary-soft-background: 243, 236, 230;
   }
 
-  html[data-color-scheme="light"][data-contrast="high"] :is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+  html[data-color-scheme="light"][data-contrast="high"] :is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]) body {
     --action-tertiary-content-active: 255, 255, 255;
     --content-brand-secondary: 41, 51, 62;
   }
 
-  html[data-color-scheme="light"][data-contrast="high"] :is(.funssest, [data-ds-theme="funssest"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.funssest, [data-ds-theme="funssest"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.funssest, [data-ds-theme="funssest"]) body {
+  html[data-color-scheme="light"][data-contrast="high"] :is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2156, [data-ds-theme="custom2156"]) body {
     --status-primary-outline-foreground: 147, 57, 20;
     --status-primary-outline-border: 147, 57, 20;
     --status-primary-soft-foreground: 147, 57, 20;
     --status-primary-soft-background: 244, 235, 232;
   }
 
-  html[data-color-scheme="light"][data-contrast="high"] :is(.aceprev, [data-ds-theme="aceprev"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.aceprev, [data-ds-theme="aceprev"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.aceprev, [data-ds-theme="aceprev"]) body {
+  html[data-color-scheme="light"][data-contrast="high"] :is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2133, [data-ds-theme="custom2133"]) body {
     --status-primary-outline-foreground: 121, 72, 67;
     --status-primary-outline-border: 121, 72, 67;
     --status-primary-soft-foreground: 121, 72, 67;
     --status-primary-soft-background: 242, 237, 236;
   }
 
-  html[data-color-scheme="light"][data-contrast="high"] :is(.cibrius, [data-ds-theme="cibrius"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.cibrius, [data-ds-theme="cibrius"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.cibrius, [data-ds-theme="cibrius"]) body {
+  html[data-color-scheme="light"][data-contrast="high"] :is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2170, [data-ds-theme="custom2170"]) body {
     --status-primary-outline-foreground: 73, 94, 36;
     --status-primary-outline-border: 73, 94, 36;
     --status-primary-soft-foreground: 73, 94, 36;
     --status-primary-soft-background: 237, 239, 233;
   }
 
-  html[data-color-scheme="light"][data-contrast="high"] :is(.serpros, [data-ds-theme="serpros"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.serpros, [data-ds-theme="serpros"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.serpros, [data-ds-theme="serpros"]) body {
+  html[data-color-scheme="light"][data-contrast="high"] :is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2162, [data-ds-theme="custom2162"]) body {
     --status-primary-outline-foreground: 0, 93, 121;
     --status-primary-outline-border: 0, 93, 121;
     --status-primary-soft-foreground: 0, 93, 121;
     --status-primary-soft-background: 230, 239, 242;
   }
 
-  html[data-color-scheme="light"][data-contrast="high"] :is(.einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="light"][data-contrast="high"]:is(.einvest, [data-ds-theme="einvest"]) body {
+  html[data-color-scheme="light"][data-contrast="high"] :is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2157, [data-ds-theme="custom2157"]) body {
     --status-primary-outline-foreground: 6, 103, 52;
     --status-primary-outline-border: 6, 103, 52;
     --status-primary-soft-foreground: 6, 103, 52;
@@ -2950,9 +2900,9 @@ html[data-color-scheme="dark"][data-contrast="high"]:is(.default, [data-ds-theme
     --content-brand-secondary: 74, 152, 107;
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]) body {
     --status-blue-solid-background: 20, 120, 228;
     --status-blue-solid-foreground: 0, 0, 0;
     --status-blue-outline-border: 20, 120, 228;
@@ -3045,18 +2995,18 @@ html[data-color-scheme="dark"][data-contrast="high"]:is(.azul1, [data-ds-theme="
     --primary-1: 255,223,0;
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.basf, [data-ds-theme="basf"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"]) body {
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"]) body {
     --status-primary-outline-foreground: 255, 164, 81;
     --status-primary-outline-border: 255, 164, 81;
     --status-primary-soft-foreground: 255, 164, 81;
     --status-primary-soft-background: 60, 49, 40;
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.basf, [data-ds-theme="basf"], .funssest, [data-ds-theme="funssest"], .maisprevidencia, [data-ds-theme="maisprevidencia"], .aceprev, [data-ds-theme="aceprev"], .cibrius, [data-ds-theme="cibrius"], .serpros, [data-ds-theme="serpros"], .einvest, [data-ds-theme="einvest"]) body {
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]) body {
     --action-secondary-content: 0, 0, 0;
     --action-secondary-content-hover: 0, 0, 0;
     --action-secondary-content-active: 0, 0, 0;
@@ -3071,61 +3021,61 @@ html[data-color-scheme="dark"][data-contrast="high"]:is(.basf, [data-ds-theme="b
     --content-brand-secondary: 212, 219, 226;
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.funssest, [data-ds-theme="funssest"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.funssest, [data-ds-theme="funssest"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.funssest, [data-ds-theme="funssest"]) body {
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2156, [data-ds-theme="custom2156"]) body {
     --status-primary-outline-foreground: 255, 148, 92;
     --status-primary-outline-border: 255, 148, 92;
     --status-primary-soft-foreground: 255, 148, 92;
     --status-primary-soft-background: 60, 46, 41;
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.maisprevidencia, [data-ds-theme="maisprevidencia"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.maisprevidencia, [data-ds-theme="maisprevidencia"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.maisprevidencia, [data-ds-theme="maisprevidencia"]) body {
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2140, [data-ds-theme="custom2140"]) body {
     --status-primary-outline-foreground: 255, 172, 106;
     --status-primary-outline-border: 255, 172, 106;
     --status-primary-soft-foreground: 255, 172, 106;
     --status-primary-soft-background: 60, 50, 44;
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.aceprev, [data-ds-theme="aceprev"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.aceprev, [data-ds-theme="aceprev"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.aceprev, [data-ds-theme="aceprev"]) body {
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2133, [data-ds-theme="custom2133"]) body {
     --status-primary-outline-foreground: 239, 139, 132;
     --status-primary-outline-border: 239, 139, 132;
     --status-primary-soft-foreground: 239, 139, 132;
     --status-primary-soft-background: 57, 44, 48;
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.cibrius, [data-ds-theme="cibrius"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.cibrius, [data-ds-theme="cibrius"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.cibrius, [data-ds-theme="cibrius"]) body {
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2170, [data-ds-theme="custom2170"]) body {
     --status-primary-outline-foreground: 171, 201, 104;
     --status-primary-outline-border: 171, 201, 104;
     --status-primary-soft-foreground: 171, 201, 104;
     --status-primary-soft-background: 46, 55, 43;
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.serpros, [data-ds-theme="serpros"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.serpros, [data-ds-theme="serpros"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.serpros, [data-ds-theme="serpros"]) body {
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2162, [data-ds-theme="custom2162"]) body {
     --status-primary-outline-foreground: 87, 206, 240;
     --status-primary-outline-border: 87, 206, 240;
     --status-primary-soft-foreground: 87, 206, 240;
     --status-primary-soft-background: 31, 56, 67;
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.einvest, [data-ds-theme="einvest"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.einvest, [data-ds-theme="einvest"]) body {
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2157, [data-ds-theme="custom2157"]) body {
     --status-primary-outline-foreground: 85, 217, 156;
     --status-primary-outline-border: 85, 217, 156;
     --status-primary-soft-foreground: 85, 217, 156;
     --status-primary-soft-background: 31, 58, 52;
   }
 
-  html[data-color-scheme="light"]:not([data-contrast="high"]):where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .basf, .funssest, .maisprevidencia, .aceprev, .cibrius, .serpros, .einvest)) body:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .basf, .funssest, .maisprevidencia, .aceprev, .cibrius, .serpros, .einvest)) {
+  html[data-color-scheme="light"]:not([data-contrast="high"]):where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157)) body:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157)) {
     --feedback-danger-strong: 128, 0, 24;
     --feedback-danger-soft: 255, 240, 243;
     --feedback-danger-border: 128, 0, 24;
@@ -3176,7 +3126,7 @@ html[data-color-scheme="dark"][data-contrast="high"]:is(.einvest, [data-ds-theme
     --content-brand-secondary: 0,110,47;
   }
 
-  html[data-color-scheme="dark"]:not([data-contrast="high"]):where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .basf, .funssest, .maisprevidencia, .aceprev, .cibrius, .serpros, .einvest)) body:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .basf, .funssest, .maisprevidencia, .aceprev, .cibrius, .serpros, .einvest)) {
+  html[data-color-scheme="dark"]:not([data-contrast="high"]):where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157)) body:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157)) {
     --feedback-info-strong: 147, 197, 253;
     --checkbox-selected: 105, 147, 186;
     --selection-content: 144,202,255;
@@ -3266,7 +3216,7 @@ html[data-color-scheme="dark"][data-contrast="high"]:is(.einvest, [data-ds-theme
     --content-brand-secondary: 92, 162, 122;
   }
 
-  html[data-color-scheme="light"][data-contrast="high"]:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .basf, .funssest, .maisprevidencia, .aceprev, .cibrius, .serpros, .einvest)) body:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .basf, .funssest, .maisprevidencia, .aceprev, .cibrius, .serpros, .einvest)) {
+  html[data-color-scheme="light"][data-contrast="high"]:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157)) body:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157)) {
     --action-primary-background-hover: 0,0,0;
     --feedback-info-strong: 22, 79, 133;
     --chart-donut-12: 93,59,47;
@@ -3390,7 +3340,7 @@ html[data-color-scheme="dark"][data-contrast="high"]:is(.einvest, [data-ds-theme
     --status-black-soft-foreground: 0, 0, 0;
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"]:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .basf, .funssest, .maisprevidencia, .aceprev, .cibrius, .serpros, .einvest)) body:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .basf, .funssest, .maisprevidencia, .aceprev, .cibrius, .serpros, .einvest)) {
+  html[data-color-scheme="dark"][data-contrast="high"]:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157)) body:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157)) {
     --feedback-danger-strong: 255, 204, 204;
     --feedback-danger-border: 255, 204, 204;
     --feedback-warning-strong: 255, 235, 102;
@@ -3472,4 +3422,1316 @@ html[data-color-scheme="dark"][data-contrast="high"]:is(.einvest, [data-ds-theme
     --status-yellow-solid-background: 234, 179, 8;
     --status-yellow-outline-border: 234, 179, 8;
     --field-assistive-error: 255, 204, 204;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.rosa1, [data-ds-theme="rosa1"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"]) body {
+    --primary-1: 217, 118, 103;
+    --primary-2: 178, 85, 71;
+    --primary-3: 114, 49, 39;
+    --primary-4: 245, 203, 197;
+    --primary-5: 255, 239, 236;
+    --secondary-1: 111, 218, 145;
+    --secondary-2: 155, 233, 179;
+    --secondary-3: 202, 246, 216;
+    --secondary-4: 198, 238, 215;
+    --secondary-5: 237, 255, 245;
+    --tertiary-1: 25, 28, 31;
+    --tertiary-2: 69, 90, 100;
+    --tertiary-3: 112, 119, 128;
+    --tertiary-4: 201, 206, 212;
+    --tertiary-5: 235, 235, 235;
+    --bg-light: 20, 25, 31;
+    --bg-lighter: 27, 33, 40;
+    --bg-dark: 38, 46, 55;
+    --bg-disabled: 48, 57, 67;
+    --surface-card: 27, 33, 40;
+    --content-link: 217, 118, 103;
+    --focus-ring: 144, 202, 255;
+    --action-primary-background: 166, 61, 87;
+    --action-primary-background-hover: 190, 72, 104;
+    --action-primary-background-active: 125, 41, 72;
+    --action-primary-content: 255, 255, 255;
+    --action-primary-ghost-background: 38, 46, 55;
+    --action-secondary-background: 0, 110, 47;
+    --action-secondary-background-hover: 0, 81, 34;
+    --action-secondary-background-active: 0, 52, 22;
+    --action-secondary-content: 255, 255, 255;
+    --action-tertiary-background: 25, 28, 31;
+    --action-tertiary-background-hover: 69, 90, 100;
+    --action-tertiary-background-active: 112, 119, 128;
+    --action-tertiary-content: 255, 255, 255;
+    --notice-secondary-content: 0, 0, 0;
+    --selection-content: 217, 118, 103;
+    --content-on-brand: 255, 255, 255;
+    --switch-track-primary-on: 190, 72, 104;
+    --selection-background: 38, 46, 55;
+    --selection-background-hover: 27, 33, 40;
+    --checkbox-selected: 217, 118, 103;
+    --chart-1: 217, 118, 103;
+    --chart-2: 22, 211, 154;
+    --chart-3: 254, 176, 25;
+    --switch-knob-disabled: 244, 247, 248;
+    --switch-track-theme-on: 25, 28, 31;
+    --checkbox-disabled-surface: 244, 247, 248;
+    --surface-card-semantic: 27, 33, 40;
+    --surface-page: 20, 25, 31;
+    --surface-subtle: 27, 33, 40;
+    --surface-disabled: 48, 57, 67;
+    --switch-track-tertiary-on: 25, 28, 31;
+    --radio-disabled-surface: 244, 247, 248;
+    --surface-muted: 38, 46, 55;
+    --surface-tooltip: 9, 12, 16;
+    --switch-track-secondary-on: 0, 110, 47;
+    --selection-border: 217, 118, 103;
+    --surface-action-neutral: 9, 12, 16;
+    --field-surface: 27, 33, 40;
+    --field-surface-disabled: 48, 57, 67;
+    --loading-circular-indicator: 217, 118, 103;
+    --action-primary-content-hover: 255, 255, 255;
+    --action-primary-content-active: 255, 255, 255;
+    --action-secondary-content-hover: 255, 255, 255;
+    --action-secondary-content-active: 255, 255, 255;
+    --action-tertiary-content-hover: 255, 255, 255;
+    --action-tertiary-content-active: 255, 255, 255;
+    --status-primary-outline-foreground: 217, 118, 103;
+    --status-primary-outline-border: 217, 118, 103;
+    --status-primary-soft-foreground: 217, 118, 103;
+    --status-primary-soft-background: 38, 46, 55;
+    --content-brand-secondary: 111, 218, 145;
+    --radio-selected: 217, 118, 103;
+    --checkbox-surface: 27, 33, 40;
+    --radio-surface: 27, 33, 40;
+    --action-secondary-ghost-background: 38, 46, 55;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2178, [data-ds-theme="custom2178"]) body {
+    --brand-accent-1-soft: 248, 219, 226;
+    --brand-accent-1-content: 24,24,24;
+    --brand-accent-1-border: 224, 102, 133;
+    --chart-brand-accent-1: 204, 0, 51;
+    --brand-accent-2-soft: 254, 247, 229;
+    --brand-accent-2-content: 24,24,24;
+    --brand-accent-2-border: 250, 219, 142;
+    --chart-brand-accent-2: 168, 135, 52;
+    --brand-accent-3-soft: 248, 242, 227;
+    --brand-accent-3-content: 24,24,24;
+    --brand-accent-3-border: 223, 198, 135;
+    --chart-brand-accent-3: 175, 140, 50;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2178, [data-ds-theme="custom2178"]) body {
+    --brand-accent-1-soft: 53, 35, 47;
+    --brand-accent-1-content: 245,247,250;
+    --brand-accent-1-border: 139, 41, 69;
+    --chart-brand-accent-1: 213, 46, 88;
+    --brand-accent-2-soft: 58, 57, 49;
+    --brand-accent-2-content: 245,247,250;
+    --brand-accent-2-border: 160, 137, 77;
+    --chart-brand-accent-2: 248, 206, 101;
+    --brand-accent-3-soft: 58, 57, 49;
+    --brand-accent-3-content: 245,247,250;
+    --brand-accent-3-border: 160, 137, 77;
+    --chart-brand-accent-3: 248, 206, 101;
+  }
+
+  html[data-color-scheme="light"][data-contrast="high"] :is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"]) body {
+    --brand-accent-1-soft: 255,255,255;
+    --brand-accent-1-content: 0,0,0;
+    --brand-accent-1-border: 0,0,0;
+    --chart-brand-accent-1: 204, 0, 51;
+    --brand-accent-2-soft: 255,255,255;
+    --brand-accent-2-content: 0,0,0;
+    --brand-accent-2-border: 0,0,0;
+    --chart-brand-accent-2: 137, 109, 37;
+    --brand-accent-3-soft: 255,255,255;
+    --brand-accent-3-content: 0,0,0;
+    --brand-accent-3-border: 0,0,0;
+    --chart-brand-accent-3: 134, 100, 176;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"]) body {
+    --brand-accent-1-soft: 11,11,11;
+    --brand-accent-1-content: 255,255,255;
+    --brand-accent-1-border: 255,255,255;
+    --chart-brand-accent-1: 218, 72, 109;
+    --brand-accent-2-soft: 11,11,11;
+    --brand-accent-2-content: 255,255,255;
+    --brand-accent-2-border: 255,255,255;
+    --chart-brand-accent-2: 246, 195, 67;
+    --brand-accent-3-soft: 11,11,11;
+    --brand-accent-3-content: 255,255,255;
+    --brand-accent-3-border: 255,255,255;
+    --chart-brand-accent-3: 134, 100, 176;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2156, [data-ds-theme="custom2156"]) body {
+    --brand-accent-1-soft: 234, 234, 234;
+    --brand-accent-1-content: 24,24,24;
+    --brand-accent-1-border: 166, 166, 166;
+    --chart-brand-accent-1: 107, 107, 107;
+    --brand-accent-2-soft: 253, 244, 236;
+    --brand-accent-2-content: 24,24,24;
+    --brand-accent-2-border: 247, 206, 175;
+    --chart-brand-accent-2: 177, 129, 92;
+    --brand-accent-3-soft: 247, 239, 233;
+    --brand-accent-3-content: 24,24,24;
+    --brand-accent-3-border: 221, 188, 161;
+    --chart-brand-accent-3: 181, 131, 92;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2156, [data-ds-theme="custom2156"]) body {
+    --brand-accent-1-soft: 42, 47, 53;
+    --brand-accent-1-content: 245,247,250;
+    --brand-accent-1-border: 91, 94, 96;
+    --chart-brand-accent-1: 134, 134, 134;
+    --brand-accent-2-soft: 57, 55, 55;
+    --brand-accent-2-content: 245,247,250;
+    --brand-accent-2-border: 157, 127, 103;
+    --chart-brand-accent-2: 244, 189, 145;
+    --brand-accent-3-soft: 57, 55, 55;
+    --brand-accent-3-content: 245,247,250;
+    --brand-accent-3-border: 157, 127, 103;
+    --chart-brand-accent-3: 244, 189, 145;
+  }
+
+  html[data-color-scheme="light"][data-contrast="high"] :is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2156, [data-ds-theme="custom2156"]) body {
+    --brand-accent-1-soft: 255,255,255;
+    --brand-accent-1-content: 0,0,0;
+    --brand-accent-1-border: 0,0,0;
+    --chart-brand-accent-1: 107, 107, 107;
+    --brand-accent-2-soft: 255,255,255;
+    --brand-accent-2-content: 0,0,0;
+    --brand-accent-2-border: 0,0,0;
+    --chart-brand-accent-2: 147, 105, 73;
+    --brand-accent-3-soft: 255,255,255;
+    --brand-accent-3-content: 0,0,0;
+    --brand-accent-3-border: 0,0,0;
+    --chart-brand-accent-3: 134, 100, 176;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2156, [data-ds-theme="custom2156"]) body {
+    --brand-accent-1-soft: 11,11,11;
+    --brand-accent-1-content: 255,255,255;
+    --brand-accent-1-border: 255,255,255;
+    --chart-brand-accent-1: 130, 130, 130;
+    --brand-accent-2-soft: 11,11,11;
+    --brand-accent-2-content: 255,255,255;
+    --brand-accent-2-border: 255,255,255;
+    --chart-brand-accent-2: 242, 174, 121;
+    --brand-accent-3-soft: 11,11,11;
+    --brand-accent-3-content: 255,255,255;
+    --brand-accent-3-border: 255,255,255;
+    --chart-brand-accent-3: 134, 100, 176;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2140, [data-ds-theme="custom2140"]) body {
+    --brand-accent-1-soft: 232, 244, 248;
+    --brand-accent-1-content: 24,24,24;
+    --brand-accent-1-border: 155, 208, 223;
+    --chart-brand-accent-1: 79, 153, 175;
+    --brand-accent-2-soft: 239, 241, 224;
+    --brand-accent-2-content: 24,24,24;
+    --brand-accent-2-border: 187, 196, 124;
+    --chart-brand-accent-2: 135, 149, 36;
+    --brand-accent-3-soft: 229, 237, 237;
+    --brand-accent-3-content: 24,24,24;
+    --brand-accent-3-border: 142, 178, 179;
+    --chart-brand-accent-3: 66, 126, 128;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2140, [data-ds-theme="custom2140"]) body {
+    --brand-accent-1-soft: 40, 55, 64;
+    --brand-accent-1-content: 245,247,250;
+    --brand-accent-1-border: 82, 127, 143;
+    --chart-brand-accent-1: 119, 190, 212;
+    --brand-accent-2-soft: 46, 53, 45;
+    --brand-accent-2-content: 245,247,250;
+    --brand-accent-2-border: 108, 118, 62;
+    --chart-brand-accent-2: 162, 174, 76;
+    --brand-accent-3-soft: 32, 46, 52;
+    --brand-accent-3-content: 245,247,250;
+    --brand-accent-3-border: 50, 89, 93;
+    --chart-brand-accent-3: 66, 126, 128;
+  }
+
+  html[data-color-scheme="light"][data-contrast="high"] :is(.custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2140, [data-ds-theme="custom2140"]) body {
+    --brand-accent-1-soft: 255,255,255;
+    --brand-accent-1-content: 0,0,0;
+    --brand-accent-1-border: 0,0,0;
+    --chart-brand-accent-1: 63, 126, 144;
+    --brand-accent-2-soft: 255,255,255;
+    --brand-accent-2-content: 0,0,0;
+    --brand-accent-2-border: 0,0,0;
+    --chart-brand-accent-2: 110, 121, 29;
+    --brand-accent-3-soft: 255,255,255;
+    --brand-accent-3-content: 0,0,0;
+    --brand-accent-3-border: 0,0,0;
+    --chart-brand-accent-3: 134, 100, 176;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2140, [data-ds-theme="custom2140"]) body {
+    --brand-accent-1-soft: 11,11,11;
+    --brand-accent-1-content: 255,255,255;
+    --brand-accent-1-border: 255,255,255;
+    --chart-brand-accent-1: 89, 176, 202;
+    --brand-accent-2-soft: 11,11,11;
+    --brand-accent-2-content: 255,255,255;
+    --brand-accent-2-border: 255,255,255;
+    --chart-brand-accent-2: 141, 156, 37;
+    --brand-accent-3-soft: 11,11,11;
+    --brand-accent-3-content: 255,255,255;
+    --brand-accent-3-border: 255,255,255;
+    --chart-brand-accent-3: 134, 100, 176;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2133, [data-ds-theme="custom2133"]) body {
+    --brand-accent-1-soft: 254, 248, 237;
+    --brand-accent-1-content: 24,24,24;
+    --brand-accent-1-border: 251, 226, 179;
+    --chart-brand-accent-1: 158, 134, 86;
+    --brand-accent-2-soft: 244, 241, 249;
+    --brand-accent-2-content: 24,24,24;
+    --brand-accent-2-border: 206, 196, 229;
+    --chart-brand-accent-2: 151, 137, 184;
+    --brand-accent-3-soft: 229, 229, 237;
+    --brand-accent-3-content: 24,24,24;
+    --brand-accent-3-border: 143, 144, 177;
+    --chart-brand-accent-3: 69, 70, 125;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2133, [data-ds-theme="custom2133"]) body {
+    --brand-accent-1-soft: 58, 59, 56;
+    --brand-accent-1-content: 245,247,250;
+    --brand-accent-1-border: 160, 143, 107;
+    --chart-brand-accent-1: 249, 216, 151;
+    --brand-accent-2-soft: 50, 53, 65;
+    --brand-accent-2-content: 245,247,250;
+    --brand-accent-2-border: 124, 118, 148;
+    --chart-brand-accent-2: 188, 175, 220;
+    --brand-accent-3-soft: 33, 38, 52;
+    --brand-accent-3-content: 245,247,250;
+    --brand-accent-3-border: 52, 55, 91;
+    --chart-brand-accent-3: 104, 105, 150;
+  }
+
+  html[data-color-scheme="light"][data-contrast="high"] :is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2133, [data-ds-theme="custom2133"]) body {
+    --brand-accent-1-soft: 255,255,255;
+    --brand-accent-1-content: 0,0,0;
+    --brand-accent-1-border: 0,0,0;
+    --chart-brand-accent-1: 139, 115, 72;
+    --brand-accent-2-soft: 255,255,255;
+    --brand-accent-2-content: 0,0,0;
+    --brand-accent-2-border: 0,0,0;
+    --chart-brand-accent-2: 123, 111, 152;
+    --brand-accent-3-soft: 255,255,255;
+    --brand-accent-3-content: 0,0,0;
+    --brand-accent-3-border: 0,0,0;
+    --chart-brand-accent-3: 134, 100, 176;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2133, [data-ds-theme="custom2133"]) body {
+    --brand-accent-1-soft: 11,11,11;
+    --brand-accent-1-content: 255,255,255;
+    --brand-accent-1-border: 255,255,255;
+    --chart-brand-accent-1: 248, 207, 128;
+    --brand-accent-2-soft: 11,11,11;
+    --brand-accent-2-content: 255,255,255;
+    --brand-accent-2-border: 255,255,255;
+    --chart-brand-accent-2: 173, 157, 212;
+    --brand-accent-3-soft: 11,11,11;
+    --brand-accent-3-content: 255,255,255;
+    --brand-accent-3-border: 255,255,255;
+    --chart-brand-accent-3: 134, 100, 176;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2170, [data-ds-theme="custom2170"]) body {
+    --brand-accent-1-soft: 225, 227, 232;
+    --brand-accent-1-content: 24,24,24;
+    --brand-accent-1-border: 127, 136, 157;
+    --chart-brand-accent-1: 41, 56, 92;
+    --brand-accent-2-soft: 233, 243, 244;
+    --brand-accent-2-content: 24,24,24;
+    --brand-accent-2-border: 160, 203, 206;
+    --chart-brand-accent-2: 90, 154, 158;
+    --brand-accent-3-soft: 230, 239, 239;
+    --brand-accent-3-content: 24,24,24;
+    --brand-accent-3-border: 150, 185, 187;
+    --chart-brand-accent-3: 80, 138, 142;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2170, [data-ds-theme="custom2170"]) body {
+    --brand-accent-1-soft: 34, 41, 51;
+    --brand-accent-1-content: 245,247,250;
+    --brand-accent-1-border: 59, 68, 89;
+    --chart-brand-accent-1: 105, 115, 140;
+    --brand-accent-2-soft: 41, 54, 61;
+    --brand-accent-2-content: 245,247,250;
+    --brand-accent-2-border: 86, 124, 129;
+    --chart-brand-accent-2: 125, 184, 188;
+    --brand-accent-3-soft: 41, 54, 61;
+    --brand-accent-3-content: 245,247,250;
+    --brand-accent-3-border: 86, 124, 129;
+    --chart-brand-accent-3: 125, 184, 188;
+  }
+
+  html[data-color-scheme="light"][data-contrast="high"] :is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2170, [data-ds-theme="custom2170"]) body {
+    --brand-accent-1-soft: 255,255,255;
+    --brand-accent-1-content: 0,0,0;
+    --brand-accent-1-border: 0,0,0;
+    --chart-brand-accent-1: 41, 56, 92;
+    --brand-accent-2-soft: 255,255,255;
+    --brand-accent-2-content: 0,0,0;
+    --brand-accent-2-border: 0,0,0;
+    --chart-brand-accent-2: 69, 121, 123;
+    --brand-accent-3-soft: 255,255,255;
+    --brand-accent-3-content: 0,0,0;
+    --brand-accent-3-border: 0,0,0;
+    --chart-brand-accent-3: 134, 100, 176;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2170, [data-ds-theme="custom2170"]) body {
+    --brand-accent-1-soft: 11,11,11;
+    --brand-accent-1-content: 255,255,255;
+    --brand-accent-1-border: 255,255,255;
+    --chart-brand-accent-1: 113, 123, 147;
+    --brand-accent-2-soft: 11,11,11;
+    --brand-accent-2-content: 255,255,255;
+    --brand-accent-2-border: 255,255,255;
+    --chart-brand-accent-2: 97, 168, 173;
+    --brand-accent-3-soft: 11,11,11;
+    --brand-accent-3-content: 255,255,255;
+    --brand-accent-3-border: 255,255,255;
+    --chart-brand-accent-3: 134, 100, 176;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2162, [data-ds-theme="custom2162"]) body {
+    --brand-accent-1-soft: 243, 247, 222;
+    --brand-accent-1-content: 24,24,24;
+    --brand-accent-1-border: 202, 220, 115;
+    --chart-brand-accent-1: 131, 154, 23;
+    --brand-accent-2-soft: 253, 241, 226;
+    --brand-accent-2-content: 24,24,24;
+    --brand-accent-2-border: 248, 194, 132;
+    --chart-brand-accent-2: 199, 128, 45;
+    --brand-accent-3-soft: 247, 237, 225;
+    --brand-accent-3-content: 24,24,24;
+    --brand-accent-3-border: 221, 178, 127;
+    --chart-brand-accent-3: 199, 126, 41;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2162, [data-ds-theme="custom2162"]) body {
+    --brand-accent-1-soft: 49, 57, 43;
+    --brand-accent-1-content: 245,247,250;
+    --brand-accent-1-border: 121, 137, 54;
+    --chart-brand-accent-1: 183, 207, 64;
+    --brand-accent-2-soft: 58, 52, 47;
+    --brand-accent-2-content: 245,247,250;
+    --brand-accent-2-border: 158, 116, 68;
+    --chart-brand-accent-2: 245, 172, 87;
+    --brand-accent-3-soft: 58, 52, 47;
+    --brand-accent-3-content: 245,247,250;
+    --brand-accent-3-border: 158, 116, 68;
+    --chart-brand-accent-3: 245, 172, 87;
+  }
+
+  html[data-color-scheme="light"][data-contrast="high"] :is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2162, [data-ds-theme="custom2162"]) body {
+    --brand-accent-1-soft: 255,255,255;
+    --brand-accent-1-content: 0,0,0;
+    --brand-accent-1-border: 0,0,0;
+    --chart-brand-accent-1: 102, 121, 14;
+    --brand-accent-2-soft: 255,255,255;
+    --brand-accent-2-content: 0,0,0;
+    --brand-accent-2-border: 0,0,0;
+    --chart-brand-accent-2: 161, 102, 33;
+    --brand-accent-3-soft: 255,255,255;
+    --brand-accent-3-content: 0,0,0;
+    --brand-accent-3-border: 0,0,0;
+    --chart-brand-accent-3: 134, 100, 176;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2162, [data-ds-theme="custom2162"]) body {
+    --brand-accent-1-soft: 11,11,11;
+    --brand-accent-1-content: 255,255,255;
+    --brand-accent-1-border: 255,255,255;
+    --chart-brand-accent-1: 167, 197, 22;
+    --brand-accent-2-soft: 11,11,11;
+    --brand-accent-2-content: 255,255,255;
+    --brand-accent-2-border: 255,255,255;
+    --chart-brand-accent-2: 243, 154, 50;
+    --brand-accent-3-soft: 11,11,11;
+    --brand-accent-3-content: 255,255,255;
+    --brand-accent-3-border: 255,255,255;
+    --chart-brand-accent-3: 134, 100, 176;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2157, [data-ds-theme="custom2157"]) body {
+    --brand-accent-1-soft: 222, 237, 242;
+    --brand-accent-1-content: 24,24,24;
+    --brand-accent-1-border: 114, 176, 200;
+    --chart-brand-accent-1: 20, 123, 163;
+    --brand-accent-2-soft: 223, 225, 233;
+    --brand-accent-2-content: 24,24,24;
+    --brand-accent-2-border: 119, 128, 160;
+    --chart-brand-accent-2: 28, 43, 96;
+    --brand-accent-3-soft: 223, 224, 230;
+    --brand-accent-3-content: 24,24,24;
+    --brand-accent-3-border: 116, 123, 149;
+    --chart-brand-accent-3: 23, 35, 79;
+    --brand-detail-gradient: linear-gradient(110deg, rgb(var(--brand-accent-1)), rgb(var(--brand-accent-2)));
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2157, [data-ds-theme="custom2157"]) body {
+    --brand-accent-1-soft: 32, 49, 60;
+    --brand-accent-1-content: 245,247,250;
+    --brand-accent-1-border: 48, 101, 124;
+    --chart-brand-accent-1: 62, 147, 180;
+    --brand-accent-2-soft: 33, 40, 52;
+    --brand-accent-2-content: 245,247,250;
+    --brand-accent-2-border: 52, 62, 91;
+    --chart-brand-accent-2: 104, 114, 150;
+    --brand-accent-3-soft: 33, 40, 52;
+    --brand-accent-3-content: 245,247,250;
+    --brand-accent-3-border: 52, 62, 91;
+    --chart-brand-accent-3: 104, 114, 150;
+    --brand-detail-gradient: linear-gradient(110deg, rgb(var(--brand-accent-1)), rgb(var(--brand-accent-2)));
+  }
+
+  html[data-color-scheme="light"][data-contrast="high"] :is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"][data-contrast="high"]:is(.custom2157, [data-ds-theme="custom2157"]) body {
+    --brand-accent-1-soft: 255,255,255;
+    --brand-accent-1-content: 0,0,0;
+    --brand-accent-1-border: 0,0,0;
+    --chart-brand-accent-1: 20, 123, 163;
+    --brand-accent-2-soft: 255,255,255;
+    --brand-accent-2-content: 0,0,0;
+    --brand-accent-2-border: 0,0,0;
+    --chart-brand-accent-2: 28, 43, 96;
+    --brand-accent-3-soft: 255,255,255;
+    --brand-accent-3-content: 0,0,0;
+    --brand-accent-3-border: 0,0,0;
+    --chart-brand-accent-3: 134, 100, 176;
+  }
+
+  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2157, [data-ds-theme="custom2157"]) body {
+    --brand-accent-1-soft: 11,11,11;
+    --brand-accent-1-content: 255,255,255;
+    --brand-accent-1-border: 255,255,255;
+    --chart-brand-accent-1: 39, 134, 170;
+    --brand-accent-2-soft: 11,11,11;
+    --brand-accent-2-content: 255,255,255;
+    --brand-accent-2-border: 255,255,255;
+    --chart-brand-accent-2: 117, 126, 159;
+    --brand-accent-3-soft: 11,11,11;
+    --brand-accent-3-content: 255,255,255;
+    --brand-accent-3-border: 255,255,255;
+    --chart-brand-accent-3: 134, 100, 176;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]):where(:not([data-ds-theme], .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157, .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1)) body:where(:not([data-ds-theme], .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157, .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1)),
+html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"]) body {
+    --brand-accent-1: 0, 219, 155;
+    --brand-accent-2: 181, 165, 255;
+    --brand-accent-3: 201, 177, 255;
+    --brand-accent-1-soft: 219, 250, 241;
+    --brand-accent-1-content: 24, 24, 24;
+    --brand-accent-1-border: 102, 233, 195;
+    --brand-accent-2-soft: 245, 242, 255;
+    --brand-accent-2-content: 24, 24, 24;
+    --brand-accent-2-border: 211, 201, 255;
+    --brand-accent-3-soft: 247, 244, 255;
+    --brand-accent-3-content: 24, 24, 24;
+    --brand-accent-3-border: 223, 208, 255;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]):where(:not([data-ds-theme], .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157, .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1)) body:where(:not([data-ds-theme], .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157, .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1)),
+html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"]) body {
+    --brand-accent-1: 0, 219, 155;
+    --brand-accent-2: 181, 165, 255;
+    --brand-accent-3: 201, 177, 255;
+    --brand-accent-1-soft: 23, 59, 56;
+    --brand-accent-1-content: 245, 247, 250;
+    --brand-accent-1-border: 11, 145, 109;
+    --brand-accent-2-soft: 49, 51, 70;
+    --brand-accent-2-content: 245, 247, 250;
+    --brand-accent-2-border: 119, 112, 169;
+    --brand-accent-3-soft: 51, 53, 70;
+    --brand-accent-3-content: 245, 247, 250;
+    --brand-accent-3-border: 131, 119, 169;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="light"]:where(:not([data-ds-theme], .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157, .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1)) body:where(:not([data-ds-theme], .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157, .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1)),
+html[data-contrast="high"][data-contrast-theme="light"] :is(.default, [data-ds-theme="default"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.default, [data-ds-theme="default"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.default, [data-ds-theme="default"]) body {
+    --brand-accent-1: 17, 17, 17;
+    --brand-accent-2: 17, 17, 17;
+    --brand-accent-3: 17, 17, 17;
+    --brand-accent-1-soft: 229, 229, 229;
+    --brand-accent-1-content: 0, 0, 0;
+    --brand-accent-1-border: 118, 118, 118;
+    --brand-accent-2-soft: 229, 229, 229;
+    --brand-accent-2-content: 0, 0, 0;
+    --brand-accent-2-border: 118, 118, 118;
+    --brand-accent-3-soft: 229, 229, 229;
+    --brand-accent-3-content: 0, 0, 0;
+    --brand-accent-3-border: 118, 118, 118;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="dark"]:where(:not([data-ds-theme], .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157, .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1)) body:where(:not([data-ds-theme], .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157, .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1)),
+html[data-contrast="high"][data-contrast-theme="dark"] :is(.default, [data-ds-theme="default"]),
+html[data-contrast="high"][data-contrast-theme="dark"]:is(.default, [data-ds-theme="default"]),
+html[data-contrast="high"][data-contrast-theme="dark"]:is(.default, [data-ds-theme="default"]) body {
+    --brand-accent-1: 255, 255, 255;
+    --brand-accent-2: 255, 255, 255;
+    --brand-accent-3: 255, 255, 255;
+    --brand-accent-1-soft: 34, 34, 34;
+    --brand-accent-1-content: 255, 255, 255;
+    --brand-accent-1-border: 245, 245, 245;
+    --brand-accent-2-soft: 34, 34, 34;
+    --brand-accent-2-content: 255, 255, 255;
+    --brand-accent-2-border: 245, 245, 245;
+    --brand-accent-3-soft: 34, 34, 34;
+    --brand-accent-3-content: 255, 255, 255;
+    --brand-accent-3-border: 245, 245, 245;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.azul1, [data-ds-theme="azul1"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.azul1, [data-ds-theme="azul1"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.azul1, [data-ds-theme="azul1"]) body {
+    --brand-accent-1: 0, 219, 155;
+    --brand-accent-2: 181, 165, 255;
+    --brand-accent-3: 201, 177, 255;
+    --brand-accent-1-soft: 219, 250, 241;
+    --brand-accent-1-content: 24, 24, 24;
+    --brand-accent-1-border: 102, 233, 195;
+    --brand-accent-2-soft: 245, 242, 255;
+    --brand-accent-2-content: 24, 24, 24;
+    --brand-accent-2-border: 211, 201, 255;
+    --brand-accent-3-soft: 247, 244, 255;
+    --brand-accent-3-content: 24, 24, 24;
+    --brand-accent-3-border: 223, 208, 255;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.azul1, [data-ds-theme="azul1"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.azul1, [data-ds-theme="azul1"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.azul1, [data-ds-theme="azul1"]) body {
+    --brand-accent-1: 0, 219, 155;
+    --brand-accent-2: 181, 165, 255;
+    --brand-accent-3: 201, 177, 255;
+    --brand-accent-1-soft: 23, 59, 56;
+    --brand-accent-1-content: 245, 247, 250;
+    --brand-accent-1-border: 11, 145, 109;
+    --brand-accent-2-soft: 49, 51, 70;
+    --brand-accent-2-content: 245, 247, 250;
+    --brand-accent-2-border: 119, 112, 169;
+    --brand-accent-3-soft: 51, 53, 70;
+    --brand-accent-3-content: 245, 247, 250;
+    --brand-accent-3-border: 131, 119, 169;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="light"] :is(.azul1, [data-ds-theme="azul1"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.azul1, [data-ds-theme="azul1"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.azul1, [data-ds-theme="azul1"]) body {
+    --brand-accent-1: 17, 17, 17;
+    --brand-accent-2: 17, 17, 17;
+    --brand-accent-3: 17, 17, 17;
+    --brand-accent-1-soft: 229, 229, 229;
+    --brand-accent-1-content: 0, 0, 0;
+    --brand-accent-1-border: 118, 118, 118;
+    --brand-accent-2-soft: 229, 229, 229;
+    --brand-accent-2-content: 0, 0, 0;
+    --brand-accent-2-border: 118, 118, 118;
+    --brand-accent-3-soft: 229, 229, 229;
+    --brand-accent-3-content: 0, 0, 0;
+    --brand-accent-3-border: 118, 118, 118;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="dark"] :is(.azul1, [data-ds-theme="azul1"]),
+html[data-contrast="high"][data-contrast-theme="dark"]:is(.azul1, [data-ds-theme="azul1"]),
+html[data-contrast="high"][data-contrast-theme="dark"]:is(.azul1, [data-ds-theme="azul1"]) body {
+    --brand-accent-1: 255, 255, 255;
+    --brand-accent-2: 255, 255, 255;
+    --brand-accent-3: 255, 255, 255;
+    --brand-accent-1-soft: 34, 34, 34;
+    --brand-accent-1-content: 255, 255, 255;
+    --brand-accent-1-border: 245, 245, 245;
+    --brand-accent-2-soft: 34, 34, 34;
+    --brand-accent-2-content: 255, 255, 255;
+    --brand-accent-2-border: 245, 245, 245;
+    --brand-accent-3-soft: 34, 34, 34;
+    --brand-accent-3-content: 255, 255, 255;
+    --brand-accent-3-border: 245, 245, 245;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.azul2, [data-ds-theme="azul2"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.azul2, [data-ds-theme="azul2"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.azul2, [data-ds-theme="azul2"]) body {
+    --brand-accent-1: 0, 219, 155;
+    --brand-accent-2: 181, 165, 255;
+    --brand-accent-3: 201, 177, 255;
+    --brand-accent-1-soft: 219, 250, 241;
+    --brand-accent-1-content: 24, 24, 24;
+    --brand-accent-1-border: 102, 233, 195;
+    --brand-accent-2-soft: 245, 242, 255;
+    --brand-accent-2-content: 24, 24, 24;
+    --brand-accent-2-border: 211, 201, 255;
+    --brand-accent-3-soft: 247, 244, 255;
+    --brand-accent-3-content: 24, 24, 24;
+    --brand-accent-3-border: 223, 208, 255;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.azul2, [data-ds-theme="azul2"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.azul2, [data-ds-theme="azul2"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.azul2, [data-ds-theme="azul2"]) body {
+    --brand-accent-1: 0, 219, 155;
+    --brand-accent-2: 181, 165, 255;
+    --brand-accent-3: 201, 177, 255;
+    --brand-accent-1-soft: 23, 59, 56;
+    --brand-accent-1-content: 245, 247, 250;
+    --brand-accent-1-border: 11, 145, 109;
+    --brand-accent-2-soft: 49, 51, 70;
+    --brand-accent-2-content: 245, 247, 250;
+    --brand-accent-2-border: 119, 112, 169;
+    --brand-accent-3-soft: 51, 53, 70;
+    --brand-accent-3-content: 245, 247, 250;
+    --brand-accent-3-border: 131, 119, 169;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="light"] :is(.azul2, [data-ds-theme="azul2"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.azul2, [data-ds-theme="azul2"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.azul2, [data-ds-theme="azul2"]) body {
+    --brand-accent-1: 17, 17, 17;
+    --brand-accent-2: 17, 17, 17;
+    --brand-accent-3: 17, 17, 17;
+    --brand-accent-1-soft: 229, 229, 229;
+    --brand-accent-1-content: 0, 0, 0;
+    --brand-accent-1-border: 118, 118, 118;
+    --brand-accent-2-soft: 229, 229, 229;
+    --brand-accent-2-content: 0, 0, 0;
+    --brand-accent-2-border: 118, 118, 118;
+    --brand-accent-3-soft: 229, 229, 229;
+    --brand-accent-3-content: 0, 0, 0;
+    --brand-accent-3-border: 118, 118, 118;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="dark"] :is(.azul2, [data-ds-theme="azul2"]),
+html[data-contrast="high"][data-contrast-theme="dark"]:is(.azul2, [data-ds-theme="azul2"]),
+html[data-contrast="high"][data-contrast-theme="dark"]:is(.azul2, [data-ds-theme="azul2"]) body {
+    --brand-accent-1: 255, 255, 255;
+    --brand-accent-2: 255, 255, 255;
+    --brand-accent-3: 255, 255, 255;
+    --brand-accent-1-soft: 34, 34, 34;
+    --brand-accent-1-content: 255, 255, 255;
+    --brand-accent-1-border: 245, 245, 245;
+    --brand-accent-2-soft: 34, 34, 34;
+    --brand-accent-2-content: 255, 255, 255;
+    --brand-accent-2-border: 245, 245, 245;
+    --brand-accent-3-soft: 34, 34, 34;
+    --brand-accent-3-content: 255, 255, 255;
+    --brand-accent-3-border: 245, 245, 245;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.azul3, [data-ds-theme="azul3"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.azul3, [data-ds-theme="azul3"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.azul3, [data-ds-theme="azul3"]) body {
+    --brand-accent-1: 0, 219, 155;
+    --brand-accent-2: 181, 165, 255;
+    --brand-accent-3: 201, 177, 255;
+    --brand-accent-1-soft: 219, 250, 241;
+    --brand-accent-1-content: 24, 24, 24;
+    --brand-accent-1-border: 102, 233, 195;
+    --brand-accent-2-soft: 245, 242, 255;
+    --brand-accent-2-content: 24, 24, 24;
+    --brand-accent-2-border: 211, 201, 255;
+    --brand-accent-3-soft: 247, 244, 255;
+    --brand-accent-3-content: 24, 24, 24;
+    --brand-accent-3-border: 223, 208, 255;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.azul3, [data-ds-theme="azul3"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.azul3, [data-ds-theme="azul3"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.azul3, [data-ds-theme="azul3"]) body {
+    --brand-accent-1: 0, 219, 155;
+    --brand-accent-2: 181, 165, 255;
+    --brand-accent-3: 201, 177, 255;
+    --brand-accent-1-soft: 23, 59, 56;
+    --brand-accent-1-content: 245, 247, 250;
+    --brand-accent-1-border: 11, 145, 109;
+    --brand-accent-2-soft: 49, 51, 70;
+    --brand-accent-2-content: 245, 247, 250;
+    --brand-accent-2-border: 119, 112, 169;
+    --brand-accent-3-soft: 51, 53, 70;
+    --brand-accent-3-content: 245, 247, 250;
+    --brand-accent-3-border: 131, 119, 169;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="light"] :is(.azul3, [data-ds-theme="azul3"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.azul3, [data-ds-theme="azul3"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.azul3, [data-ds-theme="azul3"]) body {
+    --brand-accent-1: 17, 17, 17;
+    --brand-accent-2: 17, 17, 17;
+    --brand-accent-3: 17, 17, 17;
+    --brand-accent-1-soft: 229, 229, 229;
+    --brand-accent-1-content: 0, 0, 0;
+    --brand-accent-1-border: 118, 118, 118;
+    --brand-accent-2-soft: 229, 229, 229;
+    --brand-accent-2-content: 0, 0, 0;
+    --brand-accent-2-border: 118, 118, 118;
+    --brand-accent-3-soft: 229, 229, 229;
+    --brand-accent-3-content: 0, 0, 0;
+    --brand-accent-3-border: 118, 118, 118;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="dark"] :is(.azul3, [data-ds-theme="azul3"]),
+html[data-contrast="high"][data-contrast-theme="dark"]:is(.azul3, [data-ds-theme="azul3"]),
+html[data-contrast="high"][data-contrast-theme="dark"]:is(.azul3, [data-ds-theme="azul3"]) body {
+    --brand-accent-1: 255, 255, 255;
+    --brand-accent-2: 255, 255, 255;
+    --brand-accent-3: 255, 255, 255;
+    --brand-accent-1-soft: 34, 34, 34;
+    --brand-accent-1-content: 255, 255, 255;
+    --brand-accent-1-border: 245, 245, 245;
+    --brand-accent-2-soft: 34, 34, 34;
+    --brand-accent-2-content: 255, 255, 255;
+    --brand-accent-2-border: 245, 245, 245;
+    --brand-accent-3-soft: 34, 34, 34;
+    --brand-accent-3-content: 255, 255, 255;
+    --brand-accent-3-border: 245, 245, 245;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.laranja1, [data-ds-theme="laranja1"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja1, [data-ds-theme="laranja1"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja1, [data-ds-theme="laranja1"]) body {
+    --brand-accent-1: 89, 176, 202;
+    --brand-accent-2: 141, 156, 37;
+    --brand-accent-3: 66, 126, 128;
+    --brand-accent-1-soft: 232, 244, 248;
+    --brand-accent-1-content: 24, 24, 24;
+    --brand-accent-1-border: 155, 208, 223;
+    --brand-accent-2-soft: 239, 241, 224;
+    --brand-accent-2-content: 24, 24, 24;
+    --brand-accent-2-border: 187, 196, 124;
+    --brand-accent-3-soft: 229, 237, 237;
+    --brand-accent-3-content: 24, 24, 24;
+    --brand-accent-3-border: 142, 178, 179;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.laranja1, [data-ds-theme="laranja1"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.laranja1, [data-ds-theme="laranja1"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.laranja1, [data-ds-theme="laranja1"]) body {
+    --brand-accent-1: 119, 190, 212;
+    --brand-accent-2: 162, 174, 76;
+    --brand-accent-3: 66, 126, 128;
+    --brand-accent-1-soft: 40, 55, 64;
+    --brand-accent-1-content: 245, 247, 250;
+    --brand-accent-1-border: 82, 127, 143;
+    --brand-accent-2-soft: 46, 53, 45;
+    --brand-accent-2-content: 245, 247, 250;
+    --brand-accent-2-border: 108, 118, 62;
+    --brand-accent-3-soft: 32, 46, 52;
+    --brand-accent-3-content: 245, 247, 250;
+    --brand-accent-3-border: 50, 89, 93;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="light"] :is(.laranja1, [data-ds-theme="laranja1"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.laranja1, [data-ds-theme="laranja1"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.laranja1, [data-ds-theme="laranja1"]) body {
+    --brand-accent-1: 17, 17, 17;
+    --brand-accent-2: 17, 17, 17;
+    --brand-accent-3: 17, 17, 17;
+    --brand-accent-1-soft: 229, 229, 229;
+    --brand-accent-1-content: 0, 0, 0;
+    --brand-accent-1-border: 118, 118, 118;
+    --brand-accent-2-soft: 229, 229, 229;
+    --brand-accent-2-content: 0, 0, 0;
+    --brand-accent-2-border: 118, 118, 118;
+    --brand-accent-3-soft: 229, 229, 229;
+    --brand-accent-3-content: 0, 0, 0;
+    --brand-accent-3-border: 118, 118, 118;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="dark"] :is(.laranja1, [data-ds-theme="laranja1"]),
+html[data-contrast="high"][data-contrast-theme="dark"]:is(.laranja1, [data-ds-theme="laranja1"]),
+html[data-contrast="high"][data-contrast-theme="dark"]:is(.laranja1, [data-ds-theme="laranja1"]) body {
+    --brand-accent-1: 255, 255, 255;
+    --brand-accent-2: 255, 255, 255;
+    --brand-accent-3: 255, 255, 255;
+    --brand-accent-1-soft: 34, 34, 34;
+    --brand-accent-1-content: 255, 255, 255;
+    --brand-accent-1-border: 245, 245, 245;
+    --brand-accent-2-soft: 34, 34, 34;
+    --brand-accent-2-content: 255, 255, 255;
+    --brand-accent-2-border: 245, 245, 245;
+    --brand-accent-3-soft: 34, 34, 34;
+    --brand-accent-3-content: 255, 255, 255;
+    --brand-accent-3-border: 245, 245, 245;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.laranja2, [data-ds-theme="laranja2"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja2, [data-ds-theme="laranja2"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja2, [data-ds-theme="laranja2"]) body {
+    --brand-accent-1: 107, 107, 107;
+    --brand-accent-2: 242, 174, 121;
+    --brand-accent-3: 198, 143, 99;
+    --brand-accent-1-soft: 234, 234, 234;
+    --brand-accent-1-content: 24, 24, 24;
+    --brand-accent-1-border: 166, 166, 166;
+    --brand-accent-2-soft: 253, 244, 236;
+    --brand-accent-2-content: 24, 24, 24;
+    --brand-accent-2-border: 247, 206, 175;
+    --brand-accent-3-soft: 247, 239, 233;
+    --brand-accent-3-content: 24, 24, 24;
+    --brand-accent-3-border: 221, 188, 161;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.laranja2, [data-ds-theme="laranja2"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.laranja2, [data-ds-theme="laranja2"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.laranja2, [data-ds-theme="laranja2"]) body {
+    --brand-accent-1: 134, 134, 134;
+    --brand-accent-2: 244, 189, 145;
+    --brand-accent-3: 244, 189, 145;
+    --brand-accent-1-soft: 42, 47, 53;
+    --brand-accent-1-content: 245, 247, 250;
+    --brand-accent-1-border: 91, 94, 96;
+    --brand-accent-2-soft: 57, 55, 55;
+    --brand-accent-2-content: 245, 247, 250;
+    --brand-accent-2-border: 157, 127, 103;
+    --brand-accent-3-soft: 57, 55, 55;
+    --brand-accent-3-content: 245, 247, 250;
+    --brand-accent-3-border: 157, 127, 103;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="light"] :is(.laranja2, [data-ds-theme="laranja2"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.laranja2, [data-ds-theme="laranja2"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.laranja2, [data-ds-theme="laranja2"]) body {
+    --brand-accent-1: 17, 17, 17;
+    --brand-accent-2: 17, 17, 17;
+    --brand-accent-3: 17, 17, 17;
+    --brand-accent-1-soft: 229, 229, 229;
+    --brand-accent-1-content: 0, 0, 0;
+    --brand-accent-1-border: 118, 118, 118;
+    --brand-accent-2-soft: 229, 229, 229;
+    --brand-accent-2-content: 0, 0, 0;
+    --brand-accent-2-border: 118, 118, 118;
+    --brand-accent-3-soft: 229, 229, 229;
+    --brand-accent-3-content: 0, 0, 0;
+    --brand-accent-3-border: 118, 118, 118;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="dark"] :is(.laranja2, [data-ds-theme="laranja2"]),
+html[data-contrast="high"][data-contrast-theme="dark"]:is(.laranja2, [data-ds-theme="laranja2"]),
+html[data-contrast="high"][data-contrast-theme="dark"]:is(.laranja2, [data-ds-theme="laranja2"]) body {
+    --brand-accent-1: 255, 255, 255;
+    --brand-accent-2: 255, 255, 255;
+    --brand-accent-3: 255, 255, 255;
+    --brand-accent-1-soft: 34, 34, 34;
+    --brand-accent-1-content: 255, 255, 255;
+    --brand-accent-1-border: 245, 245, 245;
+    --brand-accent-2-soft: 34, 34, 34;
+    --brand-accent-2-content: 255, 255, 255;
+    --brand-accent-2-border: 245, 245, 245;
+    --brand-accent-3-soft: 34, 34, 34;
+    --brand-accent-3-content: 255, 255, 255;
+    --brand-accent-3-border: 245, 245, 245;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.verde1, [data-ds-theme="verde1"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde1, [data-ds-theme="verde1"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde1, [data-ds-theme="verde1"]) body {
+    --brand-accent-1: 0, 108, 226;
+    --brand-accent-2: 181, 165, 255;
+    --brand-accent-3: 66, 126, 128;
+    --brand-accent-1-soft: 219, 234, 251;
+    --brand-accent-1-content: 24, 24, 24;
+    --brand-accent-1-border: 102, 167, 238;
+    --brand-accent-2-soft: 245, 242, 255;
+    --brand-accent-2-content: 24, 24, 24;
+    --brand-accent-2-border: 211, 201, 255;
+    --brand-accent-3-soft: 229, 237, 237;
+    --brand-accent-3-content: 24, 24, 24;
+    --brand-accent-3-border: 142, 178, 179;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.verde1, [data-ds-theme="verde1"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.verde1, [data-ds-theme="verde1"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.verde1, [data-ds-theme="verde1"]) body {
+    --brand-accent-1: 46, 134, 231;
+    --brand-accent-2: 194, 181, 255;
+    --brand-accent-3: 100, 149, 151;
+    --brand-accent-1-soft: 30, 47, 67;
+    --brand-accent-1-content: 245, 247, 250;
+    --brand-accent-1-border: 38, 94, 155;
+    --brand-accent-2-soft: 50, 54, 70;
+    --brand-accent-2-content: 245, 247, 250;
+    --brand-accent-2-border: 127, 122, 169;
+    --brand-accent-3-soft: 37, 49, 56;
+    --brand-accent-3-content: 245, 247, 250;
+    --brand-accent-3-border: 71, 103, 107;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="light"] :is(.verde1, [data-ds-theme="verde1"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.verde1, [data-ds-theme="verde1"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.verde1, [data-ds-theme="verde1"]) body {
+    --brand-accent-1: 17, 17, 17;
+    --brand-accent-2: 17, 17, 17;
+    --brand-accent-3: 17, 17, 17;
+    --brand-accent-1-soft: 229, 229, 229;
+    --brand-accent-1-content: 0, 0, 0;
+    --brand-accent-1-border: 118, 118, 118;
+    --brand-accent-2-soft: 229, 229, 229;
+    --brand-accent-2-content: 0, 0, 0;
+    --brand-accent-2-border: 118, 118, 118;
+    --brand-accent-3-soft: 229, 229, 229;
+    --brand-accent-3-content: 0, 0, 0;
+    --brand-accent-3-border: 118, 118, 118;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="dark"] :is(.verde1, [data-ds-theme="verde1"]),
+html[data-contrast="high"][data-contrast-theme="dark"]:is(.verde1, [data-ds-theme="verde1"]),
+html[data-contrast="high"][data-contrast-theme="dark"]:is(.verde1, [data-ds-theme="verde1"]) body {
+    --brand-accent-1: 255, 255, 255;
+    --brand-accent-2: 255, 255, 255;
+    --brand-accent-3: 255, 255, 255;
+    --brand-accent-1-soft: 34, 34, 34;
+    --brand-accent-1-content: 255, 255, 255;
+    --brand-accent-1-border: 245, 245, 245;
+    --brand-accent-2-soft: 34, 34, 34;
+    --brand-accent-2-content: 255, 255, 255;
+    --brand-accent-2-border: 245, 245, 245;
+    --brand-accent-3-soft: 34, 34, 34;
+    --brand-accent-3-content: 255, 255, 255;
+    --brand-accent-3-border: 245, 245, 245;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.verde2, [data-ds-theme="verde2"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde2, [data-ds-theme="verde2"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde2, [data-ds-theme="verde2"]) body {
+    --brand-accent-1: 66, 126, 128;
+    --brand-accent-2: 201, 174, 89;
+    --brand-accent-3: 54, 79, 85;
+    --brand-accent-1-soft: 229, 237, 237;
+    --brand-accent-1-content: 24, 24, 24;
+    --brand-accent-1-border: 142, 178, 179;
+    --brand-accent-2-soft: 247, 244, 232;
+    --brand-accent-2-content: 24, 24, 24;
+    --brand-accent-2-border: 223, 206, 155;
+    --brand-accent-3-soft: 227, 230, 231;
+    --brand-accent-3-content: 24, 24, 24;
+    --brand-accent-3-border: 134, 149, 153;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.verde2, [data-ds-theme="verde2"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.verde2, [data-ds-theme="verde2"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.verde2, [data-ds-theme="verde2"]) body {
+    --brand-accent-1: 100, 149, 151;
+    --brand-accent-2: 211, 189, 119;
+    --brand-accent-3: 90, 111, 116;
+    --brand-accent-1-soft: 37, 49, 56;
+    --brand-accent-1-content: 245, 247, 250;
+    --brand-accent-1-border: 71, 103, 107;
+    --brand-accent-2-soft: 53, 55, 51;
+    --brand-accent-2-content: 245, 247, 250;
+    --brand-accent-2-border: 137, 127, 87;
+    --brand-accent-3-soft: 36, 44, 51;
+    --brand-accent-3-content: 245, 247, 250;
+    --brand-accent-3-border: 65, 80, 86;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="light"] :is(.verde2, [data-ds-theme="verde2"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.verde2, [data-ds-theme="verde2"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.verde2, [data-ds-theme="verde2"]) body {
+    --brand-accent-1: 17, 17, 17;
+    --brand-accent-2: 17, 17, 17;
+    --brand-accent-3: 17, 17, 17;
+    --brand-accent-1-soft: 229, 229, 229;
+    --brand-accent-1-content: 0, 0, 0;
+    --brand-accent-1-border: 118, 118, 118;
+    --brand-accent-2-soft: 229, 229, 229;
+    --brand-accent-2-content: 0, 0, 0;
+    --brand-accent-2-border: 118, 118, 118;
+    --brand-accent-3-soft: 229, 229, 229;
+    --brand-accent-3-content: 0, 0, 0;
+    --brand-accent-3-border: 118, 118, 118;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="dark"] :is(.verde2, [data-ds-theme="verde2"]),
+html[data-contrast="high"][data-contrast-theme="dark"]:is(.verde2, [data-ds-theme="verde2"]),
+html[data-contrast="high"][data-contrast-theme="dark"]:is(.verde2, [data-ds-theme="verde2"]) body {
+    --brand-accent-1: 255, 255, 255;
+    --brand-accent-2: 255, 255, 255;
+    --brand-accent-3: 255, 255, 255;
+    --brand-accent-1-soft: 34, 34, 34;
+    --brand-accent-1-content: 255, 255, 255;
+    --brand-accent-1-border: 245, 245, 245;
+    --brand-accent-2-soft: 34, 34, 34;
+    --brand-accent-2-content: 255, 255, 255;
+    --brand-accent-2-border: 245, 245, 245;
+    --brand-accent-3-soft: 34, 34, 34;
+    --brand-accent-3-content: 255, 255, 255;
+    --brand-accent-3-border: 245, 245, 245;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.verde3, [data-ds-theme="verde3"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde3, [data-ds-theme="verde3"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde3, [data-ds-theme="verde3"]) body {
+    --brand-accent-1: 20, 123, 163;
+    --brand-accent-2: 28, 43, 96;
+    --brand-accent-3: 23, 35, 79;
+    --brand-accent-1-soft: 222, 237, 242;
+    --brand-accent-1-content: 24, 24, 24;
+    --brand-accent-1-border: 114, 176, 200;
+    --brand-accent-2-soft: 223, 225, 233;
+    --brand-accent-2-content: 24, 24, 24;
+    --brand-accent-2-border: 119, 128, 160;
+    --brand-accent-3-soft: 223, 224, 230;
+    --brand-accent-3-content: 24, 24, 24;
+    --brand-accent-3-border: 116, 123, 149;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.verde3, [data-ds-theme="verde3"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.verde3, [data-ds-theme="verde3"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.verde3, [data-ds-theme="verde3"]) body {
+    --brand-accent-1: 62, 147, 180;
+    --brand-accent-2: 69, 81, 125;
+    --brand-accent-3: 69, 81, 125;
+    --brand-accent-1-soft: 32, 49, 60;
+    --brand-accent-1-content: 245, 247, 250;
+    --brand-accent-1-border: 48, 101, 124;
+    --brand-accent-2-soft: 33, 40, 52;
+    --brand-accent-2-content: 245, 247, 250;
+    --brand-accent-2-border: 52, 62, 91;
+    --brand-accent-3-soft: 33, 40, 52;
+    --brand-accent-3-content: 245, 247, 250;
+    --brand-accent-3-border: 52, 62, 91;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="light"] :is(.verde3, [data-ds-theme="verde3"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.verde3, [data-ds-theme="verde3"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.verde3, [data-ds-theme="verde3"]) body {
+    --brand-accent-1: 17, 17, 17;
+    --brand-accent-2: 17, 17, 17;
+    --brand-accent-3: 17, 17, 17;
+    --brand-accent-1-soft: 229, 229, 229;
+    --brand-accent-1-content: 0, 0, 0;
+    --brand-accent-1-border: 118, 118, 118;
+    --brand-accent-2-soft: 229, 229, 229;
+    --brand-accent-2-content: 0, 0, 0;
+    --brand-accent-2-border: 118, 118, 118;
+    --brand-accent-3-soft: 229, 229, 229;
+    --brand-accent-3-content: 0, 0, 0;
+    --brand-accent-3-border: 118, 118, 118;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="dark"] :is(.verde3, [data-ds-theme="verde3"]),
+html[data-contrast="high"][data-contrast-theme="dark"]:is(.verde3, [data-ds-theme="verde3"]),
+html[data-contrast="high"][data-contrast-theme="dark"]:is(.verde3, [data-ds-theme="verde3"]) body {
+    --brand-accent-1: 255, 255, 255;
+    --brand-accent-2: 255, 255, 255;
+    --brand-accent-3: 255, 255, 255;
+    --brand-accent-1-soft: 34, 34, 34;
+    --brand-accent-1-content: 255, 255, 255;
+    --brand-accent-1-border: 245, 245, 245;
+    --brand-accent-2-soft: 34, 34, 34;
+    --brand-accent-2-content: 255, 255, 255;
+    --brand-accent-2-border: 245, 245, 245;
+    --brand-accent-3-soft: 34, 34, 34;
+    --brand-accent-3-content: 255, 255, 255;
+    --brand-accent-3-border: 245, 245, 245;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.verde4, [data-ds-theme="verde4"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde4, [data-ds-theme="verde4"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde4, [data-ds-theme="verde4"]) body {
+    --brand-accent-1: 41, 56, 92;
+    --brand-accent-2: 97, 168, 173;
+    --brand-accent-3: 80, 138, 142;
+    --brand-accent-1-soft: 225, 227, 232;
+    --brand-accent-1-content: 24, 24, 24;
+    --brand-accent-1-border: 127, 136, 157;
+    --brand-accent-2-soft: 233, 243, 244;
+    --brand-accent-2-content: 24, 24, 24;
+    --brand-accent-2-border: 160, 203, 206;
+    --brand-accent-3-soft: 230, 239, 239;
+    --brand-accent-3-content: 24, 24, 24;
+    --brand-accent-3-border: 150, 185, 187;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.verde4, [data-ds-theme="verde4"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.verde4, [data-ds-theme="verde4"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.verde4, [data-ds-theme="verde4"]) body {
+    --brand-accent-1: 80, 92, 121;
+    --brand-accent-2: 125, 184, 188;
+    --brand-accent-3: 125, 184, 188;
+    --brand-accent-1-soft: 34, 41, 51;
+    --brand-accent-1-content: 245, 247, 250;
+    --brand-accent-1-border: 59, 68, 89;
+    --brand-accent-2-soft: 41, 54, 61;
+    --brand-accent-2-content: 245, 247, 250;
+    --brand-accent-2-border: 86, 124, 129;
+    --brand-accent-3-soft: 41, 54, 61;
+    --brand-accent-3-content: 245, 247, 250;
+    --brand-accent-3-border: 86, 124, 129;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="light"] :is(.verde4, [data-ds-theme="verde4"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.verde4, [data-ds-theme="verde4"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.verde4, [data-ds-theme="verde4"]) body {
+    --brand-accent-1: 17, 17, 17;
+    --brand-accent-2: 17, 17, 17;
+    --brand-accent-3: 17, 17, 17;
+    --brand-accent-1-soft: 229, 229, 229;
+    --brand-accent-1-content: 0, 0, 0;
+    --brand-accent-1-border: 118, 118, 118;
+    --brand-accent-2-soft: 229, 229, 229;
+    --brand-accent-2-content: 0, 0, 0;
+    --brand-accent-2-border: 118, 118, 118;
+    --brand-accent-3-soft: 229, 229, 229;
+    --brand-accent-3-content: 0, 0, 0;
+    --brand-accent-3-border: 118, 118, 118;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="dark"] :is(.verde4, [data-ds-theme="verde4"]),
+html[data-contrast="high"][data-contrast-theme="dark"]:is(.verde4, [data-ds-theme="verde4"]),
+html[data-contrast="high"][data-contrast-theme="dark"]:is(.verde4, [data-ds-theme="verde4"]) body {
+    --brand-accent-1: 255, 255, 255;
+    --brand-accent-2: 255, 255, 255;
+    --brand-accent-3: 255, 255, 255;
+    --brand-accent-1-soft: 34, 34, 34;
+    --brand-accent-1-content: 255, 255, 255;
+    --brand-accent-1-border: 245, 245, 245;
+    --brand-accent-2-soft: 34, 34, 34;
+    --brand-accent-2-content: 255, 255, 255;
+    --brand-accent-2-border: 245, 245, 245;
+    --brand-accent-3-soft: 34, 34, 34;
+    --brand-accent-3-content: 255, 255, 255;
+    --brand-accent-3-border: 245, 245, 245;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.rosa1, [data-ds-theme="rosa1"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"]) body {
+    --brand-accent-1: 248, 207, 128;
+    --brand-accent-2: 173, 157, 212;
+    --brand-accent-3: 69, 70, 125;
+    --brand-accent-1-soft: 254, 248, 237;
+    --brand-accent-1-content: 24, 24, 24;
+    --brand-accent-1-border: 251, 226, 179;
+    --brand-accent-2-soft: 244, 241, 249;
+    --brand-accent-2-content: 24, 24, 24;
+    --brand-accent-2-border: 206, 196, 229;
+    --brand-accent-3-soft: 229, 229, 237;
+    --brand-accent-3-content: 24, 24, 24;
+    --brand-accent-3-border: 143, 144, 177;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.rosa1, [data-ds-theme="rosa1"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"]) body {
+    --brand-accent-1: 249, 216, 151;
+    --brand-accent-2: 188, 175, 220;
+    --brand-accent-3: 69, 70, 125;
+    --brand-accent-1-soft: 58, 59, 56;
+    --brand-accent-1-content: 245, 247, 250;
+    --brand-accent-1-border: 160, 143, 107;
+    --brand-accent-2-soft: 50, 53, 65;
+    --brand-accent-2-content: 245, 247, 250;
+    --brand-accent-2-border: 124, 118, 148;
+    --brand-accent-3-soft: 33, 38, 52;
+    --brand-accent-3-content: 245, 247, 250;
+    --brand-accent-3-border: 52, 55, 91;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="light"] :is(.rosa1, [data-ds-theme="rosa1"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.rosa1, [data-ds-theme="rosa1"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.rosa1, [data-ds-theme="rosa1"]) body {
+    --brand-accent-1: 17, 17, 17;
+    --brand-accent-2: 17, 17, 17;
+    --brand-accent-3: 17, 17, 17;
+    --brand-accent-1-soft: 229, 229, 229;
+    --brand-accent-1-content: 0, 0, 0;
+    --brand-accent-1-border: 118, 118, 118;
+    --brand-accent-2-soft: 229, 229, 229;
+    --brand-accent-2-content: 0, 0, 0;
+    --brand-accent-2-border: 118, 118, 118;
+    --brand-accent-3-soft: 229, 229, 229;
+    --brand-accent-3-content: 0, 0, 0;
+    --brand-accent-3-border: 118, 118, 118;
+  }
+
+  html[data-contrast="high"][data-contrast-theme="dark"] :is(.rosa1, [data-ds-theme="rosa1"]),
+html[data-contrast="high"][data-contrast-theme="dark"]:is(.rosa1, [data-ds-theme="rosa1"]),
+html[data-contrast="high"][data-contrast-theme="dark"]:is(.rosa1, [data-ds-theme="rosa1"]) body {
+    --brand-accent-1: 255, 255, 255;
+    --brand-accent-2: 255, 255, 255;
+    --brand-accent-3: 255, 255, 255;
+    --brand-accent-1-soft: 34, 34, 34;
+    --brand-accent-1-content: 255, 255, 255;
+    --brand-accent-1-border: 245, 245, 245;
+    --brand-accent-2-soft: 34, 34, 34;
+    --brand-accent-2-content: 255, 255, 255;
+    --brand-accent-2-border: 245, 245, 245;
+    --brand-accent-3-soft: 34, 34, 34;
+    --brand-accent-3-content: 255, 255, 255;
+    --brand-accent-3-border: 245, 245, 245;
   }

@@ -7,6 +7,9 @@
 .client-theme-palette > div { display: grid; gap: 4px; min-width: 0; }
 .client-theme-palette span { height: 48px; border: 1px solid rgb(var(--border-default)); border-radius: 5px; }
 .client-theme-palette code { font-size: .8rem; overflow-wrap: anywhere; }
+.client-theme-palette-group + .client-theme-palette-group { margin-top: 24px; }
+.client-theme-palette-group h3 { font-size: 1rem; font-weight: 700; margin-bottom: 12px; }
+.client-theme-palette small { color: rgb(var(--content-secondary)); }
 .client-theme-actions { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; margin: 16px 0; }
 .client-theme-fields, .client-theme-charts { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
 .client-theme-form { max-width: 600px; display: grid; gap: 24px; margin: 24px 0; }
