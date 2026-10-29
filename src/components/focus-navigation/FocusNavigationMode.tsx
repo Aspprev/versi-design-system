@@ -10,7 +10,7 @@ export function FocusNavigationMode() {
 
     const handleKeyDown = (event: KeyboardEvent) => {
       if (
-        event.key === "Tab" &&
+        ["Tab", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "Home", "End", "PageUp", "PageDown", "F6"].includes(event.key) &&
         !event.altKey &&
         !event.ctrlKey &&
         !event.metaKey

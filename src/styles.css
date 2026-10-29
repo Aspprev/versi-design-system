@@ -358,10 +358,33 @@ html[data-motion="reduce"] *::after {
 .radio-control:not(:where(.radio-option-focus input)):focus-visible,
 :where(.field-keyboard-focus-ring):has(.field-value:focus-visible),
 :where(.radio-option-focus):has(input:focus-visible),
+:where(.file-upload-focus-target):has(input:focus-visible),
 :where(.peer):focus-visible + :where(.checkbox-control-proxy, .radio-control-proxy) {
   outline: 2px solid rgb(var(--focus-ring));
   outline-offset: 2px;
   box-shadow: 0 0 0 4px rgb(var(--surface-page));
+}
+
+/* FocusNavigationMode opts into keyboard-only rings, including text inputs
+   that browsers normally consider focus-visible after a pointer click. */
+@layer base {
+html:root[data-focus-navigation="pointer"] :is(
+  a, button, input, select, textarea, [tabindex],
+  .field-keyboard-focus-ring, .radio-option-focus,
+  .checkbox-control-proxy, .radio-control-proxy, .file-upload-focus-target
+):is(:focus, :focus-visible, :has(:focus-visible)) {
+  outline: none !important;
+}
+
+html:root[data-focus-navigation="pointer"] :is(
+  a, button, input, select, textarea, [tabindex],
+  .field-keyboard-focus-ring, .radio-option-focus,
+  .checkbox-control-proxy, .radio-control-proxy, .file-upload-focus-target
+):is(:focus-visible, :has(:focus-visible)),
+html:root[data-focus-navigation="pointer"] .peer:focus-visible + :is(.checkbox-control-proxy, .radio-control-proxy) {
+  outline: none !important;
+  box-shadow: none !important;
+}
 }
 
 @layer components {

@@ -1,6 +1,6 @@
 {
   "name": "@aspprev/versi-ds",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -129,7 +129,7 @@
     "tsup": "^8.5.0",
     "typescript": "5.9.3",
     "typescript-eslint": "^8.70.1",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.12"
   },
   "scripts": {
     "build": "node scripts/build.mjs",

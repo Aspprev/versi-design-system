@@ -1,6 +1,7 @@
 /// <reference types="vite/client" />
 
 import { CLIENT_THEMES } from "../src/theme-presets";
+import { FocusNavigationMode } from "../src/components/focus-navigation/FocusNavigationMode";
 import type { Preview } from "@storybook/react-vite";
 import { ComponentDocumentation, DocumentationContainer } from "./ComponentDocumentation";
 import "../src/styles.css";
@@ -97,6 +98,7 @@ const preview: Preview = {
 
       return (
         <div className="versi-story-shell bg-surface-card text-content-primary">
+          <FocusNavigationMode />
           <Story />
         </div>
       );

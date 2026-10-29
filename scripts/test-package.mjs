@@ -44,13 +44,23 @@ function verify(entries) {
     assert(getCountryFlagUrl('BR').startsWith('data:image/svg+xml;base64,'));
     if (${entries.includes('/forms')}) {
       const { Formik } = await import('formik');
-      const { InputPhone, SelectCountry } = await import('${pkg.name}/forms');
+      const { Input, InputStandalone, InputPhone, PhoneInput, SelectCountry } = await import('${pkg.name}/forms');
+      assert.equal(PhoneInput, InputPhone);
+      const standalone = renderToStaticMarkup(createElement(InputStandalone, {
+        name: 'cpf', mask: 'cpf', value: '12345678901', onChange() {}
+      }));
+      assert(standalone.includes('123.456.789-01'));
+      const formatted = renderToStaticMarkup(createElement(Formik, {
+        initialValues: { cpf: '12345678901' }, onSubmit() {}
+      }, createElement(Input, { name: 'cpf', mask: 'cpf' })));
+      assert(formatted.includes('123.456.789-01'));
       for (const Component of [InputPhone, SelectCountry]) {
         const html = renderToStaticMarkup(createElement(Formik, {
-          initialValues: { phone: { ddi: 55 }, country: 'Brasil' }, onSubmit() {}
+          initialValues: { phone: { ddi: 55, ddd: '11', numero: '987654321' }, country: 'Brasil' }, onSubmit() {}
         }, createElement(Component, { name: Component === InputPhone ? 'phone' : 'country' })));
         assert(!html.includes('/flags/'));
         assert(!html.includes('src="data:image/svg+xml;base64,'));
+        if (Component === InputPhone) assert(html.includes('(11) 98765-4321'));
       }
     }
     assert(renderToStaticMarkup(createElement(Button, null, 'Isolado')).includes('Isolado'));
@@ -110,6 +120,7 @@ try {
     `typescript@${pkg.devDependencies.typescript}`,
     `@types/react@${react18 ? "18" : pkg.devDependencies["@types/react"]}`,
     `@types/react-dom@${react18 ? "18" : pkg.devDependencies["@types/react-dom"]}`,
+    "webpack@^5.0.0",
   );
   for (const peer of Object.keys(pkg.peerDependenciesMeta)) {
     assert(
@@ -126,10 +137,38 @@ try {
     "--ignore-scripts",
     "--no-audit",
     "--no-fund",
-    ...Object.keys(pkg.peerDependenciesMeta).map(
+    ...Object.keys(pkg.peerDependenciesMeta).filter(peer => peer !== "react-number-format").map(
       (peer) => `${peer}@${pkg.peerDependencies[peer]}`,
     ),
   );
+  assert(!fs.existsSync(path.join(temp, "node_modules/react-number-format")));
+  fs.writeFileSync(path.join(temp, "unrelated.mjs"), `
+    import { Button } from '${pkg.name}';
+    import { TextArea, InputSelect, SelectCountry, SelectMulti, DatePicker, RadioGroup, RadioCardGroup, OtpCodeInput } from '${pkg.name}/forms';
+    import assert from 'node:assert/strict';
+    import { createElement } from 'react';
+    import { renderToStaticMarkup } from 'react-dom/server';
+    for (const Component of [TextArea, InputSelect, SelectCountry, SelectMulti, DatePicker, RadioGroup, RadioCardGroup, OtpCodeInput]) assert(Component);
+    assert(renderToStaticMarkup(createElement(Button, null, 'Sem peer')).includes('Sem peer'));
+  `);
+  fs.writeFileSync(path.join(temp, "bundle.cjs"), `
+    const webpack = require('webpack');
+    webpack({ mode: 'production', entry: './unrelated.mjs',
+      output: { path: require('path').resolve('bundle'), filename: 'consumer.cjs' },
+      target: 'node', optimization: { minimize: false }
+    }, (error, stats) => {
+      if (error || stats.hasErrors()) {
+        console.error(error || stats.toString({ all: false, errors: true }));
+        process.exitCode = 1;
+      }
+    });
+  `);
+  run(["bundle.cjs"]);
+  assert(!fs.readFileSync(path.join(temp, "bundle/consumer.cjs"), "utf8").includes("react-number-format"));
+  run(["bundle/consumer.cjs"]);
+  console.log("Consumidor webpack: raiz/forms sem react-number-format OK.");
+  npm("install", "--ignore-scripts", "--no-audit", "--no-fund",
+    `react-number-format@${pkg.peerDependencies["react-number-format"]}`);
   verify([
     "",
     "/core",

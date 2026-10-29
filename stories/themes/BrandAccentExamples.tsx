@@ -41,7 +41,7 @@ export function BrandAccentExamples() {
       <path d="M30 85L100 60L155 70L228 20" stroke="rgb(var(--content-primary))" strokeWidth="3" fill="none" />
     </svg><figcaption>Exemplo ilustrativo: somente os dois detalhes geométricos recebem os papéis 2 e 3.</figcaption></figure>
     <div aria-hidden="true" className="brand-gradient-example" />
-    <p>A faixa usa degradê apenas quando o tema o disponibiliza: custom2157 nos modos comuns. No alto contraste, usa uma superfície simples.</p>
+    <p>A faixa usa degradê apenas quando o tema o disponibiliza: custom2133 (dourado, coral e lavanda) e custom2157 (verde e azul) nos modos comuns. No alto contraste, usa uma superfície simples.</p>
     <h3>Gráficos · categorias estáveis</h3>
     <p>As duas visualizações compartilham o catálogo e os papéis. Filtrar ou reordenar mantém a cor de cada categoria; saldo/investido continuam com seus próprios tokens. Troque o tema na toolbar com os gráficos já montados.</p>
     <div className="brand-chart-controls"><Button type="button" variant="outline" onClick={() => setFiltered(!filtered)} aria-pressed={filtered}>Filtrar categorias</Button><Button type="button" variant="outline" onClick={() => setReversed(!reversed)} aria-pressed={reversed}>Reordenar categorias</Button><Button type="button" variant="outline" onClick={() => setCustom(!custom)} aria-pressed={custom}>Cores personalizadas</Button></div>
