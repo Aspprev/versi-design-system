@@ -15,14 +15,14 @@ async function expectRing(element: Locator) {
 }
 
 for (const scheme of ["light", "dark"]) for (const contrast of ["normal", "high"]) {
-  test.describe(`${scheme}/${contrast}: foco independente de provider`, () => {
+  test.describe(`${scheme}/${contrast}: foco por teclado`, () => {
     test("checkbox e cards de rádio mostram o controle focado", async ({ page }) => {
       await open(page, "components-forms-checkbox--options", scheme, contrast);
       await page.keyboard.press("Tab");
       const checkbox = page.getByRole("checkbox").first();
       await expect(checkbox).toBeFocused();
       await expectRing(checkbox);
-      await expect(page.locator("html")).not.toHaveAttribute("data-focus-navigation", "keyboard");
+      await expect(page.locator("html")).toHaveAttribute("data-focus-navigation", "keyboard");
 
       await open(page, "components-forms-checkbox--error", scheme, contrast);
       await page.keyboard.press("Tab");
@@ -71,6 +71,31 @@ for (const scheme of ["light", "dark"]) for (const contrast of ["normal", "high"
       await page.keyboard.press("Tab");
       await expect(page.locator('input[type="tel"]')).toBeFocused();
       await expectRing(page.locator(".field-keyboard-focus-ring"));
+    });
+
+    test("telefone não mostra contorno com mouse e restaura com teclado", async ({ page }) => {
+      await open(page, "components-forms-inputphone--default", scheme, contrast);
+      const input = page.locator('input[type="tel"]');
+      const control = page.locator(".field-keyboard-focus-ring");
+      const prefix = page.locator(".field-inset-focus-ring");
+      await input.click();
+      await expect(input).toBeFocused();
+      await expect(page.locator("html")).toHaveAttribute("data-focus-navigation", "pointer");
+      await expect(control).toHaveCSS("outline-style", "none");
+      await expect(control).toHaveCSS("box-shadow", "none");
+      await expect(input).toHaveCSS("outline-style", "none");
+      await page.keyboard.press("Shift+Tab");
+      await expect(prefix).toBeFocused();
+      await expectRing(prefix);
+      await page.keyboard.press("Tab");
+      await expect(input).toBeFocused();
+      await expectRing(control);
+      await input.click();
+      await expect(control).toHaveCSS("outline-style", "none");
+      await expect(control).toHaveCSS("box-shadow", "none");
+      await prefix.click();
+      await expect(prefix).toHaveCSS("outline-style", "none");
+      await expect(control).toHaveCSS("outline-style", "none");
     });
   });
 }

@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.7.2 ? 2026-10-29 ? temas, foco e empacotamento
+
+### Corrigido
+
+- Atualizadas as paletas de custom2170 (base azul3), custom2133, custom2178 e custom2140, com tons pr?prios para claro/escuro, gr?ficos e ilustra??es. Placeholders aprovados e alto contraste preservados. Neutros escuros de custom2140 usam #212421.
+- FocusNavigationMode oculta contorno e sombra com mouse/toque e restaura os indicadores com Tab e teclas de navega??o, inclusive em campos de texto, InputPhone, proxies e alto contraste. Storybook aplica o controle a todas as hist?rias; upload transfere o foco vis?vel ao r?tulo. Consumidores devem montar FocusNavigationMode no layout para ativar essa pol?tica.
+- Isolados os m?dulos de Input/InputPhone e helpers compartilhados no build, evitando que imports de controles sem formata??o exijam react-number-format em consumidores webpack com tree shaking. APIs e peers opcionais preservados.
+
+- Atualizados Vitest para 4.1.12 e Zod para 4.6.7 no lockfile, removendo os alertas GHSA-qxg6-89mg-rqv8, GHSA-xp26-3454-mjgp e GHSA-mrhx-c7xc-m3w5 encontrados na prepara??o.
+
+### Adicionado
+
+- Gradiente decorativo opcional de custom2133: dourado ? coral ? lavanda, adaptado ao escuro e desativado no alto contraste, seguindo o contrato de custom2157.
+- Regress?o de clique e navega??o por teclado no telefone nos quatro modos e valida??o de consumidores webpack sem o peer de formata??o.
+
+
 ## 0.7.1 — 2026-10-21 — segurança do Storybook
 
 ### Corrigido

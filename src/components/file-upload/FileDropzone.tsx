@@ -90,7 +90,7 @@ export function FileDropzone({
         className,
       )}
     >
-      <label htmlFor={inputId} className="flex cursor-pointer flex-col items-center focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-focus-ring">
+      <label htmlFor={inputId} className="file-upload-focus-target flex cursor-pointer flex-col items-center">
         <span className="font-semibold text-content-primary">{label}</span>
         <input
           ref={inputRef}

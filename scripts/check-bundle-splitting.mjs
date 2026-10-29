@@ -6,6 +6,20 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const distRoot = path.join(root, "dist");
 const maxConsumerChunkBytes = 750_000;
 const files = fs.readdirSync(distRoot).filter((file) => file.endsWith(".js"));
+// Formatting peers must never share a module with unrelated controls/helpers:
+// consumers can then discard these modules using package.json sideEffects.
+const formattingChunks = files.filter(file =>
+  /from ["']react-number-format["']/.test(fs.readFileSync(path.join(distRoot, file), "utf8")),
+);
+if (formattingChunks.length !== 2) {
+  throw new Error(`Expected separate Input/InputPhone peer chunks, found ${formattingChunks.length}.`);
+}
+for (const file of formattingChunks) {
+  const map = JSON.parse(fs.readFileSync(path.join(distRoot, `${file}.map`), "utf8"));
+  if (map.sources.some(source => !/\/components\/(input\/Input|inputPhone\/InputPhone)\.tsx$/.test(source))) {
+    throw new Error(`${file} mixes react-number-format with unrelated modules: ${map.sources.join(", ")}`);
+  }
+}
 const initialFiles = files.filter((file) => file !== "countries.js");
 const flagChunks = files.filter((file) => /^flags-\d+-[A-Z0-9]+\.js$/.test(file));
 

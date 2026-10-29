@@ -6,7 +6,8 @@ Os achados abaixo registram o estado da versão 0.5.6. As correções estão pre
 
 ## Correções posteriores à revisão
 
-- Foco padrão e alto contraste funcionam com `:focus-visible`, sem exigir `FocusNavigationMode`. A API permanece disponível por compatibilidade.
+- Foco padrão e alto contraste funcionam com `:focus-visible`, sem exigir `FocusNavigationMode`. Para mostrar o contorno somente na navegação por teclado, monte `<FocusNavigationMode />` uma vez no layout: mouse/toque ocultam o contorno, e Tab, setas e demais teclas de navegação o restauram. Campos de texto também respeitam esse modo. Sem o componente, permanece a heurística nativa do navegador.
+- O preview global do Storybook monta `FocusNavigationMode` para aplicar essa política a todas as histórias, incluindo `InputPhone` e seu seletor de país.
 - Campos com foco visível destacam o contêiner, preservando a borda de erro. O prefixo do telefone usa foco interno para evitar recorte.
 - O foco dos inputs ocultos é transferido para os proxies visíveis; cards de rádio destacam o card.
 - O token de foco claro usa `primary-3`, com remoção das exceções inconsistentes. Escuro e alto contraste mantêm cores próprias. Switches, abas e ações auxiliares usam o token semântico.

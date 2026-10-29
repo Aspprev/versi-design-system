@@ -44,6 +44,14 @@ const tsup = runNode("tsup", "dist/cli-default.js", [
   "src/documents.ts",
   "src/countries.ts",
   "src/countries-browser.ts",
+  // Internal build boundaries keep optional formatting peers out of chunks
+  // shared with unrelated form controls. These are not public package exports.
+  "src/components/input/Input.tsx",
+  "src/components/inputPhone/InputPhone.tsx",
+  // InputPhone shares these helpers with selects. Give them their own
+  // boundaries too, otherwise esbuild merges them back into its peer chunk.
+  "src/components/countryFlag/CountryFlag.tsx",
+  "src/utils/floating-panel-position.ts",
   "--format",
   "esm",
   "--target",

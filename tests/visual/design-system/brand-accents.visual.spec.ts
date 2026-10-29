@@ -64,7 +64,7 @@ for (const theme of [...clients, ...generics]) test(`${theme}: brand details, st
     await page.getByRole("button", { name: "Filtrar categorias" }).click();
     await expect.poll(async () => Object.keys(await colors(page)).length).toBe(6);
     const gradient = await page.locator(".brand-gradient-example").evaluate(el => getComputedStyle(el).backgroundImage);
-    expect(gradient !== "none").toBe(theme === "custom2157" && !value.startsWith("high"));
+    expect(gradient !== "none").toBe(["custom2133", "custom2157"].includes(theme) && !value.startsWith("high"));
   }
   expect(errors).toEqual([]);
   await info.attach("brand-details", { body: JSON.stringify(reports), contentType: "application/json" });
