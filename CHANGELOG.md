@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.7.4 ? 2026-11-03 ? seguran?a das ferramentas de desenvolvimento
+
+- Fixadas as depend?ncias transitivas glob em 14.0.2 e minimatch em 11.0.1 por overrides, corrigindo GHSA-3g3m-2fjr-6pw4 e GHSA-g3hv-75wg-m249 nas cadeias de Storybook, ESLint e TypeScript ESLint.
+- A tag 0.7.3 passou no build, mas teve a publica??o bloqueada pela auditoria; esta vers?o mant?m as corre??es de contratos e os temas aprovados.
+
+
 ## 0.7.3 ? 2026-11-03 ? refer?ncias de testes dos temas
 
 - Corrigidas as expectativas hist?ricas de legibilidade e secondary para aplicar somente as diferen?as das paletas aprovadas na 0.7.2. Refer?ncias originais, placeholders e alto contraste preservados.
