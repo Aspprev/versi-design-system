@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.7.3 ? 2026-11-03 ? refer?ncias de testes dos temas
+
+- Corrigidas as expectativas hist?ricas de legibilidade e secondary para aplicar somente as diferen?as das paletas aprovadas na 0.7.2. Refer?ncias originais, placeholders e alto contraste preservados.
+- A publica??o da 0.7.2 foi bloqueada pelos testes de navegador ap?s o build passar; esta vers?o mant?m as altera??es funcionais da 0.7.2.
+
 ## 0.7.2 ? 2026-10-29 ? temas, foco e empacotamento
 
 ### Corrigido

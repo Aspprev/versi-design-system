@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { expect, test } from "@playwright/test";
 import { DESIGN_SYSTEM_THEMES } from "../../../src/theme-presets";
-import { applyHighDarkSecondary } from "../../helpers/theme-role-migration";
+import { applyApprovedPalettes, applyHighDarkSecondary } from "../../helpers/theme-role-migration";
 import { settle } from "./legibility.helpers";
 
 const css = readFileSync("dist/styles.css", "utf8") + "\n" + readFileSync("dist/themes.css", "utf8");
@@ -13,7 +13,7 @@ test("secondary: contrato da promoção e papéis protegidos em 72 contextos", a
   await page.setContent("<html><head></head><body></body></html>");
   await page.addStyleTag({ content: css });
   for (const theme of DESIGN_SYSTEM_THEMES) for (const mode of modes) {
-    const expected = applyHighDarkSecondary(reference[theme][mode], mode);
+    const expected = applyApprovedPalettes(applyHighDarkSecondary(reference[theme][mode], mode), theme, mode);
     const actual = await page.evaluate(({ theme, mode, names }) => {
       Object.assign(document.documentElement.dataset, { dsTheme: theme, colorScheme: mode.endsWith("dark") ? "dark" : "light", contrast: mode.startsWith("high") ? "high" : "normal", contrastTheme: mode.endsWith("dark") ? "dark" : "light" });
       const s = getComputedStyle(document.body);
