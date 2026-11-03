@@ -3,7 +3,7 @@ import { expect, test } from "@playwright/test";
 import { DESIGN_SYSTEM_THEMES } from "../../../src/theme-presets";
 import { readLegibility, settle } from "./legibility.helpers";
 
-import { promoteTertiaryTokens } from "../../helpers/theme-role-migration";
+import { applyApprovedPalettes, promoteTertiaryTokens } from "../../helpers/theme-role-migration";
 
 type Tokens = Record<string, string>;
 const baseline = JSON.parse(readFileSync("docs/correcao-legibilidade/BASELINE-ANTES.json", "utf8")).themes as Record<string, Record<string, Tokens>>;
@@ -35,7 +35,7 @@ test("CSS distribuído: 288 contextos, diferenças documentadas e valores proteg
   await page.addStyleTag({ content: css + consumer });
   const differences: object[] = [];
   for (const theme of DESIGN_SYSTEM_THEMES) for (const mode of ["light", "dark", "high-light", "high-dark"]) {
-    const expected = promoteTertiaryTokens({ ...baseline[theme][mode], ...corrections[theme][mode], ...restorations[theme]?.[mode] }, mode);
+    const expected = applyApprovedPalettes(promoteTertiaryTokens({ ...baseline[theme][mode], ...corrections[theme][mode], ...restorations[theme]?.[mode] }, mode), theme, mode);
     for (const host of ["html", "body"]) for (const identity of ["attribute", "class"]) {
       const actual = await page.evaluate(({ theme, mode, host, identity, names }) => {
         for (const el of [document.documentElement, document.body]) { el.className = ""; el.removeAttribute("data-ds-theme"); }

@@ -1,3 +1,13 @@
+import { readFileSync } from "node:fs";
+
+const approvedPalettes = JSON.parse(readFileSync("docs/temas-clientes/0.7.2-approved-overrides.json", "utf8")).overrides as Record<string, Record<string, Record<string, string>>>;
+
+/** Apply only approved palette differences to keys covered by a historical contract. */
+export function applyApprovedPalettes(values: Record<string, string>, theme: string, mode: string): Record<string, string> {
+  const overrides = approvedPalettes[theme]?.[mode] ?? {};
+  return Object.fromEntries(Object.entries(values).map(([key, value]) => [key, overrides[key] ?? value]));
+}
+
 /** Apply the 0.7.0 palette migration to historical, immutable theme snapshots. */
 export function promoteTertiaryTokens(values: Record<string, string>, mode?: string): Record<string, string> {
   const result = Object.fromEntries(Object.entries(values)
