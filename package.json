@@ -1,6 +1,6 @@
 {
   "name": "@aspprev/versi-ds",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -167,7 +167,9 @@
     "postcss-selector-parser": "7.1.6",
     "tsup": {
       "esbuild": "^0.28.1"
-    }
+    },
+    "glob": "14.0.2",
+    "minimatch": "11.0.1"
   },
   "publishConfig": {
     "access": "public"
