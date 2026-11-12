@@ -4,11 +4,12 @@ Este documento rege o repositório independente `ds-versi`. O portal será consu
 
 ## Estado atual
 
-Nome e versão do manifesto nesta preparação: `@aspprev/versi-ds`, `0.3.0`.
-A tag e a publicação no npm ainda estão pendentes de revisão final, tarball e
-validação nos consumidores. A URL remota do repositório continua pendente.
+Nome e versão do manifesto nesta preparação: `@aspprev/versi-ds`, `0.8.0`.
+A versão publicada consultada em 12/11/2026 é a `0.7.4`. A preparação da nova
+release está em [releases/0.8.0.md](releases/0.8.0.md); envio, merge, tag e
+publicação continuam pendentes. Repositório: https://github.com/Aspprev/versi-design-system.
 
-A API é definida pelos nove exports em `package.json`: raiz, core, forms, charts, overlays, documents, countries, styles.css e themes.css. Arquivos internos não são contrato público. A lista de conteúdo publicável é `dist` e `README.md`, além do manifesto obrigatório do npm.
+A API é definida pelos exports em `package.json`: raiz, core, forms, charts, overlays, documents, countries, illustrations, imports individuais em illustrations/*, styles.css e themes.css. Arquivos internos não são contrato público. A lista de conteúdo publicável é `dist` e `README.md`, além do manifesto obrigatório do npm.
 
 ## Versionamento
 

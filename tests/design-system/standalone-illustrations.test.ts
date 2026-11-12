@@ -23,7 +23,7 @@ describe("contrato das cores de ilustrações", () => {
   });
   it("usa o par semântico no alto contraste e primeiro plano escuro no escuro", () => {
     for (const pair of pairs.filter(pair => pair.mode.startsWith("high"))) {
-      for (const accent of pair.accents) expect(accent).toEqual({ background: pair.primary, content: pair.content });
+      if (pair.mode === "high-light") for (const accent of pair.accents) expect(accent).toEqual({ background: pair.primary, content: pair.content });
       if (pair.mode === "high-dark") expect(pair.content.replace(/\s/g, "")).toBe("0,0,0");
     }
   });

@@ -45,7 +45,8 @@ const VARIANT_STYLES = {
   outline: {
     disabled: `cursor-not-allowed border-disabled bg-surface-disabled text-content-disabled`,
     default: {
-      primary: `border-content-link text-content-link hover:border-action-primary-hover hover:text-content-link active:bg-selection-background active:border-action-primary-active active:text-content-on-brand`,      secondary: `border-border-strong text-content-primary hover:text-content-secondary active:bg-surface-muted active:text-content-muted`,
+      primary: `versi-button-primary-outline border-content-link text-content-link hover:border-action-primary-hover hover:text-content-link active:bg-selection-background active:border-action-primary-active active:text-content-on-brand`,
+      secondary: `border-border-strong text-content-primary hover:text-content-secondary active:bg-surface-muted active:text-content-muted`,
       danger: `border-feedback-danger-border text-feedback-danger-content hover:border-action-danger-hover hover:text-feedback-danger-content active:bg-feedback-danger-soft active:border-action-danger-active active:text-feedback-danger-content`,
       success: `border-feedback-success-border text-feedback-success-content hover:bg-feedback-success-soft active:bg-feedback-success-soft active:border-feedback-success-content`,
       warning: `border-feedback-warning-border text-feedback-warning-content hover:text-feedback-warning-content active:bg-feedback-warning-soft active:border-feedback-warning-content active:text-feedback-warning-content`,

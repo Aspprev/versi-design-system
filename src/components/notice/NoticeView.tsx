@@ -65,7 +65,7 @@ const NoticeView: React.FC<BoxProps> = ({
   });
 
   return (
-    <div className={classes} {...rest}>
+    <div className={classes} {...rest} data-versi-notice={type}>
       <div className={`flex p-3 gap-3 ${className}`}>
         {Icon && (
           <div className="flex gap-2">

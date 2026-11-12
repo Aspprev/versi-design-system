@@ -1,0 +1,176 @@
+[
+  {
+    "file": "ativar-pix-img.tsx",
+    "exported": "IllustrationAtivarPixImg",
+    "geometryHash": "126ace2ea1d0d13940cc2c0a975745b7113122b3165a96fbc9b5a68cb7d61993",
+    "paths": 39
+  },
+  {
+    "file": "completed.tsx",
+    "exported": "IllustrationCompleted",
+    "geometryHash": "d608cdbcba2e160cf20ba1863e69d43f26dbe22ca712b0a4f61d521a37a08d00",
+    "paths": 88
+  },
+  {
+    "file": "contribuicao-adicional-img.tsx",
+    "exported": "IllustrationContribuicaoAdicionalImg",
+    "geometryHash": "0a3dfa4b8be3270bc8cd870ef8c38f3f8c80d1d728aa52a530e25b079d44d0e3",
+    "paths": 139
+  },
+  {
+    "file": "documentos-emprestimo-img.tsx",
+    "exported": "IllustrationDocumentosEmprestimoImg",
+    "geometryHash": "efcfa875f4f8099f98cdc19dd16947ce088dee09df98f6b75c340d8214a16d27",
+    "paths": 52
+  },
+  {
+    "file": "done.tsx",
+    "exported": "IllustrationDone",
+    "geometryHash": "f5eb29e393dcf18d85cb50a54df24801a02a3844708567e9b5186a8d977d59d9",
+    "paths": 102
+  },
+  {
+    "file": "email.tsx",
+    "exported": "IllustrationEmail",
+    "geometryHash": "5bff8838bdfe5be34f895f8e534aec6549089609de183048c28f61bbae90afb7",
+    "paths": 17
+  },
+  {
+    "file": "error.tsx",
+    "exported": "IllustrationError",
+    "geometryHash": "f300d6565d00c4555826008cff0316b6357e7696e9267b2f864d18297ef1f0b3",
+    "paths": 39
+  },
+  {
+    "file": "fale-conosco.tsx",
+    "exported": "IllustrationFaleConosco",
+    "geometryHash": "8cc8ae1119a964397ac060c4c412c4304bed2300bc3db99c264ee776d2231fb8",
+    "paths": 88
+  },
+  {
+    "file": "get-code.tsx",
+    "exported": "IllustrationGetCode",
+    "geometryHash": "3f45a478dc6e7db068692ecfdc0e8d8d6f5828ae7c4751e92db8cb0732de17b4",
+    "paths": 60
+  },
+  {
+    "file": "imposto-renda-img.tsx",
+    "exported": "IllustrationImpostoRendaImg",
+    "geometryHash": "a51c9b95dca5d9e3db923c4da2f4dae1fc6a854c60a886253d6dc64ece4f1058",
+    "paths": 128
+  },
+  {
+    "file": "investment.tsx",
+    "exported": "IllustrationInvestment",
+    "geometryHash": "9639bd8d7579129f73c41ced69ea2e26fa04a2cc45b8db8d2413d83d6e53a9ba",
+    "paths": 128
+  },
+  {
+    "file": "login-hmg-img.tsx",
+    "exported": "IllustrationLoginHmgImg",
+    "geometryHash": "3cc801bbcbe766d0d584a913db36cab6a03076ed598f76272e109ecfbd806cb8",
+    "paths": 37
+  },
+  {
+    "file": "login-prod-img.tsx",
+    "exported": "IllustrationLoginProdImg",
+    "geometryHash": "e82382170a9f3829331f5937693fd9848ee0f2a9a4acb22aea4f21fc89897626",
+    "paths": 63
+  },
+  {
+    "file": "login_admin-img.tsx",
+    "exported": "IllustrationLoginAdminImg",
+    "geometryHash": "c340a0d66b8b5b10c8abbf8fab37ae35ee8cb368eac7b9a0693f976513ef8e32",
+    "paths": 37
+  },
+  {
+    "file": "mobile-inbox.tsx",
+    "exported": "IllustrationMobileInbox",
+    "geometryHash": "8a7bc7c03c0d3c687af777c1471bcca62d5411dab694ab7e7aaf817b6fb7aeb2",
+    "paths": 63
+  },
+  {
+    "file": "not-found-image.tsx",
+    "exported": "IllustrationNotFoundImage",
+    "geometryHash": "36bd2ba09ddc93ee4dcdee90f1a98c824f77dbc7f0dffa5f01be5110955cd7da",
+    "paths": 103
+  },
+  {
+    "file": "password-recovery.tsx",
+    "exported": "IllustrationPasswordRecovery",
+    "geometryHash": "0c0afb2d226bbd290620af2fd1112a83c884b82bc69ba2b26226949d5dfca799",
+    "paths": 60
+  },
+  {
+    "file": "pesquisa-satisfacao.tsx",
+    "exported": "IllustrationPesquisaSatisfacao",
+    "geometryHash": "b8b60ca743cc1756b4919b30a5009ad895ee385840e0c82ecc5b2ef8ba56fecb",
+    "paths": 68
+  },
+  {
+    "file": "piggy-bank.tsx",
+    "exported": "IllustrationPiggyBank",
+    "geometryHash": "3b894d12bd522669391da16cf830edbba14ec867cffc0d4a2d1cca9b263c96bd",
+    "paths": 105
+  },
+  {
+    "file": "pix-recorrente-img.tsx",
+    "exported": "IllustrationPixRecorrenteImg",
+    "geometryHash": "aecddb2d3e591b325dd453f3406eaef1c8c04d05c393ba9693f7560429aebe4e",
+    "paths": 127
+  },
+  {
+    "file": "portal-banner.tsx",
+    "exported": "IllustrationPortalBanner",
+    "geometryHash": "d1ca4f0dd8c505f1c3df8322bd4b735561ecae97b357e2bc5335f6010a16c642",
+    "paths": 70
+  },
+  {
+    "file": "search.tsx",
+    "exported": "IllustrationSearch",
+    "geometryHash": "feb17f7dee98a2471d9383688e2c2d4033910a6233446c29aef984f6fdf65a73",
+    "paths": 35
+  },
+  {
+    "file": "selecting-team.tsx",
+    "exported": "IllustrationSelectingTeam",
+    "geometryHash": "63958a348881cc3f0feac5fba998197f2919b9395e243254f8d8f6c23f5a9036",
+    "paths": 158
+  },
+  {
+    "file": "testemunha.tsx",
+    "exported": "IllustrationTestemunha",
+    "geometryHash": "d43d06d0c22a343657a4459a03403855ec2621c501a13004caa152c639c510cc",
+    "paths": 85
+  },
+  {
+    "file": "unable-image.tsx",
+    "exported": "IllustrationUnableImage",
+    "geometryHash": "72b1b95c4e64cf4ae39ef30f4470f4239c19a1957c0d5c3348e43980e32e4b7c",
+    "paths": 53
+  },
+  {
+    "file": "unauthorized-image.tsx",
+    "exported": "IllustrationUnauthorizedImage",
+    "geometryHash": "3cef2e289b5fe553410da3a7fd5a54e4cb87695dcdf0d6108381fa1068ba2841",
+    "paths": 35
+  },
+  {
+    "file": "unauthorizedImage.tsx",
+    "exported": "IllustrationUnauthorizedImageAlternate",
+    "geometryHash": "b49da1dd21bc8d13dd8235675f196f7a33c3ee06bc432f0c00db8ffc4a66d1ee",
+    "paths": 35
+  },
+  {
+    "file": "under-development-image.tsx",
+    "exported": "IllustrationUnderDevelopmentImage",
+    "geometryHash": "fcd86102b1c805d2690db1409dc2349900b72eb0c0227bb09653f88c9533e7df",
+    "paths": 37
+  },
+  {
+    "file": "vantagens.tsx",
+    "exported": "IllustrationVantagens",
+    "geometryHash": "ed941cd75dcc2d1fc8c5f629ff795b3643aab3eec8c3f5459f035e14ab0cbf90",
+    "paths": 63
+  }
+]

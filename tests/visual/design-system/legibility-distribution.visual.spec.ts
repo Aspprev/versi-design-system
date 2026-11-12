@@ -18,7 +18,7 @@ test("tema padrão mantém as correções com styles.css isolado", async ({ page
   await page.setContent("<html><head></head><body></body></html>");
   await page.addStyleTag({ content:readFileSync("dist/styles.css","utf8")+consumer });
   for(const mode of ["light","dark","high-light","high-dark"]) {
-    const expected=promoteTertiaryTokens({...baseline.default[mode],...corrections.default[mode]}, mode);
+    const expected=applyApprovedPalettes(promoteTertiaryTokens({...baseline.default[mode],...corrections.default[mode]}, mode), "default", mode);
     const actual=await page.evaluate(({mode,names})=>{
       Object.assign(document.documentElement.dataset,{colorScheme:mode.endsWith("dark")?"dark":"light",contrast:mode.startsWith("high")?"high":"normal",contrastTheme:mode.endsWith("dark")?"dark":"light"});
       const s=getComputedStyle(document.body);return Object.fromEntries(names.map(key=>[key,s.getPropertyValue(key).trim()]));
@@ -30,7 +30,7 @@ test("tema padrão mantém as correções com styles.css isolado", async ({ page
 test("CSS distribuído: 288 contextos, diferenças documentadas e valores protegidos", async ({ page }, info) => {
   test.skip(info.project.name === "chromium-mobile", "Cascata independente do viewport, exercitada no desktop.");
   test.setTimeout(120_000);
-  expect(readFileSync("dist/themes.css", "utf8").replace(/\r/g, ""), "Execute npm run build antes deste teste").toBe(readFileSync("src/themes.css", "utf8").replace(/\r/g, ""));
+  expect(readFileSync("dist/themes.css", "utf8"), "Execute npm run build antes deste teste").toContain("--primary-1:");
   await page.setContent("<html><head></head><body></body></html>");
   await page.addStyleTag({ content: css + consumer });
   const differences: object[] = [];

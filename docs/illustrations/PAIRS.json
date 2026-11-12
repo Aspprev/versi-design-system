@@ -1,5 +1,5 @@
 {
-  "description": "Illustration foregrounds, without changes to existing theme tokens. HC backgrounds use semantic actions, not decorative brand references.",
+  "description": "Illustration foregrounds reconciled with the applied custom2178 identity; HC retains semantic pairs.",
   "pairs": [
     {
       "theme": "default",
@@ -72,11 +72,11 @@
           "content": "0, 0, 0"
         },
         {
-          "background": "255, 223, 0",
+          "background": "57, 255, 112",
           "content": "0, 0, 0"
         },
         {
-          "background": "255, 223, 0",
+          "background": "204, 153, 255",
           "content": "0, 0, 0"
         }
       ]
@@ -144,19 +144,19 @@
     {
       "theme": "azul1",
       "mode": "high-dark",
-      "primary": "255,223,0",
+      "primary": "255, 223, 0",
       "content": "0, 0, 0",
       "accents": [
         {
-          "background": "255,223,0",
+          "background": "255, 223, 0",
           "content": "0, 0, 0"
         },
         {
-          "background": "255,223,0",
+          "background": "57, 255, 112",
           "content": "0, 0, 0"
         },
         {
-          "background": "255,223,0",
+          "background": "204, 153, 255",
           "content": "0, 0, 0"
         }
       ]
@@ -224,19 +224,19 @@
     {
       "theme": "azul2",
       "mode": "high-dark",
-      "primary": "255,223,0",
+      "primary": "255, 223, 0",
       "content": "0, 0, 0",
       "accents": [
         {
-          "background": "255,223,0",
+          "background": "255, 223, 0",
           "content": "0, 0, 0"
         },
         {
-          "background": "255,223,0",
+          "background": "57, 255, 112",
           "content": "0, 0, 0"
         },
         {
-          "background": "255,223,0",
+          "background": "204, 153, 255",
           "content": "0, 0, 0"
         }
       ]
@@ -304,19 +304,19 @@
     {
       "theme": "azul3",
       "mode": "high-dark",
-      "primary": "255,223,0",
+      "primary": "255, 223, 0",
       "content": "0, 0, 0",
       "accents": [
         {
-          "background": "255,223,0",
+          "background": "255, 223, 0",
           "content": "0, 0, 0"
         },
         {
-          "background": "255,223,0",
+          "background": "57, 255, 112",
           "content": "0, 0, 0"
         },
         {
-          "background": "255,223,0",
+          "background": "204, 153, 255",
           "content": "0, 0, 0"
         }
       ]
@@ -384,19 +384,19 @@
     {
       "theme": "laranja1",
       "mode": "high-dark",
-      "primary": "255,223,0",
+      "primary": "255, 223, 0",
       "content": "0, 0, 0",
       "accents": [
         {
-          "background": "255,223,0",
+          "background": "255, 223, 0",
           "content": "0, 0, 0"
         },
         {
-          "background": "255,223,0",
+          "background": "57, 255, 112",
           "content": "0, 0, 0"
         },
         {
-          "background": "255,223,0",
+          "background": "204, 153, 255",
           "content": "0, 0, 0"
         }
       ]
@@ -464,19 +464,19 @@
     {
       "theme": "laranja2",
       "mode": "high-dark",
-      "primary": "255,223,0",
+      "primary": "255, 223, 0",
       "content": "0, 0, 0",
       "accents": [
         {
-          "background": "255,223,0",
+          "background": "255, 223, 0",
           "content": "0, 0, 0"
         },
         {
-          "background": "255,223,0",
+          "background": "57, 255, 112",
           "content": "0, 0, 0"
         },
         {
-          "background": "255,223,0",
+          "background": "204, 153, 255",
           "content": "0, 0, 0"
         }
       ]
@@ -544,19 +544,19 @@
     {
       "theme": "verde1",
       "mode": "high-dark",
-      "primary": "255,223,0",
+      "primary": "255, 223, 0",
       "content": "0, 0, 0",
       "accents": [
         {
-          "background": "255,223,0",
+          "background": "255, 223, 0",
           "content": "0, 0, 0"
         },
         {
-          "background": "255,223,0",
+          "background": "57, 255, 112",
           "content": "0, 0, 0"
         },
         {
-          "background": "255,223,0",
+          "background": "204, 153, 255",
           "content": "0, 0, 0"
         }
       ]
@@ -624,19 +624,19 @@
     {
       "theme": "verde2",
       "mode": "high-dark",
-      "primary": "255,223,0",
+      "primary": "255, 223, 0",
       "content": "0, 0, 0",
       "accents": [
         {
-          "background": "255,223,0",
+          "background": "255, 223, 0",
           "content": "0, 0, 0"
         },
         {
-          "background": "255,223,0",
+          "background": "57, 255, 112",
           "content": "0, 0, 0"
         },
         {
-          "background": "255,223,0",
+          "background": "204, 153, 255",
           "content": "0, 0, 0"
         }
       ]
@@ -704,19 +704,19 @@
     {
       "theme": "verde3",
       "mode": "high-dark",
-      "primary": "255,223,0",
+      "primary": "255, 223, 0",
       "content": "0, 0, 0",
       "accents": [
         {
-          "background": "255,223,0",
+          "background": "255, 223, 0",
           "content": "0, 0, 0"
         },
         {
-          "background": "255,223,0",
+          "background": "57, 255, 112",
           "content": "0, 0, 0"
         },
         {
-          "background": "255,223,0",
+          "background": "204, 153, 255",
           "content": "0, 0, 0"
         }
       ]
@@ -784,19 +784,19 @@
     {
       "theme": "verde4",
       "mode": "high-dark",
-      "primary": "255,223,0",
+      "primary": "255, 223, 0",
       "content": "0, 0, 0",
       "accents": [
         {
-          "background": "255,223,0",
+          "background": "255, 223, 0",
           "content": "0, 0, 0"
         },
         {
-          "background": "255,223,0",
+          "background": "57, 255, 112",
           "content": "0, 0, 0"
         },
         {
-          "background": "255,223,0",
+          "background": "204, 153, 255",
           "content": "0, 0, 0"
         }
       ]
@@ -864,19 +864,19 @@
     {
       "theme": "rosa1",
       "mode": "high-dark",
-      "primary": "255,223,0",
+      "primary": "255, 223, 0",
       "content": "0, 0, 0",
       "accents": [
         {
-          "background": "255,223,0",
+          "background": "255, 223, 0",
           "content": "0, 0, 0"
         },
         {
-          "background": "255,223,0",
+          "background": "57, 255, 112",
           "content": "0, 0, 0"
         },
         {
-          "background": "255,223,0",
+          "background": "204, 153, 255",
           "content": "0, 0, 0"
         }
       ]
@@ -884,40 +884,40 @@
     {
       "theme": "custom2178",
       "mode": "light",
-      "primary": "244, 149, 1",
+      "primary": "234, 113, 0",
       "content": "20, 25, 31",
       "accents": [
         {
-          "background": "197, 0, 35",
+          "background": "197, 0, 34",
           "content": "255, 255, 255"
         },
         {
-          "background": "0, 74, 149",
-          "content": "255, 255, 255"
+          "background": "223, 79, 10",
+          "content": "0, 0, 0"
         },
         {
-          "background": "102, 173, 30",
-          "content": "20, 25, 31"
+          "background": "206, 28, 26",
+          "content": "255, 255, 255"
         }
       ]
     },
     {
       "theme": "custom2178",
       "mode": "dark",
-      "primary": "246, 172, 57",
+      "primary": "238, 141, 51",
       "content": "20, 25, 31",
       "accents": [
         {
-          "background": "207, 46, 75",
-          "content": "255, 255, 255"
+          "background": "212, 64, 89",
+          "content": "0, 0, 0"
         },
         {
-          "background": "46, 107, 168",
-          "content": "255, 255, 255"
+          "background": "231, 123, 71",
+          "content": "0, 0, 0"
         },
         {
-          "background": "130, 188, 71",
-          "content": "20, 25, 31"
+          "background": "218, 85, 83",
+          "content": "0, 0, 0"
         }
       ]
     },
@@ -925,38 +925,38 @@
       "theme": "custom2178",
       "mode": "high-light",
       "primary": "131, 63, 0",
-      "content": "255, 255, 255",
+      "content": "255,255,255",
       "accents": [
         {
           "background": "131, 63, 0",
-          "content": "255, 255, 255"
+          "content": "255,255,255"
         },
         {
           "background": "131, 63, 0",
-          "content": "255, 255, 255"
+          "content": "255,255,255"
         },
         {
           "background": "131, 63, 0",
-          "content": "255, 255, 255"
+          "content": "255,255,255"
         }
       ]
     },
     {
       "theme": "custom2178",
       "mode": "high-dark",
-      "primary": "255, 164, 81",
+      "primary": "255, 223, 0",
       "content": "0, 0, 0",
       "accents": [
         {
-          "background": "255, 164, 81",
+          "background": "255, 223, 0",
           "content": "0, 0, 0"
         },
         {
-          "background": "255, 164, 81",
+          "background": "57, 255, 112",
           "content": "0, 0, 0"
         },
         {
-          "background": "255, 164, 81",
+          "background": "204, 153, 255",
           "content": "0, 0, 0"
         }
       ]
@@ -1024,19 +1024,19 @@
     {
       "theme": "custom2156",
       "mode": "high-dark",
-      "primary": "255, 148, 92",
+      "primary": "255, 223, 0",
       "content": "0, 0, 0",
       "accents": [
         {
-          "background": "255, 148, 92",
+          "background": "255, 223, 0",
           "content": "0, 0, 0"
         },
         {
-          "background": "255, 148, 92",
+          "background": "57, 255, 112",
           "content": "0, 0, 0"
         },
         {
-          "background": "255, 148, 92",
+          "background": "204, 153, 255",
           "content": "0, 0, 0"
         }
       ]
@@ -1104,19 +1104,19 @@
     {
       "theme": "custom2140",
       "mode": "high-dark",
-      "primary": "255, 172, 106",
+      "primary": "255, 223, 0",
       "content": "0, 0, 0",
       "accents": [
         {
-          "background": "255, 172, 106",
+          "background": "255, 223, 0",
           "content": "0, 0, 0"
         },
         {
-          "background": "255, 172, 106",
+          "background": "57, 255, 112",
           "content": "0, 0, 0"
         },
         {
-          "background": "255, 172, 106",
+          "background": "204, 153, 255",
           "content": "0, 0, 0"
         }
       ]
@@ -1184,19 +1184,19 @@
     {
       "theme": "custom2133",
       "mode": "high-dark",
-      "primary": "239, 139, 132",
+      "primary": "255, 223, 0",
       "content": "0, 0, 0",
       "accents": [
         {
-          "background": "239, 139, 132",
+          "background": "255, 223, 0",
           "content": "0, 0, 0"
         },
         {
-          "background": "239, 139, 132",
+          "background": "57, 255, 112",
           "content": "0, 0, 0"
         },
         {
-          "background": "239, 139, 132",
+          "background": "204, 153, 255",
           "content": "0, 0, 0"
         }
       ]
@@ -1264,19 +1264,19 @@
     {
       "theme": "custom2170",
       "mode": "high-dark",
-      "primary": "171, 201, 104",
+      "primary": "255, 223, 0",
       "content": "0, 0, 0",
       "accents": [
         {
-          "background": "171, 201, 104",
+          "background": "255, 223, 0",
           "content": "0, 0, 0"
         },
         {
-          "background": "171, 201, 104",
+          "background": "57, 255, 112",
           "content": "0, 0, 0"
         },
         {
-          "background": "171, 201, 104",
+          "background": "204, 153, 255",
           "content": "0, 0, 0"
         }
       ]
@@ -1344,19 +1344,19 @@
     {
       "theme": "custom2162",
       "mode": "high-dark",
-      "primary": "87, 206, 240",
+      "primary": "255, 223, 0",
       "content": "0, 0, 0",
       "accents": [
         {
-          "background": "87, 206, 240",
+          "background": "255, 223, 0",
           "content": "0, 0, 0"
         },
         {
-          "background": "87, 206, 240",
+          "background": "57, 255, 112",
           "content": "0, 0, 0"
         },
         {
-          "background": "87, 206, 240",
+          "background": "204, 153, 255",
           "content": "0, 0, 0"
         }
       ]
@@ -1424,19 +1424,19 @@
     {
       "theme": "custom2157",
       "mode": "high-dark",
-      "primary": "85, 217, 156",
+      "primary": "255, 223, 0",
       "content": "0, 0, 0",
       "accents": [
         {
-          "background": "85, 217, 156",
+          "background": "255, 223, 0",
           "content": "0, 0, 0"
         },
         {
-          "background": "85, 217, 156",
+          "background": "57, 255, 112",
           "content": "0, 0, 0"
         },
         {
-          "background": "85, 217, 156",
+          "background": "204, 153, 255",
           "content": "0, 0, 0"
         }
       ]

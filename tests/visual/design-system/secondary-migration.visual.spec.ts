@@ -43,7 +43,7 @@ for (const theme of DESIGN_SYSTEM_THEMES) test(`secondary: ${theme}, componentes
           scale: [1, 2, 3, 4, 5].map(i => style.getPropertyValue(`--secondary-${i}`).trim()) };
       });
       for (const bg of colors.surfaces) expect(contrast(colors.track, bg), `${theme}/off-track`).toBeGreaterThanOrEqual(3);
-      for (const color of colors.scale) expect(new Set(color.split(",").map(c => Math.round(Number(c) / 32))).size).toBeLessThanOrEqual(2);
+      expect(colors.scale.map(color => color.replace(/\s/g, ""))).toEqual(["255,223,0", "255,223,0", "255,223,0", "102,89,0", "40,35,0"]);
     }
     for (const state of ["default", "hover", "active"] as const) {
       if (state === "default") await page.mouse.move(0, 0);

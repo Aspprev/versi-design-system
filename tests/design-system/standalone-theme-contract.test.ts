@@ -20,10 +20,10 @@ const themeLabStory = readFileSync(
 );
 
 describe("Design System theme contract", () => {
-  it("mantem placeholders do alto contraste escuro proximos ao minimo AA de 4.5:1", () => {
+  it("mantem placeholders da política universal de alto contraste escuro acima de 7:1", () => {
     const registry = JSON.parse(readFileSync(resolve(process.cwd(), "tokens/design-system.tokens.json"), "utf8"));
     const rule = registry.tokens.find((entry: { selector: string; declarations: { property: string; value: string }[] }) =>
-      entry.selector.startsWith('html[data-contrast="high"][data-contrast-theme="dark"]') &&
+      entry.selector.startsWith('html[data-color-scheme="dark"][data-contrast="high"]') &&
       entry.declarations.some((declaration) => declaration.property === "--field-placeholder"),
     );
     const declarations = new Map<string, string>(rule.declarations.map((entry: { property: string; value: string }) => [entry.property, entry.value]));
@@ -43,8 +43,7 @@ describe("Design System theme contract", () => {
       ["--field-placeholder-disabled", "--field-surface-disabled"],
     ]) {
       const ratio = (luminance(resolveColor(foreground)) + 0.05) / (luminance(resolveColor(background)) + 0.05);
-      expect(ratio).toBeGreaterThanOrEqual(4.5);
-      expect(ratio).toBeLessThan(4.7);
+      expect(ratio).toBeGreaterThanOrEqual(7);
     }
   });
 

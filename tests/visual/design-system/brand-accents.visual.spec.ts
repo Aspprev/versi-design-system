@@ -1,11 +1,13 @@
 import { readFileSync } from "node:fs";
 import { expect, test, type Page } from "@playwright/test";
 import { readLegibility, settle } from "./legibility.helpers";
+import { applyApprovedPalettes } from "../../helpers/theme-role-migration";
 import { contrastRatio } from "../../helpers/contrast";
 
 const generics = JSON.parse(readFileSync("docs/brand-accents/GENERICOS.json", "utf8")).themes.map((theme: { id: string }) => theme.id) as string[];
 const clients = ["custom2178", "custom2156", "custom2140", "custom2133", "custom2170", "custom2162", "custom2157"];
 const pairs = JSON.parse(readFileSync("docs/brand-accents/PAIRS.json", "utf8")).pairs;
+const highDarkPolicy = JSON.parse(readFileSync("docs/high-contrast-dark/policy.json", "utf8")).tokens as Record<string, string>;
 const normalize = (value: string) => value.replace(/\s/g, "");
 const colors = (page: Page): Promise<Record<string, string>> => page.locator('.brand-example-charts .apexcharts-line-series .apexcharts-series[seriesName]').evaluateAll(nodes => Object.fromEntries(nodes.map(node => [node.getAttribute("seriesName"), getComputedStyle(node.querySelector(".apexcharts-line")!).stroke])));
 async function mode(page: Page, theme: string, value: string) {
@@ -33,8 +35,8 @@ for (const theme of [...clients, ...generics]) test(`${theme}: brand details, st
       return Object.fromEntries([1, 2, 3].flatMap(n => ["", "-soft", "-content", "-border"].map(suffix => `--brand-accent-${n}${suffix}`).concat(`--chart-brand-accent-${n}`)).map(key => [key, s.getPropertyValue(key).trim()]));
     });
     for (const pair of pairs.filter((row: { theme: string; mode: string }) => row.theme === theme && row.mode === value)) {
-      for (const [suffix, name] of [["", "reference"], ["-soft", "soft"], ["-content", "content"], ["-border", "border"]]) expect(normalize(measured[`--brand-accent-${pair.accent}${suffix}`])).toBe(normalize(pair[name]));
-      expect(normalize(measured[`--chart-brand-accent-${pair.accent}`])).toBe(normalize(pair.chart));
+      const expected = applyApprovedPalettes(Object.fromEntries([["", "reference"], ["-soft", "soft"], ["-content", "content"], ["-border", "border"]].map(([suffix, name]) => [`--brand-accent-${pair.accent}${suffix}`, pair[name]]).concat([[`--chart-brand-accent-${pair.accent}`, pair.chart]])), theme, value);
+      for (const [key, color] of Object.entries(expected)) expect(normalize(measured[key]), `${theme}/${value}/${key}`).toBe(normalize(color));
     }
     const content = await readLegibility(page, ".brand-accent-examples");
     reports.push({ theme, mode: value, measured, content });
@@ -87,7 +89,7 @@ test("brand donut selection, custom colors, tooltip and legacy fallback", async 
   await mode(page, "azul1", "high-dark");
   const custom = await colors(page);
   expect(custom["Contribuições"].match(/[\d.]+/g)!.slice(0, 3).join(",")).not.toBe("114,82,162");
-  const fallback = await page.locator(".brand-icon-example").first().evaluate(el => ({ background: getComputedStyle(el).backgroundColor, expected: getComputedStyle(document.body).getPropertyValue("--surface-muted").trim() }));
+  const fallback = await page.locator(".brand-icon-example").first().evaluate(el => ({ background: getComputedStyle(el).backgroundColor, expected: getComputedStyle(document.body).getPropertyValue("--brand-accent-1-soft").trim() }));
   expect(fallback.background.match(/[\d.]+/g)!.slice(0, 3).join(",")).toBe(normalize(fallback.expected));
   const slice = donut.locator(".apexcharts-pie-series path").first();
   await slice.scrollIntoViewIfNeeded();
@@ -115,11 +117,11 @@ test("brand details responsive layout", async ({ page }) => {
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
 
-test("generic brand pairs preserve chart roles and high contrast neutrals in every host", async ({ page }, info) => {
+test("generic brand pairs preserve chart roles and approved high contrast policy in every host", async ({ page }, info) => {
   test.skip(info.project.name === "chromium-mobile", "Token cascade independent of viewport.");
   await page.setContent("<html><body></body></html>");
   await page.addStyleTag({ content: readFileSync("dist/styles.css", "utf8") + readFileSync("dist/themes.css", "utf8") });
-  const failures = await page.evaluate(() => {
+  const failures = await page.evaluate(policy => {
     const failures: string[] = [];
     for (const theme of ["default", "azul1", "azul2", "azul3", "laranja1", "laranja2", "verde1", "verde2", "verde3", "verde4", "rosa1"]) for (const mode of ["light", "dark", "high-light", "high-dark"]) for (const host of ["html", "body"]) for (const identity of ["class", "attribute"]) {
       for (const el of [document.documentElement, document.body]) { el.className = ""; el.removeAttribute("data-ds-theme"); }
@@ -128,11 +130,11 @@ test("generic brand pairs preserve chart roles and high contrast neutrals in eve
       if (identity === "class") el.className = theme; else el.dataset.dsTheme = theme;
       const style = getComputedStyle(document.body);
       for (let n = 1; n <= 3; n++) for (const [role, fallback] of [[`--brand-accent-${n}-content`, "--content-primary"], [`--chart-brand-accent-${n}`, `--chart-${n}`], ...(mode.startsWith("high") ? [[`--brand-accent-${n}-soft`, "--surface-muted"], [`--brand-accent-${n}-border`, "--border-default"]] : [])]) {
-        if (style.getPropertyValue(role).replace(/\s/g, "") !== style.getPropertyValue(fallback).replace(/\s/g, "")) failures.push(`${theme}/${mode}/${host}/${identity}: ${role}`);
+        if (style.getPropertyValue(role).replace(/\s/g, "") !== (mode === "high-dark" ? policy[role] : style.getPropertyValue(fallback)).replace(/\s/g, "")) failures.push(`${theme}/${mode}/${host}/${identity}: ${role}`);
       }
     }
     return failures;
-  });
+  }, highDarkPolicy);
   expect(failures).toEqual([]);
 });
 
@@ -149,10 +151,10 @@ test("implicit default and explicit custom identities keep their own brand accen
       const s = getComputedStyle(document.body);
       return Object.fromEntries([1, 2, 3].map(n => [`--brand-accent-${n}`, s.getPropertyValue(`--brand-accent-${n}`).replace(/\s/g, "")]));
     }, value);
-    expect(actual).toEqual(Object.fromEntries(Object.entries(expected as Record<string, string>).map(([key, value]) => [key, normalize(value)])));
+    expect(actual).toEqual(Object.fromEntries(Object.entries(applyApprovedPalettes(expected as Record<string, string>, "default", value)).map(([key, value]) => [key, normalize(value)])));
   }
   const css = readFileSync("dist/themes.css", "utf8");
-  expect(css).toContain('data-ds-theme="custom2178"');
-  expect(css).toContain('data-ds-theme="custom2140"');
+  expect(css).toMatch(/\[data-ds-theme="?custom2178"?\]/);
+  expect(css).toMatch(/\[data-ds-theme="?custom2140"?\]/);
   // The comprehensive 288-context contract additionally protects all custom colors.
 });

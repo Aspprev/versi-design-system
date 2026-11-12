@@ -72,9 +72,12 @@ function splitDeclarations(body) {
       const declaration = body.slice(start, index).trim();
       const separator = declaration.indexOf(":");
       if (separator > 0) {
+        const value = declaration.slice(separator + 1).trim();
+        const important = /\s*!important$/i.test(value);
         declarations.push({
           property: declaration.slice(0, separator).trim(),
-          value: declaration.slice(separator + 1).trim(),
+          value: value.replace(/\s*!important$/i, ""),
+          ...(important ? { important: true } : {}),
         });
       }
       start = index + 1;
@@ -124,7 +127,7 @@ function renderRules(rules) {
     .map(
       ({ selector, declarations }) =>
         `  ${selector} {\n${declarations
-          .map(({ property, value }) => `    ${property}: ${value};`)
+          .map(({ property, value, important }) => `    ${property}: ${value}${important ? " !important" : ""};`)
           .join("\n")}\n  }`,
     )
     .join("\n\n");

@@ -42,9 +42,9 @@ function IllustrationContract() {
     {(["page", "card", "muted"] as const).map(surface => <section key={surface} className="illustration-surface" data-surface={surface} style={{ backgroundColor: `rgb(var(--surface-${surface === "card" ? "card-semantic" : surface}))` }}>
       <h2>Acentos sobre {surface}</h2><div className="illustration-samples">{([1, 2, 3] as const).flatMap(accent => [false, true].map(soft => <AccentSample key={`${accent}-${soft}`} accent={accent} soft={soft} />))}</div>
       <svg className="versi-illustration" width="330" height="44" role="img" aria-label="Detalhes informativos sobre a superfície">
-        <text data-informative="text" data-illustration-role="ink" x="2" y="27" fontSize="16">Detalhes e contornos</text>
-        <path data-informative="symbol" data-illustration-role="detail" d={CHECK} transform="translate(215 0)" />
-        <path data-informative="symbol" data-illustration-role="muted" d={CHECK} transform="translate(260 0)" />
+        <text data-informative="text" data-illustration-informative data-illustration-role="ink" x="2" y="27" fontSize="16">Detalhes e contornos</text>
+        <path data-informative="symbol" data-illustration-informative data-illustration-role="detail" d={CHECK} transform="translate(215 0)" />
+        <path data-informative="symbol" data-illustration-informative data-illustration-role="muted" d={CHECK} transform="translate(260 0)" />
         <path data-informative="stroke" data-illustration-stroke="outline" fill="none" strokeWidth="2" d="M310 10v25" />
       </svg>
     </section>)}
@@ -55,7 +55,7 @@ function IllustrationContract() {
       <text fill="#191C1F" x="20" y="40" fontSize="16">Papéis existentes</text>
       <path fill="#455A64" d="M20 55h140v4H20z" />
       <g data-pair="legacy-primary"><rect data-pair-background x="200" y="15" width="70" height="65" fill="var(--illustration-accent)" /><path data-pair-symbol data-illustration-on-primary="true" data-brand-accent-check="true" fill="#fff" d={CHECK} transform="translate(211 28)" /></g>
-      <g data-pair="legacy-success"><rect data-pair-background data-illustration-success="true" data-brand-accent="3" fill="#006E2F" x="280" y="15" width="60" height="65" /><path data-pair-symbol fill="#fff" d={CHECK} transform="translate(288 28)" /></g>
+      <g data-pair="legacy-success"><rect data-pair-background data-illustration-success="true" data-brand-accent="3" fill="#006E2F" x="280" y="15" width="60" height="65" /><path data-pair-symbol data-illustration-on-success fill="#fff" d={CHECK} transform="translate(288 28)" /></g>
       <circle data-narrative="skin" fill="#FFBE9D" cx="382" cy="35" r="15" /><path data-narrative="hair" fill="#783D19" d="M367 23h30v7h-30z" />
     </svg><p>A classe portal-illustration, os atributos existentes, as cores de pele e cabelo e os fills narrativos continuam aceitos. Letras e checks novos devem compartilhar um grupo com o fundo correspondente.</p></section>
     <section><h2>Uso explícito</h2><pre><code>{`<svg className="versi-illustration" role="img" aria-label="Documento confirmado">

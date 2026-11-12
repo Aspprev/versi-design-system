@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { expect, test, type Locator } from "@playwright/test";
 import { CLIENT_THEMES } from "../../../src/theme-presets";
 
-import { promoteTertiaryTokens } from "../../helpers/theme-role-migration";
+import { applyApprovedPalettes, promoteTertiaryTokens } from "../../helpers/theme-role-migration";
 
 const css = readFileSync("src/tokens.css", "utf8") + "\n" + readFileSync("src/themes.css", "utf8");
 const modes = ["light", "dark", "high-light", "high-dark"] as const;
@@ -12,7 +12,7 @@ const reference = (id: string) => {
   // Identity snapshots remain immutable. Documented functional fixes take
   // precedence so a stale exported status cannot reintroduce a known defect.
   const corrections = JSON.parse(readFileSync("docs/correcao-legibilidade/AJUSTES-FUNCIONAIS.json", "utf8"));
-  for (const mode of modes) proposal.variants[mode] = promoteTertiaryTokens({ ...proposal.variants[mode], ...corrections.overrides[id]?.[mode] }, mode);
+  for (const mode of modes) proposal.variants[mode] = applyApprovedPalettes(promoteTertiaryTokens({ ...proposal.variants[mode], ...corrections.overrides[id]?.[mode] }, mode), id, mode);
   return proposal;
 };
 const normalize = (values: Record<string, string>) => Object.fromEntries(Object.entries(values).map(([key, value]) => [key, value.replace(/\s/g, "")]));
@@ -145,7 +145,7 @@ test("gráficos já montados atualizam cores sem remontar a página", async ({ p
   const before = await series.getAttribute("stroke");
   await page.evaluate(() => { document.documentElement.dataset.dsTheme = "custom2162"; });
   await expect.poll(() => series.getAttribute("stroke")).not.toBe(before);
-  const expected = reference("custom2162").variants.dark["--chart-1"].replace(/\s/g, "");
+  const expected = reference("custom2162").variants.dark["--chart-donut-1"].replace(/\s/g, "");
   await expect.poll(() => page.locator(".apexcharts-pie-series path").first().getAttribute("fill").then(value => value?.replace(/\s/g, ""))).toBe(`rgba(${expected},1)`);
 });
 
