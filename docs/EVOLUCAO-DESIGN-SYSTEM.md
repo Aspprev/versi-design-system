@@ -1,5 +1,13 @@
 # Evolução do Design System
 
+## 2026-11-12 — preparação da 0.8.0: temas, gráficos e ilustrações
+
+Reconciliados os 18 temas com os ajustes finais do portal e adicionados 29 componentes SVG opcionais, com imports individuais e tematização semântica. Paletas circulares são centralizadas com suavização única de 22% nos modos comuns. A política universal de escuro + alto contraste substitui as paletas anteriores desse modo, com ações amarelas, foreground preto, status próprios e gráficos vivos. Os outros três modos foram protegidos por regressão de tokens e SVGs em 54 contextos.
+
+O par semântico secundário é `action-secondary-background`/`action-secondary-content`; a escala legada `secondary-1` foi preservada. Os guias de reconciliação e alto contraste documentam a adoção dos SVGs, a remoção da suavização local e as condições para retirar os overrides do portal. Novos contratos foram incluídos nas Actions. A versão minor acrescenta componentes sem remover APIs. Nenhum arquivo do portal foi editado; roteiro de envio e publicação em [releases/0.8.0.md](releases/0.8.0.md).
+
+A matriz de release corrigiu o foreground da primária outline pressionada nos dois modos de alto contraste: branco sobre verde no escuro e o par de seleção próprio de custom2178 no claro. Os modos comuns e as paletas permanecem preservados. As limitações de contraste anteriores dos estados comuns estão registradas nas evidências, sem ampliar a correção além desse escopo.
+
 ## 2026-10-21 — acentos genéricos e IDs públicos de produção
 
 Integrada a proposta de acentos dos onze genéricos nos quatro modos, com default implícito e apresentação opcional. Identidades customizadas passam a usar exclusivamente códigos `custom{PRD}` nos materiais públicos atuais, sem aliases anteriores. A comparação de 288 contextos preservou todos os valores dos customizados e restringiu as diferenças genéricas aos acentos permitidos. As entradas originais com identificação nominal foram preservadas localmente em área ignorada pelo Git; o histórico Git não foi reescrito. Migração coordenada do consumidor em `brand-accents/GENERICOS-E-IDENTIFICADORES.md`, sem copiar a tabela privada de correspondência. Versão mantida em 0.5.9, sem publicação ou alterações no portal.

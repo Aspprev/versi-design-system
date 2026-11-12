@@ -67,7 +67,9 @@ for (const theme of DESIGN_SYSTEM_THEMES) test(`ilustrações: ${theme}, pares c
       for (const pair of result.informational) expect(contrastRatio(pair.fg, pair.bg), `${mode}/${pair.kind}`).toBeGreaterThanOrEqual(pair.kind === "text" ? 4.5 : 3);
       expect(result.after, "Alterar acentos decorativos não altera as ilustrações em HC").toEqual(result.before);
       for (const pair of result.before.filter(pair => pair.name.startsWith("accent-"))) {
-        expect(pair.bg).toBe(pair.name.endsWith("soft") ? result.normal.expectedBackground : result.before.find(pair => pair.name === "primary")!.bg);
+        const index = Number(pair.name.split("-")[1]) - 1;
+        const supports = [["255,223,0", "102,89,0"], ["57,255,112", "22,83,43"], ["204,153,255", "68,48,87"]];
+        expect(pair.bg).toBe(mode === "high-dark" ? supports[index][pair.name.endsWith("soft") ? 1 : 0] : pair.name.endsWith("soft") ? result.normal.expectedBackground : result.before.find(pair => pair.name === "primary")!.bg);
       }
       if (mode === "high-dark") expect(result.before.find(pair => pair.name === "primary")!.symbol).toBe("0,0,0");
     } else {

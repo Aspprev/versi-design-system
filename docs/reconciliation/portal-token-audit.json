@@ -1,0 +1,1911 @@
+{
+  "installedVersion": "0.7.4",
+  "themes": [
+    "default",
+    "azul1",
+    "azul2",
+    "azul3",
+    "laranja1",
+    "laranja2",
+    "verde1",
+    "verde2",
+    "verde3",
+    "verde4",
+    "rosa1",
+    "custom2178",
+    "custom2156",
+    "custom2140",
+    "custom2133",
+    "custom2170",
+    "custom2162",
+    "custom2157"
+  ],
+  "modes": [
+    "light",
+    "dark",
+    "high-light",
+    "high-dark"
+  ],
+  "differences": {
+    "default/light": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(24,24,24)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      }
+    },
+    "default/dark": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(245,247,250)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      }
+    },
+    "default/high-light": {},
+    "default/high-dark": {},
+    "azul1/light": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(24,24,24)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      }
+    },
+    "azul1/dark": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(245,247,250)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      }
+    },
+    "azul1/high-light": {},
+    "azul1/high-dark": {},
+    "azul2/light": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(24,24,24)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      }
+    },
+    "azul2/dark": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(245,247,250)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      }
+    },
+    "azul2/high-light": {},
+    "azul2/high-dark": {},
+    "azul3/light": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(24,24,24)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      }
+    },
+    "azul3/dark": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(245,247,250)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      }
+    },
+    "azul3/high-light": {},
+    "azul3/high-dark": {},
+    "laranja1/light": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(24,24,24)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      }
+    },
+    "laranja1/dark": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(245,247,250)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      }
+    },
+    "laranja1/high-light": {},
+    "laranja1/high-dark": {},
+    "laranja2/light": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(24,24,24)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      }
+    },
+    "laranja2/dark": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(245,247,250)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      }
+    },
+    "laranja2/high-light": {},
+    "laranja2/high-dark": {},
+    "verde1/light": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(24,24,24)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      }
+    },
+    "verde1/dark": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(245,247,250)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      }
+    },
+    "verde1/high-light": {},
+    "verde1/high-dark": {},
+    "verde2/light": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(24,24,24)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      }
+    },
+    "verde2/dark": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(245,247,250)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      }
+    },
+    "verde2/high-light": {},
+    "verde2/high-dark": {},
+    "verde3/light": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(24,24,24)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      }
+    },
+    "verde3/dark": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(245,247,250)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      }
+    },
+    "verde3/high-light": {},
+    "verde3/high-dark": {},
+    "verde4/light": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(24,24,24)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      }
+    },
+    "verde4/dark": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(245,247,250)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      }
+    },
+    "verde4/high-light": {},
+    "verde4/high-dark": {},
+    "rosa1/light": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(24,24,24)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      }
+    },
+    "rosa1/dark": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(245,247,250)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      }
+    },
+    "rosa1/high-light": {},
+    "rosa1/high-dark": {},
+    "custom2178/light": {
+      "--primary-1": {
+        "ds": "244,149,1",
+        "installed": "244,149,1",
+        "portal": "234,113,0"
+      },
+      "--primary-2": {
+        "ds": "207,127,1",
+        "installed": "207,127,1",
+        "portal": "206,99,0"
+      },
+      "--primary-3": {
+        "ds": "183,112,1",
+        "installed": "183,112,1",
+        "portal": "197,115,39"
+      },
+      "--primary-4": {
+        "ds": "251,218,166",
+        "installed": "251,218,166",
+        "portal": "247,201,158"
+      },
+      "--primary-5": {
+        "ds": "254,248,237",
+        "installed": "254,248,237",
+        "portal": "253,244,235"
+      },
+      "--content-link": {
+        "ds": "168,103,1",
+        "installed": "168,103,1",
+        "portal": "182,88,0"
+      },
+      "--action-primary-background": {
+        "ds": "244,149,1",
+        "installed": "244,149,1",
+        "portal": "234,113,0"
+      },
+      "--action-primary-background-hover": {
+        "ds": "207,127,1",
+        "installed": "207,127,1",
+        "portal": "206,99,0"
+      },
+      "--action-primary-background-active": {
+        "ds": "183,112,1",
+        "installed": "183,112,1",
+        "portal": "197,115,39"
+      },
+      "--action-primary-ghost-background": {
+        "ds": "254,248,237",
+        "installed": "254,248,237",
+        "portal": "253,244,235"
+      },
+      "--selection-background": {
+        "ds": "254,248,237",
+        "installed": "254,248,237",
+        "portal": "253,244,235"
+      },
+      "--selection-background-hover": {
+        "ds": "254,248,237",
+        "installed": "254,248,237",
+        "portal": "253,244,235"
+      },
+      "--selection-border": {
+        "ds": "168,103,1",
+        "installed": "168,103,1",
+        "portal": "182,88,0"
+      },
+      "--selection-content": {
+        "ds": "163,100,1",
+        "installed": "163,100,1",
+        "portal": "182,88,0"
+      },
+      "--focus-ring": {
+        "ds": "168,103,1",
+        "installed": "168,103,1",
+        "portal": "182,88,0"
+      },
+      "--chart-1": {
+        "ds": "212,130,1",
+        "installed": "212,130,1",
+        "portal": "234,113,0"
+      },
+      "--chart-2": {
+        "ds": "197,0,35",
+        "installed": "197,0,35",
+        "portal": "197,0,34"
+      },
+      "--chart-3": {
+        "ds": "0,74,149",
+        "installed": "0,74,149",
+        "portal": "211,102,0"
+      },
+      "--chart-4": {
+        "ds": "98,166,29",
+        "installed": "98,166,29",
+        "portal": "177,0,31"
+      },
+      "--chart-5": {
+        "ds": "200,122,1",
+        "installed": "200,122,1",
+        "portal": "187,90,0"
+      },
+      "--chart-6": {
+        "ds": "162,0,29",
+        "installed": "162,0,29",
+        "portal": "158,0,27"
+      },
+      "--chart-7": {
+        "ds": "0,61,122",
+        "installed": "0,61,122",
+        "portal": "164,79,0"
+      },
+      "--chart-8": {
+        "ds": "84,142,25",
+        "installed": "84,142,25",
+        "portal": "138,0,24"
+      },
+      "--chart-9": {
+        "ds": "159,97,1",
+        "installed": "159,97,1",
+        "portal": "140,68,0"
+      },
+      "--chart-10": {
+        "ds": "128,0,23",
+        "installed": "128,0,23",
+        "portal": "118,0,20"
+      },
+      "--chart-11": {
+        "ds": "0,48,97",
+        "installed": "0,48,97",
+        "portal": "117,56,0"
+      },
+      "--chart-12": {
+        "ds": "66,112,20",
+        "installed": "66,112,20",
+        "portal": "98,0,17"
+      },
+      "--chart-donut-1": {
+        "ds": "212,130,1",
+        "installed": "212,130,1",
+        "portal": "239,148,64"
+      },
+      "--chart-donut-2": {
+        "ds": "197,0,35",
+        "installed": "197,0,35",
+        "portal": "216,82,105"
+      },
+      "--chart-donut-3": {
+        "ds": "0,74,149",
+        "installed": "0,74,149",
+        "portal": "108,214,140"
+      },
+      "--chart-donut-4": {
+        "ds": "98,166,29",
+        "installed": "98,166,29",
+        "portal": "44,132,254"
+      },
+      "--chart-donut-5": {
+        "ds": "200,122,1",
+        "installed": "200,122,1",
+        "portal": "255,193,103"
+      },
+      "--chart-donut-6": {
+        "ds": "162,0,29",
+        "installed": "162,0,29",
+        "portal": "132,97,235"
+      },
+      "--chart-donut-7": {
+        "ds": "0,61,122",
+        "installed": "0,61,122",
+        "portal": "255,111,111"
+      },
+      "--chart-donut-8": {
+        "ds": "84,142,25",
+        "installed": "84,142,25",
+        "portal": "145,224,169"
+      },
+      "--chart-donut-9": {
+        "ds": "159,97,1",
+        "installed": "159,97,1",
+        "portal": "97,163,254"
+      },
+      "--chart-donut-10": {
+        "ds": "128,0,23",
+        "installed": "128,0,23",
+        "portal": "255,208,141"
+      },
+      "--chart-donut-11": {
+        "ds": "0,48,97",
+        "installed": "0,48,97",
+        "portal": "163,136,240"
+      },
+      "--chart-donut-12": {
+        "ds": "66,112,20",
+        "installed": "66,112,20",
+        "portal": "255,147,147"
+      },
+      "--chart-balance": {
+        "ds": "212,130,1",
+        "installed": "212,130,1",
+        "portal": "234,113,0"
+      },
+      "--chart-invested": {
+        "ds": "197,0,35",
+        "installed": "197,0,35",
+        "portal": "197,0,34"
+      },
+      "--status-primary-outline-foreground": {
+        "ds": "163,100,1",
+        "installed": "163,100,1",
+        "portal": "182,88,0"
+      },
+      "--status-primary-outline-border": {
+        "ds": "163,100,1",
+        "installed": "163,100,1",
+        "portal": "182,88,0"
+      },
+      "--status-primary-soft-background": {
+        "ds": "254,248,237",
+        "installed": "254,248,237",
+        "portal": "253,244,235"
+      },
+      "--status-primary-soft-foreground": {
+        "ds": "163,100,1",
+        "installed": "163,100,1",
+        "portal": "182,88,0"
+      },
+      "--action-primary-content-active": {
+        "ds": "0,0,0",
+        "installed": "0,0,0",
+        "portal": "20,25,31"
+      },
+      "--illustration-brand-accent-2-content": {
+        "ds": "255,255,255",
+        "installed": "255,255,255",
+        "portal": "20,25,31"
+      },
+      "--illustration-brand-accent-3-content": {
+        "ds": "20,25,31",
+        "installed": "20,25,31",
+        "portal": "255,255,255"
+      },
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(24,24,24)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      },
+      "--brand-accent-1-soft": {
+        "ds": "250,232,235",
+        "installed": "250,232,235",
+        "portal": "249,230,233"
+      },
+      "--brand-accent-1-content": {
+        "ds": "197,0,35",
+        "installed": "197,0,35",
+        "portal": "197,0,34"
+      },
+      "--brand-accent-1-border": {
+        "ds": "197,0,35",
+        "installed": "197,0,35",
+        "portal": "197,0,34"
+      },
+      "--chart-brand-accent-1": {
+        "ds": "197,0,35",
+        "installed": "197,0,35",
+        "portal": "197,0,34"
+      },
+      "--brand-accent-2-soft": {
+        "ds": "232,239,245",
+        "installed": "232,239,245",
+        "portal": "252,237,230"
+      },
+      "--brand-accent-2-content": {
+        "ds": "0,74,149",
+        "installed": "0,74,149",
+        "portal": "205,73,9"
+      },
+      "--brand-accent-2-border": {
+        "ds": "0,74,149",
+        "installed": "0,74,149",
+        "portal": "223,79,10"
+      },
+      "--chart-brand-accent-2": {
+        "ds": "0,74,149",
+        "installed": "0,74,149",
+        "portal": "223,79,10"
+      },
+      "--brand-accent-3-soft": {
+        "ds": "241,248,235",
+        "installed": "241,248,235",
+        "portal": "250,232,232"
+      },
+      "--brand-accent-3-content": {
+        "ds": "74,126,22",
+        "installed": "74,126,22",
+        "portal": "206,28,26"
+      },
+      "--brand-accent-3-border": {
+        "ds": "94,159,28",
+        "installed": "94,159,28",
+        "portal": "206,28,26"
+      },
+      "--chart-brand-accent-3": {
+        "ds": "98,166,29",
+        "installed": "98,166,29",
+        "portal": "206,28,26"
+      },
+      "--brand-accent-1": {
+        "ds": "197,0,35",
+        "installed": "197,0,35",
+        "portal": "197,0,34"
+      },
+      "--brand-accent-2": {
+        "ds": "0,74,149",
+        "installed": "0,74,149",
+        "portal": "223,79,10"
+      },
+      "--brand-accent-3": {
+        "ds": "102,173,30",
+        "installed": "102,173,30",
+        "portal": "206,28,26"
+      },
+      "--focus-indicator-color": {
+        "ds": "rgb(168,103,1)",
+        "installed": "rgb(168,103,1)",
+        "portal": "rgb(182,88,0)"
+      }
+    },
+    "custom2178/dark": {
+      "--primary-1": {
+        "ds": "246,172,57",
+        "installed": "246,172,57",
+        "portal": "238,141,51"
+      },
+      "--primary-2": {
+        "ds": "248,186,90",
+        "installed": "248,186,90",
+        "portal": "240,155,75"
+      },
+      "--primary-3": {
+        "ds": "244,149,1",
+        "installed": "244,149,1",
+        "portal": "190,113,41"
+      },
+      "--primary-4": {
+        "ds": "101,72,27",
+        "installed": "101,72,27",
+        "portal": "103,69,39"
+      },
+      "--primary-5": {
+        "ds": "62,52,34",
+        "installed": "62,52,34",
+        "portal": "51,41,34"
+      },
+      "--content-link": {
+        "ds": "246,172,57",
+        "installed": "246,172,57",
+        "portal": "238,141,51"
+      },
+      "--action-primary-background": {
+        "ds": "246,172,57",
+        "installed": "246,172,57",
+        "portal": "238,141,51"
+      },
+      "--action-primary-background-hover": {
+        "ds": "248,186,90",
+        "installed": "248,186,90",
+        "portal": "240,155,75"
+      },
+      "--action-primary-background-active": {
+        "ds": "244,149,1",
+        "installed": "244,149,1",
+        "portal": "190,113,41"
+      },
+      "--action-primary-ghost-background": {
+        "ds": "62,52,34",
+        "installed": "62,52,34",
+        "portal": "51,41,34"
+      },
+      "--selection-background": {
+        "ds": "62,52,34",
+        "installed": "62,52,34",
+        "portal": "51,41,34"
+      },
+      "--selection-background-hover": {
+        "ds": "62,52,34",
+        "installed": "62,52,34",
+        "portal": "51,41,34"
+      },
+      "--selection-border": {
+        "ds": "246,172,57",
+        "installed": "246,172,57",
+        "portal": "238,141,51"
+      },
+      "--selection-content": {
+        "ds": "246,172,57",
+        "installed": "246,172,57",
+        "portal": "238,141,51"
+      },
+      "--focus-ring": {
+        "ds": "246,172,57",
+        "installed": "246,172,57",
+        "portal": "238,141,51"
+      },
+      "--chart-1": {
+        "ds": "246,172,57",
+        "installed": "246,172,57",
+        "portal": "234,113,0"
+      },
+      "--chart-2": {
+        "ds": "207,46,75",
+        "installed": "207,46,75",
+        "portal": "202,20,52"
+      },
+      "--chart-3": {
+        "ds": "50,110,170",
+        "installed": "50,110,170",
+        "portal": "236,127,26"
+      },
+      "--chart-4": {
+        "ds": "130,188,71",
+        "installed": "130,188,71",
+        "portal": "203,26,56"
+      },
+      "--chart-5": {
+        "ds": "248,187,93",
+        "installed": "248,187,93",
+        "portal": "238,141,51"
+      },
+      "--chart-6": {
+        "ds": "216,84,107",
+        "installed": "216,84,107",
+        "portal": "209,51,78"
+      },
+      "--chart-7": {
+        "ds": "84,134,184",
+        "installed": "84,134,184",
+        "portal": "240,156,77"
+      },
+      "--chart-8": {
+        "ds": "153,200,104",
+        "installed": "153,200,104",
+        "portal": "214,77,100"
+      },
+      "--chart-9": {
+        "ds": "249,201,126",
+        "installed": "249,201,126",
+        "portal": "242,170,102"
+      },
+      "--chart-10": {
+        "ds": "224,119,138",
+        "installed": "224,119,138",
+        "portal": "220,102,122"
+      },
+      "--chart-11": {
+        "ds": "119,159,198",
+        "installed": "119,159,198",
+        "portal": "244,184,128"
+      },
+      "--chart-12": {
+        "ds": "174,211,135",
+        "installed": "174,211,135",
+        "portal": "226,128,144"
+      },
+      "--chart-donut-1": {
+        "ds": "246,172,57",
+        "installed": "246,172,57",
+        "portal": "239,148,64"
+      },
+      "--chart-donut-2": {
+        "ds": "207,46,75",
+        "installed": "207,46,75",
+        "portal": "216,82,105"
+      },
+      "--chart-donut-3": {
+        "ds": "50,110,170",
+        "installed": "50,110,170",
+        "portal": "108,214,140"
+      },
+      "--chart-donut-4": {
+        "ds": "130,188,71",
+        "installed": "130,188,71",
+        "portal": "44,132,254"
+      },
+      "--chart-donut-5": {
+        "ds": "248,187,93",
+        "installed": "248,187,93",
+        "portal": "255,193,103"
+      },
+      "--chart-donut-6": {
+        "ds": "216,84,107",
+        "installed": "216,84,107",
+        "portal": "132,97,235"
+      },
+      "--chart-donut-7": {
+        "ds": "84,134,184",
+        "installed": "84,134,184",
+        "portal": "255,111,111"
+      },
+      "--chart-donut-8": {
+        "ds": "153,200,104",
+        "installed": "153,200,104",
+        "portal": "145,224,169"
+      },
+      "--chart-donut-9": {
+        "ds": "249,201,126",
+        "installed": "249,201,126",
+        "portal": "97,163,254"
+      },
+      "--chart-donut-10": {
+        "ds": "224,119,138",
+        "installed": "224,119,138",
+        "portal": "255,208,141"
+      },
+      "--chart-donut-11": {
+        "ds": "119,159,198",
+        "installed": "119,159,198",
+        "portal": "163,136,240"
+      },
+      "--chart-donut-12": {
+        "ds": "174,211,135",
+        "installed": "174,211,135",
+        "portal": "255,147,147"
+      },
+      "--chart-balance": {
+        "ds": "246,172,57",
+        "installed": "246,172,57",
+        "portal": "234,113,0"
+      },
+      "--chart-invested": {
+        "ds": "207,46,75",
+        "installed": "207,46,75",
+        "portal": "202,20,52"
+      },
+      "--status-primary-outline-foreground": {
+        "ds": "246,172,57",
+        "installed": "246,172,57",
+        "portal": "238,141,51"
+      },
+      "--status-primary-outline-border": {
+        "ds": "246,172,57",
+        "installed": "246,172,57",
+        "portal": "238,141,51"
+      },
+      "--status-primary-soft-background": {
+        "ds": "62,52,34",
+        "installed": "62,52,34",
+        "portal": "51,41,34"
+      },
+      "--status-primary-soft-foreground": {
+        "ds": "246,172,57",
+        "installed": "246,172,57",
+        "portal": "238,141,51"
+      },
+      "--illustration-brand-accent-2-content": {
+        "ds": "255,255,255",
+        "installed": "255,255,255",
+        "portal": "20,25,31"
+      },
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(245,247,250)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      },
+      "--brand-accent-1-soft": {
+        "ds": "52,35,45",
+        "installed": "52,35,45",
+        "portal": "39,29,37"
+      },
+      "--brand-accent-1-content": {
+        "ds": "221,107,127",
+        "installed": "221,107,127",
+        "portal": "218,93,114"
+      },
+      "--brand-accent-1-border": {
+        "ds": "208,52,80",
+        "installed": "208,52,80",
+        "portal": "212,64,89"
+      },
+      "--chart-brand-accent-1": {
+        "ds": "207,46,75",
+        "installed": "207,46,75",
+        "portal": "212,64,89"
+      },
+      "--brand-accent-2-soft": {
+        "ds": "30,43,58",
+        "installed": "30,43,58",
+        "portal": "41,35,35"
+      },
+      "--brand-accent-2-content": {
+        "ds": "105,148,192",
+        "installed": "105,148,192",
+        "portal": "231,123,71"
+      },
+      "--brand-accent-2-border": {
+        "ds": "63,119,175",
+        "installed": "63,119,175",
+        "portal": "231,123,71"
+      },
+      "--chart-brand-accent-2": {
+        "ds": "50,110,170",
+        "installed": "50,110,170",
+        "portal": "231,123,71"
+      },
+      "--brand-accent-3-soft": {
+        "ds": "41,55,44",
+        "installed": "41,55,44",
+        "portal": "40,31,36"
+      },
+      "--brand-accent-3-content": {
+        "ds": "130,188,71",
+        "installed": "130,188,71",
+        "portal": "218,85,83"
+      },
+      "--brand-accent-3-border": {
+        "ds": "130,188,71",
+        "installed": "130,188,71",
+        "portal": "218,85,83"
+      },
+      "--chart-brand-accent-3": {
+        "ds": "130,188,71",
+        "installed": "130,188,71",
+        "portal": "218,85,83"
+      },
+      "--brand-accent-1": {
+        "ds": "207,46,75",
+        "installed": "207,46,75",
+        "portal": "212,64,89"
+      },
+      "--brand-accent-2": {
+        "ds": "46,107,168",
+        "installed": "46,107,168",
+        "portal": "231,123,71"
+      },
+      "--brand-accent-3": {
+        "ds": "130,188,71",
+        "installed": "130,188,71",
+        "portal": "218,85,83"
+      },
+      "--focus-indicator-color": {
+        "ds": "rgb(246,172,57)",
+        "installed": "rgb(246,172,57)",
+        "portal": "rgb(238,141,51)"
+      }
+    },
+    "custom2178/high-light": {
+      "--primary-2": {
+        "ds": "118,57,0",
+        "installed": "118,57,0",
+        "portal": "115,55,0"
+      },
+      "--primary-5": {
+        "ds": "243,236,230",
+        "installed": "243,236,230",
+        "portal": "245,240,235"
+      },
+      "--action-primary-background-hover": {
+        "ds": "118,57,0",
+        "installed": "118,57,0",
+        "portal": "115,55,0"
+      },
+      "--action-primary-ghost-background": {
+        "ds": "243,236,230",
+        "installed": "243,236,230",
+        "portal": "245,240,235"
+      },
+      "--selection-background": {
+        "ds": "131,63,0",
+        "installed": "131,63,0",
+        "portal": "245,240,235"
+      },
+      "--selection-background-hover": {
+        "ds": "118,57,0",
+        "installed": "118,57,0",
+        "portal": "245,240,235"
+      },
+      "--selection-content": {
+        "ds": "255,255,255",
+        "installed": "255,255,255",
+        "portal": "131,63,0"
+      },
+      "--focus-ring": {
+        "ds": "0,0,0",
+        "installed": "0,0,0",
+        "portal": "131,63,0"
+      },
+      "--chart-1": {
+        "ds": "131,63,0",
+        "installed": "131,63,0",
+        "portal": "234,113,0"
+      },
+      "--chart-2": {
+        "ds": "204,0,51",
+        "installed": "204,0,51",
+        "portal": "197,0,34"
+      },
+      "--chart-3": {
+        "ds": "137,109,37",
+        "installed": "137,109,37",
+        "portal": "211,102,0"
+      },
+      "--chart-4": {
+        "ds": "134,100,176",
+        "installed": "134,100,176",
+        "portal": "177,0,31"
+      },
+      "--chart-5": {
+        "ds": "204,118,92",
+        "installed": "204,118,92",
+        "portal": "187,90,0"
+      },
+      "--chart-6": {
+        "ds": "69,155,159",
+        "installed": "69,155,159",
+        "portal": "158,0,27"
+      },
+      "--chart-7": {
+        "ds": "79,134,198",
+        "installed": "79,134,198",
+        "portal": "164,79,0"
+      },
+      "--chart-8": {
+        "ds": "198,106,160",
+        "installed": "198,106,160",
+        "portal": "138,0,24"
+      },
+      "--chart-9": {
+        "ds": "156,120,67",
+        "installed": "156,120,67",
+        "portal": "140,68,0"
+      },
+      "--chart-10": {
+        "ds": "108,155,116",
+        "installed": "108,155,116",
+        "portal": "118,0,20"
+      },
+      "--chart-11": {
+        "ds": "131,117,198",
+        "installed": "131,117,198",
+        "portal": "117,56,0"
+      },
+      "--chart-12": {
+        "ds": "161,91,82",
+        "installed": "161,91,82",
+        "portal": "98,0,17"
+      },
+      "--chart-donut-1": {
+        "ds": "131,63,0",
+        "installed": "131,63,0",
+        "portal": "202,125,54"
+      },
+      "--chart-donut-2": {
+        "ds": "204,0,51",
+        "installed": "204,0,51",
+        "portal": "216,82,105"
+      },
+      "--chart-donut-3": {
+        "ds": "137,109,37",
+        "installed": "137,109,37",
+        "portal": "77,154,100"
+      },
+      "--chart-donut-4": {
+        "ds": "134,100,176",
+        "installed": "134,100,176",
+        "portal": "44,132,254"
+      },
+      "--chart-donut-5": {
+        "ds": "204,118,92",
+        "installed": "204,118,92",
+        "portal": "183,139,74"
+      },
+      "--chart-donut-6": {
+        "ds": "69,155,159",
+        "installed": "69,155,159",
+        "portal": "132,97,235"
+      },
+      "--chart-donut-7": {
+        "ds": "79,134,198",
+        "installed": "79,134,198",
+        "portal": "235,102,102"
+      },
+      "--chart-donut-8": {
+        "ds": "198,106,160",
+        "installed": "198,106,160",
+        "portal": "103,161,121"
+      },
+      "--chart-donut-9": {
+        "ds": "156,120,67",
+        "installed": "156,120,67",
+        "portal": "89,150,234"
+      },
+      "--chart-donut-10": {
+        "ds": "108,155,116",
+        "installed": "108,155,116",
+        "portal": "168,137,93"
+      },
+      "--chart-donut-11": {
+        "ds": "131,117,198",
+        "installed": "131,117,198",
+        "portal": "150,125,221"
+      },
+      "--chart-donut-12": {
+        "ds": "161,91,82",
+        "installed": "161,91,82",
+        "portal": "199,114,114"
+      },
+      "--chart-balance": {
+        "ds": "131,63,0",
+        "installed": "131,63,0",
+        "portal": "234,113,0"
+      },
+      "--chart-invested": {
+        "ds": "204,0,51",
+        "installed": "204,0,51",
+        "portal": "197,0,34"
+      },
+      "--status-primary-soft-background": {
+        "ds": "243,236,230",
+        "installed": "243,236,230",
+        "portal": "245,240,235"
+      },
+      "--brand-accent-1-soft": {
+        "ds": "255,255,255",
+        "installed": "255,255,255",
+        "portal": "249,230,233"
+      },
+      "--brand-accent-1-content": {
+        "ds": "0,0,0",
+        "installed": "0,0,0",
+        "portal": "197,0,34"
+      },
+      "--brand-accent-1-border": {
+        "ds": "0,0,0",
+        "installed": "0,0,0",
+        "portal": "197,0,34"
+      },
+      "--chart-brand-accent-1": {
+        "ds": "204,0,51",
+        "installed": "204,0,51",
+        "portal": "197,0,34"
+      },
+      "--brand-accent-2-soft": {
+        "ds": "255,255,255",
+        "installed": "255,255,255",
+        "portal": "250,237,230"
+      },
+      "--brand-accent-2-content": {
+        "ds": "0,0,0",
+        "installed": "0,0,0",
+        "portal": "205,73,9"
+      },
+      "--brand-accent-2-border": {
+        "ds": "0,0,0",
+        "installed": "0,0,0",
+        "portal": "205,73,9"
+      },
+      "--chart-brand-accent-2": {
+        "ds": "137,109,37",
+        "installed": "137,109,37",
+        "portal": "205,73,9"
+      },
+      "--brand-accent-3-soft": {
+        "ds": "255,255,255",
+        "installed": "255,255,255",
+        "portal": "250,232,232"
+      },
+      "--brand-accent-3-content": {
+        "ds": "0,0,0",
+        "installed": "0,0,0",
+        "portal": "206,28,26"
+      },
+      "--brand-accent-3-border": {
+        "ds": "0,0,0",
+        "installed": "0,0,0",
+        "portal": "206,28,26"
+      },
+      "--chart-brand-accent-3": {
+        "ds": "134,100,176",
+        "installed": "134,100,176",
+        "portal": "206,28,26"
+      },
+      "--brand-accent-1": {
+        "ds": "204,0,51",
+        "installed": "204,0,51",
+        "portal": "197,0,34"
+      },
+      "--brand-accent-2": {
+        "ds": "137,109,37",
+        "installed": "137,109,37",
+        "portal": "205,73,9"
+      },
+      "--brand-accent-3": {
+        "ds": "144,114,40",
+        "installed": "144,114,40",
+        "portal": "206,28,26"
+      },
+      "--focus-indicator-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(131,63,0)"
+      }
+    },
+    "custom2178/high-dark": {
+      "--primary-1": {
+        "ds": "255,164,81",
+        "installed": "255,164,81",
+        "portal": "236,124,20"
+      },
+      "--primary-2": {
+        "ds": "255,175,102",
+        "installed": "255,175,102",
+        "portal": "238,140,48"
+      },
+      "--primary-3": {
+        "ds": "204,131,65",
+        "installed": "204,131,65",
+        "portal": "194,111,35"
+      },
+      "--primary-4": {
+        "ds": "97,62,31",
+        "installed": "97,62,31",
+        "portal": "90,47,8"
+      },
+      "--primary-5": {
+        "ds": "60,49,40",
+        "installed": "60,49,40",
+        "portal": "33,17,3"
+      },
+      "--content-link": {
+        "ds": "255,164,81",
+        "installed": "255,164,81",
+        "portal": "236,124,20"
+      },
+      "--content-on-brand": {
+        "ds": "0,0,0",
+        "installed": "0,0,0",
+        "portal": "20,25,31"
+      },
+      "--action-primary-background": {
+        "ds": "255,164,81",
+        "installed": "255,164,81",
+        "portal": "236,124,20"
+      },
+      "--action-primary-background-hover": {
+        "ds": "255,175,102",
+        "installed": "255,175,102",
+        "portal": "238,140,48"
+      },
+      "--action-primary-background-active": {
+        "ds": "204,131,65",
+        "installed": "204,131,65",
+        "portal": "194,111,35"
+      },
+      "--action-primary-content": {
+        "ds": "0,0,0",
+        "installed": "0,0,0",
+        "portal": "20,25,31"
+      },
+      "--action-primary-ghost-background": {
+        "ds": "60,49,40",
+        "installed": "60,49,40",
+        "portal": "33,17,3"
+      },
+      "--selection-background": {
+        "ds": "255,164,81",
+        "installed": "255,164,81",
+        "portal": "33,17,3"
+      },
+      "--selection-background-hover": {
+        "ds": "255,175,102",
+        "installed": "255,175,102",
+        "portal": "33,17,3"
+      },
+      "--selection-border": {
+        "ds": "255,164,81",
+        "installed": "255,164,81",
+        "portal": "236,124,20"
+      },
+      "--selection-content": {
+        "ds": "0,0,0",
+        "installed": "0,0,0",
+        "portal": "236,124,20"
+      },
+      "--focus-ring": {
+        "ds": "255,255,255",
+        "installed": "255,255,255",
+        "portal": "236,124,20"
+      },
+      "--chart-1": {
+        "ds": "255,164,81",
+        "installed": "255,164,81",
+        "portal": "234,113,0"
+      },
+      "--chart-2": {
+        "ds": "218,72,109",
+        "installed": "218,72,109",
+        "portal": "197,0,34"
+      },
+      "--chart-3": {
+        "ds": "246,195,67",
+        "installed": "246,195,67",
+        "portal": "236,127,26"
+      },
+      "--chart-4": {
+        "ds": "134,100,176",
+        "installed": "134,100,176",
+        "portal": "203,26,56"
+      },
+      "--chart-5": {
+        "ds": "222,128,100",
+        "installed": "222,128,100",
+        "portal": "238,141,51"
+      },
+      "--chart-6": {
+        "ds": "75,169,173",
+        "installed": "75,169,173",
+        "portal": "209,51,78"
+      },
+      "--chart-7": {
+        "ds": "79,134,198",
+        "installed": "79,134,198",
+        "portal": "240,156,77"
+      },
+      "--chart-8": {
+        "ds": "198,106,160",
+        "installed": "198,106,160",
+        "portal": "214,77,100"
+      },
+      "--chart-9": {
+        "ds": "156,120,67",
+        "installed": "156,120,67",
+        "portal": "242,170,102"
+      },
+      "--chart-10": {
+        "ds": "108,155,116",
+        "installed": "108,155,116",
+        "portal": "220,102,122"
+      },
+      "--chart-11": {
+        "ds": "131,117,198",
+        "installed": "131,117,198",
+        "portal": "244,184,128"
+      },
+      "--chart-12": {
+        "ds": "161,91,82",
+        "installed": "161,91,82",
+        "portal": "226,128,144"
+      },
+      "--chart-donut-1": {
+        "ds": "255,164,81",
+        "installed": "255,164,81",
+        "portal": "239,148,64"
+      },
+      "--chart-donut-2": {
+        "ds": "218,72,109",
+        "installed": "218,72,109",
+        "portal": "216,82,105"
+      },
+      "--chart-donut-3": {
+        "ds": "246,195,67",
+        "installed": "246,195,67",
+        "portal": "108,214,140"
+      },
+      "--chart-donut-4": {
+        "ds": "134,100,176",
+        "installed": "134,100,176",
+        "portal": "44,132,254"
+      },
+      "--chart-donut-5": {
+        "ds": "222,128,100",
+        "installed": "222,128,100",
+        "portal": "255,193,103"
+      },
+      "--chart-donut-6": {
+        "ds": "75,169,173",
+        "installed": "75,169,173",
+        "portal": "132,97,235"
+      },
+      "--chart-donut-7": {
+        "ds": "79,134,198",
+        "installed": "79,134,198",
+        "portal": "255,111,111"
+      },
+      "--chart-donut-8": {
+        "ds": "198,106,160",
+        "installed": "198,106,160",
+        "portal": "145,224,169"
+      },
+      "--chart-donut-9": {
+        "ds": "156,120,67",
+        "installed": "156,120,67",
+        "portal": "97,163,254"
+      },
+      "--chart-donut-10": {
+        "ds": "108,155,116",
+        "installed": "108,155,116",
+        "portal": "255,208,141"
+      },
+      "--chart-donut-11": {
+        "ds": "131,117,198",
+        "installed": "131,117,198",
+        "portal": "163,136,240"
+      },
+      "--chart-donut-12": {
+        "ds": "161,91,82",
+        "installed": "161,91,82",
+        "portal": "255,147,147"
+      },
+      "--chart-balance": {
+        "ds": "255,164,81",
+        "installed": "255,164,81",
+        "portal": "234,113,0"
+      },
+      "--chart-invested": {
+        "ds": "204,0,51",
+        "installed": "204,0,51",
+        "portal": "197,0,34"
+      },
+      "--status-primary-outline-foreground": {
+        "ds": "255,164,81",
+        "installed": "255,164,81",
+        "portal": "236,124,20"
+      },
+      "--status-primary-outline-border": {
+        "ds": "255,164,81",
+        "installed": "255,164,81",
+        "portal": "236,124,20"
+      },
+      "--status-primary-soft-background": {
+        "ds": "60,49,40",
+        "installed": "60,49,40",
+        "portal": "33,17,3"
+      },
+      "--status-primary-soft-foreground": {
+        "ds": "255,164,81",
+        "installed": "255,164,81",
+        "portal": "236,124,20"
+      },
+      "--action-primary-content-hover": {
+        "ds": "0,0,0",
+        "installed": "0,0,0",
+        "portal": "20,25,31"
+      },
+      "--action-primary-content-active": {
+        "ds": "0,0,0",
+        "installed": "0,0,0",
+        "portal": "20,25,31"
+      },
+      "--illustration-primary-content": {
+        "ds": "0,0,0",
+        "installed": "0,0,0",
+        "portal": "20,25,31"
+      },
+      "--illustration-brand-accent-1-content": {
+        "ds": "0,0,0",
+        "installed": "0,0,0",
+        "portal": "255,255,255"
+      },
+      "--illustration-brand-accent-2-content": {
+        "ds": "0,0,0",
+        "installed": "0,0,0",
+        "portal": "20,25,31"
+      },
+      "--illustration-brand-accent-3-content": {
+        "ds": "0,0,0",
+        "installed": "0,0,0",
+        "portal": "255,255,255"
+      },
+      "--brand-accent-1-soft": {
+        "ds": "11,11,11",
+        "installed": "11,11,11",
+        "portal": "21,7,10"
+      },
+      "--brand-accent-1-content": {
+        "ds": "255,255,255",
+        "installed": "255,255,255",
+        "portal": "214,72,97"
+      },
+      "--brand-accent-1-border": {
+        "ds": "255,255,255",
+        "installed": "255,255,255",
+        "portal": "214,72,97"
+      },
+      "--chart-brand-accent-1": {
+        "ds": "218,72,109",
+        "installed": "218,72,109",
+        "portal": "214,72,97"
+      },
+      "--brand-accent-2-soft": {
+        "ds": "11,11,11",
+        "installed": "11,11,11",
+        "portal": "22,8,1"
+      },
+      "--brand-accent-2-content": {
+        "ds": "255,255,255",
+        "installed": "255,255,255",
+        "portal": "223,79,10"
+      },
+      "--brand-accent-2-border": {
+        "ds": "255,255,255",
+        "installed": "255,255,255",
+        "portal": "223,79,10"
+      },
+      "--chart-brand-accent-2": {
+        "ds": "246,195,67",
+        "installed": "246,195,67",
+        "portal": "223,79,10"
+      },
+      "--brand-accent-3-soft": {
+        "ds": "11,11,11",
+        "installed": "11,11,11",
+        "portal": "21,6,6"
+      },
+      "--brand-accent-3-content": {
+        "ds": "255,255,255",
+        "installed": "255,255,255",
+        "portal": "214,63,61"
+      },
+      "--brand-accent-3-border": {
+        "ds": "255,255,255",
+        "installed": "255,255,255",
+        "portal": "214,63,61"
+      },
+      "--chart-brand-accent-3": {
+        "ds": "134,100,176",
+        "installed": "134,100,176",
+        "portal": "214,63,61"
+      },
+      "--brand-accent-1": {
+        "ds": "218,72,109",
+        "installed": "218,72,109",
+        "portal": "214,72,97"
+      },
+      "--brand-accent-2": {
+        "ds": "246,195,67",
+        "installed": "246,195,67",
+        "portal": "223,79,10"
+      },
+      "--brand-accent-3": {
+        "ds": "248,206,101",
+        "installed": "248,206,101",
+        "portal": "214,63,61"
+      },
+      "--focus-indicator-color": {
+        "ds": "rgb(255,255,255)",
+        "installed": "rgb(255,255,255)",
+        "portal": "rgb(236,124,20)"
+      }
+    },
+    "custom2156/light": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(24,24,24)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      }
+    },
+    "custom2156/dark": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(245,247,250)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      }
+    },
+    "custom2156/high-light": {},
+    "custom2156/high-dark": {},
+    "custom2140/light": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(33,36,33)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(33,36,33)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(33,36,33)"
+      }
+    },
+    "custom2140/dark": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(245,247,250)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      }
+    },
+    "custom2140/high-light": {},
+    "custom2140/high-dark": {},
+    "custom2133/light": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(24,24,24)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      }
+    },
+    "custom2133/dark": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(245,247,250)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      }
+    },
+    "custom2133/high-light": {},
+    "custom2133/high-dark": {},
+    "custom2170/light": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(24,24,24)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      }
+    },
+    "custom2170/dark": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(245,247,250)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      }
+    },
+    "custom2170/high-light": {},
+    "custom2170/high-dark": {},
+    "custom2162/light": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(24,24,24)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      }
+    },
+    "custom2162/dark": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(245,247,250)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      }
+    },
+    "custom2162/high-light": {},
+    "custom2162/high-dark": {},
+    "custom2157/light": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(24,24,24)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(24,24,24)"
+      }
+    },
+    "custom2157/dark": {
+      "color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      },
+      "outline": {
+        "ds": "rgb(0,0,0)none3px",
+        "installed": "rgb(0,0,0)none3px",
+        "portal": "rgb(245,247,250)none3px"
+      },
+      "outline-color": {
+        "ds": "rgb(0,0,0)",
+        "installed": "rgb(0,0,0)",
+        "portal": "rgb(245,247,250)"
+      }
+    },
+    "custom2157/high-light": {},
+    "custom2157/high-dark": {}
+  }
+}

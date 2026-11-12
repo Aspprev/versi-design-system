@@ -16,10 +16,14 @@ const budgets = {
   "overlays.js": { bytes: 10_000, gzipBytes: 4_000 },
   "documents.js": { bytes: 10_000, gzipBytes: 4_000 },
   "flags/*.svg": { bytes: 4_000_000, gzipBytes: 1_500_000 },
+  // Optional assets are never loaded through the existing root/core entries.
+  "illustrations/*.js": { bytes: 1_800_000, gzipBytes: 650_000 },
   // Includes functional defaults, chart labels and the opt-in SVG contract.
-  "styles.css": { bytes: 140_000, gzipBytes: 27_000 },
+  "styles.css": { bytes: 150_000, gzipBytes: 27_000 },
   // Includes seven custom identities and eleven generic accent variants / four modes.
-  "themes.css": { bytes: 250_000, gzipBytes: 23_000 },
+  // Reallocate 10 KB to the universal policy in styles.css: combined CSS budget
+  // remains 390 KB, while removing obsolete tenant HC rules reduces total CSS.
+  "themes.css": { bytes: 240_000, gzipBytes: 23_000 },
 };
 
 const report = Object.entries(budgets).map(([fileName, budget]) => {
@@ -28,6 +32,10 @@ const report = Object.entries(budgets).map(([fileName, budget]) => {
         .filter((entry) => entry.endsWith(".js") && entry !== "countries.js")
         .sort()
         .map((entry) => fs.readFileSync(path.join(distRoot, entry))))
+    : fileName === "illustrations/*.js"
+    ? Buffer.concat(fs.readdirSync(path.join(distRoot, "illustrations"))
+        .filter(entry => entry.endsWith(".js")).sort()
+        .map(entry => fs.readFileSync(path.join(distRoot, "illustrations", entry))))
     : fileName === "flags/*.svg"
     ? Buffer.concat(
         fs

@@ -21,7 +21,7 @@ export function BrandAccentExamples() {
   const customColors = custom ? keys.map(key => ["#7252A2", "#23708D", "#A04C66", "#477A35", "#966B20", "#3A6976"][CATEGORIES.indexOf(key)]) : undefined;
   return <section className="brand-accent-examples" aria-label="Aplicação dos acentos de marca">
     <h2>Detalhes de marca · uso opcional</h2>
-    <p>A primária continua nas ações principais. Os três acentos identificam detalhes deliberados; o título do card mantém a cor de conteúdo. Em alto contraste, os detalhes priorizam neutros legíveis.</p>
+    <p>A primária continua nas ações principais. Os três acentos identificam detalhes deliberados; o título do card mantém a cor de conteúdo. No alto contraste escuro, os detalhes seguem a política universal amarela e os gráficos mantêm cores distintas.</p>
     <div className="brand-detail-examples">
       {([1, 2, 3] as const).map(accent => <Surface key={accent} elevation="none" className="brand-detail-card">
         <Surface brandAccent={accent} padding="compact" radius="sm" elevation="none" className="brand-icon-example" style={{ width: 48, height: 48 }}><DetailIcon /></Surface>

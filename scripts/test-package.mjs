@@ -40,6 +40,15 @@ function verify(entries) {
       assert(Object.keys(await import('${pkg.name}' + entry)).length > 0);
     }
     const { COUNTRY_OPTIONS, getCountryFlagUrl } = await import('${pkg.name}/countries');
+    if (${entries.includes('/illustrations')}) {
+      const { IllustrationPortalBanner } = await import('${pkg.name}/illustrations');
+      const { default: Banner } = await import('${pkg.name}/illustrations/portal-banner');
+      assert.equal(Banner, IllustrationPortalBanner);
+      const html = renderToStaticMarkup(createElement(Banner, {className: 'consumer'}));
+      const illustrationClasses = html.match(/class="([^"]*)"/)?.[1].split(' ') ?? [];
+      for (const className of ['portal-illustration', 'portal-banner', 'consumer']) assert(illustrationClasses.includes(className));
+      assert(html.includes('<circle'));
+    }
     assert.equal(COUNTRY_OPTIONS.length, 250);
     assert(getCountryFlagUrl('BR').startsWith('data:image/svg+xml;base64,'));
     if (${entries.includes('/forms')}) {
@@ -128,7 +137,7 @@ try {
       `Peer opcional instalado no teste mínimo: ${peer}`,
     );
   }
-  verify(["/core", "/countries"]);
+  verify(["/core", "/countries", "/illustrations", "/illustrations/portal-banner"]);
   console.log(
     "Consumidor isolado mínimo: core/countries, CSS, SSR e TypeScript strict OK, sem peers opcionais.",
   );
@@ -177,6 +186,8 @@ try {
     "/overlays",
     "/documents",
     "/countries",
+    "/illustrations",
+    "/illustrations/portal-banner",
   ]);
   console.log(
     "Consumidor isolado completo: todos os entrypoints ESM e declarações NodeNext/strict OK.",

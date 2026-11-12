@@ -1302,411 +1302,6 @@ html[data-color-scheme="light"][data-contrast="high"]:is(.custom2157, [data-ds-t
     --brand-accent-3: 23, 35, 79;
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]) body {
-    --white: 255,255,255;
-    --secondary-1: 229, 231, 235;
-    --secondary-2: 209, 213, 219;
-    --secondary-3: 156, 163, 175;
-    --secondary-4: 117, 117, 117;
-    --secondary-5: 31, 33, 37;
-    --danger-1: 185,28,28;
-    --danger-2: 153,27,27;
-    --danger-3: 127,29,29;
-    --danger-4: 255,123,123;
-    --danger-5: 55,9,9;
-    --danger-6: 255,107,107;
-    --warning-1: 255,223,0;
-    --warning-2: 255,198,0;
-    --warning-3: 255,235,102;
-    --warning-4: 128,96,0;
-    --warning-5: 38,33,0;
-    --success-1: 8,122,62;
-    --success-2: 110,231,160;
-    --success-3: 5,46,22;
-    --grayscale-1: 255,255,255;
-    --grayscale-2: 245,245,245;
-    --grayscale-3: 224,224,224;
-    --grayscale-4: 189,189,189;
-    --grayscale-5: 51,51,51;
-    --overlay: 0,0,0;
-    --bg-lighter: 0,0,0;
-    --bg-light: 0,0,0;
-    --bg-dark: 20,20,20;
-    --bg-disabled: 51,51,51;
-    --surface-card: 11,11,11;
-    --text-primary: 255,255,255;
-    --text-secondary: 245,245,245;
-    --text-tertiary: 224,224,224;
-    --text-disabled: 189,189,189;
-    --content-primary: 255,255,255;
-    --content-secondary: 245,245,245;
-    --content-muted: 224,224,224;
-    --content-disabled: 189,189,189;
-    --content-inverse: 255,255,255;
-    --content-on-brand: 0, 0, 0;
-    --action-primary-content: 0, 0, 0;
-    --action-secondary-background: 212, 219, 226;
-    --action-secondary-background-hover: 232, 237, 242;
-    --action-secondary-background-active: 188, 200, 211;
-    --action-secondary-content: 20, 25, 31;
-    --action-danger-background: 168,26,10;
-    --action-danger-background-hover: 131,13,0;
-    --action-danger-background-active: 89,9,0;
-    --action-danger-content: 255,255,255;
-    --selection-content: 0, 0, 0;
-    --action-warning-background: 255,223,0;
-    --action-warning-background-hover: 255,198,0;
-    --action-warning-background-active: 255,235,102;
-    --action-warning-content: 0,0,0;
-    --surface-page: 0,0,0;
-    --surface-card-semantic: 11,11,11;
-    --surface-subtle: 20,20,20;
-    --surface-muted: 34,34,34;
-    --surface-disabled: 51,51,51;
-    --surface-action-neutral: 9, 12, 16;
-    --surface-tooltip: 0,0,0;
-    --footer-background: 0,0,0;
-    --border-subtle: 189,189,189;
-    --border-default: 245,245,245;
-    --border-strong: 255,223,0;
-    --border-disabled: 117,117,117;
-    --focus-ring: 255, 255, 255;
-    --icon-default: 255,255,255;
-    --feedback-danger-strong: 255, 204, 204;
-    --feedback-danger-soft: 55, 9, 9;
-    --feedback-danger-border: 255, 204, 204;
-    --feedback-danger-content: 255, 204, 204;
-    --feedback-warning-strong: 255, 235, 102;
-    --feedback-warning-soft: 38, 33, 0;
-    --feedback-warning-border: 255, 235, 102;
-    --feedback-warning-content: 255, 235, 102;
-    --feedback-success-strong: 110, 231, 160;
-    --feedback-success-soft: 5, 46, 22;
-    --feedback-success-border: 110, 231, 160;
-    --feedback-success-content: 110, 231, 160;
-    --feedback-info-strong: 147, 197, 253;
-    --feedback-info-soft: 16, 41, 64;
-    --feedback-info-border: 147, 197, 253;
-    --feedback-info-content: 147, 197, 253;
-    --field-surface: 0,0,0;
-    --field-surface-disabled: 51,51,51;
-    --field-border-default: 224,224,224;
-    --field-border-active: 255,223,0;
-    --field-border-error: 185,28,28;
-    --field-content: 255,255,255;
-    --field-placeholder: 117,117,117;
-    --field-content-disabled: 189,189,189;
-    --field-placeholder-disabled: 155,155,155;
-    --field-icon: 255,255,255;
-    --field-assistive: 245,245,245;
-    --field-assistive-error: 255, 204, 204;
-    --switch-track-off: 117, 117, 117;
-    --switch-track-disabled: 66,66,66;
-    --switch-track-primary-on: 118, 118, 118;
-    --switch-track-secondary-on: 118, 118, 118;
-    --switch-track-contract-on: 255,223,0;
-    --switch-track-contract-off: 255,223,0;
-    --switch-track-theme-on: 255,223,0;
-    --switch-track-theme-off: 189,189,189;
-    --switch-knob: 255, 255, 255;
-    --switch-knob-disabled: 189,189,189;
-    --switch-knob-theme-on: 0,0,0;
-    --radio-surface: 0,0,0;
-    --radio-border: 255,255,255;
-    --radio-selected: 118, 118, 118;
-    --radio-error: 185,28,28;
-    --radio-disabled-border: 189,189,189;
-    --radio-disabled-surface: 51,51,51;
-    --radio-disabled-content: 189,189,189;
-    --checkbox-surface: 0,0,0;
-    --checkbox-border: 255,255,255;
-    --checkbox-selected: 118, 118, 118;
-    --checkbox-error: 185,28,28;
-    --checkbox-disabled-border: 189,189,189;
-    --checkbox-disabled-surface: 51,51,51;
-    --checkbox-disabled-content: 189,189,189;
-    --loading-circular-track: 51,51,51;
-    --loading-circular-indicator: 255,223,0;
-    --chart-4: 134, 100, 176;
-    --chart-5: 222, 128, 100;
-    --chart-6: 75, 169, 173;
-    --chart-7: 79, 134, 198;
-    --chart-8: 198, 106, 160;
-    --chart-9: 156, 120, 67;
-    --chart-10: 108, 155, 116;
-    --chart-11: 131, 117, 198;
-    --chart-12: 161, 91, 82;
-    --chart-donut-4: 134, 100, 176;
-    --chart-donut-5: 222, 128, 100;
-    --chart-donut-6: 75, 169, 173;
-    --chart-donut-7: 79, 134, 198;
-    --chart-donut-8: 198, 106, 160;
-    --chart-donut-9: 156, 120, 67;
-    --chart-donut-10: 108, 155, 116;
-    --chart-donut-11: 131, 117, 198;
-    --chart-donut-12: 161, 91, 82;
-    --chart-muted-1: 245,245,245;
-    --chart-muted-2: 224,224,224;
-    --chart-muted-3: 189,189,189;
-    --chart-muted-4: 255,255,255;
-    --chart-tooltip-background: 0,0,0;
-    --chart-tooltip-content: 255,255,255;
-    --chart-line-neutral: 255,255,255;
-    --chart-grid: 189,189,189;
-    --chart-axis: 255,255,255;
-    --chart-axis-border: 224,224,224;
-    --chart-tooltip-text: 255,255,255;
-    --status-blue-solid-background: 20, 120, 228;
-    --status-blue-solid-foreground: 0, 0, 0;
-    --status-blue-outline-border: 20, 120, 228;
-    --status-blue-outline-foreground: 20, 120, 228;
-    --status-blue-soft-background: 20, 20, 20;
-    --status-blue-soft-foreground: 39, 131, 230;
-    --status-green-solid-background: 46, 133, 71;
-    --status-green-solid-foreground: 0, 0, 0;
-    --status-green-outline-border: 46, 133, 71;
-    --status-green-outline-foreground: 63, 143, 86;
-    --status-green-soft-background: 20, 20, 20;
-    --status-green-soft-foreground: 63, 143, 86;
-    --status-orange-solid-background: 201, 76, 0;
-    --status-orange-solid-foreground: 0, 0, 0;
-    --status-orange-outline-border: 201, 76, 0;
-    --status-orange-outline-foreground: 205, 90, 20;
-    --status-orange-soft-background: 20, 20, 20;
-    --status-orange-soft-foreground: 209, 103, 39;
-    --status-yellow-solid-background: 234, 179, 8;
-    --status-yellow-solid-foreground: 0, 0, 0;
-    --status-yellow-outline-border: 234, 179, 8;
-    --status-yellow-outline-foreground: 234, 179, 8;
-    --status-yellow-soft-background: 20, 20, 20;
-    --status-yellow-soft-foreground: 234, 179, 8;
-    --status-red-solid-background: 192, 91, 80;
-    --status-red-solid-foreground: 0, 0, 0;
-    --status-red-outline-border: 192, 91, 80;
-    --status-red-outline-foreground: 192, 91, 80;
-    --status-red-soft-background: 20, 20, 20;
-    --status-red-soft-foreground: 197, 104, 94;
-    --status-slate-solid-background: 111, 126, 134;
-    --status-slate-solid-foreground: 0, 0, 0;
-    --status-slate-outline-border: 111, 126, 134;
-    --status-slate-outline-foreground: 111, 126, 134;
-    --status-slate-soft-background: 20, 20, 20;
-    --status-slate-soft-foreground: 123, 136, 144;
-    --status-black-solid-background: 123, 123, 123;
-    --status-black-solid-foreground: 0, 0, 0;
-    --status-black-outline-border: 123, 123, 123;
-    --status-black-outline-foreground: 123, 123, 123;
-    --status-black-soft-background: 20, 20, 20;
-    --status-black-soft-foreground: 134, 134, 134;
-    --action-secondary-ghost-background: 34, 34, 34;
-    --focus-indicator-color: rgb(var(--focus-ring));
-  }
-
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2178, [data-ds-theme="custom2178"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"]) body {
-    --primary-1: 255, 164, 81;
-    --primary-2: 255, 175, 102;
-    --primary-3: 204, 131, 65;
-    --primary-4: 97, 62, 31;
-    --primary-5: 60, 49, 40;
-    --content-link: 255, 164, 81;
-    --action-primary-background: 255, 164, 81;
-    --action-primary-background-hover: 255, 175, 102;
-    --action-primary-background-active: 204, 131, 65;
-    --action-primary-ghost-background: 60, 49, 40;
-    --selection-background: 255, 164, 81;
-    --selection-background-hover: 255, 175, 102;
-    --selection-border: 255, 164, 81;
-    --chart-1: 255, 164, 81;
-    --chart-2: 218, 72, 109;
-    --chart-3: 246, 195, 67;
-    --chart-donut-1: 255, 164, 81;
-    --chart-donut-2: 218, 72, 109;
-    --chart-donut-3: 246, 195, 67;
-    --chart-balance: 255, 164, 81;
-    --chart-invested: 204, 0, 51;
-    --brand-accent-1: 218, 72, 109;
-    --brand-accent-2: 246, 195, 67;
-    --brand-accent-3: 248, 206, 101;
-  }
-
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2156, [data-ds-theme="custom2156"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2156, [data-ds-theme="custom2156"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2156, [data-ds-theme="custom2156"]) body {
-    --primary-1: 255, 148, 92;
-    --primary-2: 255, 161, 112;
-    --primary-3: 204, 118, 74;
-    --primary-4: 97, 56, 35;
-    --primary-5: 60, 46, 41;
-    --content-link: 255, 148, 92;
-    --action-primary-background: 255, 148, 92;
-    --action-primary-background-hover: 255, 161, 112;
-    --action-primary-background-active: 204, 118, 74;
-    --action-primary-ghost-background: 60, 46, 41;
-    --selection-background: 255, 148, 92;
-    --selection-background-hover: 255, 161, 112;
-    --selection-border: 255, 148, 92;
-    --chart-1: 255, 148, 92;
-    --chart-2: 130, 130, 130;
-    --chart-3: 242, 174, 121;
-    --chart-donut-1: 255, 148, 92;
-    --chart-donut-2: 130, 130, 130;
-    --chart-donut-3: 242, 174, 121;
-    --chart-balance: 255, 148, 92;
-    --chart-invested: 107, 107, 107;
-    --brand-accent-1: 130, 130, 130;
-    --brand-accent-2: 242, 174, 121;
-    --brand-accent-3: 244, 189, 145;
-  }
-
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2140, [data-ds-theme="custom2140"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2140, [data-ds-theme="custom2140"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2140, [data-ds-theme="custom2140"]) body {
-    --primary-1: 255, 172, 106;
-    --primary-2: 255, 182, 124;
-    --primary-3: 204, 138, 85;
-    --primary-4: 97, 65, 40;
-    --primary-5: 60, 50, 44;
-    --content-link: 255, 172, 106;
-    --action-primary-background: 255, 172, 106;
-    --action-primary-background-hover: 255, 182, 124;
-    --action-primary-background-active: 204, 138, 85;
-    --action-primary-ghost-background: 60, 50, 44;
-    --selection-background: 255, 172, 106;
-    --selection-background-hover: 255, 182, 124;
-    --selection-border: 255, 172, 106;
-    --chart-1: 255, 172, 106;
-    --chart-2: 89, 176, 202;
-    --chart-3: 141, 156, 37;
-    --chart-donut-1: 255, 172, 106;
-    --chart-donut-2: 89, 176, 202;
-    --chart-donut-3: 141, 156, 37;
-    --chart-balance: 255, 172, 106;
-    --chart-invested: 89, 176, 202;
-    --brand-accent-1: 89, 176, 202;
-    --brand-accent-2: 141, 156, 37;
-    --brand-accent-3: 81, 136, 138;
-  }
-
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2133, [data-ds-theme="custom2133"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2133, [data-ds-theme="custom2133"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2133, [data-ds-theme="custom2133"]) body {
-    --primary-1: 239, 139, 132;
-    --primary-2: 241, 153, 147;
-    --primary-3: 191, 111, 106;
-    --primary-4: 91, 53, 50;
-    --primary-5: 57, 44, 48;
-    --content-link: 239, 139, 132;
-    --action-primary-background: 239, 139, 132;
-    --action-primary-background-hover: 241, 153, 147;
-    --action-primary-background-active: 191, 111, 106;
-    --action-primary-ghost-background: 57, 44, 48;
-    --selection-background: 239, 139, 132;
-    --selection-background-hover: 241, 153, 147;
-    --selection-border: 239, 139, 132;
-    --chart-1: 239, 139, 132;
-    --chart-2: 248, 207, 128;
-    --chart-3: 173, 157, 212;
-    --chart-donut-1: 239, 139, 132;
-    --chart-donut-2: 248, 207, 128;
-    --chart-donut-3: 173, 157, 212;
-    --chart-balance: 239, 139, 132;
-    --chart-invested: 248, 207, 128;
-    --brand-accent-1: 248, 207, 128;
-    --brand-accent-2: 173, 157, 212;
-    --brand-accent-3: 123, 123, 162;
-  }
-
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2170, [data-ds-theme="custom2170"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2170, [data-ds-theme="custom2170"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2170, [data-ds-theme="custom2170"]) body {
-    --primary-1: 171, 201, 104;
-    --primary-2: 181, 207, 122;
-    --primary-3: 137, 161, 83;
-    --primary-4: 65, 76, 40;
-    --primary-5: 46, 55, 43;
-    --content-link: 171, 201, 104;
-    --action-primary-background: 171, 201, 104;
-    --action-primary-background-hover: 181, 207, 122;
-    --action-primary-background-active: 137, 161, 83;
-    --action-primary-ghost-background: 46, 55, 43;
-    --selection-background: 171, 201, 104;
-    --selection-background-hover: 181, 207, 122;
-    --selection-border: 171, 201, 104;
-    --chart-1: 171, 201, 104;
-    --chart-2: 113, 123, 147;
-    --chart-3: 97, 168, 173;
-    --chart-donut-1: 171, 201, 104;
-    --chart-donut-2: 113, 123, 147;
-    --chart-donut-3: 97, 168, 173;
-    --chart-balance: 171, 201, 104;
-    --chart-invested: 88, 100, 128;
-    --brand-accent-1: 113, 123, 147;
-    --brand-accent-2: 97, 168, 173;
-    --brand-accent-3: 125, 184, 188;
-  }
-
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2162, [data-ds-theme="custom2162"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2162, [data-ds-theme="custom2162"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2162, [data-ds-theme="custom2162"]) body {
-    --primary-1: 87, 206, 240;
-    --primary-2: 107, 212, 242;
-    --primary-3: 70, 165, 192;
-    --primary-4: 33, 78, 91;
-    --primary-5: 31, 56, 67;
-    --content-link: 87, 206, 240;
-    --action-primary-background: 87, 206, 240;
-    --action-primary-background-hover: 107, 212, 242;
-    --action-primary-background-active: 70, 165, 192;
-    --action-primary-ghost-background: 31, 56, 67;
-    --selection-background: 87, 206, 240;
-    --selection-background-hover: 107, 212, 242;
-    --selection-border: 87, 206, 240;
-    --chart-1: 87, 206, 240;
-    --chart-2: 167, 197, 22;
-    --chart-3: 243, 154, 50;
-    --chart-donut-1: 87, 206, 240;
-    --chart-donut-2: 167, 197, 22;
-    --chart-donut-3: 243, 154, 50;
-    --chart-balance: 87, 206, 240;
-    --chart-invested: 167, 197, 22;
-    --brand-accent-1: 167, 197, 22;
-    --brand-accent-2: 243, 154, 50;
-    --brand-accent-3: 245, 172, 87;
-  }
-
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2157, [data-ds-theme="custom2157"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2157, [data-ds-theme="custom2157"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2157, [data-ds-theme="custom2157"]) body {
-    --primary-1: 85, 217, 156;
-    --primary-2: 105, 222, 168;
-    --primary-3: 68, 174, 125;
-    --primary-4: 32, 82, 59;
-    --primary-5: 31, 58, 52;
-    --content-link: 85, 217, 156;
-    --action-primary-background: 85, 217, 156;
-    --action-primary-background-hover: 105, 222, 168;
-    --action-primary-background-active: 68, 174, 125;
-    --action-primary-ghost-background: 31, 58, 52;
-    --selection-background: 85, 217, 156;
-    --selection-background-hover: 105, 222, 168;
-    --selection-border: 85, 217, 156;
-    --chart-1: 85, 217, 156;
-    --chart-2: 39, 134, 170;
-    --chart-3: 117, 126, 159;
-    --chart-donut-1: 85, 217, 156;
-    --chart-donut-2: 39, 134, 170;
-    --chart-donut-3: 117, 126, 159;
-    --chart-balance: 85, 217, 156;
-    --chart-invested: 20, 123, 163;
-    --brand-accent-1: 39, 134, 170;
-    --brand-accent-2: 117, 126, 159;
-    --brand-accent-3: 111, 120, 154;
-  }
-
   html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, .custom2170, [data-ds-theme="azul3"], [data-ds-theme="custom2170"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"]),
 html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, .custom2170, [data-ds-theme="azul3"], [data-ds-theme="custom2170"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"]),
 html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, .custom2170, [data-ds-theme="azul3"], [data-ds-theme="custom2170"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"]) body {
@@ -2330,199 +1925,6 @@ html[data-color-scheme="light"][data-contrast="high"]:is(.custom2157, [data-ds-t
     --status-primary-soft-background: 230, 240, 235;
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"]) body {
-    --feedback-danger-strong: 255, 204, 204;
-    --feedback-danger-border: 255, 204, 204;
-    --feedback-warning-strong: 255, 235, 102;
-    --feedback-warning-border: 255, 235, 102;
-    --feedback-success-strong: 110, 231, 160;
-    --feedback-success-border: 110, 231, 160;
-    --feedback-info-strong: 147, 197, 253;
-    --feedback-info-soft: 16, 41, 64;
-    --feedback-info-border: 147, 197, 253;
-    --feedback-info-content: 147, 197, 253;
-    --status-primary-outline-foreground: 255,223,0;
-    --status-primary-outline-border: 255,223,0;
-    --status-primary-soft-foreground: 255,223,0;
-    --status-primary-soft-background: 34,34,34;
-    --action-secondary-content-hover: 255, 255, 255;
-    --switch-knob-icon-on: 110, 231, 160;
-    --switch-knob-icon-off: 255, 204, 204;
-    --switch-knob-theme-icon-off: 255, 255, 255;
-  }
-
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]) body {
-    --status-blue-solid-background: 20, 120, 228;
-    --status-blue-solid-foreground: 0, 0, 0;
-    --status-blue-outline-border: 20, 120, 228;
-    --status-blue-outline-foreground: 51, 138, 232;
-    --status-blue-soft-background: 20, 20, 20;
-    --status-blue-soft-foreground: 39, 131, 230;
-    --status-green-solid-foreground: 0, 0, 0;
-    --status-green-outline-foreground: 78, 152, 100;
-    --status-green-soft-background: 20, 20, 20;
-    --status-green-soft-foreground: 63, 143, 86;
-    --status-orange-solid-foreground: 0, 0, 0;
-    --status-orange-outline-foreground: 211, 108, 46;
-    --status-orange-soft-background: 20, 20, 20;
-    --status-orange-soft-foreground: 209, 103, 39;
-    --status-yellow-solid-foreground: 0, 0, 0;
-    --status-yellow-outline-foreground: 234, 179, 8;
-    --status-yellow-soft-background: 20, 20, 20;
-    --status-yellow-soft-foreground: 234, 179, 8;
-    --status-red-solid-background: 192, 91, 80;
-    --status-red-solid-foreground: 0, 0, 0;
-    --status-red-outline-border: 192, 91, 80;
-    --status-red-outline-foreground: 200, 112, 103;
-    --status-red-soft-background: 20, 20, 20;
-    --status-red-soft-foreground: 197, 104, 94;
-    --status-slate-solid-background: 111, 126, 134;
-    --status-slate-solid-foreground: 0, 0, 0;
-    --status-slate-outline-border: 111, 126, 134;
-    --status-slate-outline-foreground: 125, 139, 146;
-    --status-slate-soft-background: 20, 20, 20;
-    --status-slate-soft-foreground: 123, 136, 144;
-    --status-black-solid-background: 123, 123, 123;
-    --status-black-solid-foreground: 0, 0, 0;
-    --status-black-outline-border: 123, 123, 123;
-    --status-black-outline-foreground: 138, 138, 138;
-    --status-black-soft-background: 20, 20, 20;
-    --status-black-soft-foreground: 134, 134, 134;
-    --action-primary-content-hover: 0, 0, 0;
-    --action-primary-content-active: 0, 0, 0;
-    --action-secondary-content-active: 0, 0, 0;
-    --action-danger-content-hover: 255, 255, 255;
-    --action-danger-content-active: 255, 255, 255;
-    --action-warning-content-hover: 0, 0, 0;
-    --action-warning-content-active: 0, 0, 0;
-    --switch-knob-theme-icon-on: 255, 255, 255;
-    --feedback-danger-on-strong: 0, 0, 0;
-    --action-danger-background: 168,26,10;
-    --action-danger-background-hover: 131,13,0;
-    --action-danger-background-active: 89,9,0;
-    --action-warning-background: 255,223,0;
-    --action-warning-background-hover: 255,198,0;
-    --action-warning-background-active: 255,235,102;
-    --action-danger-content: 255, 255, 255;
-    --action-warning-content: 0, 0, 0;
-    --status-green-solid-background: 46, 133, 71;
-    --status-green-outline-border: 46, 133, 71;
-    --status-orange-solid-background: 201, 76, 0;
-    --status-orange-outline-border: 201, 76, 0;
-    --status-yellow-solid-background: 234, 179, 8;
-    --status-yellow-outline-border: 234, 179, 8;
-    --field-assistive-error: 255, 204, 204;
-  }
-
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"]) body {
-    --action-primary-background-hover: 255,198,0;
-    --action-primary-background: 255,223,0;
-    --action-primary-background-active: 230,168,0;
-  }
-
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"]) body {
-    --switch-track-contract-off: 255,223,0;
-    --checkbox-selected: 255,223,0;
-    --switch-track-primary-on: 255,223,0;
-    --switch-track-theme-on: 255,223,0;
-    --primary-3: 230,168,0;
-    --border-strong: 255,223,0;
-    --switch-track-secondary-on: 255,223,0;
-    --field-border-active: 255,223,0;
-    --radio-selected: 255,223,0;
-    --primary-2: 255,198,0;
-    --switch-track-contract-on: 255,223,0;
-    --content-link: 255,223,0;
-    --focus-ring: 255,223,0;
-    --selection-border: 255,223,0;
-    --loading-circular-indicator: 255,223,0;
-    --primary-1: 255,223,0;
-  }
-
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2178, [data-ds-theme="custom2178"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"]) body {
-    --status-primary-outline-foreground: 255, 164, 81;
-    --status-primary-outline-border: 255, 164, 81;
-    --status-primary-soft-foreground: 255, 164, 81;
-    --status-primary-soft-background: 60, 49, 40;
-  }
-
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]) body {
-    --action-secondary-content: 0, 0, 0;
-    --action-secondary-content-hover: 0, 0, 0;
-    --switch-track-contract-on: 163, 143, 0;
-    --switch-track-contract-off: 163, 143, 0;
-    --switch-track-theme-off: 142, 142, 142;
-    --switch-knob-icon-on: 78, 164, 114;
-    --switch-knob-icon-off: 173, 139, 139;
-    --switch-knob-theme-icon-off: 0, 0, 0;
-  }
-
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2156, [data-ds-theme="custom2156"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2156, [data-ds-theme="custom2156"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2156, [data-ds-theme="custom2156"]) body {
-    --status-primary-outline-foreground: 255, 148, 92;
-    --status-primary-outline-border: 255, 148, 92;
-    --status-primary-soft-foreground: 255, 148, 92;
-    --status-primary-soft-background: 60, 46, 41;
-  }
-
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2140, [data-ds-theme="custom2140"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2140, [data-ds-theme="custom2140"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2140, [data-ds-theme="custom2140"]) body {
-    --status-primary-outline-foreground: 255, 172, 106;
-    --status-primary-outline-border: 255, 172, 106;
-    --status-primary-soft-foreground: 255, 172, 106;
-    --status-primary-soft-background: 60, 50, 44;
-  }
-
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2133, [data-ds-theme="custom2133"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2133, [data-ds-theme="custom2133"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2133, [data-ds-theme="custom2133"]) body {
-    --status-primary-outline-foreground: 239, 139, 132;
-    --status-primary-outline-border: 239, 139, 132;
-    --status-primary-soft-foreground: 239, 139, 132;
-    --status-primary-soft-background: 57, 44, 48;
-  }
-
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2170, [data-ds-theme="custom2170"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2170, [data-ds-theme="custom2170"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2170, [data-ds-theme="custom2170"]) body {
-    --status-primary-outline-foreground: 171, 201, 104;
-    --status-primary-outline-border: 171, 201, 104;
-    --status-primary-soft-foreground: 171, 201, 104;
-    --status-primary-soft-background: 46, 55, 43;
-  }
-
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2162, [data-ds-theme="custom2162"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2162, [data-ds-theme="custom2162"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2162, [data-ds-theme="custom2162"]) body {
-    --status-primary-outline-foreground: 87, 206, 240;
-    --status-primary-outline-border: 87, 206, 240;
-    --status-primary-soft-foreground: 87, 206, 240;
-    --status-primary-soft-background: 31, 56, 67;
-  }
-
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2157, [data-ds-theme="custom2157"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2157, [data-ds-theme="custom2157"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2157, [data-ds-theme="custom2157"]) body {
-    --status-primary-outline-foreground: 85, 217, 156;
-    --status-primary-outline-border: 85, 217, 156;
-    --status-primary-soft-foreground: 85, 217, 156;
-    --status-primary-soft-background: 31, 58, 52;
-  }
-
   html[data-color-scheme="light"]:not([data-contrast="high"]):where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157)) body:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157)) {
     --feedback-danger-strong: 128, 0, 24;
     --feedback-danger-soft: 255, 240, 243;
@@ -2778,87 +2180,6 @@ html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2157, [data-ds-th
     --status-black-soft-foreground: 0, 0, 0;
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"]:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157)) body:where(:not([data-ds-theme], .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1, .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157)) {
-    --feedback-danger-strong: 255, 204, 204;
-    --feedback-danger-border: 255, 204, 204;
-    --feedback-warning-strong: 255, 235, 102;
-    --feedback-warning-border: 255, 235, 102;
-    --feedback-success-strong: 110, 231, 160;
-    --feedback-success-border: 110, 231, 160;
-    --feedback-info-strong: 147, 197, 253;
-    --feedback-info-soft: 16, 41, 64;
-    --feedback-info-border: 147, 197, 253;
-    --feedback-info-content: 147, 197, 253;
-    --status-blue-solid-background: 20, 120, 228;
-    --status-blue-solid-foreground: 0, 0, 0;
-    --status-blue-outline-border: 20, 120, 228;
-    --status-blue-outline-foreground: 51, 138, 232;
-    --status-blue-soft-background: 20, 20, 20;
-    --status-blue-soft-foreground: 39, 131, 230;
-    --status-green-solid-foreground: 0, 0, 0;
-    --status-green-outline-foreground: 78, 152, 100;
-    --status-green-soft-background: 20, 20, 20;
-    --status-green-soft-foreground: 63, 143, 86;
-    --status-orange-solid-foreground: 0, 0, 0;
-    --status-orange-outline-foreground: 211, 108, 46;
-    --status-orange-soft-background: 20, 20, 20;
-    --status-orange-soft-foreground: 209, 103, 39;
-    --status-yellow-solid-foreground: 0, 0, 0;
-    --status-yellow-outline-foreground: 234, 179, 8;
-    --status-yellow-soft-background: 20, 20, 20;
-    --status-yellow-soft-foreground: 234, 179, 8;
-    --status-red-solid-background: 192, 91, 80;
-    --status-red-solid-foreground: 0, 0, 0;
-    --status-red-outline-border: 192, 91, 80;
-    --status-red-outline-foreground: 200, 112, 103;
-    --status-red-soft-background: 20, 20, 20;
-    --status-red-soft-foreground: 197, 104, 94;
-    --status-slate-solid-background: 111, 126, 134;
-    --status-slate-solid-foreground: 0, 0, 0;
-    --status-slate-outline-border: 111, 126, 134;
-    --status-slate-outline-foreground: 125, 139, 146;
-    --status-slate-soft-background: 20, 20, 20;
-    --status-slate-soft-foreground: 123, 136, 144;
-    --status-black-solid-background: 123, 123, 123;
-    --status-black-solid-foreground: 0, 0, 0;
-    --status-black-outline-border: 123, 123, 123;
-    --status-black-outline-foreground: 138, 138, 138;
-    --status-black-soft-background: 20, 20, 20;
-    --status-black-soft-foreground: 134, 134, 134;
-    --status-primary-outline-foreground: 255,223,0;
-    --status-primary-outline-border: 255,223,0;
-    --status-primary-soft-foreground: 255,223,0;
-    --status-primary-soft-background: 34,34,34;
-    --action-primary-content-hover: 0, 0, 0;
-    --action-primary-content-active: 0, 0, 0;
-    --action-secondary-content-hover: 255, 255, 255;
-    --action-secondary-content-active: 0, 0, 0;
-    --action-danger-content-hover: 255, 255, 255;
-    --action-danger-content-active: 255, 255, 255;
-    --action-warning-content-hover: 0, 0, 0;
-    --action-warning-content-active: 0, 0, 0;
-    --switch-knob-icon-on: 110, 231, 160;
-    --switch-knob-icon-off: 255, 204, 204;
-    --switch-knob-theme-icon-on: 255, 255, 255;
-    --switch-knob-theme-icon-off: 255, 255, 255;
-    --feedback-danger-on-strong: 0, 0, 0;
-    --action-danger-background: 168,26,10;
-    --action-danger-background-hover: 131,13,0;
-    --action-danger-background-active: 89,9,0;
-    --action-warning-background: 255,223,0;
-    --action-warning-background-hover: 255,198,0;
-    --action-warning-background-active: 255,235,102;
-    --action-danger-content: 255, 255, 255;
-    --action-warning-content: 0, 0, 0;
-    --status-green-solid-background: 46, 133, 71;
-    --status-green-outline-border: 46, 133, 71;
-    --status-orange-solid-background: 201, 76, 0;
-    --status-orange-outline-border: 201, 76, 0;
-    --status-yellow-solid-background: 234, 179, 8;
-    --status-yellow-outline-border: 234, 179, 8;
-    --field-assistive-error: 255, 204, 204;
-  }
-
   html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.rosa1, [data-ds-theme="rosa1"]),
 html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"]),
 html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"]) body {
@@ -2943,23 +2264,6 @@ html[data-color-scheme="light"][data-contrast="high"]:is(.custom2178, [data-ds-t
     --chart-brand-accent-3: 134, 100, 176;
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2178, [data-ds-theme="custom2178"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2178, [data-ds-theme="custom2178"]) body {
-    --brand-accent-1-soft: 11,11,11;
-    --brand-accent-1-content: 255,255,255;
-    --brand-accent-1-border: 255,255,255;
-    --chart-brand-accent-1: 218, 72, 109;
-    --brand-accent-2-soft: 11,11,11;
-    --brand-accent-2-content: 255,255,255;
-    --brand-accent-2-border: 255,255,255;
-    --chart-brand-accent-2: 246, 195, 67;
-    --brand-accent-3-soft: 11,11,11;
-    --brand-accent-3-content: 255,255,255;
-    --brand-accent-3-border: 255,255,255;
-    --chart-brand-accent-3: 134, 100, 176;
-  }
-
   html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2156, [data-ds-theme="custom2156"]),
 html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2156, [data-ds-theme="custom2156"]),
 html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2156, [data-ds-theme="custom2156"]) body {
@@ -3011,23 +2315,6 @@ html[data-color-scheme="light"][data-contrast="high"]:is(.custom2156, [data-ds-t
     --chart-brand-accent-3: 134, 100, 176;
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2156, [data-ds-theme="custom2156"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2156, [data-ds-theme="custom2156"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2156, [data-ds-theme="custom2156"]) body {
-    --brand-accent-1-soft: 11,11,11;
-    --brand-accent-1-content: 255,255,255;
-    --brand-accent-1-border: 255,255,255;
-    --chart-brand-accent-1: 130, 130, 130;
-    --brand-accent-2-soft: 11,11,11;
-    --brand-accent-2-content: 255,255,255;
-    --brand-accent-2-border: 255,255,255;
-    --chart-brand-accent-2: 242, 174, 121;
-    --brand-accent-3-soft: 11,11,11;
-    --brand-accent-3-content: 255,255,255;
-    --brand-accent-3-border: 255,255,255;
-    --chart-brand-accent-3: 134, 100, 176;
-  }
-
   html[data-color-scheme="light"][data-contrast="high"] :is(.custom2140, [data-ds-theme="custom2140"]),
 html[data-color-scheme="light"][data-contrast="high"]:is(.custom2140, [data-ds-theme="custom2140"]),
 html[data-color-scheme="light"][data-contrast="high"]:is(.custom2140, [data-ds-theme="custom2140"]) body {
@@ -3042,23 +2329,6 @@ html[data-color-scheme="light"][data-contrast="high"]:is(.custom2140, [data-ds-t
     --brand-accent-3-soft: 255,255,255;
     --brand-accent-3-content: 0,0,0;
     --brand-accent-3-border: 0,0,0;
-    --chart-brand-accent-3: 134, 100, 176;
-  }
-
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2140, [data-ds-theme="custom2140"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2140, [data-ds-theme="custom2140"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2140, [data-ds-theme="custom2140"]) body {
-    --brand-accent-1-soft: 11,11,11;
-    --brand-accent-1-content: 255,255,255;
-    --brand-accent-1-border: 255,255,255;
-    --chart-brand-accent-1: 89, 176, 202;
-    --brand-accent-2-soft: 11,11,11;
-    --brand-accent-2-content: 255,255,255;
-    --brand-accent-2-border: 255,255,255;
-    --chart-brand-accent-2: 141, 156, 37;
-    --brand-accent-3-soft: 11,11,11;
-    --brand-accent-3-content: 255,255,255;
-    --brand-accent-3-border: 255,255,255;
     --chart-brand-accent-3: 134, 100, 176;
   }
 
@@ -3079,23 +2349,6 @@ html[data-color-scheme="light"][data-contrast="high"]:is(.custom2133, [data-ds-t
     --chart-brand-accent-3: 134, 100, 176;
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2133, [data-ds-theme="custom2133"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2133, [data-ds-theme="custom2133"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2133, [data-ds-theme="custom2133"]) body {
-    --brand-accent-1-soft: 11,11,11;
-    --brand-accent-1-content: 255,255,255;
-    --brand-accent-1-border: 255,255,255;
-    --chart-brand-accent-1: 248, 207, 128;
-    --brand-accent-2-soft: 11,11,11;
-    --brand-accent-2-content: 255,255,255;
-    --brand-accent-2-border: 255,255,255;
-    --chart-brand-accent-2: 173, 157, 212;
-    --brand-accent-3-soft: 11,11,11;
-    --brand-accent-3-content: 255,255,255;
-    --brand-accent-3-border: 255,255,255;
-    --chart-brand-accent-3: 134, 100, 176;
-  }
-
   html[data-color-scheme="light"][data-contrast="high"] :is(.custom2170, [data-ds-theme="custom2170"]),
 html[data-color-scheme="light"][data-contrast="high"]:is(.custom2170, [data-ds-theme="custom2170"]),
 html[data-color-scheme="light"][data-contrast="high"]:is(.custom2170, [data-ds-theme="custom2170"]) body {
@@ -3110,23 +2363,6 @@ html[data-color-scheme="light"][data-contrast="high"]:is(.custom2170, [data-ds-t
     --brand-accent-3-soft: 255,255,255;
     --brand-accent-3-content: 0,0,0;
     --brand-accent-3-border: 0,0,0;
-    --chart-brand-accent-3: 134, 100, 176;
-  }
-
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2170, [data-ds-theme="custom2170"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2170, [data-ds-theme="custom2170"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2170, [data-ds-theme="custom2170"]) body {
-    --brand-accent-1-soft: 11,11,11;
-    --brand-accent-1-content: 255,255,255;
-    --brand-accent-1-border: 255,255,255;
-    --chart-brand-accent-1: 113, 123, 147;
-    --brand-accent-2-soft: 11,11,11;
-    --brand-accent-2-content: 255,255,255;
-    --brand-accent-2-border: 255,255,255;
-    --chart-brand-accent-2: 97, 168, 173;
-    --brand-accent-3-soft: 11,11,11;
-    --brand-accent-3-content: 255,255,255;
-    --brand-accent-3-border: 255,255,255;
     --chart-brand-accent-3: 134, 100, 176;
   }
 
@@ -3181,23 +2417,6 @@ html[data-color-scheme="light"][data-contrast="high"]:is(.custom2162, [data-ds-t
     --chart-brand-accent-3: 134, 100, 176;
   }
 
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2162, [data-ds-theme="custom2162"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2162, [data-ds-theme="custom2162"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2162, [data-ds-theme="custom2162"]) body {
-    --brand-accent-1-soft: 11,11,11;
-    --brand-accent-1-content: 255,255,255;
-    --brand-accent-1-border: 255,255,255;
-    --chart-brand-accent-1: 167, 197, 22;
-    --brand-accent-2-soft: 11,11,11;
-    --brand-accent-2-content: 255,255,255;
-    --brand-accent-2-border: 255,255,255;
-    --chart-brand-accent-2: 243, 154, 50;
-    --brand-accent-3-soft: 11,11,11;
-    --brand-accent-3-content: 255,255,255;
-    --brand-accent-3-border: 255,255,255;
-    --chart-brand-accent-3: 134, 100, 176;
-  }
-
   html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2157, [data-ds-theme="custom2157"]),
 html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2157, [data-ds-theme="custom2157"]),
 html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2157, [data-ds-theme="custom2157"]) body {
@@ -3248,23 +2467,6 @@ html[data-color-scheme="light"][data-contrast="high"]:is(.custom2157, [data-ds-t
     --brand-accent-3-soft: 255,255,255;
     --brand-accent-3-content: 0,0,0;
     --brand-accent-3-border: 0,0,0;
-    --chart-brand-accent-3: 134, 100, 176;
-  }
-
-  html[data-color-scheme="dark"][data-contrast="high"] :is(.custom2157, [data-ds-theme="custom2157"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2157, [data-ds-theme="custom2157"]),
-html[data-color-scheme="dark"][data-contrast="high"]:is(.custom2157, [data-ds-theme="custom2157"]) body {
-    --brand-accent-1-soft: 11,11,11;
-    --brand-accent-1-content: 255,255,255;
-    --brand-accent-1-border: 255,255,255;
-    --chart-brand-accent-1: 39, 134, 170;
-    --brand-accent-2-soft: 11,11,11;
-    --brand-accent-2-content: 255,255,255;
-    --brand-accent-2-border: 255,255,255;
-    --chart-brand-accent-2: 117, 126, 159;
-    --brand-accent-3-soft: 11,11,11;
-    --brand-accent-3-content: 255,255,255;
-    --brand-accent-3-border: 255,255,255;
     --chart-brand-accent-3: 134, 100, 176;
   }
 
@@ -3322,24 +2524,6 @@ html[data-contrast="high"][data-contrast-theme="light"]:is(.default, [data-ds-th
     --brand-accent-3-border: 118, 118, 118;
   }
 
-  html[data-contrast="high"][data-contrast-theme="dark"]:where(:not([data-ds-theme], .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157, .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1)) body:where(:not([data-ds-theme], .custom2178, .custom2156, .custom2140, .custom2133, .custom2170, .custom2162, .custom2157, .default, .azul1, .azul2, .azul3, .laranja1, .laranja2, .verde1, .verde2, .verde3, .verde4, .rosa1)),
-html[data-contrast="high"][data-contrast-theme="dark"] :is(.default, [data-ds-theme="default"]),
-html[data-contrast="high"][data-contrast-theme="dark"]:is(.default, [data-ds-theme="default"]),
-html[data-contrast="high"][data-contrast-theme="dark"]:is(.default, [data-ds-theme="default"]) body {
-    --brand-accent-1: 255, 255, 255;
-    --brand-accent-2: 255, 255, 255;
-    --brand-accent-3: 255, 255, 255;
-    --brand-accent-1-soft: 34, 34, 34;
-    --brand-accent-1-content: 255, 255, 255;
-    --brand-accent-1-border: 245, 245, 245;
-    --brand-accent-2-soft: 34, 34, 34;
-    --brand-accent-2-content: 255, 255, 255;
-    --brand-accent-2-border: 245, 245, 245;
-    --brand-accent-3-soft: 34, 34, 34;
-    --brand-accent-3-content: 255, 255, 255;
-    --brand-accent-3-border: 245, 245, 245;
-  }
-
   html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.azul1, [data-ds-theme="azul1"]),
 html[data-color-scheme="light"]:not([data-contrast="high"]):is(.azul1, [data-ds-theme="azul1"]),
 html[data-color-scheme="light"]:not([data-contrast="high"]):is(.azul1, [data-ds-theme="azul1"]) body {
@@ -3389,23 +2573,6 @@ html[data-contrast="high"][data-contrast-theme="light"]:is(.azul1, [data-ds-them
     --brand-accent-3-soft: 229, 229, 229;
     --brand-accent-3-content: 0, 0, 0;
     --brand-accent-3-border: 118, 118, 118;
-  }
-
-  html[data-contrast="high"][data-contrast-theme="dark"] :is(.azul1, [data-ds-theme="azul1"]),
-html[data-contrast="high"][data-contrast-theme="dark"]:is(.azul1, [data-ds-theme="azul1"]),
-html[data-contrast="high"][data-contrast-theme="dark"]:is(.azul1, [data-ds-theme="azul1"]) body {
-    --brand-accent-1: 255, 255, 255;
-    --brand-accent-2: 255, 255, 255;
-    --brand-accent-3: 255, 255, 255;
-    --brand-accent-1-soft: 34, 34, 34;
-    --brand-accent-1-content: 255, 255, 255;
-    --brand-accent-1-border: 245, 245, 245;
-    --brand-accent-2-soft: 34, 34, 34;
-    --brand-accent-2-content: 255, 255, 255;
-    --brand-accent-2-border: 245, 245, 245;
-    --brand-accent-3-soft: 34, 34, 34;
-    --brand-accent-3-content: 255, 255, 255;
-    --brand-accent-3-border: 245, 245, 245;
   }
 
   html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.azul2, [data-ds-theme="azul2"]),
@@ -3459,23 +2626,6 @@ html[data-contrast="high"][data-contrast-theme="light"]:is(.azul2, [data-ds-them
     --brand-accent-3-border: 118, 118, 118;
   }
 
-  html[data-contrast="high"][data-contrast-theme="dark"] :is(.azul2, [data-ds-theme="azul2"]),
-html[data-contrast="high"][data-contrast-theme="dark"]:is(.azul2, [data-ds-theme="azul2"]),
-html[data-contrast="high"][data-contrast-theme="dark"]:is(.azul2, [data-ds-theme="azul2"]) body {
-    --brand-accent-1: 255, 255, 255;
-    --brand-accent-2: 255, 255, 255;
-    --brand-accent-3: 255, 255, 255;
-    --brand-accent-1-soft: 34, 34, 34;
-    --brand-accent-1-content: 255, 255, 255;
-    --brand-accent-1-border: 245, 245, 245;
-    --brand-accent-2-soft: 34, 34, 34;
-    --brand-accent-2-content: 255, 255, 255;
-    --brand-accent-2-border: 245, 245, 245;
-    --brand-accent-3-soft: 34, 34, 34;
-    --brand-accent-3-content: 255, 255, 255;
-    --brand-accent-3-border: 245, 245, 245;
-  }
-
   html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.azul3, .custom2170, [data-ds-theme="azul3"], [data-ds-theme="custom2170"]),
 html[data-color-scheme="light"]:not([data-contrast="high"]):is(.azul3, .custom2170, [data-ds-theme="azul3"], [data-ds-theme="custom2170"]),
 html[data-color-scheme="light"]:not([data-contrast="high"]):is(.azul3, .custom2170, [data-ds-theme="azul3"], [data-ds-theme="custom2170"]) body {
@@ -3525,23 +2675,6 @@ html[data-contrast="high"][data-contrast-theme="light"]:is(.azul3, [data-ds-them
     --brand-accent-3-soft: 229, 229, 229;
     --brand-accent-3-content: 0, 0, 0;
     --brand-accent-3-border: 118, 118, 118;
-  }
-
-  html[data-contrast="high"][data-contrast-theme="dark"] :is(.azul3, [data-ds-theme="azul3"]),
-html[data-contrast="high"][data-contrast-theme="dark"]:is(.azul3, [data-ds-theme="azul3"]),
-html[data-contrast="high"][data-contrast-theme="dark"]:is(.azul3, [data-ds-theme="azul3"]) body {
-    --brand-accent-1: 255, 255, 255;
-    --brand-accent-2: 255, 255, 255;
-    --brand-accent-3: 255, 255, 255;
-    --brand-accent-1-soft: 34, 34, 34;
-    --brand-accent-1-content: 255, 255, 255;
-    --brand-accent-1-border: 245, 245, 245;
-    --brand-accent-2-soft: 34, 34, 34;
-    --brand-accent-2-content: 255, 255, 255;
-    --brand-accent-2-border: 245, 245, 245;
-    --brand-accent-3-soft: 34, 34, 34;
-    --brand-accent-3-content: 255, 255, 255;
-    --brand-accent-3-border: 245, 245, 245;
   }
 
   html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.laranja1, [data-ds-theme="laranja1"]),
@@ -3595,23 +2728,6 @@ html[data-contrast="high"][data-contrast-theme="light"]:is(.laranja1, [data-ds-t
     --brand-accent-3-border: 118, 118, 118;
   }
 
-  html[data-contrast="high"][data-contrast-theme="dark"] :is(.laranja1, [data-ds-theme="laranja1"]),
-html[data-contrast="high"][data-contrast-theme="dark"]:is(.laranja1, [data-ds-theme="laranja1"]),
-html[data-contrast="high"][data-contrast-theme="dark"]:is(.laranja1, [data-ds-theme="laranja1"]) body {
-    --brand-accent-1: 255, 255, 255;
-    --brand-accent-2: 255, 255, 255;
-    --brand-accent-3: 255, 255, 255;
-    --brand-accent-1-soft: 34, 34, 34;
-    --brand-accent-1-content: 255, 255, 255;
-    --brand-accent-1-border: 245, 245, 245;
-    --brand-accent-2-soft: 34, 34, 34;
-    --brand-accent-2-content: 255, 255, 255;
-    --brand-accent-2-border: 245, 245, 245;
-    --brand-accent-3-soft: 34, 34, 34;
-    --brand-accent-3-content: 255, 255, 255;
-    --brand-accent-3-border: 245, 245, 245;
-  }
-
   html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.laranja2, [data-ds-theme="laranja2"]),
 html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja2, [data-ds-theme="laranja2"]),
 html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja2, [data-ds-theme="laranja2"]) body {
@@ -3661,23 +2777,6 @@ html[data-contrast="high"][data-contrast-theme="light"]:is(.laranja2, [data-ds-t
     --brand-accent-3-soft: 229, 229, 229;
     --brand-accent-3-content: 0, 0, 0;
     --brand-accent-3-border: 118, 118, 118;
-  }
-
-  html[data-contrast="high"][data-contrast-theme="dark"] :is(.laranja2, [data-ds-theme="laranja2"]),
-html[data-contrast="high"][data-contrast-theme="dark"]:is(.laranja2, [data-ds-theme="laranja2"]),
-html[data-contrast="high"][data-contrast-theme="dark"]:is(.laranja2, [data-ds-theme="laranja2"]) body {
-    --brand-accent-1: 255, 255, 255;
-    --brand-accent-2: 255, 255, 255;
-    --brand-accent-3: 255, 255, 255;
-    --brand-accent-1-soft: 34, 34, 34;
-    --brand-accent-1-content: 255, 255, 255;
-    --brand-accent-1-border: 245, 245, 245;
-    --brand-accent-2-soft: 34, 34, 34;
-    --brand-accent-2-content: 255, 255, 255;
-    --brand-accent-2-border: 245, 245, 245;
-    --brand-accent-3-soft: 34, 34, 34;
-    --brand-accent-3-content: 255, 255, 255;
-    --brand-accent-3-border: 245, 245, 245;
   }
 
   html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.verde1, [data-ds-theme="verde1"]),
@@ -3731,23 +2830,6 @@ html[data-contrast="high"][data-contrast-theme="light"]:is(.verde1, [data-ds-the
     --brand-accent-3-border: 118, 118, 118;
   }
 
-  html[data-contrast="high"][data-contrast-theme="dark"] :is(.verde1, [data-ds-theme="verde1"]),
-html[data-contrast="high"][data-contrast-theme="dark"]:is(.verde1, [data-ds-theme="verde1"]),
-html[data-contrast="high"][data-contrast-theme="dark"]:is(.verde1, [data-ds-theme="verde1"]) body {
-    --brand-accent-1: 255, 255, 255;
-    --brand-accent-2: 255, 255, 255;
-    --brand-accent-3: 255, 255, 255;
-    --brand-accent-1-soft: 34, 34, 34;
-    --brand-accent-1-content: 255, 255, 255;
-    --brand-accent-1-border: 245, 245, 245;
-    --brand-accent-2-soft: 34, 34, 34;
-    --brand-accent-2-content: 255, 255, 255;
-    --brand-accent-2-border: 245, 245, 245;
-    --brand-accent-3-soft: 34, 34, 34;
-    --brand-accent-3-content: 255, 255, 255;
-    --brand-accent-3-border: 245, 245, 245;
-  }
-
   html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.verde2, [data-ds-theme="verde2"]),
 html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde2, [data-ds-theme="verde2"]),
 html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde2, [data-ds-theme="verde2"]) body {
@@ -3797,23 +2879,6 @@ html[data-contrast="high"][data-contrast-theme="light"]:is(.verde2, [data-ds-the
     --brand-accent-3-soft: 229, 229, 229;
     --brand-accent-3-content: 0, 0, 0;
     --brand-accent-3-border: 118, 118, 118;
-  }
-
-  html[data-contrast="high"][data-contrast-theme="dark"] :is(.verde2, [data-ds-theme="verde2"]),
-html[data-contrast="high"][data-contrast-theme="dark"]:is(.verde2, [data-ds-theme="verde2"]),
-html[data-contrast="high"][data-contrast-theme="dark"]:is(.verde2, [data-ds-theme="verde2"]) body {
-    --brand-accent-1: 255, 255, 255;
-    --brand-accent-2: 255, 255, 255;
-    --brand-accent-3: 255, 255, 255;
-    --brand-accent-1-soft: 34, 34, 34;
-    --brand-accent-1-content: 255, 255, 255;
-    --brand-accent-1-border: 245, 245, 245;
-    --brand-accent-2-soft: 34, 34, 34;
-    --brand-accent-2-content: 255, 255, 255;
-    --brand-accent-2-border: 245, 245, 245;
-    --brand-accent-3-soft: 34, 34, 34;
-    --brand-accent-3-content: 255, 255, 255;
-    --brand-accent-3-border: 245, 245, 245;
   }
 
   html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.verde3, [data-ds-theme="verde3"]),
@@ -3867,23 +2932,6 @@ html[data-contrast="high"][data-contrast-theme="light"]:is(.verde3, [data-ds-the
     --brand-accent-3-border: 118, 118, 118;
   }
 
-  html[data-contrast="high"][data-contrast-theme="dark"] :is(.verde3, [data-ds-theme="verde3"]),
-html[data-contrast="high"][data-contrast-theme="dark"]:is(.verde3, [data-ds-theme="verde3"]),
-html[data-contrast="high"][data-contrast-theme="dark"]:is(.verde3, [data-ds-theme="verde3"]) body {
-    --brand-accent-1: 255, 255, 255;
-    --brand-accent-2: 255, 255, 255;
-    --brand-accent-3: 255, 255, 255;
-    --brand-accent-1-soft: 34, 34, 34;
-    --brand-accent-1-content: 255, 255, 255;
-    --brand-accent-1-border: 245, 245, 245;
-    --brand-accent-2-soft: 34, 34, 34;
-    --brand-accent-2-content: 255, 255, 255;
-    --brand-accent-2-border: 245, 245, 245;
-    --brand-accent-3-soft: 34, 34, 34;
-    --brand-accent-3-content: 255, 255, 255;
-    --brand-accent-3-border: 245, 245, 245;
-  }
-
   html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.verde4, [data-ds-theme="verde4"]),
 html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde4, [data-ds-theme="verde4"]),
 html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde4, [data-ds-theme="verde4"]) body {
@@ -3933,23 +2981,6 @@ html[data-contrast="high"][data-contrast-theme="light"]:is(.verde4, [data-ds-the
     --brand-accent-3-soft: 229, 229, 229;
     --brand-accent-3-content: 0, 0, 0;
     --brand-accent-3-border: 118, 118, 118;
-  }
-
-  html[data-contrast="high"][data-contrast-theme="dark"] :is(.verde4, [data-ds-theme="verde4"]),
-html[data-contrast="high"][data-contrast-theme="dark"]:is(.verde4, [data-ds-theme="verde4"]),
-html[data-contrast="high"][data-contrast-theme="dark"]:is(.verde4, [data-ds-theme="verde4"]) body {
-    --brand-accent-1: 255, 255, 255;
-    --brand-accent-2: 255, 255, 255;
-    --brand-accent-3: 255, 255, 255;
-    --brand-accent-1-soft: 34, 34, 34;
-    --brand-accent-1-content: 255, 255, 255;
-    --brand-accent-1-border: 245, 245, 245;
-    --brand-accent-2-soft: 34, 34, 34;
-    --brand-accent-2-content: 255, 255, 255;
-    --brand-accent-2-border: 245, 245, 245;
-    --brand-accent-3-soft: 34, 34, 34;
-    --brand-accent-3-content: 255, 255, 255;
-    --brand-accent-3-border: 245, 245, 245;
   }
 
   html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.rosa1, [data-ds-theme="rosa1"]),
@@ -4003,23 +3034,6 @@ html[data-contrast="high"][data-contrast-theme="light"]:is(.rosa1, [data-ds-them
     --brand-accent-3-border: 118, 118, 118;
   }
 
-  html[data-contrast="high"][data-contrast-theme="dark"] :is(.rosa1, [data-ds-theme="rosa1"]),
-html[data-contrast="high"][data-contrast-theme="dark"]:is(.rosa1, [data-ds-theme="rosa1"]),
-html[data-contrast="high"][data-contrast-theme="dark"]:is(.rosa1, [data-ds-theme="rosa1"]) body {
-    --brand-accent-1: 255, 255, 255;
-    --brand-accent-2: 255, 255, 255;
-    --brand-accent-3: 255, 255, 255;
-    --brand-accent-1-soft: 34, 34, 34;
-    --brand-accent-1-content: 255, 255, 255;
-    --brand-accent-1-border: 245, 245, 245;
-    --brand-accent-2-soft: 34, 34, 34;
-    --brand-accent-2-content: 255, 255, 255;
-    --brand-accent-2-border: 245, 245, 245;
-    --brand-accent-3-soft: 34, 34, 34;
-    --brand-accent-3-content: 255, 255, 255;
-    --brand-accent-3-border: 245, 245, 245;
-  }
-
   html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul3, .custom2170, [data-ds-theme="azul3"], [data-ds-theme="custom2170"]),
 html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul3, .custom2170, [data-ds-theme="azul3"], [data-ds-theme="custom2170"]),
 html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul3, .custom2170, [data-ds-theme="azul3"], [data-ds-theme="custom2170"]) body {
@@ -4045,15 +3059,6 @@ html[data-contrast="high"][data-contrast-theme="light"]:is(.default, [data-ds-th
     --illustration-brand-accent-1-content: 255, 255, 255;
     --illustration-brand-accent-2-content: 255, 255, 255;
     --illustration-brand-accent-3-content: 255, 255, 255;
-  }
-
-  html[data-contrast="high"][data-contrast-theme="dark"] :is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
-html[data-contrast="high"][data-contrast-theme="dark"]:is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]),
-html[data-contrast="high"][data-contrast-theme="dark"]:is(.default, [data-ds-theme="default"], .azul1, [data-ds-theme="azul1"], .azul2, [data-ds-theme="azul2"], .azul3, [data-ds-theme="azul3"], .laranja1, [data-ds-theme="laranja1"], .laranja2, [data-ds-theme="laranja2"], .verde1, [data-ds-theme="verde1"], .verde2, [data-ds-theme="verde2"], .verde3, [data-ds-theme="verde3"], .verde4, [data-ds-theme="verde4"], .rosa1, [data-ds-theme="rosa1"], .custom2178, [data-ds-theme="custom2178"], .custom2156, [data-ds-theme="custom2156"], .custom2140, [data-ds-theme="custom2140"], .custom2133, [data-ds-theme="custom2133"], .custom2170, [data-ds-theme="custom2170"], .custom2162, [data-ds-theme="custom2162"], .custom2157, [data-ds-theme="custom2157"]) body {
-    --illustration-primary-content: 0, 0, 0;
-    --illustration-brand-accent-1-content: 0, 0, 0;
-    --illustration-brand-accent-2-content: 0, 0, 0;
-    --illustration-brand-accent-3-content: 0, 0, 0;
   }
 
   html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.azul2, [data-ds-theme="azul2"], .custom2162, [data-ds-theme="custom2162"]),
@@ -4789,4 +3794,819 @@ html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2140, [data
     --action-secondary-content-active: 33, 36, 33;
     --chart-tooltip-content: 33, 36, 33;
     --chart-tooltip-text: 33, 36, 33;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"]) body {
+    --chart-donut-1: 136, 220, 162;
+    --chart-donut-2: 94, 158, 248;
+    --chart-donut-3: 255, 207, 128;
+    --chart-donut-4: 153, 125, 237;
+    --chart-donut-5: 255, 140, 140;
+    --chart-donut-6: 56, 200, 225;
+    --chart-donut-7: 255, 168, 56;
+    --chart-donut-8: 86, 186, 176;
+    --chart-donut-9: 240, 106, 151;
+    --chart-donut-10: 153, 196, 108;
+    --chart-donut-11: 128, 140, 206;
+    --chart-donut-12: 166, 142, 133;
+    --button-primary-flat-content: 255, 255, 255;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.default, [data-ds-theme="default"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.default, [data-ds-theme="default"]) body {
+    --chart-donut-1: 136, 220, 162;
+    --chart-donut-2: 94, 158, 248;
+    --chart-donut-3: 255, 207, 128;
+    --chart-donut-4: 153, 125, 237;
+    --chart-donut-5: 255, 140, 140;
+    --chart-donut-6: 56, 200, 225;
+    --chart-donut-7: 255, 168, 56;
+    --chart-donut-8: 86, 186, 176;
+    --chart-donut-9: 240, 106, 151;
+    --chart-donut-10: 153, 196, 108;
+    --chart-donut-11: 128, 140, 206;
+    --chart-donut-12: 166, 142, 133;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.azul1, [data-ds-theme="azul1"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.azul1, [data-ds-theme="azul1"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.azul1, [data-ds-theme="azul1"]) body {
+    --chart-donut-1: 136, 220, 162;
+    --chart-donut-2: 94, 158, 248;
+    --chart-donut-3: 255, 207, 128;
+    --chart-donut-4: 153, 125, 237;
+    --chart-donut-5: 255, 140, 140;
+    --chart-donut-6: 56, 200, 225;
+    --chart-donut-7: 255, 168, 56;
+    --chart-donut-8: 86, 186, 176;
+    --chart-donut-9: 240, 106, 151;
+    --chart-donut-10: 153, 196, 108;
+    --chart-donut-11: 128, 140, 206;
+    --chart-donut-12: 166, 142, 133;
+    --button-primary-flat-content: 255, 255, 255;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.azul1, [data-ds-theme="azul1"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.azul1, [data-ds-theme="azul1"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.azul1, [data-ds-theme="azul1"]) body {
+    --chart-donut-1: 136, 220, 162;
+    --chart-donut-2: 94, 158, 248;
+    --chart-donut-3: 255, 207, 128;
+    --chart-donut-4: 153, 125, 237;
+    --chart-donut-5: 255, 140, 140;
+    --chart-donut-6: 56, 200, 225;
+    --chart-donut-7: 255, 168, 56;
+    --chart-donut-8: 86, 186, 176;
+    --chart-donut-9: 240, 106, 151;
+    --chart-donut-10: 153, 196, 108;
+    --chart-donut-11: 128, 140, 206;
+    --chart-donut-12: 166, 142, 133;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.azul2, [data-ds-theme="azul2"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.azul2, [data-ds-theme="azul2"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.azul2, [data-ds-theme="azul2"]) body {
+    --chart-donut-1: 136, 220, 162;
+    --chart-donut-2: 94, 158, 248;
+    --chart-donut-3: 255, 207, 128;
+    --chart-donut-4: 153, 125, 237;
+    --chart-donut-5: 255, 140, 140;
+    --chart-donut-6: 56, 200, 225;
+    --chart-donut-7: 255, 168, 56;
+    --chart-donut-8: 86, 186, 176;
+    --chart-donut-9: 240, 106, 151;
+    --chart-donut-10: 153, 196, 108;
+    --chart-donut-11: 128, 140, 206;
+    --chart-donut-12: 166, 142, 133;
+    --button-primary-flat-content: 255, 255, 255;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.azul2, [data-ds-theme="azul2"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.azul2, [data-ds-theme="azul2"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.azul2, [data-ds-theme="azul2"]) body {
+    --chart-donut-1: 136, 220, 162;
+    --chart-donut-2: 94, 158, 248;
+    --chart-donut-3: 255, 207, 128;
+    --chart-donut-4: 153, 125, 237;
+    --chart-donut-5: 255, 140, 140;
+    --chart-donut-6: 56, 200, 225;
+    --chart-donut-7: 255, 168, 56;
+    --chart-donut-8: 86, 186, 176;
+    --chart-donut-9: 240, 106, 151;
+    --chart-donut-10: 153, 196, 108;
+    --chart-donut-11: 128, 140, 206;
+    --chart-donut-12: 166, 142, 133;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.azul3, [data-ds-theme="azul3"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.azul3, [data-ds-theme="azul3"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.azul3, [data-ds-theme="azul3"]) body {
+    --chart-donut-1: 136, 220, 162;
+    --chart-donut-2: 94, 158, 248;
+    --chart-donut-3: 255, 207, 128;
+    --chart-donut-4: 153, 125, 237;
+    --chart-donut-5: 255, 140, 140;
+    --chart-donut-6: 56, 200, 225;
+    --chart-donut-7: 255, 168, 56;
+    --chart-donut-8: 86, 186, 176;
+    --chart-donut-9: 240, 106, 151;
+    --chart-donut-10: 153, 196, 108;
+    --chart-donut-11: 128, 140, 206;
+    --chart-donut-12: 166, 142, 133;
+    --button-primary-flat-content: 255, 255, 255;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.azul3, [data-ds-theme="azul3"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.azul3, [data-ds-theme="azul3"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.azul3, [data-ds-theme="azul3"]) body {
+    --chart-donut-1: 136, 220, 162;
+    --chart-donut-2: 94, 158, 248;
+    --chart-donut-3: 255, 207, 128;
+    --chart-donut-4: 153, 125, 237;
+    --chart-donut-5: 255, 140, 140;
+    --chart-donut-6: 56, 200, 225;
+    --chart-donut-7: 255, 168, 56;
+    --chart-donut-8: 86, 186, 176;
+    --chart-donut-9: 240, 106, 151;
+    --chart-donut-10: 153, 196, 108;
+    --chart-donut-11: 128, 140, 206;
+    --chart-donut-12: 166, 142, 133;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.laranja1, [data-ds-theme="laranja1"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja1, [data-ds-theme="laranja1"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja1, [data-ds-theme="laranja1"]) body {
+    --chart-donut-1: 136, 220, 162;
+    --chart-donut-2: 94, 158, 248;
+    --chart-donut-3: 255, 207, 128;
+    --chart-donut-4: 153, 125, 237;
+    --chart-donut-5: 255, 140, 140;
+    --chart-donut-6: 56, 200, 225;
+    --chart-donut-7: 255, 168, 56;
+    --chart-donut-8: 86, 186, 176;
+    --chart-donut-9: 240, 106, 151;
+    --chart-donut-10: 153, 196, 108;
+    --chart-donut-11: 128, 140, 206;
+    --chart-donut-12: 166, 142, 133;
+    --button-primary-flat-content: 255, 255, 255;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.laranja1, [data-ds-theme="laranja1"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.laranja1, [data-ds-theme="laranja1"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.laranja1, [data-ds-theme="laranja1"]) body {
+    --chart-donut-1: 136, 220, 162;
+    --chart-donut-2: 94, 158, 248;
+    --chart-donut-3: 255, 207, 128;
+    --chart-donut-4: 153, 125, 237;
+    --chart-donut-5: 255, 140, 140;
+    --chart-donut-6: 56, 200, 225;
+    --chart-donut-7: 255, 168, 56;
+    --chart-donut-8: 86, 186, 176;
+    --chart-donut-9: 240, 106, 151;
+    --chart-donut-10: 153, 196, 108;
+    --chart-donut-11: 128, 140, 206;
+    --chart-donut-12: 166, 142, 133;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.laranja2, [data-ds-theme="laranja2"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja2, [data-ds-theme="laranja2"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.laranja2, [data-ds-theme="laranja2"]) body {
+    --chart-donut-1: 136, 220, 162;
+    --chart-donut-2: 94, 158, 248;
+    --chart-donut-3: 255, 207, 128;
+    --chart-donut-4: 153, 125, 237;
+    --chart-donut-5: 255, 140, 140;
+    --chart-donut-6: 56, 200, 225;
+    --chart-donut-7: 255, 168, 56;
+    --chart-donut-8: 86, 186, 176;
+    --chart-donut-9: 240, 106, 151;
+    --chart-donut-10: 153, 196, 108;
+    --chart-donut-11: 128, 140, 206;
+    --chart-donut-12: 166, 142, 133;
+    --button-primary-flat-content: 255, 255, 255;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.laranja2, [data-ds-theme="laranja2"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.laranja2, [data-ds-theme="laranja2"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.laranja2, [data-ds-theme="laranja2"]) body {
+    --chart-donut-1: 136, 220, 162;
+    --chart-donut-2: 94, 158, 248;
+    --chart-donut-3: 255, 207, 128;
+    --chart-donut-4: 153, 125, 237;
+    --chart-donut-5: 255, 140, 140;
+    --chart-donut-6: 56, 200, 225;
+    --chart-donut-7: 255, 168, 56;
+    --chart-donut-8: 86, 186, 176;
+    --chart-donut-9: 240, 106, 151;
+    --chart-donut-10: 153, 196, 108;
+    --chart-donut-11: 128, 140, 206;
+    --chart-donut-12: 166, 142, 133;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.verde1, [data-ds-theme="verde1"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde1, [data-ds-theme="verde1"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde1, [data-ds-theme="verde1"]) body {
+    --chart-donut-1: 136, 220, 162;
+    --chart-donut-2: 94, 158, 248;
+    --chart-donut-3: 255, 207, 128;
+    --chart-donut-4: 153, 125, 237;
+    --chart-donut-5: 255, 140, 140;
+    --chart-donut-6: 56, 200, 225;
+    --chart-donut-7: 255, 168, 56;
+    --chart-donut-8: 86, 186, 176;
+    --chart-donut-9: 240, 106, 151;
+    --chart-donut-10: 153, 196, 108;
+    --chart-donut-11: 128, 140, 206;
+    --chart-donut-12: 166, 142, 133;
+    --button-primary-flat-content: 255, 255, 255;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.verde1, [data-ds-theme="verde1"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.verde1, [data-ds-theme="verde1"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.verde1, [data-ds-theme="verde1"]) body {
+    --chart-donut-1: 136, 220, 162;
+    --chart-donut-2: 94, 158, 248;
+    --chart-donut-3: 255, 207, 128;
+    --chart-donut-4: 153, 125, 237;
+    --chart-donut-5: 255, 140, 140;
+    --chart-donut-6: 56, 200, 225;
+    --chart-donut-7: 255, 168, 56;
+    --chart-donut-8: 86, 186, 176;
+    --chart-donut-9: 240, 106, 151;
+    --chart-donut-10: 153, 196, 108;
+    --chart-donut-11: 128, 140, 206;
+    --chart-donut-12: 166, 142, 133;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.verde2, [data-ds-theme="verde2"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde2, [data-ds-theme="verde2"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde2, [data-ds-theme="verde2"]) body {
+    --chart-donut-1: 136, 220, 162;
+    --chart-donut-2: 94, 158, 248;
+    --chart-donut-3: 255, 207, 128;
+    --chart-donut-4: 153, 125, 237;
+    --chart-donut-5: 255, 140, 140;
+    --chart-donut-6: 56, 200, 225;
+    --chart-donut-7: 255, 168, 56;
+    --chart-donut-8: 86, 186, 176;
+    --chart-donut-9: 240, 106, 151;
+    --chart-donut-10: 153, 196, 108;
+    --chart-donut-11: 128, 140, 206;
+    --chart-donut-12: 166, 142, 133;
+    --button-primary-flat-content: 255, 255, 255;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.verde2, [data-ds-theme="verde2"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.verde2, [data-ds-theme="verde2"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.verde2, [data-ds-theme="verde2"]) body {
+    --chart-donut-1: 136, 220, 162;
+    --chart-donut-2: 94, 158, 248;
+    --chart-donut-3: 255, 207, 128;
+    --chart-donut-4: 153, 125, 237;
+    --chart-donut-5: 255, 140, 140;
+    --chart-donut-6: 56, 200, 225;
+    --chart-donut-7: 255, 168, 56;
+    --chart-donut-8: 86, 186, 176;
+    --chart-donut-9: 240, 106, 151;
+    --chart-donut-10: 153, 196, 108;
+    --chart-donut-11: 128, 140, 206;
+    --chart-donut-12: 166, 142, 133;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.verde3, [data-ds-theme="verde3"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde3, [data-ds-theme="verde3"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde3, [data-ds-theme="verde3"]) body {
+    --chart-donut-1: 136, 220, 162;
+    --chart-donut-2: 94, 158, 248;
+    --chart-donut-3: 255, 207, 128;
+    --chart-donut-4: 153, 125, 237;
+    --chart-donut-5: 255, 140, 140;
+    --chart-donut-6: 56, 200, 225;
+    --chart-donut-7: 255, 168, 56;
+    --chart-donut-8: 86, 186, 176;
+    --chart-donut-9: 240, 106, 151;
+    --chart-donut-10: 153, 196, 108;
+    --chart-donut-11: 128, 140, 206;
+    --chart-donut-12: 166, 142, 133;
+    --button-primary-flat-content: 255, 255, 255;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.verde3, [data-ds-theme="verde3"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.verde3, [data-ds-theme="verde3"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.verde3, [data-ds-theme="verde3"]) body {
+    --chart-donut-1: 136, 220, 162;
+    --chart-donut-2: 94, 158, 248;
+    --chart-donut-3: 255, 207, 128;
+    --chart-donut-4: 153, 125, 237;
+    --chart-donut-5: 255, 140, 140;
+    --chart-donut-6: 56, 200, 225;
+    --chart-donut-7: 255, 168, 56;
+    --chart-donut-8: 86, 186, 176;
+    --chart-donut-9: 240, 106, 151;
+    --chart-donut-10: 153, 196, 108;
+    --chart-donut-11: 128, 140, 206;
+    --chart-donut-12: 166, 142, 133;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.verde4, [data-ds-theme="verde4"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde4, [data-ds-theme="verde4"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.verde4, [data-ds-theme="verde4"]) body {
+    --chart-donut-1: 136, 220, 162;
+    --chart-donut-2: 94, 158, 248;
+    --chart-donut-3: 255, 207, 128;
+    --chart-donut-4: 153, 125, 237;
+    --chart-donut-5: 255, 140, 140;
+    --chart-donut-6: 56, 200, 225;
+    --chart-donut-7: 255, 168, 56;
+    --chart-donut-8: 86, 186, 176;
+    --chart-donut-9: 240, 106, 151;
+    --chart-donut-10: 153, 196, 108;
+    --chart-donut-11: 128, 140, 206;
+    --chart-donut-12: 166, 142, 133;
+    --button-primary-flat-content: 255, 255, 255;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.verde4, [data-ds-theme="verde4"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.verde4, [data-ds-theme="verde4"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.verde4, [data-ds-theme="verde4"]) body {
+    --chart-donut-1: 136, 220, 162;
+    --chart-donut-2: 94, 158, 248;
+    --chart-donut-3: 255, 207, 128;
+    --chart-donut-4: 153, 125, 237;
+    --chart-donut-5: 255, 140, 140;
+    --chart-donut-6: 56, 200, 225;
+    --chart-donut-7: 255, 168, 56;
+    --chart-donut-8: 86, 186, 176;
+    --chart-donut-9: 240, 106, 151;
+    --chart-donut-10: 153, 196, 108;
+    --chart-donut-11: 128, 140, 206;
+    --chart-donut-12: 166, 142, 133;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.rosa1, [data-ds-theme="rosa1"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"]) body {
+    --chart-donut-1: 136, 220, 162;
+    --chart-donut-2: 94, 158, 248;
+    --chart-donut-3: 255, 207, 128;
+    --chart-donut-4: 153, 125, 237;
+    --chart-donut-5: 255, 140, 140;
+    --chart-donut-6: 56, 200, 225;
+    --chart-donut-7: 255, 168, 56;
+    --chart-donut-8: 86, 186, 176;
+    --chart-donut-9: 240, 106, 151;
+    --chart-donut-10: 153, 196, 108;
+    --chart-donut-11: 128, 140, 206;
+    --chart-donut-12: 166, 142, 133;
+    --button-primary-flat-content: 255, 255, 255;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.rosa1, [data-ds-theme="rosa1"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.rosa1, [data-ds-theme="rosa1"]) body {
+    --chart-donut-1: 136, 220, 162;
+    --chart-donut-2: 94, 158, 248;
+    --chart-donut-3: 255, 207, 128;
+    --chart-donut-4: 153, 125, 237;
+    --chart-donut-5: 255, 140, 140;
+    --chart-donut-6: 56, 200, 225;
+    --chart-donut-7: 255, 168, 56;
+    --chart-donut-8: 86, 186, 176;
+    --chart-donut-9: 240, 106, 151;
+    --chart-donut-10: 153, 196, 108;
+    --chart-donut-11: 128, 140, 206;
+    --chart-donut-12: 166, 142, 133;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2156, [data-ds-theme="custom2156"]) body {
+    --chart-donut-1: 136, 220, 162;
+    --chart-donut-2: 94, 158, 248;
+    --chart-donut-3: 255, 207, 128;
+    --chart-donut-4: 153, 125, 237;
+    --chart-donut-5: 255, 140, 140;
+    --chart-donut-6: 56, 200, 225;
+    --chart-donut-7: 255, 168, 56;
+    --chart-donut-8: 86, 186, 176;
+    --chart-donut-9: 240, 106, 151;
+    --chart-donut-10: 153, 196, 108;
+    --chart-donut-11: 128, 140, 206;
+    --chart-donut-12: 166, 142, 133;
+    --button-primary-flat-content: 255, 255, 255;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2156, [data-ds-theme="custom2156"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2156, [data-ds-theme="custom2156"]) body {
+    --chart-donut-1: 255, 172, 128;
+    --chart-donut-2: 161, 161, 161;
+    --chart-donut-3: 246, 204, 169;
+    --chart-donut-4: 161, 134, 193;
+    --chart-donut-5: 229, 156, 134;
+    --chart-donut-6: 115, 188, 191;
+    --chart-donut-7: 118, 161, 211;
+    --chart-donut-8: 211, 139, 181;
+    --chart-donut-9: 178, 150, 108;
+    --chart-donut-10: 140, 177, 147;
+    --chart-donut-11: 158, 147, 211;
+    --chart-donut-12: 182, 127, 120;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2140, [data-ds-theme="custom2140"]) body {
+    --chart-donut-1: 232, 150, 93;
+    --chart-donut-2: 161, 177, 135;
+    --chart-donut-3: 117, 179, 199;
+    --chart-donut-4: 188, 168, 146;
+    --chart-donut-5: 213, 140, 89;
+    --chart-donut-6: 161, 178, 135;
+    --chart-donut-7: 113, 172, 189;
+    --chart-donut-8: 189, 168, 147;
+    --chart-donut-9: 180, 122, 82;
+    --chart-donut-10: 149, 164, 126;
+    --chart-donut-11: 101, 147, 161;
+    --chart-donut-12: 184, 164, 143;
+    --button-primary-flat-content: 255, 255, 255;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2140, [data-ds-theme="custom2140"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2140, [data-ds-theme="custom2140"]) body {
+    --chart-donut-1: 249, 179, 131;
+    --chart-donut-2: 209, 228, 181;
+    --chart-donut-3: 149, 207, 225;
+    --chart-donut-4: 253, 228, 202;
+    --chart-donut-5: 250, 193, 154;
+    --chart-donut-6: 218, 233, 194;
+    --chart-donut-7: 168, 216, 230;
+    --chart-donut-8: 253, 233, 211;
+    --chart-donut-9: 251, 206, 175;
+    --chart-donut-10: 225, 238, 207;
+    --chart-donut-11: 186, 224, 236;
+    --chart-donut-12: 254, 238, 221;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2133, [data-ds-theme="custom2133"]) body {
+    --chart-donut-1: 224, 143, 137;
+    --chart-donut-2: 144, 154, 239;
+    --chart-donut-3: 187, 169, 121;
+    --chart-donut-4: 172, 168, 207;
+    --chart-donut-5: 193, 128, 122;
+    --chart-donut-6: 129, 136, 207;
+    --chart-donut-7: 189, 170, 122;
+    --chart-donut-8: 155, 151, 185;
+    --chart-donut-9: 165, 113, 109;
+    --chart-donut-10: 113, 119, 175;
+    --chart-donut-11: 180, 163, 118;
+    --chart-donut-12: 135, 132, 158;
+    --button-primary-flat-content: 255, 255, 255;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2133, [data-ds-theme="custom2133"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2133, [data-ds-theme="custom2133"]) body {
+    --chart-donut-1: 231, 168, 163;
+    --chart-donut-2: 165, 172, 243;
+    --chart-donut-3: 248, 226, 169;
+    --chart-donut-4: 191, 187, 221;
+    --chart-donut-5: 236, 183, 179;
+    --chart-donut-6: 181, 186, 245;
+    --chart-donut-7: 250, 232, 185;
+    --chart-donut-8: 203, 200, 227;
+    --chart-donut-9: 239, 198, 195;
+    --chart-donut-10: 197, 200, 247;
+    --chart-donut-11: 250, 236, 200;
+    --chart-donut-12: 214, 211, 232;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2170, [data-ds-theme="custom2170"]) body {
+    --chart-donut-1: 87, 122, 197;
+    --chart-donut-2: 176, 197, 135;
+    --chart-donut-3: 234, 150, 167;
+    --chart-donut-4: 244, 165, 85;
+    --chart-donut-5: 87, 122, 197;
+    --chart-donut-6: 143, 162, 108;
+    --chart-donut-7: 205, 120, 137;
+    --chart-donut-8: 198, 132, 68;
+    --chart-donut-9: 129, 156, 215;
+    --chart-donut-10: 107, 120, 82;
+    --chart-donut-11: 159, 90, 104;
+    --chart-donut-12: 160, 108, 62;
+    --button-primary-flat-content: 255, 255, 255;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2170, [data-ds-theme="custom2170"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2170, [data-ds-theme="custom2170"]) body {
+    --chart-donut-1: 158, 182, 237;
+    --chart-donut-2: 192, 210, 159;
+    --chart-donut-3: 239, 176, 189;
+    --chart-donut-4: 247, 188, 128;
+    --chart-donut-5: 158, 182, 237;
+    --chart-donut-6: 170, 192, 140;
+    --chart-donut-7: 226, 154, 172;
+    --chart-donut-8: 228, 168, 111;
+    --chart-donut-9: 197, 212, 246;
+    --chart-donut-10: 208, 223, 184;
+    --chart-donut-11: 245, 199, 208;
+    --chart-donut-12: 250, 208, 166;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2162, [data-ds-theme="custom2162"]) body {
+    --chart-donut-1: 56, 186, 225;
+    --chart-donut-2: 186, 210, 73;
+    --chart-donut-3: 246, 176, 95;
+    --chart-donut-4: 161, 134, 193;
+    --chart-donut-5: 229, 156, 134;
+    --chart-donut-6: 115, 188, 191;
+    --chart-donut-7: 118, 161, 211;
+    --chart-donut-8: 211, 139, 181;
+    --chart-donut-9: 178, 150, 108;
+    --chart-donut-10: 140, 177, 147;
+    --chart-donut-11: 158, 147, 211;
+    --chart-donut-12: 182, 127, 120;
+    --button-primary-flat-content: 255, 255, 255;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2162, [data-ds-theme="custom2162"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2162, [data-ds-theme="custom2162"]) body {
+    --chart-donut-1: 124, 217, 243;
+    --chart-donut-2: 199, 218, 106;
+    --chart-donut-3: 247, 190, 124;
+    --chart-donut-4: 161, 134, 193;
+    --chart-donut-5: 229, 156, 134;
+    --chart-donut-6: 115, 188, 191;
+    --chart-donut-7: 118, 161, 211;
+    --chart-donut-8: 211, 139, 181;
+    --chart-donut-9: 178, 150, 108;
+    --chart-donut-10: 140, 177, 147;
+    --chart-donut-11: 158, 147, 211;
+    --chart-donut-12: 182, 127, 120;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2157, [data-ds-theme="custom2157"]) body {
+    --chart-donut-1: 62, 160, 108;
+    --chart-donut-2: 72, 152, 183;
+    --chart-donut-3: 78, 90, 131;
+    --chart-donut-4: 161, 134, 193;
+    --chart-donut-5: 229, 156, 134;
+    --chart-donut-6: 115, 188, 191;
+    --chart-donut-7: 118, 161, 211;
+    --chart-donut-8: 211, 139, 181;
+    --chart-donut-9: 178, 150, 108;
+    --chart-donut-10: 140, 177, 147;
+    --chart-donut-11: 158, 147, 211;
+    --chart-donut-12: 182, 127, 120;
+    --button-primary-flat-content: 255, 255, 255;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2157, [data-ds-theme="custom2157"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2157, [data-ds-theme="custom2157"]) body {
+    --chart-donut-1: 122, 225, 178;
+    --chart-donut-2: 104, 171, 197;
+    --chart-donut-3: 110, 119, 154;
+    --chart-donut-4: 161, 134, 193;
+    --chart-donut-5: 229, 156, 134;
+    --chart-donut-6: 115, 188, 191;
+    --chart-donut-7: 118, 161, 211;
+    --chart-donut-8: 211, 139, 181;
+    --chart-donut-9: 178, 150, 108;
+    --chart-donut-10: 140, 177, 147;
+    --chart-donut-11: 158, 147, 211;
+    --chart-donut-12: 182, 127, 120;
+  }
+
+  html[data-color-scheme="light"]:not([data-contrast="high"]) :is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-color-scheme="light"]:not([data-contrast="high"]):is(.custom2178, [data-ds-theme="custom2178"]) body {
+    --primary-1: 234, 113, 0;
+    --primary-2: 206, 99, 0;
+    --primary-3: 197, 115, 39;
+    --primary-4: 247, 201, 158;
+    --primary-5: 253, 244, 235;
+    --action-primary-background: 234, 113, 0;
+    --action-primary-background-hover: 206, 99, 0;
+    --action-primary-background-active: 197, 115, 39;
+    --action-primary-content: 20, 25, 31;
+    --action-primary-content-hover: 20, 25, 31;
+    --action-primary-content-active: 20, 25, 31;
+    --action-primary-ghost-background: 253, 244, 235;
+    --content-link: 182, 88, 0;
+    --content-on-brand: 20, 25, 31;
+    --illustration-primary-content: 20, 25, 31;
+    --selection-background: 253, 244, 235;
+    --selection-background-hover: 253, 244, 235;
+    --selection-content: 182, 88, 0;
+    --selection-border: 182, 88, 0;
+    --focus-ring: 182, 88, 0;
+    --status-primary-outline-foreground: 182, 88, 0;
+    --status-primary-outline-border: 182, 88, 0;
+    --status-primary-soft-foreground: 182, 88, 0;
+    --status-primary-soft-background: 253, 244, 235;
+    --brand-accent-1: 197, 0, 34;
+    --brand-accent-1-soft: 249, 230, 233;
+    --brand-accent-1-content: 197, 0, 34;
+    --brand-accent-1-border: 197, 0, 34;
+    --illustration-brand-accent-1-content: 255, 255, 255;
+    --chart-brand-accent-1: 197, 0, 34;
+    --brand-accent-2: 223, 79, 10;
+    --brand-accent-2-soft: 252, 237, 230;
+    --brand-accent-2-content: 185, 66, 9;
+    --brand-accent-2-border: 223, 79, 10;
+    --illustration-brand-accent-2-content: 0, 0, 0;
+    --chart-brand-accent-2: 223, 79, 10;
+    --brand-accent-3: 206, 28, 26;
+    --brand-accent-3-soft: 250, 232, 232;
+    --brand-accent-3-content: 206, 28, 26;
+    --brand-accent-3-border: 206, 28, 26;
+    --illustration-brand-accent-3-content: 255, 255, 255;
+    --chart-brand-accent-3: 206, 28, 26;
+    --chart-1: 234, 113, 0;
+    --chart-donut-1: 239, 148, 64;
+    --chart-2: 197, 0, 34;
+    --chart-donut-2: 216, 82, 105;
+    --chart-3: 211, 102, 0;
+    --chart-donut-3: 108, 214, 140;
+    --chart-4: 177, 0, 31;
+    --chart-donut-4: 44, 132, 254;
+    --chart-5: 187, 90, 0;
+    --chart-donut-5: 255, 193, 103;
+    --chart-6: 158, 0, 27;
+    --chart-donut-6: 132, 97, 235;
+    --chart-7: 164, 79, 0;
+    --chart-donut-7: 255, 111, 111;
+    --chart-8: 138, 0, 24;
+    --chart-donut-8: 145, 224, 169;
+    --chart-9: 140, 68, 0;
+    --chart-donut-9: 97, 163, 254;
+    --chart-10: 118, 0, 20;
+    --chart-donut-10: 255, 209, 141;
+    --chart-11: 117, 56, 0;
+    --chart-donut-11: 163, 137, 240;
+    --chart-12: 98, 0, 17;
+    --chart-donut-12: 255, 147, 147;
+    --chart-balance: var(--chart-1);
+    --chart-invested: var(--chart-2);
+    --button-primary-flat-content: 20, 25, 31;
+  }
+
+  html[data-color-scheme="dark"]:not([data-contrast="high"]) :is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-color-scheme="dark"]:not([data-contrast="high"]):is(.custom2178, [data-ds-theme="custom2178"]) body {
+    --primary-1: 238, 141, 51;
+    --primary-2: 240, 155, 75;
+    --primary-3: 190, 113, 41;
+    --primary-4: 103, 69, 39;
+    --primary-5: 51, 41, 34;
+    --action-primary-background: 238, 141, 51;
+    --action-primary-background-hover: 240, 155, 75;
+    --action-primary-background-active: 190, 113, 41;
+    --action-primary-content: 20, 25, 31;
+    --action-primary-content-hover: 20, 25, 31;
+    --action-primary-content-active: 20, 25, 31;
+    --action-primary-ghost-background: 51, 41, 34;
+    --content-link: 238, 141, 51;
+    --content-on-brand: 20, 25, 31;
+    --illustration-primary-content: 20, 25, 31;
+    --selection-background: 51, 41, 34;
+    --selection-background-hover: 51, 41, 34;
+    --selection-content: 238, 141, 51;
+    --selection-border: 238, 141, 51;
+    --focus-ring: 238, 141, 51;
+    --status-primary-outline-foreground: 238, 141, 51;
+    --status-primary-outline-border: 238, 141, 51;
+    --status-primary-soft-foreground: 238, 141, 51;
+    --status-primary-soft-background: 51, 41, 34;
+    --brand-accent-1: 212, 64, 89;
+    --brand-accent-1-soft: 39, 29, 37;
+    --brand-accent-1-content: 220, 101, 121;
+    --brand-accent-1-border: 212, 64, 89;
+    --illustration-brand-accent-1-content: 0, 0, 0;
+    --chart-brand-accent-1: 212, 64, 89;
+    --brand-accent-2: 231, 123, 71;
+    --brand-accent-2-soft: 41, 35, 35;
+    --brand-accent-2-content: 231, 123, 71;
+    --brand-accent-2-border: 231, 123, 71;
+    --illustration-brand-accent-2-content: 0, 0, 0;
+    --chart-brand-accent-2: 231, 123, 71;
+    --brand-accent-3: 218, 85, 83;
+    --brand-accent-3-soft: 40, 31, 36;
+    --brand-accent-3-content: 222, 102, 100;
+    --brand-accent-3-border: 218, 85, 83;
+    --illustration-brand-accent-3-content: 0, 0, 0;
+    --chart-brand-accent-3: 218, 85, 83;
+    --chart-1: 234, 113, 0;
+    --chart-donut-1: 239, 148, 64;
+    --chart-2: 202, 20, 52;
+    --chart-donut-2: 216, 82, 105;
+    --chart-3: 236, 127, 26;
+    --chart-donut-3: 108, 214, 140;
+    --chart-4: 203, 26, 56;
+    --chart-donut-4: 44, 132, 254;
+    --chart-5: 238, 141, 51;
+    --chart-donut-5: 255, 193, 103;
+    --chart-6: 209, 51, 78;
+    --chart-donut-6: 132, 97, 235;
+    --chart-7: 240, 156, 77;
+    --chart-donut-7: 255, 111, 111;
+    --chart-8: 214, 77, 100;
+    --chart-donut-8: 145, 224, 169;
+    --chart-9: 242, 170, 102;
+    --chart-donut-9: 97, 163, 254;
+    --chart-10: 220, 102, 122;
+    --chart-donut-10: 255, 209, 141;
+    --chart-11: 244, 184, 128;
+    --chart-donut-11: 163, 137, 240;
+    --chart-12: 226, 128, 144;
+    --chart-donut-12: 255, 147, 147;
+    --chart-balance: var(--chart-1);
+    --chart-invested: var(--chart-2);
+  }
+
+  html[data-contrast="high"][data-contrast-theme="light"] :is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.custom2178, [data-ds-theme="custom2178"]),
+html[data-contrast="high"][data-contrast-theme="light"]:is(.custom2178, [data-ds-theme="custom2178"]) body {
+    --primary-1: 131, 63, 0;
+    --primary-2: 115, 55, 0;
+    --primary-3: 105, 50, 0;
+    --primary-4: 208, 182, 158;
+    --primary-5: 245, 240, 235;
+    --action-primary-background: 131, 63, 0;
+    --action-primary-background-hover: 115, 55, 0;
+    --action-primary-background-active: 105, 50, 0;
+    --action-primary-content: 255,255,255;
+    --action-primary-content-hover: 255,255,255;
+    --action-primary-content-active: 255,255,255;
+    --action-primary-ghost-background: 245, 240, 235;
+    --content-link: 131, 63, 0;
+    --content-on-brand: 255, 255, 255;
+    --illustration-primary-content: 255,255,255;
+    --selection-background: 245, 240, 235;
+    --selection-background-hover: 245, 240, 235;
+    --selection-content: 131, 63, 0;
+    --selection-border: 131, 63, 0;
+    --focus-ring: 131, 63, 0;
+    --status-primary-outline-foreground: 131, 63, 0;
+    --status-primary-outline-border: 131, 63, 0;
+    --status-primary-soft-foreground: 131, 63, 0;
+    --status-primary-soft-background: 245, 240, 235;
+    --brand-accent-1: 197, 0, 34;
+    --brand-accent-1-soft: 255,255,255;
+    --brand-accent-1-content: 0,0,0;
+    --brand-accent-1-border: 0,0,0;
+    --illustration-brand-accent-1-content: 255,255,255;
+    --chart-brand-accent-1: 197, 0, 34;
+    --brand-accent-2: 205, 73, 9;
+    --brand-accent-2-soft: 255,255,255;
+    --brand-accent-2-content: 0,0,0;
+    --brand-accent-2-border: 0,0,0;
+    --illustration-brand-accent-2-content: 255,255,255;
+    --chart-brand-accent-2: 205, 73, 9;
+    --brand-accent-3: 206, 28, 26;
+    --brand-accent-3-soft: 255,255,255;
+    --brand-accent-3-content: 0,0,0;
+    --brand-accent-3-border: 0,0,0;
+    --illustration-brand-accent-3-content: 255,255,255;
+    --chart-brand-accent-3: 206, 28, 26;
+    --chart-1: 234, 113, 0;
+    --chart-donut-1: 202, 125, 54;
+    --chart-2: 197, 0, 34;
+    --chart-donut-2: 216, 82, 105;
+    --chart-3: 211, 102, 0;
+    --chart-donut-3: 77, 154, 100;
+    --chart-4: 177, 0, 31;
+    --chart-donut-4: 44, 132, 254;
+    --chart-5: 187, 90, 0;
+    --chart-donut-5: 183, 139, 74;
+    --chart-6: 158, 0, 27;
+    --chart-donut-6: 132, 97, 235;
+    --chart-7: 164, 79, 0;
+    --chart-donut-7: 235, 102, 102;
+    --chart-8: 138, 0, 24;
+    --chart-donut-8: 103, 161, 121;
+    --chart-9: 140, 68, 0;
+    --chart-donut-9: 89, 150, 234;
+    --chart-10: 118, 0, 20;
+    --chart-donut-10: 168, 137, 93;
+    --chart-11: 117, 56, 0;
+    --chart-donut-11: 150, 125, 221;
+    --chart-12: 98, 0, 17;
+    --chart-donut-12: 199, 114, 114;
+    --chart-balance: var(--chart-1);
+    --chart-invested: var(--chart-2);
   }

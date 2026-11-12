@@ -1,0 +1,127 @@
+/* Universal dark + high contrast only. See docs/high-contrast-dark. */
+html[data-color-scheme="dark"][data-contrast="high"] :is(.portal-illustration, .versi-illustration),
+html[data-color-scheme="dark"][data-contrast="high"] :is(.portal-illustration, .versi-illustration) [data-brand-accent] {
+  --illustration-brand-accent-1-content: 0, 0, 0 !important;
+  --illustration-brand-accent-2-content: 0, 0, 0 !important;
+  --illustration-brand-accent-3-content: 0, 0, 0 !important;
+  --illustration-primary-content: 0, 0, 0 !important;
+  --illustration-on-primary: rgb(0, 0, 0) !important;
+  --illustration-on-success: rgb(0, 0, 0) !important;
+  --illustration-on-error: rgb(0, 0, 0) !important;
+  --illustration-on-warning: rgb(0, 0, 0) !important;
+  --illustration-support-content: rgb(0, 0, 0) !important;
+  --illustration-accent: rgb(255, 223, 0) !important;
+  --illustration-support: rgb(255, 223, 0) !important;
+  --illustration-highlight: rgb(255, 255, 255) !important;
+  --illustration-ink: rgb(0, 0, 0) !important;
+  --illustration-detail: rgb(69, 90, 100) !important;
+  --illustration-muted: rgb(112, 119, 128) !important;
+  --illustration-outline: rgb(153, 163, 173) !important;
+  --illustration-on-soft: rgb(255, 255, 255) !important;
+  --illustration-success: rgb(var(--status-green-solid-background)) !important;
+  --illustration-error: rgb(var(--status-red-solid-background)) !important;
+  --illustration-warning: rgb(var(--status-yellow-solid-background)) !important;
+  --illustration-background: rgb(189, 197, 205) !important;
+  --illustration-surface: rgb(244, 247, 248) !important;
+  --illustration-accent-soft: rgb(102, 89, 0) !important;
+  --illustration-support-soft: rgb(102, 89, 0) !important;
+}
+
+html[data-color-scheme="dark"][data-contrast="high"] .apexcharts-datalabels text {
+  fill: rgb(255, 223, 0) !important;
+  stroke: rgb(0, 0, 0) !important;
+  stroke-width: 4px !important;
+  stroke-linejoin: round !important;
+  paint-order: stroke fill !important;
+}
+
+html[data-color-scheme="dark"][data-contrast="high"] .portal-banner {
+  --portal-banner-text: rgb(0, 0, 0) !important;
+}
+
+html[data-color-scheme="dark"][data-contrast="high"] .portal-banner [data-brand-accent="1"] {
+  fill: rgb(var(--chart-2)) !important;
+}
+
+html[data-color-scheme="dark"][data-contrast="high"] .portal-banner [data-brand-accent="2"] {
+  fill: rgb(var(--chart-5)) !important;
+}
+
+html[data-color-scheme="dark"][data-contrast="high"] .portal-banner [data-brand-accent="3"] {
+  fill: rgb(var(--chart-4)) !important;
+}
+
+html[data-color-scheme="dark"][data-contrast="high"] :is([role="tooltip"], .bg-surface-tooltip) {
+  --content-inverse: 255, 255, 255 !important;
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(0, 0, 0) !important;
+  border: 1px solid rgb(224, 224, 224) !important;
+}
+
+html[data-color-scheme="dark"][data-contrast="high"] :is(.apexcharts-tooltip, .apexcharts-tooltip-title) {
+  color: rgb(255, 255, 255) !important;
+  background: rgb(0, 0, 0) !important;
+  border-color: rgb(224, 224, 224) !important;
+}
+
+html[data-color-scheme="dark"][data-contrast="high"] :is(.apexcharts-tooltip-text, .apexcharts-tooltip-title) {
+  color: rgb(255, 255, 255) !important;
+}
+
+html[data-color-scheme="dark"][data-contrast="high"] :is(.portal-illustration, .versi-illustration) [data-brand-accent="1"] {
+  --illustration-support: rgb(255, 223, 0) !important;
+  --illustration-support-soft: rgb(102, 89, 0) !important;
+}
+
+html[data-color-scheme="dark"][data-contrast="high"] :is(.portal-illustration, .versi-illustration) [data-brand-accent="2"] {
+  --illustration-support: rgb(57, 255, 112) !important;
+  --illustration-support-soft: rgb(22, 83, 43) !important;
+}
+
+html[data-color-scheme="dark"][data-contrast="high"] :is(.portal-illustration, .versi-illustration) [data-brand-accent="3"] {
+  --illustration-support: rgb(204, 153, 255) !important;
+  --illustration-support-soft: rgb(68, 48, 87) !important;
+}
+
+html[data-color-scheme="dark"][data-contrast="high"] .portal-banner {
+  fill: rgb(var(--primary-1)) !important;
+}
+html[data-color-scheme="dark"][data-contrast="high"] .portal-banner [data-illustration-role="banner-field"] { fill: rgb(var(--primary-1)) !important; }
+
+html[data-color-scheme="dark"][data-contrast="high"] :is(.portal-illustration, .versi-illustration) [data-illustration-high-dark-accent="2"] {
+  --illustration-support: rgb(57, 255, 112) !important;
+  --illustration-support-soft: rgb(22, 83, 43) !important;
+}
+html[data-color-scheme="dark"][data-contrast="high"] [data-illustration-high-dark="ink"] { fill: rgb(0, 0, 0) !important; }
+html[data-color-scheme="dark"][data-contrast="high"] :is(.portal-illustration, .versi-illustration) [data-illustration-informative] { fill: rgb(var(--content-primary)); }
+html[data-color-scheme="dark"][data-contrast="high"] :is(.portal-illustration, .versi-illustration) [data-illustration-on-success] { fill: var(--illustration-on-success); }
+/* Soft supports need light content, independently of the solid support pair. */
+html[data-color-scheme="dark"][data-contrast="high"] :is(.portal-illustration, .versi-illustration) [data-brand-accent-tone="soft"] {
+  --illustration-support-content: rgb(255, 255, 255) !important;
+}
+/* Dark boundaries separate adjacent luminous pattern fills. */
+html[data-color-scheme="dark"][data-contrast="high"] .versi-chart .apexcharts-pie-area { stroke: #000 !important; stroke-width: 2px !important; }
+html[data-color-scheme="dark"][data-contrast="high"] [data-versi-notice="info"] { --content-primary: 147, 197, 253 !important; }
+html[data-color-scheme="dark"][data-contrast="high"] [data-versi-notice="success"] { --content-primary: 110, 231, 160 !important; }
+html[data-color-scheme="dark"][data-contrast="high"] [data-versi-notice="warning"] { --content-primary: 255, 230, 128 !important; }
+html[data-color-scheme="dark"][data-contrast="high"] [data-versi-notice="danger"] { --content-primary: 255, 179, 189 !important; }
+html[data-color-scheme="dark"][data-contrast="high"] [data-versi-notice="gray"] {
+  --content-primary: 212, 219, 226 !important;
+  --content-link: 212, 219, 226 !important;
+  background-color: rgb(24, 28, 34);
+}
+/* Check glyphs follow the same exact activation, even with a stale optional
+   data-contrast-theme attribute. Black reads against the yellow selection. */
+html[data-color-scheme="dark"][data-contrast="high"] .checkbox-control:checked,
+html[data-color-scheme="dark"][data-contrast="high"] input[type="checkbox"]:not(.peer):not(.sr-only):not(.hidden):checked,
+html[data-color-scheme="dark"][data-contrast="high"] .peer:checked + .checkbox-control-proxy {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.5 8.2 6.5 11 12.5 4.8' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+}
+html[data-color-scheme="dark"][data-contrast="high"] .checkbox-control:indeterminate,
+html[data-color-scheme="dark"][data-contrast="high"] input[type="checkbox"]:not(.peer):not(.sr-only):not(.hidden):indeterminate {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 8h8' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") !important;
+}
+/* Outline uses the selection pair when pressed; filled actions keep black ink. */
+html[data-color-scheme="dark"][data-contrast="high"] .versi-button-primary-outline:active {
+  color: rgb(var(--selection-content));
+}

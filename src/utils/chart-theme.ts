@@ -14,12 +14,18 @@ const SERIES_FALLBACKS = [
 ] as const;
 
 const DONUT_SERIES_FALLBACKS = [
-  "#66d288",
-  "#3182f6",
-  "#ffc25c",
-  "#7c58e8",
-  "#ff6b6b",
-  ...SERIES_FALLBACKS.slice(5),
+  "#88dca2",
+  "#5e9ef8",
+  "#ffcf80",
+  "#997ded",
+  "#ff8c8c",
+  "#38c8e1",
+  "#ffa838",
+  "#56bab0",
+  "#f06a97",
+  "#99c46c",
+  "#808cce",
+  "#a68e85",
 ] as const;
 
 const MUTED_SERIES_FALLBACKS = [

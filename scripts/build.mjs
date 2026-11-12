@@ -88,6 +88,29 @@ const tsup = runNode("tsup", "dist/cli-default.js", [
 
 if (tsup.status !== 0) process.exit(tsup.status ?? 1);
 
+// Optional narrative assets have their own output directory and one module per
+// drawing. Do not merge their payload into the core or a shared initial chunk.
+const illustrationFiles = fs.readdirSync(path.join(packageRoot, "src/components/illustrations"))
+  .filter(file => file.endsWith(".tsx"));
+const illustrations = runNode("tsup", "dist/cli-default.js", [
+  ...illustrationFiles.map(file => `src/components/illustrations/${file}`),
+  "--format", "esm", "--target", "es2020", "--dts", "--sourcemap",
+  "--external", "react", "--no-splitting", "--out-dir", "dist/illustrations",
+]);
+if (illustrations.status !== 0) process.exit(illustrations.status ?? 1);
+const illustrationIndex = fs.readFileSync(path.join(packageRoot, "src/components/illustrations/index.ts"), "utf8")
+  .replace(/from '([^']+)'/g, "from '$1.js'");
+fs.writeFileSync(path.join(distRoot, "illustrations/index.js"), `"use client";\n${illustrationIndex}`);
+fs.writeFileSync(path.join(distRoot, "illustrations/index.d.ts"), illustrationIndex);
+for (const file of illustrationFiles) {
+  const output = path.join(distRoot, "illustrations", file.replace(/\.tsx$/, ".js"));
+  fs.writeFileSync(output, `"use client";\n${fs.readFileSync(output, "utf8")}`);
+  const mapFile = `${output}.map`;
+  const sourceMap = JSON.parse(fs.readFileSync(mapFile, "utf8"));
+  sourceMap.mappings = `;${sourceMap.mappings}`;
+  fs.writeFileSync(mapFile, JSON.stringify(sourceMap));
+}
+
 const tailwind = runNode("tailwindcss", "lib/cli.js", [
   "-c",
   "tailwind.config.cjs",
@@ -100,8 +123,12 @@ const tailwind = runNode("tailwindcss", "lib/cli.js", [
 
 if (tailwind.status !== 0) process.exit(tailwind.status ?? 1);
 
-const themesSource = path.join(packageRoot, "src", "themes.css");
-fs.copyFileSync(themesSource, path.join(distRoot, "themes.css"));
+// Apply the same CSS optimizer to the complete theme catalog as to styles.css.
+// The readable generated source stays available for review in src/themes.css.
+const themes = runNode("tailwindcss", "lib/cli.js", [
+  "-c", "tailwind.config.cjs", "-i", "src/themes.css", "-o", "dist/themes.css", "--minify",
+]);
+if (themes.status !== 0) process.exit(themes.status ?? 1);
 
 const flagsSource = path.join(packageRoot, "public", "flags");
 fs.cpSync(flagsSource, path.join(distRoot, "flags"), { recursive: true });

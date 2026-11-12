@@ -7,10 +7,16 @@ import { resolveNpmCli } from "./resolve-npm-cli.mjs";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const pkg = JSON.parse(fs.readFileSync(path.join(root, "package.json"), "utf8"));
-const required = [".", "./core", "./forms", "./charts", "./overlays", "./documents", "./countries", "./styles.css", "./themes.css"];
+const required = [".", "./core", "./forms", "./charts", "./overlays", "./documents", "./countries", "./illustrations", "./illustrations/*", "./styles.css", "./themes.css"];
 assert.deepEqual(Object.keys(pkg.exports).sort(), required.sort());
 assert.deepEqual(pkg.files, ["dist", "README.md"]);
 for (const [name, entry] of Object.entries(pkg.exports)) {
+  if (name === "./illustrations/*") {
+    for (const file of fs.readdirSync(path.join(root, "src/components/illustrations")).filter(file => file.endsWith(".tsx"))) {
+      for (const target of Object.values(entry)) assert(fs.existsSync(path.join(root, target.replace("*", file.slice(0, -4)))), `Asset ausente: ${file}`);
+    }
+    continue;
+  }
   for (const target of typeof entry === "string" ? [entry] : Object.values(entry)) {
     assert(target.startsWith("./dist/"), `Export fora de dist: ${name}`);
     assert(fs.existsSync(path.join(root, target)), `Export ausente: ${target}`);

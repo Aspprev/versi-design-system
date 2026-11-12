@@ -1,6 +1,6 @@
 {
   "name": "@aspprev/versi-ds",
-  "version": "0.7.4",
+  "version": "0.8.0",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -42,6 +42,16 @@
       "types": "./dist/documents.d.ts",
       "import": "./dist/documents.js",
       "default": "./dist/documents.js"
+    },
+    "./illustrations": {
+      "types": "./dist/illustrations/index.d.ts",
+      "import": "./dist/illustrations/index.js",
+      "default": "./dist/illustrations/index.js"
+    },
+    "./illustrations/*": {
+      "types": "./dist/illustrations/*.d.ts",
+      "import": "./dist/illustrations/*.js",
+      "default": "./dist/illustrations/*.js"
     },
     "./styles.css": "./dist/styles.css",
     "./themes.css": "./dist/themes.css"
@@ -151,6 +161,7 @@
     "test:watch": "vitest --config vitest.config.ts",
     "typecheck": "tsc --noEmit -p tsconfig.json && tsc -p tsconfig.stories.json",
     "test:visual": "playwright test --config=playwright.config.ts",
+    "test:reconciliation": "playwright test --config=playwright.reconciliation.config.ts",
     "test:visual:update": "playwright test --config=playwright.config.ts --update-snapshots",
     "prepack": "npm run check:generated && npm run check:governance && npm run check:security && npm run lint && npm run typecheck && npm run build && npm run check:size && npm run check:bundle && npm run check:package",
     "check:package": "node scripts/check-package.mjs",

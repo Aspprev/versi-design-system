@@ -31,6 +31,13 @@ const sizes = Object.fromEntries(
   files.map((file) => [file, fs.statSync(path.join(distRoot, file)).size]),
 );
 const oversizedInitial = initialFiles.filter((file) => sizes[file] > maxConsumerChunkBytes);
+const optionalAssets = fs.readdirSync(path.join(distRoot, "illustrations")).filter(file => file.endsWith(".js"));
+for (const file of optionalAssets) {
+  if (fs.statSync(path.join(distRoot, "illustrations", file)).size > maxConsumerChunkBytes) throw new Error(`Ilustração excedeu o limite por módulo: ${file}`);
+}
+for (const entry of ["index.js", "core.js"]) {
+  if (fs.readFileSync(path.join(distRoot, entry), "utf8").includes("illustrations")) throw new Error(`${entry} não pode importar o catálogo opcional de ilustrações`);
+}
 if (oversizedInitial.length) {
   throw new Error(
     `Chunks carregáveis pelo consumidor excedem 750 KB: ${oversizedInitial

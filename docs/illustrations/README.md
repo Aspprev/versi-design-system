@@ -4,6 +4,8 @@ Contrato aditivo para SVG inline, distribuído em `@aspprev/versi-ds/styles.css`
 
 ## Integração
 
+Os 29 assets reconciliados estão disponíveis em `@aspprev/versi-ds/illustrations` e por arquivo, por exemplo `import Investment from '@aspprev/versi-ds/illustrations/investment'`. Eles não entram na carga de root/core. Aceitam props nativas de SVG; `className` é combinado com a classe base. Consulte o [inventário, as diferenças por recurso e os cuidados de migração](../reconciliation/README.md).
+
 ```tsx
 import "@aspprev/versi-ds/styles.css";
 import "@aspprev/versi-ds/themes.css";
@@ -49,7 +51,9 @@ Nos modos comuns, a classe de compatibilidade mantém os papéis do portal: fund
 
 As referências `brand-accent-1/2/3` mantêm seus valores. Cada acento sólido tem um primeiro plano preto ou branco calculado para leitura; a variante suave usa conteúdo neutro sobre a mistura com a superfície. Quem sobrescrever as referências de marca no consumidor deve conferir e, se necessário, sobrescrever também `--illustration-brand-accent-{n}-content`. O mesmo cuidado vale para `--illustration-primary-content` ao mudar a primária localmente.
 
-No alto contraste, os três acentos decorativos são ignorados. Os fundos sólidos usam ação primária/conteúdo primário de ação; os suaves usam superfície muted/conteúdo neutro e contorno. Tinta, detalhes e contornos usam conteúdo primário. No alto contraste escuro, símbolos sobre a primária clara/amarela ficam escuros, em vez de brancos. A mutação das três referências de marca é testada e não muda os pares renderizados em HC.
+No alto contraste claro, os três acentos decorativos são ignorados. Os fundos sólidos usam ação primária/conteúdo primário de ação; os suaves usam superfície muted/conteúdo neutro e contorno. Tinta, detalhes e contornos usam conteúdo primário.
+
+Na combinação exata escuro + alto contraste, vale a [política universal](../high-contrast-dark/README.md): principal e apoio 1 amarelos, apoio 2 verde, apoio 3 lilás, ink preto e variantes suaves próprias. Conteúdo sobre sólidos é preto; sobre apoios suaves é branco. Os quatro tokens canônicos *-content continuam em canais RGB e os locais da ilustração continuam em cores CSS completas. O banner possui papéis específicos; nenhum painel é adicionado aos SVGs. Os demais modos não mudam.
 
 Sucesso, erro e aviso usam os pares semânticos solid de status verde, vermelho e amarelo, incluindo seus primeiros planos. Esses papéis prevalecem sobre uma marcação decorativa acidental. Não use um acento de marca para comunicar confirmação, falha ou advertência.
 

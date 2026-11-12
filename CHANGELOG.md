@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.8.0 — 2026-11-12 — temas, gráficos e ilustrações
+
+- Reconciliados os 18 temas com os ajustes finais do portal, incluindo a identidade laranja/vermelha de custom2178 e a preservação das correções de acessibilidade do DS.
+- Centralizadas as paletas circulares: suavização única de 22% nos modos comuns, com ordem preservada, e paletas de alto contraste sem suavização.
+- Adicionados 29 componentes SVG opcionais em `@aspprev/versi-ds/illustrations`, com imports individuais, identificadores internos únicos e papéis semânticos de tematização.
+- Consolidado o escuro + alto contraste universal: ações amarelas com texto preto, status semânticos, tooltips, campos, gráficos vivos, padrões e ilustrações. Os outros três modos preservam seus valores anteriores a esta política.
+- Corrigido o estado pressionado da ação primária outline no alto contraste escuro: foreground branco da seleção sobre o verde, preservando o preto das ações preenchidas amarelas.
+- Corrigido também o foreground pressionado da primária outline no claro + alto contraste de custom2178, usando selection-content sobre a seleção clara; paletas, ações secundárias e modos comuns preservados.
+- Documentados os pares corretos de ações secundárias nos quatro modos e a migração dos overrides do consumidor, sem recolorir secondary-1 para corrigir combinações de papéis diferentes.
+- Incluídos laboratórios e regressões de tokens, SVGs, contraste, cascata e interações; novos contratos executados pelas Actions antes da publicação.
+
+Migração: `docs/reconciliation/README.md` e `docs/high-contrast-dark/README.md`. Retirar a suavização local dos gráficos ao adotar os tokens centralizados para evitar aplicação dupla. Adotar os componentes SVG do DS antes de remover os ajustes locais que dependem de seus marcadores.
+
+
 ## 0.7.4 ? 2026-11-03 ? seguran?a das ferramentas de desenvolvimento
 
 - Fixadas as depend?ncias transitivas glob em 14.0.2 e minimatch em 11.0.1 por overrides, corrigindo GHSA-3g3m-2fjr-6pw4 e GHSA-g3hv-75wg-m249 nas cadeias de Storybook, ESLint e TypeScript ESLint.
